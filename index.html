@@ -2,7 +2,11 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a0c0f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="宏觀訊號">
 <title>宏觀訊號 · Macro Signals</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +24,8 @@
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--fg);
   font-family:"Noto Sans TC",system-ui,sans-serif;font-size:15px;line-height:1.78;
-  -webkit-font-smoothing:antialiased}
+  -webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;
+  overflow-wrap:break-word}
 a{color:inherit}
 ::selection{background:#1f4d3c;color:#fff}
 .mono{font-family:"IBM Plex Mono",ui-monospace,"Noto Sans TC",sans-serif}
@@ -46,6 +51,7 @@ header{position:sticky;top:0;z-index:30;background:rgba(10,12,15,.94);
 .langs button:hover{color:var(--fg)}
 .langs button.on{background:var(--card2);color:var(--fg)}
 #railtoggle{display:none}
+#scrim{display:none}
 
 /* ================= layout ================= */
 .layout{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);
@@ -197,14 +203,44 @@ ol.acts .en{color:var(--fg3);font-size:13px;margin-top:5px}
 .pager a{text-decoration:none;color:var(--fg3);font-family:"IBM Plex Mono",ui-monospace,"Noto Sans TC",sans-serif;font-size:11.5px}
 .pager a:hover{color:var(--fg)}
 
+/* ---------- phone / tablet ---------- */
 @media(max-width:900px){
   .layout{grid-template-columns:1fr}
-  aside{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line);
-    padding:14px 0 18px;display:none}
+  #railtoggle{display:inline-block;border:1px solid var(--line);background:var(--card)}
+  /* 時間軸改成由頂欄下滑的面板，蓋在內容上而不是把內容推開 */
+  aside{position:fixed;top:52px;left:0;right:0;z-index:20;height:auto;max-height:65vh;
+    border-right:0;border-bottom:1px solid var(--line2);background:var(--panel);
+    padding:12px 0 20px;display:none;box-shadow:0 18px 40px rgba(0,0,0,.55)}
   aside.open{display:block}
-  #railtoggle{display:inline-block}
-  main{padding:24px 18px 80px}
-  .masthead h1{font-size:24px}
+  #scrim{display:none;position:fixed;inset:52px 0 0;z-index:19;background:rgba(0,0,0,.5)}
+  #scrim.open{display:block}
+  main{padding:22px 16px 90px}
+  .masthead h1{font-size:23px}
+  .masthead .sub{font-size:13.5px}
+  .focus{padding:14px 16px;margin-bottom:28px}
+  .item{padding:15px 16px}
+  .item h3{font-size:16px}
+  .narr{font-size:15px;line-height:1.9}
+  /* 手機上的可點目標：來源連結與術語標籤放大到手指按得準 */
+  .ifoot{gap:8px;font-size:12px;padding-top:13px}
+  .ifoot a.src{padding:5px 10px;border:1px solid var(--line2);border-radius:6px}
+  .term{font-size:12px;padding:5px 9px}
+  .langs button{padding:7px 10px}
+  nav a,.tbtn{padding:7px 10px}
+  .filt{padding:7px 12px;font-size:11px}
+  .gtools input{font-size:16px}          /* iOS 低於 16px 會自動放大整頁 */
+  .alpha a{padding:6px 9px;font-size:12px}
+  /* 上一份／下一份做成大按鈕 */
+  .pager{gap:10px}
+  .pager a{flex:1;text-align:center;padding:12px 10px;border:1px solid var(--line);
+    border-radius:9px;background:var(--card);font-size:12px}
+}
+@media(max-width:520px){
+  .brand span{display:none}              /* 收掉副標，讓頂欄不擠 */
+  .bar{gap:9px;padding:0 14px}
+  .board{gap:6px}
+  .bchip{padding:5px 9px;font-size:10.5px}
+  .lanehead em{display:none}
 }
 </style>
 </head>
@@ -219,6 +255,7 @@ ol.acts .en{color:var(--fg3);font-size:13px;margin-top:5px}
   </div>
 </div></header>
 
+<div id="scrim"></div>
 <div class="layout">
   <aside id="rail"></aside>
   <main><div class="wrap" id="app"><div class="empty">載入中…</div></div></main>
@@ -415,9 +452,19 @@ document.getElementById('langs').onclick = e => {
   if(!e.target.dataset.l) return;
   lang = e.target.dataset.l; localStorage.setItem('sw-lang', lang); render();
 };
+// 手機的時間軸面板：選了報告就自動收起來，否則會擋住剛點開的內容
+const scrim = document.getElementById('scrim');
+function setRail(open){
+  document.getElementById('rail').classList.toggle('open', open);
+  scrim.classList.toggle('open', open);
+}
 document.getElementById('railtoggle').onclick = () =>
-  document.getElementById('rail').classList.toggle('open');
-addEventListener('hashchange', () => { if(!location.hash.startsWith('#L-')) render(); });
+  setRail(!document.getElementById('rail').classList.contains('open'));
+scrim.onclick = () => setRail(false);
+addEventListener('hashchange', () => {
+  setRail(false);
+  if(!location.hash.startsWith('#L-')) render();
+});
 (async () => {
   try{ manifest = await jget('manifest.json'); }catch(e){}
   try{ glossary = await jget('glossary.json'); }catch(e){}
