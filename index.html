@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StratWatch · 戰略視野</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0d10; --bg2:#11151a; --card:#141920; --line:#232c36;
+  --fg:#e6ebf0; --fg2:#9aa7b4; --fg3:#6b7885;
+  --cyber:#3fd0d6; --military:#e0a13c; --geo:#e05c5c; --tech:#a97bf0; --nexus:#5fd07f;
+  --critical:#ff4d4d; --high:#ff8a3d; --medium:#e8c44a; --warning:#8fb7f0; --info:#7f8c99;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font-family:"Noto Sans TC",system-ui,sans-serif;font-size:15px;line-height:1.75;
+  -webkit-font-smoothing:antialiased}
+a{color:inherit}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
+
+/* ---------- shell ---------- */
+header{position:sticky;top:0;z-index:10;background:rgba(11,13,16,.92);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{max-width:920px;margin:0 auto;padding:14px 20px;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.brand{font-family:"Noto Serif TC",serif;font-weight:700;font-size:19px;letter-spacing:.02em;text-decoration:none}
+.brand small{font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:11px;
+  color:var(--fg3);letter-spacing:.16em;margin-left:8px;text-transform:uppercase}
+nav{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+nav a{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.06em;color:var(--fg3);
+  text-decoration:none;padding:5px 10px;border-radius:5px}
+nav a:hover{color:var(--fg);background:var(--bg2)}
+nav a.on{color:var(--fg);background:var(--card);box-shadow:inset 0 0 0 1px var(--line)}
+.langs{display:flex;border:1px solid var(--line);border-radius:5px;overflow:hidden}
+.langs button{font-family:"IBM Plex Mono",monospace;font-size:11px;background:none;border:0;
+  color:var(--fg3);padding:5px 9px;cursor:pointer}
+.langs button.on{background:var(--card);color:var(--fg)}
+
+main{max-width:920px;margin:0 auto;padding:30px 20px 90px}
+
+/* ---------- report list ---------- */
+.hero{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:26px}
+.hero h1{font-family:"Noto Serif TC",serif;font-size:26px;margin:0 0 6px;line-height:1.4}
+.hero p{margin:0;color:var(--fg2);font-size:14px;max-width:62ch}
+
+.rowlink{display:block;text-decoration:none;border:1px solid var(--line);background:var(--card);
+  border-radius:9px;padding:15px 17px;margin-bottom:11px}
+.rowlink:hover{border-color:#31404f;background:#171d25}
+.rowmeta{display:flex;gap:10px;align-items:center;font-family:"IBM Plex Mono",monospace;
+  font-size:11px;color:var(--fg3);letter-spacing:.06em;margin-bottom:5px}
+.kind{padding:1px 7px;border-radius:99px;border:1px solid currentColor;font-size:10px;text-transform:uppercase}
+.k-brief{color:var(--cyber)} .k-weekly{color:var(--military)} .k-monthly{color:var(--tech)}
+.rowlink h3{margin:0;font-size:16px;font-weight:500;line-height:1.55}
+.rowlink .en{color:var(--fg3);font-size:13px;margin-top:2px}
+
+/* ---------- report detail ---------- */
+.back{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--fg3);
+  text-decoration:none;display:inline-block;margin-bottom:18px}
+.back:hover{color:var(--fg)}
+.focus{border-left:3px solid var(--nexus);background:var(--bg2);padding:13px 17px;
+  border-radius:0 8px 8px 0;margin:0 0 30px;color:var(--fg2);font-size:14.5px}
+
+section.sec{margin-bottom:34px}
+.sechead{display:flex;align-items:center;gap:10px;margin-bottom:14px;
+  padding-bottom:8px;border-bottom:1px solid var(--line)}
+.dot{width:8px;height:8px;border-radius:2px;flex:none}
+.sechead h2{font-size:14px;margin:0;font-weight:600;letter-spacing:.02em}
+.sechead .sub{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--fg3);letter-spacing:.1em}
+
+.item{border:1px solid var(--line);background:var(--card);border-radius:9px;
+  padding:15px 17px;margin-bottom:11px}
+.item h3{margin:0 0 4px;font-size:15.5px;font-weight:500;line-height:1.55}
+.item h3 .en{display:block;color:var(--fg3);font-size:13px;font-weight:400;margin-top:2px}
+.tags{display:flex;gap:7px;align-items:center;flex-wrap:wrap;
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.06em;margin-bottom:7px}
+.sev{padding:1px 7px;border-radius:3px;color:#0b0d10;font-weight:600;text-transform:uppercase}
+.conf{color:var(--fg3);border:1px solid var(--line);padding:1px 7px;border-radius:3px}
+.body{color:var(--fg2);font-size:14.5px}
+.body .en{color:var(--fg3);font-size:13.5px;margin-top:6px}
+.impl{margin-top:10px;padding-left:12px;border-left:2px solid var(--nexus);font-size:14px}
+.impl b{color:var(--nexus);font-weight:600;font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px;letter-spacing:.1em;display:block;margin-bottom:2px}
+.cp{margin-top:10px;padding-left:12px;border-left:2px solid var(--fg3);font-size:14px;color:var(--fg2)}
+.cp b{color:var(--fg3);font-weight:600;font-family:"IBM Plex Mono",monospace;
+  font-size:10.5px;letter-spacing:.1em;display:block;margin-bottom:2px}
+.foot{margin-top:11px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+  font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--fg3)}
+.foot a{color:var(--warning);text-decoration:none}
+.foot a:hover{text-decoration:underline}
+.term{background:var(--bg2);border:1px solid var(--line);color:var(--fg2);
+  padding:1px 6px;border-radius:3px;text-decoration:none;font-size:10.5px}
+.term:hover{color:var(--fg);border-color:#3a4854}
+
+.narr{font-size:15px;color:var(--fg);white-space:pre-wrap}
+.narr.en{color:var(--fg3);font-size:14px;margin-top:14px;
+  padding-top:14px;border-top:1px dashed var(--line)}
+ol.acts{padding-left:20px;margin:0}
+ol.acts li{margin-bottom:9px;color:var(--fg2)}
+ol.acts .en{color:var(--fg3);font-size:13.5px}
+
+/* ---------- glossary ---------- */
+.tools{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:20px}
+.tools input{flex:1;min-width:180px;background:var(--card);border:1px solid var(--line);
+  color:var(--fg);border-radius:7px;padding:9px 12px;font-family:"IBM Plex Mono",monospace;font-size:13px}
+.tools input:focus{outline:none;border-color:#3a4854}
+.chip{font-family:"IBM Plex Mono",monospace;font-size:11px;background:var(--card);
+  border:1px solid var(--line);color:var(--fg3);padding:7px 11px;border-radius:7px;cursor:pointer}
+.chip.on{color:var(--fg);border-color:#3a4854}
+.gterm{border:1px solid var(--line);background:var(--card);border-radius:9px;padding:14px 17px;margin-bottom:10px}
+.gterm:target{border-color:var(--nexus)}
+.gterm .t{font-family:"IBM Plex Mono",monospace;font-size:15px;font-weight:600;color:var(--fg)}
+.gterm .zh{color:var(--fg);font-size:14px;margin-left:9px}
+.gterm .exp{color:var(--fg3);font-size:12.5px;margin-top:2px;font-family:"IBM Plex Mono",monospace}
+.gterm .d{color:var(--fg2);font-size:14px;margin-top:8px}
+.gterm .d.en{color:var(--fg3);font-size:13px;margin-top:5px}
+
+.empty{color:var(--fg3);text-align:center;padding:60px 20px;font-family:"IBM Plex Mono",monospace;font-size:13px}
+footer{border-top:1px solid var(--line);color:var(--fg3);font-size:11.5px;
+  font-family:"IBM Plex Mono",monospace;text-align:center;padding:22px}
+@media(max-width:600px){.bar{gap:10px}nav{width:100%;margin-left:0}}
+</style>
+</head>
+<body>
+<header><div class="bar">
+  <a class="brand" href="#/">戰略視野<small>StratWatch</small></a>
+  <nav id="nav"></nav>
+  <div class="langs" id="langs">
+    <button data-l="zh">中</button><button data-l="en">EN</button><button data-l="both">中+EN</button>
+  </div>
+</div></header>
+<main id="app"><div class="empty">載入中…</div></main>
+<footer>OSINT briefing · 網路戰 × 軍事 × 地緣政治 × 新興科技 · <span id="upd"></span></footer>
+
+<script>
+const SEC = {
+  cyber:   {zh:'網路戰 / 資安',  en:'Cyber & Information Warfare', c:'var(--cyber)'},
+  military:{zh:'軍事 / 兵力態勢', en:'Military & Force Posture',     c:'var(--military)'},
+  geo:     {zh:'地緣政治',        en:'Geopolitics',                  c:'var(--geo)'},
+  tech:    {zh:'新興科技',        en:'Emerging Technology',          c:'var(--tech)'},
+  nexus:   {zh:'交叉點 · 連連看', en:'The Nexus',                    c:'var(--nexus)'}
+};
+const KIND = {brief:{zh:'兩日簡報',en:'Brief'},weekly:{zh:'週深度',en:'Weekly Deep Dive'},monthly:{zh:'月度全局',en:'Monthly Outlook'}};
+const CAT  = {military:'軍事',cyber:'網路',geo:'地緣',tech:'科技'};
+
+let lang = localStorage.getItem('sw-lang') || 'zh';
+let manifest = {reports:[]}, glossary = {terms:[]}, cache = {};
+
+const esc = s => String(s??'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const t = o => typeof o === 'string' ? esc(o) : esc(o?.zh || o?.en || '');
+const te = o => typeof o === 'string' ? '' : esc(o?.en || '');
+// bilingual block: zh line + optional en line, honouring the language toggle
+function bi(o, cls){
+  if(!o) return '';
+  const zh = typeof o==='string' ? esc(o) : esc(o.zh||'');
+  const en = typeof o==='string' ? ''    : esc(o.en||'');
+  if(lang==='en') return en ? `<div class="${cls}">${en}</div>` : (zh?`<div class="${cls}">${zh}</div>`:'');
+  if(lang==='zh') return zh ? `<div class="${cls}">${zh}</div>` : (en?`<div class="${cls}">${en}</div>`:'');
+  return (zh?`<div class="${cls}">${zh}</div>`:'') + (en?`<div class="${cls} en">${en}</div>`:'');
+}
+const L = (o,k) => lang==='en' ? (o[k]?.en||o[k]?.zh||'') : (o[k]?.zh||o[k]?.en||'');
+
+async function jget(p){ if(cache[p]) return cache[p];
+  const r = await fetch(p + '?v=' + Date.now()); if(!r.ok) throw new Error(p); return cache[p] = await r.json(); }
+
+/* ---------------- views ---------------- */
+function listView(kind){
+  const rs = manifest.reports.filter(r => !kind || r.kind === kind);
+  const head = kind
+    ? `<h1>${KIND[kind].zh} · ${KIND[kind].en}</h1>`
+    : `<h1>戰略視野簡報</h1><p>把網路戰、軍事態勢、地緣政治與新興科技當成同一個系統來讀 —— 每則訊號都附「這對你意味什麼」。</p>`;
+  if(!rs.length) return `<div class="hero">${head}</div><div class="empty">尚無報告 · No reports yet</div>`;
+  return `<div class="hero">${head}</div>` + rs.map(r => `
+    <a class="rowlink" href="#/r/${encodeURIComponent(r.file)}">
+      <div class="rowmeta"><span class="kind k-${r.kind}">${KIND[r.kind]?.en||r.kind}</span><span>${esc(r.date)}</span></div>
+      <h3>${t(r.title)}</h3>${te(r.title)?`<div class="en">${te(r.title)}</div>`:''}
+    </a>`).join('');
+}
+
+function itemHTML(it){
+  const terms = (it.terms||[]).map(x =>
+    `<a class="term" href="#/glossary?q=${encodeURIComponent(x)}">${esc(x)}</a>`).join('');
+  return `<article class="item">
+    <div class="tags">
+      <span class="sev" style="background:var(--${it.severity||'info'})">${esc(it.severity||'info')}</span>
+      ${it.confidence?`<span class="conf">${esc(it.confidence)}</span>`:''}
+    </div>
+    <h3>${t(it.title)}${lang!=='zh'&&te(it.title)?`<span class="en">${te(it.title)}</span>`:''}</h3>
+    ${bi(it.summary,'body')}
+    ${it.implication?`<div class="impl"><b>SO WHAT · 對你的意義</b>${bi(it.implication,'').replace(/<div class="">/g,'<div>')}</div>`:''}
+    ${it.counterpoint?`<div class="cp"><b>COUNTERPOINT · 反方</b>${bi(it.counterpoint,'').replace(/<div class="">/g,'<div>')}</div>`:''}
+    <div class="foot">
+      ${it.source?`<span>${esc(it.source)}</span>`:''}
+      ${it.url?`<a href="${esc(it.url)}" target="_blank" rel="noopener">來源 ↗</a>`:''}
+      ${terms}
+    </div>
+  </article>`;
+}
+
+async function reportView(file){
+  let d; try{ d = await jget(file); }catch(e){ return `<div class="empty">找不到報告 ${esc(file)}</div>`; }
+  const secs = (d.sections||[]).filter(s => (s.items||[]).length).map(s => {
+    const m = SEC[s.id] || {zh:s.id, en:s.id, c:'var(--fg3)'};
+    return `<section class="sec">
+      <div class="sechead"><span class="dot" style="background:${m.c}"></span>
+        <h2>${m.zh}</h2><span class="sub">${m.en.toUpperCase()}</span></div>
+      ${(s.items||[]).map(itemHTML).join('')}
+    </section>`;
+  }).join('');
+  const narr = d.narrative ? `<section class="sec">
+      <div class="sechead"><span class="dot" style="background:var(--tech)"></span>
+        <h2>深度分析</h2><span class="sub">ANALYSIS</span></div>
+      ${lang!=='en'&&d.narrative.zh?`<div class="narr">${esc(d.narrative.zh)}</div>`:''}
+      ${lang!=='zh'&&d.narrative.en?`<div class="narr en">${esc(d.narrative.en)}</div>`:''}
+    </section>` : '';
+  const acts = (d.actions||[]).length ? `<section class="sec">
+      <div class="sechead"><span class="dot" style="background:var(--nexus)"></span>
+        <h2>你該調整什麼</h2><span class="sub">WHAT TO ADJUST</span></div>
+      <ol class="acts">${d.actions.map(a=>`<li>${lang!=='en'&&a.zh?esc(a.zh):''}${lang==='both'&&a.en?`<div class="en">${esc(a.en)}</div>`:(lang==='en'?esc(a.en||a.zh):'')}</li>`).join('')}</ol>
+    </section>` : '';
+  return `<a class="back" href="#/">← 全部報告</a>
+    <div class="hero">
+      <div class="rowmeta"><span class="kind k-${d.kind}">${KIND[d.kind]?.en||d.kind}</span><span>${esc(d.date)}</span></div>
+      <h1>${t(d.title)}</h1>${lang!=='zh'&&te(d.title)?`<p>${te(d.title)}</p>`:''}
+    </div>
+    ${d.focus?`<div class="focus">${bi(d.focus,'').replace(/<div class="">/g,'<div>')}</div>`:''}
+    ${secs}${narr}${acts}`;
+}
+
+let gq = '', gcat = '';
+function glossaryView(){
+  const ts = glossary.terms.filter(x =>
+    (!gcat || x.category === gcat) &&
+    (!gq || (x.term+' '+(x.zh||'')+' '+(x.expansion||'')+' '+(x.def?.zh||'')).toLowerCase().includes(gq.toLowerCase())))
+    .sort((a,b) => a.term.localeCompare(b.term));
+  const chips = ['', ...Object.keys(CAT)].map(c =>
+    `<button class="chip ${gcat===c?'on':''}" data-cat="${c}">${c?CAT[c]:'全部'}</button>`).join('');
+  return `<div class="hero"><h1>詞彙表 · Glossary</h1>
+      <p>報告裡出現過的技術與軍事術語，累積式收錄。共 ${glossary.terms.length} 條。</p></div>
+    <div class="tools"><input id="gq" placeholder="搜尋 term / 中文 / 定義…" value="${esc(gq)}">${chips}</div>
+    ${ts.length ? ts.map(x => `<div class="gterm" id="term-${esc(x.term).replace(/[^\w-]/g,'_')}">
+        <div><span class="t">${esc(x.term)}</span>${x.zh?`<span class="zh">${esc(x.zh)}</span>`:''}</div>
+        ${x.expansion?`<div class="exp">${esc(x.expansion)}</div>`:''}
+        ${lang!=='en'&&x.def?.zh?`<div class="d">${esc(x.def.zh)}</div>`:''}
+        ${lang!=='zh'&&x.def?.en?`<div class="d en">${esc(x.def.en)}</div>`:''}
+        <div class="foot"><span>${CAT[x.category]||x.category||''}</span><span>首見 ${esc(x.first_seen||'')}</span></div>
+      </div>`).join('') : `<div class="empty">沒有符合的詞條</div>`}`;
+}
+
+/* ---------------- router ---------------- */
+const ROUTES = [['#/','全部'],['#/k/brief','兩日'],['#/k/weekly','週報'],['#/k/monthly','月報'],['#/glossary','詞彙表']];
+async function render(){
+  const h = location.hash || '#/';
+  document.getElementById('nav').innerHTML = ROUTES.map(([r,n]) =>
+    `<a href="${r}" class="${h.split('?')[0]===r?'on':''}">${n}</a>`).join('');
+  document.querySelectorAll('#langs button').forEach(b => b.classList.toggle('on', b.dataset.l===lang));
+  const app = document.getElementById('app');
+  if(h.startsWith('#/r/'))            app.innerHTML = await reportView(decodeURIComponent(h.slice(4)));
+  else if(h.startsWith('#/glossary')){ const m = h.match(/[?&]q=([^&]*)/); if(m) gq = decodeURIComponent(m[1]);
+                                       app.innerHTML = glossaryView(); wireGlossary(); }
+  else if(h.startsWith('#/k/'))       app.innerHTML = listView(h.slice(4));
+  else                                app.innerHTML = listView(null);
+  window.scrollTo(0,0);
+}
+function wireGlossary(){
+  const i = document.getElementById('gq');
+  i.oninput = e => { gq = e.target.value; const p = i.selectionStart;
+    document.getElementById('app').innerHTML = glossaryView(); wireGlossary();
+    const n = document.getElementById('gq'); n.focus(); n.setSelectionRange(p,p); };
+  document.querySelectorAll('.chip').forEach(c => c.onclick = () => {
+    gcat = c.dataset.cat; document.getElementById('app').innerHTML = glossaryView(); wireGlossary(); });
+}
+document.getElementById('langs').onclick = e => {
+  if(!e.target.dataset.l) return;
+  lang = e.target.dataset.l; localStorage.setItem('sw-lang', lang); render();
+};
+addEventListener('hashchange', render);
+(async () => {
+  try{ manifest = await jget('manifest.json'); }catch(e){}
+  try{ glossary = await jget('glossary.json'); }catch(e){}
+  document.getElementById('upd').textContent = 'updated ' + (manifest.updated || '—');
+  render();
+})();
+</script>
+</body>
+</html>
