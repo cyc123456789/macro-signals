@@ -2,11 +2,9 @@
 
 跨領域訊號的交叉觀察：政策與貿易、供應鏈與系統韌性、技術前沿、區域態勢。中英雙語，術語另建累積式詞彙表。
 
-網站：https://macro-signals.pages.dev/ （Cloudflare Pages，前面擋一層 Cloudflare Access，只有本人 email 進得去）
-
 ## 架構
 
-私有 repo。排程 push 到 main 之後 Cloudflare Pages 自動重新部署。
+排程 push 到 main 之後由 Cloudflare Pages 自動部署。
 資料與版面分離：**排程只寫 JSON，永遠不碰 `index.html`。**
 
 | 檔案 | 誰寫 | 說明 |
@@ -46,7 +44,7 @@
       "counterpoint":{"zh": "…", "en": "…"},   // 選填，週報必附
       "source": "Reuters",
       "url": "https://…",
-      "terms": ["C4ISR"]                 // 必須都存在於 glossary.json
+      "terms": ["EDR"]                   // 必須都存在於 glossary.json
     }]
   }],
   "narrative": {"zh": "…", "en": "…"},   // weekly / monthly 必填
@@ -58,11 +56,11 @@
 
 ```jsonc
 {"updated": "2026-08-11", "terms": [{
-  "term": "C4ISR",
-  "zh": "指管通情監偵",
-  "expansion": "Command, Control, Communications, Computers, Intelligence, Surveillance and Reconnaissance",
+  "term": "EDR",
+  "zh": "端點偵測與回應",
+  "expansion": "Endpoint Detection and Response",
   "def": {"zh": "…", "en": "…"},
-  "category": "military",                // military | cyber | geo | tech
+  "category": "cyber",                   // military | cyber | geo | tech
   "first_seen": "2026-08-11"
 }]}
 ```
