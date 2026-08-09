@@ -3,283 +3,424 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>StratWatch · 戰略視野</title>
+<title>宏觀訊號 · Macro Signals</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#0b0d10; --bg2:#11151a; --card:#141920; --line:#232c36;
-  --fg:#e6ebf0; --fg2:#9aa7b4; --fg3:#6b7885;
-  --cyber:#3fd0d6; --military:#e0a13c; --geo:#e05c5c; --tech:#a97bf0; --nexus:#5fd07f;
-  --critical:#ff4d4d; --high:#ff8a3d; --medium:#e8c44a; --warning:#8fb7f0; --info:#7f8c99;
+  --bg:#0a0c0f; --panel:#0f1318; --card:#131920; --card2:#171e26;
+  --line:#1e2731; --line2:#2b3744;
+  --fg:#e8edf2; --fg2:#98a5b3; --fg3:#61707f;
+  --cyber:#38cfd9; --military:#e2a33f; --geo:#e8635f; --tech:#a97ff2; --nexus:#4fd18b;
+  --critical:#ff4b4b; --high:#ff8f3c; --medium:#e6c247; --warning:#7fb0ee; --info:#5f6d7a;
+  --rail:260px;
 }
 *{box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--fg);
-  font-family:"Noto Sans TC",system-ui,sans-serif;font-size:15px;line-height:1.75;
+  font-family:"Noto Sans TC",system-ui,sans-serif;font-size:15px;line-height:1.78;
   -webkit-font-smoothing:antialiased}
 a{color:inherit}
+::selection{background:#1f4d3c;color:#fff}
 .mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
+.lbl{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--fg3)}
 
-/* ---------- shell ---------- */
-header{position:sticky;top:0;z-index:10;background:rgba(11,13,16,.92);
-  backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.bar{max-width:920px;margin:0 auto;padding:14px 20px;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
-.brand{font-family:"Noto Serif TC",serif;font-weight:700;font-size:19px;letter-spacing:.02em;text-decoration:none}
-.brand small{font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:11px;
-  color:var(--fg3);letter-spacing:.16em;margin-left:8px;text-transform:uppercase}
-nav{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
-nav a{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.06em;color:var(--fg3);
-  text-decoration:none;padding:5px 10px;border-radius:5px}
-nav a:hover{color:var(--fg);background:var(--bg2)}
-nav a.on{color:var(--fg);background:var(--card);box-shadow:inset 0 0 0 1px var(--line)}
-.langs{display:flex;border:1px solid var(--line);border-radius:5px;overflow:hidden}
+/* ================= top bar ================= */
+header{position:sticky;top:0;z-index:30;background:rgba(10,12,15,.94);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:14px;padding:0 18px;height:52px}
+.brand{display:flex;align-items:baseline;gap:9px;text-decoration:none;flex:none}
+.brand b{font-family:"Noto Serif TC",serif;font-weight:700;font-size:17px;letter-spacing:.03em}
+.brand span{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.2em;
+  color:var(--fg3);text-transform:uppercase}
+.spacer{flex:1}
+.tbtn{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.06em;
+  color:var(--fg3);text-decoration:none;padding:6px 11px;border-radius:6px;white-space:nowrap}
+.tbtn:hover{color:var(--fg);background:var(--card)}
+.tbtn.on{color:var(--fg);background:var(--card);box-shadow:inset 0 0 0 1px var(--line2)}
+.langs{display:flex;border:1px solid var(--line);border-radius:6px;overflow:hidden;flex:none}
 .langs button{font-family:"IBM Plex Mono",monospace;font-size:11px;background:none;border:0;
-  color:var(--fg3);padding:5px 9px;cursor:pointer}
-.langs button.on{background:var(--card);color:var(--fg)}
+  color:var(--fg3);padding:6px 9px;cursor:pointer}
+.langs button:hover{color:var(--fg)}
+.langs button.on{background:var(--card2);color:var(--fg)}
+#railtoggle{display:none}
 
-main{max-width:920px;margin:0 auto;padding:30px 20px 90px}
+/* ================= layout ================= */
+.layout{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);
+  max-width:1240px;margin:0 auto;align-items:start}
 
-/* ---------- report list ---------- */
-.hero{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:26px}
-.hero h1{font-family:"Noto Serif TC",serif;font-size:26px;margin:0 0 6px;line-height:1.4}
-.hero p{margin:0;color:var(--fg2);font-size:14px;max-width:62ch}
+/* ---- left rail: chronological spine ---- */
+aside{position:sticky;top:52px;height:calc(100vh - 52px);overflow-y:auto;
+  border-right:1px solid var(--line);padding:20px 0 40px}
+aside::-webkit-scrollbar{width:6px}
+aside::-webkit-scrollbar-thumb{background:var(--line2);border-radius:3px}
+.railhead{padding:0 18px 12px;display:flex;gap:5px;flex-wrap:wrap}
+.filt{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.08em;
+  border:1px solid var(--line);color:var(--fg3);background:none;
+  padding:4px 8px;border-radius:99px;cursor:pointer;text-transform:uppercase}
+.filt:hover{color:var(--fg2)}
+.filt.on{color:var(--fg);border-color:var(--line2);background:var(--card)}
+.mgroup{padding:16px 18px 6px}
+.tl{position:relative;padding-left:18px;margin:0 18px}
+.tl:before{content:"";position:absolute;left:4px;top:0;bottom:0;width:1px;background:var(--line)}
+.tlink{position:relative;display:block;text-decoration:none;padding:9px 0 9px 4px;border-radius:6px}
+.tlink:before{content:"";position:absolute;left:-18px;top:16px;width:9px;height:9px;
+  border-radius:50%;background:var(--bg);box-shadow:0 0 0 1.5px var(--fg3)}
+.tlink.brief:before{box-shadow:0 0 0 1.5px var(--cyber)}
+.tlink.weekly:before{box-shadow:0 0 0 1.5px var(--military)}
+.tlink.monthly:before{box-shadow:0 0 0 1.5px var(--tech);background:var(--tech)}
+.tlink:hover .tt{color:var(--fg)}
+.tlink.on:before{background:var(--nexus);box-shadow:0 0 0 1.5px var(--nexus),0 0 0 4px rgba(79,209,139,.15)}
+.tlink.on .tt{color:var(--fg);font-weight:500}
+.tm{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.1em;color:var(--fg3);
+  display:flex;gap:7px;align-items:center}
+.tm i{font-style:normal;font-size:9px;padding:0 4px;border:1px solid currentColor;border-radius:3px}
+.tt{color:var(--fg2);font-size:13px;line-height:1.5;margin-top:2px;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 
-.rowlink{display:block;text-decoration:none;border:1px solid var(--line);background:var(--card);
-  border-radius:9px;padding:15px 17px;margin-bottom:11px}
-.rowlink:hover{border-color:#31404f;background:#171d25}
-.rowmeta{display:flex;gap:10px;align-items:center;font-family:"IBM Plex Mono",monospace;
-  font-size:11px;color:var(--fg3);letter-spacing:.06em;margin-bottom:5px}
-.kind{padding:1px 7px;border-radius:99px;border:1px solid currentColor;font-size:10px;text-transform:uppercase}
+/* ---- main column ---- */
+main{padding:34px 34px 100px;min-width:0}
+.wrap{max-width:720px}
+
+.masthead{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:8px}
+.mmeta{display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.kind{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;
+  text-transform:uppercase;padding:3px 9px;border-radius:99px;border:1px solid currentColor}
 .k-brief{color:var(--cyber)} .k-weekly{color:var(--military)} .k-monthly{color:var(--tech)}
-.rowlink h3{margin:0;font-size:16px;font-weight:500;line-height:1.55}
-.rowlink .en{color:var(--fg3);font-size:13px;margin-top:2px}
+.masthead h1{font-family:"Noto Serif TC",serif;font-size:29px;line-height:1.38;margin:0}
+.masthead .sub{color:var(--fg3);font-size:14.5px;margin-top:7px;font-style:italic}
 
-/* ---------- report detail ---------- */
-.back{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--fg3);
-  text-decoration:none;display:inline-block;margin-bottom:18px}
-.back:hover{color:var(--fg)}
-.focus{border-left:3px solid var(--nexus);background:var(--bg2);padding:13px 17px;
-  border-radius:0 8px 8px 0;margin:0 0 30px;color:var(--fg2);font-size:14.5px}
+/* signal board */
+.board{display:flex;gap:7px;flex-wrap:wrap;margin:18px 0 24px}
+.bchip{display:flex;align-items:center;gap:7px;background:var(--panel);
+  border:1px solid var(--line);border-radius:7px;padding:5px 11px;
+  font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--fg2)}
+.bchip s{width:6px;height:6px;border-radius:2px;text-decoration:none}
+.bchip b{color:var(--fg);font-weight:600}
 
-section.sec{margin-bottom:34px}
-.sechead{display:flex;align-items:center;gap:10px;margin-bottom:14px;
-  padding-bottom:8px;border-bottom:1px solid var(--line)}
-.dot{width:8px;height:8px;border-radius:2px;flex:none}
-.sechead h2{font-size:14px;margin:0;font-weight:600;letter-spacing:.02em}
-.sechead .sub{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--fg3);letter-spacing:.1em}
+.focus{position:relative;background:linear-gradient(90deg,rgba(79,209,139,.07),transparent 70%);
+  border:1px solid var(--line);border-left:3px solid var(--nexus);
+  border-radius:0 10px 10px 0;padding:16px 20px;margin-bottom:38px}
+.focus .lbl{margin-bottom:5px}
+.focus p{margin:0;font-size:15.5px;color:var(--fg)}
+.focus .en{color:var(--fg3);font-size:14px;margin-top:9px;
+  padding-top:9px;border-top:1px dashed var(--line2)}
 
-.item{border:1px solid var(--line);background:var(--card);border-radius:9px;
-  padding:15px 17px;margin-bottom:11px}
-.item h3{margin:0 0 4px;font-size:15.5px;font-weight:500;line-height:1.55}
-.item h3 .en{display:block;color:var(--fg3);font-size:13px;font-weight:400;margin-top:2px}
-.tags{display:flex;gap:7px;align-items:center;flex-wrap:wrap;
-  font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.06em;margin-bottom:7px}
-.sev{padding:1px 7px;border-radius:3px;color:#0b0d10;font-weight:600;text-transform:uppercase}
-.conf{color:var(--fg3);border:1px solid var(--line);padding:1px 7px;border-radius:3px}
-.body{color:var(--fg2);font-size:14.5px}
-.body .en{color:var(--fg3);font-size:13.5px;margin-top:6px}
-.impl{margin-top:10px;padding-left:12px;border-left:2px solid var(--nexus);font-size:14px}
-.impl b{color:var(--nexus);font-weight:600;font-family:"IBM Plex Mono",monospace;
-  font-size:10.5px;letter-spacing:.1em;display:block;margin-bottom:2px}
-.cp{margin-top:10px;padding-left:12px;border-left:2px solid var(--fg3);font-size:14px;color:var(--fg2)}
-.cp b{color:var(--fg3);font-weight:600;font-family:"IBM Plex Mono",monospace;
-  font-size:10.5px;letter-spacing:.1em;display:block;margin-bottom:2px}
-.foot{margin-top:11px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;
-  font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--fg3)}
-.foot a{color:var(--warning);text-decoration:none}
-.foot a:hover{text-decoration:underline}
-.term{background:var(--bg2);border:1px solid var(--line);color:var(--fg2);
-  padding:1px 6px;border-radius:3px;text-decoration:none;font-size:10.5px}
-.term:hover{color:var(--fg);border-color:#3a4854}
+/* domain lane */
+.lane{margin-bottom:40px}
+.lanehead{display:flex;align-items:center;gap:11px;margin-bottom:16px}
+.lanehead s{width:3px;height:24px;border-radius:2px;text-decoration:none;flex:none}
+.lanehead h2{font-size:15px;margin:0;font-weight:700;letter-spacing:.01em}
+.lanehead em{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:10px;
+  letter-spacing:.16em;color:var(--fg3);text-transform:uppercase}
+.lanehead hr{flex:1;border:0;border-top:1px solid var(--line);margin:0}
 
-.narr{font-size:15px;color:var(--fg);white-space:pre-wrap}
-.narr.en{color:var(--fg3);font-size:14px;margin-top:14px;
-  padding-top:14px;border-top:1px dashed var(--line)}
-ol.acts{padding-left:20px;margin:0}
-ol.acts li{margin-bottom:9px;color:var(--fg2)}
-ol.acts .en{color:var(--fg3);font-size:13.5px}
+/* item card */
+.item{position:relative;background:var(--card);border:1px solid var(--line);
+  border-left:3px solid var(--info);border-radius:0 10px 10px 0;padding:17px 20px;margin-bottom:12px}
+.item:hover{border-color:var(--line2);border-left-color:inherit;background:var(--card2)}
+.item.critical{border-left-color:var(--critical)} .item.high{border-left-color:var(--high)}
+.item.medium{border-left-color:var(--medium)} .item.warning{border-left-color:var(--warning)}
+.item.info{border-left-color:var(--info)}
+.itop{display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.sev{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.14em;
+  text-transform:uppercase;font-weight:600;padding:2px 7px;border-radius:3px;color:#0a0c0f}
+.conf{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--fg3);border:1px solid var(--line2);
+  padding:2px 7px;border-radius:3px}
+.item h3{margin:0 0 7px;font-size:16.5px;font-weight:500;line-height:1.55}
+.item h3 em{display:block;font-style:normal;color:var(--fg3);font-size:13.5px;
+  font-weight:400;margin-top:3px;line-height:1.5}
+.txt{color:var(--fg2);font-size:14.5px}
+.txt.en{color:var(--fg3);font-size:13.5px;margin-top:8px;
+  padding-top:8px;border-top:1px dashed var(--line)}
+.note{margin-top:13px;padding:11px 14px;border-radius:8px;background:var(--panel);
+  border:1px solid var(--line)}
+.note.so{border-left:2px solid var(--nexus)}
+.note.cp{border-left:2px solid var(--fg3)}
+.note .lbl{display:block;margin-bottom:3px}
+.note.so .lbl{color:var(--nexus)}
+.note p{margin:0;font-size:14px;color:var(--fg2)}
+.note .en{color:var(--fg3);font-size:13px;margin-top:6px}
+.ifoot{margin-top:13px;padding-top:11px;border-top:1px solid var(--line);
+  display:flex;gap:9px;flex-wrap:wrap;align-items:center;
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--fg3)}
+.ifoot a.src{color:var(--warning);text-decoration:none}
+.ifoot a.src:hover{text-decoration:underline}
+.term{background:var(--panel);border:1px solid var(--line);color:var(--fg2);
+  padding:2px 7px;border-radius:3px;text-decoration:none;font-size:10px;letter-spacing:.04em}
+.term:hover{color:var(--fg);border-color:var(--line2)}
 
-/* ---------- glossary ---------- */
-.tools{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:20px}
-.tools input{flex:1;min-width:180px;background:var(--card);border:1px solid var(--line);
-  color:var(--fg);border-radius:7px;padding:9px 12px;font-family:"IBM Plex Mono",monospace;font-size:13px}
-.tools input:focus{outline:none;border-color:#3a4854}
-.chip{font-family:"IBM Plex Mono",monospace;font-size:11px;background:var(--card);
-  border:1px solid var(--line);color:var(--fg3);padding:7px 11px;border-radius:7px;cursor:pointer}
-.chip.on{color:var(--fg);border-color:#3a4854}
-.gterm{border:1px solid var(--line);background:var(--card);border-radius:9px;padding:14px 17px;margin-bottom:10px}
-.gterm:target{border-color:var(--nexus)}
-.gterm .t{font-family:"IBM Plex Mono",monospace;font-size:15px;font-weight:600;color:var(--fg)}
-.gterm .zh{color:var(--fg);font-size:14px;margin-left:9px}
-.gterm .exp{color:var(--fg3);font-size:12.5px;margin-top:2px;font-family:"IBM Plex Mono",monospace}
-.gterm .d{color:var(--fg2);font-size:14px;margin-top:8px}
-.gterm .d.en{color:var(--fg3);font-size:13px;margin-top:5px}
+/* narrative + actions */
+.narr{font-size:15.5px;line-height:1.95;white-space:pre-wrap}
+.narr.en{color:var(--fg2);font-size:14.5px;margin-top:22px;padding-top:22px;
+  border-top:1px dashed var(--line2)}
+ol.acts{list-style:none;counter-reset:a;padding:0;margin:0}
+ol.acts li{counter-increment:a;position:relative;padding:13px 16px 13px 48px;
+  background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:10px}
+ol.acts li:before{content:counter(a,decimal-leading-zero);position:absolute;left:16px;top:13px;
+  font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--nexus);font-weight:600}
+ol.acts .en{color:var(--fg3);font-size:13px;margin-top:5px}
 
-.empty{color:var(--fg3);text-align:center;padding:60px 20px;font-family:"IBM Plex Mono",monospace;font-size:13px}
-footer{border-top:1px solid var(--line);color:var(--fg3);font-size:11.5px;
-  font-family:"IBM Plex Mono",monospace;text-align:center;padding:22px}
-@media(max-width:600px){.bar{gap:10px}nav{width:100%;margin-left:0}}
+/* ================= glossary ================= */
+.gtools{display:flex;gap:9px;flex-wrap:wrap;margin:20px 0 8px}
+.gtools input{flex:1;min-width:200px;background:var(--card);border:1px solid var(--line);
+  color:var(--fg);border-radius:8px;padding:10px 13px;
+  font-family:"IBM Plex Mono",monospace;font-size:13px}
+.gtools input:focus{outline:none;border-color:var(--line2)}
+.alpha{display:flex;gap:3px;flex-wrap:wrap;margin-bottom:26px}
+.alpha a{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--fg3);
+  text-decoration:none;padding:3px 6px;border-radius:4px}
+.alpha a:hover{color:var(--fg);background:var(--card)}
+.gletter{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.2em;
+  color:var(--fg3);border-bottom:1px solid var(--line);padding-bottom:6px;
+  margin:26px 0 12px;scroll-margin-top:70px}
+.gterm{border:1px solid var(--line);background:var(--card);border-radius:10px;
+  padding:15px 19px;margin-bottom:10px;scroll-margin-top:70px}
+.gterm:target{border-color:var(--nexus);background:var(--card2)}
+.gterm .th{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.gterm .t{font-family:"IBM Plex Mono",monospace;font-size:15.5px;font-weight:600}
+.gterm .zh{font-size:14.5px;color:var(--fg)}
+.gterm .cat{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:9.5px;
+  letter-spacing:.12em;text-transform:uppercase;padding:2px 7px;border-radius:99px;border:1px solid currentColor}
+.gterm .exp{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--fg3);margin-top:4px}
+.gterm .d{color:var(--fg2);font-size:14px;margin-top:9px}
+.gterm .d.en{color:var(--fg3);font-size:13px;margin-top:6px}
+.gterm .fs{font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--fg3);margin-top:9px}
+
+.empty{color:var(--fg3);text-align:center;padding:70px 20px;
+  font-family:"IBM Plex Mono",monospace;font-size:13px;line-height:2}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-top:46px;
+  padding-top:20px;border-top:1px solid var(--line)}
+.pager a{text-decoration:none;color:var(--fg3);font-family:"IBM Plex Mono",monospace;font-size:11.5px}
+.pager a:hover{color:var(--fg)}
+
+@media(max-width:900px){
+  .layout{grid-template-columns:1fr}
+  aside{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line);
+    padding:14px 0 18px;display:none}
+  aside.open{display:block}
+  #railtoggle{display:inline-block}
+  main{padding:24px 18px 80px}
+  .masthead h1{font-size:24px}
+}
 </style>
 </head>
 <body>
 <header><div class="bar">
-  <a class="brand" href="#/">戰略視野<small>StratWatch</small></a>
-  <nav id="nav"></nav>
+  <a class="brand" href="#/"><b>宏觀訊號</b><span>Macro Signals</span></a>
+  <button class="tbtn" id="railtoggle">☰ 時間軸</button>
+  <div class="spacer"></div>
+  <a class="tbtn" id="navglos" href="#/glossary">詞彙表</a>
   <div class="langs" id="langs">
     <button data-l="zh">中</button><button data-l="en">EN</button><button data-l="both">中+EN</button>
   </div>
 </div></header>
-<main id="app"><div class="empty">載入中…</div></main>
-<footer>OSINT briefing · 網路戰 × 軍事 × 地緣政治 × 新興科技 · <span id="upd"></span></footer>
+
+<div class="layout">
+  <aside id="rail"></aside>
+  <main><div class="wrap" id="app"><div class="empty">載入中…</div></div></main>
+</div>
 
 <script>
-const SEC = {
-  cyber:   {zh:'網路戰 / 資安',  en:'Cyber & Information Warfare', c:'var(--cyber)'},
-  military:{zh:'軍事 / 兵力態勢', en:'Military & Force Posture',     c:'var(--military)'},
-  geo:     {zh:'地緣政治',        en:'Geopolitics',                  c:'var(--geo)'},
-  tech:    {zh:'新興科技',        en:'Emerging Technology',          c:'var(--tech)'},
-  nexus:   {zh:'交叉點 · 連連看', en:'The Nexus',                    c:'var(--nexus)'}
+const DOMAIN = {
+  nexus:   {zh:'交叉訊號',     en:'Cross-Signals',        c:'var(--nexus)'},
+  cyber:   {zh:'系統與韌性',   en:'Systems & Resilience', c:'var(--cyber)'},
+  military:{zh:'區域態勢',     en:'Regional Posture',     c:'var(--military)'},
+  geo:     {zh:'政策與貿易',   en:'Policy & Trade',       c:'var(--geo)'},
+  tech:    {zh:'技術前沿',     en:'Frontier Tech',        c:'var(--tech)'}
 };
-const KIND = {brief:{zh:'兩日簡報',en:'Brief'},weekly:{zh:'週深度',en:'Weekly Deep Dive'},monthly:{zh:'月度全局',en:'Monthly Outlook'}};
-const CAT  = {military:'軍事',cyber:'網路',geo:'地緣',tech:'科技'};
+const ORDER = ['nexus','cyber','military','geo','tech'];   // 交叉訊號先行 — 這是本站的核心
+const KIND = {brief:{zh:'兩日簡報',en:'Brief',s:'2D'},weekly:{zh:'週深度',en:'Weekly Deep Dive',s:'WK'},monthly:{zh:'月度全局',en:'Monthly Outlook',s:'MO'}};
+const CAT  = {military:{zh:'態勢',c:'var(--military)'},cyber:{zh:'系統',c:'var(--cyber)'},
+              geo:{zh:'政策',c:'var(--geo)'},tech:{zh:'技術',c:'var(--tech)'}};
 
 let lang = localStorage.getItem('sw-lang') || 'zh';
-let manifest = {reports:[]}, glossary = {terms:[]}, cache = {};
+let manifest = {reports:[]}, glossary = {terms:[]}, cache = {}, filt = '', cur = '';
 
 const esc = s => String(s??'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const t = o => typeof o === 'string' ? esc(o) : esc(o?.zh || o?.en || '');
-const te = o => typeof o === 'string' ? '' : esc(o?.en || '');
-// bilingual block: zh line + optional en line, honouring the language toggle
-function bi(o, cls){
-  if(!o) return '';
-  const zh = typeof o==='string' ? esc(o) : esc(o.zh||'');
-  const en = typeof o==='string' ? ''    : esc(o.en||'');
-  if(lang==='en') return en ? `<div class="${cls}">${en}</div>` : (zh?`<div class="${cls}">${zh}</div>`:'');
-  if(lang==='zh') return zh ? `<div class="${cls}">${zh}</div>` : (en?`<div class="${cls}">${en}</div>`:'');
-  return (zh?`<div class="${cls}">${zh}</div>`:'') + (en?`<div class="${cls} en">${en}</div>`:'');
-}
-const L = (o,k) => lang==='en' ? (o[k]?.en||o[k]?.zh||'') : (o[k]?.zh||o[k]?.en||'');
+const zh = o => esc(typeof o==='string' ? o : (o?.zh||''));
+const en = o => esc(typeof o==='string' ? '' : (o?.en||''));
+const one = o => lang==='en' ? (en(o)||zh(o)) : (zh(o)||en(o));   // 單語模式下的最佳可用文字
+const showEn = o => lang==='both' && en(o) && zh(o);              // 雙語模式才另起一行
 
 async function jget(p){ if(cache[p]) return cache[p];
-  const r = await fetch(p + '?v=' + Date.now()); if(!r.ok) throw new Error(p); return cache[p] = await r.json(); }
+  const r = await fetch(p+'?v='+Date.now()); if(!r.ok) throw new Error(p); return cache[p]=await r.json(); }
 
-/* ---------------- views ---------------- */
-function listView(kind){
-  const rs = manifest.reports.filter(r => !kind || r.kind === kind);
-  const head = kind
-    ? `<h1>${KIND[kind].zh} · ${KIND[kind].en}</h1>`
-    : `<h1>戰略視野簡報</h1><p>把網路戰、軍事態勢、地緣政治與新興科技當成同一個系統來讀 —— 每則訊號都附「這對你意味什麼」。</p>`;
-  if(!rs.length) return `<div class="hero">${head}</div><div class="empty">尚無報告 · No reports yet</div>`;
-  return `<div class="hero">${head}</div>` + rs.map(r => `
-    <a class="rowlink" href="#/r/${encodeURIComponent(r.file)}">
-      <div class="rowmeta"><span class="kind k-${r.kind}">${KIND[r.kind]?.en||r.kind}</span><span>${esc(r.date)}</span></div>
-      <h3>${t(r.title)}</h3>${te(r.title)?`<div class="en">${te(r.title)}</div>`:''}
-    </a>`).join('');
+/* ---------------- left rail: chronological spine ---------------- */
+function rail(){
+  const rs = manifest.reports.filter(r => !filt || r.kind===filt);
+  const chips = [['','全部'],['brief','兩日'],['weekly','週'],['monthly','月']].map(([k,n]) =>
+    `<button class="filt ${filt===k?'on':''}" data-k="${k}">${n}</button>`).join('');
+  let out = `<div class="railhead">${chips}</div>`, month = '';
+  if(!rs.length) return out + `<div class="empty" style="padding:30px 18px;font-size:11px">尚無報告</div>`;
+  out += rs.map(r => {
+    const m = r.date.slice(0,7), head = m!==month ? (month=m, `<div class="mgroup lbl">${m}</div>`) : '';
+    return head + `<div class="tl"><a class="tlink ${r.kind} ${cur===r.file?'on':''}" href="#/r/${encodeURIComponent(r.file)}">
+        <div class="tm"><i>${KIND[r.kind]?.s||'??'}</i><span>${esc(r.date)}</span></div>
+        <div class="tt">${one(r.title)}</div></a></div>`;
+  }).join('');
+  return out;
 }
 
+/* ---------------- one item card ---------------- */
 function itemHTML(it){
-  const terms = (it.terms||[]).map(x =>
-    `<a class="term" href="#/glossary?q=${encodeURIComponent(x)}">${esc(x)}</a>`).join('');
-  return `<article class="item">
-    <div class="tags">
-      <span class="sev" style="background:var(--${it.severity||'info'})">${esc(it.severity||'info')}</span>
+  const sev = it.severity||'info';
+  const note = (o,cls,l1,l2) => !o ? '' : `<div class="note ${cls}">
+      <span class="lbl">${l1} · ${l2}</span><p>${one(o)}</p>
+      ${showEn(o)?`<p class="en">${en(o)}</p>`:''}</div>`;
+  return `<article class="item ${sev}">
+    <div class="itop">
+      <span class="sev" style="background:var(--${sev})">${esc(sev)}</span>
       ${it.confidence?`<span class="conf">${esc(it.confidence)}</span>`:''}
     </div>
-    <h3>${t(it.title)}${lang!=='zh'&&te(it.title)?`<span class="en">${te(it.title)}</span>`:''}</h3>
-    ${bi(it.summary,'body')}
-    ${it.implication?`<div class="impl"><b>SO WHAT · 對你的意義</b>${bi(it.implication,'').replace(/<div class="">/g,'<div>')}</div>`:''}
-    ${it.counterpoint?`<div class="cp"><b>COUNTERPOINT · 反方</b>${bi(it.counterpoint,'').replace(/<div class="">/g,'<div>')}</div>`:''}
-    <div class="foot">
+    <h3>${one(it.title)}${showEn(it.title)?`<em>${en(it.title)}</em>`:''}</h3>
+    <div class="txt">${one(it.summary)}</div>
+    ${showEn(it.summary)?`<div class="txt en">${en(it.summary)}</div>`:''}
+    ${note(it.implication,'so','SO WHAT','對你的意義')}
+    ${note(it.counterpoint,'cp','COUNTERPOINT','反方觀點')}
+    <div class="ifoot">
       ${it.source?`<span>${esc(it.source)}</span>`:''}
-      ${it.url?`<a href="${esc(it.url)}" target="_blank" rel="noopener">來源 ↗</a>`:''}
-      ${terms}
+      ${it.url?`<a class="src" href="${esc(it.url)}" target="_blank" rel="noopener">原始來源 ↗</a>`:''}
+      ${(it.terms||[]).map(x=>`<a class="term" href="#/glossary?q=${encodeURIComponent(x)}">${esc(x)}</a>`).join('')}
     </div>
   </article>`;
 }
 
+/* ---------------- report view ---------------- */
 async function reportView(file){
-  let d; try{ d = await jget(file); }catch(e){ return `<div class="empty">找不到報告 ${esc(file)}</div>`; }
-  const secs = (d.sections||[]).filter(s => (s.items||[]).length).map(s => {
-    const m = SEC[s.id] || {zh:s.id, en:s.id, c:'var(--fg3)'};
-    return `<section class="sec">
-      <div class="sechead"><span class="dot" style="background:${m.c}"></span>
-        <h2>${m.zh}</h2><span class="sub">${m.en.toUpperCase()}</span></div>
-      ${(s.items||[]).map(itemHTML).join('')}
-    </section>`;
-  }).join('');
-  const narr = d.narrative ? `<section class="sec">
-      <div class="sechead"><span class="dot" style="background:var(--tech)"></span>
-        <h2>深度分析</h2><span class="sub">ANALYSIS</span></div>
-      ${lang!=='en'&&d.narrative.zh?`<div class="narr">${esc(d.narrative.zh)}</div>`:''}
-      ${lang!=='zh'&&d.narrative.en?`<div class="narr en">${esc(d.narrative.en)}</div>`:''}
+  let d; try{ d = await jget(file); }
+  catch(e){ return `<div class="empty">找不到報告<br>${esc(file)}</div>`; }
+  cur = file;
+
+  const secs = Object.fromEntries((d.sections||[]).map(s => [s.id, s.items||[]]));
+  const counts = ORDER.filter(k => secs[k]?.length)
+    .map(k => `<span class="bchip"><s style="background:${DOMAIN[k].c}"></s>${DOMAIN[k].zh.split(' ')[0]}<b>${secs[k].length}</b></span>`).join('');
+  const lanes = ORDER.filter(k => secs[k]?.length).map(k => `<section class="lane">
+      <div class="lanehead"><s style="background:${DOMAIN[k].c}"></s>
+        <h2>${DOMAIN[k].zh}</h2><em>${DOMAIN[k].en}</em><hr></div>
+      ${secs[k].map(itemHTML).join('')}
+    </section>`).join('');
+  const unknown = (d.sections||[]).filter(s => !DOMAIN[s.id] && (s.items||[]).length)
+    .map(s => `<section class="lane"><div class="lanehead"><s style="background:var(--fg3)"></s>
+        <h2>${esc(s.id)}</h2><hr></div>${s.items.map(itemHTML).join('')}</section>`).join('');
+
+  const narr = d.narrative ? `<section class="lane">
+      <div class="lanehead"><s style="background:var(--tech)"></s>
+        <h2>深度分析</h2><em>Analysis</em><hr></div>
+      <div class="narr">${esc(lang==='en' ? (d.narrative.en||d.narrative.zh) : (d.narrative.zh||d.narrative.en))}</div>
+      ${lang==='both'&&d.narrative.en&&d.narrative.zh?`<div class="narr en">${esc(d.narrative.en)}</div>`:''}
     </section>` : '';
-  const acts = (d.actions||[]).length ? `<section class="sec">
-      <div class="sechead"><span class="dot" style="background:var(--nexus)"></span>
-        <h2>你該調整什麼</h2><span class="sub">WHAT TO ADJUST</span></div>
-      <ol class="acts">${d.actions.map(a=>`<li>${lang!=='en'&&a.zh?esc(a.zh):''}${lang==='both'&&a.en?`<div class="en">${esc(a.en)}</div>`:(lang==='en'?esc(a.en||a.zh):'')}</li>`).join('')}</ol>
+  const acts = (d.actions||[]).length ? `<section class="lane">
+      <div class="lanehead"><s style="background:var(--nexus)"></s>
+        <h2>下一步</h2><em>What to adjust</em><hr></div>
+      <ol class="acts">${d.actions.map(a=>`<li>${one(a)}${showEn(a)?`<div class="en">${en(a)}</div>`:''}</li>`).join('')}</ol>
     </section>` : '';
-  return `<a class="back" href="#/">← 全部報告</a>
-    <div class="hero">
-      <div class="rowmeta"><span class="kind k-${d.kind}">${KIND[d.kind]?.en||d.kind}</span><span>${esc(d.date)}</span></div>
-      <h1>${t(d.title)}</h1>${lang!=='zh'&&te(d.title)?`<p>${te(d.title)}</p>`:''}
+
+  const i = manifest.reports.findIndex(r => r.file===file);
+  const nav = (j,label,side) => (j>=0 && j<manifest.reports.length)
+    ? `<a href="#/r/${encodeURIComponent(manifest.reports[j].file)}">${side==='l'?'← ':''}${label} ${manifest.reports[j].date}${side==='r'?' →':''}</a>` : '<span></span>';
+
+  return `<div class="masthead">
+      <div class="mmeta">
+        <span class="kind k-${d.kind}">${KIND[d.kind]?.en||d.kind}</span>
+        <span class="lbl">${esc(d.date)}</span>
+      </div>
+      <h1>${one(d.title)}</h1>
+      ${showEn(d.title)?`<div class="sub">${en(d.title)}</div>`:''}
     </div>
-    ${d.focus?`<div class="focus">${bi(d.focus,'').replace(/<div class="">/g,'<div>')}</div>`:''}
-    ${secs}${narr}${acts}`;
+    <div class="board">${counts}</div>
+    ${d.focus?`<div class="focus"><span class="lbl">Bottom line · 一句話</span>
+      <p>${one(d.focus)}</p>${showEn(d.focus)?`<p class="en">${en(d.focus)}</p>`:''}</div>`:''}
+    ${lanes}${unknown}${narr}${acts}
+    <div class="pager">${nav(i+1,'較舊','l')}${nav(i-1,'較新','r')}</div>`;
 }
 
+/* ---------------- glossary ---------------- */
 let gq = '', gcat = '';
 function glossaryView(){
   const ts = glossary.terms.filter(x =>
-    (!gcat || x.category === gcat) &&
-    (!gq || (x.term+' '+(x.zh||'')+' '+(x.expansion||'')+' '+(x.def?.zh||'')).toLowerCase().includes(gq.toLowerCase())))
-    .sort((a,b) => a.term.localeCompare(b.term));
-  const chips = ['', ...Object.keys(CAT)].map(c =>
-    `<button class="chip ${gcat===c?'on':''}" data-cat="${c}">${c?CAT[c]:'全部'}</button>`).join('');
-  return `<div class="hero"><h1>詞彙表 · Glossary</h1>
-      <p>報告裡出現過的技術與軍事術語，累積式收錄。共 ${glossary.terms.length} 條。</p></div>
-    <div class="tools"><input id="gq" placeholder="搜尋 term / 中文 / 定義…" value="${esc(gq)}">${chips}</div>
-    ${ts.length ? ts.map(x => `<div class="gterm" id="term-${esc(x.term).replace(/[^\w-]/g,'_')}">
-        <div><span class="t">${esc(x.term)}</span>${x.zh?`<span class="zh">${esc(x.zh)}</span>`:''}</div>
-        ${x.expansion?`<div class="exp">${esc(x.expansion)}</div>`:''}
-        ${lang!=='en'&&x.def?.zh?`<div class="d">${esc(x.def.zh)}</div>`:''}
-        ${lang!=='zh'&&x.def?.en?`<div class="d en">${esc(x.def.en)}</div>`:''}
-        <div class="foot"><span>${CAT[x.category]||x.category||''}</span><span>首見 ${esc(x.first_seen||'')}</span></div>
-      </div>`).join('') : `<div class="empty">沒有符合的詞條</div>`}`;
-}
-
-/* ---------------- router ---------------- */
-const ROUTES = [['#/','全部'],['#/k/brief','兩日'],['#/k/weekly','週報'],['#/k/monthly','月報'],['#/glossary','詞彙表']];
-async function render(){
-  const h = location.hash || '#/';
-  document.getElementById('nav').innerHTML = ROUTES.map(([r,n]) =>
-    `<a href="${r}" class="${h.split('?')[0]===r?'on':''}">${n}</a>`).join('');
-  document.querySelectorAll('#langs button').forEach(b => b.classList.toggle('on', b.dataset.l===lang));
-  const app = document.getElementById('app');
-  if(h.startsWith('#/r/'))            app.innerHTML = await reportView(decodeURIComponent(h.slice(4)));
-  else if(h.startsWith('#/glossary')){ const m = h.match(/[?&]q=([^&]*)/); if(m) gq = decodeURIComponent(m[1]);
-                                       app.innerHTML = glossaryView(); wireGlossary(); }
-  else if(h.startsWith('#/k/'))       app.innerHTML = listView(h.slice(4));
-  else                                app.innerHTML = listView(null);
-  window.scrollTo(0,0);
+      (!gcat || x.category===gcat) &&
+      (!gq || (x.term+' '+(x.zh||'')+' '+(x.expansion||'')+' '+(x.def?.zh||'')+' '+(x.def?.en||''))
+              .toLowerCase().includes(gq.toLowerCase())))
+    .sort((a,b) => a.term.toLowerCase().localeCompare(b.term.toLowerCase()));
+  const chips = [['','全部'],...Object.entries(CAT).map(([k,v])=>[k,v.zh])]
+    .map(([k,n]) => `<button class="filt ${gcat===k?'on':''}" data-cat="${k}">${n}</button>`).join('');
+  const letters = [...new Set(ts.map(x => x.term[0].toUpperCase()))];
+  let letter = '';
+  const body = ts.map(x => {
+    const L = x.term[0].toUpperCase();
+    const head = L!==letter ? (letter=L, `<div class="gletter" id="L-${L}">${L}</div>`) : '';
+    const cat = CAT[x.category];
+    return head + `<div class="gterm" id="term-${esc(x.term).replace(/[^\w-]/g,'_')}">
+      <div class="th"><span class="t">${esc(x.term)}</span>
+        ${x.zh?`<span class="zh">${esc(x.zh)}</span>`:''}
+        ${cat?`<span class="cat" style="color:${cat.c}">${cat.zh}</span>`:''}</div>
+      ${x.expansion?`<div class="exp">${esc(x.expansion)}</div>`:''}
+      ${lang!=='en'&&x.def?.zh?`<div class="d">${esc(x.def.zh)}</div>`:''}
+      ${lang!=='zh'&&x.def?.en?`<div class="d en">${esc(x.def.en)}</div>`:''}
+      ${x.first_seen?`<div class="fs">首見 ${esc(x.first_seen)}</div>`:''}
+    </div>`;
+  }).join('');
+  return `<div class="masthead">
+      <div class="mmeta"><span class="lbl">Reference</span></div>
+      <h1>詞彙表</h1><div class="sub">Glossary · 報告中出現過的術語，累積收錄 ${glossary.terms.length} 條</div>
+    </div>
+    <div class="gtools"><input id="gq" placeholder="搜尋 term / 中文 / 定義…" value="${esc(gq)}">${chips}</div>
+    <div class="alpha">${letters.map(l=>`<a href="#L-${l}">${l}</a>`).join('')}</div>
+    ${ts.length ? body : `<div class="empty">沒有符合的詞條</div>`}`;
 }
 function wireGlossary(){
-  const i = document.getElementById('gq');
+  const i = document.getElementById('gq'); if(!i) return;
   i.oninput = e => { gq = e.target.value; const p = i.selectionStart;
     document.getElementById('app').innerHTML = glossaryView(); wireGlossary();
     const n = document.getElementById('gq'); n.focus(); n.setSelectionRange(p,p); };
-  document.querySelectorAll('.chip').forEach(c => c.onclick = () => {
+  document.querySelectorAll('[data-cat]').forEach(c => c.onclick = () => {
     gcat = c.dataset.cat; document.getElementById('app').innerHTML = glossaryView(); wireGlossary(); });
+}
+
+/* ---------------- router ---------------- */
+async function render(){
+  const h = location.hash || '#/';
+  const app = document.getElementById('app');
+  document.getElementById('navglos').classList.toggle('on', h.startsWith('#/glossary'));
+  document.querySelectorAll('#langs button').forEach(b => b.classList.toggle('on', b.dataset.l===lang));
+
+  if(h.startsWith('#/glossary')){
+    cur = '';
+    const m = h.match(/[?&]q=([^&]*)/); if(m) gq = decodeURIComponent(m[1]);
+    app.innerHTML = glossaryView(); wireGlossary();
+  } else if(h.startsWith('#/r/')){
+    app.innerHTML = await reportView(decodeURIComponent(h.slice(4)));
+  } else if(manifest.reports.length){
+    app.innerHTML = await reportView(manifest.reports[0].file);   // 首頁直接開最新一份
+  } else {
+    cur = '';
+    app.innerHTML = `<div class="empty">尚無報告 · No reports yet<br>
+      第一份簡報會在台北時間今晚 03:00 後產生。</div>`;
+  }
+  document.getElementById('rail').innerHTML = rail();
+  document.querySelectorAll('[data-k]').forEach(b => b.onclick = () => {
+    filt = b.dataset.k; document.getElementById('rail').innerHTML = rail(); wireRail(); });
+  wireRail();
+  if(!location.hash.startsWith('#L-')) window.scrollTo(0,0);
+}
+function wireRail(){
+  document.querySelectorAll('[data-k]').forEach(b => b.onclick = () => {
+    filt = b.dataset.k; document.getElementById('rail').innerHTML = rail(); wireRail(); });
 }
 document.getElementById('langs').onclick = e => {
   if(!e.target.dataset.l) return;
   lang = e.target.dataset.l; localStorage.setItem('sw-lang', lang); render();
 };
-addEventListener('hashchange', render);
+document.getElementById('railtoggle').onclick = () =>
+  document.getElementById('rail').classList.toggle('open');
+addEventListener('hashchange', () => { if(!location.hash.startsWith('#L-')) render(); });
 (async () => {
   try{ manifest = await jget('manifest.json'); }catch(e){}
   try{ glossary = await jget('glossary.json'); }catch(e){}
-  document.getElementById('upd').textContent = 'updated ' + (manifest.updated || '—');
   render();
 })();
 </script>

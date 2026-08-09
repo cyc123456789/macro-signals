@@ -1,19 +1,19 @@
-# StratWatch · 戰略視野
+# 宏觀訊號 · Macro Signals
 
-網路戰 × 軍事 × 地緣政治 × 新興科技的**交叉點**情報簡報。中英雙語，技術術語另建累積式詞彙表。
+跨領域訊號的交叉觀察：政策與貿易、供應鏈與系統韌性、技術前沿、區域態勢。中英雙語，術語另建累積式詞彙表。
 
-網站：https://cyc123456789.github.io/stratwatch/
+網站：https://cyc123456789.github.io/macro-signals/
 
 ## 架構
 
-沿用 Daily-Digest 的「資料／版面分離」：**cloud routine 只寫 JSON，永遠不碰 `index.html`。**
+資料與版面分離：**排程只寫 JSON，永遠不碰 `index.html`。**
 
 | 檔案 | 誰寫 | 說明 |
 |---|---|---|
-| `index.html` | 人 | 固定版面，hash 路由 `#/`、`#/k/{kind}`、`#/r/{file}`、`#/glossary` |
-| `reports/YYYY-MM-DD-{kind}.json` | routine | 一次執行一個檔 |
-| `manifest.json` | routine | 報告索引，**日期新→舊排序** |
-| `glossary.json` | routine | 累積式術語表，只增不改（已存在的 term 不動） |
+| `index.html` | 人 | 固定版面，hash 路由 `#/`（開最新一份）、`#/r/{file}`、`#/glossary` |
+| `reports/YYYY-MM-DD-{kind}.json` | 排程 | 一次執行一個檔 |
+| `manifest.json` | 排程 | 報告索引，**日期新→舊排序** |
+| `glossary.json` | 排程 | 累積式術語表，只增不改（已存在的 term 不動） |
 | `check.py` | 人 | schema 驗證，commit 前必跑 |
 
 ## 三個節奏
@@ -22,7 +22,7 @@
 |---|---|---|---|
 | `brief` | `0 19 */2 * *` | 每兩天 03:00 | 4–8 條訊號，每條附「對你的意義」 |
 | `weekly` | `0 19 * * 0` | 每週一 03:00 | 單一主題深挖 + 反方觀點（`narrative`） |
-| `monthly` | `0 19 1 * *` | 每月 2 日 03:00 | 上月趨勢全局 + `actions`（該調整什麼） |
+| `monthly` | `0 19 1 * *` | 每月 2 日 03:00 | 上月趨勢全局 + `actions` |
 
 ## Schema
 
@@ -35,7 +35,7 @@
   "title":  {"zh": "…", "en": "…"},
   "focus":  {"zh": "…", "en": "…"},      // 一句話總結，同時當推播訊息
   "sections": [{
-    "id": "nexus",                       // cyber | military | geo | tech | nexus
+    "id": "nexus",                       // nexus 交叉 | cyber 系統 | military 態勢 | geo 政策 | tech 技術
     "items": [{
       "severity":   "high",              // critical | high | medium | warning | info
       "confidence": "likely",            // confirmed | likely | unverified
