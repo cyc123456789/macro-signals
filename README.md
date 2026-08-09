@@ -2,10 +2,11 @@
 
 跨領域訊號的交叉觀察：政策與貿易、供應鏈與系統韌性、技術前沿、區域態勢。中英雙語，術語另建累積式詞彙表。
 
-網站：https://cyc123456789.github.io/macro-signals/
+網站：https://macro-signals.pages.dev/ （Cloudflare Pages，前面擋一層 Cloudflare Access，只有本人 email 進得去）
 
 ## 架構
 
+私有 repo。排程 push 到 main 之後 Cloudflare Pages 自動重新部署。
 資料與版面分離：**排程只寫 JSON，永遠不碰 `index.html`。**
 
 | 檔案 | 誰寫 | 說明 |
