@@ -1,4 +1,14 @@
 {
-  "updated": "2026-08-09",
-  "reports": []
+  "updated": "2026-08-15",
+  "reports": [
+    {
+      "file": "reports/2026-08-15-brief.json",
+      "date": "2026-08-15",
+      "kind": "brief",
+      "title": {
+        "zh": "AI 自主性壓力測試：從駭客工具到打擊規劃系統",
+        "en": "The AI Autonomy Stress Test: From Hacking Tools to Strike-Planning Systems"
+      }
+    }
+  ]
 }

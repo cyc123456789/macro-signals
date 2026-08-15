@@ -1,4 +1,126 @@
 {
-  "updated": "2026-08-09",
-  "terms": []
+  "updated": "2026-08-15",
+  "terms": [
+    {
+      "term": "CTF",
+      "zh": "奪旗賽（資安演練）",
+      "expansion": "Capture The Flag",
+      "def": {
+        "zh": "資安領域用來訓練與測試攻防技巧的模擬競賽或環境，參與者需在受控範圍內尋找漏洞、奪取「旗標」以證明入侵成功；AI 安全評測常借用此格式作為紅隊測試場景。",
+        "en": "A simulated competition or environment used in security research to practice offensive/defensive skills, where participants find vulnerabilities and capture a 'flag' to prove successful compromise; AI safety evaluations increasingly borrow this format as a red-teaming scenario."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-15"
+    },
+    {
+      "term": "RCE",
+      "zh": "遠端程式碼執行",
+      "expansion": "Remote Code Execution",
+      "def": {
+        "zh": "攻擊者在未經授權的情況下，於目標系統上執行任意程式碼的漏洞利用類型，通常是資安事件中最高等級的危害之一，因為它讓攻擊者取得系統的實質控制權。",
+        "en": "A vulnerability class in which an attacker executes arbitrary code on a target system without authorization — typically among the highest-severity outcomes in a security incident because it gives the attacker practical control of the system."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-15"
+    },
+    {
+      "term": "USV",
+      "zh": "無人水面載具",
+      "expansion": "Unmanned Surface Vessel",
+      "def": {
+        "zh": "無人操作的水面艦艇，可執行偵察、反水雷、攻擊或後勤任務，近年因烏俄戰場經驗與成本優勢，成為海上不對稱作戰的重點投資方向。",
+        "en": "An uncrewed surface vessel used for reconnaissance, mine countermeasures, strike, or logistics roles; its low cost relative to crewed vessels has made it a priority investment for asymmetric naval warfare, reinforced by lessons from the Russia-Ukraine war."
+      },
+      "category": "military",
+      "first_seen": "2026-08-15"
+    },
+    {
+      "term": "UGV",
+      "zh": "無人地面載具",
+      "expansion": "Unmanned Ground Vehicle",
+      "def": {
+        "zh": "無人操作的地面載具，可搭載武器、感測器或補給物資，近期戰場上出現由無人機空投部署 UGV 直接投入接觸線的新戰術。",
+        "en": "An uncrewed ground vehicle that can carry weapons, sensors, or supplies; recent battlefield use includes drone-delivered deployment of UGVs directly to the contact line."
+      },
+      "category": "military",
+      "first_seen": "2026-08-15"
+    },
+    {
+      "term": "FPV",
+      "zh": "第一人稱視角（穿越機）",
+      "expansion": "First-Person View",
+      "def": {
+        "zh": "操作者透過機載攝影機即時影像視角遙控的無人機，因取得容易、成本低廉，已成為現代戰場上大量消耗、高頻次使用的攻擊性武器平台。",
+        "en": "A drone piloted using a real-time first-person camera feed from the aircraft itself; low cost and easy availability have made it a high-volume, attritable strike platform on modern battlefields."
+      },
+      "category": "military",
+      "first_seen": "2026-08-15"
+    },
+    {
+      "term": "PLC",
+      "zh": "可程式邏輯控制器",
+      "expansion": "Programmable Logic Controller",
+      "def": {
+        "zh": "工業控制系統中用來自動化控制機械、閥門或製程的專用電腦，常見於水務、電力與製造業現場，若直接暴露在公開網路上且未加防護，是關鍵基礎設施最常見的入侵入口之一。",
+        "en": "A specialized industrial computer used to automate control of machinery, valves, or processes — common in water, power, and manufacturing environments; when left directly exposed on the public internet without protection, it is one of the most common entry points for critical-infrastructure intrusions."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-15"
+    },
+    {
+      "term": "HMI",
+      "zh": "人機介面",
+      "expansion": "Human-Machine Interface",
+      "def": {
+        "zh": "操作人員用來監控與操作工業控制系統（如 PLC）的介面軟硬體，同樣經常因暴露在公開網路且缺乏驗證機制，而成為攻擊者的可乘之機。",
+        "en": "The interface hardware/software operators use to monitor and control industrial systems such as PLCs; like PLCs, HMIs are frequently exposed on the public internet without adequate authentication, making them a common attacker entry point."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-15"
+    },
+    {
+      "term": "AIS",
+      "zh": "船舶自動識別系統",
+      "expansion": "Automatic Identification System",
+      "def": {
+        "zh": "船舶依國際規範定期廣播自身位置、航速與航向等資訊的追蹤系統，原用於航行安全，近年也被情報與海事分析機構用來比對船隻行為模式、識別異常活動。",
+        "en": "A tracking system requiring vessels to periodically broadcast their position, speed, and heading under international maritime rules; originally for navigational safety, it is now also used by intelligence and maritime-analysis firms to profile vessel behavior and flag anomalies."
+      },
+      "category": "tech",
+      "first_seen": "2026-08-15"
+    },
+    {
+      "term": "EEZ",
+      "zh": "專屬經濟區",
+      "expansion": "Exclusive Economic Zone",
+      "def": {
+        "zh": "沿海國家依《聯合國海洋法公約》對其海岸線外 200 海浬內水域享有的資源開發與管轄權區域，但不等同於領海主權，外國船舶原則上仍享有航行自由。",
+        "en": "A zone extending 200 nautical miles from a coastal state's shoreline, under UNCLOS, over which that state holds resource and jurisdictional rights — distinct from territorial sovereignty, since foreign vessels generally retain freedom of navigation within it."
+      },
+      "category": "geo",
+      "first_seen": "2026-08-15"
+    },
+    {
+      "term": "ADIZ",
+      "zh": "防空識別區",
+      "expansion": "Air Defense Identification Zone",
+      "def": {
+        "zh": "一國基於空防需要，在其領空外自行劃設、要求進入航空器需先行識別或通報的空域，不具有國際法上的領空效力，但違反規定常被視為政治與軍事信號。",
+        "en": "An airspace zone a state unilaterally declares beyond its sovereign airspace, requiring aircraft entering it to identify themselves or report in advance for air-defense purposes; it carries no sovereign status under international law, but violations are routinely read as political/military signaling."
+      },
+      "category": "military",
+      "first_seen": "2026-08-15"
+    },
+    {
+      "term": "BIS",
+      "zh": "美國工業與安全局",
+      "expansion": "Bureau of Industry and Security",
+      "def": {
+        "zh": "美國商務部下轄、負責執行出口管制與技術轉讓審查的機構，是美中科技／半導體出口管制政策的主要執法單位。",
+        "en": "The US Department of Commerce agency responsible for enforcing export controls and reviewing technology transfers — the primary enforcement body behind US semiconductor/technology export-control policy toward China."
+      },
+      "category": "geo",
+      "first_seen": "2026-08-15"
+    }
+  ]
 }
