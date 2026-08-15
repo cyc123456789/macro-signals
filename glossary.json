@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-15",
+  "updated": "2026-08-16",
   "terms": [
     {
       "term": "CTF",
@@ -121,6 +121,94 @@
       },
       "category": "geo",
       "first_seen": "2026-08-15"
+    },
+    {
+      "term": "C2",
+      "zh": "指揮管制／指揮控制",
+      "expansion": "Command and Control",
+      "def": {
+        "zh": "軍事脈絡中指用於下達指令、協調分散單位並維持作戰控制的節點或系統；在資安脈絡中則指攻擊者用來遙控受駭裝置、下達指令並回收竊取資料的伺服器基礎設施。",
+        "en": "In military doctrine, the nodes and systems used to issue orders, coordinate dispersed units, and maintain operational control; in cybersecurity, the server infrastructure an attacker uses to remotely direct compromised devices and retrieve exfiltrated data."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-16"
+    },
+    {
+      "term": "TPM",
+      "zh": "可信賴平台模組",
+      "expansion": "Trusted Platform Module",
+      "def": {
+        "zh": "內建於主機板或處理器中的安全晶片／韌體模組，用於產生與保管加密金鑰、驗證開機流程完整性，並向作業系統或遠端服務證明裝置未遭竄改；是零信任架構常見的硬體信任根。",
+        "en": "A security chip or firmware module built into a motherboard or processor that generates and safeguards cryptographic keys, verifies boot-process integrity, and attests to an operating system or remote service that a device has not been tampered with — a common hardware root of trust in zero-trust architectures."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-16"
+    },
+    {
+      "term": "PASSEX",
+      "zh": "通過操演",
+      "expansion": "Passing Exercise",
+      "def": {
+        "zh": "兩國海軍艦艇在海上偶遇或途經彼此水域時，依國際海軍慣例進行的簡短禮節性協同操演（如通信、隊形、海上補給），性質上屬於禮貌性海軍外交，不代表雙邊已建立正式軍事同盟或事先規劃的演習關係。",
+        "en": "A brief, courtesy-based coordination drill (e.g., communications, formation-keeping, underway replenishment) conducted between two navies' vessels that encounter each other at sea or transit through each other's waters, following international naval custom — routine maritime diplomacy, not evidence of a formal alliance or a pre-planned bilateral exercise."
+      },
+      "category": "military",
+      "first_seen": "2026-08-16"
+    },
+    {
+      "term": "SPACECOM",
+      "zh": "美國太空軍司令部",
+      "expansion": "United States Space Command",
+      "def": {
+        "zh": "美軍作戰型聯合司令部之一，負責規劃與執行太空作戰，涵蓋衛星防護、太空態勢感知，以及對敵方太空能力的反制行動。",
+        "en": "One of the US military's combatant commands, responsible for planning and conducting space operations, including satellite protection, space domain awareness, and counter-operations against adversary space capabilities."
+      },
+      "category": "military",
+      "first_seen": "2026-08-16"
+    },
+    {
+      "term": "ASAT",
+      "zh": "反衛星武器",
+      "expansion": "Anti-Satellite Weapon",
+      "def": {
+        "zh": "專門設計用來摧毀、致盲或干擾敵方衛星的武器系統，可分為動能（直接撞擊摧毀）與非動能（電子干擾、雷射致盲、網路攻擊等）兩類。",
+        "en": "A weapon system designed to destroy, blind, or disable an adversary's satellites, spanning kinetic (direct-impact destruction) and non-kinetic (jamming, laser dazzling, cyberattack) methods."
+      },
+      "category": "military",
+      "first_seen": "2026-08-16"
+    },
+    {
+      "term": "pLEO",
+      "zh": "擴散型低軌衛星星系",
+      "expansion": "proliferated Low Earth Orbit",
+      "def": {
+        "zh": "由數百至數千顆小型衛星組成、部署於低地球軌道的大型星系（如Starlink），因數量龐大而具備抗毀性，同時也對傳統反衛星戰略構成新的挑戰。",
+        "en": "A large satellite constellation of hundreds to thousands of small satellites deployed in low Earth orbit (e.g., Starlink); its sheer numbers make it resilient to attrition and pose a distinct challenge to traditional anti-satellite strategy."
+      },
+      "category": "tech",
+      "first_seen": "2026-08-16"
+    },
+    {
+      "term": "IPL",
+      "zh": "整合優先清單",
+      "expansion": "Integrated Priorities List",
+      "def": {
+        "zh": "美軍各聯合作戰司令部定期向五角大廈提交、用以排序未來預算週期所需武器系統與能力需求的正式文件，是影響國防採購優先順序的關鍵輸入。",
+        "en": "A formal document each US combatant command periodically submits to the Pentagon ranking the weapons systems and capabilities it needs for upcoming budget cycles — a key input shaping defense-procurement priorities."
+      },
+      "category": "military",
+      "first_seen": "2026-08-16"
+    },
+    {
+      "term": "ECCN",
+      "zh": "出口管制分類編號",
+      "expansion": "Export Control Classification Number",
+      "def": {
+        "zh": "US商務部用來將受管制物項（如特定無人機、半導體設備）歸類，以決定其出口許可要求的編號系統，是出口管制執法的基本分類單位。",
+        "en": "A classification code the US Commerce Department assigns to controlled items (e.g., certain drones, semiconductor equipment) to determine their export-licensing requirements — the basic unit of export-control enforcement."
+      },
+      "category": "geo",
+      "first_seen": "2026-08-16"
     }
   ]
 }

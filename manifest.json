@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-15",
+  "updated": "2026-08-16",
   "reports": [
+    {
+      "file": "reports/2026-08-16-brief.json",
+      "date": "2026-08-16",
+      "kind": "brief",
+      "title": {
+        "zh": "從 Han Kuang 到太空軍：斬首戰術擴散與出口管制的分岔訊號",
+        "en": "From Han Kuang to Space Command: Decapitation-Tactic Diffusion and the Export-Control Bifurcation"
+      }
+    },
     {
       "file": "reports/2026-08-15-brief.json",
       "date": "2026-08-15",
