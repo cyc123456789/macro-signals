@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-16",
+  "updated": "2026-08-17",
   "terms": [
     {
       "term": "CTF",
@@ -209,6 +209,215 @@
       },
       "category": "geo",
       "first_seen": "2026-08-16"
+    },
+    {
+      "term": "TTP",
+      "zh": "戰術、技術與程序",
+      "expansion": "Tactics, Techniques, and Procedures",
+      "def": {
+        "zh": "威脅情報中描述行為者「習慣怎麼做事」的抽象層：戰術是目的、技術是手段、程序是具體執行步驟。在 Pyramid of Pain 中位居頂端，因為攻擊者更換 TTP 的成本遠高於更換工具或基礎設施，因此長期被當成歸因最可靠的依據。",
+        "en": "The layer of threat intelligence describing how an actor habitually operates: tactics are goals, techniques are means, procedures are concrete execution steps. It sits at the top of the Pyramid of Pain because changing TTPs costs an attacker far more than changing tools or infrastructure, which is why it has long been treated as the most reliable basis for attribution."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-17"
+    },
+    {
+      "term": "ATT&CK",
+      "zh": "對抗戰術與技術知識庫",
+      "expansion": "MITRE Adversarial Tactics, Techniques, and Common Knowledge",
+      "def": {
+        "zh": "MITRE 維護的公開對抗行為分類框架，把攻擊行為編碼為 14 種戰術與數百項技術／子技術，並附上各已知威脅群組的側寫，是目前業界比對與交換威脅情報的共通語言。",
+        "en": "MITRE's public taxonomy of adversary behavior, encoding attacks into 14 tactics and hundreds of techniques and sub-techniques, with profiles for known threat groups. It is the industry's common language for comparing and exchanging threat intelligence."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-17"
+    },
+    {
+      "term": "APT",
+      "zh": "進階持續性威脅",
+      "expansion": "Advanced Persistent Threat",
+      "def": {
+        "zh": "泛指資源充足、目標明確且長期潛伏的攻擊群組，通常有國家背景。業界慣以編號（如 APT28、APT41）指稱特定群集，但編號代表的是「一組被觀察到的行為特徵」，不必然等同某個具體組織。",
+        "en": "A well-resourced, goal-directed intrusion group that maintains long-term access, typically state-linked. The industry refers to specific clusters by number (APT28, APT41), but a number denotes an observed behavioral cluster and does not necessarily map to a single concrete organization."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-17"
+    },
+    {
+      "term": "CTI",
+      "zh": "網路威脅情報",
+      "expansion": "Cyber Threat Intelligence",
+      "def": {
+        "zh": "蒐集、分析並產出關於威脅行為者能力、意圖與手法的情報產品，用於支撐偵測、獵捕與決策。其效力高度依賴「行為者留下可辨識且穩定的痕跡」這個前提。",
+        "en": "The collection, analysis and production of intelligence on threat actors' capabilities, intentions and methods, used to support detection, hunting and decision-making. Its effectiveness depends heavily on the premise that actors leave recognizable and stable traces."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-17"
+    },
+    {
+      "term": "OPSEC",
+      "zh": "作業安全",
+      "expansion": "Operations Security",
+      "def": {
+        "zh": "行為者為隱藏自身身分、位置與意圖所採取的作業紀律，例如基礎設施輪替、時區偽裝、語言痕跡清理。OPSEC 習慣本身往往帶有訓練體系的特徵，因此長期是歸因的重要線索。",
+        "en": "The operational discipline an actor uses to conceal identity, location and intent — rotating infrastructure, masking time zones, scrubbing language artifacts. OPSEC habits tend to carry the marks of a training system, which is why they have long been a valuable attribution clue."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-17"
+    },
+    {
+      "term": "IOC",
+      "zh": "入侵指標",
+      "expansion": "Indicator of Compromise",
+      "def": {
+        "zh": "可用於偵測入侵的具體技術痕跡，如 IP 位址、網域、檔案雜湊值。IOC 的價值在於可被第三方獨立驗證與複現；一份不釋出 IOC 的威脅報告，在證據等級上等同無法交叉查核的單方陳述。",
+        "en": "Concrete technical artifacts used to detect an intrusion — IP addresses, domains, file hashes. Their value lies in being independently verifiable and reproducible by third parties; a threat report that releases no IOCs is, evidentially, an uncorroborated single-party assertion."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-17"
+    },
+    {
+      "term": "LLM",
+      "zh": "大型語言模型",
+      "expansion": "Large Language Model",
+      "def": {
+        "zh": "以大規模文本訓練的生成式模型，可依自然語言指令產出文字與程式碼。當它被嵌入具備工具呼叫與自主規劃能力的框架時即成為「代理人」，能在無人逐步指示的情況下推進多階段任務。",
+        "en": "A generative model trained on large text corpora that produces text and code from natural-language instruction. Embedded in a framework with tool-calling and autonomous planning, it becomes an agent capable of advancing multi-stage tasks without step-by-step human direction."
+      },
+      "category": "tech",
+      "first_seen": "2026-08-17"
+    },
+    {
+      "term": "API",
+      "zh": "應用程式介面",
+      "expansion": "Application Programming Interface",
+      "def": {
+        "zh": "軟體之間的呼叫介面。在 AI 供應鏈的脈絡中特別重要，因為透過 API 存取模型會在供應商端留下帳號、金鑰與計費紀錄——這正是本報告所稱「供應層」可被觀察的原因。",
+        "en": "The calling interface between software systems. It matters especially in the AI supply chain because accessing a model via API leaves account, key and billing records on the provider's side — precisely what makes the provisioning layer observable."
+      },
+      "category": "tech",
+      "first_seen": "2026-08-17"
+    },
+    {
+      "term": "GPU",
+      "zh": "圖形處理器",
+      "expansion": "Graphics Processing Unit",
+      "def": {
+        "zh": "原用於圖形運算、現為 AI 訓練與推論主力的平行運算晶片。是美國對中出口管制的核心標的，也是「租用算力」這條規避路徑的實體基礎。",
+        "en": "A parallel-computing chip originally for graphics, now the workhorse of AI training and inference. It is the core target of US export controls toward China and the physical basis of the compute-rental workaround."
+      },
+      "category": "tech",
+      "first_seen": "2026-08-17"
+    },
+    {
+      "term": "GTIG",
+      "zh": "Google 威脅情報小組",
+      "expansion": "Google Threat Intelligence Group",
+      "def": {
+        "zh": "Google 旗下整合 Mandiant 與自有遙測的威脅情報單位，2025 年起持續發布 AI 濫用相關研究，包括首批在執行期呼叫模型即時生成程式碼的惡意程式家族。",
+        "en": "Google's threat intelligence unit combining Mandiant with Google's own telemetry. Since 2025 it has published research on AI misuse, including the first malware families observed calling models at runtime to generate code just-in-time."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-17"
+    },
+    {
+      "term": "MSTIC",
+      "zh": "Microsoft 威脅情報中心",
+      "expansion": "Microsoft Threat Intelligence Center",
+      "def": {
+        "zh": "Microsoft 的威脅情報單位，以天氣／礦物命名法（如 Sleet 指北韓、Typhoon 指中國）標示國家關聯群集，其公開評估在 AI 是否構成自主威脅的辯論中傾向保守。",
+        "en": "Microsoft's threat intelligence unit, which labels state-linked clusters with a weather-and-mineral naming scheme (Sleet for North Korea, Typhoon for China). Its public assessments lean conservative in the debate over whether AI constitutes an autonomous threat."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-17"
+    },
+    {
+      "term": "EAR",
+      "zh": "出口管理條例",
+      "expansion": "Export Administration Regulations",
+      "def": {
+        "zh": "美國商務部管轄的兩用物項出口法規體系，由 BIS 執行。其對「出口」的定義以實體移轉與技術釋出為核心，因此遠端提供雲端運算長期不被視為出口事件——這正是 Remote Access Security Act 要填補的缺口。",
+        "en": "The US Commerce Department's dual-use export regime, administered by BIS. Its definition of export centers on physical transfer and technology release, which is why remotely providing cloud compute has long not counted as an export event — the gap the Remote Access Security Act seeks to close."
+      },
+      "category": "geo",
+      "first_seen": "2026-08-17"
+    },
+    {
+      "term": "IaaS",
+      "zh": "基礎設施即服務",
+      "expansion": "Infrastructure as a Service",
+      "def": {
+        "zh": "以租用方式提供運算、儲存與網路等基礎資源的雲端模式。因為使用者取得的是「存取權」而非硬體本身，它成為既有以貨物為中心的出口管制體系最難處理的形態。",
+        "en": "A cloud model providing compute, storage and networking on a rental basis. Because the customer obtains access rights rather than the hardware itself, it is the form that goods-centric export control regimes handle worst."
+      },
+      "category": "tech",
+      "first_seen": "2026-08-17"
+    },
+    {
+      "term": "SaaS",
+      "zh": "軟體即服務",
+      "expansion": "Software as a Service",
+      "def": {
+        "zh": "以訂閱方式透過網路提供軟體功能的模式。與 IaaS 同樣涉及「能力以服務形式跨境流動」，因此一併被納入遠端存取管制的立法討論範圍。",
+        "en": "Software delivered over the network on a subscription basis. Like IaaS it involves capability crossing borders as a service, which is why it is swept into the same legislative debate over remote-access controls."
+      },
+      "category": "tech",
+      "first_seen": "2026-08-17"
+    },
+    {
+      "term": "KYC",
+      "zh": "認識你的客戶",
+      "expansion": "Know Your Customer",
+      "def": {
+        "zh": "源自金融反洗錢的客戶身分查核義務，近年被提議移植到雲端與 AI 服務業者身上，要求其查驗境外客戶身分並通報。這是把管制責任從貨物流向轉移到服務關係的典型設計。",
+        "en": "A customer-identification duty originating in financial anti-money-laundering rules, recently proposed for cloud and AI service providers, requiring them to verify and report foreign customers. It is the archetypal design for shifting regulatory responsibility from goods flows to service relationships."
+      },
+      "category": "geo",
+      "first_seen": "2026-08-17"
+    },
+    {
+      "term": "NPRM",
+      "zh": "規則制定提案公告",
+      "expansion": "Notice of Proposed Rulemaking",
+      "def": {
+        "zh": "美國行政機關在正式訂定法規前公告草案並徵求公眾意見的程序。NPRM 未必會定案——BIS 於 2024 年針對 IaaS 業者的 KYC 提案即從未成為最終規則。",
+        "en": "The US administrative procedure for publishing a draft rule and inviting public comment before finalization. An NPRM need not become law — BIS's 2024 proposal for IaaS provider KYC never became a final rule."
+      },
+      "category": "geo",
+      "first_seen": "2026-08-17"
+    },
+    {
+      "term": "MOFCOM",
+      "zh": "中國商務部",
+      "expansion": "Ministry of Commerce of the People's Republic of China",
+      "def": {
+        "zh": "中國主管對外貿易與出口管制的部門，負責維護出口管制清單與兩用物項許可。2026 年起就是否將 AI 模型權重、訓練資料與晶片設計納入管制向產業界徵詢意見。",
+        "en": "China's ministry responsible for foreign trade and export control, maintaining control lists and dual-use licensing. From 2026 it has been consulting industry on whether to bring AI model weights, training data and chip designs under control."
+      },
+      "category": "geo",
+      "first_seen": "2026-08-17"
+    },
+    {
+      "term": "GPAI",
+      "zh": "通用人工智慧模型",
+      "expansion": "General-Purpose AI model",
+      "def": {
+        "zh": "歐盟 AI Act 中的法律類別，指可適用於多種下游任務的基礎模型。其提供者須負擔技術文件、著作權政策與訓練資料摘要等義務，義務自 2025 年 8 月生效、2026 年 8 月起進入執法階段。",
+        "en": "A legal category in the EU AI Act covering foundation models applicable to many downstream tasks. Providers carry obligations on technical documentation, copyright policy and training-data summaries; the obligations applied from August 2025 and entered enforcement in August 2026."
+      },
+      "category": "tech",
+      "first_seen": "2026-08-17"
+    },
+    {
+      "term": "CADA",
+      "zh": "雲端與人工智慧發展法",
+      "expansion": "Cloud and AI Development Act",
+      "def": {
+        "zh": "歐盟 2026 年通過的雲端主權法規，建立四級主權框架，判準包含歐盟境內處理、獨立於第三國控制、供應鏈透明度與獨立稽核。其動機是降低對美國雲的依賴，而非拒止特定對手。",
+        "en": "The EU's 2026 cloud sovereignty regulation, establishing a four-tier framework whose criteria include EU-based processing, independence from third-country control, supply-chain transparency and independent audit. Its motive is reducing dependence on US cloud rather than denying a specific adversary."
+      },
+      "category": "geo",
+      "first_seen": "2026-08-17"
     }
   ]
 }

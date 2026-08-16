@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-16",
+  "updated": "2026-08-17",
   "reports": [
+    {
+      "file": "reports/2026-08-17-weekly.json",
+      "date": "2026-08-17",
+      "kind": "weekly",
+      "title": {
+        "zh": "供應層才是新的歸因層：當攻擊者與晶片同時變成一種「存取關係」",
+        "en": "The Provisioning Layer Is the New Attribution Layer: When Both the Attacker and the Chip Become an Access Relationship"
+      }
+    },
     {
       "file": "reports/2026-08-16-brief.json",
       "date": "2026-08-16",
