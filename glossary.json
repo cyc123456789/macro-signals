@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17",
+  "updated": "2026-08-18",
   "terms": [
     {
       "term": "CTF",
@@ -418,6 +418,28 @@
       },
       "category": "geo",
       "first_seen": "2026-08-17"
+    },
+    {
+      "term": "CVE",
+      "zh": "通用漏洞揭露編號",
+      "expansion": "Common Vulnerabilities and Exposures",
+      "def": {
+        "zh": "由 MITRE 維護的標準化漏洞編號系統，為每一個公開揭露的軟體或韌體安全漏洞分配唯一識別碼，讓廠商、研究者與政府機構能用同一個代號交叉引用同一項漏洞。",
+        "en": "A standardized vulnerability-numbering system maintained by MITRE, assigning a unique identifier to each publicly disclosed software or firmware security flaw so vendors, researchers, and government agencies can cross-reference the same vulnerability by a common label."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-18"
+    },
+    {
+      "term": "KEV",
+      "zh": "已遭利用漏洞目錄",
+      "expansion": "Known Exploited Vulnerabilities Catalog",
+      "def": {
+        "zh": "美國網路安全與基礎設施安全局（CISA）維護的漏洞清單，只收錄已被證實在實際攻擊中遭利用的漏洞，一經列入即對聯邦機構課以強制修補期限，是判斷某漏洞是否已從理論風險變成現實威脅的官方指標。",
+        "en": "A vulnerability list maintained by the US Cybersecurity and Infrastructure Security Agency (CISA), containing only flaws confirmed to have been exploited in real-world attacks; listing triggers a mandatory remediation deadline for federal agencies, making it an official signal that a vulnerability has moved from theoretical risk to active threat."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-18"
     }
   ]
 }

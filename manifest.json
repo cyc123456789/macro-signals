@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-17",
+  "updated": "2026-08-18",
   "reports": [
+    {
+      "file": "reports/2026-08-18-brief.json",
+      "date": "2026-08-18",
+      "kind": "brief",
+      "title": {
+        "zh": "華府對盟邦的承諾打折，北京對台灣特別預算下手：同一週兩種施壓邏輯",
+        "en": "Washington Discounts a Commitment to an Ally While Beijing Targets Taiwan's Special Budget: Two Pressure Logics, Same Week"
+      }
+    },
     {
       "file": "reports/2026-08-17-weekly.json",
       "date": "2026-08-17",
