@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-18",
+  "updated": "2026-08-20",
   "reports": [
+    {
+      "file": "reports/2026-08-20-brief.json",
+      "date": "2026-08-20",
+      "kind": "brief",
+      "title": {
+        "zh": "美軍在台灣海峽少走一趟,在關島多蓋一個飛彈營:訊號正在從前線移向後方",
+        "en": "One Fewer US Transit Through the Taiwan Strait, One More Missile Battalion on Guam: The Signal Is Moving From the Front Line to the Rear"
+      }
+    },
     {
       "file": "reports/2026-08-18-brief.json",
       "date": "2026-08-18",

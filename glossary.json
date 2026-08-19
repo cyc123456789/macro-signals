@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18",
+  "updated": "2026-08-20",
   "terms": [
     {
       "term": "CTF",
@@ -440,6 +440,61 @@
       },
       "category": "cyber",
       "first_seen": "2026-08-18"
+    },
+    {
+      "term": "THAAD",
+      "zh": "薩德飛彈防禦系統",
+      "expansion": "Terminal High Altitude Area Defense",
+      "def": {
+        "zh": "美國陸軍研發的終端高空區域防禦系統，用於在飛彈飛行末端、大氣層內外攔截短程至中程彈道飛彈。",
+        "en": "A US Army missile-defense system designed to intercept short- to medium-range ballistic missiles during their terminal phase, both inside and just outside the atmosphere."
+      },
+      "category": "military",
+      "first_seen": "2026-08-20"
+    },
+    {
+      "term": "IRGC",
+      "zh": "伊斯蘭革命衛隊",
+      "expansion": "Islamic Revolutionary Guard Corps",
+      "def": {
+        "zh": "伊朗一支獨立於正規軍之外的精銳軍事組織，同時掌控大量經濟資源與海外准軍事行動，是伊朗地緣政治與網路行動的關鍵執行者。",
+        "en": "An elite Iranian military organization operating parallel to the regular armed forces, controlling significant economic assets and overseeing many of Iran's overseas paramilitary and cyber operations."
+      },
+      "category": "military",
+      "first_seen": "2026-08-20"
+    },
+    {
+      "term": "OT",
+      "zh": "作業技術",
+      "expansion": "Operational Technology",
+      "def": {
+        "zh": "用於監控與控制實體設備、製程與基礎設施運作的硬體與軟體系統（如 PLC、SCADA），與管理資訊的 IT 系統相對而言，一旦遭入侵可能直接造成實體損害。",
+        "en": "The hardware and software systems (e.g., PLCs, SCADA) that monitor and control physical equipment, processes, and infrastructure — as distinct from IT systems that manage information — where compromise can cause direct physical harm."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-20"
+    },
+    {
+      "term": "RaaS",
+      "zh": "勒索軟體即服務",
+      "expansion": "Ransomware-as-a-Service",
+      "def": {
+        "zh": "一種犯罪商業模式，勒索軟體開發者將工具與基礎設施出租給附屬犯罪者（affiliates）使用，雙方按比例分潤贖金。",
+        "en": "A criminal business model in which ransomware developers lease their tools and infrastructure to affiliate operators, splitting ransom proceeds by an agreed share."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-20"
+    },
+    {
+      "term": "IAB",
+      "zh": "初始存取掮客",
+      "expansion": "Initial Access Broker",
+      "def": {
+        "zh": "專門入侵並出售企業網路初始存取權限給其他犯罪集團（如勒索軟體團夥）的中間人角色，是網路犯罪供應鏈中的分工節點。",
+        "en": "An intermediary who breaches organizations and sells the resulting initial network access to other criminal groups (such as ransomware operators) — a specialized node in the cybercrime supply chain."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-20"
     }
   ]
 }
