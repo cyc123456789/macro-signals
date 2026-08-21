@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-20",
+  "updated": "2026-08-22",
   "reports": [
+    {
+      "file": "reports/2026-08-22-brief.json",
+      "date": "2026-08-22",
+      "kind": "brief",
+      "title": {
+        "zh": "縮減演習換不到北韓降溫,關島卻多了一個飛彈營:姿態管理外交的第一個負回饋樣本",
+        "en": "Scaling Back Drills Didn't Cool North Korea Down, But Guam Got a Missile Battalion Anyway: The First Negative-Feedback Case for Gesture-Management Diplomacy"
+      }
+    },
     {
       "file": "reports/2026-08-20-brief.json",
       "date": "2026-08-20",

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-20",
+  "updated": "2026-08-22",
   "terms": [
     {
       "term": "CTF",
@@ -495,6 +495,39 @@
       },
       "category": "cyber",
       "first_seen": "2026-08-20"
+    },
+    {
+      "term": "CVSS",
+      "zh": "通用漏洞評分系統",
+      "expansion": "Common Vulnerability Scoring System",
+      "def": {
+        "zh": "用來為軟體漏洞的嚴重程度打分（0–10分）的產業標準系統，分數越高代表可被利用造成的危害越大；但分數本身只反映理論嚴重性，不代表該漏洞是否已被實際利用，這正是 CISA 後續改用「已遭利用證據」取代單純 CVSS 分數作為修補優先順序判準的原因。",
+        "en": "An industry-standard system for scoring the severity of a software vulnerability on a 0–10 scale, with higher scores indicating greater potential impact; the score reflects theoretical severity only, not whether the flaw has actually been exploited — the reason CISA later moved to an exploit-evidence model rather than raw CVSS scores for patch prioritization."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-22"
+    },
+    {
+      "term": "SRBM",
+      "zh": "短程彈道飛彈",
+      "expansion": "Short-Range Ballistic Missile",
+      "def": {
+        "zh": "射程通常在1,000公里以內的彈道飛彈，北韓近年密集試射的主力機型多屬此類，用於評估其對日本、南韓等區域目標的即時打擊能力與飛彈量產速度。",
+        "en": "A ballistic missile with a range typically under 1,000 km; most of North Korea's frequent recent test launches fall into this category, used to gauge its immediate strike capability against regional targets such as Japan and South Korea and the pace of its missile production."
+      },
+      "category": "military",
+      "first_seen": "2026-08-22"
+    },
+    {
+      "term": "BOD",
+      "zh": "強制性操作指令",
+      "expansion": "Binding Operational Directive",
+      "def": {
+        "zh": "美國 CISA 對聯邦文職機關（FCEB）發出、具強制執行力的網路安全指令，要求在指定期限內完成特定修補或防護措施；2026年6月生效的 BOD 26-04 以「已遭利用證據」取代單純 CVSS 分數，作為決定修補優先順序與期限的判準。",
+        "en": "A binding cybersecurity directive CISA issues to US federal civilian executive branch (FCEB) agencies, requiring specific remediation or protective actions within a set deadline; BOD 26-04, effective June 2026, replaced flat CVSS-based severity with an exploit-evidence model for setting patch priority and deadlines."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-22"
     }
   ]
 }
