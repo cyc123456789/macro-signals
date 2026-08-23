@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-22",
+  "updated": "2026-08-24",
   "terms": [
     {
       "term": "CTF",
@@ -528,6 +528,72 @@
       },
       "category": "cyber",
       "first_seen": "2026-08-22"
+    },
+    {
+      "term": "KN-30",
+      "zh": "KN-30（火星-11C）短程彈道飛彈",
+      "expansion": "Hwasong-11C",
+      "def": {
+        "zh": "北韓最新型的短程彈道飛彈,彈體較先前的KN-23更長、彈頭更重(可達2,500公斤),2026年8月首度被證實部署於俄羅斯境內、用於實際打擊烏克蘭。",
+        "en": "North Korea's newest short-range ballistic missile, longer and heavier-warheaded (up to 2,500 kg) than the earlier KN-23; first confirmed to be deployed inside Russia for actual strikes on Ukraine in August 2026."
+      },
+      "category": "military",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "TEL",
+      "zh": "行動式發射器",
+      "expansion": "Transporter Erector Launcher",
+      "def": {
+        "zh": "可將飛彈由水平運輸姿態豎起至發射姿態的機動式車輛平台,讓彈道飛彈部隊得以在發射後迅速轉移、提高存活率,是機動彈道飛彈系統不可或缺的支援載具。",
+        "en": "A mobile vehicle platform that transports a missile and erects it from horizontal to launch position; lets ballistic missile units relocate quickly after firing to improve survivability, and is an indispensable support vehicle for any road-mobile ballistic missile system."
+      },
+      "category": "military",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "HUR",
+      "zh": "烏克蘭國防部情報總局",
+      "expansion": "Holovne Upravlinnya Rozvidky (Defence Intelligence of Ukraine)",
+      "def": {
+        "zh": "烏克蘭國防部下轄的軍事情報機構,負責對外情報蒐集與特種作戰,是俄烏戰爭中烏方對外公開俄軍與其盟友(如北韓)動態的主要官方消息來源之一;作為衝突當事一方,其公開評估具高度情報價值但非中立第三方確認。",
+        "en": "Ukraine's Ministry of Defense military intelligence agency, responsible for foreign intelligence collection and special operations; one of the main official sources through which Ukraine publicizes Russian and allied (e.g., North Korean) military activity during the war — a valuable but non-neutral source, since Ukraine is a party to the conflict."
+      },
+      "category": "military",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "UNC",
+      "zh": "未分類威脅叢集（Mandiant/Google命名編號）",
+      "expansion": "Uncategorized (Threat Cluster)",
+      "def": {
+        "zh": "Mandiant(現為Google旗下)用來標示「已觀察到一組具內部一致性的入侵活動、但尚未有足夠證據將其升級為正式命名威脅組織(如APT編號)」的暫時性編號,UNC叢集可能後續被合併、升級或證實與已知組織相關。",
+        "en": "A provisional designation Mandiant (now part of Google) assigns to a cluster of intrusion activity that shows internal consistency but lacks sufficient evidence to be promoted to a formally named threat group (e.g., an APT number); a UNC cluster may later be merged, upgraded, or confirmed to overlap with a known group."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "OAuth",
+      "zh": "開放式授權協定",
+      "expansion": "Open Authorization",
+      "def": {
+        "zh": "允許使用者授權第三方應用程式存取自己帳號特定資源、卻不必把帳號密碼交給該應用程式的開放標準協定;因為授權當下使用者看到的確實是官方登入頁面,近年被威脅行為者用來將竊取存取權杖偽裝成一次正常登入,使傳統「檢查是否為官方網域」的防禦直覺失效。",
+        "en": "An open standard protocol letting a user authorize a third-party app to access specific account resources without handing over the account password; because the login screen shown at the moment of authorization is genuinely the official one, threat actors have increasingly abused it to disguise access-token theft as an ordinary login, defeating the standard user instinct of checking whether the domain is official."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "OTA",
+      "zh": "無線韌體更新",
+      "expansion": "Over-the-Air (update)",
+      "def": {
+        "zh": "透過網路而非實體連接,遠端推送並安裝韌體或軟體更新的機制,廣泛用於物聯網裝置、車用系統與行動裝置;因為使用者通常預設信任這條管道且不會逐次審查更新內容,一旦該管道本身遭劫持,就會成為大規模、難以逐台稽核的惡意程式散布途徑。",
+        "en": "A mechanism for remotely pushing and installing firmware or software updates over a network rather than a physical connection, widely used in IoT devices, automotive systems, and mobile devices; because users typically trust this channel by default and rarely scrutinize individual updates, a hijacked OTA channel becomes a large-scale malware distribution vector that is hard to audit device by device."
+      },
+      "category": "tech",
+      "first_seen": "2026-08-24"
     }
   ]
 }

@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-22",
+  "updated": "2026-08-24",
   "reports": [
+    {
+      "file": "reports/2026-08-24-brief.json",
+      "date": "2026-08-24",
+      "kind": "brief",
+      "title": {
+        "zh": "北韓飛彈上了俄羅斯戰場當實測，GTIG把「合法登入」正式列為國家級攻擊手法：這期訊號的共同主題是被重新定義的信任管道",
+        "en": "North Korea's Missiles Get Combat-Tested in Russia While GTIG Formally Lists 'Legitimate Login' as Nation-State Tradecraft: This Cycle's Common Thread Is Trusted Channels Being Redefined as Attack Surfaces"
+      }
+    },
     {
       "file": "reports/2026-08-22-brief.json",
       "date": "2026-08-22",
