@@ -1,0 +1,236 @@
+{
+  "date": "2026-08-24",
+  "kind": "weekly",
+  "title": {
+    "zh": "「三天內修補並完成鑑識分流」——但那層資產從出廠就不把證據送出機外",
+    "en": "\"Patch and Forensically Triage Within Three Days\" — On a Layer That Ships With Evidence Forwarding Switched Off"
+  },
+  "focus": {
+    "zh": "BOD 26-04 把最短修補期限壓到三天並要求同一窗口內完成鑑識分流，而這條規則咬得最緊的資產——虛擬化管理平面、邊界設備、暴露在公網的 PLC——正好是停機成本最高、不支援 EDR、且原廠預設不把稽核紀錄送出機外的那一層。真正的瓶頸不在修補期限，而在證據產生的預設值；而那個槓桿握在產品法規（CRA）手上，不在部署法規（BOD）手上。",
+    "en": "BOD 26-04 compresses the shortest federal remediation deadline to three days and demands forensic triage inside the same window. But the asset class it binds hardest — virtualization management planes, edge appliances, internet-exposed PLCs — is precisely the layer that costs the most to take offline, cannot host EDR, and ships with audit-log forwarding disabled by default. The binding constraint is not the patch clock; it is the default configuration of evidence generation. And that lever sits with product regulation (the CRA), not deployment regulation (a BOD)."
+  },
+  "sections": [
+    {
+      "id": "nexus",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "likely",
+          "title": {
+            "zh": "兩個時鐘量錯了起點：修補時鐘從 KEV 列入起算，利用時鐘卻已經跑了負七天",
+            "en": "Two Clocks Measured From the Wrong Zero: The Patch Clock Starts at KEV Listing, the Exploitation Clock Started Seven Days Earlier"
+          },
+          "summary": {
+            "zh": "CISA 於 2026 年 6 月 10 日發布 BOD 26-04，取代 BOD 22-01，把以 CVSS 分數決定期限的做法換成四變數風險矩陣：資產是否可從公網觸及、漏洞是否已列入 KEV、攻擊是否可完全自動化、成功利用是否取得部分或完全控制權。四項全中即進入最高級距——三天內完成修補或緩解，且必須同時完成鑑識分流以判斷該資產是否已遭入侵；其餘為 14 天或 60 天。關鍵細節是計時起點：三天從 CISA 將漏洞列入 KEV、或機關自行在資產上識別到它（兩者取先）起算，修補程式是否已經存在不影響計時。同一時間，Mandiant M-Trends 2026 把平均利用時間（MTTE）估在負七天——漏洞平均在修補程式問世之前七天就已在野被利用。",
+            "en": "CISA issued BOD 26-04 on 10 June 2026, retiring BOD 22-01 and replacing CVSS-driven deadlines with a four-variable risk matrix: is the asset reachable from a public network, is the flaw in the KEV catalog, can the exploit be fully automated, and does successful exploitation grant partial or total control. All four yes puts the vulnerability in the top tier — remediate or mitigate within three days, plus mandatory forensic triage to determine whether the asset is already compromised. Other combinations get 14 or 60 days. The detail that matters is where the clock starts: at KEV listing or at agency identification on the asset, whichever comes first. Patch availability does not start it. Meanwhile Mandiant's M-Trends 2026 puts mean time to exploit at minus seven days — exploits are live in the wild an average of a week before a patch exists."
+          },
+          "implication": {
+            "zh": "這條規則在結構上要求機關在一個修補程式可能尚不存在的窗口內完成修補。它因此會系統性地退化成「緩解」，而在你關注的資產類別上，緩解幾乎只有一種形式：斷網或縮小網段——一種無法遠端驗證的動作。你在跟政策圈對話時可以直接指出：BOD 26-04 的實際產出不是更快的修補，而是更多不可稽核的緩解宣告。",
+            "en": "Structurally, the rule requires remediation inside a window in which the patch may not yet exist. It therefore degrades systematically into \"mitigation\" — and on this asset class, mitigation has essentially one form: pull it off the network or squeeze it into a narrower segment. That is an action nobody can verify remotely. The line to use with policy people: BOD 26-04's actual output is not faster patching, it is a larger volume of unauditable mitigation claims."
+          },
+          "counterpoint": {
+            "zh": "CISA 自己在某大型民事機關的初步試算顯示，只有約 1% 的漏洞實例落入三天級距，超過 60% 可延到下一個系統升級週期——照這個分布，這條規則遠比批評者說的溫和，主要是一次分流標籤的重整。但反過來看新增流量：6 月 10 日至 7 月 29 日新列入 KEV 的 39 條漏洞中，有 34 條（87%）帶三天以內的期限。存量上不咬人、流量上很咬人，兩件事同時為真，而機關實際感受到的是後者。",
+            "en": "CISA's own pilot at one large civilian agency found only about 1% of vulnerability instances landing in the three-day bucket, with over 60% deferrable to the next upgrade cycle — on that distribution the rule is far gentler than critics claim, mostly a relabeling of triage. But look at the inbound flow instead: of the 39 vulnerabilities added to KEV between 10 June and 29 July, 34 (87%) carried a three-day-or-shorter deadline. Both are true at once — it does not bite on the installed base, it bites hard on new arrivals — and what agencies actually experience is the second."
+          },
+          "source": "CISA / Mandiant M-Trends 2026",
+          "url": "https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk",
+          "terms": [
+            "BOD",
+            "KEV",
+            "CVSS",
+            "MTTE",
+            "FCEB",
+            "EDR"
+          ]
+        },
+        {
+          "severity": "high",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "證據的預設值就是關的：VCSA 的稽核轉發出廠 active = no，抹碟即永久滅證",
+            "en": "Evidence Ships Switched Off: VCSA's Audit Forwarding Defaults to active = no, and Wiping the Disk Erases Residency Permanently"
+          },
+          "summary": {
+            "zh": "Google Threat Intelligence 針對 BRICKSTORM 發布的 vSphere 防禦指南，把管理平面的取證條件寫得非常具體。VMware vCenter Server Appliance（VCSA）跑在 Photon OS 上、核心層 auditd 是存在的，但把稽核事件送到遠端的 audisp 橋接器出廠設定為 `active = no`；透過 SSH 進入底層 shell 後執行的指令「沒有任何遠端記錄」；`/root/.bash_history` 只存在本機、且只在登出時落盤，`history -c` 或 `unset HISTFILE` 即可規避。VAMI 管理介面上的防火牆由 vCenter 這個應用程式自己管理，指南直言這是一種「循環依賴」——取得 vSphere 管理員權限者可以用系統自己的工具關掉保護該系統的控制項。指南的結論句是：若攻擊者抹除本機磁碟，其曾經駐留的證據將永久消失。它同時建議遠端日誌至少保留 400 天，理由是行為者平均停留 393 天。",
+            "en": "Google Threat Intelligence's vSphere defender's guide for BRICKSTORM spells out the forensic conditions on the management plane with unusual precision. The VMware vCenter Server Appliance (VCSA) runs Photon OS and does have kernel-level auditd — but the audisp bridge that forwards those events off-box ships set to `active = no`. Commands executed after an attacker reaches the underlying shell over SSH have, in the guide's words, no remote logging at all. `/root/.bash_history` lives only on the local disk and only flushes at logout, defeated by `history -c` or `unset HISTFILE`. The firewall exposed through the VAMI interface is administered by the very application it protects — the guide calls this a circular dependency, letting anyone with vSphere admin rights disable the control using the system's own tooling. Its blunt conclusion: if an attacker wipes the local disk, evidence of their residency is permanently erased. It recommends a minimum 400-day remote retention, because the actor's average dwell is 393 days."
+          },
+          "implication": {
+            "zh": "這是整份報告最該記住的一句：這層資產不是無法被儀器化，而是儀器出廠時是關的。對你的 provenance graph 研究，這條的意義是——在 Tier-0 資產上做溯源失敗，原因不在圖模型，而在那台機器根本沒有把核心事件送出來；一旦 audisp 打開，你要的 syscall 級邊就存在了。對政策對話，這條的意義更大：這是一個產品出廠設定的變數，不是使用者能力的變數，因此它可以被法規一次性改掉，成本落在製造商而不是每一個受害組織。",
+            "en": "This is the single line worth remembering: this layer is not un-instrumentable, it is instrumented-but-switched-off. For provenance-graph work, that reframes the failure — tracing on Tier-0 assets fails not because of the graph model but because the box never emits the kernel events the graph is built from; flip audisp on and the syscall-level edges you need exist. For policy conversations it matters more: this is a factory-default variable, not a user-capability variable, which means regulation can change it once, with the cost landing on the manufacturer rather than on every victim organization separately."
+          },
+          "source": "Google Cloud Threat Intelligence",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/vsphere-brickstorm-defender-guide",
+          "terms": [
+            "VCSA",
+            "VAMI",
+            "auditd",
+            "ESXi",
+            "Tier-0",
+            "SIEM"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cyber",
+      "items": [
+        {
+          "severity": "critical",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "CVE-2026-59310 的五天曲線：從路徑穿越到 ESXi 勒索，整條鏈上沒有一台機器跑得了 EDR",
+            "en": "The Five-Day Curve of CVE-2026-59310: Path Traversal to ESXi Ransomware, With No EDR-Capable Host Anywhere in the Chain"
+          },
+          "summary": {
+            "zh": "Broadcom 於 7 月底揭露 VMware vCenter Server 中 Syslog 伺服器元件的路徑穿越漏洞 CVE-2026-59310（CVSS 9.8，CWE-22），攻擊者可藉此以 root 身分執行指令而無需正常登入。研究團隊 QUIRSO 觀察到，受影響系統在揭露後第五個日曆天（8 月 3 日）開始回連攻擊者基礎設施；8 月 4 日一天新增 151 個受害 IP，8 月 5 日之前最終 361 個受害 IP 中的 343 個（約 95%）已經現形，橫跨 47 國，德國（55）、美國（41）、土耳其（38）、伊朗（26）、法國（25）合計占 185 個。至少一起事件的完整鏈路是：疑似未認證程式碼執行 → 反向 SSH 建立持久存取 → 建立帳號 → 取得 ESXi 控制權 → 勒索軟體。",
+            "en": "Broadcom disclosed CVE-2026-59310 at the end of July: a path-traversal flaw (CVSS 9.8, CWE-22) in the Syslog server component of VMware vCenter Server that lets an attacker run commands as root without a normal login. Researchers at QUIRSO observed affected systems beginning to call back to attacker infrastructure on 3 August — the fifth calendar day after disclosure. 151 additional victim IPs appeared on 4 August, and by 5 August 343 of the eventual 361 observed addresses (about 95%) had surfaced, spread across 47 countries; Germany (55), the US (41), Turkey (38), Iran (26) and France (25) accounted for 185 of them. At least one investigated intrusion ran the full chain: likely unauthenticated code execution, reverse SSH for persistence, account creation, ESXi control, ransomware."
+          },
+          "implication": {
+            "zh": "這是 BOD 26-04 四項條件全中的教科書案例，也是三天期限最直接的壓力測試。但注意曲線形狀：95% 的受害在第七天之前就已經發生，代表即使機關真的在三天內完成動作，也只擋得住尾巴。修補期限這個工具本身，在這種擴散曲線上能取得的邊際效益遠比政策叙事暗示的小。對台灣而言更該注意的是受害分布——這不是針對性行動，是掃全網，任何把 vCenter 管理介面暴露在公網的組織都在名單裡。",
+            "en": "This is the textbook case of all four BOD 26-04 criteria firing at once, and the most direct stress test of the three-day deadline. But look at the shape of the curve: 95% of the compromise had already happened before day seven, so even an agency that genuinely acts inside three days is only catching the tail. As an instrument, a patch deadline buys far less on a diffusion curve like this than the policy narrative implies. For Taiwan the distribution is the point — this was not targeted, it was internet-wide scanning, and any organization exposing a vCenter management interface was on the list."
+          },
+          "source": "Infosecurity Magazine / QUIRSO",
+          "url": "https://www.infosecurity-magazine.com/news/vcenter-cve-2026-59310-exploited/",
+          "terms": [
+            "CVE",
+            "CVSS",
+            "ESXi",
+            "RCE",
+            "EDR",
+            "BOD"
+          ]
+        },
+        {
+          "severity": "high",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "BRICKSTORM 的 393 天不是隱匿技術的勝利：那些設備「根本沒有被列進資產清冊」",
+            "en": "BRICKSTORM's 393 Days Is Not a Stealth Achievement: Those Appliances Were \"Not Inventoried at All\""
+          },
+          "summary": {
+            "zh": "Google Threat Intelligence Group（GTIG）與 Mandiant 自 2025 年 3 月起追蹤的 BRICKSTORM 行動，歸因於中國關聯集群 UNC5221，目標涵蓋法律服務、SaaS、科技與 BPO 產業，平均在受害網路內停留 393 天。載體選擇是刻意的：BRICKSTORM 被部署在「不支援傳統 EDR 的設備」上，多起案例中行為者先拿下網路邊界設備、再橫向轉進 VMware vCenter 與 ESXi 主機。GTIG 的描述裡有一句比停留天數更重要：這些被利用的設備通常不在受害組織的監控範圍內，或者根本沒有被列進資產清冊。附帶工具 BRICKSTEAL 直接刮取 vCenter 的 SAML2 SSO 認證與資料庫憑證，繞過端點防護，因為控制平面上本來就沒有端點防護。",
+            "en": "The BRICKSTORM campaign, tracked by Google Threat Intelligence Group and Mandiant since March 2025 and attributed to the China-nexus cluster UNC5221, hit legal services, SaaS, technology and BPO firms with an average dwell time of 393 days. The delivery surface was a deliberate choice: BRICKSTORM was deployed on appliances that lack traditional EDR support, and in several cases the actor took a network edge appliance first, then pivoted to VMware vCenter and ESXi hosts. One line in GTIG's account matters more than the dwell figure — the exploited appliances were typically not monitored by the victim's security team, or were not inventoried at all. The companion tool BRICKSTEAL scrapes vCenter SAML2 SSO authentication and database credentials straight from memory, bypassing endpoint defenses because the control plane never had any."
+          },
+          "implication": {
+            "zh": "這句話直接打穿 BOD 26-04 的第一個變數。四變數矩陣的第一項是「資產是否可從公網觸及」，但你無法對一台不知道自己擁有的設備做分級——未列冊資產在這套規則裡不會被評為任何級距，它會安靜地不存在。任何以「風險導向分流」為前提的制度，都繼承了資產清冊的完整度作為隱含上限，而這個上限從來沒有被寫進規則裡。",
+            "en": "That line goes straight through BOD 26-04's first variable. The matrix opens with \"is the asset reachable from a public network\" — but you cannot tier an appliance you do not know you own. An un-inventoried asset does not score into any tier under this rule; it quietly fails to exist. Every regime premised on risk-based triage inherits inventory completeness as an implicit ceiling, and that ceiling is never written into the rule itself."
+          },
+          "counterpoint": {
+            "zh": "「這層資產無法被監控」這個說法本身撐不住。Google 同一批研究附上的 vSphere 防禦指南列出了一整套可用的堆疊：auditd 核心層 syscall 規則、AIDE 檔案完整性基線、OS 層 iptables/nftables 的拒絕記錄、以及 vCenter 應用層事件 ID（VmClonedEvent、HostSshEnabledEvent、VibInstalledEvent、PrincipalManagement），全部可以透過 TLS 6514 遠端轉發。所以真正的變數是預設值與營運成本，不是技術可行性——而這意味著我在上面說的「不可稽核」其實是一個可修的問題，不是一個結構性事實。",
+            "en": "The claim that this layer cannot be monitored does not survive contact with the evidence. The vSphere defender's guide published alongside the same research lists a complete stack: kernel-level auditd syscall rules, an AIDE file-integrity baseline, OS-level iptables/nftables deny logging, and vCenter application event IDs (VmClonedEvent, HostSshEnabledEvent, VibInstalledEvent, PrincipalManagement) — all forwardable off-box over TLS on port 6514. So the real variable is defaults and operating cost, not technical feasibility, which means the \"unauditable\" problem I describe above is fixable rather than structural."
+          },
+          "source": "SecurityWeek / Google Threat Intelligence Group",
+          "url": "https://www.securityweek.com/chinese-spies-lurked-in-networks-for-393-days-hunted-for-zero-day-intel/",
+          "terms": [
+            "APT",
+            "GTIG",
+            "EDR",
+            "ESXi",
+            "SaaS",
+            "auditd",
+            "Tier-0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "likely",
+          "title": {
+            "zh": "修補悖論的數字：KEV 完整修復率從 38% 掉到 26%，中位數從 32 天拉長到 43 天",
+            "en": "The Remediation Paradox in Numbers: Full KEV Remediation Fell From 38% to 26% While the Median Stretched From 32 to 43 Days"
+          },
+          "summary": {
+            "zh": "Verizon 2026 年 DBIR 報告出現該系列 19 年來的第一次翻轉：漏洞利用超越竊得憑證，成為第一大初始存取途徑，占比從 20% 升至 31%，而憑證濫用作為初始存取手段從 22% 降至 13%。邊界設備與 VPN 在「以漏洞利用為途徑的入侵」中的占比從 3% 跳到 22%，一年內成長約七倍。同一份資料的另一半是修補端：組織面對的 CISA KEV 條目數量較前一年增加約 50%，完整修復比例從 38% 降至 26%，完成修復的中位天數從 32 天延長到 43 天；不分年份、不分數量、不分組織成熟度，第七天時仍有 60% 至 70% 的 KEV 實例未關閉，表現最好的組織在第一週也只修掉 30% 至 40%，第 28 天仍有 35% 開著。Mandiant 的獨立資料則顯示漏洞利用連續第六年是最大初始感染途徑（32%）。",
+            "en": "Verizon's 2026 DBIR records the first reversal in the series' 19-year history: vulnerability exploitation overtook stolen credentials as the leading initial access vector, rising from 20% to 31% while credential abuse as an initial access method fell from 22% to 13%. Edge devices and VPNs went from 3% to 22% of exploitation-driven breaches — roughly sevenfold in a single year. The other half of the same dataset is the remediation side: organizations face about 50% more CISA KEV entries than a year earlier, full remediation dropped from 38% to 26%, and the median time to full resolution stretched from 32 days to 43. Regardless of year, volume or organizational maturity, 60–70% of KEV instances remain open at day seven; even best-performing organizations close only 30–40% in the first week, and 35% are still open at day 28. Mandiant's independent data has exploits as the top initial infection vector for a sixth consecutive year, at 32%."
+          },
+          "implication": {
+            "zh": "把這兩組數字並排，就是 BOD 26-04 誕生的原因，也是它注定尷尬的原因：規則要求三天，而經驗分布顯示第七天仍有六到七成未關閉——落差不是兩倍，是一個數量級。這個落差不會因為分流做得更聰明而消失，因為它主要由變更窗口、停機成本與設備重啟風險決定，不由優先順序決定。你在對談時可以用這一組數字把「要不要更嚴格的期限」這個問題，換成「期限之外還有什麼工具」。",
+            "en": "Put the two sets side by side and you get both the reason BOD 26-04 exists and the reason it is destined to be awkward: the rule demands three days, while the empirical distribution still has 60–70% open at day seven. That gap is not a factor of two, it is an order of magnitude. Smarter triage will not close it, because the gap is set by change windows, downtime cost and reboot risk rather than by prioritization. Use these numbers to move the conversation from \"should the deadline be stricter\" to \"what instrument exists besides a deadline\"."
+          },
+          "counterpoint": {
+            "zh": "這組數字有兩個必須說清楚的限制。第一，「漏洞利用超越憑證」講的是初始存取的分類，不是整體重要性——憑證仍出現在 39% 的入侵事件中，在橫向移動、持久化與資料竊取階段依然是核心。第二，樣本偏誤真實存在：DBIR 與 M-Trends 的資料主要來自事件應變案件與廠商遙測，而會請外部 IR 團隊進場的案件本來就偏向漏洞利用型的大案，一般組織每天遭遇的仍以釣魚與帳號接管為主。把這組數字當成「防禦重心應該全面移出憑證安全」的依據，會是誤讀。",
+            "en": "Two limits have to be stated plainly. First, \"exploitation overtook credentials\" is a statement about how initial access is classified, not about overall importance — credentials still appear in 39% of breaches and remain central to lateral movement, persistence and data theft. Second, the sample bias is real: DBIR and M-Trends draw on incident-response engagements and vendor telemetry, and the cases that get an external IR team are skewed toward large exploitation-driven intrusions, while what an ordinary organization meets daily is still phishing and account takeover. Reading these numbers as a mandate to shift defensive weight away from credential security would be a misreading."
+          },
+          "source": "Verizon DBIR 2026 / Mandiant M-Trends 2026",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/m-trends-2026/",
+          "terms": [
+            "DBIR",
+            "KEV",
+            "EDR",
+            "MTTE",
+            "BOD"
+          ]
+        },
+        {
+          "severity": "high",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "五個美國機關聯名的 S7 警報，把「修補」排在建議清單第二位以後",
+            "en": "A Five-Agency US Advisory on Siemens S7 Puts Patching Below the Top of Its Own Mitigation List"
+          },
+          "summary": {
+            "zh": "NSA、CISA、FBI、能源部（DOE）與環保署（EPA）於 8 月 19 日聯名發布 AA26-231A，範圍涵蓋 Siemens S7 全系列——從 S7-200 一路到 S7-1500 F 系列安全控制器。手法是把公開的工業自動化函式庫（snap7.dll、python-snap7）與 AI 輔助腳本結合，做出模仿合法 OT 監控軟體的自製工具，再透過 Censys、ZoomEye 等網路掃描服務尋找軟體版本過舊或防護不足、直接暴露在公網上的 PLC；已記錄的能力包括透過 S7comm 協定對 PLC 記憶體、組態資料與階梯邏輯進行讀寫。五個機關把這批活動定性為持續性偵蒐與能力建構，未附國家歸因，受影響最重的是關鍵製造、能源、水與廢水、化學、食品與農業、商業設施等部門。值得注意的是緩解建議的排序：盤點資產與移出公網在前，修補在後。",
+            "en": "On 19 August the NSA, CISA, FBI, Department of Energy and EPA jointly issued AA26-231A covering the entire Siemens S7 family, from the S7-200 through to S7-1500 F-series safety controllers. The tradecraft pairs public industrial-automation libraries (snap7.dll, python-snap7) with AI-assisted scripting to build custom tools that mimic legitimate OT monitoring software, then uses internet scanning services such as Censys and ZoomEye to find PLCs running outdated software or otherwise poorly protected and directly exposed. Documented capability includes read and write access to PLC memory, configuration data and ladder logic over the S7comm protocol. The five agencies characterize the activity as persistent reconnaissance and capability development, with no state attribution attached; Critical Manufacturing, Energy, Water and Wastewater, Chemical, Food and Agriculture and Commercial Facilities are the most affected sectors. Note the ordering of the mitigations: inventory and removal from the public internet come first, patching comes after."
+          },
+          "implication": {
+            "zh": "OT 是這套機制的極端形態。S7-1500 F 系列是安全型控制器，韌體換版牽動功能安全認證；控制器生命週期以十年為單位，變更窗口以年為單位。在這種資產上，「三天修補」不是困難，是概念上不存在——所以連主管機關寫緩解建議時都把盤點與斷網放前面。這正好反證了本報告的核心：當修補這個工具在物理上不可用，制度剩下的唯一著力點就是可見度，而可見度的預設值是產品出廠時決定的。",
+            "en": "OT is the extreme form of this mechanism. The S7-1500 F-series are safety controllers whose firmware changes touch functional-safety certification; controller lifecycles run in decades and change windows in years. On such assets a three-day patch is not difficult, it is conceptually absent — which is why the authoring agencies themselves put inventory and internet removal ahead of patching. That inversion proves this report's core claim: once patching is physically unavailable as an instrument, the only remaining lever is visibility, and visibility's default is set at the factory."
+          },
+          "counterpoint": {
+            "zh": "這份警報描述的是偵蒐與能力建構，不是效果作戰——目前沒有公開確認的階梯邏輯遭惡意寫入案例。把它讀成迫在眉睫的攻擊會高估情勢；同時應注意暴露總量的長期趨勢其實在下降：Shodan 可見的直接暴露 ICS 裝置約 7.4 萬台，明顯低於 2017 年以來多數時間的約 12 萬台。也就是說，OT 的公網暴露問題在總量上正在改善，惡化的是攻擊方的工具化速度，兩者不該混為一談。",
+            "en": "The advisory documents reconnaissance and capability development, not effects operations — there is no publicly confirmed case of malicious ladder-logic writes in this campaign. Reading it as imminent attack overstates the situation. It is also worth noting that total exposure is trending down, not up: Shodan shows roughly 74,000 directly reachable ICS devices, well below the roughly 120,000 typical for most of the period since 2017. OT internet exposure is improving in aggregate; what is deteriorating is the speed at which attackers can weaponize what remains. The two should not be conflated."
+          },
+          "source": "CISA / NSA / FBI / DOE / EPA (AA26-231A)",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-231a",
+          "terms": [
+            "PLC",
+            "OT",
+            "ICS",
+            "S7comm",
+            "HMI"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geo",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "三個管制陣營各抓因果鏈上的一個節點：發現、供給、部署——沒有人管證據",
+            "en": "Three Regulatory Camps Each Grab One Node of the Same Causal Chain — Discovery, Supply, Deployment. Nobody Regulates Evidence"
+          },
+          "summary": {
+            "zh": "同一條「漏洞被發現 → 修補程式被生產 → 修補程式被部署」的鏈條上，三個主要管制陣營各自抓了不同的一節。Washington 抓部署端：BOD 26-04 對聯邦民事機關（FCEB）設定 3／14／60 天的分級期限，實施期限為發布後 180 天、即 2026 年 12 月 7 日。Brussels 抓產品供給端：CRA 自 2026 年 9 月 11 日起要求所有輸入歐盟的數位要素產品製造商——包含已在市場上的既有產品——在 24 小時內向 ENISA 與各國 CSIRT 通報正在被利用的漏洞，2027 年 12 月 11 日起全面適用，包含支援期內持續提供安全更新、CE 標示與 SBOM。Beijing 抓發現與揭露端：《網路產品安全漏洞管理規定》要求廠商在兩日內把漏洞報進工信部平台並限制擅自公開；2025 年 10 月 28 日通過、2026 年 1 月 1 日施行的新版《網路安全法》是 2017 年以來首次大修，罰則上限拉高（一般情形 50 萬升至 100 萬元人民幣，嚴重情形 50 萬至 200 萬元）並強化關鍵資訊基礎設施（CII）保護。",
+            "en": "Along the same chain — vulnerability discovered, patch produced, patch deployed — the three major regulatory camps have each seized a different link. Washington took deployment: BOD 26-04 sets 3/14/60-day tiers for Federal Civilian Executive Branch agencies, with a 180-day implementation deadline landing on 7 December 2026. Brussels took product supply: from 11 September 2026 the CRA requires every manufacturer of products with digital elements sold into the EU — including legacy products already on the market — to report actively exploited vulnerabilities to ENISA and national CSIRTs within 24 hours, with full obligations from 11 December 2027 covering security updates across the support period, CE marking and SBOM. Beijing took discovery and disclosure: its network product vulnerability rules require vendors to report flaws to the MIIT platform within two days and restrict unauthorized publication, while the revised Cybersecurity Law passed on 28 October 2025 and effective 1 January 2026 — the first major revision since 2017 — raises penalty ceilings (ordinary cases from RMB 500,000 to 1 million, serious cases RMB 500,000–2 million) and strengthens critical information infrastructure (CII) protection."
+          },
+          "implication": {
+            "zh": "三個節點加起來看似覆蓋完整，實際上留下一個沒有人管的變數：這台資產出廠時會不會把證據送出機外。它不是發現、不是供給、也不是部署，而是產品的遙測預設值。理論上它落在 CRA 的射程內——CRA 管的就是製造商的產品屬性——但 CRA 目前的條文談的是安全更新與漏洞通報，沒有談稽核日誌的預設輸出。這是你在跟歐盟或本國監管者對話時可以直接提出的具體建議，而且它比「更短的修補期限」便宜得多，因為成本落在製造商一次性改預設值，而不是每一個受害組織各自去補。",
+            "en": "Together the three nodes look like full coverage, but they leave one variable ungoverned: whether an asset emits evidence off-box as shipped. That is not discovery, not supply, not deployment — it is a product's telemetry default. In principle it falls inside the CRA's reach, since the CRA regulates manufacturer product properties, but the current text addresses security updates and vulnerability reporting, not default audit-log egress. This is a concrete proposal you can put to EU or domestic regulators, and it is far cheaper than a shorter patch deadline, because the cost is one manufacturer changing a default rather than every victim organization retrofitting separately."
+          },
+          "source": "European Commission / CISA / 全國人大",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act",
+          "terms": [
+            "CRA",
+            "ENISA",
+            "CSIRT",
+            "SBOM",
+            "CII",
+            "FCEB",
+            "BOD"
+          ]
+        }
+      ]
+    }
+  ],
+  "narrative": {
+    "zh": "**問題是什麼**\n\nBOD 26-04 在 6 月 10 日把美國聯邦民事機關的最短修補期限壓到三天，並要求在同一窗口內完成鑑識分流。觸發條件四項全中：可從公網觸及、已列入 KEV、可完全自動化、成功利用取得部分或完全控制權。這四項框出來的幾乎就是一份清單——虛擬化管理平面、VPN 與防火牆這類邊界設備、暴露在公網的 PLC。而這正好是三件事同時成立的那層資產：停機成本最高、原廠不支援 EDR、出廠預設不把稽核紀錄送出機外。規則咬得最緊的地方，剛好是它最咬不動的地方。\n\n**機制怎麼運作**\n\n三天從 CISA 列入 KEV 或機關自行識別起算，不從修補程式可用起算；而 M-Trends 2026 把平均利用時間估在負七天。這條規則因此要求機關在一個修補程式可能還不存在的窗口內完成修補。\n\n於是它退化成「緩解」，而在這層資產上緩解只有一種形式：斷網或塞進更窄的網段。可以做，但不可稽核——你沒辦法從遠端證明一台 PLC 真的被隔離了。規則因此把鑑識分流當備援。但鑑識要證據，而 VCSA 的核心層 auditd 雖然存在，把它送出機外的橋接器出廠即關閉；Google 自己的防禦指南寫得很直白：攻擊者抹掉本機磁碟，他曾經住在這裡的證據就永久消失。\n\n完整的鏈條是：期限打不動 → 退化成緩解 → 緩解不可稽核 → 改用鑑識分流當備援 → 而鑑識要的證據從出廠就沒被送出去。每一環單看都合理，串起來是個閉環，副作用很難看：機關回報「已緩解」，合規數字變好看，實際暴露不變，然後監管機關拿這份數字判斷政策有沒有用。\n\n**證據**\n\nCVE-2026-59310 第五個日曆天就出現首批回連，8 月 5 日前 361 個受害 IP 已現形 343 個、橫跨 47 國，一路走到 ESXi 勒索，而整條鏈上沒有一台機器跑得了 EDR。長時間版本是 BRICKSTORM：UNC5221 平均停留 393 天，但比停留天數更關鍵的是那些設備通常沒被監控、甚至根本沒被列進資產清冊——這直接打穿四變數矩陣的第一項，你無法對一台不知道自己擁有的設備做分級。OT 那側，五個美國機關聯名的 AA26-231A 把盤點與移出公網排在修補之前。\n\n**各方自己怎麼說**\n\n三個管制陣營各抓這條因果鏈上的一個節點，而且都真心相信自己抓的是對的那個。\n\nWashington 抓部署端：利用速度已崩塌到以小時計，所以放棄照 CVSS 全面修補、改成風險導向分流。他們最在意 Beijing 的是 PRC 行為者在關鍵基礎設施裡的預置，而 BRICKSTORM 的 393 天正是這個論點最有力的證據。\n\nBrussels 抓產品供給端：CRA 的義務落在製造商，9 月 11 日起（含已在市場上的舊品）正被利用的漏洞須 24 小時內通報 ENISA 與各國 CSIRT。歐盟真正在意的不是哪國駭客，而是它對非歐盟供應商的依賴——連修補的供給本身都握在別人手上。\n\nBeijing 抓發現與揭露端：漏洞須兩日內報進工信部平台並限制擅自公開，今年 1 月 1 日施行的新版《網路安全法》是 2017 年以來首次大修，罰則拉高並強化 CII 保護。北京最在意的是關鍵基礎設施裡的外國管理平面——VMware、Siemens 本身就是主權問題，也是信創替代的核心論據；同時 CNCERT 對 NSA 的指控報告刻意模仿西方廠商的鑑識體例，走的是叙事對等。\n\n三方在意的點很整齊：Washington 在意 Beijing 的預置，Beijing 在意 Washington 的產品在自己機房裡，Brussels 在意自己兩邊都不掌握。但沒有任何一方在管「這台資產出廠時會不會把證據送出去」——那是產品設計變數，理論上在 CRA 射程內，但 CRA 目前談的是安全更新與漏洞通報，不是遙測預設值。\n\n**未來 3–6 個月的推演與觀察指標**\n\n四件事。一、9 月 11 日 CRA 通報上線後兩個月的實際通報量，若遠低於 KEV 新增速率，代表製造商同樣卡在不知道自己產品在哪裡被利用。二、12 月 7 日 BOD 26-04 屆滿 180 天實施期，要看的不是達標率，而是「已緩解」對「已修補」的比例，那就是上述閉環的規模。三、是否出現第一份把管理平面遙測預設值寫進要求的產品法規或採購條款。四、S7 那條線若出現第一起確認的階梯邏輯遭寫入事件，會在一季內重寫 OT 的整套修補假設。\n\n台灣要看《資通安全管理法》子法會不會引入類似的分級期限；對台股更直接的是，9 月 11 日起出貨歐盟的台灣網通與工業電腦廠商即落入 CRA 的 24 小時通報義務，這是會反映在毛利與人力配置上的法遵成本，日期已經確定。\n\n**我可能錯在哪**\n\n最可能錯的，是我把瓶頸定在「證據」，但真正的瓶頸也許是「清冊」。BRICKSTORM 報告裡最刺眼的不是 393 天，是那些設備根本沒被列進資產清冊。若多數失效是這樣發生的，把遙測預設值打開幾乎買不到東西——你只會從本來就在看的資產拿到更多證據，在從來沒列出來的資產上繼續全盲；那個世界裡正確的槓桿是資產發現與攻擊面管理，CRA 的 SBOM 與產品登錄反而比我主張的遙測預設值更有效。\n\n第二個可能錯的，是我把 BOD 26-04 當成一條真的會咬人的規則。CISA 自己的試算顯示只有 1% 的漏洞實例落入三天級距、逾 60% 可延後。我傾向認為存量上不咬人、新增流量上很咬人（新列入 KEV 的 39 條裡有 34 條帶三天以內期限）；但若 12 月第一批數字顯示三天級距根本沒形成積壓，這篇的前提就得整個收回。",
+    "en": "**The problem**\n\nOn 10 June, BOD 26-04 compressed the shortest remediation deadline for US federal civilian agencies to three days, and demanded forensic triage inside the same window. Four variables must all fire: reachable from a public network, listed in KEV, fully automatable, granting partial or total control. Those four describe an inventory — virtualization management planes, edge appliances like VPNs and firewalls, PLCs exposed to the internet. Which is exactly the layer where three other things are simultaneously true: downtime costs the most, the vendor does not support EDR, and audit records are not forwarded off-box as shipped. The rule bites hardest precisely where it cannot bite.\n\n**How the mechanism works**\n\nThe three days run from KEV listing or the agency's own identification, not from patch availability. M-Trends 2026 puts mean time to exploit at minus seven days. The rule therefore requires remediation inside a window where the patch may not exist.\n\nIt degrades into \"mitigation,\" which on this layer has one practical form: take the box off the network or squeeze it into a narrower segment. Doable, but unauditable — nobody can prove remotely that a PLC is really isolated. So the rule falls back on forensic triage. But forensics needs evidence, and while the VCSA does have kernel-level auditd, the bridge that ships those events off-box is disabled at the factory. Google's own defender guide puts it plainly: wipe the local disk and the evidence of residency is permanently erased.\n\nThe full chain: the deadline cannot be met → it degrades into mitigation → mitigation is unauditable → the rule falls back on forensic triage → and the evidence forensics needs was never shipped off the box. Each link is individually reasonable; strung together they close a loop. The side effect is ugly. Agencies report \"mitigated,\" compliance numbers improve, actual exposure does not move, and regulators then use those numbers to judge whether the policy worked.\n\n**The evidence**\n\nCVE-2026-59310 produced its first callbacks on the fifth calendar day; 343 of an eventual 361 victim IPs surfaced across 47 countries by 5 August, the chain ran to ESXi ransomware, and not one host along it could run EDR. The long-duration version is BRICKSTORM: UNC5221 averaged 393 days inside victim networks, but the detail that matters more than dwell time is that those appliances were typically unmonitored, or not inventoried at all — which goes straight through the matrix's first variable, since you cannot tier an appliance you do not know you own. On the OT side, the five-agency advisory AA26-231A puts inventory and internet removal ahead of patching.\n\n**How each side frames it**\n\nThree regulatory camps have each seized one node of the same causal chain, and each sincerely believes theirs is the right one.\n\nWashington took deployment: exploitation speed has collapsed to hours, so patch-everything-by-CVSS gives way to risk-based triage. What Washington cares about most in Beijing is pre-positioning inside critical infrastructure, and BRICKSTORM's 393 days is that argument's strongest exhibit.\n\nBrussels took product supply: under the CRA the obligation lands on manufacturers, and from 11 September — including for legacy products already on the market — actively exploited vulnerabilities must reach ENISA and national CSIRTs within 24 hours. What Brussels actually fears is not any particular country's hackers but its dependence on non-EU suppliers: even the supply of patches sits in someone else's hands.\n\nBeijing took discovery and disclosure: flaws must be reported to the MIIT platform within two days and unauthorized publication is restricted, while the revised Cybersecurity Law effective 1 January 2026 raises penalties and strengthens CII protection. What Beijing cares about most is foreign management planes inside its own critical infrastructure; VMware and Siemens are sovereignty questions in themselves, and a core argument for domestic substitution. In parallel, CNCERT's reports against the NSA deliberately mimic Western vendor forensic style — narrative parity as an instrument.\n\nThe symmetry is neat: Washington worries about Beijing's pre-positioning, Beijing about Washington's products sitting in its own data centers, Brussels that it controls neither. But nobody regulates whether an asset emits evidence as shipped. That is a product design variable, nominally within the CRA's reach — except the CRA addresses security updates and vulnerability reporting, not telemetry defaults.\n\n**Three to six months out, and what to watch**\n\nFour things. First, reporting volume in the two months after the CRA obligation starts on 11 September; far below the rate of new KEV entries means manufacturers are stuck on the same problem of not knowing where their products are being exploited. Second, 7 December is BOD 26-04's 180-day implementation deadline — watch not the pass rate but the ratio of \"mitigated\" to \"remediated,\" because that ratio is the size of the loop above. Third, whether any product regulation or procurement clause becomes the first to write management-plane telemetry defaults into a requirement. Fourth, whether the S7 line produces a first confirmed malicious ladder-logic write, which would rewrite OT's patching assumptions within a quarter.\n\nFor Taiwan, watch whether the subordinate regulations under the amended Cybersecurity Management Act import tiered deadlines of this kind. More directly for equity investors, from 11 September Taiwanese networking and industrial-computer manufacturers shipping into the EU fall under the CRA's 24-hour reporting duty — a compliance cost that shows up in margins and headcount, on a date already fixed.\n\n**Where I could be wrong**\n\nThe likeliest error is locating the bottleneck at evidence when it actually sits at inventory. The most striking line in the BRICKSTORM reporting is not 393 days — it is that those appliances were not inventoried at all. If most failures happen that way, switching telemetry defaults on buys almost nothing: more evidence from assets you were already watching, and total blindness on the ones never listed. In that world the correct lever is asset discovery and attack-surface management, and the CRA's SBOM and product registration provisions do more than the telemetry default I am arguing for.\n\nThe second possible error is treating BOD 26-04 as a rule that genuinely bites. CISA's own pilot found only 1% of vulnerability instances in the three-day tier and over 60% deferrable. My read is that it does not bite on the installed base but bites hard on the inbound flow — 34 of 39 new KEV entries carried three-day-or-shorter deadlines. But if December's first compliance numbers show no backlog forming in the three-day tier at all, this piece's premise has to be withdrawn entirely."
+  }
+}

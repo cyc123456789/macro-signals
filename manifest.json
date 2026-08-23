@@ -2,6 +2,15 @@
   "updated": "2026-08-24",
   "reports": [
     {
+      "file": "reports/2026-08-24-weekly.json",
+      "date": "2026-08-24",
+      "kind": "weekly",
+      "title": {
+        "zh": "「三天內修補並完成鑑識分流」——但那層資產從出廠就不把證據送出機外",
+        "en": "\"Patch and Forensically Triage Within Three Days\" — On a Layer That Ships With Evidence Forwarding Switched Off"
+      }
+    },
+    {
       "file": "reports/2026-08-24-brief.json",
       "date": "2026-08-24",
       "kind": "brief",

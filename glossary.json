@@ -594,6 +594,204 @@
       },
       "category": "tech",
       "first_seen": "2026-08-24"
+    },
+    {
+      "term": "EDR",
+      "zh": "端點偵測與回應",
+      "expansion": "Endpoint Detection and Response",
+      "def": {
+        "zh": "在端點上常駐代理程式、持續蒐集行程與檔案等行為遙測並支援回溯調查的防護技術。其前提是該資產能安裝代理程式——虛擬化管理平面、邊界設備與 PLC 多半不支援，形成結構性盲區。",
+        "en": "Security tooling that runs a resident agent on an endpoint, continuously collecting process and file behaviour telemetry and supporting retrospective investigation. It presupposes that the asset can host an agent — virtualization management planes, edge appliances and PLCs mostly cannot, which creates a structural blind spot."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "ICS",
+      "zh": "工業控制系統",
+      "expansion": "Industrial Control System",
+      "def": {
+        "zh": "監控與操作實體製程的系統總稱，涵蓋 SCADA、DCS 與 PLC。生命週期以十年計、變更窗口以年計，且多數在設計時未預期直接連上網際網路。",
+        "en": "Umbrella term for systems that monitor and operate physical processes, covering SCADA, DCS and PLCs. Lifecycles run in decades and change windows in years, and most were never designed on the assumption of direct internet connectivity."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "ESXi",
+      "zh": "VMware ESXi 虛擬化管理程式",
+      "expansion": "VMware ESXi Bare-Metal Hypervisor",
+      "def": {
+        "zh": "VMware 直接安裝在實體伺服器上的第一型 hypervisor。拿下 ESXi 等於同時掌握其上所有虛擬機，因此成為勒索軟體加密資料存放區的首選目標，而它本身不支援一般 EDR 代理程式。",
+        "en": "VMware's type-1 hypervisor installed directly on physical servers. Controlling ESXi means controlling every virtual machine on it, which makes it the preferred target for ransomware that encrypts datastores wholesale — and it cannot host a conventional EDR agent."
+      },
+      "category": "tech",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "VCSA",
+      "zh": "vCenter 伺服器設備",
+      "expansion": "vCenter Server Appliance",
+      "def": {
+        "zh": "VMware vCenter 的預封裝虛擬設備形式，底層跑 Photon OS。它是 vSphere 環境的集中控制平面，取得其權限即可管理整個虛擬化叢集；其核心層 auditd 存在，但遠端轉發預設關閉。",
+        "en": "The pre-packaged virtual-appliance form of VMware vCenter, running Photon OS underneath. It is the centralized control plane for a vSphere environment, so admin rights on it mean control of the whole virtualization cluster. Kernel-level auditd exists on it, but remote forwarding is disabled by default."
+      },
+      "category": "tech",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "VAMI",
+      "zh": "vSphere 設備管理介面",
+      "expansion": "vSphere Appliance Management Interface",
+      "def": {
+        "zh": "VCSA 上獨立於 vSphere Client 的管理網頁介面（TCP 5480），用於網路、憑證與防火牆等設備層設定。其防火牆由它所保護的應用程式自身管理，構成循環依賴。",
+        "en": "The appliance-level web management interface on VCSA (TCP 5480), separate from the vSphere Client, used for network, certificate and firewall settings. Its firewall is administered by the very application it protects, producing a circular dependency."
+      },
+      "category": "tech",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "S7comm",
+      "zh": "S7 通訊協定",
+      "expansion": "Siemens S7 Communication Protocol",
+      "def": {
+        "zh": "Siemens S7 系列 PLC 使用的專有通訊協定，用於工程軟體與控制器之間的程式下載與資料存取。多數版本缺乏強制認證，可對記憶體、組態與階梯邏輯進行讀寫。",
+        "en": "The proprietary protocol Siemens S7-series PLCs use for program download and data access between engineering software and the controller. Most versions lack enforced authentication, allowing reads and writes to memory, configuration and ladder logic."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "auditd",
+      "zh": "Linux 稽核守護程序",
+      "expansion": "Linux Audit Daemon",
+      "def": {
+        "zh": "Linux 核心層的稽核子系統使用者空間元件，在系統呼叫層級記錄行為，不受 shell 歷史被清除影響。在 VCSA 上預設只寫本機，需手動開啟 audisp 橋接才會送到遠端。",
+        "en": "The user-space component of the Linux kernel audit subsystem, recording behaviour at the syscall level and therefore unaffected by cleared shell history. On VCSA it writes locally by default; the audisp bridge must be enabled manually before anything reaches a remote collector."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "SIEM",
+      "zh": "資安資訊與事件管理平台",
+      "expansion": "Security Information and Event Management",
+      "def": {
+        "zh": "集中收容、關聯與長期保存各來源日誌的平台。對無法安裝代理程式的資產而言，遠端轉發到 SIEM 是唯一能在本機遭抹除後倖存的證據途徑。",
+        "en": "A platform that centrally ingests, correlates and retains logs from many sources over time. For assets that cannot host an agent, forwarding to a SIEM is the only path by which evidence survives the wiping of the local disk."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "MTTE",
+      "zh": "平均利用時間",
+      "expansion": "Mean Time to Exploit",
+      "def": {
+        "zh": "從漏洞修補程式發布到在野出現實際利用之間的平均間隔。此值為負代表利用先於修補程式存在，使任何以修補可用性為起點的期限失去意義。",
+        "en": "The average interval between a patch being released and exploitation appearing in the wild. A negative value means exploitation precedes the patch's existence, which voids any deadline measured from patch availability."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "DBIR",
+      "zh": "資料外洩調查報告",
+      "expansion": "Data Breach Investigations Report",
+      "def": {
+        "zh": "Verizon 每年發布的入侵事件統計報告，以初始存取途徑、行為者類型與產業分布為主要切面，是業界最常被引用的長期基線資料之一。樣本偏向已進入調查程序的事件。",
+        "en": "Verizon's annual breach statistics report, cut primarily by initial access vector, actor type and industry, and one of the industry's most-cited long-run baselines. Its sample skews toward incidents that reached a formal investigation."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "SBOM",
+      "zh": "軟體物料清單",
+      "expansion": "Software Bill of Materials",
+      "def": {
+        "zh": "列舉一項軟體或產品所含全部元件與相依項的結構化清單。其政策價值在於讓漏洞公告發布時，能反查哪些產品受影響——即把「不知道自己用了什麼」轉為可查詢的問題。",
+        "en": "A structured inventory of every component and dependency inside a piece of software or a product. Its policy value is that when an advisory lands, affected products can be looked up in reverse — turning \"we don't know what we're running\" into a queryable question."
+      },
+      "category": "tech",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "CRA",
+      "zh": "歐盟網路韌性法",
+      "expansion": "EU Cyber Resilience Act",
+      "def": {
+        "zh": "歐盟針對含數位要素產品的橫向資安法規，義務落在製造商而非使用者：正在被利用的漏洞須於 24 小時內通報，並在支援期內持續提供安全更新。管制點是產品供給，不是部署。",
+        "en": "The EU's horizontal cybersecurity regulation for products with digital elements, placing obligations on manufacturers rather than users: actively exploited vulnerabilities must be reported within 24 hours, and security updates supplied across the declared support period. Its control point is product supply, not deployment."
+      },
+      "category": "geo",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "ENISA",
+      "zh": "歐盟網路安全局",
+      "expansion": "European Union Agency for Cybersecurity",
+      "def": {
+        "zh": "歐盟層級的網路安全機構，負責認證框架、威脅情勢報告與跨國協調。在 CRA 下成為製造商通報正在被利用漏洞的接收端之一。",
+        "en": "The EU-level cybersecurity agency responsible for certification frameworks, threat-landscape reporting and cross-border coordination. Under the CRA it becomes one of the recipients of manufacturers' actively-exploited-vulnerability reports."
+      },
+      "category": "geo",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "CSIRT",
+      "zh": "電腦資安事件應變小組",
+      "expansion": "Computer Security Incident Response Team",
+      "def": {
+        "zh": "負責接收通報、協調應變與發布警訊的組織單位，多數國家設有國家級 CSIRT。在 CRA 架構下與 ENISA 並列為製造商的法定通報對象。",
+        "en": "An organizational unit that receives reports, coordinates response and issues warnings; most countries maintain a national-level CSIRT. Under the CRA they sit alongside ENISA as statutory recipients of manufacturer reports."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "FCEB",
+      "zh": "聯邦民事行政機關",
+      "expansion": "Federal Civilian Executive Branch",
+      "def": {
+        "zh": "美國聯邦政府中不含國防部與情報體系的行政機關集合，是 CISA 具約束力作業指令（BOD）的法定適用對象。其合規數字常被當成整體產業實務的領先指標。",
+        "en": "The set of US federal executive agencies excluding the Defense Department and the intelligence community — the statutory addressees of CISA's Binding Operational Directives. Their compliance figures are often read as a leading indicator of broader industry practice."
+      },
+      "category": "geo",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "CII",
+      "zh": "關鍵資訊基礎設施",
+      "expansion": "Critical Information Infrastructure",
+      "def": {
+        "zh": "中國法律體系中的專有範疇，指一旦遭破壞即嚴重危害國家安全、國計民生的網路設施與資訊系統，適用資料在地化、採購安全審查與更高罰則等加重義務。",
+        "en": "A defined category in Chinese law covering network facilities and information systems whose disruption would seriously endanger national security or public welfare. Designation brings heightened obligations including data localization, procurement security review and higher penalties."
+      },
+      "category": "geo",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "Tier-0",
+      "zh": "第零層資產",
+      "expansion": "Tier-0 Asset",
+      "def": {
+        "zh": "掌握整個環境控制權的最高權限資產，如網域控制站、身分提供者與虛擬化管理平面。其特徵是被攻破即等同全域失守，而這類資產通常無法安裝一般端點防護。",
+        "en": "The highest-privilege assets that control an entire environment — domain controllers, identity providers, virtualization management planes. Compromise of one is equivalent to loss of the whole estate, and this class typically cannot host conventional endpoint defenses."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-24"
+    },
+    {
+      "term": "NDR",
+      "zh": "網路偵測與回應",
+      "expansion": "Network Detection and Response",
+      "def": {
+        "zh": "以網路流量而非主機代理程式為觀測基礎的偵測技術。在無法安裝 EDR 的資產上，它是少數仍可取得的遙測來源，但解析度低於主機層的系統呼叫級證據。",
+        "en": "Detection built on network traffic rather than host agents. On assets that cannot run EDR it is one of the few remaining telemetry sources, but its resolution is lower than host-level syscall evidence."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-24"
     }
   ]
 }
