@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-24",
+  "updated": "2026-08-26",
   "terms": [
     {
       "term": "CTF",
@@ -792,6 +792,72 @@
       },
       "category": "cyber",
       "first_seen": "2026-08-24"
+    },
+    {
+      "term": "UAF",
+      "zh": "釋放後使用",
+      "expansion": "Use-After-Free",
+      "def": {
+        "zh": "程式釋放一塊記憶體後，仍繼續透過殘留指標存取或寫入該記憶體的漏洞類型；攻擊者可利用釋放與再存取之間的時間差，讓該記憶體被重新配置為攻擊者可控的內容，進而劫持程式執行流程。",
+        "en": "A vulnerability class in which a program continues to access or write memory through a dangling pointer after that memory has been freed; an attacker can exploit the gap between free and reuse to have the memory reallocated with attacker-controlled content, hijacking program execution."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-26"
+    },
+    {
+      "term": "LPE",
+      "zh": "本機提權",
+      "expansion": "Local Privilege Escalation",
+      "def": {
+        "zh": "攻擊者在已取得目標系統低權限存取後，進一步將自身權限提升至系統管理者或核心層級的漏洞利用類型；與需要遠端網路存取的 RCE 不同，LPE 的前提是攻擊者已經在機器上，價值在於把「一個帳號」變成「整台機器」。",
+        "en": "A vulnerability class in which an attacker who already has low-privilege access to a system escalates that access to administrator or kernel level; unlike RCE, which requires remote network access, LPE presupposes the attacker is already on the box, and its value is turning 'one account' into 'the whole machine'."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-26"
+    },
+    {
+      "term": "SOC",
+      "zh": "資安維運中心",
+      "expansion": "Security Operations Center",
+      "def": {
+        "zh": "負責即時監控、分析與回應資安事件的組織單位，通常操作 EDR、SIEM 等偵測工具。其有效性不只取決於工具是否到位，更取決於告警分流的標準作業程序與分析師是否有權限對可疑活動採取行動——工具偵測到，不代表組織會回應。",
+        "en": "The organizational unit responsible for real-time monitoring, analysis and response to security events, typically operating EDR and SIEM tooling. Its effectiveness depends not just on whether the tools are in place but on whether standard operating procedures for alert triage exist and analysts have the authority to act on suspicious activity — a tool detecting something does not mean the organization responds to it."
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-26"
+    },
+    {
+      "term": "AEW&C",
+      "zh": "空中預警管制機",
+      "expansion": "Airborne Early Warning & Control",
+      "def": {
+        "zh": "搭載大型雷達與指管系統的飛機，用於在空中長時間監控廣域空域、偵測並引導對敵機或飛彈的攔截，是現代空戰體系裡協調戰機、延伸雷達視距的關鍵節點。",
+        "en": "An aircraft carrying a large radar and command-and-control suite that monitors a wide area of airspace for extended periods, detecting threats and directing intercepts; a key node in modern air-combat systems for coordinating fighters and extending radar horizon beyond ground-based sensors."
+      },
+      "category": "military",
+      "first_seen": "2026-08-26"
+    },
+    {
+      "term": "UKMTO",
+      "zh": "英國海事貿易行動處",
+      "expansion": "United Kingdom Maritime Trade Operations",
+      "def": {
+        "zh": "英國皇家海軍設立、向商船通報中東與紅海等高風險海域安全狀況的機構，是該海域船運業者最常引用的獨立監測消息來源之一，但其通報基於船東回報與自身監測，並非對事件責任歸屬做出判斷。",
+        "en": "A UK Royal Navy-run body that issues security notices to merchant shipping in high-risk waters such as the Middle East and Red Sea; one of the shipping industry's most commonly cited independent monitoring sources for that region, though its reports are based on shipowner accounts and its own monitoring and do not assign responsibility for an incident."
+      },
+      "category": "geo",
+      "first_seen": "2026-08-26"
+    },
+    {
+      "term": "NDRC",
+      "zh": "中國國家發展和改革委員會",
+      "expansion": "National Development and Reform Commission",
+      "def": {
+        "zh": "中國宏觀經濟管理機關，職權涵蓋產業政策、投資審批與資源分配；在先進晶片進口案例中，即使美方已核發出口許可，實際能運進中國境內或部署使用的數量仍取決於 NDRC 這一層中國國內審批，形成美方管制之外的第二道關卡。",
+        "en": "China's macroeconomic management agency, with authority spanning industrial policy, investment approval and resource allocation; in the case of advanced chip imports, even after a US export license is granted, how many units actually enter or get deployed in China still depends on this domestic Chinese approval layer — a second gate sitting outside US export control."
+      },
+      "category": "geo",
+      "first_seen": "2026-08-26"
     }
   ]
 }

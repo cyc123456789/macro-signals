@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-24",
+  "updated": "2026-08-26",
   "reports": [
+    {
+      "file": "reports/2026-08-26-brief.json",
+      "date": "2026-08-26",
+      "kind": "brief",
+      "title": {
+        "zh": "美國陷在伊朗戰場第六個月，中國把戰機開去埃及；CISA自家紅隊則發現，真正擋下攻擊的從來不是工具，是人",
+        "en": "Six Months Into America's Iran War, China Flies Fighters to Egypt — and CISA's Own Red Team Finds the Thing That Stops an Attacker Was Never the Tool, It Was the Human"
+      }
+    },
     {
       "file": "reports/2026-08-24-weekly.json",
       "date": "2026-08-24",

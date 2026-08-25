@@ -1,0 +1,137 @@
+{
+  "date": "2026-08-26",
+  "kind": "brief",
+  "title": {
+    "zh": "美國陷在伊朗戰場第六個月，中國把戰機開去埃及；CISA自家紅隊則發現，真正擋下攻擊的從來不是工具，是人",
+    "en": "Six Months Into America's Iran War, China Flies Fighters to Egypt — and CISA's Own Red Team Finds the Thing That Stops an Attacker Was Never the Tool, It Was the Human"
+  },
+  "focus": {
+    "zh": "本期焦點:中國與埃及8/22啟動第二屆「文明之鷹」聯合空演,解放軍出動殲-16、加油機與空中預警機長途跨洲部署——時間點恰好卡在美伊戰爭進入第六個月、Washington正把資源與注意力押在Hormuz的當下,構成一組值得記住的機會成本訊號。同一週,Treasury Bessent宣布代號「Economic Outcast」的對伊新一波制裁(自稱「經濟版D-Day」),隔天一艘油輪在Hormuz外海遭飛彈式攻擊物擊中失去動力,而這發生在Pakistan軍方高層正在Tehran斡旋停戰的同一時間窗——經濟施壓、軍事事件與外交斡旋三線同時發生,值得拆開來看誰在騙誰。資安端:CVE-2026-68820把BOD 26-04的「三天修補」壓力測試,從上週報告的vCenter管理平面,延伸到每一台Windows終端機都有、且理論上能跑EDR的核心層漏洞——證明負MTTE的問題不只出在「無法安裝代理程式」的資產上。CISA自家發布的「兩個SOC的故事」紅隊報告則補上另一半真相:就算裝了EDR、告警確實觸發了,人力與流程沒接住,訊號照樣被當雜訊丟掉。最後,H200晶片配額使用率的第一組實測數字出爐,證實我們8/22報告推論的物理瓶頸正在發生,但真正卡住的關卡跟預期不完全一樣。",
+    "en": "This edition: China and Egypt launched the second 'Eagles of Civilization' joint air exercise on Aug 22, with the PLA Air Force deploying J-16 fighters, tankers and airborne early-warning aircraft across two continents — timed precisely as the US-Iran war enters its sixth month and Washington's attention and resources are pinned on the Strait of Hormuz, a worthwhile opportunity-cost signal. The same week, Treasury Secretary Bessent unveiled a new Iran sanctions wave branded 'Operation Economic Outcast' (his own 'economic D-Day' framing); the next day a tanker off Oman was hit by a projectile-type strike and disabled in the Strait of Hormuz — while a senior Pakistani military delegation was in Tehran mediating an end to the war. Economic pressure, a military incident, and diplomatic mediation all landed in the same window; worth pulling apart to see who is testing whom. On the cyber side, CVE-2026-68820 extends last week's BOD 26-04 stress test from the vCenter management plane to a kernel-level flaw present on every Windows endpoint — one that, in principle, can run EDR — proving the negative-MTTE problem isn't confined to assets that can't host an agent. CISA's own 'A Tale of Two SOCs' red-team report supplies the other half of that truth: even where EDR is installed and alerts do fire, if people and process don't catch them, the signal still gets discarded as noise. Finally, the first real utilization numbers for H200 chip quotas confirm the physical bottleneck we flagged on Aug 22 is materializing — though the actual chokepoint isn't quite the one we expected."
+  },
+  "sections": [
+    {
+      "id": "nexus",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "「文明之鷹2026」:解放軍戰機飛越兩大洲進駐埃及,時間點正好卡在美國深陷伊朗戰爭的第六個月",
+            "en": "'Eagles of Civilization 2026': PLA Fighters Cross Two Continents Into Egypt, Timed to America's Sixth Month Stuck in the Iran War"
+          },
+          "summary": {
+            "zh": "中國與埃及8/22在埃及多座空軍基地啟動第二屆「文明之鷹」聯合空軍演習,預計持續到9月初。解放軍空軍派出殲-16多用途戰機、運油-20空中加油機、空警-500預警機與直-20直升機,機隊跨越兩大洲、多個國家,飛行近9小時、航程逾6,000公里方抵達埃及;演習內容包括殲-16與埃及空軍陣風、米格-29戰機進行模擬空戰,以及聯合空戰規劃與指管協同訓練。這是中埃第二次辦此類演習,而這次的時間點特別敏感——美伊戰爭已進入第六個月,美國海軍與國務院的注意力與資源持續集中在Hormuz海峽周邊,而埃及是Israel的鄰國、也是美國的傳統盟邦。中國選在這個窗口把戰機開進中東腹地做實兵訓練,而非僅止於過去的口頭聲明或軍售,是解放軍在該地區首次以這種規模進行長程實兵投送與聯合戰術訓練。",
+            "en": "China and Egypt launched the second 'Eagles of Civilization' joint air force exercise at multiple Egyptian air bases on Aug 22, expected to run into early September. The PLA Air Force deployed J-16 multirole fighters, YY-20 aerial tankers, KJ-500 airborne early-warning aircraft and Z-20 helicopters — a formation that crossed two continents and several countries, flying nearly nine hours and over 6,000 km to reach Egypt. The drills include J-16s flying simulated air combat against Egyptian Air Force Rafale and MiG-29 fighters, plus joint air-combat planning and command-and-control coordination training. This is the second such exercise between China and Egypt, but the timing is unusually pointed: the US-Iran war is in its sixth month, with US Navy and State Department attention and resources still concentrated around the Strait of Hormuz, while Egypt is Israel's neighbor and a longstanding US ally. China choosing this specific window to fly fighters into the heart of the Middle East for live joint training — rather than the arms sales or statements of prior years — marks the PLA's first exercise of this scale and reach in the region."
+          },
+          "implication": {
+            "zh": "這給你一個可拆解成兩層的判讀。第一層是機會成本:當美國的軍事與外交頻寬被伊朗戰爭長期佔用,中國得到的不是「美國讓步」,而是美國在其他地區的可見度與快速反應能力被結構性稀釋的空檔——這正是你在評估「北京會不會選在某個窗口動作」時該用的指標,不是看北京有沒有宣布什麼,而是看華盛頓的頻寬被佔用到什麼程度。第二層是能力訊號:殲-16、運油機與預警機組成的完整編隊,代表解放軍已具備獨立於本土防空網之外、跨兩大洲的聯合空中作戰投送與指管能力,這個能力一旦驗證過一次,未來可以複製到其他對中國有意義的地區,而不必等到有實際衝突才第一次嘗試。你在跟決策者對話時,可以把這次演習當成「解放軍遠程投送能力首次在中東實兵驗證」的具體時間點,而不是空泛地說「中國影響力擴張」。",
+            "en": "This splits into two layers worth reading separately. First, opportunity cost: with US military and diplomatic bandwidth tied up in the Iran war, what Beijing gets is not 'American concession' but a structural window where US visibility and rapid-response capacity elsewhere is diluted — the metric to track when assessing whether Beijing will act in some other window isn't what Beijing announces, but how saturated Washington's bandwidth currently is. Second, a capability signal: a full formation of J-16s, tankers and an AEW&C aircraft means the PLA has now demonstrated joint air-combat deployment and command-and-control reach across two continents, independent of its home air-defense network — a capability that, once validated once, can be replicated in other regions that matter to China without needing an actual conflict as the first trial run. In conversation with policymakers, this exercise is usable as the concrete date the PLA first proved long-range deployment capability live in the Middle East, rather than a vague claim about 'expanding Chinese influence.'"
+          },
+          "counterpoint": {
+            "zh": "這是中埃第二屆同名演習,規劃週期本身可能早於美伊戰爭爆發,不宜過度解讀成「趁虛而入」的即興決定——把長期已排定的軍事交流硬套進當週的地緣政治敘事,有選擇性解讀之嫌。此外,埃及同時也是美國長期軍援與聯合演習(如與美國、以色列等的既有合作機制)對象,埃及與中國辦演習不代表埃及在美中之間選邊,更可能是埃及一貫的多邊平衡外交,不必然是「美國盟邦鬆動」的證據。",
+            "en": "This is the second iteration of a China-Egypt exercise under the same name, and its planning cycle likely predates the outbreak of the US-Iran war — reading it as an improvised move to exploit a vacuum risks forcing a long-scheduled military exchange into that week's geopolitical narrative through selective interpretation. Egypt also remains a longstanding recipient of US military assistance and joint exercises (including established cooperation frameworks with the US and Israel); Egypt exercising with China does not mean Egypt is picking a side between Washington and Beijing, and is more likely Egypt's habitual multi-vector balancing diplomacy than evidence that a US ally is loosening its ties."
+          },
+          "source": "South China Morning Post / Egypt State Information Service",
+          "url": "https://www.scmp.com/news/china/military/article/3365163/chinas-j-16s-face-against-egypts-rafales-combat-drills-iran-war-rumbles",
+          "terms": ["AEW&C"]
+        }
+      ]
+    },
+    {
+      "id": "geo",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "likely",
+          "title": {
+            "zh": "Treasury宣布對伊「經濟版D-Day」的次日,一艘油輪在Hormuz外海遭擊癱——正好卡在Pakistan軍方在Tehran斡旋停戰的窗口",
+            "en": "The Day After Treasury's 'Economic D-Day' on Iran, a Tanker Gets Disabled Off Hormuz — Right as Pakistan's Military Was in Tehran Brokering a Ceasefire"
+          },
+          "summary": {
+            "zh": "美國財政部長Bessent於8/24宣布代號「Operation Economic Outcast」的新一波對伊制裁,將次級制裁範圍從傳統的石油貿易擴大到數位資產、科技、黃金與航空,並制裁近60個涉及核武/飛彈技術非法採購、網路行動與石油走私的實體、個人與船舶;Bessent將此定性為「經濟版D-Day」,同時證實Trump正親自致電多國領袖,要求「具體」配合停止與伊朗的貿易往來。但同一批報導也指出,美方過去對伊石油次級制裁早已存在、只是執法不完整,這次多屬「擴大類別、重新包裝」而非全新工具,最重的一批制裁措施仍被暫時保留未出手。次日(8/25)晚間,英國海事貿易行動處(UKMTO)通報,一艘油輪在Oman東岸外海的Hormuz海域遭類似飛彈的投射物擊中,引擎失能但全員平安,無環境污染報告。這起事件發生的同一時間,由陸軍參謀長Asim Munir率領的Pakistan高層代表團正在Tehran與Iran總統會談,議題正是重新開放Hormuz航道、恢復美伊談判——目前尚無任何一方公開將油輪攻擊歸咎於特定行為者。",
+            "en": "US Treasury Secretary Bessent announced a new wave of Iran sanctions on Aug 24 branded 'Operation Economic Outcast,' expanding secondary-sanctions categories beyond traditional oil trade to digital assets, technology, gold and aviation, and designating roughly 60 entities, individuals and vessels tied to illicit nuclear/missile procurement, cyber operations and oil smuggling; Bessent called it an 'economic D-Day' and confirmed Trump was personally calling world leaders requesting 'specific' cooperation to halt trade with Iran. The same coverage notes existing US secondary sanctions on Iranian oil have long existed but were only partially enforced — this wave is largely an expansion and rebranding of categories rather than an entirely new instrument, and the harshest measures were held back for now. The following evening (Aug 25), the UK Maritime Trade Operations (UKMTO) reported that a tanker off Oman's east coast in the Strait of Hormuz was struck by a missile-like projectile, disabling its engine; the crew was reported safe with no environmental impact reported. The strike occurred in the same window that a senior Pakistani delegation led by army chief Field Marshal Asim Munir was in Tehran meeting Iran's president, specifically to discuss reopening the Hormuz shipping lane and reviving US-Iran talks — as of writing, no party has publicly attributed the tanker strike to a specific actor."
+          },
+          "implication": {
+            "zh": "這裡最值得你記錄的,是三條時間線疊在同一週卻各自獨立的事實基礎:制裁擴大是官方確認的具體動作(有名單、有品類);油輪遭擊是UKMTO這個中立監測機構確認發生、但攻擊者身分仍未定案的事件;Pakistan斡旋則是雙邊外交進度、尚未看到具體突破。把這三者分開記帳的意義在於:如果你看到後續報導把油輪攻擊直接寫成「Iran報復新制裁」,那是敘事層的因果嫁接,不是已被證實的事實鏈——但反過來,如果攻擊者身分遲遲不明、卻仍成功讓Pakistan的斡旋窗口失去正當性(各方開始互相指控、談判延後),那麼「是誰打的」這個問題本身的重要性,會小於「這次攻擊事實上達到了什麼政治效果」——這是你在跟決策者討論此類事件時,一個比追究歸因更務實的切入角度。",
+            "en": "The thing most worth logging here is that three timelines stacked in the same week rest on independent evidentiary footing: the sanctions expansion is a confirmed official action (named entities, named categories); the tanker strike is confirmed to have occurred by UKMTO, a neutral monitoring body, but the attacker's identity remains unresolved; and Pakistan's mediation is a diplomatic process in progress with no confirmed breakthrough yet. Keeping these three separate matters because if later reporting frames the tanker strike as simply 'Iran retaliating against the new sanctions,' that is a narrative-level causal graft, not an established fact chain — but conversely, if the attacker's identity stays unresolved yet the strike still succeeds in delegitimizing Pakistan's mediation window (parties start accusing each other, talks get delayed), then the question of 'who did it' matters less than 'what political effect did this strike actually produce' — a more practical entry point than chasing attribution when discussing this class of event with policymakers."
+          },
+          "counterpoint": {
+            "zh": "Hormuz海域近半年已多次出現油輪遭攻擊或扣押事件,單一事件與Pakistan斡旋的時間重疊,也可能只是這個高風險海域的背景頻率使然,不必然是針對談判窗口的蓄意破壞;而Treasury的制裁措辭雖以「D-Day」自我定調,但報導也明確指出最重的工具尚未動用,把它讀成升級的決定性轉折點可能高估了這次宣布的實質內容。",
+            "en": "The Strait of Hormuz has already seen multiple tanker strikes or seizures over the past six months, so a single incident overlapping with Pakistan's mediation window could simply reflect the region's elevated background rate rather than deliberate sabotage of the talks; and while Treasury framed the sanctions as a 'D-Day,' reporting also makes clear the harshest tools have not yet been deployed, so reading this announcement as a decisive escalation turning point may overstate what was actually rolled out."
+          },
+          "source": "NPR / Axios / U.S. News & World Report",
+          "url": "https://www.npr.org/2026/08/24/nx-s1-5942971/u-s-treasury-launches-economic-d-day-against-iran-as-war-drags-on",
+          "terms": ["IRGC", "UKMTO"]
+        }
+      ]
+    },
+    {
+      "id": "cyber",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "CVE-2026-68820:負MTTE不是只有「裝不了EDR的資產」才有——這次是每一台Windows都有的核心層漏洞",
+            "en": "CVE-2026-68820: Negative MTTE Isn't Just for Assets That Can't Run EDR — This One's a Kernel Flaw on Every Windows Box"
+          },
+          "summary": {
+            "zh": "Microsoft於8/11發布累積更新修補CVE-2026-68820,這是Windows處理WinSock通訊的核心驅動程式afd.sys裡的一個釋放後使用(UAF)漏洞,任何已在系統上取得低權限存取的攻擊者,不需誘騙使用者互動,就能利用一個競爭條件將權限提升至SYSTEM層級。CISA同日將其列入KEV目錄,依BOD 26-04風險矩陣核發修補期限;由於此漏洞在修補程式發布前已被在野利用,聯邦民事機關的最終修補期限落在8/25。與我們上週報告聚焦的CVE-2026-59310(vCenter Syslog路徑穿越)不同,afd.sys存在於每一台Windows用戶端與伺服器上,而且這層資產完全支援EDR代理程式安裝——換言之,這不是「資產裝不了代理程式所以看不到」的老問題,而是即使裝了代理程式、資產完全可被儀器化,修補時鐘仍然從一個負值起跑:漏洞已經在野利用,才等到修補程式問世。",
+            "en": "Microsoft shipped a cumulative update patching CVE-2026-68820 on Aug 11 — a use-after-free flaw in afd.sys, the core driver Windows uses to handle WinSock communication. Any attacker who already holds low-privilege access on the system can exploit a race condition to escalate to SYSTEM without needing to trick a user into any interaction. CISA added it to the KEV catalog the same day, triggering a BOD 26-04 risk-matrix deadline; because the flaw was already being exploited in the wild before the patch existed, the final remediation deadline for federal civilian agencies landed on Aug 25. Unlike CVE-2026-59310 (the vCenter Syslog path-traversal flaw) covered in last week's report, afd.sys is present on every Windows client and server, and this asset class fully supports installing an EDR agent — meaning this isn't the familiar problem of an asset that can't host an agent and therefore can't be seen. Even on a fully instrumentable asset, the patch clock still started from a negative number: exploitation in the wild preceded the patch's existence."
+          },
+          "implication": {
+            "zh": "這把上週報告的核心論點往前推了一步:「證據的預設值沒被打開」只解釋了虛擬化管理平面、邊界設備這類特殊資產的失效,但afd.sys這個案例證明,即使資產完全支援EDR、遙測理論上齊全,只要漏洞的在野利用早於修補程式存在,BOD 26-04設定的期限依然是從一個已經追不上的起跑點開始算——這代表負MTTE不是「特定資產類別的結構性盲區」問題,而是修補這個工具本身在對抗零日利用時的普遍性極限。對你的實務建議是:任何仰賴「修補期限」當唯一防線的風險模型都該假設它會系統性地慢半步,真正能提前攔截的訊號來源是EDR對「非預期的權限提升行為模式」的行為偵測,而不是等CVE編號出現才反應。",
+            "en": "This pushes last week's core argument one step further: 'evidence defaults left switched off' only explains failure on special asset classes like virtualization management planes and edge appliances. The afd.sys case proves that even on a fully EDR-capable asset with telemetry theoretically intact, as long as in-the-wild exploitation precedes patch availability, the deadline BOD 26-04 sets still starts from a starting line it can never catch up from — meaning negative MTTE isn't a structural blind spot confined to one asset class, it's a general limit of patching itself against zero-day-style exploitation. The practical takeaway: any risk model that treats a patch deadline as the sole line of defense should assume it will systematically lag by half a step; the signal source that can actually intercept this in advance is EDR's behavioral detection of 'unexpected privilege-escalation patterns,' not waiting for a CVE number to appear before reacting."
+          },
+          "source": "Microsoft / CISA KEV / Qualys",
+          "url": "https://blog.qualys.com/product-tech/2026/08/18/cve-2026-68820-kev-bod-26-04-requirements",
+          "terms": ["UAF", "LPE", "KEV", "BOD", "EDR"]
+        },
+        {
+          "severity": "medium",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "「兩個SOC的故事」:CISA自家紅隊證實,壓垂真實告警的不是工具不夠,是多套SOC互不通話、分析師沒有動手的權限",
+            "en": "'A Tale of Two SOCs': CISA's Own Red Team Confirms What Buries a Real Alert Isn't Missing Tools — It's SOCs That Don't Talk and Analysts Without Authority to Act"
+          },
+          "summary": {
+            "zh": "CISA於8/25發布諮詢報告AA26-237A,比較同一套手法對兩個不同單位(一個政府服務設施部門組織、一個水務系統部門組織)進行的紅隊演練結果。在報告稱為「Organization A」的案例中,紅隊在多個工作站取得初始存取、進一步取得網域管理層級權限、並橫向移動到敏感業務系統與雲端資源,全程未被發現;事後檢討發現,該組織同時運作多套SOC與多套EDR平台、彼此缺乏跨團隊溝通,大量來自正常業務活動的誤報把真正的入侵指標(IOC)淹沒在雜訊裡,分析師也缺乏標準作業程序去判斷該把哪些可疑活動往上呈報、且本身權限有限、無法直接採取行動;報告點名至少一起與紅隊活動有關的SCCM伺服器告警,確實被EDR標記為中/低風險事件,但遭分析師當作誤報而未回應。",
+            "en": "CISA published advisory AA26-237A on Aug 25, comparing the outcomes of red-team engagements run with similar tradecraft against two different organizations — a Government Services and Facilities sector entity and a Water and Wastewater Systems sector entity. In the case the report labels 'Organization A,' the red team gained initial access on multiple workstations, escalated to domain-admin-level privilege, and moved laterally into sensitive business systems and cloud resources entirely undetected; the post-mortem found the organization ran multiple SOCs and multiple EDR platforms with no cross-team communication, a flood of false positives from routine business activity buried genuine indicators of compromise (IOCs) in noise, and analysts lacked standard operating procedures for escalating suspicious activity while holding limited authority to act on it directly. The report specifically notes that at least one SCCM-server alert tied to the red team's own activity was in fact flagged by EDR as a medium/low-severity event — and was dismissed by analysts as a false positive without response."
+          },
+          "implication": {
+            "zh": "這份報告補上了本站近兩期一直在追的那條線的另一半:上週報告講的是「證據出廠時就沒被送出機外」,這次講的是「證據確實被送出來了、告警確實觸發了,但組織的人力與流程接不住」。兩者疊在一起會給你一個更完整的失效模型——你在評估任何一個組織(不論是你自己接觸的資安團隊或分析政府機關的資安投資)的防禦韌性時,「有沒有裝EDR」和「這套EDR產生的告警有沒有一條清楚的、有權限執行的分流路徑」是兩個獨立變數,前者是採購決策,後者是組織設計決策,而目前絕大多數關於資安投資的討論(包括BOD 26-04)幾乎只談前者。",
+            "en": "This report supplies the other half of the thread this outlet has been tracking for two editions running: last week's report was about evidence never being forwarded off the box as shipped; this one is about evidence genuinely being forwarded, alerts genuinely firing, but the organization's people and process failing to catch them. Stacked together they give a more complete failure model. When assessing the defensive resilience of any organization — a security team you deal with directly, or a government agency's security spending — 'is EDR installed' and 'does the alert stream this EDR produces have a clear, empowered escalation path' are two independent variables. The first is a procurement decision; the second is an organizational-design decision, and almost all current discussion of security investment, BOD 26-04 included, talks about only the first."
+          },
+          "source": "CISA (AA26-237A)",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-237a",
+          "terms": ["SOC", "EDR", "IOC", "BOD"]
+        }
+      ]
+    },
+    {
+      "id": "tech",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "H200實測數字出來了:配額用了13%,但真正還在擋路的是北京自己的審批,不是香港的電",
+            "en": "The H200 Numbers Are In: 13% of Quota Used — But What's Actually Blocking the Rest Is Beijing's Own Approval Process, Not Hong Kong's Power Grid"
+          },
+          "summary": {
+            "zh": "延續我們8/22報告觀察到的H200香港部署與電力天花板問題:最新報導證實ByteDance與Tencent近幾週各已取得約1萬顆H200晶片,而兩家企業依美方1月核發的許可框架,每家上限為7.5萬顆——實際到貨量僅為法定許可上限的13%。多篇報導指出,晶片依中國要求留在香港境外(不進入中國海關境內)部署運算,原因除了我們8/22報告談過的電力容量不足,還有一個先前未被充分強調的理由:北京有意把大部分美方核准的配額留在香港、而非放行進入中國本土市場,以保護並扶植Huawei等本土晶片商的市佔——換言之,即使美方許可與香港電力都不是問題,中國國家發展和改革委員會(NDRC)這一層的國內審批,才是決定實際能用多少晶片的關鍵閥門,且其他中國企業預期將收到類似規模的批次。",
+            "en": "Following our Aug 22 observation of H200 deployment in Hong Kong and its power-capacity ceiling: new reporting confirms ByteDance and Tencent have each received roughly 10,000 H200 chips in recent weeks, against a per-company cap of 75,000 chips under the licensing framework Washington issued in January — meaning actual deliveries sit at just 13% of the legal ceiling. Multiple reports note the chips are being kept outside mainland Chinese customs territory (in Hong Kong) at Beijing's direction, for a reason beyond the power-capacity constraint flagged in our Aug 22 report: Beijing intends to keep the bulk of its US-licensed allocation in Hong Kong rather than release it into the mainland market, specifically to protect and grow the market share of domestic chipmakers like Huawei. In other words, even where neither the US license nor Hong Kong's power grid is the constraint, China's own National Development and Reform Commission (NDRC) approval layer is the actual valve determining how many chips can be put to use — and other Chinese firms are expected to receive similarly sized tranches."
+          },
+          "implication": {
+            "zh": "這修正了我們8/22報告的假設权重分配。當時的推論是:配額用不完,主要是因為香港的電力與機房容量物理上跟不上;現在的數字顯示,即使把物理瓶頸完全排除,北京自己選擇不放行也會產生同樣的低使用率——這代表你在解讀「中國企業拿到的先進晶片配額能不能真正轉化成AI算力」時,不能只看美方出口管制這一關,必須同時檢查中國國內的第二道審批關卡,而後者的決策邏輯(保護本土晶片商)跟出口管制的邏輯(國安考量)完全不同,兩者疊加會讓外部觀察者更難用單一指標預測晶片實際流向。對台股投資角度而言,這也是一個提醒:任何以「美方放行=中國AI算力立即提升」為前提的市場敘事,都忽略了北京自己手上握有的減速閥,這個閥門可能比出口管制本身更難被外部預測。",
+            "en": "This revises the weighting of our Aug 22 hypothesis. Our read at the time was that quota under-utilization was mainly a physical constraint — Hong Kong's power and facility capacity couldn't keep pace. The new numbers show that even with that physical bottleneck fully removed, Beijing's own choice not to release the quota would produce the same low utilization rate — meaning that when reading whether an advanced-chip allocation actually converts into usable Chinese AI compute, US export control is not the only gate to watch; there is a second, domestic Chinese approval gate whose decision logic (protecting domestic chipmakers) is entirely different from export control's logic (national-security concerns), and the two stacking together makes it harder for an outside observer to predict actual chip flow from either indicator alone. For Taiwan-equity investors, this is also a reminder: any market narrative premised on 'US approval equals an immediate boost to Chinese AI compute' overlooks a throttle Beijing itself holds — one that may be harder for outsiders to forecast than the export control regime itself."
+          },
+          "source": "Tom's Hardware / TechTimes",
+          "url": "https://www.techtimes.com/articles/325078/20260820/nvidia-h200-chips-enter-china-13-quota-beijing-not-washington-controls-rest.htm",
+          "terms": ["NDRC"]
+        }
+      ]
+    }
+  ]
+}
