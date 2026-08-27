@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-26",
+  "updated": "2026-08-28",
   "terms": [
     {
       "term": "CTF",
@@ -847,6 +847,72 @@
       },
       "category": "geo",
       "first_seen": "2026-08-26"
+    },
+    {
+      "term": "QTFY",
+      "zh": "QTFY(中國國家背景商用駭客團伙代號)",
+      "expansion": "QTFY (threat-actor designation)",
+      "def": {
+        "zh": "美國司法部與FBI用來指稱一支受雇於中國民營企業南京新九維網路科技公司、經營QScan/QTRouter駭客平台團伙的代號。其活動已持續逾8年,法院文件將中國國家安全部與解放軍列為其付費客戶,是「攻擊者即存取關係」在殭屍網路層級的具體案例。",
+        "en": "A designation the US Justice Department and FBI use for a group employed by Chinese private company Nanjing Xinjiuwei Network Technology Co. to run the QScan/QTRouter hacking platforms. Active for over eight years, court documents name China's Ministry of State Security and the PLA as its paying customers — a concrete botnet-layer instance of 'the attacker as an access relationship.'"
+      },
+      "category": "cyber",
+      "first_seen": "2026-08-28"
+    },
+    {
+      "term": "MSS",
+      "zh": "中國國家安全部",
+      "expansion": "Ministry of State Security",
+      "def": {
+        "zh": "中國負責對外情報蒐集、反間諜與國內安全的部級機構,兼具情報機關與國安警察職能;近年多起網路間諜活動的法院文件與威脅情報報告將其列為特定駭客團伙的付費客戶或指導單位。",
+        "en": "China's ministry-level agency responsible for foreign intelligence collection, counterespionage and domestic security, combining the functions of an intelligence service and a security police force; recent court filings and threat-intelligence reports have named it as the paying customer or directing body behind specific hacking groups."
+      },
+      "category": "geo",
+      "first_seen": "2026-08-28"
+    },
+    {
+      "term": "MND",
+      "zh": "國防部（台灣）",
+      "expansion": "Ministry of National Defense (Taiwan)",
+      "def": {
+        "zh": "台灣負責國防政策、軍事採購與部隊管理的內閣部會;在無人機特別預算爭議中,是行政院版本原定的主管機關,在野黨版本則將主管機關改為經濟部,僅軍事採購部分仍歸其管轄。",
+        "en": "Taiwan's cabinet-level ministry responsible for defense policy, military procurement and force management; in the drone special-budget dispute, it was the lead authority under the Cabinet's original bill, while the opposition's version shifted lead authority to the Ministry of Economic Affairs, leaving MND responsible only for the military-procurement portion."
+      },
+      "category": "military",
+      "first_seen": "2026-08-28"
+    },
+    {
+      "term": "MOEA",
+      "zh": "經濟部（台灣）",
+      "expansion": "Ministry of Economic Affairs (Taiwan)",
+      "def": {
+        "zh": "台灣負責產業政策、貿易與經濟事務的內閣部會;在野黨主導通過的無人機特別預算版本將其列為主管機關(軍事採購部分除外),反映該版本更側重產業扶植而非純軍事需求的立法邏輯。",
+        "en": "Taiwan's cabinet-level ministry responsible for industrial policy, trade and economic affairs; the opposition-led version of the drone special budget designated it as lead authority (excluding the military-procurement portion), reflecting a legislative logic weighted more toward industrial development than pure military requirements."
+      },
+      "category": "geo",
+      "first_seen": "2026-08-28"
+    },
+    {
+      "term": "CCW",
+      "zh": "特定常規武器公約",
+      "expansion": "Convention on Certain Conventional Weapons",
+      "def": {
+        "zh": "1980年締結的國際武器管制公約,透過附加議定書限制或禁止特定造成過度傷害或濫殺濫傷的常規武器;其定期審議會議(2026年11月於日內瓦召開)是目前討論致命性自主武器系統拘束性規範最主要的國際場域,但因採共識決,進展長期緩慢。",
+        "en": "An international arms-control convention concluded in 1980 that uses additional protocols to restrict or ban specific conventional weapons deemed to cause excessive injury or indiscriminate harm; its periodic review conference (next held in Geneva in November 2026) is the primary international venue for negotiating binding rules on lethal autonomous weapons systems, though progress has long been slow due to its consensus-based decision rule."
+      },
+      "category": "military",
+      "first_seen": "2026-08-28"
+    },
+    {
+      "term": "LAWS",
+      "zh": "致命性自主武器系統",
+      "expansion": "Lethal Autonomous Weapons Systems",
+      "def": {
+        "zh": "無需即時人類操作介入、可自主偵測、選定並攻擊目標的武器系統;其治理爭議核心在於機器是否能在戰場情境中正確判斷戰鬥員是否已喪失戰鬥能力或已投降,目前是CCW框架下政府專家組討論的主要議題。",
+        "en": "Weapon systems capable of autonomously detecting, selecting and engaging targets without real-time human operator intervention; the core governance dispute is whether a machine can correctly judge battlefield context such as a combatant surrendering or being incapacitated, and it is the central subject under discussion in the CCW's Group of Governmental Experts."
+      },
+      "category": "military",
+      "first_seen": "2026-08-28"
     },
     {
       "term": "NDRC",

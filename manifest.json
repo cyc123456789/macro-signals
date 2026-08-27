@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-26",
+  "updated": "2026-08-28",
   "reports": [
+    {
+      "file": "reports/2026-08-28-brief.json",
+      "date": "2026-08-28",
+      "kind": "brief",
+      "title": {
+        "zh": "DOJ端掉替解放軍與國安部接案的商用駭客平台,北京則靠反對黨端掉了自己的無人機特別預算:同一週,兩種代理人手法,同一套邏輯",
+        "en": "The DOJ Took Down a Commercial Hacking Platform on Retainer for the PLA and MSS, the Same Week Beijing-Adjacent Pressure Helped Gut Taiwan's Own Drone Budget: Two Proxies, One Playbook"
+      }
+    },
     {
       "file": "reports/2026-08-26-brief.json",
       "date": "2026-08-26",
