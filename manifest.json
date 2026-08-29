@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-28",
+  "updated": "2026-08-30",
   "reports": [
+    {
+      "file": "reports/2026-08-30-brief.json",
+      "date": "2026-08-30",
+      "kind": "brief",
+      "title": {
+        "zh": "誰真正解決了霍爾木茲：美軍說水雷清空、IRGC說收費談定，兩份聲明各自成立卻互不對齊；基輔近郊37死當天，Zelensky把無人機消耗戰的計算單位從『一次事件』換成『日產能』",
+        "en": "Who Actually Solved Hormuz: The US Says the Mines Are Gone, the IRGC Says the Toll Deal Is Signed — Two Statements That Are Each True and Still Don't Line Up; The Day a Strike Near Kyiv Killed 37, Zelensky Reset the Drone War's Unit From 'One Attack' to 'Daily Output'"
+      }
+    },
     {
       "file": "reports/2026-08-28-brief.json",
       "date": "2026-08-28",

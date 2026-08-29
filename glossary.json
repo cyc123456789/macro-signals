@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-28",
+  "updated": "2026-08-30",
   "terms": [
     {
       "term": "CTF",
@@ -924,6 +924,17 @@
       },
       "category": "geo",
       "first_seen": "2026-08-26"
+    },
+    {
+      "term": "CENTCOM",
+      "zh": "美軍中央司令部",
+      "expansion": "United States Central Command",
+      "def": {
+        "zh": "美軍地理型聯合作戰司令部之一，轄區涵蓋中東、中亞與部分北非（包括 Iran、Iraq 與波灣各國），總部位於 Tampa, Florida；波灣海域的軍事清雷、護航等行動由其統一指揮。",
+        "en": "One of the US military's geographic combatant commands, responsible for the Middle East, Central Asia and parts of North Africa (including Iran, Iraq and the Gulf states); headquartered in Tampa, Florida. Military operations in the Gulf such as mine-clearing and escort missions fall under its command."
+      },
+      "category": "military",
+      "first_seen": "2026-08-30"
     }
   ]
 }
