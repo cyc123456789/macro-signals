@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-30",
+  "updated": "2026-08-31",
   "reports": [
+    {
+      "file": "reports/2026-08-31-weekly.json",
+      "date": "2026-08-31",
+      "kind": "weekly",
+      "title": {
+        "zh": "「最後五百公尺」：自主終端導引只讓單機貴一成，卻把防守方便宜五個數量級的那一層從棋盤上刪掉",
+        "en": "The Last 500 Meters: Terminal Autonomy Costs an Attacker 10% More Per Drone and Deletes the Defender's Cheapest Layer, Which Was Five Orders of Magnitude Cheaper"
+      }
+    },
     {
       "file": "reports/2026-08-30-brief.json",
       "date": "2026-08-30",

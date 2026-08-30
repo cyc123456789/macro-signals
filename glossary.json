@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-30",
+  "updated": "2026-08-31",
   "terms": [
     {
       "term": "CTF",
@@ -935,6 +935,149 @@
       },
       "category": "military",
       "first_seen": "2026-08-30"
+    },
+    {
+      "term": "C-UAS",
+      "zh": "反無人機系統",
+      "expansion": "Counter-Unmanned Aircraft Systems",
+      "def": {
+        "zh": "用於偵測、辨識、追蹤與擊落無人機的整套手段，通常分為偵測層（雷達、射頻、聲學、光電）與擊殺層（電子干擾、機砲、飛彈、雷射、攔截無人機）。其成本效益的關鍵指標是「每次接戰成本」，各技術之間可相差五個數量級以上。",
+        "en": "The full stack of means for detecting, identifying, tracking and defeating drones, usually split into a detection layer (radar, RF, acoustic, electro-optical) and a defeat layer (jamming, guns, missiles, lasers, interceptor drones). Its key economic metric is cost per engagement, which varies by more than five orders of magnitude across technologies."
+      },
+      "category": "military",
+      "first_seen": "2026-08-31"
+    },
+    {
+      "term": "EW",
+      "zh": "電子戰",
+      "expansion": "Electronic Warfare",
+      "def": {
+        "zh": "利用電磁頻譜進行攻擊、防護與支援的作戰領域，在反無人機脈絡中主要指干擾控制鏈路與欺騙衛星導航訊號。因不消耗彈藥，其每次接戰成本可低至美分等級，同時也是最便宜的廣域被動偵測手段；但對不發射無線電的目標（光纖導引或全自主機）同時失去攔截與偵測能力。",
+        "en": "Military operations using the electromagnetic spectrum for attack, protection and support. In the counter-drone context it chiefly means jamming control links and spoofing satellite navigation. Because it expends no ordnance its cost per engagement can fall to cents, and it doubles as the cheapest wide-area passive sensor — but against targets that emit no radio (fiber-optic guided or fully autonomous) it loses both the intercept and the detection."
+      },
+      "category": "military",
+      "first_seen": "2026-08-31"
+    },
+    {
+      "term": "Terminal Guidance",
+      "zh": "終端導引",
+      "expansion": "Terminal Guidance",
+      "def": {
+        "zh": "武器在飛行最後階段自行修正航向、鎖定並命中瞄準點的機制。在廉價無人機上，此功能由機上電腦與攝影機在最後數百公尺接管，因而同時免疫於電子干擾與無線電視距限制。這是現行各國法規（如 DoDD 3000.09）明文允許自主執行的功能，也因此成為自主武器管制定義上的主要爭議地帶。",
+        "en": "The mechanism by which a weapon corrects its own course, locks on and hits an aim point during the final phase of flight. On cheap drones this is handled by an onboard computer and camera taking over for the last few hundred meters, which makes the weapon immune to both jamming and radio-horizon limits. It is a function that current national policies such as DoDD 3000.09 expressly permit to be autonomous, which is why it has become the principal contested zone in defining autonomous weapons."
+      },
+      "category": "military",
+      "first_seen": "2026-08-31"
+    },
+    {
+      "term": "FOG-D",
+      "zh": "光纖導引無人機",
+      "expansion": "Fiber-Optic Guided Drone",
+      "def": {
+        "zh": "飛行時放出一條輕量光纖線、以實體線路而非無線電傳輸控制訊號與影像的無人機。因完全不發射射頻訊號，對傳統干擾與衛星導航欺騙免疫，也難以被射頻偵測器發現；代價是受線軸長度限制、線體脆弱，且仍需一名操作員全程操控。",
+        "en": "A drone that spools out a lightweight optical fiber in flight, carrying control signals and video over a physical line rather than radio. Because it emits no RF signature at all it is immune to conventional jamming and GNSS spoofing and largely invisible to RF detectors, at the cost of being limited by spool length, fragile in the line itself, and still requiring a human operator throughout."
+      },
+      "category": "military",
+      "first_seen": "2026-08-31"
+    },
+    {
+      "term": "GNSS",
+      "zh": "全球衛星導航系統",
+      "expansion": "Global Navigation Satellite System",
+      "def": {
+        "zh": "提供定位與授時的衛星星系總稱，包含美國 GPS、中國 Beidou、俄羅斯 GLONASS 與歐盟 Galileo。因訊號抵達地面時極為微弱，容易被干擾或欺騙，這使得視覺里程計、慣性導航等非 GNSS 手段成為無人機在爭議電磁環境中的必要備援。",
+        "en": "The collective term for satellite constellations providing positioning and timing, including the US GPS, China's BeiDou, Russia's GLONASS and the EU's Galileo. Because the signals are extremely weak by the time they reach the ground they are easily jammed or spoofed, which makes non-GNSS methods such as visual odometry and inertial guidance a necessary fallback for drones in contested electromagnetic environments."
+      },
+      "category": "tech",
+      "first_seen": "2026-08-31"
+    },
+    {
+      "term": "SoM",
+      "zh": "系統模組",
+      "expansion": "System-on-Module",
+      "def": {
+        "zh": "把處理器、記憶體與電源管理整合在單一小型電路板上的運算模組，設計用於嵌入其他裝置。因為是為機器人、車載與零售等民用場景大量出貨的商用品項，價格低廉、全球流通，難以用針對尖端資料中心晶片的出口管制手段加以限制。",
+        "en": "A compact compute board integrating processor, memory and power management, designed to be embedded inside another device. Because such modules ship in volume as commercial parts for robotics, automotive and retail applications, they are cheap and globally distributed, and are poorly addressed by export controls built around leading-edge datacenter silicon."
+      },
+      "category": "tech",
+      "first_seen": "2026-08-31"
+    },
+    {
+      "term": "TOPS",
+      "zh": "每秒兆次運算",
+      "expansion": "Tera Operations Per Second",
+      "def": {
+        "zh": "衡量 AI 推論晶片算力的單位，一 TOPS 等於每秒一兆次運算，通常標註所用數值精度（如 INT8）與是否採用稀疏化計算。此指標針對推論而非訓練，因此邊緣模組的 TOPS 數值與資料中心加速器的訓練算力不可直接比較。",
+        "en": "A measure of AI inference throughput, where one TOPS equals one trillion operations per second, normally quoted with the numeric precision used (such as INT8) and whether sparsity is assumed. It measures inference rather than training, so an edge module's TOPS figure is not directly comparable with the training throughput of a datacenter accelerator."
+      },
+      "category": "tech",
+      "first_seen": "2026-08-31"
+    },
+    {
+      "term": "Jetson Orin",
+      "zh": "Jetson Orin 邊緣運算模組",
+      "expansion": "NVIDIA Jetson Orin",
+      "def": {
+        "zh": "Nvidia 面向邊緣 AI 推論的系統模組產品線，原為機器人與自主機具設計。其中 Jetson Orin NX 具 1,024 個 CUDA 核心與 32 個 Tensor 核心，稀疏 INT8 算力達 157 TOPS。烏克蘭軍事情報單位已多次在俄軍 Molniya 無人機、Shahed MS001 與 S-71M 巡弋飛彈殘骸中發現此類模組，用於機上目標辨識與終端導引。",
+        "en": "Nvidia's product line of system-on-modules for edge AI inference, originally designed for robotics and autonomous machines. The Jetson Orin NX carries 1,024 CUDA cores and 32 Tensor cores, rated up to 157 sparse INT8 TOPS. Ukrainian military intelligence has repeatedly recovered modules from this family in Russian Molniya drones, Shahed MS001 airframes and S-71M cruise missiles, where they perform onboard target recognition and terminal guidance."
+      },
+      "category": "tech",
+      "first_seen": "2026-08-31"
+    },
+    {
+      "term": "GGE",
+      "zh": "政府專家小組",
+      "expansion": "Group of Governmental Experts",
+      "def": {
+        "zh": "聯合國體系下由各國政府指派專家組成的談判前置機制。在自主武器議題上，CCW 架構下的 LAWS 政府專家小組自 2016 年運作至今，其三年授權將於 2026 年 11 月第七次審查會議屆滿，屆時各國須決定是進入正式談判、再延一次討論性授權，或讓進程失效。",
+        "en": "A pre-negotiation mechanism under the UN system composed of experts nominated by member states. On autonomous weapons, the GGE on LAWS has operated under the CCW framework since 2016; its three-year mandate expires at the Seventh Review Conference in November 2026, when states must decide whether to open formal negotiations, roll over a discussion-only mandate, or let the process lapse."
+      },
+      "category": "geo",
+      "first_seen": "2026-08-31"
+    },
+    {
+      "term": "IHL",
+      "zh": "國際人道法",
+      "expansion": "International Humanitarian Law",
+      "def": {
+        "zh": "規範武裝衝突行為的國際法體系，核心原則包括區分原則、比例原則與預防措施義務。在自主武器辯論中，主張不需新規則的國家（如俄羅斯）認為現行 IHL 已足以涵蓋高度自主系統，反對者則認為既有原則無法解決機器自行選定目標所帶來的可歸責性問題。",
+        "en": "The body of international law governing conduct in armed conflict, resting on the principles of distinction, proportionality and precaution. In the autonomous weapons debate, states arguing that no new rules are needed — Russia foremost — hold that existing IHL already covers highly autonomous systems, while opponents argue those principles cannot resolve the accountability problem created when a machine selects its own target."
+      },
+      "category": "geo",
+      "first_seen": "2026-08-31"
+    },
+    {
+      "term": "DoDD 3000.09",
+      "zh": "美國國防部 3000.09 號指令",
+      "expansion": "Department of Defense Directive 3000.09, Autonomy in Weapon Systems",
+      "def": {
+        "zh": "美國國防部關於武器系統自主性的政策指令，2012 年發布、2023 年 1 月更新。它將 LAWS 定義為「一經啟動即可在無人類操作者進一步介入下選定並接戰目標的武器系統」，但明文允許系統自主執行獲取、追蹤、辨識、目標提示、排序、開火時機與終端導引，條件是操作者保留對個別目標或特定目標群的選擇權。",
+        "en": "The US Department of Defense policy directive on autonomy in weapon systems, issued in 2012 and updated in January 2023. It defines LAWS as a weapon system that, once activated, can select and engage targets without further intervention by a human operator, while expressly permitting autonomy for acquiring, tracking, identifying, cueing, prioritizing, timing of fire and terminal guidance, provided the operator retains control over the selection of individual targets and specific target groups."
+      },
+      "category": "geo",
+      "first_seen": "2026-08-31"
+    },
+    {
+      "term": "NCSIST",
+      "zh": "國家中山科學研究院",
+      "expansion": "National Chung-Shan Institute of Science and Technology",
+      "def": {
+        "zh": "台灣國防科技研發的主要法人機構，負責飛彈、雷達、無人機與電子戰系統的自主研發與生產。審計部 2026 年度報告指出，其受空軍委託開發的反無人機系統落後 6 至 12 個月，且對光纖導引與 AI 導航無人機不具可行反制手段。",
+        "en": "Taiwan's principal state-affiliated defense research and production body, responsible for indigenous development of missiles, radars, drones and electronic warfare systems. Taiwan's National Audit Office reported for fiscal 2026 that the counter-drone system NCSIST developed for the air force was six to twelve months behind schedule and had no viable countermeasure against fiber-optic guided or AI-navigated drones."
+      },
+      "category": "military",
+      "first_seen": "2026-08-31"
+    },
+    {
+      "term": "HPM",
+      "zh": "高功率微波",
+      "expansion": "High-Power Microwave",
+      "def": {
+        "zh": "以高功率微波脈衝燒毀或癱瘓目標電子元件的定向能武器。因每次發射的邊際成本極低且可同時涵蓋多個目標，被視為對抗無人機蜂群的關鍵手段之一；美方已展示其可擊落不受電子干擾影響的光纖導引 FPV 無人機。",
+        "en": "A directed-energy weapon that burns out or disables a target's electronics with high-power microwave pulses. Because its marginal cost per shot is very low and a single pulse can cover multiple targets at once, it is regarded as a key answer to drone swarms; US forces have demonstrated it defeating fiber-optic guided FPV drones, which are immune to jamming."
+      },
+      "category": "military",
+      "first_seen": "2026-08-31"
     }
   ]
 }
