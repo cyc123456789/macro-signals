@@ -1,6 +1,15 @@
 {
-  "updated": "2026-08-31",
+  "updated": "2026-09-01",
   "reports": [
+    {
+      "file": "reports/2026-09-01-brief.json",
+      "date": "2026-09-01",
+      "kind": "brief",
+      "title": {
+        "zh": "AI代理人已經在幫兩個駭客團伙親自操盤——一個讓EDR一邊回報健康一邊瞎掉，一個負責規劃勒索軟體；戰場上，俄軍則是用渦輪噴射引擎買下防守方攔截無人機追不上的那個維度",
+        "en": "AI Agents Are Now Piloting Two Separate Hacking Crews' Live Operations — One Blinds EDR While It Reports Healthy, One Plans Ransomware — While Russia's Turbojet Drones Buy the One Speed Dimension Ukraine's Interceptors Haven't Caught Up To"
+      }
+    },
     {
       "file": "reports/2026-08-31-weekly.json",
       "date": "2026-08-31",

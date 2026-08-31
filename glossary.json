@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-31",
+  "updated": "2026-09-01",
   "terms": [
     {
       "term": "CTF",
@@ -1067,6 +1067,39 @@
       },
       "category": "military",
       "first_seen": "2026-08-31"
+    },
+    {
+      "term": "UAT",
+      "zh": "未歸類威脅行為者（Cisco Talos命名編號）",
+      "expansion": "Uncategorized Threat Actor (Cisco Talos designation)",
+      "def": {
+        "zh": "Cisco Talos用來標示「已觀察到一組具內部一致性的入侵活動，但尚未有足夠證據升級為正式命名威脅組織」的暫時性編號，性質與Mandiant的UNC編號相同；例如UAT-10147即為以此方式命名、其技術細節隨後續報告逐步補齊的中文語系財務動機駭客團伙。",
+        "en": "A provisional designation Cisco Talos assigns to a cluster of intrusion activity that shows internal consistency but lacks sufficient evidence to be promoted to a formally named threat group — functionally identical to Mandiant's UNC designation. UAT-10147, the Chinese-speaking financially motivated group behind the SPECTRE backdoor, is one such case, with its tradecraft filled in report by report."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-01"
+    },
+    {
+      "term": "BYOVD",
+      "zh": "自帶漏洞驅動程式攻擊",
+      "expansion": "Bring Your Own Vulnerable Driver",
+      "def": {
+        "zh": "攻擊者刻意攜帶並載入一個合法簽章、但存在已知漏洞的第三方驅動程式，藉此取得作業系統核心層執行權限——因為驅動程式本身簽章合法，能繞過作業系統的驅動簽章驗證機制。取得核心層權限後，攻擊者可進一步從系統的通知鏈結中移除EDR的回呼函式，使其持續回報「正常運作」卻實際上偵測不到任何行為。",
+        "en": "A technique in which an attacker deliberately loads a legitimately signed but known-vulnerable third-party driver to obtain kernel-level code execution — the driver's valid signature lets it slip past the operating system's driver-signing enforcement. With kernel access secured, the attacker can then strip an EDR product's callbacks out of the system's internal notification chain, leaving it reporting a healthy status while blind to all activity."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-01"
+    },
+    {
+      "term": "Geran",
+      "zh": "天竺葵系列攻擊無人機",
+      "expansion": "Geran (Russian Shahed-derivative loitering munition family)",
+      "def": {
+        "zh": "俄羅斯以伊朗Shahed-136為基礎、國產化量產的攻擊無人機系列。較新的Geran-3/4/5型加裝小型渦輪噴射引擎，時速可達約370公里、航程逾1,000公里，設計目的是以速度而非匿蹤或自主導引繞開防守方的攔截無人機，代價是單機成本顯著高於原本的螺旋槳動力型號。",
+        "en": "Russia's domestically produced series of attack drones derived from Iran's Shahed-136. The newer Geran-3/4/5 variants add a small turbojet engine, reaching roughly 370 km/h with a range over 1,000 km — designed to defeat defender interceptor drones through raw speed rather than stealth or autonomous guidance, at the cost of a unit price well above the earlier propeller-driven versions."
+      },
+      "category": "military",
+      "first_seen": "2026-09-01"
     },
     {
       "term": "HPM",
