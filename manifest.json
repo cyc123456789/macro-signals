@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-01",
+  "updated": "2026-09-02",
   "reports": [
+    {
+      "file": "reports/2026-09-02-brief.json",
+      "date": "2026-09-02",
+      "kind": "brief",
+      "title": {
+        "zh": "CENTCOM才宣布霍爾木茲水雷已清空兩天，伊朗就改用火箭彈布雷——美軍炸毀發射器，真正的震央卻是布蘭特原油站回90美元、把Fed 9月升息機率推到66%；同一週，聯邦法官判五角大廈給Anthropic貼的「供應鏈風險」標籤違憲，但那場仗只是換了戰場",
+        "en": "Two Days After CENTCOM Declared Hormuz Mine-Free, Iran Tried Rocket-Delivered Mines Instead — The US Struck the Launchers, But the Real Aftershock Was Brent Crude Back Above $90 and September Fed Hike Odds at 66%; The Same Week, a Federal Judge Ruled the Pentagon's 'Supply Chain Risk' Label on Anthropic Unconstitutional — the Fight Just Moved Venues"
+      }
+    },
     {
       "file": "reports/2026-09-01-brief.json",
       "date": "2026-09-01",

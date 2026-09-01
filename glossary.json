@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-01",
+  "updated": "2026-09-02",
   "terms": [
     {
       "term": "CTF",
@@ -1111,6 +1111,17 @@
       },
       "category": "military",
       "first_seen": "2026-08-31"
+    },
+    {
+      "term": "ATF",
+      "zh": "菸酒槍炮及爆裂物管理局",
+      "expansion": "Bureau of Alcohol, Tobacco, Firearms and Explosives",
+      "def": {
+        "zh": "美國司法部轄下的聯邦執法機構，負責槍枝、爆裂物、酒類與菸草相關犯罪的調查與監管；2026年8月，其一台儲存調查目標資訊的獨立伺服器遭Qilin勒索軟體集團入侵。",
+        "en": "A US Department of Justice law-enforcement agency responsible for firearms-, explosives-, alcohol-, and tobacco-related investigations and regulation; in August 2026, a standalone server holding information on its investigation targets was breached by the Qilin ransomware group."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-02"
     }
   ]
 }
