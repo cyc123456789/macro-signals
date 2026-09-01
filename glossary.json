@@ -1122,6 +1122,94 @@
       },
       "category": "geo",
       "first_seen": "2026-09-02"
+    },
+    {
+      "term": "PLA",
+      "zh": "中國人民解放軍",
+      "expansion": "People's Liberation Army",
+      "def": {
+        "zh": "中華人民共和國的武裝力量，法理上隸屬中國共產黨而非國家，下轄陸軍、海軍、空軍、火箭軍與軍事航天、網路空間等戰略支援部隊。在本站語境中，PLA 同時是台海態勢的主要行為者，也是網路與情報行動的委託方之一——DOJ 在 QTFY 案的法院文件中，即把解放軍與國家安全部並列為商用駭客平台的付費客戶。",
+        "en": "The armed forces of the People's Republic of China, formally subordinate to the Chinese Communist Party rather than to the state, comprising ground, naval, air and rocket forces plus strategic support arms covering space and cyberspace. In this site's usage the PLA is both the principal actor shaping the Taiwan Strait picture and one of the commissioning parties behind cyber and intelligence operations — DOJ court filings in the QTFY case list the PLA alongside the Ministry of State Security as paying customers of a commercial hacking platform."
+      },
+      "category": "military",
+      "first_seen": "2026-09-02"
+    },
+    {
+      "term": "UFWD",
+      "zh": "中共中央統一戰線工作部",
+      "expansion": "United Front Work Department (of the CCP Central Committee)",
+      "def": {
+        "zh": "中國共產黨中央委員會下轄的機構，負責對黨外人士、海外華人、宗教與少數民族團體及境外政治勢力進行影響與吸納工作。其操作特徵是透過形式上獨立的個人、社團與政黨管道達成北京想要的政治效果，因此外界即使觀察到結果，也往往難以取得可歸責於國家的直接證據——這正是本站所稱「中介化」手法的政治版本。",
+        "en": "A department of the CCP Central Committee responsible for influencing and co-opting non-party figures, overseas Chinese communities, religious and ethnic organisations, and political forces abroad. Its defining feature is achieving Beijing's desired political effect through nominally independent individuals, associations and party channels, so observers may see the outcome and still lack evidence attributable to the state — the political counterpart of what this site calls intermediation."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-02"
+    },
+    {
+      "term": "UFS",
+      "zh": "乙支自由之盾聯合軍演",
+      "expansion": "Ulchi Freedom Shield",
+      "def": {
+        "zh": "美國與南韓每年夏季舉行的大規模聯合軍事演習，以指揮所推演與電腦模擬為主體，結合部分實兵科目，是美韓同盟年度訓練週期中最主要的一場。演習規模與是否照常舉行長期被雙方與北韓同時當成政治訊號來讀，因此其縮減或延期往往傳達的是外交姿態而非軍事評估。",
+        "en": "The large annual summer exercise between the United States and South Korea, built around command-post drills and computer simulation with some field training attached, and the centrepiece of the alliance's yearly training cycle. Its scale, and whether it proceeds as planned, are read as political signals by Washington, Seoul and Pyongyang alike — so a reduction or postponement usually communicates a diplomatic posture rather than a military assessment."
+      },
+      "category": "military",
+      "first_seen": "2026-09-02"
+    },
+    {
+      "term": "Molniya",
+      "zh": "閃電式攻擊無人機",
+      "expansion": "Molniya (Russian low-cost strike drone)",
+      "def": {
+        "zh": "俄軍使用的廉價攻擊無人機，機身以膠合板與泡棉製作，單價約 300 至 1,600 美元，每月發射數以千計。部分機型搭載機上運算模組執行終端自主導引，且不裝設對外通訊天線、全程不發射無線電訊號，使依賴電子戰偵測與干擾的防空手段同時失去偵測與攔截能力。2026 年 7 月 Zaporizhzhia 造成 3 名平民死亡的攻擊，即由這型無人機的機上模組自行選定瞄準點。",
+        "en": "A low-cost Russian strike drone with a plywood-and-foam airframe, costing roughly $300–1,600 per unit and launched in the thousands each month. Some variants carry an onboard compute module for autonomous terminal guidance and fly with no communications antenna and no radio emission at all, denying electronic-warfare-based air defences both detection and interception. The July 2026 attack that killed three civilians in Zaporizhzhia had its aimpoint selected by such a drone's onboard module."
+      },
+      "category": "military",
+      "first_seen": "2026-09-02"
+    },
+    {
+      "term": "TFL-1",
+      "zh": "TFL-1 終端導引模組",
+      "expansion": "The Fourth Law TFL-1 terminal guidance module",
+      "def": {
+        "zh": "烏克蘭自主技術公司 The Fourth Law 開發的機上終端導引模組，在攻擊的最後約 500 公尺把控制權從人類操作者移交給機上電腦。公開資料指其讓單機成本上升約一成、打擊效果提高 2 至 4 倍，並同時克服電子戰干擾與無線電視距限制——這組成本效益比正是終端自主在戰場上迅速擴散的直接原因，也讓操作員人數不再是無人機打擊量的天花板。",
+        "en": "An onboard terminal-guidance module developed by Ukrainian firm The Fourth Law that hands control from the human operator to the aircraft's own computer for roughly the final 500 metres of an attack. Public figures put the cost increase at about ten percent per airframe for a two- to fourfold gain in strike effect, while defeating both jamming and radio line-of-sight limits. That cost-benefit ratio is the direct cause of terminal autonomy's rapid spread, and it removes operator headcount as the ceiling on strike volume."
+      },
+      "category": "military",
+      "first_seen": "2026-09-02"
+    },
+    {
+      "term": "BRICKSTORM",
+      "zh": "BRICKSTORM 後門程式",
+      "expansion": "BRICKSTORM (backdoor attributed to UNC5221)",
+      "def": {
+        "zh": "Google Threat Intelligence Group 與 Mandiant 自 2025 年起追蹤的後門程式，歸因於中國關聯集群 UNC5221，平均在受害網路內停留 393 天。其載體選擇是刻意的：部署在網路邊界設備與 VMware vCenter／ESXi 這類不支援傳統 EDR 代理程式的資產上，而這些設備通常不在受害組織的監控範圍內、甚至根本沒有被列進資產清冊——長停留時間的主因是能見度缺口，不是隱匿技術本身。",
+        "en": "A backdoor tracked by Google Threat Intelligence Group and Mandiant since 2025 and attributed to the China-linked cluster UNC5221, averaging 393 days of dwell time inside victim networks. Its carrier choice is deliberate: it is deployed on network edge appliances and on VMware vCenter and ESXi hosts, assets that cannot run a conventional EDR agent and that frequently sit outside the victim's monitoring scope or absent from the asset inventory altogether. The long dwell is a visibility gap rather than a triumph of stealth."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-02"
+    },
+    {
+      "term": "RF",
+      "zh": "射頻",
+      "expansion": "Radio Frequency",
+      "def": {
+        "zh": "泛指無線電頻段的電磁訊號。在反無人機語境中，「RF 偵測」是指靠接收目標與操作者之間的無線電鏈路來發現來襲目標，成本極低且可覆蓋廣域，長期是防守方最便宜的偵測層；但面對光纖導引或機上自主導引、全程不發射訊號的目標，這一層同時失去偵測與干擾能力，防守方被迫退回聲學、光學與雷達等成本隨防守面積成長的手段。",
+        "en": "Electromagnetic signals in the radio bands. In counter-drone usage, RF detection means finding an incoming target by picking up the radio link between it and its operator — very cheap and able to cover wide areas, which long made it the defender's least expensive sensing layer. Against fibre-optic guided or onboard-autonomous drones that emit nothing at all, that layer loses both detection and jamming at once, forcing defenders back onto acoustic, optical and radar methods whose cost scales with the area defended rather than the number of threats."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-02"
+    },
+    {
+      "term": "ISR",
+      "zh": "情監偵",
+      "expansion": "Intelligence, Surveillance and Reconnaissance",
+      "def": {
+        "zh": "情報、監視與偵察三項功能的合稱，泛指以各類感測平台蒐集目標資訊並轉化為可用情報的整套活動與裝備。在現代戰場上，ISR 與打擊手段結合成「偵察-打擊複合體」，其節點（無人機、預警機、資料鏈與指管系統）本身即成為高價值攻擊目標——先癱瘓對方的 ISR 再行滲透，已被烏克蘭戰場多次驗證為有效手法。",
+        "en": "The combined functions of intelligence, surveillance and reconnaissance: the platforms, sensors and processes that collect information on targets and turn it into usable intelligence. On the modern battlefield ISR fuses with strike assets into a reconnaissance-strike complex whose nodes — drones, airborne early warning aircraft, data links and command systems — become high-value targets in their own right. Blinding an opponent's ISR before infiltrating has been demonstrated repeatedly in Ukraine."
+      },
+      "category": "military",
+      "first_seen": "2026-09-02"
     }
   ]
 }

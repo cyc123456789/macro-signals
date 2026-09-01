@@ -2,6 +2,15 @@
   "updated": "2026-09-02",
   "reports": [
     {
+      "file": "reports/2026-09-02-monthly.json",
+      "date": "2026-09-02",
+      "kind": "monthly",
+      "title": {
+        "zh": "八月全局：可歸責的那個人正在從每一條鏈上消失——中介化、終端自主，以及仍然寫在「還看得見那一層」的規則",
+        "en": "August in Full: The Accountable Party Is Disappearing From Every Chain — Intermediation, Terminal Autonomy, and Rules Still Written for the Layer That Can Still Be Seen"
+      }
+    },
+    {
       "file": "reports/2026-09-02-brief.json",
       "date": "2026-09-02",
       "kind": "brief",
