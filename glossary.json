@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-02",
+  "updated": "2026-09-04",
   "terms": [
     {
       "term": "CTF",
@@ -1210,6 +1210,50 @@
       },
       "category": "military",
       "first_seen": "2026-09-02"
+    },
+    {
+      "term": "SBU",
+      "zh": "烏克蘭國家安全局",
+      "expansion": "Sluzhba Bezpeky Ukrainy (Security Service of Ukraine)",
+      "def": {
+        "zh": "烏克蘭主要的國內情報與反情報機構，負責反恐、反間諜與國家安全相關刑事偵辦；其職權與負責對外軍事情報的 HUR 之間存在管轄重疊，尤其在處理非正規武裝或外籍志願單位時容易產生機構摩擦。",
+        "en": "Ukraine's principal domestic intelligence and counterintelligence agency, responsible for counterterrorism, counterespionage and national-security criminal investigations. Its jurisdiction overlaps with HUR's foreign military-intelligence remit, particularly over irregular or foreign volunteer units, which can produce inter-agency friction."
+      },
+      "category": "military",
+      "first_seen": "2026-09-04"
+    },
+    {
+      "term": "FSB",
+      "zh": "俄羅斯聯邦安全局",
+      "expansion": "Federalnaya Sluzhba Bezopasnosti (Federal Security Service)",
+      "def": {
+        "zh": "俄羅斯主要的國內情報與反情報機構，前身為蘇聯 KGB 的國內職能部門，負責反情報、反恐與部分對外行動，是烏克蘭官方最常點名的滲透與暗殺行動歸責對象。",
+        "en": "Russia's principal domestic intelligence and counterintelligence agency, successor to the KGB's internal functions, responsible for counterintelligence, counterterrorism and some external operations. It is the agency Ukrainian officials most often name in attributing infiltration and assassination plots."
+      },
+      "category": "military",
+      "first_seen": "2026-09-04"
+    },
+    {
+      "term": "RVC",
+      "zh": "俄羅斯志願軍",
+      "expansion": "Russian Volunteer Corps",
+      "def": {
+        "zh": "一支由反 Putin 俄羅斯民族主義者組成、替烏克蘭作戰的外籍武裝單位，曾多次跨境突襲俄羅斯本土的 Belgorod 等地區；因成員身分特殊（俄羅斯公民為烏克蘭作戰），其指揮歸屬與情報監管長期處於 HUR 與 SBU 管轄的灰色地帶。",
+        "en": "A paramilitary unit of anti-Putin Russian nationalists fighting on Ukraine's side, known for cross-border raids into Russian territory such as Belgorod. Because its members are Russian citizens fighting for Ukraine, its chain of command and intelligence oversight has long sat in a jurisdictional gray zone between HUR and the SBU."
+      },
+      "category": "military",
+      "first_seen": "2026-09-04"
+    },
+    {
+      "term": "CI/CD",
+      "zh": "持續整合／持續部署",
+      "expansion": "Continuous Integration / Continuous Deployment",
+      "def": {
+        "zh": "軟體開發中用於自動化建置、測試與部署程式碼的流程與工具鏈；由於 CI/CD 系統通常持有雲端環境的高權限存取金鑰，一旦遭劫持就能被攻擊者用來大規模竊取憑證或部署惡意程式，是近期供應鏈與雲端入侵事件中反覆出現的樞紐環節。",
+        "en": "The automated pipeline and toolchain used in software development to build, test and deploy code. Because CI/CD systems typically hold high-privilege access keys into cloud environments, hijacking one lets an attacker harvest credentials or deploy malicious code at scale — a recurring pivot point in recent supply-chain and cloud-intrusion incidents."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-04"
     }
   ]
 }

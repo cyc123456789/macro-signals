@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-02",
+  "updated": "2026-09-04",
   "reports": [
+    {
+      "file": "reports/2026-09-04-brief.json",
+      "date": "2026-09-04",
+      "kind": "brief",
+      "title": {
+        "zh": "CENTCOM把報復對象從發射器換成政府油輪本身——川普核准的『油輪換油輪』新政策一啟動，Brent站上95美元逼近9/15 FOMC；同一週，Palo Alto揭露首例10小時『機器速度』勒索案，基輔兩大情報機構則在光天化日下互相開火",
+        "en": "CENTCOM Shifts Its Retaliation Target From Launchers to the Tankers Themselves — Brent Hits $95 as Trump's New 'Tanker for Tanker' Policy Meets a Sept 15 FOMC Deadline; The Same Week, Palo Alto Documents the First 10-Hour 'Machine-Speed' Ransomware Case, and Two of Kyiv's Own Intelligence Agencies Open Fire on Each Other"
+      }
+    },
     {
       "file": "reports/2026-09-02-monthly.json",
       "date": "2026-09-02",
