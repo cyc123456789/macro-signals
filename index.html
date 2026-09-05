@@ -186,8 +186,14 @@ main{padding:34px 34px 100px;min-width:0}
 .term:hover{color:var(--fg);border-color:var(--line2)}
 
 /* narrative + actions */
-.narr{font-size:16.5px;line-height:2.0;white-space:pre-wrap;color:var(--fg)}
-.narr.en{color:var(--fg2);font-size:14.5px;margin-top:22px;padding-top:22px;
+.narr{font-size:16.5px;line-height:2.0;color:var(--fg)}
+.narr p{margin:0 0 19px}
+.narr p:last-child{margin-bottom:0}
+.narr strong{color:var(--fg);font-weight:700}
+.nsub{font-family:"Noto Serif TC",serif;font-size:17.5px;font-weight:700;color:var(--fg);
+  margin:32px 0 13px;padding-left:12px;border-left:3px solid var(--tech);line-height:1.5}
+.nsub:first-child{margin-top:0}
+.narr.en{color:var(--fg2);font-size:15px;margin-top:26px;padding-top:26px;
   border-top:1px dashed var(--line2)}
 ol.acts{list-style:none;counter-reset:a;padding:0;margin:0}
 ol.acts li{counter-increment:a;position:relative;padding:13px 16px 13px 48px;
@@ -325,6 +331,15 @@ function splitTitle(t){
   }
   return [t,''];
 }
+// narrative 是 markdown：整段被 ** 包住的是小標，其餘是段落
+function narrHTML(t){
+  return String(t||'').split(/\n{2,}/).map(b => {
+    b = b.trim(); if(!b) return '';
+    const h = b.match(/^\*\*([\s\S]+?)\*\*$/);
+    return h ? `<h4 class="nsub">${esc(h[1])}</h4>`
+             : `<p>${esc(b).replace(/\*\*([\s\S]+?)\*\*/g,'<strong>$1</strong>')}</p>`;
+  }).join('');
+}
 // 收合狀態下的一行引言：取第一個完整句子
 function firstSentence(t){
   t = String(t||'').trim();
@@ -405,8 +420,8 @@ async function reportView(file){
   const narr = d.narrative ? `<section class="lane">
       <div class="lanehead"><s style="background:var(--tech)"></s>
         <h2>深度分析</h2><em>Analysis</em><hr></div>
-      <div class="narr">${esc(lang==='en' ? (d.narrative.en||d.narrative.zh) : (d.narrative.zh||d.narrative.en))}</div>
-      ${lang==='both'&&d.narrative.en&&d.narrative.zh?`<div class="narr en">${esc(d.narrative.en)}</div>`:''}
+      <div class="narr">${narrHTML(lang==='en' ? (d.narrative.en||d.narrative.zh) : (d.narrative.zh||d.narrative.en))}</div>
+      ${lang==='both'&&d.narrative.en&&d.narrative.zh?`<div class="narr en">${narrHTML(d.narrative.en)}</div>`:''}
     </section>` : '';
   const acts = (d.actions||[]).length ? `<section class="lane">
       <div class="lanehead"><s style="background:var(--nexus)"></s>
