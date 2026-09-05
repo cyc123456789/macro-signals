@@ -20,7 +20,7 @@
   --fg:#d6dce3; --fg2:#a2acb7; --fg3:#78838f;
   --cyber:#63b8c2; --military:#c9a065; --geo:#d4837f; --tech:#a292d4; --nexus:#71bd94;
   --critical:#d9736e; --high:#cc9163; --medium:#c2ae68; --warning:#89a9cc; --info:#6a747f;
-  --rail:260px;
+  --rail:260px; --rail2:252px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -58,6 +58,35 @@ header{position:sticky;top:0;z-index:30;background:rgba(22,26,31,.94);
 /* ================= layout ================= */
 .layout{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);
   max-width:1240px;margin:0 auto;align-items:start}
+/* 閱讀欄固定 680px，寬螢幕多出來的空間拿來放本篇導覽／術語／來源，而不是把行長拉寬 */
+#rail2{display:none}
+@media(min-width:1260px){
+  .layout{grid-template-columns:var(--rail) minmax(0,1fr) var(--rail2);max-width:1440px}
+  #rail2{display:block;position:sticky;top:52px;max-height:calc(100vh - 52px);overflow-y:auto;
+    border-left:1px solid var(--line);padding:26px 0 40px 20px}
+  #rail2::-webkit-scrollbar{width:6px}
+  #rail2::-webkit-scrollbar-thumb{background:var(--line2);border-radius:3px}
+}
+.sblock{margin-bottom:26px}
+.sblock>.lbl{display:block;margin-bottom:9px}
+.snav a{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--fg2);
+  font-size:13px;padding:5px 0;line-height:1.5}
+.snav a:hover{color:var(--fg)}
+.snav a s{width:3px;height:13px;border-radius:2px;text-decoration:none;flex:none}
+.snav a b{margin-left:auto;font-family:"IBM Plex Mono",ui-monospace,"Noto Sans TC",sans-serif;
+  font-size:10.5px;color:var(--fg3);font-weight:400}
+.snav a.sub{font-size:12.5px;color:var(--fg3);padding:4px 0 4px 11px;
+  border-left:1px solid var(--line);margin-left:1px}
+.snav a.sub:hover{color:var(--fg2);border-left-color:var(--line2)}
+.sterms{display:flex;flex-wrap:wrap;gap:5px}
+.ssrc a{display:block;text-decoration:none;color:var(--fg3);font-size:12px;line-height:1.5;
+  padding:5px 0;border-bottom:1px solid var(--line)}
+.ssrc a:hover{color:var(--warning)}
+.ssrc a i{font-style:normal;display:-webkit-box;-webkit-line-clamp:2;
+  -webkit-box-orient:vertical;overflow:hidden}
+.ssrc a em{font-style:normal;display:block;color:var(--fg3);font-size:10px;
+  font-family:"IBM Plex Mono",ui-monospace,"Noto Sans TC",sans-serif;margin-top:2px;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
 /* ---- left rail: chronological spine ---- */
 aside{position:sticky;top:52px;height:calc(100vh - 52px);overflow-y:auto;
@@ -130,7 +159,7 @@ main{padding:34px 34px 100px;min-width:0}
   padding-top:10px;border-top:1px dashed var(--line2)}
 
 /* domain lane */
-.lane{margin-bottom:40px}
+.lane{margin-bottom:40px;scroll-margin-top:70px}
 .lanehead{display:flex;align-items:center;gap:11px;margin-bottom:16px}
 .lanehead s{width:3px;height:24px;border-radius:2px;text-decoration:none;flex:none}
 .lanehead h2{font-size:15px;margin:0;font-weight:700;letter-spacing:.01em}
@@ -195,6 +224,7 @@ main{padding:34px 34px 100px;min-width:0}
 .nsub{font-family:"Noto Serif TC",serif;font-size:17.5px;font-weight:700;color:var(--fg);
   margin:32px 0 13px;padding-left:12px;border-left:3px solid var(--tech);line-height:1.5}
 .nsub:first-child{margin-top:0}
+.nsub{scroll-margin-top:70px}
 .narr.en{color:var(--fg2);font-size:15px;margin-top:26px;padding-top:26px;
   border-top:1px dashed var(--line2)}
 ol.acts{list-style:none;counter-reset:a;padding:0;margin:0}
@@ -295,6 +325,7 @@ ol.acts .en{color:var(--fg3);font-size:13px;margin-top:5px}
 <div class="layout">
   <aside id="rail"></aside>
   <main><div class="wrap" id="app"><div class="empty">載入中…</div></div></main>
+  <aside id="rail2"></aside>
 </div>
 
 <script>
@@ -311,8 +342,9 @@ const CAT  = {military:{zh:'態勢',c:'var(--military)'},cyber:{zh:'系統',c:'v
               geo:{zh:'政策',c:'var(--geo)'},tech:{zh:'技術',c:'var(--tech)'}};
 
 let lang = localStorage.getItem('sw-lang') || 'zh';
-let manifest = {reports:[]}, glossary = {terms:[]}, cache = {}, filt = '', cur = '';
+let manifest = {reports:[]}, glossary = {terms:[]}, cache = {}, filt = '', cur = '', side = '';
 
+const isAnchor = h => /^#(L-|lane-|ne?\d)/.test(h);
 const esc = s => String(s??'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const zh = o => esc(typeof o==='string' ? o : (o?.zh||''));
 const en = o => esc(typeof o==='string' ? '' : (o?.en||''));
@@ -334,13 +366,38 @@ function splitTitle(t){
   return [t,''];
 }
 // narrative 是 markdown：整段被 ** 包住的是小標，其餘是段落
-function narrHTML(t){
+function narrHTML(t, pre, heads){
+  let i = 0;
   return String(t||'').split(/\n{2,}/).map(b => {
     b = b.trim(); if(!b) return '';
     const h = b.match(/^\*\*([\s\S]+?)\*\*$/);
-    return h ? `<h4 class="nsub">${esc(h[1])}</h4>`
-             : `<p>${esc(b).replace(/\*\*([\s\S]+?)\*\*/g,'<strong>$1</strong>')}</p>`;
+    if(h){ const id = `${pre}${i++}`; if(heads) heads.push({id, t:h[1]});
+           return `<h4 class="nsub" id="${id}">${esc(h[1])}</h4>`; }
+    return `<p>${esc(b).replace(/\*\*([\s\S]+?)\*\*/g,'<strong>$1</strong>')}</p>`;
   }).join('');
+}
+
+/* ---------------- 右欄：本篇導覽 / 術語 / 來源 ---------------- */
+function sideRail(d, secs, narrHeads){
+  const items = (d.sections||[]).flatMap(x => x.items||[]);
+  const nav = ORDER.filter(k => secs[k]?.length).map(k =>
+    `<a href="#lane-${k}"><s style="background:${DOMAIN[k].c}"></s>${DOMAIN[k].zh}<b>${secs[k].length}</b></a>`).join('')
+    + (d.narrative ? `<a href="#lane-narr"><s style="background:var(--tech)"></s>深度分析</a>`
+        + narrHeads.map(h => `<a class="sub" href="#${h.id}">${esc(h.t)}</a>`).join('') : '')
+    + ((d.actions||[]).length ? `<a href="#lane-acts"><s style="background:var(--nexus)"></s>下一步<b>${d.actions.length}</b></a>` : '');
+
+  const terms = [...new Set(items.flatMap(it => it.terms||[]))].sort();
+  const srcs = [...new Map(items.filter(it => it.url).map(it => [it.url, it.source||it.url])).entries()];
+  const host = u => { try{ return new URL(u).hostname.replace(/^www\./,''); }catch(e){ return ''; } };
+
+  return `<div class="sblock"><span class="lbl">本篇導覽 · Contents</span>
+      <div class="snav">${nav}</div></div>
+    ${terms.length ? `<div class="sblock"><span class="lbl">本篇術語 · ${terms.length}</span>
+      <div class="sterms">${terms.map(x =>
+        `<a class="term" href="#/glossary?q=${encodeURIComponent(x)}">${esc(x)}</a>`).join('')}</div></div>` : ''}
+    ${srcs.length ? `<div class="sblock"><span class="lbl">本篇來源 · ${srcs.length}</span>
+      <div class="ssrc">${srcs.map(([u,src]) =>
+        `<a href="${esc(u)}" target="_blank" rel="noopener"><i>${esc(src)}</i><em>${esc(host(u))} ↗</em></a>`).join('')}</div></div>` : ''}`;
 }
 // 收合狀態下的一行引言：取第一個完整句子
 function firstSentence(t){
@@ -404,13 +461,13 @@ function itemHTML(it, dc){
 /* ---------------- report view ---------------- */
 async function reportView(file){
   let d; try{ d = await jget(file); }
-  catch(e){ return `<div class="empty">找不到報告<br>${esc(file)}</div>`; }
+  catch(e){ side = ''; return `<div class="empty">找不到報告<br>${esc(file)}</div>`; }
   cur = file;
 
   const secs = Object.fromEntries((d.sections||[]).map(s => [s.id, s.items||[]]));
   const counts = ORDER.filter(k => secs[k]?.length)
     .map(k => `<span class="bchip"><s style="background:${DOMAIN[k].c}"></s>${DOMAIN[k].zh.split(' ')[0]}<b>${secs[k].length}</b></span>`).join('');
-  const lanes = ORDER.filter(k => secs[k]?.length).map(k => `<section class="lane">
+  const lanes = ORDER.filter(k => secs[k]?.length).map(k => `<section class="lane" id="lane-${k}">
       <div class="lanehead"><s style="background:${DOMAIN[k].c}"></s>
         <h2>${DOMAIN[k].zh}</h2><em>${DOMAIN[k].en}</em><hr></div>
       ${secs[k].map(it => itemHTML(it, DOMAIN[k].c)).join('')}
@@ -419,18 +476,20 @@ async function reportView(file){
     .map(s => `<section class="lane"><div class="lanehead"><s style="background:var(--fg3)"></s>
         <h2>${esc(s.id)}</h2><hr></div>${s.items.map(it => itemHTML(it)).join('')}</section>`).join('');
 
-  const narr = d.narrative ? `<section class="lane">
+  const narrHeads = [];
+  const narr = d.narrative ? `<section class="lane" id="lane-narr">
       <div class="lanehead"><s style="background:var(--tech)"></s>
         <h2>深度分析</h2><em>Analysis</em><hr></div>
-      <div class="narr">${narrHTML(lang==='en' ? (d.narrative.en||d.narrative.zh) : (d.narrative.zh||d.narrative.en))}</div>
-      ${lang==='both'&&d.narrative.en&&d.narrative.zh?`<div class="narr en">${narrHTML(d.narrative.en)}</div>`:''}
+      <div class="narr">${narrHTML(lang==='en' ? (d.narrative.en||d.narrative.zh) : (d.narrative.zh||d.narrative.en), 'n', narrHeads)}</div>
+      ${lang==='both'&&d.narrative.en&&d.narrative.zh?`<div class="narr en">${narrHTML(d.narrative.en,'ne')}</div>`:''}
     </section>` : '';
-  const acts = (d.actions||[]).length ? `<section class="lane">
+  const acts = (d.actions||[]).length ? `<section class="lane" id="lane-acts">
       <div class="lanehead"><s style="background:var(--nexus)"></s>
         <h2>下一步</h2><em>What to adjust</em><hr></div>
       <ol class="acts">${d.actions.map(a=>`<li>${one(a)}${showEn(a)?`<div class="en">${en(a)}</div>`:''}</li>`).join('')}</ol>
     </section>` : '';
 
+  side = sideRail(d, secs, narrHeads);
   const i = manifest.reports.findIndex(r => r.file===file);
   const nav = (j,label,side) => (j>=0 && j<manifest.reports.length)
     ? `<a href="#/r/${encodeURIComponent(manifest.reports[j].file)}">${side==='l'?'← ':''}${label} ${manifest.reports[j].date}${side==='r'?' →':''}</a>` : '<span></span>';
@@ -503,7 +562,7 @@ async function render(){
   document.querySelectorAll('#langs button').forEach(b => b.classList.toggle('on', b.dataset.l===lang));
 
   if(h.startsWith('#/glossary')){
-    cur = '';
+    cur = ''; side = '';
     const m = h.match(/[?&]q=([^&]*)/); if(m) gq = decodeURIComponent(m[1]);
     app.innerHTML = glossaryView(); wireGlossary();
   } else if(h.startsWith('#/r/')){
@@ -511,7 +570,7 @@ async function render(){
   } else if(manifest.reports.length){
     app.innerHTML = await reportView(manifest.reports[0].file);   // 首頁直接開最新一份
   } else {
-    cur = '';
+    cur = ''; side = '';
     app.innerHTML = `<div class="empty">尚無報告 · No reports yet<br>
       第一份簡報會在台北時間今晚 03:00 後產生。</div>`;
   }
@@ -526,7 +585,8 @@ async function render(){
   document.querySelectorAll('[data-k]').forEach(b => b.onclick = () => {
     filt = b.dataset.k; document.getElementById('rail').innerHTML = rail(); wireRail(); });
   wireRail();
-  if(!location.hash.startsWith('#L-')) window.scrollTo(0,0);
+  document.getElementById('rail2').innerHTML = side;
+  if(!isAnchor(location.hash)) window.scrollTo(0,0);
 }
 function wireRail(){
   document.querySelectorAll('[data-k]').forEach(b => b.onclick = () => {
@@ -547,7 +607,7 @@ document.getElementById('railtoggle').onclick = () =>
 scrim.onclick = () => setRail(false);
 addEventListener('hashchange', () => {
   setRail(false);
-  if(!location.hash.startsWith('#L-')) render();
+  if(!isAnchor(location.hash)) render();
 });
 (async () => {
   try{ manifest = await jget('manifest.json'); }catch(e){}
