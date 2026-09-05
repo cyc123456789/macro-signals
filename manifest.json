@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-04",
+  "updated": "2026-09-06",
   "reports": [
+    {
+      "file": "reports/2026-09-06-brief.json",
+      "date": "2026-09-06",
+      "kind": "brief",
+      "title": {
+        "zh": "伊朗飛彈第一次瞄準的是美軍艦本身：CENTCOM『一換三』摧毀三艘伊朗油輪的同一天，俄軍無人機打進基輔SBU總部瞄準代理局長辦公室——川普特使隔天才踏進Kyiv；五角大廈同時私下告訴承包商，Anthropic的『供應鏈風險』標籤根本沒撤",
+        "en": "Iran's Missiles Aim at a US Warship for the First Time — the Same Day CENTCOM Answers by Destroying Three Iranian Tankers, a Russian Drone Hits SBU Headquarters in Kyiv Aimed at the Acting Chief's Office, One Day Before Trump's Envoys Land in the Capital; Meanwhile the Pentagon Quietly Tells Contractors Anthropic's 'Supply Chain Risk' Label Never Actually Came Off"
+      }
+    },
     {
       "file": "reports/2026-09-04-brief.json",
       "date": "2026-09-04",

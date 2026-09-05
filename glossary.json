@@ -1,6 +1,39 @@
 {
-  "updated": "2026-09-04",
+  "updated": "2026-09-06",
   "terms": [
+    {
+      "term": "LiteLLM",
+      "zh": "LiteLLM（AI 閘道器）",
+      "expansion": "LiteLLM (open-source LLM gateway/proxy)",
+      "def": {
+        "zh": "一套開源專案，讓企業能用同一組介面統一呼叫OpenAI、Anthropic、Google等不同廠商的LLM API，並集中管理金鑰、額度與路由；因為它本身要持有大量上游AI服務的API金鑰，一旦其閘道器程式本身遭入侵，等同一次拿到整個組織對外部AI服務的存取權。",
+        "en": "An open-source project that lets enterprises call OpenAI's, Anthropic's, Google's and other vendors' LLM APIs through one unified interface, centralizing key management, quota control and routing. Because the gateway itself holds API keys to many upstream AI services, compromising the gateway software hands an attacker an organization's entire access to external AI services in one step."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-06"
+    },
+    {
+      "term": "MCP",
+      "zh": "MCP（模型情境協定）",
+      "expansion": "Model Context Protocol",
+      "def": {
+        "zh": "一套讓AI代理人(agent)能標準化地呼叫外部工具、資料來源與服務的通訊協定，近年迅速成為連接LLM與企業內部系統的通用介面；其連線階段(session)若遭偽造或劫持，攻擊者能取得的不只是資料，還包括代理人原本被授權執行的操作能力。",
+        "en": "A standardized communication protocol that lets AI agents call external tools, data sources and services, and has rapidly become a common interface linking LLMs to enterprise systems. If its session layer is forged or hijacked, an attacker gains not just data access but the operational actions the agent was authorized to perform."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-06"
+    },
+    {
+      "term": "FOMC",
+      "zh": "FOMC（聯邦公開市場委員會）",
+      "expansion": "Federal Open Market Committee",
+      "def": {
+        "zh": "美國聯準會下設、負責決定政策利率與公開市場操作的核心決策機構，每年定期召開會議，其利率決定是全球美元計價資產定價的錨點之一；地緣衝突若推高油價，往往會直接反映在FOMC對通膨路徑的判斷上。",
+        "en": "The Federal Reserve's core policy-setting body, which decides the federal funds rate and open-market operations at scheduled meetings throughout the year; its rate decisions anchor pricing across dollar-denominated assets globally. Geopolitical conflict that pushes oil prices higher tends to feed directly into the FOMC's read on the inflation path."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-06"
+    },
     {
       "term": "CTF",
       "zh": "奪旗賽（資安演練）",
