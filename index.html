@@ -23,7 +23,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--fg);
-  font-family:"Noto Sans TC",system-ui,sans-serif;font-size:15px;line-height:1.78;
+  font-family:"Noto Sans TC",system-ui,sans-serif;font-size:16px;line-height:1.8;
   -webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;
   overflow-wrap:break-word}
 a{color:inherit}
@@ -88,15 +88,17 @@ aside::-webkit-scrollbar-thumb{background:var(--line2);border-radius:3px}
 
 /* ---- main column ---- */
 main{padding:34px 34px 100px;min-width:0}
-.wrap{max-width:720px}
+.wrap{max-width:680px}
 
 .masthead{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:8px}
 .mmeta{display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
 .kind{font-family:"IBM Plex Mono",ui-monospace,"Noto Sans TC",sans-serif;font-size:10px;letter-spacing:.14em;
   text-transform:uppercase;padding:3px 9px;border-radius:99px;border:1px solid currentColor}
 .k-brief{color:var(--cyber)} .k-weekly{color:var(--military)} .k-monthly{color:var(--tech)}
-.masthead h1{font-family:"Noto Serif TC",serif;font-size:29px;line-height:1.38;margin:0}
-.masthead .sub{color:var(--fg3);font-size:14.5px;margin-top:7px;font-style:italic}
+.masthead h1{font-family:"Noto Serif TC",serif;font-size:25px;line-height:1.45;margin:0;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.masthead .deck{color:var(--fg2);font-size:15px;line-height:1.72;margin-top:10px}
+.masthead .sub{color:var(--fg3);font-size:14px;margin-top:8px;font-style:italic}
 
 /* signal board */
 .board{display:flex;gap:7px;flex-wrap:wrap;margin:18px 0 24px}
@@ -105,14 +107,25 @@ main{padding:34px 34px 100px;min-width:0}
   font-family:"IBM Plex Mono",ui-monospace,"Noto Sans TC",sans-serif;font-size:11px;color:var(--fg2)}
 .bchip s{width:6px;height:6px;border-radius:2px;text-decoration:none}
 .bchip b{color:var(--fg);font-weight:600}
+.expall{margin-left:auto;font-family:"IBM Plex Mono",ui-monospace,"Noto Sans TC",sans-serif;font-size:11px;
+  letter-spacing:.06em;background:none;border:1px solid var(--line);color:var(--fg3);
+  padding:5px 11px;border-radius:7px;cursor:pointer}
+.expall:hover{color:var(--fg);border-color:var(--line2)}
 
 .focus{position:relative;background:linear-gradient(90deg,rgba(79,209,139,.07),transparent 70%);
   border:1px solid var(--line);border-left:3px solid var(--nexus);
   border-radius:0 10px 10px 0;padding:16px 20px;margin-bottom:38px}
-.focus .lbl{margin-bottom:5px}
-.focus p{margin:0;font-size:15.5px;color:var(--fg)}
-.focus .en{color:var(--fg3);font-size:14px;margin-top:9px;
-  padding-top:9px;border-top:1px dashed var(--line2)}
+.focus>summary{list-style:none;cursor:pointer}
+.focus>summary::-webkit-details-marker{display:none}
+.focus .lbl{display:block;margin-bottom:5px}
+.focus p{margin:0;font-size:16px;color:var(--fg);
+  display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.focus[open] p{display:block}
+.focus .more{font-family:"IBM Plex Mono",ui-monospace,"Noto Sans TC",sans-serif;font-size:10.5px;
+  letter-spacing:.1em;color:var(--nexus);margin-top:8px;display:block}
+.focus[open] .more:after{content:"收合 ↑"} .focus:not([open]) .more:after{content:"讀全文 ↓"}
+.focus .en{color:var(--fg3);font-size:14.5px;margin-top:10px;
+  padding-top:10px;border-top:1px dashed var(--line2)}
 
 /* domain lane */
 .lane{margin-bottom:40px}
@@ -124,23 +137,36 @@ main{padding:34px 34px 100px;min-width:0}
 .lanehead hr{flex:1;border:0;border-top:1px solid var(--line);margin:0}
 
 /* item card */
-.item{position:relative;background:var(--card);border:1px solid var(--line);
-  border-left:3px solid var(--info);border-radius:0 10px 10px 0;padding:17px 20px;margin-bottom:12px}
-.item:hover{border-color:var(--line2);border-left-color:inherit;background:var(--card2)}
-.item.critical{border-left-color:var(--critical)} .item.high{border-left-color:var(--high)}
-.item.medium{border-left-color:var(--medium)} .item.warning{border-left-color:var(--warning)}
-.item.info{border-left-color:var(--info)}
-.itop{display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.item{display:block;background:var(--card);border:1px solid var(--line);
+  border-left:3px solid var(--dc,var(--info));border-radius:0 10px 10px 0;padding:0;margin-bottom:10px}
+.item:hover{border-color:var(--line2);background:var(--card2)}
+.item.critical{border-left-color:var(--critical)}
+.item>summary{list-style:none;cursor:pointer;padding:15px 20px 15px 44px;position:relative}
+.item>summary::-webkit-details-marker{display:none}
+.item>summary:before{content:"";position:absolute;left:21px;top:23px;width:6px;height:6px;
+  border-right:1.5px solid var(--fg3);border-bottom:1.5px solid var(--fg3);
+  transform:rotate(-45deg);transition:transform .15s}
+.item[open]>summary:before{transform:rotate(45deg);top:25px}
+.item>summary:hover:before{border-color:var(--fg)}
+.ibody{padding:0 20px 16px 44px}
+.lead{margin:7px 0 0;color:var(--fg2);font-size:15px;line-height:1.7;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.item[open] .lead{display:none}
+.tsub{margin:0 0 13px;color:var(--fg2);font-size:15px;line-height:1.72}
+.itop{display:flex;align-items:center;gap:8px;margin-bottom:9px;flex-wrap:wrap}
 .sev{font-family:"IBM Plex Mono",ui-monospace,"Noto Sans TC",sans-serif;font-size:9.5px;letter-spacing:.14em;
-  text-transform:uppercase;font-weight:600;padding:2px 7px;border-radius:3px;color:#0a0c0f}
+  text-transform:uppercase;padding:2px 7px;border-radius:3px;color:var(--fg3);border:1px solid var(--line2)}
+.sev.critical{background:var(--critical);color:#0a0c0f;border-color:transparent;font-weight:600}
 .conf{font-family:"IBM Plex Mono",ui-monospace,"Noto Sans TC",sans-serif;font-size:9.5px;letter-spacing:.12em;
   text-transform:uppercase;color:var(--fg3);border:1px solid var(--line2);
   padding:2px 7px;border-radius:3px}
-.item h3{margin:0 0 7px;font-size:16.5px;font-weight:500;line-height:1.55}
+.item h3{margin:0;font-size:17px;font-weight:600;line-height:1.55;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.item[open] h3{display:block}
 .item h3 em{display:block;font-style:normal;color:var(--fg3);font-size:13.5px;
   font-weight:400;margin-top:3px;line-height:1.5}
-.txt{color:var(--fg2);font-size:14.5px}
-.txt.en{color:var(--fg3);font-size:13.5px;margin-top:8px;
+.txt{color:var(--fg);font-size:15.5px;line-height:1.85}
+.txt.en{color:var(--fg3);font-size:14.5px;margin-top:10px;
   padding-top:8px;border-top:1px dashed var(--line)}
 .note{margin-top:13px;padding:11px 14px;border-radius:8px;background:var(--panel);
   border:1px solid var(--line)}
@@ -148,7 +174,7 @@ main{padding:34px 34px 100px;min-width:0}
 .note.cp{border-left:2px solid var(--fg3)}
 .note .lbl{display:block;margin-bottom:3px}
 .note.so .lbl{color:var(--nexus)}
-.note p{margin:0;font-size:14px;color:var(--fg2)}
+.note p{margin:0;font-size:15px;line-height:1.8;color:var(--fg2)}
 .note .en{color:var(--fg3);font-size:13px;margin-top:6px}
 .ifoot{margin-top:13px;padding-top:11px;border-top:1px solid var(--line);
   display:flex;gap:9px;flex-wrap:wrap;align-items:center;
@@ -160,7 +186,7 @@ main{padding:34px 34px 100px;min-width:0}
 .term:hover{color:var(--fg);border-color:var(--line2)}
 
 /* narrative + actions */
-.narr{font-size:15.5px;line-height:1.95;white-space:pre-wrap}
+.narr{font-size:16.5px;line-height:2.0;white-space:pre-wrap;color:var(--fg)}
 .narr.en{color:var(--fg2);font-size:14.5px;margin-top:22px;padding-top:22px;
   border-top:1px dashed var(--line2)}
 ol.acts{list-style:none;counter-reset:a;padding:0;margin:0}
@@ -218,8 +244,10 @@ ol.acts .en{color:var(--fg3);font-size:13px;margin-top:5px}
   .masthead h1{font-size:23px}
   .masthead .sub{font-size:13.5px}
   .focus{padding:14px 16px;margin-bottom:28px}
-  .item{padding:15px 16px}
-  .item h3{font-size:16px}
+  .item>summary{padding:14px 16px 14px 36px}
+  .item>summary:before{left:17px}
+  .ibody{padding:0 16px 15px 36px}
+  .item h3{font-size:16.5px}
   .narr{font-size:15px;line-height:1.9}
   /* 手機上的可點目標：來源連結與術語標籤放大到手指按得準 */
   .ifoot{gap:8px;font-size:12px;padding-top:13px}
@@ -280,8 +308,29 @@ let manifest = {reports:[]}, glossary = {terms:[]}, cache = {}, filt = '', cur =
 const esc = s => String(s??'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const zh = o => esc(typeof o==='string' ? o : (o?.zh||''));
 const en = o => esc(typeof o==='string' ? '' : (o?.en||''));
-const one = o => lang==='en' ? (en(o)||zh(o)) : (zh(o)||en(o));   // 單語模式下的最佳可用文字
+const rzh = o => String(typeof o==='string' ? o : (o?.zh||''));
+const ren = o => String(typeof o==='string' ? '' : (o?.en||''));
+const rone = o => lang==='en' ? (ren(o)||rzh(o)) : (rzh(o)||ren(o));
+const one = o => esc(rone(o));                                    // 單語模式下的最佳可用文字
 const showEn = o => lang==='both' && en(o) && zh(o);              // 雙語模式才另起一行
+
+// 標題常寫成「主標——一長串副標」，整段當 h1 會變成一面字牆：切開，副標降級
+function splitTitle(t){
+  t = String(t||'').trim();
+  const cjk = /[\u4e00-\u9fff]/.test(t);
+  if(t.length <= (cjk?36:78)) return [t,''];
+  for(const p of ['——','—','：',':','；',';']){
+    const i = t.indexOf(p);
+    if(i > (cjk?6:20) && i <= (cjk?56:130)) return [t.slice(0,i).trim(), t.slice(i+p.length).trim()];
+  }
+  return [t,''];
+}
+// 收合狀態下的一行引言：取第一個完整句子
+function firstSentence(t){
+  t = String(t||'').trim();
+  const m = t.match(/^[\s\S]{24,140}?[。！？.!?](?=\s|$|[^\d])/);
+  return m ? m[0] : (t.length>150 ? t.slice(0,150)+'…' : t);
+}
 
 async function jget(p){ if(cache[p]) return cache[p];
   const r = await fetch(p+'?v='+Date.now()); if(!r.ok) throw new Error(p); return cache[p]=await r.json(); }
@@ -297,33 +346,42 @@ function rail(){
     const m = r.date.slice(0,7), head = m!==month ? (month=m, `<div class="mgroup lbl">${m}</div>`) : '';
     return head + `<div class="tl"><a class="tlink ${r.kind} ${cur===r.file?'on':''}" href="#/r/${encodeURIComponent(r.file)}">
         <div class="tm"><i>${KIND[r.kind]?.s||'??'}</i><span>${esc(r.date)}</span></div>
-        <div class="tt">${one(r.title)}</div></a></div>`;
+        <div class="tt">${esc(splitTitle(rone(r.title))[0])}</div></a></div>`;
   }).join('');
   return out;
 }
 
 /* ---------------- one item card ---------------- */
-function itemHTML(it){
+function itemHTML(it, dc){
   const sev = it.severity||'info';
   const note = (o,cls,l1,l2) => !o ? '' : `<div class="note ${cls}">
       <span class="lbl">${l1} · ${l2}</span><p>${one(o)}</p>
       ${showEn(o)?`<p class="en">${en(o)}</p>`:''}</div>`;
-  return `<article class="item ${sev}">
-    <div class="itop">
-      <span class="sev" style="background:var(--${sev})">${esc(sev)}</span>
-      ${it.confidence?`<span class="conf">${esc(it.confidence)}</span>`:''}
+  const [head, sub] = splitTitle(rone(it.title));
+  const lead = sub || firstSentence(rone(it.summary));
+  return `<details class="item ${sev}" style="--dc:${dc||'var(--info)'}">
+    <summary>
+      <div class="itop">
+        <span class="sev ${sev}">${esc(sev)}</span>
+        ${it.confidence?`<span class="conf">${esc(it.confidence)}</span>`:''}
+      </div>
+      <h3>${esc(head)}</h3>
+      <p class="lead">${esc(lead)}</p>
+    </summary>
+    <div class="ibody">
+      ${sub?`<p class="tsub">${esc(sub)}</p>`:''}
+      ${showEn(it.title)?`<p class="tsub en" style="color:var(--fg3);font-size:13.5px">${en(it.title)}</p>`:''}
+      <div class="txt">${one(it.summary)}</div>
+      ${showEn(it.summary)?`<div class="txt en">${en(it.summary)}</div>`:''}
+      ${note(it.implication,'so','SO WHAT','對你的意義')}
+      ${note(it.counterpoint,'cp','COUNTERPOINT','反方觀點')}
+      <div class="ifoot">
+        ${it.source?`<span>${esc(it.source)}</span>`:''}
+        ${it.url?`<a class="src" href="${esc(it.url)}" target="_blank" rel="noopener">原始來源 ↗</a>`:''}
+        ${(it.terms||[]).map(x=>`<a class="term" href="#/glossary?q=${encodeURIComponent(x)}">${esc(x)}</a>`).join('')}
+      </div>
     </div>
-    <h3>${one(it.title)}${showEn(it.title)?`<em>${en(it.title)}</em>`:''}</h3>
-    <div class="txt">${one(it.summary)}</div>
-    ${showEn(it.summary)?`<div class="txt en">${en(it.summary)}</div>`:''}
-    ${note(it.implication,'so','SO WHAT','對你的意義')}
-    ${note(it.counterpoint,'cp','COUNTERPOINT','反方觀點')}
-    <div class="ifoot">
-      ${it.source?`<span>${esc(it.source)}</span>`:''}
-      ${it.url?`<a class="src" href="${esc(it.url)}" target="_blank" rel="noopener">原始來源 ↗</a>`:''}
-      ${(it.terms||[]).map(x=>`<a class="term" href="#/glossary?q=${encodeURIComponent(x)}">${esc(x)}</a>`).join('')}
-    </div>
-  </article>`;
+  </details>`;
 }
 
 /* ---------------- report view ---------------- */
@@ -338,11 +396,11 @@ async function reportView(file){
   const lanes = ORDER.filter(k => secs[k]?.length).map(k => `<section class="lane">
       <div class="lanehead"><s style="background:${DOMAIN[k].c}"></s>
         <h2>${DOMAIN[k].zh}</h2><em>${DOMAIN[k].en}</em><hr></div>
-      ${secs[k].map(itemHTML).join('')}
+      ${secs[k].map(it => itemHTML(it, DOMAIN[k].c)).join('')}
     </section>`).join('');
   const unknown = (d.sections||[]).filter(s => !DOMAIN[s.id] && (s.items||[]).length)
     .map(s => `<section class="lane"><div class="lanehead"><s style="background:var(--fg3)"></s>
-        <h2>${esc(s.id)}</h2><hr></div>${s.items.map(itemHTML).join('')}</section>`).join('');
+        <h2>${esc(s.id)}</h2><hr></div>${s.items.map(it => itemHTML(it)).join('')}</section>`).join('');
 
   const narr = d.narrative ? `<section class="lane">
       <div class="lanehead"><s style="background:var(--tech)"></s>
@@ -365,12 +423,14 @@ async function reportView(file){
         <span class="kind k-${d.kind}">${KIND[d.kind]?.en||d.kind}</span>
         <span class="lbl">${esc(d.date)}</span>
       </div>
-      <h1>${one(d.title)}</h1>
+      <h1>${esc(splitTitle(rone(d.title))[0])}</h1>
+      ${splitTitle(rone(d.title))[1]?`<div class="deck">${esc(splitTitle(rone(d.title))[1])}</div>`:''}
       ${showEn(d.title)?`<div class="sub">${en(d.title)}</div>`:''}
     </div>
-    <div class="board">${counts}</div>
-    ${d.focus?`<div class="focus"><span class="lbl">Bottom line · 一句話</span>
-      <p>${one(d.focus)}</p>${showEn(d.focus)?`<p class="en">${en(d.focus)}</p>`:''}</div>`:''}
+    <div class="board">${counts}<button class="expall" id="expall">展開全部</button></div>
+    ${d.focus?`<details class="focus"><summary><span class="lbl">本期主線 · Bottom line</span>
+      <p>${one(d.focus)}</p>${showEn(d.focus)?`<p class="en">${en(d.focus)}</p>`:''}
+      <span class="more"></span></summary></details>`:''}
     ${lanes}${unknown}${narr}${acts}
     <div class="pager">${nav(i+1,'較舊','l')}${nav(i-1,'較新','r')}</div>`;
 }
@@ -438,6 +498,13 @@ async function render(){
     app.innerHTML = `<div class="empty">尚無報告 · No reports yet<br>
       第一份簡報會在台北時間今晚 03:00 後產生。</div>`;
   }
+  const eb = document.getElementById('expall');
+  if(eb) eb.onclick = () => {
+    const ds = [...document.querySelectorAll('#app details.item')];
+    const open = ds.some(d => !d.open);
+    ds.forEach(d => d.open = open);
+    eb.textContent = open ? '收合全部' : '展開全部';
+  };
   document.getElementById('rail').innerHTML = rail();
   document.querySelectorAll('[data-k]').forEach(b => b.onclick = () => {
     filt = b.dataset.k; document.getElementById('rail').innerHTML = rail(); wireRail(); });
