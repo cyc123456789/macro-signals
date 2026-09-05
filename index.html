@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0a0c0f">
+<meta name="theme-color" content="#161a1f">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="宏觀訊號">
@@ -13,11 +13,13 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#0a0c0f; --panel:#0f1318; --card:#131920; --card2:#171e26;
-  --line:#1e2731; --line2:#2b3744;
-  --fg:#e8edf2; --fg2:#98a5b3; --fg3:#61707f;
-  --cyber:#38cfd9; --military:#e2a33f; --geo:#e8635f; --tech:#a97ff2; --nexus:#4fd18b;
-  --critical:#ff4b4b; --high:#ff8f3c; --medium:#e6c247; --warning:#7fb0ee; --info:#5f6d7a;
+  /* 近黑底 + 近白字 = 16.6:1，長篇中文會有光暈感；把地板抬起來、天花板壓下來，
+     並把五個高飽和色統一降飽和約三成，避免色差刺眼。正文仍有 12.6:1，遠高於 AAA。 */
+  --bg:#161a1f; --panel:#1b2027; --card:#1f242c; --card2:#252b34;
+  --line:#2d343d; --line2:#3b444f;
+  --fg:#d6dce3; --fg2:#a2acb7; --fg3:#78838f;
+  --cyber:#63b8c2; --military:#c9a065; --geo:#d4837f; --tech:#a292d4; --nexus:#71bd94;
+  --critical:#d9736e; --high:#cc9163; --medium:#c2ae68; --warning:#89a9cc; --info:#6a747f;
   --rail:260px;
 }
 *{box-sizing:border-box}
@@ -27,13 +29,13 @@ body{margin:0;background:var(--bg);color:var(--fg);
   -webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;
   overflow-wrap:break-word}
 a{color:inherit}
-::selection{background:#1f4d3c;color:#fff}
+::selection{background:#2f5546;color:var(--fg)}
 .mono{font-family:"IBM Plex Mono",ui-monospace,"Noto Sans TC",sans-serif}
 .lbl{font-family:"IBM Plex Mono",ui-monospace,"Noto Sans TC",sans-serif;font-size:10.5px;letter-spacing:.14em;
   text-transform:uppercase;color:var(--fg3)}
 
 /* ================= top bar ================= */
-header{position:sticky;top:0;z-index:30;background:rgba(10,12,15,.94);
+header{position:sticky;top:0;z-index:30;background:rgba(22,26,31,.94);
   backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;gap:14px;padding:0 18px;height:52px}
 .brand{display:flex;align-items:baseline;gap:9px;text-decoration:none;flex:none}
@@ -78,7 +80,7 @@ aside::-webkit-scrollbar-thumb{background:var(--line2);border-radius:3px}
 .tlink.weekly:before{box-shadow:0 0 0 1.5px var(--military)}
 .tlink.monthly:before{box-shadow:0 0 0 1.5px var(--tech);background:var(--tech)}
 .tlink:hover .tt{color:var(--fg)}
-.tlink.on:before{background:var(--nexus);box-shadow:0 0 0 1.5px var(--nexus),0 0 0 4px rgba(79,209,139,.15)}
+.tlink.on:before{background:var(--nexus);box-shadow:0 0 0 1.5px var(--nexus),0 0 0 4px rgba(113,189,148,.18)}
 .tlink.on .tt{color:var(--fg);font-weight:500}
 .tm{font-family:"IBM Plex Mono",ui-monospace,"Noto Sans TC",sans-serif;font-size:10px;letter-spacing:.1em;color:var(--fg3);
   display:flex;gap:7px;align-items:center}
@@ -112,7 +114,7 @@ main{padding:34px 34px 100px;min-width:0}
   padding:5px 11px;border-radius:7px;cursor:pointer}
 .expall:hover{color:var(--fg);border-color:var(--line2)}
 
-.focus{position:relative;background:linear-gradient(90deg,rgba(79,209,139,.07),transparent 70%);
+.focus{position:relative;background:linear-gradient(90deg,rgba(113,189,148,.08),transparent 70%);
   border:1px solid var(--line);border-left:3px solid var(--nexus);
   border-radius:0 10px 10px 0;padding:16px 20px;margin-bottom:38px}
 .focus>summary{list-style:none;cursor:pointer}
@@ -156,7 +158,7 @@ main{padding:34px 34px 100px;min-width:0}
 .itop{display:flex;align-items:center;gap:8px;margin-bottom:9px;flex-wrap:wrap}
 .sev{font-family:"IBM Plex Mono",ui-monospace,"Noto Sans TC",sans-serif;font-size:9.5px;letter-spacing:.14em;
   text-transform:uppercase;padding:2px 7px;border-radius:3px;color:var(--fg3);border:1px solid var(--line2)}
-.sev.critical{background:var(--critical);color:#0a0c0f;border-color:transparent;font-weight:600}
+.sev.critical{background:var(--critical);color:var(--bg);border-color:transparent;font-weight:600}
 .conf{font-family:"IBM Plex Mono",ui-monospace,"Noto Sans TC",sans-serif;font-size:9.5px;letter-spacing:.12em;
   text-transform:uppercase;color:var(--fg3);border:1px solid var(--line2);
   padding:2px 7px;border-radius:3px}
