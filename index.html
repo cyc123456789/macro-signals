@@ -79,6 +79,27 @@ header{position:sticky;top:0;z-index:30;background:rgba(22,26,31,.94);
   border-left:1px solid var(--line);margin-left:1px}
 .snav a.sub:hover{color:var(--fg2);border-left-color:var(--line2)}
 .sterms{display:flex;flex-wrap:wrap;gap:5px}
+.sterms .term{display:inline-flex;align-items:center;gap:5px}
+.sterms .term u{text-decoration:none;font-family:"IBM Plex Mono",ui-monospace,"Noto Sans TC",sans-serif;
+  font-size:9px;color:var(--fg3)}
+.sterms .term.fresh{border-color:var(--nexus);color:var(--fg)}
+.sterms .term.fresh u{color:var(--nexus)}
+.sthint{font-size:10.5px;color:var(--fg3);margin-top:8px;line-height:1.6;
+  font-family:"IBM Plex Mono",ui-monospace,"Noto Sans TC",sans-serif}
+/* 觀察日曆：把散在各期的前瞻日期收在一起 */
+.scal a{display:grid;grid-template-columns:58px 1fr;gap:9px;text-decoration:none;
+  padding:7px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.scal a:hover i{color:var(--fg)}
+.scal b{font-family:"IBM Plex Mono",ui-monospace,"Noto Sans TC",sans-serif;font-size:11px;white-space:nowrap;
+  color:var(--nexus);font-weight:600;letter-spacing:.02em}
+.scal a.soon b{color:var(--high)}
+.scal i{font-style:normal;color:var(--fg2);font-size:12px;line-height:1.55;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.scal i s{text-decoration:none;color:var(--fg3);font-size:10px}
+/* 報告之間的互相引用 */
+a.xref{color:var(--warning);text-decoration:none;border-bottom:1px dotted var(--warning);
+  padding-bottom:1px}
+a.xref:hover{color:var(--fg);border-bottom-style:solid}
 .ssrc a{display:block;text-decoration:none;color:var(--fg3);font-size:12px;line-height:1.5;
   padding:5px 0;border-bottom:1px solid var(--line)}
 .ssrc a:hover{color:var(--warning)}
@@ -342,8 +363,29 @@ const CAT  = {military:{zh:'態勢',c:'var(--military)'},cyber:{zh:'系統',c:'v
               geo:{zh:'政策',c:'var(--geo)'},tech:{zh:'技術',c:'var(--tech)'}};
 
 let lang = localStorage.getItem('sw-lang') || 'zh';
-let manifest = {reports:[]}, glossary = {terms:[]}, cache = {}, filt = '', cur = '', side = '';
+let manifest = {reports:[]}, glossary = {terms:[]}, cache = {}, filt = '', cur = '';
+let allReps = null, loading = null, curDoc = null, curHeads = [];
 
+// 四個右欄區塊都要看全站資料，統一在首次繪製後於背景抓一次，抓完再補畫
+function loadAll(){
+  if(allReps) return Promise.resolve(allReps);
+  return loading || (loading = Promise.all(manifest.reports.map(r => jget(r.file).catch(() => null)))
+    .then(rs => allReps = rs.filter(Boolean)));
+}
+
+const KINDW = {'週報':'weekly','月報':'monthly'};
+// 內文常寫「9/2報告」「8/31週報」，把它接回真的那一篇（同日兩份時用文字裡的類型消歧）
+function xref(html, year){
+  return String(html).replace(
+    /(^|[^\d\/])(1[0-2]|[1-9])\/(3[01]|[12]\d|[1-9])\s*(週報|月報|報告|簡報)/g,
+    (m, pre, mo, da, kw) => {
+      const iso = `${year}-${String(mo).padStart(2,'0')}-${String(da).padStart(2,'0')}`;
+      const want = KINDW[kw];
+      const c = manifest.reports.filter(r => r.date===iso);
+      const hit = c.find(r => want ? r.kind===want : r.kind==='brief') || c[0];
+      return hit ? `${pre}<a class="xref" href="#/r/${encodeURIComponent(hit.file)}">${mo}/${da}${kw}</a>` : m;
+    });
+}
 const isAnchor = h => /^#(L-|lane-|ne?\d)/.test(h);
 const esc = s => String(s??'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const zh = o => esc(typeof o==='string' ? o : (o?.zh||''));
@@ -366,35 +408,113 @@ function splitTitle(t){
   return [t,''];
 }
 // narrative 是 markdown：整段被 ** 包住的是小標，其餘是段落
-function narrHTML(t, pre, heads){
+function narrHTML(t, pre, heads, yr){
   let i = 0;
   return String(t||'').split(/\n{2,}/).map(b => {
     b = b.trim(); if(!b) return '';
     const h = b.match(/^\*\*([\s\S]+?)\*\*$/);
     if(h){ const id = `${pre}${i++}`; if(heads) heads.push({id, t:h[1]});
            return `<h4 class="nsub" id="${id}">${esc(h[1])}</h4>`; }
-    return `<p>${esc(b).replace(/\*\*([\s\S]+?)\*\*/g,'<strong>$1</strong>')}</p>`;
+    return `<p>${xref(esc(b).replace(/\*\*([\s\S]+?)\*\*/g,'<strong>$1</strong>'), yr)}</p>`;
   }).join('');
 }
 
-/* ---------------- 右欄：本篇導覽 / 術語 / 來源 ---------------- */
+const fileOf = d => (manifest.reports.find(r => r.date===d.date && r.kind===d.kind)||{}).file || '';
+
+// 報告全文（中文）：日期樣式只出現在中文欄位，英文寫的是 "Sept 15"
+function zhText(d){
+  const t = [rzh(d.focus), rzh(d.narrative)].concat((d.actions||[]).map(rzh));
+  for(const s of d.sections||[]) for(const it of s.items||[])
+    t.push(rzh(it.summary), rzh(it.implication), rzh(it.counterpoint));
+  return t.filter(Boolean).join('\n');
+}
+
+// 各期散落的前瞻日期 → 一份觀察日曆。以最新一份報告的日期當「現在」
+function watchlist(reps){
+  const now = reps.reduce((a,d) => d.date > a ? d.date : a, '');
+  const nowT = Date.parse(now), cal = new Map();
+  for(const d of reps){
+    const yr = +d.date.slice(0,4), base = Date.parse(d.date), txt = zhText(d);
+    const re = /(^|[^\d\/])(1[0-2]|[1-9])\/(3[01]|[12]\d|[1-9])(\s*[-–至]\s*(?:3[01]|[12]\d|[1-9]))?(?![\d\/])/g;
+    let m;
+    while((m = re.exec(txt))){
+      const mo = +m[2], da = +m[3];
+      const dt = Date.UTC(yr, mo-1, da);
+      // 只收「相對於該篇自己也還在未來」的日期，否則 2/27、6/10 這種同年舊事會被誤判。
+      // ponytail: 因此 12 月報告提到隔年 1 月的日期會漏掉，資料裡還沒出現，真的需要再處理跨年
+      if(dt < base || dt <= nowT || dt > nowT + 300*864e5) continue;
+      const key = dt + (m[4] ? m[4].trim() : '');
+      // 重點幾乎都在日期「後面」，前面只留一點主詞
+      const lead = txt.slice(Math.max(0, m.index-15), m.index);
+      const cut = Math.max(lead.lastIndexOf('。'), lead.lastIndexOf('；'), lead.lastIndexOf('，'),
+                           lead.lastIndexOf('：'), lead.lastIndexOf('\n'));
+      let ctx = (lead.slice(cut+1) + txt.slice(m.index, m.index + m[0].length + 46))
+                  .replace(/\*\*/g,'').replace(/\s+/g,'');
+      const dp = ctx.indexOf(`${mo}/${da}`), per = ctx.lastIndexOf('。', dp);
+      if(per > -1 && per < dp) ctx = ctx.slice(per+1);          // 別把上一句的尾巴帶進來
+      ctx = ctx.replace(/^[^\u4e00-\u9fffA-Za-z0-9]+/,'');
+      const prev = cal.get(key);
+      if(!prev) cal.set(key, {dt, span:m[4]?m[4].trim():'', n:1, from:d, ctx});
+      else { prev.n++; if(d.date > prev.from.date){ prev.from = d; prev.ctx = ctx; } }
+    }
+  }
+  return [...cal.values()].sort((a,b) => a.dt - b.dt).slice(0,10);
+}
+
+// 一個術語出現在幾份報告裡：反覆出現的才是還在動的線
+function termHeat(reps){
+  const m = new Map();
+  for(const d of reps){
+    const seen = new Set();
+    for(const s of d.sections||[]) for(const it of s.items||[]) (it.terms||[]).forEach(t => seen.add(t));
+    seen.forEach(t => m.set(t, (m.get(t)||0)+1));
+  }
+  return m;
+}
+
+/* ---------------- 右欄：觀察日曆 / 導覽 / 術語 / 來源 ---------------- */
+function renderSide(){
+  const el = document.getElementById('rail2'); if(!el) return;
+  el.innerHTML = curDoc
+    ? sideRail(curDoc, Object.fromEntries((curDoc.sections||[]).map(s => [s.id, s.items||[]])), curHeads)
+    : '';
+}
 function sideRail(d, secs, narrHeads){
   const items = (d.sections||[]).flatMap(x => x.items||[]);
+  const heat = allReps ? termHeat(allReps) : null;
+  const fresh = new Set(glossary.terms.filter(t => t.first_seen===d.date).map(t => t.term));
+
+  const cal = allReps ? watchlist(allReps) : [];
+  const calHTML = cal.length ? `<div class="sblock"><span class="lbl">觀察日曆 · Watchlist</span>
+    <div class="scal">${cal.map(c => {
+      const dt = new Date(c.dt), soon = c.dt - Date.now() < 21*864e5;
+      const md = `${String(dt.getUTCMonth()+1).padStart(2,'0')}/${String(dt.getUTCDate()).padStart(2,'0')}`;
+      return `<a class="${soon?'soon':''}" href="#/r/${encodeURIComponent(fileOf(c.from))}"
+        ><b>${md}${esc(c.span)}</b><i>${esc(c.ctx)}${c.n>1?` <s>· ${c.n}提</s>`:''}</i></a>`;
+    }).join('')}</div>
+    <div class="sthint">由各期內文自動彙整，日期以最新一份報告為基準</div></div>` : '';
   const nav = ORDER.filter(k => secs[k]?.length).map(k =>
     `<a href="#lane-${k}"><s style="background:${DOMAIN[k].c}"></s>${DOMAIN[k].zh}<b>${secs[k].length}</b></a>`).join('')
     + (d.narrative ? `<a href="#lane-narr"><s style="background:var(--tech)"></s>深度分析</a>`
         + narrHeads.map(h => `<a class="sub" href="#${h.id}">${esc(h.t)}</a>`).join('') : '')
     + ((d.actions||[]).length ? `<a href="#lane-acts"><s style="background:var(--nexus)"></s>下一步<b>${d.actions.length}</b></a>` : '');
 
-  const terms = [...new Set(items.flatMap(it => it.terms||[]))].sort();
+  const terms = [...new Set(items.flatMap(it => it.terms||[]))]
+    .sort((a,b) => (heat ? (heat.get(b)||0)-(heat.get(a)||0) : 0) || a.localeCompare(b));
   const srcs = [...new Map(items.filter(it => it.url).map(it => [it.url, it.source||it.url])).entries()];
   const host = u => { try{ return new URL(u).hostname.replace(/^www\./,''); }catch(e){ return ''; } };
 
-  return `<div class="sblock"><span class="lbl">本篇導覽 · Contents</span>
+  return `${calHTML}
+    <div class="sblock"><span class="lbl">本篇導覽 · Contents</span>
       <div class="snav">${nav}</div></div>
     ${terms.length ? `<div class="sblock"><span class="lbl">本篇術語 · ${terms.length}</span>
-      <div class="sterms">${terms.map(x =>
-        `<a class="term" href="#/glossary?q=${encodeURIComponent(x)}">${esc(x)}</a>`).join('')}</div></div>` : ''}
+      <div class="sterms">${terms.map(x => {
+        const n = heat ? (heat.get(x)||0) : 0;
+        return `<a class="term ${fresh.has(x)?'fresh':''}" href="#/glossary?q=${encodeURIComponent(x)}"
+          title="${fresh.has(x)?'本篇首見':''}${n>1?` 出現於 ${n} 份報告`:''}">${esc(x)}${
+          fresh.has(x)?'<u>新</u>':(n>1?`<u>${n}</u>`:'')}</a>`;
+      }).join('')}</div>
+      <div class="sthint">數字＝出現過的報告份數，<b style="color:var(--nexus)">新</b>＝本篇首見</div></div>` : ''}
     ${srcs.length ? `<div class="sblock"><span class="lbl">本篇來源 · ${srcs.length}</span>
       <div class="ssrc">${srcs.map(([u,src]) =>
         `<a href="${esc(u)}" target="_blank" rel="noopener"><i>${esc(src)}</i><em>${esc(host(u))} ↗</em></a>`).join('')}</div></div>` : ''}`;
@@ -426,10 +546,10 @@ function rail(){
 }
 
 /* ---------------- one item card ---------------- */
-function itemHTML(it, dc){
+function itemHTML(it, dc, yr){
   const sev = it.severity||'info';
   const note = (o,cls,l1,l2) => !o ? '' : `<div class="note ${cls}">
-      <span class="lbl">${l1} · ${l2}</span><p>${one(o)}</p>
+      <span class="lbl">${l1} · ${l2}</span><p>${xref(one(o),yr)}</p>
       ${showEn(o)?`<p class="en">${en(o)}</p>`:''}</div>`;
   const [head, sub] = splitTitle(rone(it.title));
   const lead = sub || firstSentence(rone(it.summary));
@@ -445,7 +565,7 @@ function itemHTML(it, dc){
     <div class="ibody">
       ${sub?`<p class="tsub">${esc(sub)}</p>`:''}
       ${showEn(it.title)?`<p class="tsub en" style="color:var(--fg3);font-size:13.5px">${en(it.title)}</p>`:''}
-      <div class="txt">${one(it.summary)}</div>
+      <div class="txt">${xref(one(it.summary),yr)}</div>
       ${showEn(it.summary)?`<div class="txt en">${en(it.summary)}</div>`:''}
       ${note(it.implication,'so','SO WHAT','對你的意義')}
       ${note(it.counterpoint,'cp','COUNTERPOINT','反方觀點')}
@@ -461,35 +581,36 @@ function itemHTML(it, dc){
 /* ---------------- report view ---------------- */
 async function reportView(file){
   let d; try{ d = await jget(file); }
-  catch(e){ side = ''; return `<div class="empty">找不到報告<br>${esc(file)}</div>`; }
+  catch(e){ curDoc = null; return `<div class="empty">找不到報告<br>${esc(file)}</div>`; }
   cur = file;
 
+  const yr = +d.date.slice(0,4);
   const secs = Object.fromEntries((d.sections||[]).map(s => [s.id, s.items||[]]));
   const counts = ORDER.filter(k => secs[k]?.length)
     .map(k => `<span class="bchip"><s style="background:${DOMAIN[k].c}"></s>${DOMAIN[k].zh.split(' ')[0]}<b>${secs[k].length}</b></span>`).join('');
   const lanes = ORDER.filter(k => secs[k]?.length).map(k => `<section class="lane" id="lane-${k}">
       <div class="lanehead"><s style="background:${DOMAIN[k].c}"></s>
         <h2>${DOMAIN[k].zh}</h2><em>${DOMAIN[k].en}</em><hr></div>
-      ${secs[k].map(it => itemHTML(it, DOMAIN[k].c)).join('')}
+      ${secs[k].map(it => itemHTML(it, DOMAIN[k].c, yr)).join('')}
     </section>`).join('');
   const unknown = (d.sections||[]).filter(s => !DOMAIN[s.id] && (s.items||[]).length)
     .map(s => `<section class="lane"><div class="lanehead"><s style="background:var(--fg3)"></s>
-        <h2>${esc(s.id)}</h2><hr></div>${s.items.map(it => itemHTML(it)).join('')}</section>`).join('');
+        <h2>${esc(s.id)}</h2><hr></div>${s.items.map(it => itemHTML(it, null, yr)).join('')}</section>`).join('');
 
   const narrHeads = [];
   const narr = d.narrative ? `<section class="lane" id="lane-narr">
       <div class="lanehead"><s style="background:var(--tech)"></s>
         <h2>深度分析</h2><em>Analysis</em><hr></div>
-      <div class="narr">${narrHTML(lang==='en' ? (d.narrative.en||d.narrative.zh) : (d.narrative.zh||d.narrative.en), 'n', narrHeads)}</div>
-      ${lang==='both'&&d.narrative.en&&d.narrative.zh?`<div class="narr en">${narrHTML(d.narrative.en,'ne')}</div>`:''}
+      <div class="narr">${narrHTML(lang==='en' ? (d.narrative.en||d.narrative.zh) : (d.narrative.zh||d.narrative.en), 'n', narrHeads, yr)}</div>
+      ${lang==='both'&&d.narrative.en&&d.narrative.zh?`<div class="narr en">${narrHTML(d.narrative.en,'ne',null,yr)}</div>`:''}
     </section>` : '';
   const acts = (d.actions||[]).length ? `<section class="lane" id="lane-acts">
       <div class="lanehead"><s style="background:var(--nexus)"></s>
         <h2>下一步</h2><em>What to adjust</em><hr></div>
-      <ol class="acts">${d.actions.map(a=>`<li>${one(a)}${showEn(a)?`<div class="en">${en(a)}</div>`:''}</li>`).join('')}</ol>
+      <ol class="acts">${d.actions.map(a=>`<li>${xref(one(a),yr)}${showEn(a)?`<div class="en">${en(a)}</div>`:''}</li>`).join('')}</ol>
     </section>` : '';
 
-  side = sideRail(d, secs, narrHeads);
+  curDoc = d; curHeads = narrHeads;
   const i = manifest.reports.findIndex(r => r.file===file);
   const nav = (j,label,side) => (j>=0 && j<manifest.reports.length)
     ? `<a href="#/r/${encodeURIComponent(manifest.reports[j].file)}">${side==='l'?'← ':''}${label} ${manifest.reports[j].date}${side==='r'?' →':''}</a>` : '<span></span>';
@@ -505,7 +626,7 @@ async function reportView(file){
     </div>
     <div class="board">${counts}<button class="expall" id="expall">展開全部</button></div>
     ${d.focus?`<details class="focus"><summary><span class="lbl">本期主線 · Bottom line</span>
-      <p>${one(d.focus)}</p>${showEn(d.focus)?`<p class="en">${en(d.focus)}</p>`:''}
+      <p>${xref(one(d.focus),yr)}</p>${showEn(d.focus)?`<p class="en">${en(d.focus)}</p>`:''}
       <span class="more"></span></summary></details>`:''}
     ${lanes}${unknown}${narr}${acts}
     <div class="pager">${nav(i+1,'較舊','l')}${nav(i-1,'較新','r')}</div>`;
@@ -562,7 +683,7 @@ async function render(){
   document.querySelectorAll('#langs button').forEach(b => b.classList.toggle('on', b.dataset.l===lang));
 
   if(h.startsWith('#/glossary')){
-    cur = ''; side = '';
+    cur = ''; curDoc = null;
     const m = h.match(/[?&]q=([^&]*)/); if(m) gq = decodeURIComponent(m[1]);
     app.innerHTML = glossaryView(); wireGlossary();
   } else if(h.startsWith('#/r/')){
@@ -570,7 +691,7 @@ async function render(){
   } else if(manifest.reports.length){
     app.innerHTML = await reportView(manifest.reports[0].file);   // 首頁直接開最新一份
   } else {
-    cur = ''; side = '';
+    cur = ''; curDoc = null;
     app.innerHTML = `<div class="empty">尚無報告 · No reports yet<br>
       第一份簡報會在台北時間今晚 03:00 後產生。</div>`;
   }
@@ -585,13 +706,18 @@ async function render(){
   document.querySelectorAll('[data-k]').forEach(b => b.onclick = () => {
     filt = b.dataset.k; document.getElementById('rail').innerHTML = rail(); wireRail(); });
   wireRail();
-  document.getElementById('rail2').innerHTML = side;
+  renderSide();
+  loadAll().then(renderSide);          // 跨報告的日曆與術語熱度晚一步補上
   if(!isAnchor(location.hash)) window.scrollTo(0,0);
 }
 function wireRail(){
   document.querySelectorAll('[data-k]').forEach(b => b.onclick = () => {
     filt = b.dataset.k; document.getElementById('rail').innerHTML = rail(); wireRail(); });
 }
+document.getElementById('app').addEventListener('click', e => {
+  const a = e.target.closest('a.xref');
+  if(a && e.target.closest('summary')){ e.preventDefault(); location.hash = a.getAttribute('href'); }
+});
 document.getElementById('langs').onclick = e => {
   if(!e.target.dataset.l) return;
   lang = e.target.dataset.l; localStorage.setItem('sw-lang', lang); render();
