@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-06",
+  "updated": "2026-09-07",
   "reports": [
+    {
+      "file": "reports/2026-09-07-weekly.json",
+      "date": "2026-09-07",
+      "kind": "weekly",
+      "title": {
+        "zh": "被關掉的不是定位，是時間：GNSS 干擾之所以每天都在開火，因為有一方已經把自己從那條共用訊號上拔下來了",
+        "en": "What gets denied is time, not position: GNSS jamming fires every day because one side has already unplugged itself from the shared signal"
+      }
+    },
     {
       "file": "reports/2026-09-06-brief.json",
       "date": "2026-09-06",

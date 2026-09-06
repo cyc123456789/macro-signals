@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06",
+  "updated": "2026-09-07",
   "terms": [
     {
       "term": "LiteLLM",
@@ -1287,6 +1287,160 @@
       },
       "category": "tech",
       "first_seen": "2026-09-04"
+    },
+    {
+      "term": "PNT",
+      "zh": "定位、導航與授時",
+      "expansion": "Positioning, Navigation and Timing",
+      "def": {
+        "zh": "衛星導航系統實際提供的三項服務的合稱。三者常被混為一談，但脆弱性完全不同：定位有慣性導航、地面導航台等替代品；授時（Timing）在民用基礎設施中幾乎沒有替代品，卻被電信同步、電網相量量測與金融時戳合規標準深度依賴。討論 GNSS 韌性時，先問對方指的是 P、N 還是 T，答案往往決定整個結論。",
+        "en": "The three services a satellite navigation system actually delivers. They are routinely conflated but fail very differently: positioning has substitutes (inertial navigation, ground aids), while timing has almost none in civil infrastructure yet is depended on by telecom sync, grid phasor measurement and financial timestamping compliance. When someone says 'GNSS resilience', ask which of the three they mean — the answer usually decides the conclusion."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-07"
+    },
+    {
+      "term": "eLoran",
+      "zh": "增強型羅遠導航系統",
+      "expansion": "Enhanced Long Range Navigation",
+      "def": {
+        "zh": "以地面高功率長波發射台提供定位與授時的陸基系統，是二戰時期 Loran-C 的現代化版本。訊號功率遠高於衛星訊號、頻率極低，因此難以被干擾或偽冒，被視為 GNSS 的主要陸基備援。中國已建成全國網並延伸至海岸外約 1,600 公里；英國訂於 2028 年初達初始作戰能力、2030 年完全作戰能力；美國至今僅停留在示範合約階段。",
+        "en": "A terrestrial system delivering position and time from high-power long-wave ground transmitters, the modernised descendant of WWII-era Loran-C. Its signals are vastly stronger and far lower in frequency than satellite signals, making them hard to jam or spoof — hence its status as the primary terrestrial backup to GNSS. China has completed a national network reaching roughly 1,600 km offshore; the UK targets initial operating capability in early 2028 and full capability in 2030; the US remains at the demonstration-contract stage."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-07"
+    },
+    {
+      "term": "BDS",
+      "zh": "北斗衛星導航系統",
+      "expansion": "BeiDou Navigation Satellite System",
+      "def": {
+        "zh": "中國自主建設的全球衛星導航系統，與 GPS、Galileo、GLONASS 並列四大 GNSS。其民用訊號頻段與 GPS 重疊，中國技術社群公開將此描述為一種戰略嚇阻——針對北斗民用訊號的干擾必然同時打到 GPS。",
+        "en": "China's indigenous global navigation satellite system, one of the four GNSS alongside GPS, Galileo and GLONASS. Its civil signal bands overlap with GPS, which Chinese technical commentary openly frames as strategic deterrence: interference aimed at BeiDou civil signals necessarily hits GPS as well."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-07"
+    },
+    {
+      "term": "NTSC",
+      "zh": "中國科學院國家授時中心",
+      "expansion": "National Time Service Center (Chinese Academy of Sciences)",
+      "def": {
+        "zh": "中國的國家授時機構，維持中國標準時間 UTC(NTSC)，並主導高精度地基授時系統的建設。UTC(NTSC) 是中國境內所有授時服務的最終回溯基準，地位相當於美國的 UTC(NIST)／UTC(USNO)。",
+        "en": "China's national timing authority, which maintains China Standard Time UTC(NTSC) and leads construction of the High-precision Ground-based Timing System. UTC(NTSC) is the ultimate traceability reference for all timing services inside China, occupying the role UTC(NIST)/UTC(USNO) play in the US."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-07"
+    },
+    {
+      "term": "UTC",
+      "zh": "協調世界時",
+      "expansion": "Coordinated Universal Time",
+      "def": {
+        "zh": "國際標準時間基準，由各國時頻實驗室的原子鐘加權合成。金融、電信與電網的合規要求通常不是「準確」，而是「可追溯至 UTC」——必須能證明本地時鐘與 UTC 的關係。實務上這條追溯鏈多半經由 GNSS 建立，因此 UTC 可追溯性在技術上往往等同於 GNSS 依賴。",
+        "en": "The international time standard, formed by weighting atomic clocks across national time laboratories. Compliance requirements in finance, telecom and power are usually not for accuracy as such but for traceability to UTC — you must be able to demonstrate your local clock's relationship to it. In practice that chain is normally established via GNSS, so UTC traceability is often technically identical to a GNSS dependency."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-07"
+    },
+    {
+      "term": "PTP",
+      "zh": "精確時間協定",
+      "expansion": "Precision Time Protocol (IEEE 1588)",
+      "def": {
+        "zh": "在區域網路內分送高精度時間的協定，精度可達次微秒至奈秒級，遠優於 NTP。資料中心與交易機房通常以一台「母鐘」（grandmaster）接收 GNSS 時間，再用 PTP 分送給各伺服器；這個架構意味著整個機房的時間正確性收斂到母鐘那一個 GNSS 接收點上。",
+        "en": "A protocol for distributing high-precision time inside a local network, reaching sub-microsecond to nanosecond accuracy, far tighter than NTP. Data centres and trading floors typically have one grandmaster clock take time from GNSS and distribute it by PTP to servers — an architecture that funnels the entire facility's time correctness through that single GNSS reception point."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-07"
+    },
+    {
+      "term": "GPSDO",
+      "zh": "GPS 馴服振盪器",
+      "expansion": "GPS Disciplined Oscillator",
+      "def": {
+        "zh": "以 GPS 訊號持續校正本地振盪器的授時設備，是絕大多數民用基礎設施取得精確時間的實體裝置。其關鍵規格不是鎖定時的精度（都很好），而是失去 GPS 後的 holdover 漂移率——那才決定它能在干擾下撐多久。",
+        "en": "A timing device that continuously corrects a local oscillator against GPS signals; it is the physical box through which most civil infrastructure obtains precise time. Its critical specification is not locked accuracy (which is uniformly good) but holdover drift after GPS is lost — that is what determines how long it survives jamming."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-07"
+    },
+    {
+      "term": "Holdover",
+      "zh": "保持模式／自走時鐘",
+      "expansion": "Holdover (flywheel mode)",
+      "def": {
+        "zh": "授時設備在失去 GNSS 參考後，僅靠本地振盪器維持時間的運作狀態。漂移率取決於振盪器等級：銣原子鐘 24 小時約漂移 100 至 500 奈秒，一般 OCXO 約 1 至 10 微秒。把合規門檻除以漂移率，就得到一個機房能承受多少小時 GNSS 中斷的具體數字——這是目前極少被稽核的韌性指標。",
+        "en": "The state in which a timing device maintains time on its local oscillator alone after losing its GNSS reference. Drift depends on oscillator grade: a rubidium clock drifts roughly 100–500 nanoseconds over 24 hours, a typical OCXO 1–10 microseconds. Dividing a compliance threshold by the drift rate yields a concrete number of hours of GNSS outage a facility can absorb — a resilience metric almost nobody currently audits."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-07"
+    },
+    {
+      "term": "OSNMA",
+      "zh": "開放服務導航訊息認證",
+      "expansion": "Open Service Navigation Message Authentication",
+      "def": {
+        "zh": "歐盟 Galileo 提供的導航訊息認證服務，2025 年 7 月 24 日宣告正式運作，讓接收機能驗證導航資料確實來自 Galileo 且未遭竄改。關鍵限制：它針對的是偽冒（spoofing），對干擾（jamming）完全無效——訊號被壓到雜訊底下時沒有東西可驗證；且必須在接收機端實作才生效。",
+        "en": "Galileo's navigation message authentication service, declared operational on 24 July 2025, letting receivers verify that navigation data genuinely comes from Galileo and is untampered. The critical limit: it addresses spoofing, not jamming — once the signal is buried under the noise floor there is nothing left to authenticate — and it only takes effect once implemented at receiver level."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-07"
+    },
+    {
+      "term": "LEO-PNT",
+      "zh": "低軌定位導航授時",
+      "expansion": "Low Earth Orbit Positioning, Navigation and Timing",
+      "def": {
+        "zh": "以低地球軌道衛星（而非 GPS 所在的 20,200 公里中軌）提供 PNT 服務的架構。因為距離近，訊號到達地面的強度可高出既有 GNSS 約 1,000 倍，抗干擾門檻因此大幅提高。代表案例為 Xona Space Systems 的 Pulsar（規劃最多 258 顆，沿用既有 L 頻段硬體）。",
+        "en": "An architecture delivering PNT from low Earth orbit rather than the 20,200 km medium orbit GPS occupies. The shorter range means signals arrive up to a thousand times stronger than legacy GNSS, sharply raising the anti-jam threshold. The reference case is Xona Space Systems' Pulsar (up to 258 satellites planned, reusing existing L-band hardware)."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-07"
+    },
+    {
+      "term": "TDOA",
+      "zh": "到達時間差定位法",
+      "expansion": "Time Difference of Arrival",
+      "def": {
+        "zh": "以同一訊號抵達多個已知位置接收站的時間差反推發射源座標的定位技術。用於干擾源與偽冒源的地理定位——Gdynia 海事大學與德國宇航中心即以此把波羅的海 GNSS 干擾源指向加里寧格勒的 Okunevo 天線陣。這是干擾行為在技術上仍可被歸因的主要原因。",
+        "en": "A geolocation technique that infers an emitter's coordinates from the differing arrival times of one signal at multiple receivers of known position. It is how jammers and spoofers get located — Gdynia Maritime University and Germany's DLR used it to point Baltic GNSS interference at the Okunevo antenna complex in Kaliningrad. It is the main reason interference remains technically attributable at all."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-07"
+    },
+    {
+      "term": "ICAO",
+      "zh": "國際民航組織",
+      "expansion": "International Civil Aviation Organization",
+      "def": {
+        "zh": "聯合國轄下負責國際民航規則的專門機構，其法律基礎是 1944 年芝加哥公約。2025 年 10 月大會依六個歐洲成員國提交的證據，認定源自俄羅斯與北韓的重複性 GNSS 射頻干擾違反該公約——這是史上首次的正式歸屬，但該組織不具強制執行力。",
+        "en": "The UN specialised agency governing international civil aviation, grounded in the 1944 Chicago Convention. In October 2025 its Assembly, on evidence from six European member states, found that recurring GNSS radio-frequency interference originating from Russia and the DPRK breaches the Convention — the first formal attribution of its kind, from a body with no enforcement power."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-07"
+    },
+    {
+      "term": "EASA",
+      "zh": "歐盟航空安全局",
+      "expansion": "European Union Aviation Safety Agency",
+      "def": {
+        "zh": "歐盟的航空安全主管機關。針對 GNSS 干擾持續發布安全資訊通報（SIB），並與 IATA 建立聯合行動計畫。其通報是目前追蹤歐洲與周邊空域干擾熱區（波羅的海、黑海、東地中海、中東）最權威的公開來源之一。",
+        "en": "The EU's aviation safety regulator. It issues Safety Information Bulletins on GNSS interference and runs a joint action plan with IATA. Its bulletins are among the most authoritative open sources for tracking interference hotspots in and around European airspace — the Baltic, Black Sea, eastern Mediterranean and Middle East."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-07"
+    },
+    {
+      "term": "RTS 25",
+      "zh": "歐盟時鐘同步技術標準",
+      "expansion": "Regulatory Technical Standard 25 (Commission Delegated Regulation (EU) 2017/574)",
+      "def": {
+        "zh": "MiFID II 下規範交易場所與投資公司業務時鐘同步的技術標準。要求時間基準為 UTC，最大偏離按閘道對閘道延遲分級：延遲大於 1 毫秒者為 1 毫秒，小於等於 1 毫秒者為 100 微秒（即高頻交易那一格）。它要求對 UTC 的可追溯性與文件化，但未規定備援來源——因此一個完全合規的交易場所可以是單一 GNSS 依賴。",
+        "en": "The technical standard under MiFID II governing business clock synchronisation for trading venues and investment firms. It mandates UTC as the time reference, with maximum divergence tiered by gateway-to-gateway latency: 1 millisecond above 1 ms latency, 100 microseconds at or below (the high-frequency trading tier). It requires traceability to UTC and documentation but does not mandate a backup source — so a fully compliant venue can be a single-source GNSS dependency."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-07"
     }
   ]
 }
