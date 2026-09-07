@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-07",
+  "updated": "2026-09-08",
   "reports": [
+    {
+      "file": "reports/2026-09-08-brief.json",
+      "date": "2026-09-08",
+      "kind": "brief",
+      "title": {
+        "zh": "IRGC自稱擊中美方相關船艦、德黑蘭劃出霍爾木茲新限制區；Witkoff與Kushner真的走進了Kyiv，卻被Zelensky當面回絕割地；Zeabur外洩把AI API金鑰變成新贓物——同一週，CCW第二次GGE會議開完，三個否決票原地不動",
+        "en": "IRGC Claims It Hit US-linked Vessels as Tehran Draws a New Hormuz Restricted Zone; Witkoff and Kushner Really Did Walk Into Kyiv, Only to Be Refused Territory to Their Faces by Zelensky; Zeabur's Leak Turns AI API Keys Into New Loot — the Same Week CCW's Second GGE Session Ends With All Three Veto-Holders Exactly Where They Started"
+      }
+    },
     {
       "file": "reports/2026-09-07-weekly.json",
       "date": "2026-09-07",

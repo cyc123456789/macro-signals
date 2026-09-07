@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07",
+  "updated": "2026-09-08",
   "terms": [
     {
       "term": "LiteLLM",
@@ -1441,6 +1441,28 @@
       },
       "category": "geo",
       "first_seen": "2026-09-07"
+    },
+    {
+      "term": "PaaS",
+      "zh": "平台即服務",
+      "expansion": "Platform as a Service",
+      "def": {
+        "zh": "雲端服務模式的一種，業者提供應用程式部署所需的執行環境、資料庫與基礎設施管理，開發者只需上傳程式碼即可運行，不必自行維運底層伺服器。因為平台代管大量客戶的環境變數與憑證，一旦平台本身的內部管理憑證外洩，等於同時暴露所有客戶儲存在該平台上的第三方服務金鑰。",
+        "en": "A cloud service model in which the provider manages the runtime environment, database and underlying infrastructure needed to run an application, so developers deploy code without operating servers themselves. Because the platform holds large numbers of customers' environment variables and credentials in one place, a leak of the platform's own internal administrative credential can expose every customer's third-party service keys stored on it at once."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-08"
+    },
+    {
+      "term": "AWS",
+      "zh": "亞馬遜雲端服務",
+      "expansion": "Amazon Web Services",
+      "def": {
+        "zh": "Amazon旗下的雲端運算平台，提供運算、儲存、資料庫等基礎設施服務，是全球市佔率最高的公有雲供應商之一，許多PaaS與SaaS業者本身即建立在其基礎設施之上。",
+        "en": "Amazon's cloud computing platform, offering compute, storage and database infrastructure services. It is one of the largest public-cloud providers globally, and many PaaS and SaaS businesses are themselves built on top of its infrastructure."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-08"
     }
   ]
 }
