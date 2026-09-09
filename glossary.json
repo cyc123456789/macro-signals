@@ -1,6 +1,50 @@
 {
-  "updated": "2026-09-08",
+  "updated": "2026-09-10",
   "terms": [
+    {
+      "term": "Distillation",
+      "zh": "知識蒸餾",
+      "expansion": "Knowledge Distillation",
+      "def": {
+        "zh": "讓一個規模較小的模型,透過大量輸入前沿模型並記錄其輸出,學習模仿該前沿模型行為與能力的訓練技術;原是業界常見的模型壓縮手法,但當蒸餾對象是未經授權存取的競爭對手商用模型、且透過偽造帳號與規避監測的方式大規模進行時,即構成一種新型態的AI供應鏈竊取。",
+        "en": "A training technique in which a smaller model learns to imitate a larger frontier model's behavior and capability by feeding it many inputs and recording its outputs; a common, legitimate model-compression method in the industry — but when carried out at scale against a competitor's commercial model without authorization, using fraudulent accounts and detection evasion, it becomes a new form of AI supply-chain theft."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-10"
+    },
+    {
+      "term": "RMM",
+      "zh": "遠端監控與管理",
+      "expansion": "Remote Monitoring and Management",
+      "def": {
+        "zh": "MSP(受管服務供應商)用來透過單一介面集中監控、修補與操作旗下所有客戶端點的軟體平台;因為它天生具備跨組織的高權限存取能力,一旦平台本身遭入侵,等同一次拿到其管理的每一個下游客戶環境的存取權,是供應鏈攻擊的典型高價值目標。",
+        "en": "Software platforms MSPs (managed service providers) use to centrally monitor, patch and operate every client endpoint they manage through one interface; because it inherently holds high-privilege, cross-organization access by design, compromising the platform itself hands an attacker access to every downstream client environment it manages, making it a classic high-value supply-chain target."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-10"
+    },
+    {
+      "term": "NTP",
+      "zh": "網路校時協定",
+      "expansion": "Network Time Protocol",
+      "def": {
+        "zh": "用來讓網路上的裝置與伺服器彼此同步時鐘的標準協定;因為多數網路監控與防火牆規則預設信任校時流量、極少對其內容做深度檢查,近年被觀察到遭攻擊者用來偽裝惡意C2(指揮管制)流量,使其混入正常網路噪音而不被察覺。",
+        "en": "The standard protocol devices and servers use to synchronize their clocks over a network; because most network monitoring and firewall rules trust time-sync traffic by default and rarely inspect its content deeply, it has been observed used by attackers to disguise malicious C2 (command-and-control) traffic, blending it into ordinary network noise."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-10"
+    },
+    {
+      "term": "AIT",
+      "zh": "美國在台協會",
+      "expansion": "American Institute in Taiwan",
+      "def": {
+        "zh": "美國在無正式外交關係下,代為處理對台事務與雙邊關係的非營利機構,實質上執行等同大使館的職能;其處長的公開表態,常被視為美方對台政策立場的官方訊號。",
+        "en": "The nonprofit organization the US uses to conduct relations with Taiwan in the absence of formal diplomatic ties, functioning in practice as its de facto embassy; public statements by its director are commonly read as official signals of US policy toward Taiwan."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-10"
+    },
     {
       "term": "LiteLLM",
       "zh": "LiteLLM（AI 閘道器）",

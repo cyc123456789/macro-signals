@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-08",
+  "updated": "2026-09-10",
   "reports": [
+    {
+      "file": "reports/2026-09-10-brief.json",
+      "date": "2026-09-10",
+      "kind": "brief",
+      "title": {
+        "zh": "CENTCOM把擊沉數從『2換3』拉到一口氣摧毀5艘油輪、伊朗飛彈直接打進約旦美軍基地，布蘭特站上100美元；同一週，NSA/CISA/FBI首次點名六家中國AI公司系統性蒸餾Claude與GPT——而五角大廈自己還在拒用Anthropic",
+        "en": "CENTCOM Raises Its Tanker Kill Count From '2-for-3' to Five in One Day as Iran's Missiles Land Inside a US Base in Jordan and Brent Tops $100; the Same Week, NSA/CISA/FBI Name Six Chinese AI Firms for Systematically Distilling Claude and GPT — While the Pentagon Still Won't Let Its Own Troops Use Anthropic"
+      }
+    },
     {
       "file": "reports/2026-09-08-brief.json",
       "date": "2026-09-08",
