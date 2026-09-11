@@ -1,6 +1,72 @@
 {
-  "updated": "2026-09-10",
+  "updated": "2026-09-12",
   "terms": [
+    {
+      "term": "GUGI",
+      "zh": "俄羅斯海軍深海研究總局",
+      "expansion": "Glavnoye Upravleniye Glubokovodnykh Issledovaniy (Main Directorate of Deep-Sea Research)",
+      "def": {
+        "zh": "俄羅斯海軍下轄、直屬國防部的深海特種作戰單位，掌管深海潛艦、水下無人載具與海底基礎設施相關的秘密行動，長期被西方情報機構認為與海底電纜、管線周邊的可疑活動有關；美、英均已對其實施制裁。",
+        "en": "A Russian naval directorate reporting directly to the Ministry of Defence that operates deep-sea submarines and uncrewed underwater vehicles for covert operations near seabed infrastructure; Western intelligence agencies have long linked it to suspicious activity around undersea cables and pipelines, and both the US and UK have sanctioned it."
+      },
+      "category": "military",
+      "first_seen": "2026-09-12"
+    },
+    {
+      "term": "Sandworm",
+      "zh": "沙蟲（俄羅斯軍事情報駭客組織）",
+      "expansion": "Sandworm Team (tracked by Cisco Talos, linked to Russia's GRU Unit 74455)",
+      "def": {
+        "zh": "被多家資安業者長期歸因於俄羅斯軍事情報總局(GRU)的國家級駭客組織，過往曾對烏克蘭電網、Olympic Destroyer等目標發動破壞性攻擊，是目前公認能力最強、破壞性最高的國家級APT組織之一。",
+        "en": "A state-sponsored hacking group widely attributed by security vendors to Russia's military intelligence agency (GRU), historically responsible for destructive attacks such as strikes on Ukraine's power grid and the Olympic Destroyer campaign; considered one of the most capable and destructive nation-state APT groups tracked today."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-12"
+    },
+    {
+      "term": "Cyclops Blink",
+      "zh": "Cyclops Blink惡意程式",
+      "expansion": "Cyclops Blink malware framework",
+      "def": {
+        "zh": "與Sandworm相關聯的模組化惡意程式框架，曾用於劫持WatchGuard等網路設備組成殭屍網路；具備在裝置韌體更新後仍保持存活的持久化能力，是判斷一起入侵是否與Sandworm有關的常見指標之一。",
+        "en": "A modular malware framework associated with Sandworm, previously used to hijack networking devices such as WatchGuard firewalls into a botnet; it can persist across firmware updates, making its presence a common indicator used to link an intrusion back to Sandworm."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-12"
+    },
+    {
+      "term": "FMC",
+      "zh": "Cisco防火牆管理中心",
+      "expansion": "Cisco Secure Firewall Management Center",
+      "def": {
+        "zh": "Cisco用來集中管理旗下防火牆設備群的控制平面軟體；因其設計上對所轄每一台防火牆都握有高權限存取，一旦FMC本身遭入侵，等同一次取得對整個受管防火牆艦隊的控制權。",
+        "en": "Cisco's control-plane software for centrally managing a fleet of its firewall appliances; because it holds high-privilege access over every firewall it manages by design, compromising the FMC itself hands an attacker control over the entire managed fleet at once."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-12"
+    },
+    {
+      "term": "HBM",
+      "zh": "高頻寬記憶體",
+      "expansion": "High Bandwidth Memory",
+      "def": {
+        "zh": "一種堆疊式記憶體技術，能提供AI加速器所需的極高資料頻寬，是先進AI晶片成本結構中占比極高的關鍵零組件；美國自2024年底起收緊對中國出口先進HBM，是中國廠商轉向灰市採購、成本大幅墊高的主因。",
+        "en": "A stacked memory technology that provides the extremely high data bandwidth AI accelerators require, making up a large share of an advanced AI chip's cost structure; US controls tightened on advanced HBM exports to China since late 2024 are the main reason Chinese chipmakers have turned to marked-up grey-market supply."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-12"
+    },
+    {
+      "term": "NDAA",
+      "zh": "國防授權法案",
+      "expansion": "National Defense Authorization Act",
+      "def": {
+        "zh": "美國國會每年制定、授權國防部年度預算與政策方向的法案，是國會影響軍事AI使用規則、武器系統採購與出口管制政策的主要立法工具之一，須經參眾兩院協調(conference)出統一文本後生效。",
+        "en": "The annual US law authorizing the Defense Department's budget and policy direction; it is one of Congress's main legislative vehicles for shaping military AI use rules, weapons procurement and export-control policy, and takes effect only after the House and Senate reconcile their versions in conference."
+      },
+      "category": "military",
+      "first_seen": "2026-09-12"
+    },
     {
       "term": "Distillation",
       "zh": "知識蒸餾",

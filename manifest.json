@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-10",
+  "updated": "2026-09-12",
   "reports": [
+    {
+      "file": "reports/2026-09-12-brief.json",
+      "date": "2026-09-12",
+      "kind": "brief",
+      "title": {
+        "zh": "卡在憲法10天期限的最後一天，卓榮泰副署了在野版無人機條例——9/6報告與9/8報告追的政治測試終於落地；同一週，伊朗發動開戰以來最大規模的一日攻船潮、CENTCOM第三度駁斥『擊中美艦』，Sandworm與Qilin則在同一個CVSS 10.0的Cisco防火牆管理漏洞上會師",
+        "en": "On the Last Legally Possible Day, Cho Jung-tai Countersigns the Opposition's Drone Act — the Political Test 9/6報告 and 9/8報告 Tracked Finally Lands; the Same Week, Iran Launches the War's Biggest One-Day Wave of Shipping Attacks as CENTCOM Denies 'We Hit US Ships' for a Third Straight Round, While Sandworm and Qilin Converge on the Same CVSS-10.0 Cisco Firewall Flaw"
+      }
+    },
     {
       "file": "reports/2026-09-10-brief.json",
       "date": "2026-09-10",
