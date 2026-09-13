@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-12",
+  "updated": "2026-09-14",
   "reports": [
+    {
+      "file": "reports/2026-09-14-brief.json",
+      "date": "2026-09-14",
+      "kind": "brief",
+      "title": {
+        "zh": "巴布曼德海峽被胡塞拿下、霍爾木茲卻靠阿曼斡旋要重開——9/6報告設下的伊朗『比例持續放大』指標，這次第一次答案是停火而非升級；同一週，Proofpoint揭露四個中國國家關聯駭客集團12天內接力用上同一組Chrome+Windows零時差鏈",
+        "en": "The Houthis Take Bab el-Mandeb Just as Oman Brokers a Reopening of Hormuz — the Escalation Indicator 9/6報告 Set for Iran's Shipping War Answers 'No' for the First Time; the Same Week, Proofpoint Catches Four China-Nexus Hacking Groups Relay-Adopt the Same Chrome+Windows Zero-Day Chain Within 12 Days"
+      }
+    },
     {
       "file": "reports/2026-09-12-brief.json",
       "date": "2026-09-12",

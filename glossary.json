@@ -1,6 +1,72 @@
 {
-  "updated": "2026-09-12",
+  "updated": "2026-09-14",
   "terms": [
+    {
+      "term": "Houthi",
+      "zh": "胡塞武裝（正式名稱Ansar Allah）",
+      "expansion": "Houthi movement (formally Ansar Allah)",
+      "def": {
+        "zh": "葉門境內的什葉派札伊迪武裝政治組織，受伊朗支持，自2014年起控制葉門北部與首都Sana'a；長期對紅海航運船隻發動飛彈與無人機攻擊，2026年9月更進一步實體攻佔巴布曼德海峽周邊據點，從『能威脅通過的船隻』升級為『能決定誰可以通過』的咽喉點控制方。",
+        "en": "A Zaydi Shia armed political movement in Yemen, formally named Ansar Allah, backed by Iran and in control of northern Yemen and the capital Sana'a since 2014; it has long targeted Red Sea shipping with missiles and drones, and in September 2026 escalated to physically seizing positions around Bab el-Mandeb — moving from threatening passing ships to controlling who may pass."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-14"
+    },
+    {
+      "term": "GCC",
+      "zh": "波灣合作理事會",
+      "expansion": "Gulf Cooperation Council",
+      "def": {
+        "zh": "由沙烏地阿拉伯、阿聯、科威特、卡達、巴林與阿曼六個波灣阿拉伯君主國組成的區域政治經濟組織；在伊朗與美國的波灣衝突中，各成員國承受的直接軍事風險並不對等(如巴林受創最重)，這也是2026年9月阿曼斡旋談判時，部分成員國選擇抵制的背景。",
+        "en": "A regional political and economic organization of six Gulf Arab monarchies — Saudi Arabia, the UAE, Kuwait, Qatar, Bahrain and Oman. Member states bear unequal direct military risk in the Iran-US Gulf conflict (Bahrain has been hit hardest), which is the backdrop to some members boycotting Oman's September 2026 mediation talks."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-14"
+    },
+    {
+      "term": "TAG",
+      "zh": "Google威脅分析小組",
+      "expansion": "Google Threat Analysis Group",
+      "def": {
+        "zh": "Google旗下專注於追蹤國家級與商業間諜軟體威脅行為者的團隊，與整合Mandiant遙測的GTIG(Google威脅情報小組)屬不同編制但常共同發布研究；在跨廠商聯合歸因(如同時牽涉Proofpoint、Microsoft MSTIC的案例)中，TAG通常負責瀏覽器與作業系統零時差漏洞鏈這一段的技術分析。",
+        "en": "Google's team focused on tracking state-sponsored and commercial spyware threat actors, organizationally distinct from GTIG (which integrates Mandiant telemetry) though the two often co-publish research; in cross-vendor joint attribution cases (alongside Proofpoint or Microsoft MSTIC, for example), TAG typically handles the technical analysis of browser and OS zero-day exploit chains."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-14"
+    },
+    {
+      "term": "Zero-click",
+      "zh": "零點擊漏洞利用",
+      "expansion": "Zero-click exploit",
+      "def": {
+        "zh": "被害者不需要主動點擊連結、開啟檔案或做出其他明顯操作，攻擊即可觸發並成功入侵的漏洞利用類型；相對地，『單次點擊即淪陷』的漏洞鏈雖仍需被害者做一個動作，但門檻極低、幾乎等同零互動，兩者都因為缺乏可觀察的使用者行為而讓傳統『提高使用者警覺』的防禦手段失效。",
+        "en": "A class of exploit that compromises a target without requiring the victim to click a link, open a file, or take any other visible action; a closely related 'one click and you're owned' chain still needs a single action but sets the bar so low it is functionally near-zero-interaction. Both defeat traditional 'raise user awareness' defenses because there is no observable user behavior to train against."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-14"
+    },
+    {
+      "term": "Qilin",
+      "zh": "Qilin（勒索軟體即服務集團）",
+      "expansion": "Qilin (Ransomware-as-a-Service operation)",
+      "def": {
+        "zh": "一個以RaaS(勒索軟體即服務)模式運作的犯罪集團，本站自8月起持續追蹤其入侵目標選擇邏輯：先是入侵美國ATF查案伺服器，接著透過LiteLLM/MCP攻擊鏈打進企業AI閘道器，9月又出現在同一波利用Cisco FMC漏洞的活動集群名單(UAT-11988)中——六週內三種完全不同類型的入口，顯示其鎖定的是『找到值錢的存取權』本身，而非特定產業或目標類型。",
+        "en": "A criminal group operating on a Ransomware-as-a-Service model, tracked by this outlet since August for its target-selection logic: it first breached a US ATF case-management server, then used a LiteLLM/MCP attack chain to break into an enterprise AI gateway, and in September appeared (as UAT-11988) among the clusters exploiting the Cisco FMC flaw — three entirely different entry types in six weeks, indicating it targets valuable access itself rather than any specific industry or target class."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-14"
+    },
+    {
+      "term": "CRS",
+      "zh": "美國國會研究處",
+      "expansion": "Congressional Research Service",
+      "def": {
+        "zh": "美國國會圖書館下設、專為國會議員與委員會提供非黨派政策分析與立法程序追蹤的機構；其定期更新的簡報是判斷一項法案(如NDAA)實際程序進度——而非新聞報導轉述的進度——最可靠的來源之一。",
+        "en": "A nonpartisan agency within the Library of Congress that provides policy analysis and legislative-process tracking for members of Congress and committees; its regularly updated briefs are among the most reliable sources for a bill's actual procedural status — as opposed to the progress implied by news coverage — such as the NDAA's."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-14"
+    },
     {
       "term": "GUGI",
       "zh": "俄羅斯海軍深海研究總局",
