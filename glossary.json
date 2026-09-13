@@ -1639,6 +1639,138 @@
       },
       "category": "cyber",
       "first_seen": "2026-09-08"
+    },
+    {
+      "term": "CXMT",
+      "zh": "長鑫存儲",
+      "expansion": "ChangXin Memory Technologies",
+      "def": {
+        "zh": "中國最大的DRAM記憶體製造商，總部位於合肥，是中國在記憶體領域對抗三星、SK hynix與美光的主要國產替代方案，2026年起推進HBM3與HBM3E量產。",
+        "en": "China's largest DRAM manufacturer, headquartered in Hefei. It is the principal domestic alternative to Samsung, SK hynix and Micron in memory, and from 2026 has pushed into HBM3 and HBM3E production."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-14"
+    },
+    {
+      "term": "DRAM",
+      "zh": "動態隨機存取記憶體",
+      "expansion": "Dynamic Random-Access Memory",
+      "def": {
+        "zh": "電腦系統的主要工作記憶體型態，需持續刷新以保存資料。HBM本質上是把多層DRAM顆粒以矽穿孔垂直堆疊而成，因此DRAM顆粒的製造能力是HBM能否國產化的根本前提。",
+        "en": "The main form of working memory in computing systems, requiring continuous refresh to retain data. HBM is essentially multiple DRAM dies stacked vertically using through-silicon vias, so the ability to fabricate DRAM dies is the precondition for producing HBM domestically."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-14"
+    },
+    {
+      "term": "HBM3E",
+      "zh": "第五代高頻寬記憶體",
+      "expansion": "High Bandwidth Memory 3E",
+      "def": {
+        "zh": "HBM3的增強版本，是2025至2026年間主流AI加速器（如Nvidia B200、B100）採用的記憶體世代，單顆堆疊約300美元，其後續世代為HBM4。",
+        "en": "An enhanced version of HBM3 and the memory generation used by mainstream AI accelerators such as Nvidia's B200 and B100 through 2025-2026, at roughly USD 300 per stack. Its successor generation is HBM4."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-14"
+    },
+    {
+      "term": "TSV",
+      "zh": "矽穿孔",
+      "expansion": "Through-Silicon Via",
+      "def": {
+        "zh": "貫穿矽晶片本體的垂直電氣連接通道，是把多層記憶體顆粒垂直堆疊成HBM的關鍵製程。TSV與後段堆疊組裝良率，通常是HBM產能的實際瓶頸所在。",
+        "en": "A vertical electrical connection running through the body of a silicon die, and the key process enabling multiple memory dies to be stacked vertically into HBM. TSV formation and back-end stacking yield are typically where real HBM capacity bottlenecks sit."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-14"
+    },
+    {
+      "term": "CoWoS",
+      "zh": "基板上晶圓上晶片封裝",
+      "expansion": "Chip-on-Wafer-on-Substrate",
+      "def": {
+        "zh": "TSMC開發的2.5D先進封裝技術，把運算晶片與HBM堆疊並列整合在同一中介層上。是目前AI加速器製造的關鍵瓶頸環節，TSMC約佔全球AI晶片先進封裝九成產能。",
+        "en": "TSMC's 2.5D advanced packaging technology, integrating a compute die and HBM stacks side by side on a shared interposer. It is the critical bottleneck in AI accelerator manufacturing today, with TSMC holding roughly 90% of global advanced packaging capacity for AI chips."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-14"
+    },
+    {
+      "term": "FDPR",
+      "zh": "外國直接產品規則",
+      "expansion": "Foreign Direct Product Rule",
+      "def": {
+        "zh": "美國出口管制中的域外管轄工具：只要外國產品是使用美國技術或設備直接生產出來的，即使完全在境外製造，仍須受美國出口管制規範。2024年12月的規則即以此把非美製HBM堆疊一併納管。",
+        "en": "An extraterritorial instrument in US export control: a foreign-made product falls under US export rules if it was produced directly using US technology or equipment, even when manufactured entirely offshore. The December 2024 rule used this mechanism to bring non-US-made HBM stacks within scope."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-14"
+    },
+    {
+      "term": "VEU",
+      "zh": "經驗證最終使用者",
+      "expansion": "Validated End-User",
+      "def": {
+        "zh": "美國商務部授予特定可信企業的授權地位，使其可在免逐案申請許可的條件下接收受管制品項。三星與SK hynix的中國廠原持有此地位，2025年遭撤銷後改為逐年核發的年度許可。",
+        "en": "An authorisation status granted by the US Commerce Department to specific trusted companies, allowing them to receive controlled items without applying for licences case by case. Samsung's and SK hynix's China fabs held this status until it was revoked in 2025 and replaced with annually issued licences."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-14"
+    },
+    {
+      "term": "SHTC",
+      "zh": "戰略性高科技貨品",
+      "expansion": "Strategic High-Tech Commodities",
+      "def": {
+        "zh": "台灣出口管制制度的核心分類，由經濟部國際貿易署管理，涵蓋可能用於大規模毀滅性武器或軍事用途的高科技貨品與受管制實體名單，出口前須事先申請許可。",
+        "en": "The core category in Taiwan's export control regime, administered by the Ministry of Economic Affairs' International Trade Administration. It covers high-technology goods potentially usable for weapons of mass destruction or military purposes, along with a controlled-entity list, and requires an export permit obtained in advance."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-14"
+    },
+    {
+      "term": "SuperPoD",
+      "zh": "超節點",
+      "expansion": "Super Pod",
+      "def": {
+        "zh": "把大量AI加速卡以高速互連組成單一邏輯運算單元的系統架構。Huawei的Atlas 950 SuperPoD規模為8,192張卡，用以在單晶片效能落後的條件下於系統層追補算力。",
+        "en": "A system architecture linking large numbers of AI accelerator cards through high-speed interconnect into a single logical compute unit. Huawei's Atlas 950 SuperPoD spans 8,192 cards, used to close the compute gap at system level while single-chip performance lags."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-14"
+    },
+    {
+      "term": "Hybrid Bonding",
+      "zh": "混合鍵合",
+      "expansion": "Hybrid Bonding",
+      "def": {
+        "zh": "不使用傳統微凸塊、直接以銅對銅接合的先進堆疊技術，可大幅縮短垂直連接距離、提高堆疊層數。是HBM往更高層數演進的關鍵製程，也是中國業者在後段封裝環節的主要技術缺口之一。",
+        "en": "An advanced stacking technique that bonds copper to copper directly rather than through conventional microbumps, sharply shortening vertical connection distance and enabling more stacked layers. It is the key process for scaling HBM to higher stack counts and one of the main back-end packaging gaps for Chinese manufacturers."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-14"
+    },
+    {
+      "term": "Memory Bandwidth Density",
+      "zh": "記憶體頻寬密度",
+      "expansion": "Memory Bandwidth Density",
+      "def": {
+        "zh": "單位晶片面積所能提供的記憶體頻寬，以每平方毫米多少GB/s表示。美國於2024年12月以此參數作為HBM出口管制的門檻（大於每平方毫米2 GB/s即受管制），是以物理參數而非公司名稱定義管制範圍的典型案例。",
+        "en": "The memory bandwidth available per unit of die area, expressed in GB/s per square millimetre. The US used this parameter as the threshold for HBM export controls in December 2024 — anything above 2 GB/s per square millimetre is controlled — a textbook case of defining a control's scope by physical parameter rather than by company name."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-14"
+    },
+    {
+      "term": "Risk Production",
+      "zh": "風險量產",
+      "expansion": "Risk Production",
+      "def": {
+        "zh": "半導體製程進入正式大量生產前的過渡階段，以小批量試產驗證良率與製程穩定性，客戶可據以進行驗證測試。進入風險量產不等於具備商業量產能力，兩者之間通常仍有可觀的良率差距。",
+        "en": "The transitional stage before full-volume semiconductor manufacturing, running small batches to validate yield and process stability and to let customers perform qualification testing. Entering risk production does not imply commercial mass-production capability; a substantial yield gap usually remains between the two."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-14"
     }
   ]
 }

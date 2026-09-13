@@ -2,6 +2,15 @@
   "updated": "2026-09-14",
   "reports": [
     {
+      "file": "reports/2026-09-14-weekly.json",
+      "date": "2026-09-14",
+      "kind": "weekly",
+      "title": {
+        "zh": "記憶體才是那道閘：HBM管制沒有擋住中國做AI晶片，它把自主路線變成一項稅——而稅率不是華府訂的，是2026年記憶體超級循環訂的",
+        "en": "Memory Is the Gate: the HBM Controls Did Not Stop China From Building AI Chips — They Turned Self-Reliance Into a Tax, and Washington Does Not Set the Rate. The 2026 Memory Supercycle Does"
+      }
+    },
+    {
       "file": "reports/2026-09-14-brief.json",
       "date": "2026-09-14",
       "kind": "brief",
