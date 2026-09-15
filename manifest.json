@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-14",
+  "updated": "2026-09-16",
   "reports": [
+    {
+      "file": "reports/2026-09-16-brief.json",
+      "date": "2026-09-16",
+      "kind": "brief",
+      "title": {
+        "zh": "沙烏地否決了霍爾木茲的外交解方、胡塞轉頭打進沙國本土空軍基地——9/14報告的『鬆動』判斷這次要改判；同一週，讀信用的設備本身變成沒有密碼的root shell，北京則把出口管制從晶片延伸到人身上",
+        "en": "Saudi Arabia Vetoes the Hormuz Diplomatic Fix as the Houthis Turn to Hit an Airbase on Saudi Soil — the 'Thaw' Call in 9/14報告 Needs Reversing; the Same Week, the Appliance That Reads Your Email Becomes an Unauthenticated Root Shell, and Beijing Extends Export Controls From Chips to People"
+      }
+    },
     {
       "file": "reports/2026-09-14-weekly.json",
       "date": "2026-09-14",

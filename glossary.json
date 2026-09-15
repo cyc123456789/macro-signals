@@ -1,6 +1,39 @@
 {
-  "updated": "2026-09-14",
+  "updated": "2026-09-16",
   "terms": [
+    {
+      "term": "PSIRT",
+      "zh": "產品資安事件應變小組",
+      "expansion": "Product Security Incident Response Team",
+      "def": {
+        "zh": "廠商內部負責接收外部通報、調查與協調修補自家產品資安漏洞的專責團隊，例如Cisco PSIRT。與處理組織自身內部事件的CSIRT不同，PSIRT的職責對象是廠商對外販售的產品本身。",
+        "en": "A vendor's internal team responsible for receiving reports of, investigating, and coordinating fixes for security vulnerabilities in its own products — e.g. Cisco PSIRT. Distinct from a CSIRT, which handles an organization's own internal incidents; a PSIRT's remit is the vendor's externally sold products."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-16"
+    },
+    {
+      "term": "CWE",
+      "zh": "通用弱點列舉",
+      "expansion": "Common Weakness Enumeration",
+      "def": {
+        "zh": "由MITRE維護的軟體與硬體弱點類型分類標準，例如CWE-89代表SQL注入類漏洞。CVE描述的是某個具體漏洞實例，CWE描述的則是該漏洞背後屬於哪一種通用的弱點模式。",
+        "en": "A MITRE-maintained taxonomy of software and hardware weakness types — e.g. CWE-89 denotes SQL injection. Where a CVE describes one specific vulnerability instance, its associated CWE describes which general weakness pattern underlies it."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-16"
+    },
+    {
+      "term": "HBM4",
+      "zh": "第四代高頻寬記憶體",
+      "expansion": "High Bandwidth Memory, 4th generation",
+      "def": {
+        "zh": "HBM的最新世代規格，頻寬與單位容量密度較HBM3E再提升，2026年報價約每疊550美元(約每GB 15.28美元)，是目前AI加速器成本結構中價格最高的記憶體選項。",
+        "en": "The newest HBM generation, offering higher bandwidth and capacity density than HBM3E; priced around $550 per stack (roughly $15.28/GB) as of 2026, currently the most expensive memory option in an AI accelerator's cost structure."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-16"
+    },
     {
       "term": "Houthi",
       "zh": "胡塞武裝（正式名稱Ansar Allah）",
