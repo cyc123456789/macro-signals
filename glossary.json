@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16",
+  "updated": "2026-09-18",
   "terms": [
     {
       "term": "PSIRT",
@@ -1804,6 +1804,28 @@
       },
       "category": "tech",
       "first_seen": "2026-09-14"
+    },
+    {
+      "term": "ISE",
+      "zh": "身分服務引擎",
+      "expansion": "Identity Services Engine",
+      "def": {
+        "zh": "Cisco用於企業網路存取控制與原則執行的平台，決定哪些裝置與使用者可以接入網路、能存取什麼資源，通常透過802.1X等機制與交換器、防火牆連動核發存取權限。",
+        "en": "Cisco's platform for network access control and policy enforcement, deciding which devices and users can join a network and what they can reach, typically coordinating with switches and firewalls via mechanisms like 802.1X to issue access grants."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-18"
+    },
+    {
+      "term": "Baseband",
+      "zh": "基頻處理器",
+      "expansion": "Baseband Processor",
+      "def": {
+        "zh": "行動裝置中負責處理無線電層通訊（如通話、數據連線）的晶片或韌體，運作於作業系統之下，多數僅監控應用處理器層級的端點防護工具無法直接偵測其活動。",
+        "en": "The chip or firmware in a mobile device that handles radio-layer communication such as calls and data connections, operating below the main operating system — a layer most endpoint-security tools, which instrument only the application processor, cannot directly observe."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-18"
     }
   ]
 }

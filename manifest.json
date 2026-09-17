@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-16",
+  "updated": "2026-09-18",
   "reports": [
+    {
+      "file": "reports/2026-09-18-brief.json",
+      "date": "2026-09-18",
+      "kind": "brief",
+      "title": {
+        "zh": "FOMC真的升息一碼——但把布蘭特原油從107美元打回102美元的，是一則沒人具名的『管線快修好了』消息，不是霍爾木茲真的降溫；同一週，胡塞被控試射無人機朝聖城麥加方向、Salalah會談仍無新日期，思科身分服務引擎十天內第三個滿血零時差",
+        "en": "The Fed Really Does Hike 25bp — But What Pulled Brent From $107 Back to $102 Was an Anonymous 'Pipeline's Almost Fixed' Claim, Not Real Cooling in Hormuz; the Same Week a Houthi Drone Is Accused of Heading Toward Mecca as Salalah Talks Stay Undated, and Cisco's Identity Gateway Becomes Its Third Maxed-Out Zero-Day in Ten Days"
+      }
+    },
     {
       "file": "reports/2026-09-16-brief.json",
       "date": "2026-09-16",
