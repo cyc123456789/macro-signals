@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18",
+  "updated": "2026-09-20",
   "terms": [
     {
       "term": "PSIRT",
@@ -1826,6 +1826,28 @@
       },
       "category": "cyber",
       "first_seen": "2026-09-18"
+    },
+    {
+      "term": "Xiangshan Forum",
+      "zh": "香山論壇",
+      "expansion": "Beijing Xiangshan Forum",
+      "def": {
+        "zh": "中國國防部主辦、每年在北京舉行的官方旗艦級國防與安全對話論壇，是北京對外闖述國防政策、軍事外交與安全治理立場的主要場合之一；發言內容代表北京想被聽到的敘事，不等同於中國在具拘束力國際機制（如CCW GGE）中實際採取的談判立場。",
+        "en": "China's flagship annual defense and security dialogue, hosted by its Ministry of National Defense in Beijing; it is one of Beijing's primary venues for articulating defense policy, military diplomacy and security-governance positions abroad. What is said there represents the narrative Beijing wants heard, not necessarily the negotiating position China actually holds inside binding international mechanisms such as the CCW GGE."
+      },
+      "category": "military",
+      "first_seen": "2026-09-20"
+    },
+    {
+      "term": "Vera Rubin",
+      "zh": "Vera Rubin（Nvidia次世代AI平台）",
+      "expansion": "Nvidia Vera Rubin platform",
+      "def": {
+        "zh": "Nvidia繼Blackwell之後的次世代AI加速器平台，預定2026年第三季起出貨，是Samsung、SK Hynix與Micron三家記憶體廠競相取得HBM4供應資質認證的主要訂單來源，也是這波HBM4產能與良率競賽的直接觸發點。",
+        "en": "Nvidia's next-generation AI accelerator platform following Blackwell, scheduled to begin shipping in Q3 2026; it is the primary order book Samsung, SK Hynix and Micron are racing to qualify for as HBM4 suppliers, and the direct trigger for the current HBM4 capacity-and-yield race."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-20"
     }
   ]
 }

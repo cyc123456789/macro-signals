@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-18",
+  "updated": "2026-09-20",
   "reports": [
+    {
+      "file": "reports/2026-09-20-brief.json",
+      "date": "2026-09-20",
+      "kind": "brief",
+      "title": {
+        "zh": "9/24川習會登場前，台灣打出首次跨兵科聯合攻擊無人機演習、北京防長在香山論壇喊話『加強AI治理』——但9/8報告記錄的CCW三個真正否決票裡沒有一個是中國；同一週，Acronis備份外掛淪為本機提權新入口，川普單方宣布的『能源設施停火』被兩軍當週的實彈行動同步拆穿",
+        "en": "Days Before the 9/24 Trump-Xi Summit, Taiwan Runs Its First Cross-Branch Attack-Drone Drill as Beijing's Defense Minister Calls for 'Stronger AI Governance' at the Xiangshan Forum — But China Isn't One of the Three Real Veto-Holders 9/8報告 Logged at the CCW; the Same Week, an Acronis Backup Plugin Becomes a New Privilege-Escalation Entry Point, and Trump's Unilateral 'Energy-Infrastructure Truce' Claim Gets Disproven by Both Armies' Live Fire"
+      }
+    },
     {
       "file": "reports/2026-09-18-brief.json",
       "date": "2026-09-18",
