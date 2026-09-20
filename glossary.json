@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-20",
+  "updated": "2026-09-21",
   "terms": [
     {
       "term": "PSIRT",
@@ -1848,6 +1848,138 @@
       },
       "category": "tech",
       "first_seen": "2026-09-20"
+    },
+    {
+      "term": "Petroline",
+      "zh": "東西輸油管線",
+      "expansion": "East-West Crude Oil Pipeline (EWCOP)",
+      "def": {
+        "zh": "沙烏地阿美營運的原油幹線，全長約1,200公里，自東部油田橫越阿拉伯半島至紅海Yanbu港，用途是讓沙烏地原油出口不必穿越霍爾木茲海峽。2019年曾把緊急輸送上限擴充至約7 mbd。是波斯灣地區規模最大的霍爾木茲繞道基礎設施。",
+        "en": "The Saudi Aramco-operated crude trunk line, about 1,200 km from the eastern oilfields across the Arabian Peninsula to Yanbu on the Red Sea, built so Saudi crude exports need not transit the Strait of Hormuz. Its emergency ceiling was expanded to roughly 7 mb/d in 2019. It is the largest Hormuz-bypass asset in the Gulf."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-21"
+    },
+    {
+      "term": "VLCC",
+      "zh": "超大型油輪",
+      "expansion": "Very Large Crude Carrier",
+      "def": {
+        "zh": "載重約20萬至32萬載重噸的原油油輪，單船典型載量約200萬桶，是長程原油貿易的主力船型。因吃水深、裝卸需專用泊位與裝載臂，港口的VLCC泊位數與排程能力常成為出口量的實際上限，故統計月度VLCC裝載艘數比看管線標稱運能更接近真實出口能力。",
+        "en": "A crude tanker of roughly 200,000–320,000 deadweight tonnes, typically carrying about two million barrels, and the workhorse of long-haul crude trade. Because of draught requirements and the need for dedicated berths and loading arms, a port's VLCC berth count and scheduling capacity often set the real export ceiling — which is why counting monthly VLCC loadings tracks true export capability better than nameplate pipeline capacity."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-21"
+    },
+    {
+      "term": "STS",
+      "zh": "船對船轉載",
+      "expansion": "Ship-to-Ship Transfer",
+      "def": {
+        "zh": "兩艘船在錨地或外海直接對接輸轉貨物的作業，不經岸上終端。在制裁規避與戰時航運中被廣泛使用：可繞過受限港口、切斷貨物的可追溯鏈結，也能讓小船把貨集運到大船以改變航線。因不經岸上設施，STS作業區本身成為新的實體節點與潛在攻擊目標。",
+        "en": "Cargo transferred directly between two vessels at anchorage or offshore, bypassing shore terminals. Widely used in sanctions evasion and wartime shipping: it routes around restricted ports, breaks the traceable chain on a cargo, and lets smaller ships aggregate into larger ones to change routing. Because it bypasses shore facilities, the STS zone itself becomes a new physical node and a potential target."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-21"
+    },
+    {
+      "term": "Bab el-Mandeb",
+      "zh": "巴布曼德海峽",
+      "expansion": "Bab el-Mandeb Strait",
+      "def": {
+        "zh": "連接紅海與亞丁灣的海峽，最窄處約18海里，是紅海與Suez運河航線的南端門戶。2026年9月胡塞武裝取下葉門紅海沿岸與Mayyun(Perim)島後實質控制該海峽。對沙烏地的Yanbu出口而言，它是繞過霍爾木茲之後遇到的第二道海峽——往北經Suez可避開，往東送亞洲則無法避開。",
+        "en": "The strait linking the Red Sea to the Gulf of Aden, about 18 nautical miles at its narrowest, and the southern gateway to the Red Sea and Suez route. Houthi forces took effective control after seizing Yemen's Red Sea coast and Mayyun (Perim) island in September 2026. For Saudi exports out of Yanbu it is the second strait encountered after bypassing Hormuz: avoidable heading north via Suez, unavoidable heading east to Asia."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-21"
+    },
+    {
+      "term": "WRP",
+      "zh": "戰爭險附加費",
+      "expansion": "War Risk Premium",
+      "def": {
+        "zh": "船舶進入被列為高風險區域時，於一般船體險之上加收的一次性附加保費，通常以船體保險價值的百分比報價，按航次計算。它是市場對特定航段實際風險最即時的量化表達：戰前霍爾木茲約0.25%，2026年戰時升至7.5%至10%。不同航段的WRP價差可直接讀出市場認為哪條路線安全。",
+        "en": "A one-off premium charged on top of ordinary hull cover when a vessel enters a designated high-risk area, usually quoted as a percentage of the hull's insured value and priced per voyage. It is the most immediate quantification of a specific leg's real risk: Hormuz ran about 0.25% pre-war and 7.5–10% in the 2026 war. The spread in WRP between legs reads directly as which route the market considers safe."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-21"
+    },
+    {
+      "term": "ADCOP",
+      "zh": "阿布達比原油管線",
+      "expansion": "Abu Dhabi Crude Oil Pipeline (Habshan-Fujairah)",
+      "def": {
+        "zh": "UAE自內陸Habshan油田區至阿曼灣Fujairah港的原油管線，長約400公里、運能約1.5至1.8 mbd，是UAE繞過霍爾木茲的主要出口路徑。2026年報導其利用率約71%，餘裕受限於Fujairah港吞吐能力而非管線本身。UAE另在推進West-East 1管線，目標2027年把不經海峽運能拉到約3.6 mbd。",
+        "en": "The UAE's crude line from the inland Habshan fields to Fujairah on the Gulf of Oman, roughly 400 km with 1.5–1.8 mb/d of capacity, and the UAE's principal Hormuz-bypass export route. Utilisation was reported near 71% in 2026, with headroom limited by Fujairah's port throughput rather than the pipeline. The UAE is separately advancing its West-East 1 line, targeting about 3.6 mb/d of strait-free capacity by 2027."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-21"
+    },
+    {
+      "term": "Ras Laffan",
+      "zh": "拉斯拉凡",
+      "expansion": "Ras Laffan Industrial City",
+      "def": {
+        "zh": "卡達北部的液化天然氣與凝結油出口綜合設施，是全球最大的LNG出口基地之一。其結構性弱點在於出海只有一條路：所有產出都必須經霍爾木茲海峽，陸上沒有任何能搬運LNG的管線替代，因此卡達LNG是波斯灣能源出口中完全無法繞道的一項。",
+        "en": "Qatar's LNG and condensate export complex on its northern coast, one of the world's largest LNG export bases. Its structural weakness is that there is only one way out: everything produced must transit the Strait of Hormuz, and no pipeline anywhere can move LNG overland as a substitute. Qatari LNG is therefore the one Gulf energy export with no bypass at all."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-21"
+    },
+    {
+      "term": "Spare Capacity",
+      "zh": "閒置產能",
+      "expansion": "Spare Production Capacity",
+      "def": {
+        "zh": "產油國可在短期內啟用且能持續維持的未動用產能，傳統上被視為油市的緩衝墊，主要由沙烏地持有。2026年霍爾木茲危機暴露其隱含假設：閒置產能只有在能運出去時才算緩衝，而全球絕大部分閒置產能位於海峽以內，一旦出口路徑受阻即成為擱置產能。",
+        "en": "Unused production a producer can bring online quickly and sustain, conventionally treated as the oil market's cushion and held mostly by Saudi Arabia. The 2026 Hormuz crisis exposed its buried assumption: spare capacity is only a cushion if it can be shipped, and almost all of the world's sits inside the strait — becoming stranded capacity the moment the export route is blocked."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-21"
+    },
+    {
+      "term": "FIRMS",
+      "zh": "火災資訊資源管理系統",
+      "expansion": "Fire Information for Resource Management System (NASA)",
+      "def": {
+        "zh": "NASA營運的近實時熱異常與火點偵測公開系統，彙整MODIS與VIIRS等衛星感測器資料。原本用於林火監測，實務上已成為公開來源情報查證工業設施起火、煉油廠與管線遇襲的常用工具：熱異常的時間與座標可獨立佐證攻擊發生，但無法判讀損害程度或修復進度。",
+        "en": "NASA's public near-real-time thermal anomaly and active fire detection system, aggregating sensors such as MODIS and VIIRS. Built for wildfire monitoring, it has become a standard open-source tool for verifying industrial fires and strikes on refineries and pipelines: the timing and coordinates of thermal anomalies independently corroborate that an attack occurred, but cannot establish damage extent or repair progress."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-21"
+    },
+    {
+      "term": "Sentinel-3",
+      "zh": "哥白尼Sentinel-3衛星",
+      "expansion": "Copernicus Sentinel-3",
+      "def": {
+        "zh": "歐盟Copernicus計畫的地球觀測衛星系列，搭載光學與熱紅外儀器，資料免費公開。其寬掃幅與高重訪率適合快速偵測大範圍煙羽與熱訊號，常與商業高解析影像互補使用：Sentinel-3負責「什麼時候、在哪裡發生」，商業影像負責「燒成什麼樣」。",
+        "en": "The EU Copernicus programme's Earth-observation satellite series, carrying optical and thermal-infrared instruments with freely available data. Its wide swath and high revisit rate suit rapid detection of large smoke plumes and thermal signatures, and it is typically used alongside commercial high-resolution imagery: Sentinel-3 establishes when and where, commercial imagery establishes what it looks like."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-21"
+    },
+    {
+      "term": "Duqm",
+      "zh": "杜庫姆港",
+      "expansion": "Port of Duqm",
+      "def": {
+        "zh": "阿曼東南岸的深水港與經濟特區，位於霍爾木茲海峽以外、直接面向阿拉伯海，長期被視為波斯灣原油繞過海峽的潛在出口點。其限制在於缺乏連接波斯灣主要油田的大型輸油管線，目前多依賴船對船轉載與有限的陸運，實際繞道貢獻遠低於地理位置所暗示的潛力。",
+        "en": "A deepwater port and special economic zone on Oman's southeast coast, outside the Strait of Hormuz and facing the Arabian Sea directly, long seen as a potential bypass outlet for Gulf crude. Its constraint is the absence of large pipelines connecting it to the main Gulf fields, leaving it dependent on ship-to-ship transfers and limited overland movement — so its real bypass contribution falls well short of what its geography suggests."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-21"
+    },
+    {
+      "term": "Mayyun",
+      "zh": "邁尤恩島",
+      "expansion": "Mayyun (Perim) Island",
+      "def": {
+        "zh": "位於Bab el-Mandeb海峽中的葉門島嶼，西方文獻多稱Perim。島嶼把海峽分成兩條航道，控制它等於取得對兩條航道的觀測與打擊位置。2026年9月胡塞武裝奪下該島並取下葉門紅海沿岸後，其部隊距非洲海岸約20公里，實質掌握該海峽的通行風險。",
+        "en": "A Yemeni island in the Bab el-Mandeb strait, usually called Perim in Western sources. It splits the strait into two channels, so holding it confers observation and strike positions over both. After Houthi forces seized the island and Yemen's Red Sea coast in September 2026, their positions sit about 20 km from the African shore, giving them effective control of transit risk through the strait."
+      },
+      "category": "military",
+      "first_seen": "2026-09-21"
     }
   ]
 }

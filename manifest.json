@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-20",
+  "updated": "2026-09-21",
   "reports": [
+    {
+      "file": "reports/2026-09-21-weekly.json",
+      "kind": "weekly",
+      "date": "2026-09-21",
+      "title": {
+        "zh": "打的是備援，不是閘門：霍爾木茲真正的戰場在那條繞道上——而2019年被炸過的第8與第9號泵站，七年後又被同一種廉價無人機炸了一次",
+        "en": "The target is the detour, not the gate: Hormuz's real battlefield is the bypass — and pump stations 8 and 9, hit in 2019, were hit again seven years later by the same class of cheap drone"
+      }
+    },
     {
       "file": "reports/2026-09-20-brief.json",
       "date": "2026-09-20",
