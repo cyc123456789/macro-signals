@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "terms": [
     {
       "term": "PSIRT",
@@ -1980,6 +1980,61 @@
       },
       "category": "military",
       "first_seen": "2026-09-21"
+    },
+    {
+      "term": "PAC-3",
+      "zh": "愛國者三型增程攔截彈",
+      "expansion": "Patriot Advanced Capability-3",
+      "def": {
+        "zh": "美製愛國者防空系統的最新型攔截彈，採用直接碰撞殺傷（hit-to-kill）技術，用於攔截彈道飛彈與巡弋飛彈。",
+        "en": "The latest interceptor for the US Patriot air-defense system, using hit-to-kill technology against ballistic and cruise missiles."
+      },
+      "category": "military",
+      "first_seen": "2026-09-22"
+    },
+    {
+      "term": "NASAMS",
+      "zh": "國家先進防空飛彈系統",
+      "expansion": "National Advanced Surface-to-Air Missile System",
+      "def": {
+        "zh": "挪威與美國聯合研發的中短程防空系統，結合AMRAAM飛彈與感測器網路，用於攔截飛機、無人機與巡弋飛彈。",
+        "en": "A Norwegian-US short-to-medium-range air-defense system pairing AMRAAM missiles with a networked sensor grid, used against aircraft, drones and cruise missiles."
+      },
+      "category": "military",
+      "first_seen": "2026-09-22"
+    },
+    {
+      "term": "De Minimis",
+      "zh": "微量規則／最低限度規則",
+      "expansion": "De Minimis Rule",
+      "def": {
+        "zh": "出口管制中用來界定『成分占比低於某門檻即免受該國管轄』的規則；中國2025年稀土管制將此門檻訂在0.1%，使任何含微量中國稀土成分的外國製品都可能被納管。",
+        "en": "An export-control rule setting the content threshold below which a jurisdiction's controls don't apply; China's 2025 rare-earth controls set this at 0.1%, pulling foreign-made products with even trace Chinese-origin content into its licensing regime."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-22"
+    },
+    {
+      "term": "ALPC",
+      "zh": "進階本地程序呼叫",
+      "expansion": "Advanced Local Procedure Call",
+      "def": {
+        "zh": "Windows作業系統內部行程間通訊（IPC）機制，供核心元件與使用者層級程序交換資料；因運作於高權限層級，成為近年提權漏洞的常見標的。",
+        "en": "A Windows inter-process communication mechanism used by kernel components to exchange data with user-level processes; because it operates at a privileged layer, it has become a recurring target for privilege-escalation flaws."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-22"
+    },
+    {
+      "term": "Islamabad MOU",
+      "zh": "伊斯蘭馬巴德備忘錄",
+      "expansion": "Islamabad Memorandum of Understanding",
+      "def": {
+        "zh": "2026年6月由巴基斯坦斡旋、川普與時任伊朗總統Pezeshkian隔空簽署的美伊諒解備忘錄，內容包括60天內霍爾木茲海峽免通行費重開、解除美方對伊朗港口的海軍封鎖；因伊朗7/6-7攻擊三艘商船而破局，川普7/8宣布『結束』。",
+        "en": "A Pakistan-mediated US-Iran memorandum signed remotely by Trump and then-President Pezeshkian in June 2026, providing for a toll-free reopening of the Strait of Hormuz within 60 days and an end to the US naval blockade of Iranian ports; it collapsed after Iran's 7/6-7 strikes on three commercial vessels, with Trump declaring it 'over' on 7/8."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-22"
     }
   ]
 }

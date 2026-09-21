@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "reports": [
+    {
+      "file": "reports/2026-09-22-brief.json",
+      "kind": "brief",
+      "date": "2026-09-22",
+      "title": {
+        "zh": "距9/24川習會兩天，NYT證實140億軍售案就是川普自己說的『籌碼』——但真正的期限不是峰會，是11/10稀土管制到期日；同一週CENTCOM自稱『鐵桶封鎖』十億桶進、伊朗掛零，本站對IRGC用了兩個月的審查標準，這次要用回美方身上",
+        "en": "Two Days Before the 9/24 Trump-Xi Summit, NYT Confirms the $14B Taiwan Package Is Exactly the 'Chip' Trump Called It — But the Real Deadline Isn't the Summit, It's 11/10 When China's Rare-Earth Controls Expire; the Same Week CENTCOM Claims an 'Ironclad Blockade,' a Billion Barrels In and Iran at Zero, and the Same Standard This Outlet Has Used on IRGC for Two Months Now Has to Apply to Washington"
+      }
+    },
     {
       "file": "reports/2026-09-21-weekly.json",
       "kind": "weekly",
