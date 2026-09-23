@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-22",
+  "updated": "2026-09-24",
   "reports": [
+    {
+      "file": "reports/2026-09-24-brief.json",
+      "kind": "brief",
+      "date": "2026-09-24",
+      "title": {
+        "zh": "Xi 9/23抵美、川普親自登機迎接，中國官媒峰會前瞻卻隻字不提台灣；Bessent與何立峰會前磋商談不出稀土延長，11/10這個真正的懸崖更近了一步——同一週，Petroline 9/22恢復裝船，9/21週報的10/22否證測試提前收到部分答案；美國太空軍首度承認部署『太空控制武器』，資安端F5、Check Point、Arista四款邊界設備同日被CISA列入KEV",
+        "en": "Xi Arrives in DC on 9/23 With Trump Greeting Him Planeside, Yet Chinese State Media's Summit Preview Omits Taiwan Entirely; Bessent and He Lifeng's Pre-Summit Talks Fail to Extend the Rare-Earth Truce, Pushing the Real 11/10 Cliff Closer — the Same Week Petroline Resumes Loading on 9/22, Giving the Falsification Test 9/21週報 Set for 10/22 an Early Partial Answer; the US Space Force Admits Deploying \"Space Control Weapons\" for the First Time, and Four Perimeter Appliances From F5, Check Point and Arista All Land in CISA's KEV Catalog the Same Day"
+      }
+    },
     {
       "file": "reports/2026-09-22-brief.json",
       "kind": "brief",

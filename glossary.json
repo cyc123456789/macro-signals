@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22",
+  "updated": "2026-09-24",
   "terms": [
     {
       "term": "PSIRT",
@@ -2035,6 +2035,72 @@
       },
       "category": "geo",
       "first_seen": "2026-09-22"
+    },
+    {
+      "term": "USSF",
+      "zh": "美國太空軍",
+      "expansion": "United States Space Force",
+      "def": {
+        "zh": "美國於2019年成立的第六個軍種，負責組建、訓練與裝備太空作戰部隊；與負責實際規劃執行太空作戰的聯合作戰司令部SPACECOM不同，USSF的角色更接近「提供兵力的軍種」，SPACECOM才是實際下令動用這些兵力的作戰司令部。2026年9月，USSF首度公開承認已部署『在軌太空控制武器』。",
+        "en": "The sixth branch of the US armed forces, established in 2019, responsible for organizing, training and equipping space-warfighting forces; distinct from SPACECOM, the combatant command that actually plans and executes space operations — USSF is the force provider, SPACECOM the command that employs those forces. In September 2026 USSF publicly confirmed for the first time that it has deployed 'on-orbit space control weapons.'"
+      },
+      "category": "military",
+      "first_seen": "2026-09-24"
+    },
+    {
+      "term": "G7",
+      "zh": "七大工業國集團",
+      "expansion": "Group of Seven",
+      "def": {
+        "zh": "由美國、英國、法國、德國、義大利、加拿大與日本組成的非正式政策協調論壇，成員國經濟部長或外交部長經常就制裁、區域安全等議題發表聯合聲明，但G7本身不具條約約束力，聲明性質偏向政治表態而非可執行義務。",
+        "en": "An informal policy-coordination forum of the United States, United Kingdom, France, Germany, Italy, Canada and Japan. Member states' foreign or finance ministers frequently issue joint statements on sanctions, regional security and similar issues, but the G7 itself carries no treaty force — its statements are political signaling rather than enforceable obligations."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-24"
+    },
+    {
+      "term": "USTR",
+      "zh": "美國貿易代表署",
+      "expansion": "Office of the United States Trade Representative",
+      "def": {
+        "zh": "美國行政部門負責制定與執行貿易政策、主導對外貿易談判的機構，署長具內閣級地位，是美中關稅與貿易協議談判的主要對口單位之一，與負責出口管制執法的BIS分屬不同機構、職責不同。",
+        "en": "The US executive-branch agency responsible for developing and coordinating trade policy and leading foreign trade negotiations; its head holds cabinet-level rank. It is a principal US counterpart in tariff and trade-deal negotiations with China, distinct in function from BIS, which enforces export controls."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-24"
+    },
+    {
+      "term": "BIG-IP",
+      "zh": "BIG-IP（F5應用交付與安全設備）",
+      "expansion": "F5 BIG-IP product family",
+      "def": {
+        "zh": "F5 Networks旗下一系列應用交付控制器與安全設備的產品線，涵蓋負載平衡、存取原則管理（APM）等模組，通常部署在企業網路邊界、對所有對外流量進行處理，一旦其管理層遭入侵，等同取得對其後方所有應用與使用者連線的控制權。",
+        "en": "F5 Networks' family of application-delivery controllers and security appliances, including modules such as Access Policy Manager (APM). Typically deployed at the enterprise network perimeter to process all inbound traffic; compromising its management layer hands an attacker control over every application and session it fronts."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-24"
+    },
+    {
+      "term": "VeloCloud",
+      "zh": "VeloCloud（SD-WAN編排平台）",
+      "expansion": "VMware/Arista VeloCloud SD-WAN Orchestrator",
+      "def": {
+        "zh": "原為VMware旗下、現由Arista持有的SD-WAN編排平台，其Orchestrator（VCO）負責集中設定、驗證並管理企業各分支據點的邊緣裝置；因對所轄每一台邊緣裝置都握有高權限存取，一旦VCO本身遭入侵，等同一次取得對整個SD-WAN網路的控制權。2026年已出現兩起獨立的VCO零時差漏洞。",
+        "en": "An SD-WAN orchestration platform originally under VMware and now owned by Arista; its Orchestrator (VCO) centrally configures, authenticates and manages edge devices across an enterprise's branch sites. Because it holds high-privilege access over every edge device it manages, compromising the VCO itself hands an attacker control of the entire SD-WAN network. Two separate VCO zero-days surfaced in 2026 alone."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-24"
+    },
+    {
+      "term": "SD-WAN",
+      "zh": "軟體定義廣域網路",
+      "expansion": "Software-Defined Wide Area Network",
+      "def": {
+        "zh": "以軟體集中管理、取代傳統硬體路由器逐台設定的廣域網路架構，讓企業能透過單一控制平面設定所有分支據點的連線規則；這個集中化設計也代表控制平面一旦遭入侵，影響範圍是所轄的整個廣域網路，而不只是單一據點。",
+        "en": "A wide-area networking architecture that replaces per-device hardware router configuration with centralized software control, letting an enterprise set connectivity rules for all branch sites from a single control plane. That same centralization means a compromised control plane affects the entire managed WAN, not just one site."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-24"
     }
   ]
 }
