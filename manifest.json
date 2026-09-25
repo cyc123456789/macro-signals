@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-24",
+  "updated": "2026-09-26",
   "reports": [
+    {
+      "file": "reports/2026-09-26-brief.json",
+      "kind": "brief",
+      "date": "2026-09-26",
+      "title": {
+        "zh": "DC巡迴上訴法院2比1推翻五角大廈對Anthropic『供應鏈風險』標籤的違法認定——9/2報告記錄的『違憲』勝訴只是兩條戰線裡的一條,輸掉的正是能實際解禁Claude的那一條;川習會9/24落幕,貿易休兵只延兩個月到1/10、比美方自己開出的下限還短,Xi當面改用『反對台獨』的新措辭;同一週,沙國出口衝上開戰以來新高,靠的不是Yanbu管線,是阿曼灣護航轉運——9/21週報『備援才是戰場』的框架這次要部分改寫",
+        "en": "D.C. Circuit Rules 2-1: the Pentagon's 'Supply Chain Risk' Label on Anthropic Stands — the 'Unconstitutional' Win 9/2報告 Logged Was Only One of Two Legal Fronts, and It Lost the One That Actually Unblocks Claude; the Trump-Xi Summit Wraps on 9/24 With the Trade Truce Extended Only Two Months to 1/10, Shorter Than the US's Own Floor, as Xi Presses 'Oppose Taiwan Independence' Face to Face; the Same Week, Saudi Exports Hit a Wartime High — Not From the Yanbu Pipeline, but From Navy-Escorted Transfers in the Gulf of Oman, Forcing a Partial Rewrite of 9/21週報's 'the Bypass Is the Battlefield' Frame"
+      }
+    },
     {
       "file": "reports/2026-09-24-brief.json",
       "kind": "brief",

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24",
+  "updated": "2026-09-26",
   "terms": [
     {
       "term": "PSIRT",
@@ -2101,6 +2101,39 @@
       },
       "category": "tech",
       "first_seen": "2026-09-24"
+    },
+    {
+      "term": "Sohar",
+      "zh": "蘇哈爾（阿曼港口）",
+      "expansion": "Sohar, Oman",
+      "def": {
+        "zh": "阿曼北部一座位於阿曼灣（霍爾木茲海峽外）的深水港，因不需穿越海峽本身，2026年伊朗戰爭期間成為沙烏地等波灣產油國卸載原油、以船對船（STS）方式轉載上大型油輪運往亞洲的主要據點；隨沙國出口量暴增，其周邊船對船轉載作業已多次逼近實體產能上限。",
+        "en": "A deep-water port in northern Oman on the Gulf of Oman, outside the Strait of Hormuz itself; because cargo loaded there need not transit the strait, it became a primary hub during the 2026 Iran war for Gulf producers to ship-to-ship (STS) transfer crude onto larger tankers bound for Asia. As Saudi export volumes surged, STS operations off Sohar have repeatedly run up against physical capacity limits."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-26"
+    },
+    {
+      "term": "D.C. Circuit",
+      "zh": "美國聯邦巡迴上訴法院（哥倫比亞特區）",
+      "expansion": "United States Court of Appeals for the District of Columbia Circuit",
+      "def": {
+        "zh": "美國聯邦上訴法院體系中專門審理聯邦政府機關行政行為爭訟的巡迴法院，因大量案件涉及聯邦部會決策，其判決對國防、監理與行政法領域的影響力常高於其他巡迴法院；其判決可能與其他巡迴法院（如舊金山所屬的第九巡迴）就同一爭議的不同面向分別做出不一致的裁決。",
+        "en": "The federal appellate circuit that hears a disproportionate share of litigation against US federal agencies, giving its rulings outsized influence over defense, regulatory and administrative-law disputes; because a single dispute can be split across multiple legal theories, it can rule one way while another circuit (such as the Ninth, covering San Francisco) rules the opposite way on a different theory in the same underlying case."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-26"
+    },
+    {
+      "term": "UNGA",
+      "zh": "聯合國大會",
+      "expansion": "United Nations General Assembly",
+      "def": {
+        "zh": "聯合國的主要審議機構，每年9月召開年度會議，各國元首與外長雲集紐約；因與會人員高度集中，其會議期間的雙邊或多邊場邊會晤，經常被用作正式管道之外的外交試探與非正式協議溝通場合。",
+        "en": "The United Nations' main deliberative body, convening its annual session each September in New York with heads of state and foreign ministers in attendance; because so many principals are gathered in one place, sidelines meetings during the session are routinely used as an informal channel for diplomatic feelers and proposals outside formal negotiating tracks."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-26"
     }
   ]
 }
