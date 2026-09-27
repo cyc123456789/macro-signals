@@ -1,0 +1,209 @@
+{
+  "date": "2026-09-28",
+  "kind": "weekly",
+  "title": {
+    "zh": "他們要的不是那道閘門，是一本名冊：稀土管制真正的產物，是一張沒有第二份的全球料件流向圖——而2026/1/6對日本開的那一槍，證明名冊能做到禁運做不到的事",
+    "en": "Not a Gate, a Directory: the durable product of China's rare-earth regime is a global bill-of-materials map nobody else holds — and the 2026/1/6 strike on Japan showed what a directory buys that an embargo cannot"
+  },
+  "focus": {
+    "zh": "所有人都盯著0.1%規則會不會在11/10回來（9/24峰會後已延到1/10），但那是問錯層次：被暫停的只有域外延伸那一層，而2025/4/4的18號公告、加上2024/10/1上線、每月10日前要上傳客戶名稱的稀土產品追溯信息系統，一天都沒停過。這套許可制真正的產物不是斷供，是一張「誰的哪顆馬達裡有哪一批鏑鋱、賣給誰、做什麼用」的全球流向圖。禁運是二元的、會把受害者黏成聯盟；名冊可以95%照准、5%慢審，對外說詞永遠成立。2026/1/6只針對日本軍事終端用戶的1號公告，觸發點是高市早苗關於台灣的發言——那就是名冊的第一次實戰。",
+    "en": "Everyone is watching whether the 0.1% rule returns on 11/10 (pushed to 1/10 after the 9/24 summit), but that is the wrong layer. Only the extraterritorial reach was suspended; Announcement 18 of 4/4/2025 and the traceability system live since 10/1/2024 — customer names uploaded by the 10th of every month — have never paused. The licensing regime's durable product is not denial but a map of which motor in which foreign factory holds which batch of dysprosium and terbium, sold to whom, for what. An embargo is binary and glues victims into a coalition; a directory lets you approve 95% and slow-walk 5% while your public line stays literally true. Announcement No. 1 of 2026, aimed only at Japan's military end users and triggered by Takaichi's remark about Taiwan, was that directory's first live-fire use."
+  },
+  "sections": [
+    {
+      "id": "nexus",
+      "items": [
+        {
+          "severity": "critical",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "收集機器一天都沒停過：2025/4/4的18號公告從未被暫停，被暫停的只有域外那一層——9/22報告把11/10寫成「真正的懸崖日」，這個框架要作廢",
+            "en": "The collection machine never paused: Announcement 18 of 4/4/2025 was never suspended, only the extraterritorial layer was — retiring the 9/22 brief's framing of 11/10 as \"the real cliff\""
+          },
+          "summary": {
+            "zh": "2025/4/4的MOFCOM第18號公告，對釤、釓、鋱、鏑、鎦、鈧、釔七種中重稀土及其金屬、氧化物、合金、化合物與磁材實施出口許可，自公布日生效，至今從未被暫停。2025/11/7的第70號公告所暫停的，是2025/10/9那一整包（第55至58、61、62號公告），內容包括0.1%價值門檻的de minimis規則、針對稀土技術的中國版FDPR，以及五種新增元素（鈥、鉺、銩、銪、鐿）。暫停期原訂至11/10，9/24川習會後隨Busan協議一併延至1/10。另一層更早：2024/10/1施行的《稀土管理條例》建立稀土產品追溯信息系統，要求開採、冶煉分離、金屬冶煉、綜合利用及出口業者如實記錄產品流向、每月10日前上傳上月資料（含交易量與客戶名稱）至工信部平台，違者罰款或核減次年配額。",
+            "en": "MOFCOM Announcement 18 of 4/4/2025 imposed export licensing on seven medium and heavy rare earths — samarium, gadolinium, terbium, dysprosium, lutetium, scandium, yttrium — together with their metals, oxides, alloys, compounds and magnetic materials, effective on issuance, and has never been suspended. Announcement 70 of 11/7/2025 suspended only the 10/9/2025 package (Announcements 55-58, 61, 62), which carried the 0.1%-of-value de minimis rule, a Chinese foreign direct product rule for rare-earth technology and five added elements (holmium, erbium, thulium, europium, ytterbium). That suspension was to lapse on 11/10 and was rolled into the Busan arrangement's extension to 1/10 after the 9/24 summit. An earlier layer sits underneath: the Rare Earth Administration Regulations effective 10/1/2024 created a national traceability system requiring miners, separators, smelters, recyclers and exporters to log product flows and upload the prior month's data — volumes and customer names — to the MIIT platform by the 10th of each month, on pain of fines or quota cuts."
+          },
+          "implication": {
+            "zh": "9/22報告把11/10稱為「真正的懸崖日」——這條判斷因此失效，而且不是因為日期被延到1/10（一次會談就能移動兩個月的東西本來就是籌碼），是因為它問錯了層次。三層裡只有第三層可以被談判暫停；第一層是中國國內法，第二層是許可流程本身，兩者在三輪休兵裡一天都沒停。對你的意義：任何以「管制是否生效」為單位的風險模型都會漏掉主要曝險，因為資訊蒐集從未中斷。要追的不是規則存廢，是申請與核發的節奏。",
+            "en": "This invalidates the 9/22 brief's call that 11/10 was \"the real cliff\" — not because the date moved to 1/10 (a deadline one meeting can shift by two months was always a chip), but because it asked about the wrong layer. Of the three layers only the third is negotiable; the first is Chinese domestic law and the second is the licensing process itself, and neither paused through three rounds of de-escalation. The practical consequence: any risk model keyed to whether the controls are in force misses the main exposure, because collection never stopped. Track the cadence of applications and approvals, not the status of the rule."
+          },
+          "source": "MOFCOM 公告 18/2025、70/2025 及《稀土管理條例》(2024/10/1 施行)；經 Clark Hill、CIRS、IEA 政策資料庫等獨立專業解讀交叉確認",
+          "url": "https://www.clarkhill.com/news-events/news/china-hits-pause-on-rare-earth-export-controls-and-what-it-means-for-supply-chains/",
+          "terms": [
+            "MOFCOM",
+            "FDPR",
+            "de minimis",
+            "REE",
+            "MIIT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geo",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "名冊的第一次實戰是2026/1/6對日本：只禁軍事終端用戶、不禁整個國家，觸發點是高市早苗關於台灣的一句話",
+            "en": "The directory's first live-fire use was Japan on 2026/1/6: military end users barred, the country not embargoed — triggered by one Takaichi sentence about Taiwan"
+          },
+          "summary": {
+            "zh": "MOFCOM 2026年第1號公告（2026/1/6）對日本禁止一切兩用物項出口予軍事終端用戶、軍事用途，以及任何可能增強日本軍事能力的用途，範圍涵蓋七種中重稀土及含其成品，包括稀土永磁(REPM)。中國佔日本稀土進口約80%、永磁進口約三分之一。這項措施被普遍連結到日本首相高市早苗2025年11月的發言：對台灣的攻擊可能構成日本的「存立危機事態」、足以正當化軍事回應；中方對此的用語是「公然暗示武力介入台海、違反一中原則、性質與影響極其惡劣」。日本外務省將該措施定性為「無法接受、深感遺憾」。",
+            "en": "MOFCOM Announcement No. 1 of 2026, issued 1/6/2026, prohibits all dual-use exports to Japan destined for military end users, military end uses, or any use that could enhance Japanese military capability, covering the seven medium and heavy rare earths and products containing them, including rare-earth permanent magnets. China accounts for roughly 80% of Japan's rare-earth imports and about a third of its magnet imports. The measure is widely linked to Prime Minister Sanae Takaichi's November 2025 statement that an attack on Taiwan could constitute an existential threat to Japan justifying a military response; Beijing's own language called this an open suggestion of armed intervention in the Taiwan Strait, in violation of the one-China principle. Japan's foreign ministry called the measure unacceptable and deeply regrettable."
+          },
+          "implication": {
+            "zh": "這是整個論證的支點。禁運只能以國家為單位開關，而1號公告做到的是逐國、逐終端用戶、逐用途——要做到這種顆粒度，前提是你手上已經有一份夠細的名冊，知道哪些日本買家的料件最後進了哪條產線。對台灣讀者更直接的一點：被懲罰的不是日本的行為，是日本的一句話，而那句話的主詞是台灣。這意味著供應鏈管制已經被接上台海的發言紀錄——任何國家的政治人物在台灣議題上的表態，從此帶有一個可計價的供應鏈成本，而計價權在北京手上。",
+            "en": "This is the pivot of the whole argument. An embargo can only be switched on and off by country; Announcement No. 1 operates country by country, end user by end user, use by use. That granularity presupposes a directory fine-grained enough to know which Japanese buyer's components end up on which production line. For a Taiwanese reader the sharper point is this: what was punished was not a Japanese action but a Japanese sentence, and the subject of that sentence was Taiwan. Supply-chain control is now wired to the record of what politicians say about the Taiwan Strait, and the price of saying it is set in Beijing."
+          },
+          "counterpoint": {
+            "zh": "日本不是2010年的日本。JOGMEC的國家儲備是2010年稀土禁運後建起來的緩衝，2010年那次北京停供約兩個月就造成產業震盪，這次沒有出現同等規模的停擺。日本已設定2030年單一非G7供應國占比降至60%以下的目標，1月啟動南鳥島約6,000公尺海底試採，高市並在6月G7 Evian峰會推動價格下限機制。若日本在未來半年真能在不掉產出的情況下降低對中依存，那1號公告示範的不是名冊的威力，而是名冊的保存期限——每開一次火，被打的那一方就多一份加速脫鉤的正當性。",
+            "en": "Japan is not the Japan of 2010. JOGMEC's national stockpile was built precisely after that episode, when roughly two months of halted Chinese shipments caused real industrial disruption; nothing of that scale has recurred. Tokyo now targets under 60% reliance on any single non-G7 supplier by 2030, began seabed trials at about 6,000m near Minamitorishima in January, and Takaichi pushed G7 price-floor mechanisms at Evian in June. If Japan can cut its China dependence over the next six months without losing output, Announcement No. 1 demonstrates not the directory's power but its shelf life — every discharge hands the target fresh justification to decouple faster."
+          },
+          "source": "MOFCOM 2026年第1號公告 (2026/1/6)；經 Greenberg Traurig 與 Benchmark Mineral Intelligence 獨立解讀交叉確認",
+          "url": "https://www.gtlaw.com/en/insights/2026/2/china-imposes-escalated-export-controls-on-dual-use-items-to-japan",
+          "terms": [
+            "MOFCOM",
+            "REPM",
+            "REE",
+            "JOGMEC"
+          ]
+        },
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "對面蓋的是產能，不是名冊：美歐日投下的錢能長出磁鐵廠，長不出一份資料庫——而台灣連產能那一端都還在實驗室",
+            "en": "The other side is building capacity, not a directory: Western money buys magnet plants, not a database — and Taiwan is not even at the capacity stage yet"
+          },
+          "summary": {
+            "zh": "據CSIS整理，華府一年內投入超過73億美元、橫跨五個部會，包括對MP Materials的NdPr每公斤110美元價格下限、十年期國防部包銷與「10X」磁鐵廠，以及Project Vault與對澳、日、馬、沙的雙邊框架。歐盟推出ReSourceEU（30億歐元）、在CRMA下核准47項戰略計畫，並設下2030年開採10%、加工40%、回收25%的目標。但IEA評估，已宣布的中國境外精煉產能到2035年僅約達預期礦山產出的三分之二，磁鐵產能僅約三分之一；中國2024年仍佔精煉磁用稀土91%、燒結永磁94%。台灣方面，據Taipei Times 9/19報導，台灣無具規模稀土儲量、年需求接近2,000公噸、絕大部分來自中國，工研院的精煉與回收路線目前仍為實驗室級成果，尚未出現具名的商業承接者或可查證的商業產出。",
+            "en": "Per CSIS, Washington committed over $7.3bn across five agencies in a year, including a $110/kg NdPr price floor for MP Materials, a ten-year Pentagon offtake and its \"10X\" magnet plant, plus Project Vault and bilateral frameworks with Australia, Japan, Malaysia and Saudi Arabia. The EU launched ReSourceEU (€3bn), approved 47 strategic projects under the CRMA and set 2030 targets of 10% mining, 40% processing and 25% recycling. Yet the IEA assesses that announced refining capacity outside China will reach only about two-thirds of expected mine output by 2035, and announced magnet capacity only about a third; China still held 91% of refined magnet rare earths and 94% of sintered permanent magnet output in 2024. In Taiwan, per Taipei Times on 9/19, there are no meaningful reserves, annual demand runs close to 2,000 tonnes sourced overwhelmingly from China, and ITRI's refining-and-recycling route remains at lab scale with no named commercial taker or verifiable commercial output."
+          },
+          "implication": {
+            "zh": "把兩邊的投入放在同一張表上，會看到一個結構性的不對稱：資本解決的是流量問題，解決不了資訊問題。你可以在德州蓋一座精煉廠，你不能把一份已經寫了兩年的資料庫刪掉，也拿不到對稱的那一份。對台股投資人的可操作角度是：不要只掃「稀土概念股」的供給曝險，要問一個更難但更準的問題——你持有的公司，有多少比例的料件採購是由中國境內子公司出面申請許可、因而由該子公司把母集團的客戶與用途資料填進那份問卷。那是一個目前完全沒有被定價的資訊揭露風險。",
+            "en": "Laid side by side, the asymmetry is structural: capital solves the flow problem and cannot touch the information problem. You can build a refinery in Texas; you cannot delete a database that has been accumulating for two years, and you have no symmetric copy of it. The actionable angle for a Taiwan equity investor is to stop screening \"rare-earth names\" for supply exposure and ask the harder, better question: what share of a holding's controlled-material procurement is licensed through its own China-based subsidiary — meaning that subsidiary is the entity writing the parent group's customers and end uses into the questionnaire. That disclosure risk is currently not priced at all."
+          },
+          "counterpoint": {
+            "zh": "反方說法是這份不對稱正在快速收斂，而且是自己造成的。CSIS指出中國每動用一次咽喉點，美國兩黨對替代供應鏈的支持就更強一分；成本面上，中國的能源、人力與合規成本上升，價格優勢正在縮小。更麻煩的是同一份IEA數據可以反著讀：中國境外精煉到2035年能到礦山產出的三分之二，並不是一個微不足道的數字——它意味著輕稀土端的議價力可能在本輪就實質下降，只有重稀土與磁鐵端會拖得更久。若如此，本報告談的名冊會退化成一份只對少數重稀土品項有效的清單，而不是一張全局的流向圖。",
+            "en": "The counter-case is that this asymmetry is narrowing fast, and self-inflicted. CSIS notes that each use of a chokepoint deepens bipartisan US support for alternative chains, while rising Chinese energy, labour and compliance costs erode the price advantage. More awkwardly, the same IEA figures read the other way: two-thirds of expected mine output refined outside China by 2035 is not trivial — it implies bargaining power over light rare earths may fall materially this cycle, with only heavy rare earths and magnets staying sticky. On that reading the directory degrades into a list that bites on a handful of heavy items rather than a map of the whole flow."
+          },
+          "source": "CSIS《Rare Earth Export Restrictions One Year Later》、IEA 稀土報告、歐盟 ReSourceEU 與 CRMA 官方目標、Taipei Times 9/19",
+          "url": "https://www.csis.org/analysis/rare-earth-export-restrictions-one-year-later",
+          "terms": [
+            "NdPr",
+            "CRMA",
+            "ReSourceEU",
+            "IEA",
+            "ITRI",
+            "REE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "許可申請書就是問卷：要交完整價值鏈、客戶名單與終端用途，有時還要電機設計——8月對美永磁512公噸、月減21%，而「合規民用申請都批」同時為真",
+            "en": "The licence application is the questionnaire: full value chain, customer lists, end uses, sometimes motor designs — 512 tonnes of magnets to the US in August, down 21%, while \"compliant civilian applications are approved\" stays true"
+          },
+          "summary": {
+            "zh": "多家國際律所與合規業者整理的申請實務顯示，MOFCOM要求出口商揭露完整製造價值鏈與最終用途、經認證的客戶資訊、成分證明與技術描述；歐洲業者反映，中國供應商須倚賴其歐洲客戶提供終端用戶與用途細節，部分情況涉及電機設計或製程等IP敏感資訊，可能牴觸既有保密義務。名義審查期為45個工作天，實務上常拉到兩至四個月，交易商形容核發「緩慢而具選擇性」。同期流量資料：據中國海關總署資料（經Bloomberg轉述），8月中國出口至美國的稀土永磁為512公噸，較7月減21%、較去年同期減13%。MOFCOM的公開立場始終是「管制不是禁止，合規民用申請均可獲批」。",
+            "en": "Practice notes from multiple international law firms and compliance vendors describe MOFCOM requiring disclosure of the complete manufacturing value chain and final application, authenticated customer information, composition certificates and technical descriptions. European suppliers report that Chinese exporters must lean on their European customers for end-user and end-use detail, in some cases extending to IP-sensitive material such as electric motor designs or process details, potentially cutting across existing confidentiality obligations. The nominal review period is 45 working days; in practice approvals routinely take two to four months, with traders describing issuance as slow and selective. Against that, flow data: per China customs figures relayed by Bloomberg, China shipped 512 tonnes of rare-earth permanent magnets to the US in August, down 21% from July and 13% year-on-year. MOFCOM's public position throughout has been that these are controls rather than bans and that compliant civilian applications are approved."
+          },
+          "implication": {
+            "zh": "這兩件事同時成立，正是本報告主張的機制特徵：可否認的調節閥。核發率不需要下降，只要把特定申請的審查時間從45天拉到120天，下游就會斷料，而官方口徑一字不必改。對做威脅獵捕的人來說，這裡有一個熟悉的結構：這不是拒絕存取(deny)，是提高延遲(degrade)，而延遲在事後鑑識上幾乎不留下可歸責的痕跡——你無法證明一份多花了兩個月的申請是被刻意拖的。對投資人來說，這代表「出口量」是落後且失真的指標，真正的前導指標是申請到核發的中位天數，而那個數字沒有人公布。",
+            "en": "Both statements holding simultaneously is exactly the signature of the mechanism argued here: a deniable dial. Approval rates need not fall at all; stretching review on selected applications from 45 days to 120 starves the downstream line while the official line stays word-for-word identical. For anyone who does threat hunting the structure is familiar: this is not deny, it is degrade — and degradation leaves almost no attributable forensic trace, because you cannot prove an application that took two extra months was deliberately slowed. For an investor it means export volume is a lagging and distorted indicator; the real leading indicator is the median days from application to issuance, and nobody publishes it."
+          },
+          "counterpoint": {
+            "zh": "最強的反駁是資料品質。0.1%價值占比與完整價值鏈歸屬，正是全球製造業公認算不準的兩個數字——料件經過三四手貿易商之後，申報者多半只能猜。若大量申報內容本身就是互相矛盾的自陳，那北京拿到的不是一張可查詢的流向圖，是一堆需要巨額清理成本才能用的髒資料。同樣地，MOFCOM是貿易主管機關而非情報機構；要求終端用戶與用途資訊在各國出口管制中是通例，BIS的end-use certificate也要。把常態化的行政文件讀成情報蒐集設計，有過度詮釋的風險，而本報告沒有任何證據顯示這些申報被匯整、關聯或查詢過。",
+            "en": "The strongest rebuttal is data quality. The 0.1% value share and full value-chain attribution are the two numbers global manufacturing openly admits it cannot compute — after three or four intermediaries, filers are largely guessing. If much of what is filed is mutually inconsistent self-report, Beijing holds not a queryable map but dirty data requiring enormous cleaning cost to use. Equally, MOFCOM is a trade regulator, not an intelligence service; demanding end-user and end-use information is standard in export-control regimes everywhere, and BIS requires end-use certificates too. Reading routine administrative paperwork as collection design risks over-interpretation, and this report has no evidence that these filings have ever been consolidated, linked or queried."
+          },
+          "source": "中國海關總署 8 月分國別出口明細（經 Bloomberg 轉述）；許可申請文件要求為 Freshfields、Taylor Wessing、CMS 等事務所實務整理",
+          "url": "https://www.bloomberg.com/news/articles/2026-09-21/china-rare-earth-magnet-exports-to-us-drop-before-xi-trump-meet",
+          "terms": [
+            "MOFCOM",
+            "REPM",
+            "de minimis",
+            "end-use certificate",
+            "BIS",
+            "provenance graph"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "military",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "推定拒絕早就寫進條文：61號公告對境外軍事終端用戶預設不准，而一架F-35約920磅、一艘維吉尼亞級約9,200磅稀土材料",
+            "en": "Presumption of denial was written in from the start: Announcement 61 defaults to refusal for foreign military end users — while an F-35 carries about 920 lb and a Virginia-class about 9,200 lb of rare-earth material"
+          },
+          "summary": {
+            "zh": "據多家事務所對MOFCOM 2025年第61號公告的解讀，該公告第2條對涉及境外軍事用戶的出口許可申請採推定拒絕，第3條將可能用於大規模毀滅性武器及其運載系統之設計、開發、生產或使用、恐怖主義，或軍事用途／增強軍事潛力的項目一併納入。即使在暫停期間，MOFCOM仍對14奈米及以下邏輯晶片、256層及以上記憶體晶片，以及具潛在軍事用途的AI系統相關申請採逐案審查。實體曝險的量級：據美國國防部數據（經Air & Space Forces Magazine轉述），每架F-35需約920磅稀土材料、每艘SSN-774維吉尼亞級潛艦約9,200磅、每艘DDG-51柏克級驅逐艦約5,200磅；稀土永磁亦用於戰斧飛彈、掠食者無人機與JDAM系列。",
+            "en": "Per multiple law-firm readings of MOFCOM Announcement 61 of 2025, Article 2 applies a presumption of denial to licence applications involving foreign military end users, and Article 3 extends this to items usable in the design, development, production or use of weapons of mass destruction and their delivery systems, terrorism, or military end use and enhancement of military potential. Even during the suspension, MOFCOM has applied case-by-case review to applications touching logic chips at 14nm and below, memory at 256 layers and above, and AI systems with potential military application. The physical exposure: per US Defense Department figures relayed by Air & Space Forces Magazine, each F-35 requires about 920 lb of rare-earth material, each SSN-774 Virginia-class submarine about 9,200 lb and each DDG-51 destroyer about 5,200 lb, while rare-earth permanent magnets also go into Tomahawk missiles, Predator drones and the JDAM family."
+          },
+          "implication": {
+            "zh": "把推定拒絕條款和前一條的名冊放在一起，才看得出真正的效果。西方的反制思路是保護程式機密：不揭露哪個計畫是機密的。但推定拒絕不需要你揭露計畫，它只需要能辨識終端用戶；而一旦名冊能把一批磁鐵追到某家次級供應商的某條致動器產線，計畫的保密性就不再是保護層——訂單形態本身就是簽名。這對台灣的意義是直接的：台灣自製無人機、PAC-3採購（9/26報告）與潛艦國造都吃同一批中重稀土磁材，而台灣沒有國家級稀土儲備，也沒有一個可查證的非紅供應來源。",
+            "en": "Put the presumption-of-denial clause next to the directory and the real effect appears. Western counter-practice protects programme secrecy: never disclose which programme is classified. But presumption of denial does not need the programme disclosed — it needs the end user identifiable. Once the directory can trace a batch of magnets to one actuator line at one tier-two supplier, classification stops being a protective layer: the shape of the order is itself the signature. The implication for Taiwan is direct. Indigenous drones, the PAC-3 procurement queue noted in the 9/26 brief and the domestic submarine programme all draw on the same medium and heavy rare-earth magnet stock, and Taiwan holds neither a national stockpile nor a verifiable non-Chinese source."
+          },
+          "source": "MOFCOM 2025年第61號公告（經 Squire Patton Boggs、Mayer Brown、CMS 等事務所解讀）；稀土用量為美國國防部數據，經 Air & Space Forces Magazine 轉述",
+          "url": "https://www.airandspaceforces.com/article/rare-earth-uncertainty/",
+          "terms": [
+            "MOFCOM",
+            "presumption of denial",
+            "REPM",
+            "Dy",
+            "Tb",
+            "PAC-3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cyber",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "執行已經從貨物打到人：2026/5大連兩名日本籍人士因涉稀土出口管制被拘，是已知第一批——加上9/15上路的出境管理新規，這條供應鏈的盡職調查威脅模型要重寫",
+            "en": "Enforcement moved from cargo to people: two Japanese nationals detained in Dalian in 5/2026 over rare-earth export-control allegations, the first known such case — with the 9/15 exit rules, supply-chain due diligence needs a new threat model"
+          },
+          "summary": {
+            "zh": "據Morgan Lewis 2026/7/1的法律快訊，2026年5月兩名日本籍人士在大連因涉嫌走私受出口管制物項被拘留，據報涉及稀土相關項目，是已知第一起外籍人士因稀土相關出口管制違規在中國被拘留的案例；該所將其評估為「日益積極的執法態勢」。同一條線上，中國新版《出境入境管理條例》於9/15上路（9/16報告記錄），熟悉受管制技術的工程師本人可能受出境限制。中國國家安全部則公開將稀土供應鏈資料列為反間諜工作對象，曾通報外商行賄中方主管以取得稀土儲量、產量與價格資料的案例，把資源數據本身定性為戰略地形。",
+            "en": "Per a Morgan Lewis LawFlash of 7/1/2026, two Japanese nationals were detained in Dalian in May 2026 on allegations of smuggling export-controlled goods, reportedly rare-earth-related — the first known instance of foreign nationals detained in China over a rare-earth export-control matter, which the firm assessed as an increasingly active enforcement posture. On the same line, China's revised exit-entry regulations took effect 9/15 (recorded in the 9/16 brief), exposing engineers familiar with controlled technology to exit restrictions. China's Ministry of State Security has publicly designated rare-earth supply-chain data a counter-espionage target, citing a case of a foreign firm bribing a Chinese executive for reserve, output and pricing data, and framing resource data itself as strategic terrain."
+          },
+          "implication": {
+            "zh": "這條把前面幾條的抽象機制落到一個具體的個人風險上，而這正是本站讀者的職業領域。若名冊是由合規流程餵養的，那麼「查證自己供應鏈的真實來源」這個動作，在中國境內就同時是一項反間諜法下的可疑行為——蒐集稀土儲量、產量、流向資料的人，在北京的定義裡不是盡職調查員，是情報蒐集者。實務上的意義：任何需要在中國境內做上游稀土來源查核的工作，其人身風險模型要從「商業糾紛」升級到「刑事與出境限制」，而且查核越徹底、風險越高。這是一個反向誘因——名冊只能單向填寫，不能雙向查證。",
+            "en": "This drops the abstract mechanism onto a concrete personal risk, in exactly this reader's professional territory. If the directory is fed by compliance processes, then the act of verifying your own supply chain's true origin is, inside China, simultaneously suspicious conduct under counter-espionage law: someone collecting rare-earth reserve, output and flow data is not, in Beijing's definition, a due-diligence officer but a collector. Practically, any work requiring upstream rare-earth source verification on the ground in China should move its personal-risk model from commercial dispute to criminal exposure and exit restriction — and the more thorough the verification, the higher the risk. The incentive runs backwards: the directory can only be written to, never read back."
+          },
+          "counterpoint": {
+            "zh": "要小心把兩件未必相關的事縫在一起。大連案的公開細節極少，「涉稀土相關項目」是據報而非官方認定，走私與出口管制在中國海關實務上常被一併指控，未必反映針對外籍人士的新政策方向；單一案例也不構成趨勢。同樣地，出境管理新規上路至今（9/18報告）仍未出現任何具名個案被真正卡在海關。把一起可能屬於個案的刑事案件、一項尚未有執行紀錄的行政法規、與國安部的宣傳性通報，合併成一套「反間諜化的供應鏈治理」敘事，是本報告推論鏈上最鬆的一環。",
+            "en": "Take care not to stitch together things that may not belong together. Public detail on the Dalian case is minimal; that it was rare-earth-related is reported rather than officially established, smuggling and export-control theories are routinely charged together in Chinese customs practice, and one case is not a trend. Likewise, no named individual has yet actually been stopped at the border under the new exit rules (per the 9/18 brief). Merging a possibly idiosyncratic criminal case, an administrative rule with no enforcement record, and an MSS publicity notice into a single narrative of counter-espionage-ised supply-chain governance is the loosest link in this report's chain."
+          },
+          "source": "Morgan Lewis LawFlash 2026/7/1（引述大連拘留案報導）；出境入境新規與 MSS 通報見 9/16、9/18 報告",
+          "url": "https://www.morganlewis.com/pubs/2026/07/recent-china-export-control-actions-signal-active-enforcement-for-rare-earths-and-strategic-minerals",
+          "terms": [
+            "MSS",
+            "REE",
+            "provenance graph"
+          ]
+        }
+      ]
+    }
+  ],
+  "narrative": {
+    "zh": "**上期推演校準**\n\n9/21週報的主判斷——「攻擊會集中在備援與其港口端，不在海峽本身」——被9/26報告推翻了：沙烏地9月出口創開戰以來新高，靠的不是修好Petroline，而是把原油裝回霍爾木茲、由美軍護航到阿曼灣做STS轉載。錯在哪個環節很具體：我假設備援與閘門是替代關係，卻沒把「第三方可以用軍力直接補貼通行風險」放進選項集。護航把「通過需要德黑蘭同意」換成了「通過需要美軍排班」——不是資料錯，是選項漏了一項。五條指標裡，第一條未到期但9/22已恢復輸送、滿載估六到八週，偏向Lipow的「months」；第二條節點選對、機制寫錯，Sohar先成了承載量瓶頸而非攻擊目標；第三條仍查不到公開數據——我上期才宣布每條指標要綁固定發布的公開來源，當場又違反一次。\n\n**問題是什麼**\n\n9/22報告把11/10寫成「真正的懸崖日」。這個框架要作廢，不是因為9/24峰會把它延到1/10——一次會談就能移動兩個月的東西本來就是籌碼——而是因為它問錯了層次。被暫停的只有域外延伸那一層；真正一天沒停過的，是一台把全世界料件流向抄寫下來的機器。北京這一年建的不是閘門，是名冊。\n\n**機制怎麼運作**\n\n三層疊起來。第一層在境內：2024/10/1施行的《稀土管理條例》要求開採、冶煉分離與出口業者把產品流向錄入追溯系統，每月10日前上傳含交易量與客戶名稱的上月資料，違者罰款或砍次年配額——國內法，與休兵無關。第二層是許可申請本身：要交完整價值鏈、經認證的客戶資訊、終端用途與成分證明，歐洲業者反映有時被要求提供電機設計或製程。第三層才是被暫停的：0.1%的de minimis、稀土技術的中國版FDPR，以及把境外對境外轉運納管的「特定出口經營者」。\n\n前兩層生產一張圖（誰、多少、給誰、做什麼用），第三層只決定這張圖畫多大；爭11/10是在爭第三層。名冊勝過閘門的理由是可否認性：禁運是二元的、會把所有受害者黏成一個聯盟；名冊讓你95%照准、5%慢審，對外說詞永遠字面為真，對內卻能精準壓住一條產線。延遲不是官僚失能，是武器形態。\n\n**證據**\n\n最硬的是連續性：2025/4/4的18號公告從未被暫停，2025/11/7的70號公告暫停的只有2025/10/9那一包；三輪休兵都沒碰收集機器。其次是2026/1/6的1號公告——只禁日本的軍事終端用戶與軍事用途，不禁整個國家，而中國佔日本稀土進口約80%；禁運做不到這種顆粒度，能做到的前提是你已經有一份夠細的名冊。第三是流量：8月對美永磁512公噸、月減21%，而MOFCOM「合規民用申請都批」同期同樣為真——兩句話並存正是調節閥的特徵。第四，執行已經打到人：2026/5大連兩名日本籍人士因涉稀土相關管制被拘。\n\n**各方自己怎麼說**\n\n北京（MOFCOM）：依法完善管制體系、履行防擴散義務，「管制不是禁止」；它最在意華府把域外管轄說成前所未有的越界，因為FDPR就是原型，北京要守的是「我做的和你做的同一類」。華府：敘事是韌性與產能而非報復——五個部會逾73億美元、NdPr每公斤110美元價格下限加十年包銷；它最不願被追問的是，補貼買得到產能，買不到一份名冊。布魯塞爾：ReSourceEU 30億歐元、CRMA 47項戰略計畫；它最在意的是自家工業客戶才是那份問卷的實際填寫人，而反脅迫工具需要27國條件多數決——最可能是先合規、後抱怨。東京：外務省定性1號公告「無法接受、深感遺憾」，目標2030年單一非G7供應國占比降至60%以下；它最在意的是，這次被打的理由是它對台灣講了一句話。台北仍然沒有敘事——無具規模儲量、年需求近2,000公噸、絕大部分來自中國。\n\n**未來 3–6 個月的推演與觀察指標**\n\n主判斷：動作不會是0.1%規則轟轟烈烈回來，而是名冊層繼續加密——「1號公告式」的逐國、逐終端用戶措施會再出現至少一次，且不必然針對美國。一、1/10 Busan協議到期：若再延長且0.1%與FDPR維持暫停，代表第三層是籌碼、前兩層才是制度；若恢復生效，我「不會真關門」的判斷要降級（來源：MOFCOM公告頁、USTR聲明）。二、每月20日前後的中國海關分國別明細：對美永磁若維持500至700公噸區間震盪、沒有一次接近歸零，調節閥假說成立；出現單月歸零則我錯。三、3/31前是否出現第二份針對特定國家的MOFCOM公告；若有、且觸發點同樣是涉台發言，機制就從一次性報復升級成常規工具——這是對台灣最直接的指標。四、日本經產省與JOGMEC的稀土進口月報：若對中依存半年內明顯下降而產出沒掉，「burn」派對、我的持久性判斷要下修。五、MP Materials 10X廠與Lynas德州廠的季度交付揭露：若仍落在IEA「2035年ex-China磁鐵僅約三分之一」的軌道上，名冊的議價力本輪不會被削弱。\n\n**我可能錯在哪**\n\n最可能錯的，是把官僚流程讀成情報設計。要求終端用戶與用途資訊是各國通例，BIS的end-use certificate也要；我主張的差別在頻率、粒度與集中度，但我沒有任何證據顯示這些資料被匯整成可查詢的圖，更沒有證據顯示它被用於情報——我是從能力推意圖，這正是我在威脅獵捕裡會扣別人分的推論。第二，資料品質：0.1%價值占比是全世界沒人算得準的那個數字，如果連申報者都在猜，我描述的就不是provenance graph而是噪音。第三，War on the Rocks的「burn and choke」直接對著我：稀土脅迫每用一次折損一次，半導體管制則會複利；若對，我就是把貶值資產寫成了持久資產，而IEA的數字同時支持兩邊，我承認我挑了對我有利的那一半讀。第四，本期所有一手頁面都被出網政策擋住，標為confirmed的兩條依據的是三家以上獨立專業機構對同一份公告的編號、日期與條文說法一致，不是我親眼讀過原文。最後：我這期又換了一個很好用的形狀，而它特別危險，因為它跟我自己的研究領域完全同構——最容易騙過我的比喻，是我天天在用的那個。",
+    "en": "**Calibrating last week's forecasts**\n\nThe 9/21 weekly's core call — attacks would concentrate on the bypass and its port end, not the strait — is overturned by the 9/26 brief. Saudi September exports hit a wartime high, not because Petroline was repaired but because crude went back through Hormuz under US Navy escort to ship-to-ship transfer off Oman. I assumed bypass and chokepoint were substitutes, and never put \"a third party can subsidise transit risk with naval force\" in the option set. Escort turned \"transit requires Tehran's consent\" into \"transit requires a US Navy slot\" — a missing option, not bad data. The Sohar indicator picked the right node with the wrong mechanism: it became a throughput bottleneck before a target. And my war-risk-premium indicator still has no public data source, one week after I promised each indicator would be tied to a fixed public release.\n\n**The question**\n\nThe 9/22 brief called 11/10 \"the real cliff.\" Retire that frame — not because the 9/24 summit moved it to 1/10 (a deadline one meeting shifts by two months was always a chip), but because it asks about the wrong layer. Only the extraterritorial reach was suspended. What never paused is a machine transcribing the world's component flows. Beijing did not build a gate this year. It built a directory.\n\n**How the mechanism works**\n\nThree layers. Domestically, the Rare Earth Administration Regulations effective 10/1/2024 require miners, separators and exporters to log product flows into a national traceability system, uploading the prior month's volumes and customer names by the 10th, on pain of fines or quota cuts — domestic law, untouched by any truce. Second, the licence application is itself a questionnaire: full value chain, authenticated customer information, end uses, composition certificates, and for European suppliers sometimes motor designs. Third — the suspended layer — is the 0.1% de minimis rule and a Chinese foreign direct product rule for rare-earth technology.\n\nThe first two layers produce a map: who, how much, to whom, for what. The third only decides how large it is drawn, so the fight over 11/10 is a fight about layer three. A directory beats a gate because it is deniable. An embargo is binary and glues every victim into one coalition; a directory lets you approve 95% and slow-walk 5% while the public line stays literally true, and one production line still stops. Latency is not bureaucratic failure. It is the weapon's shape.\n\n**Evidence**\n\nContinuity first: Announcement 18 of 4/4/2025 was never suspended; Announcement 70 suspended only the 10/9/2025 package. Three rounds of de-escalation left the collection machine untouched. Second, Announcement No. 1 of 2026, issued 1/6/2026, barred dual-use exports to Japan for military end users and military end uses — not the country, the users. No embargo reaches that granularity; reaching it presupposes a directory fine enough to know which buyer feeds which line. Third, flow: 512 tonnes of magnets to the US in August, down 21% month-on-month, while MOFCOM's \"compliant civilian applications are approved\" stayed equally true. Both holding at once is what a dial looks like.\n\n**How each side tells it**\n\nBeijing: lawfully refining its control system, meeting non-proliferation obligations, controls not bans. What it resents is Washington calling extraterritorial jurisdiction unprecedented overreach — the US FDPR is the template, and Beijing's priority is the symmetry claim. Washington: resilience and capacity, not retaliation — over $7.3bn across five agencies, a $110/kg NdPr floor with a ten-year Pentagon offtake. What it least wants asked is that subsidies buy capacity, not a directory. Brussels: ReSourceEU at €3bn, 47 CRMA projects — but its own industrial firms fill in the questionnaire, and the anti-coercion instrument needs a qualified majority of 27, so comply first, complain later. Tokyo called Announcement No. 1 \"unacceptable and deeply regrettable\" and targets under 60% reliance on any single non-G7 supplier by 2030; what it cares about most is that it was hit for a sentence it said about Taiwan. Taipei has no narrative at all.\n\n**Three to six months out, and what to watch**\n\nMain call: not a dramatic return of the 0.1% rule but further densification of the directory — at least one more Announcement-No.1-style country-and-end-user measure, not necessarily aimed at the US. First, 1/10, when the Busan arrangement lapses: another extension with the 0.1% rule still suspended confirms layer three is a chip and layers one and two are the institution; letting it bite downgrades my call. Second, Chinese customs country detail around the 20th monthly: magnets to the US oscillating in a 500-700 tonne band without nearing zero supports the dial hypothesis; one near-zero month means I am wrong. Third, whether a second country-specific MOFCOM announcement appears before 3/31 — if its trigger is again a statement about Taiwan, this is now a standing instrument, and that is the most direct indicator for Taiwan. Fourth, METI and JOGMEC import data: Japanese dependence falling materially within six months without lost output means the \"burn\" thesis wins. Fifth, MP Materials and Lynas quarterly delivery disclosures against the IEA's \"about a third of magnet capacity outside China by 2035\" path.\n\n**Where I am most likely wrong**\n\nThe likeliest error is reading bureaucracy as intelligence design. Demanding end-user information is standard everywhere; BIS requires end-use certificates too. My claim rests on frequency, granularity and centralisation, but I have no evidence this data is consolidated into a queryable graph and none that it is used for intelligence — I am inferring intent from capability, the inference I would mark down in someone else's threat-hunting write-up. Second, the 0.1% value share is the number nobody can compute reliably; if filers are guessing, what I describe is noise, not a provenance graph. Third, the War on the Rocks \"burn and the choke\" argument points straight at me: rare-earth coercion depletes with each use while semiconductor leverage compounds. If that is right I have written up a depreciating asset as a durable one, and the IEA figures support both readings — I concede I read the half that suits me. Fourth, every primary page this week was blocked by this environment's egress policy; the two items marked confirmed rest on independent professional readings agreeing on one published announcement's number, date and provisions, not on my having read the text. Last: this week's shape is especially dangerous because it is isomorphic to my own research field — the metaphor most likely to fool me is the one I use every day."
+  }
+}

@@ -2200,6 +2200,171 @@
       },
       "category": "tech",
       "first_seen": "2026-09-28"
+    },
+    {
+      "term": "REE",
+      "zh": "稀土元素",
+      "expansion": "Rare Earth Elements",
+      "def": {
+        "zh": "鑭系十五元素加上鈧與釔共十七種金屬元素的統稱。地殼含量其實不稀有，稀有的是經濟可採的富集礦體與分離提純能力——分離十七種化性極相近的元素需要數百級的溶劑萃取串級，這道工序而非礦藏才是真正的瓶頸，也是中國集中度最高的環節。",
+        "en": "The seventeen metals comprising the fifteen lanthanides plus scandium and yttrium. They are not geologically rare; what is rare is economically recoverable concentration and the ability to separate them — pulling apart seventeen chemically near-identical elements takes hundreds of solvent-extraction stages. That step, not the ore, is the real bottleneck, and it is where Chinese concentration is highest."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-28"
+    },
+    {
+      "term": "REPM",
+      "zh": "稀土永磁",
+      "expansion": "Rare Earth Permanent Magnet",
+      "def": {
+        "zh": "以釹鐵硼(NdFeB)或釤鈷為主的高磁能積永磁體，是電動馬達、致動器、風機、硬碟與精確導引彈藥的核心元件。要在高溫下維持矯頑力必須摻入鏑或鋱等重稀土，這正是中國管制清單刻意瞄準的位置：管住摻雜元素，等於管住高溫等級的磁鐵，而軍用與車用都落在那個等級。",
+        "en": "High-energy-product permanent magnets, chiefly neodymium-iron-boron or samarium-cobalt, at the core of electric motors, actuators, wind turbines, hard drives and precision-guided munitions. Holding coercivity at elevated temperature requires doping with heavy rare earths such as dysprosium or terbium — which is precisely where China's control list aims. Control the dopant and you control the high-temperature grade, and military and automotive applications both sit in that grade."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-28"
+    },
+    {
+      "term": "NdPr",
+      "zh": "釹鐠",
+      "expansion": "Neodymium-Praseodymium",
+      "def": {
+        "zh": "釹與鐠的混合氧化物或金屬，是釹鐵硼磁鐵的主要原料，也是稀土產業最常被引用的計價與產能單位（常以「NdPr當量噸」表示）。美國國防部給MP Materials的每公斤110美元價格下限，標的就是這個品項。",
+        "en": "The mixed oxide or metal of neodymium and praseodymium, the principal feedstock for NdFeB magnets and the industry's standard pricing and capacity unit (often quoted as tonnes of NdPr equivalent). The US Defense Department's $110/kg price floor for MP Materials is set against this item."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-28"
+    },
+    {
+      "term": "Dy",
+      "zh": "鏑",
+      "expansion": "Dysprosium",
+      "def": {
+        "zh": "重稀土元素，摻入釹鐵硼磁鐵以提高高溫矯頑力，是馬達與飛彈致動器在攝氏150度以上仍能運作的關鍵。全球分離產能高度集中於中國與緬甸礦源，2025/4/4的中國18號公告將其列入出口許可清單後從未解除。",
+        "en": "A heavy rare earth doped into NdFeB magnets to raise high-temperature coercivity, making motors and missile actuators viable above about 150°C. Separation capacity is highly concentrated in China and Myanmar-sourced feed. China's Announcement 18 of 4/4/2025 placed it under export licensing and has never lifted it."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-28"
+    },
+    {
+      "term": "Tb",
+      "zh": "鋱",
+      "expansion": "Terbium",
+      "def": {
+        "zh": "重稀土元素，與鏑同為釹鐵硼磁鐵的高溫摻雜劑，單價更高、供給更稀薄，亦用於螢光材料與磁致伸縮合金。與鏑一樣自2025/4起持續受中國出口許可管制，兩者是磁鐵供應鏈上最窄的一道口。",
+        "en": "A heavy rare earth used alongside dysprosium as a high-temperature dopant in NdFeB magnets, pricier and thinner in supply, also used in phosphors and magnetostrictive alloys. Like dysprosium it has been under Chinese export licensing continuously since 4/2025; together the two form the narrowest aperture in the magnet supply chain."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-28"
+    },
+    {
+      "term": "de minimis",
+      "zh": "微量規則",
+      "expansion": "De Minimis Rule",
+      "def": {
+        "zh": "出口管制中的門檻規則：外國製產品所含受管制來源成分若超過一定比例，整件產品即落入該國管轄。美國制度多採25%或10%的價值門檻；中國2025/10/9公告採0.1%，低了兩個數量級，實際效果是把幾乎任何含中國稀土的馬達、感測器或消費電子都納入，並迫使企業建立料件成本歸屬的追溯能力。",
+        "en": "A threshold rule in export control: a foreign-made product falls under a jurisdiction's rules once controlled-origin content exceeds a set share. US rules typically use 25% or 10% of value; China's 10/9/2025 announcement used 0.1%, two orders of magnitude lower. The practical effect is to sweep in almost any motor, sensor or consumer device containing Chinese rare earths, and to force firms to build bill-of-materials cost-attribution traceability."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-28"
+    },
+    {
+      "term": "presumption of denial",
+      "zh": "推定拒絕",
+      "expansion": "Presumption of Denial",
+      "def": {
+        "zh": "出口許可審查的預設立場：符合特定條件的申請一律先推定不予核准，舉證責任翻轉到申請人身上。中國2025年第61號公告對境外軍事終端用戶採此標準，美國對中國等國的軍事終端用戶亦然——兩套制度在條文層面互為鏡像，是北京「我做的和你做的同一類」這個敘事的法理依據。",
+        "en": "A licence review posture under which qualifying applications are presumptively refused, shifting the burden onto the applicant. China's Announcement 61 of 2025 applies it to foreign military end users; US rules apply it to military end users in China and elsewhere. The two regimes mirror each other at the level of text, which is the legal basis for Beijing's \"what I do is what you do\" framing."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-28"
+    },
+    {
+      "term": "end-use certificate",
+      "zh": "終端用途證明",
+      "expansion": "End-Use Certificate",
+      "def": {
+        "zh": "出口管制申請中由買方或最終用戶簽署、聲明貨品用途與不再轉讓的文件。各國通行，但要求的深度差異極大：美國BIS多要求聲明與事後查核，中國稀土許可則另要求完整價值鏈、經認證的客戶資訊與成分證明，並疊加境內每月申報的追溯制度——差別不在有沒有，在頻率、粒度與集中度。",
+        "en": "A document signed by the buyer or final user declaring a shipment's use and undertaking not to divert it. Universal in export control, but the depth demanded varies enormously: US BIS largely requires declarations plus post-shipment checks, while Chinese rare-earth licensing additionally demands the full value chain, authenticated customer information and composition certificates, layered on top of a domestic monthly traceability filing. The difference is not whether, but frequency, granularity and centralisation."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-28"
+    },
+    {
+      "term": "provenance graph",
+      "zh": "來源關聯圖",
+      "expansion": "Provenance Graph",
+      "def": {
+        "zh": "把實體（檔案、行程、使用者、料件）與其產生關係建成有向圖，用來回答「這個東西從哪來、經過誰、被誰用」。原為資安鑑識與威脅獵捕的資料結構，同一形式也適用於供應鏈：追溯系統與許可申報所蒐集的「誰、多少、給誰、做什麼用」，本質上就是一張以料件為節點的來源關聯圖。",
+        "en": "A directed graph linking entities — files, processes, users, components — by the relations that produced them, used to answer where a thing came from, whose hands it passed through and who used it. Originally a data structure for security forensics and threat hunting, the same form applies to supply chains: the who, how much, to whom and for what collected by traceability systems and licence filings is in substance a provenance graph with components as nodes."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-28"
+    },
+    {
+      "term": "MIIT",
+      "zh": "中國工業和信息化部",
+      "expansion": "Ministry of Industry and Information Technology",
+      "def": {
+        "zh": "中國主管工業政策、電信與資訊產業的部門，也是稀土開採與冶煉分離總量控制指標的核發機關，並維運稀土產品追溯信息系統。業者須於每月10日前把上月流向資料（含交易量與客戶名稱）上傳至該平台。",
+        "en": "China's ministry for industrial policy, telecoms and the information industry. It issues the total-volume control quotas for rare-earth mining and separation and operates the rare-earth product traceability system, into which firms must upload the prior month's flow data — volumes and customer names included — by the 10th of each month."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-28"
+    },
+    {
+      "term": "IEA",
+      "zh": "國際能源總署",
+      "expansion": "International Energy Agency",
+      "def": {
+        "zh": "OECD架構下的能源政策機構，近年將關鍵礦物供應集中度納入年度評估。其2026年評估指出，已宣布的中國境外稀土精煉產能到2035年僅約達預期礦山產出的三分之二，磁鐵產能約三分之一——這組數字同時被用來論證「去風險正在見效」與「去風險遠遠不夠」。",
+        "en": "The OECD-framework energy policy body, which in recent years folded critical-minerals supply concentration into its annual assessments. Its 2026 assessment finds announced refining capacity outside China reaching only about two-thirds of expected mine output by 2035, and magnet capacity about a third — figures cited both to argue de-risking is working and that it is nowhere near sufficient."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-28"
+    },
+    {
+      "term": "CRMA",
+      "zh": "歐盟關鍵原材料法",
+      "expansion": "Critical Raw Materials Act",
+      "def": {
+        "zh": "歐盟2024年生效的法規，為戰略原料設定2030年目標：境內開採達需求10%、加工40%、回收25%，且單一第三國供應不超過65%，並設戰略計畫快速許可機制，至2026年已核准47項。其弱點在於目標是產能而非資訊主權——它能降低斷供風險，處理不了揭露風險。",
+        "en": "EU legislation in force since 2024 setting 2030 targets for strategic raw materials: 10% of demand mined domestically, 40% processed, 25% recycled, and no more than 65% from any single third country, with fast-track permitting for strategic projects — 47 approved as of 2026. Its weakness is that the targets address capacity, not information sovereignty: it can reduce cut-off risk but does nothing about disclosure risk."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-28"
+    },
+    {
+      "term": "ReSourceEU",
+      "zh": "歐盟關鍵原料自主計畫",
+      "expansion": "ReSourceEU",
+      "def": {
+        "zh": "歐盟執委會2025年10月因應中國稀土管制提出的方案，規模約30億歐元，內容包括關鍵原料的聯合採購與戰略儲備、支持境內加工計畫，以及設立歐盟關鍵礦物中心統籌採購與庫存。定位是CRMA的加速器與危機應對層。",
+        "en": "The European Commission's roughly €3bn response announced in October 2025 to China's rare-earth controls, covering joint purchasing and strategic stockpiling of critical raw materials, support for domestic processing projects, and an EU critical minerals centre to coordinate purchases and reserves. It functions as the crisis-response and acceleration layer on top of the CRMA."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-28"
+    },
+    {
+      "term": "JOGMEC",
+      "zh": "日本能源金屬礦物資源機構",
+      "expansion": "Japan Organization for Metals and Energy Security",
+      "def": {
+        "zh": "日本主管能源與金屬資源安全的獨立行政法人，負責海外資源投資、國家稀有金屬儲備的採購與釋出。其稀土儲備制度正是2010年中國對日稀土停供後建立的，也是2026年日本面對1號公告時比2010年更耐打的主因——但儲備是延後機制，不是替代方案。",
+        "en": "Japan's independent administrative agency for energy and metals security, handling overseas resource investment and the purchase and release of national rare-metals stockpiles. Its rare-earth reserve system was built precisely after China's 2010 halt of shipments to Japan, and is the main reason Tokyo absorbed Announcement No. 1 in 2026 better than it absorbed 2010 — though a stockpile delays a shortage rather than substituting for supply."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-28"
+    },
+    {
+      "term": "ITRI",
+      "zh": "工業技術研究院",
+      "expansion": "Industrial Technology Research Institute",
+      "def": {
+        "zh": "台灣最大的政府支持應用研究機構，負責把前瞻技術移轉給產業。在稀土領域推動回收與精煉路線，以繞開對中國的依賴，但截至2026年9月仍為實驗室級成果，尚未出現具名的商業承接者或可查證的商業產出。",
+        "en": "Taiwan's largest government-backed applied research institute, tasked with transferring frontier technology to industry. In rare earths it is pursuing a recycling-and-refining route to route around Chinese dependence, but as of 9/2026 the results remain lab-scale, with no named commercial taker and no verifiable commercial output."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-28"
     }
   ]
 }

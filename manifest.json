@@ -2,6 +2,15 @@
   "updated": "2026-09-28",
   "reports": [
     {
+      "file": "reports/2026-09-28-weekly.json",
+      "kind": "weekly",
+      "date": "2026-09-28",
+      "title": {
+        "zh": "他們要的不是那道閘門，是一本名冊：稀土管制真正的產物，是一張沒有第二份的全球料件流向圖——而2026/1/6對日本開的那一槍，證明名冊能做到禁運做不到的事",
+        "en": "Not a Gate, a Directory: the durable product of China's rare-earth regime is a global bill-of-materials map nobody else holds — and the 2026/1/6 strike on Japan showed what a directory buys that an embargo cannot"
+      }
+    },
+    {
       "file": "reports/2026-09-28-brief.json",
       "kind": "brief",
       "date": "2026-09-28",
