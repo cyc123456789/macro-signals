@@ -1,0 +1,200 @@
+{
+  "date": "2026-09-28",
+  "kind": "brief",
+  "title": {
+    "zh": "川普親口駁回伊朗『七天路線圖』、WSJ稱他私下已在等期中選舉後恢復轟炸——9/22報告與9/26報告設下的伊斯蘭馬巴德二元指標這次給出乾淨答案；同一週，胡塞飛彈打進利雅德與吉贊、無人攻擊延燒進阿曼灣護航航道本身，法國宣布派兵防衛Yanbu、麥加防禦公約首度受測卻等不到巴基斯坦的直接軍援",
+    "en": "Trump Personally Rejects Iran's 'Seven-Day Roadmap,' With WSJ Reporting He Privately Expects to Resume Bombing After the Midterms — the Islamabad-MOU Binary Test 9/22報告 and 9/26報告 Set Gets a Clean Answer; the Same Week, Houthi Missiles Hit Riyadh and Jazan While Unclaimed Strikes Spread Into the Gulf of Oman Escort Corridor Itself, France Announces Troops to Defend Yanbu, and the Mecca Defense Pact's First Real Test Finds Pakistan Unwilling to Commit Direct Military Force"
+  },
+  "focus": {
+    "zh": "本期涵蓋9/26-9/28。三條線索都指向同一件事：本站設下的可證偽指標，這次陸續收到答案，而答案都指向拖延，不指向解決。第一，伊朗外交部長Araghchi在9/26報告記錄的『七天路線圖』——條件與9/22報告點名的伊斯蘭馬巴德框架逐條吻合——這次收到川普本人的正面答覆：《華爾街日報》引述美方官員報導，川普私下對德黑蘭是否會履行條件抱持懷疑，且已告訴幕僚，他預期期中選舉（11/3）後將恢復對伊朗的轟炸行動；川普本人在白宮對記者公開表示，伊朗急著談是『因為他們輸得太慘』。白宮官員同時對CNN表示『正透過中間人進行積極且具建設性的討論』，兩種說法並不一致；Araghchi則於9/27表示，德黑蘭僅收到川普的『初步反應』，尚未收到透過斡旋管道傳達的正式立場，並稱美國大使Waltz『根本沒讀過』這份提案。9/22報告與9/26報告設下的檢驗標準——『沒有中間地帶可以模糊帶過』——這次得到了答案：不是重返，是拒絕，而且拒絕的理由被綁定在一個具體的政治日曆（期中選舉）上，而不是伊朗是否履行條件本身。第二，也是本期最需要與9/26報告對照修正的一條：就在9/26報告記錄沙國9月出口靠阿曼灣護航轉運衝上新高的同一週，Yanbu本身與利雅德、吉贊、Taif等多座沙國城市，自9/17起持續遭胡塞飛彈與無人機攻擊，9/24一天內六枚彈道飛彈瞄準Taif與Yanbu被攔截；與此同時，三艘商船——Al Maryah（9/20，ADNOC旗下LPG船遭無人機擊中）、LR Stephanie（9/21，不明拋射物擊中，兩人輕傷）、Cape Dao（9/23，在阿曼灣Musandam外海遇襲、造成一名印度籍船員身亡，攻擊者不明）——遇襲地點正是9/26報告描述的Sohar護航轉運航道周邊，霍爾木茲海峽單日通過船隻一度在9/22跌到僅2艘（戰前基準約125艘），9/26回升至約13艘。法國總統Macron已於9/24宣布將派兵、雷達與防空系統協防Yanbu。這印證了9/26報告自己寫下的反方觀點——護航航道的脆弱性可能高於Yanbu港埠瓶頸本身——而不是推翻主判斷；但它同時說明，把『阿曼灣繞道』當成霍爾木茲風險的解方，本身正在被同一場戰爭改寫。第三，沙烏地、土耳其、巴基斯坦8/7簽署、被比擬為北約第五條的『麥加聯合防禦協定』，在這波攻勢下面臨簽署以來首次實質壓力測試——巴基斯坦外交部發言人明確表示『不存在這種討論』，未承諾任何直接軍事介入，土耳其同樣未見具體軍事動員。第四，台灣讀者持續追蹤的140億軍售案，川習會9/24落幕48小時後，川普僅對記者表示『習近平理解我的立場』，未見任何正式決定；台灣一位資深外交官同日公開喊話，稱『武裝台灣符合美國國家利益』——9/22報告與9/24報告設下的『峰會後30天內是否正式送交國會』檢驗窗口（約至10/24）第一個查核點，答案是仍無動作。資安端，Citrix NetScaler ADC／Gateway被揭露兩個未經身分驗證、CVSS 9.5、尚無官方修補程式的遠端程式碼執行零時差，延續本站自9/16報告以來的邊界元件Tier-0系列，但這次是系列首見『修補程式完全不存在』的狀態；Google Mandiant同時揭露ShinyHunters關聯集群UAT-6240，以URL編碼繞過WAF規則、重新武器化一個早已修補的Oracle PeopleSoft漏洞，展示的是WAF與後端應用程式解析邏輯不一致本身可以獨立構成一種攻擊面。",
+    "en": "This cycle covers 9/26-9/28. Three threads point to the same thing: the falsifiable indicators this outlet set are coming due one by one, and each answer points toward delay, not resolution. First, Iranian FM Araghchi's 'seven-day roadmap' logged in 9/26報告 — its conditions matching the Islamabad Framework 9/22報告 named line for line — has now received Trump's own answer. The Wall Street Journal, citing US officials, reports Trump is privately skeptical Tehran would meet his conditions and has told aides he expects to resume bombing Iran after the 11/3 midterm elections; at the White House, Trump told reporters Iran is eager to deal 'because they are losing so badly.' A White House official simultaneously told CNN the two sides are having 'positive and constructive discussions through intermediaries' — a mismatched signal. Araghchi said on 9/27 that Tehran has seen only Trump's 'initial reaction,' not yet a formal position relayed through mediators, and claimed US Ambassador Waltz 'has not even read' the proposal. The test 9/22報告 and 9/26報告 set — 'no middle ground to blur it with' — now has an answer: not a return to the memorandum, but a rejection, and one tied to a specific point on the political calendar (the midterms) rather than to whether Iran's conditions were met. Second, and most in need of correction against 9/26報告's own record: in the same week that report logged Saudi September exports hitting a wartime high via Gulf-of-Oman escorted transfers, Yanbu itself — along with Riyadh, Jazan and Taif — came under sustained Houthi missile and drone attack starting 9/17, with six ballistic missiles aimed at Taif and Yanbu intercepted in a single day on 9/24. In the same window, three merchant vessels were hit — the ADNOC-linked LPG carrier Al Maryah (9/20, drone strike), the tanker LR Stephanie (9/21, struck by an unidentified projectile, two injured), and the bulk carrier Cape Dao (9/23, struck off Musandam in the Gulf of Oman, killing an Indian crew member, attacker unclaimed) — in exactly the waters around Sohar that 9/26報告 described as the escort-transfer corridor. Strait of Hormuz daily transits briefly collapsed to just 2 on 9/22 (against a roughly 125-vessel pre-war baseline), recovering to about 13 by 9/26. French President Macron announced on 9/24 that France would send troops, radar and air-defense systems to help defend Yanbu. This validates the counterpoint 9/26報告 wrote against itself — that the escort corridor's fragility could exceed Yanbu's port bottleneck — rather than overturning its core call; but it also means the 'Gulf of Oman bypass' being treated as a solution to Hormuz risk is itself being rewritten by the same war. Third, the Mecca Joint Defence Agreement signed 8/7 by Saudi Arabia, Turkey and Pakistan — widely compared to NATO's Article 5 — faced its first real stress test under this offensive, and Pakistan's foreign ministry spokesperson stated plainly that 'there is no discussion of this kind,' committing to no direct military role; Turkey has shown no visible mobilization either. Fourth, on the $14 billion arms package this outlet's Taiwan-based readers track: 48 hours after the 9/24 summit, Trump told reporters only that 'Xi understands my position,' with no formal decision announced; a senior Taiwanese diplomat said the same day that arming Taiwan 'is in the US national interest.' The first checkpoint of the 30-day window 9/22報告 and 9/24報告 set (running to roughly 10/24) shows no movement yet. On cyber, Citrix's NetScaler ADC/Gateway was disclosed with two unauthenticated, CVSS-9.5 remote-code-execution zero-days with no vendor patch available — the first case in the Tier-0 perimeter-component series this outlet has tracked since 9/16報告 where no patch exists at all — while Google Mandiant separately disclosed the ShinyHunters-linked cluster UNC6240 using URL-encoding to bypass WAF rules and re-weaponize an already-patched Oracle PeopleSoft flaw, showing that a mismatch between a WAF's and a backend application's parsing logic can itself constitute an independent attack surface."
+  },
+  "sections": [
+    {
+      "id": "nexus",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "likely",
+          "title": {
+            "zh": "川普當面駁回伊朗『七天路線圖』、WSJ稱他已告訴幕僚預期期中選舉後恢復轟炸——9/22報告與9/26報告設下的伊斯蘭馬巴德二元指標，這次得到的答案是拒絕，而拒絕的理由綁在11/3這個政治日曆上",
+            "en": "Trump Personally Rejects Iran's 'Seven-Day Roadmap,' With WSJ Reporting He's Told Aides He Expects to Resume Bombing After the Midterms — the Islamabad-MOU Binary Test 9/22報告 and 9/26報告 Set Comes Back 'No,' Tied to the 11/3 Political Calendar"
+          },
+          "summary": {
+            "zh": "伊朗外交部長Araghchi在紐約UNGA場邊提出、9/26報告記錄的『七天路線圖』——條件是美方在四到五天內解除海軍封鎖、放行原油出口許可、解凍凍結資產，換取伊朗在第六天重開霍爾木茲海峽、第七天啟動與美方的正式談判——已收到美方的實質回應。據《華爾街日報》引述美方官員報導，川普私下對德黑蘭是否真的會履行條件抱持懷疑，並已告訴幕僚，他預期在11/3期中選舉後恢復對伊朗的轟炸行動；川普本人9/25在白宮對記者公開表示，伊朗急著現在就談，是『因為他們輸得太慘』。與此同時，一名白宮官員對CNN表示，雙方『正透過中間人進行積極且具建設性的討論』——與川普本人的公開駁回明顯不一致。Araghchi 9/27進一步表示，德黑蘭目前僅見到川普的『初步反應』，尚未透過斡旋管道收到美方的正式立場，並稱美國國務院一位資深官員（報導寫作Waltz）『根本沒讀過』這份提案。",
+            "en": "Iranian FM Araghchi's 'seven-day roadmap,' floated on the UNGA sidelines in New York and logged in 9/26報告 — under which Washington would lift its naval blockade, permit crude export licenses and unfreeze assets within four to five days, in exchange for Iran reopening the Strait of Hormuz on day six and starting formal talks with the US on day seven — has now drawn a substantive US response. The Wall Street Journal, citing US officials, reports Trump is privately skeptical Tehran would actually meet his conditions and has told aides he expects to resume bombing Iran after the 11/3 midterm elections; Trump himself told reporters at the White House on 9/25 that Iran is eager to deal right now 'because they are losing so badly.' Separately, a White House official told CNN the two sides are having 'positive and constructive discussions through intermediaries' — visibly inconsistent with Trump's own public rejection. Araghchi said further on 9/27 that Tehran has so far seen only Trump's 'initial reaction,' with no formal US position yet relayed through mediators, and claimed a senior US official (reporting names Ambassador Waltz) 'has not even read' the proposal."
+          },
+          "implication": {
+            "zh": "這是一次乾淨的回頭驗證。9/22報告當時的判斷是：德黑蘭把『真正重開』綁在一份川普自己7月已宣布『結束』的伊斯蘭馬巴德備忘錄上，所以任何談判管道，除非明確出現『美方重返該備忘錄承諾』的字樣，都不該被算作『海峽正在重開』的進度；9/26報告則進一步指出，Araghchi的七天路線圖幾乎逐條坐實了這個判斷——他親口承認條件『不是新要價』。這次的答案徹底補齊了這個二元指標：川普沒有重返，是公開駁回，而且駁回的理由本身值得單獨記錄——不是『條件不可接受』這種立場性語言，而是一個綁定在11/3期中選舉這個具體政治日曆上的時間表。這對你判斷美方對外軍事決策的驅動邏輯，提供一個可操作的新框架：至少在這個案例裡，是否恢復軍事行動的時間點，不完全由對手是否履約決定，而是由國內政治週期決定——選舉前保持模糊姿態（讓白宮官員可以對CNN說『積極討論』），選舉後才兌現既定立場。對你追蹤這場戰爭的降溫窗口，接下來真正該盯的不是任何一方的公開表態，而是11/3之後兩到三週內，是否真的出現轟炸行動重啟的跡象——這比任何『積極討論』的措辭都更難造假。",
+            "en": "This is a clean retrospective check. 9/22報告's call was that Tehran ties genuine reopening to the Islamabad Memorandum Trump himself declared 'over' in July, so no negotiating channel should count as reopening progress absent explicit language about Washington returning to that memorandum's commitments; 9/26報告 then noted Araghchi's seven-day roadmap confirmed that call almost line for line, since he stated outright the terms were 'nothing new.' This development completes the binary test: Trump did not return to the memorandum — he publicly rejected the roadmap — and the stated reason is itself worth logging separately: not a substantive objection to the terms, but a timeline tied to a specific point on the domestic political calendar, the 11/3 midterms. That offers an actionable framework for reading US military decision-making going forward: at least in this case, the timing of renewed military action isn't purely a function of whether the adversary complies, it's a function of the domestic election cycle — staying deliberately ambiguous before the vote (letting a White House official tell CNN talks are 'positive') and only acting on the pre-set position after it. For tracking any real cooling window in this war, what matters next isn't either side's public statement, it's whether a renewed bombing campaign actually materializes in the two to three weeks after 11/3 — a harder signal to fake than any 'constructive talks' language."
+          },
+          "counterpoint": {
+            "zh": "WSJ『恢復轟炸行動』與『告訴幕僚』這部分的消息來源是匿名美方官員，屬於單一媒體轉述的二手陳述，而川普本人在白宮的公開發言與白宮官員對CNN的說法本身就已經互相矛盾——這代表美方對外釋放的整體訊號，本來就存在刻意的模糊性（對內強硬、對外留一手），不宜把WSJ這則報導直接當成美方最終、唯一的既定政策；11/3之前，情勢仍有可能因為斡旋方（卡達、阿曼）的介入或伊朗做出額外讓步而改變。",
+            "en": "The 'resume bombing' and 'told aides' portions of the WSJ report are sourced to anonymous US officials — a single outlet's secondhand account — and Trump's own public remarks at the White House already sit in tension with the White House official's comment to CNN, suggesting the overall US signal is deliberately ambiguous by design (tough domestically, non-committal externally). This shouldn't be read as Washington's final, singular settled policy. Before 11/3, the situation could still shift if mediators (Qatar, Oman) intervene or Iran offers additional concessions."
+          },
+          "source": "The Wall Street Journal（經Haaretz／The Hill轉述，匿名美方官員）；川普白宮公開發言，經多方媒體轉述；白宮官員聲明，經CNN轉述；伊朗外長Araghchi 9/27聲明，經The National轉述",
+          "url": "https://www.aljazeera.com/news/2026/9/26/trump-rejects-irans-seven-day-roadmap-to-reopen-strait-of-hormuz",
+          "terms": ["Islamabad MOU", "UNGA"]
+        }
+      ]
+    },
+    {
+      "id": "military",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "9/26報告的反方假設這次被驗證：胡塞飛彈打進利雅德與吉贊、Yanbu本身持續遇襲，三艘商船在阿曼灣護航航道周邊接連遇襲、一人身亡——法國宣布派兵防衛Yanbu，霍爾木茲單日通過船隻一度跌到2艘",
+            "en": "9/26報告's Own Counterpoint Gets Validated: Houthi Missiles Hit Riyadh and Jazan While Yanbu Itself Stays Under Fire, Three Merchant Vessels Are Struck Around the Gulf of Oman Escort Corridor With One Death — France Announces Troops for Yanbu as Hormuz Transits Briefly Collapse to Two a Day"
+          },
+          "summary": {
+            "zh": "自9/17起，沙烏地阿拉伯持續遭遇胡塞武裝升級的飛彈與無人機攻勢，範圍涵蓋Taif、利雅德、Baish、Farasan與吉贊等多座城市，以及9/26報告記錄的出口終端Yanbu本身。9/24一天內，沙烏地聯軍宣稱攔截六枚瞄準Taif與Yanbu的彈道飛彈；胡塞發言人Yahya Saree同日宣稱對利雅德『一處敏感目標』、吉贊軍事據點（含Al-Tuwal與Al-Daghareer的指揮中心、彈藥庫與發射陣地）及Yanbu的Aramco設施發動飛彈與無人機攻擊，聲稱造成『數百人傷亡』並引爆多座彈藥庫，該說法未經獨立證實。與此同時，三艘商船在鄰近水域接連遇襲：ADNOC旗下LPG船Al Maryah 9/20在海峽外遭無人機擊中，主機仍可運作，19名船員均安抵Khor Fakkan；原油輪LR Stephanie 9/21遭不明拋射物擊中，兩名船員輕傷；散裝船Cape Dao 9/23在阿曼灣Musandam外海遇襲，引擎室起火，造成一名印度籍船員Suraj Yadav身亡，阿曼皇家海軍撤離其餘27名船員，攻擊者身分不明。霍爾木茲海峽單日通過船隻9/22一度跌至僅2艘（戰前基準約125艘），9/26回升至約13艘。法國總統Macron 9/24宣布，已與沙烏地達成協議，將派遣士兵、雷達與防空系統協防Yanbu，未公布具體人數、裝備型號或到位時間表。",
+            "en": "Since 9/17, Saudi Arabia has faced an escalating Houthi missile and drone campaign spanning Taif, Riyadh, Baish, Farasan and Jazan, plus Yanbu — the export terminal 9/26報告 logged. On 9/24 alone, the Saudi-led coalition said it intercepted six ballistic missiles aimed at Taif and Yanbu; Houthi spokesman Yahya Saree claimed the same day to have struck 'a sensitive target' in Riyadh, military sites in Jazan (including command centers, ammunition depots and launch positions at Al-Tuwal and Al-Daghareer), and Aramco facilities at Yanbu, claiming 'hundreds of casualties' and igniting several depots — unverified by any independent source. In the same window, three merchant vessels were struck in nearby waters: the ADNOC-linked LPG carrier Al Maryah was hit by a drone outside the strait on 9/20, its main engine still operable, all 19 crew safely reaching Khor Fakkan; the crude tanker LR Stephanie was struck by an unidentified projectile on 9/21, lightly injuring two crew; and the bulk carrier Cape Dao was hit off Musandam in the Gulf of Oman on 9/23, catching fire in its engine room and killing Indian crew member Suraj Yadav, with Oman's Royal Navy evacuating the remaining 27 crew — the attacker unclaimed. Strait of Hormuz daily transits briefly fell to just 2 on 9/22 (against a roughly 125-vessel pre-war baseline), recovering to about 13 by 9/26. French President Macron announced on 9/24 that France, by agreement with Saudi Arabia, would send troops, radar and air-defense systems to help defend Yanbu, giving no troop numbers, equipment types, or arrival timeline."
+          },
+          "implication": {
+            "zh": "9/26報告論證沙國9月出口衝上開戰以來新高，靠的是美國海軍護航下、把原油送到阿曼灣Sohar外海做船對船轉載，同時在該報告自己寫下的反方觀點裡提醒：『這條路徑的脆弱性可能比Yanbu的實體港埠瓶頸更高，一旦美軍護航資源被其他戰場分走，或伊朗選擇性升級針對護航船團本身的攻擊』。這次的發展，幾乎是在一週內把這個反方假設坐實：Cape Dao的遇襲地點就在Musandam外海，正是Sohar轉運航道的必經水域；同一時間，Yanbu本身——那條被9/26報告當成『備援已經奏效』證據的終端——持續遭到飛彈與無人機直接攻擊，需要法國出兵協防才能維持運作。這代表讀者不該再把『阿曼灣繞道』與『霍爾木茲海峽』簡化成安全與危險的二元對立：兩者現在都是這場戰爭的現役戰場，阿曼灣航道的相對安全，完全建立在持續、且明顯正在吃緊的軍事護航資源之上（法國介入本身就是吃緊的證據），而不是地理位置本身帶來的保護。對你評估供應鏈韌性，可操作的教訓是：任何被貼上『備援』標籤的路徑，其安全性都應該被理解為一個隨軍力部署變動的變數，而非一次性建成就能長期倚賴的固定資產——這與9/21週報談泵站硬化成本的邏輯完全一致，只是這次套用在護航資源、而非實體基礎設施上。",
+            "en": "9/26報告 argued Saudi September exports hit a wartime high thanks to US Navy-escorted ship-to-ship transfers off Sohar in the Gulf of Oman, while writing in its own counterpoint that 'this route's fragility could prove higher than Yanbu's physical port bottleneck if US naval-escort resources get pulled toward other theaters, or Iran selectively escalates against the escort convoys themselves.' This development validates that counterpoint within about a week: the Cape Dao was struck off Musandam, precisely the waters the Sohar transfer corridor must pass through; at the same time, Yanbu itself — the terminal 9/26報告 treated as evidence the bypass was working — remains under direct missile and drone attack serious enough to require French troops to help keep it running. Readers should stop treating 'the Gulf of Oman bypass' and 'the Strait of Hormuz' as a clean safe-versus-dangerous binary: both are now live fronts in the same war, and the Gulf of Oman route's relative safety rests entirely on continuous, visibly strained military escort resources (France's intervention is itself evidence of that strain), not on geography providing inherent protection. The actionable lesson for assessing supply-chain resilience: any route labeled a 'bypass' should be treated as a variable that moves with military deployment, not a fixed asset that, once built, can be relied upon indefinitely — the same logic 9/21週報 applied to pipeline-hardening costs, now applying to escort resources instead of physical infrastructure."
+          },
+          "counterpoint": {
+            "zh": "把Cape Dao與LR Stephanie的遇襲直接算進『針對護航航道的蓄意升級』，可能高估了攻擊者的意圖精準度——這兩起攻擊均無人宣稱，也可能只是霍爾木茲海峽本身長期高密度軍事活動下的流彈或誤擊，與Yanbu、利雅德、吉贊等胡塞明確宣稱的攻擊性質不同，不宜混為一談；另外，霍爾木茲通過船隻從2艘回升到13艘，本身也說明局勢並非單向惡化，法國的軍事承諾若確實到位，也可能在數週內顯著降低Yanbu周邊的實際風險。",
+            "en": "Treating the Cape Dao and LR Stephanie strikes as deliberate escalation targeting the escort corridor specifically may overstate the attacker's precision of intent — both strikes went unclaimed and could equally be stray fire or misidentification amid generally dense military activity in the strait, a different category from the Houthis' explicitly claimed strikes on Yanbu, Riyadh and Jazan, and the two shouldn't be conflated. Separately, Hormuz transits recovering from 2 to 13 vessels itself shows the situation isn't moving in only one direction, and if France's military commitment materializes as promised, it could meaningfully lower actual risk around Yanbu within weeks."
+          },
+          "source": "Al Jazeera 9/24（六枚彈道飛彈遭攔截）；The Business Standard／Al-Monitor（胡塞宣稱攻擊利雅德、吉贊、Yanbu）；ProtoThema／Al Arabiya（Al Maryah、LR Stephanie遇襲細節）；Wikipedia「List of ships attacked during the 2026 Iran war」彙整資料，經多方海事新聞轉述（Cape Dao遇襲、船員身亡）；Euronews／MiGFlug／Arab News（法國Macron 9/24派兵聲明）",
+          "url": "https://www.euronews.com/2026/09/25/saudi-arabia-reports-fresh-houthi-attacks-as-france-offers-military-support-to-protect-yan",
+          "terms": ["Houthi", "AIS", "Sohar"]
+        }
+      ]
+    },
+    {
+      "id": "geo",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "簽署僅六週的『麥加聯合防禦協定』首度受測：巴基斯坦外交部明確表態『不存在這種討論』，被比擬為北約第五條的三方公約，第一次真正的壓力測試答案是不承諾直接軍援",
+            "en": "The Six-Week-Old Mecca Joint Defence Agreement Faces Its First Test: Pakistan's Foreign Ministry Says Plainly 'There Is No Discussion of This Kind' — the NATO-Article-5-Style Pact's First Real Stress Test Answers With No Commitment to Direct Military Aid"
+          },
+          "summary": {
+            "zh": "沙烏地阿拉伯、土耳其與巴基斯坦於2026/8/7在麥加簽署三方安全協定，明文規定對任一締約國的武裝攻擊視同對三國全體的攻擊，被多方媒體直接比擬為北約憲章第五條。隨著胡塞武裝自9/8起、並在9/17後進一步升級對沙烏地本土多座城市的飛彈與無人機攻勢，這份簽署僅六週的協定首度面臨實質壓力測試。但巴基斯坦外交部發言人已明確表態，直接對胡塞採取軍事行動『不存在這種討論』；土耳其同樣未見具體軍事動員跡象。多家中東事務媒體（Middle East Eye、American Thinker）將此解讀為協定文字承諾與實際操作意願之間出現落差。",
+            "en": "Saudi Arabia, Turkey and Pakistan signed a trilateral security pact in Mecca on 8/7/2026, declaring an armed attack on any one signatory an attack on all three — widely compared by multiple outlets to NATO's Article 5. As the Houthi movement escalated its missile and drone campaign against multiple Saudi cities from 9/8 onward, intensifying further after 9/17, the six-week-old pact faced its first genuine stress test. But Pakistan's foreign ministry spokesperson has stated plainly that direct military action against the Houthis is 'not under discussion'; Turkey has likewise shown no visible military mobilization. Middle East-focused outlets (Middle East Eye, American Thinker) read this as exposing a gap between the pact's declaratory language and actual operational willingness."
+          },
+          "implication": {
+            "zh": "對你評估『被比擬為北約第五條』這一類新簽署多邊安全協定的實際約束力，這是一個乾淨的自然實驗：一份簽署僅六週的協定，在其簽署後第一次面臨可能觸發條款的實質攻擊時，其中一個締約國就已公開、明確地排除直接軍事介入的選項，而協定本身並未因此被宣告失效或引發任何一方公開究責。這代表『第五條式』的措辭本身不構成任何可靠的行為預測——真正決定一份多邊安全承諾份量的，不是簽署當下的文字，而是它第一次被實質測試時，各締約國實際做了什麼。對你判斷任何涉及台灣的未來多邊安全承諾（無論來自美日、美菲或其他區域安排），這提供一個可操作的參照系：與其評估條約文字本身有多接近『第五條』，不如去看該承諾是否已經歷過至少一次真正的壓力測試，以及測試結果是什麼。",
+            "en": "For assessing the real binding force of newly signed multilateral security pacts described as 'Article-5-style,' this is a clean natural experiment: a pact signed just six weeks earlier, facing its first substantive attack potentially triggering its clause, already saw one signatory publicly and explicitly rule out direct military involvement — with no consequence, no declared nullification, and no public accountability from the other parties. That means 'Article-5-style' language by itself predicts nothing reliable about behavior; what actually determines a multilateral security commitment's weight is not the text at signing, but what signatories actually do the first time it's genuinely tested. For assessing any future multilateral security commitment touching Taiwan (US-Japan, US-Philippines, or other regional arrangements), the actionable frame is: rather than judging how close the treaty text comes to 'Article 5,' look at whether the commitment has been through at least one real stress test, and what the outcome was."
+          },
+          "counterpoint": {
+            "zh": "巴基斯坦的迴避也可能反映的是這起個案的特殊考量——例如避免被捲入一場更廣泛的伊朗－沙烏地－美國衝突、或本身國內政治與財政限制——而非任何多邊安全承諾的普遍性質；若日後出現對沙烏地本土更具存亡威脅性質的攻擊（例如直接領土入侵，而非飛彈與無人機騷擾），協定文字承諾的軍事介入仍可能被觸發，不宜僅憑這一個案例就斷定該協定整體『形同虛設』。",
+            "en": "Pakistan's reluctance could also reflect considerations specific to this case — avoiding entanglement in a wider Iran-Saudi-US conflict, or its own domestic political and fiscal constraints — rather than a general property of all such multilateral security commitments. A more existential attack on Saudi territory (a direct territorial invasion, rather than missile and drone harassment) could still trigger the treaty's promised military response; this single case alone shouldn't be read as proof the pact is entirely hollow."
+          },
+          "source": "The Washington Times 9/24；Middle East Monitor 9/25；Middle East Eye；American Thinker；thediplomaticaffairs.com 9/25",
+          "url": "https://www.washingtontimes.com/news/2026/sep/24/houthi-attacks-riyadh-put-new-saudi-arabia-turkey-pakistan-mutual/",
+          "terms": ["Mecca Joint Defence Agreement"]
+        },
+        {
+          "severity": "medium",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "川習會落幕48小時，川普僅稱『習近平理解我的立場』、140億軍售案仍無正式決定——9/22報告與9/24報告設下的30天國會通知檢驗窗口，第一個查核點答案是仍無動作",
+            "en": "48 Hours After the Summit, Trump Says Only 'Xi Understands My Position' as the $14B Package Still Awaits a Decision — the First Checkpoint on the 30-Day Congress-Notification Test 9/22報告 and 9/24報告 Set Shows No Movement Yet"
+          },
+          "summary": {
+            "zh": "9/24川習會落幕後，川普9/26對記者表示，習近平『理解我對台灣的立場』，但未就140億美元對台軍售案做出任何公開、正式的決定；白宮同樣未發布任何書面聲明。台灣一位資深外交官同日公開對CNBC表示，美國提供台灣武器以保護其自由、並向世界提供半導體，符合美國自身的國家利益——這是繼9/19台灣國防部『盼美方按原計畫推進』喊話（9/20報告記錄）之後，台灣官方再一次選擇公開、主動喊話，而非被動等待。",
+            "en": "After the 9/24 Trump-Xi summit concluded, Trump told reporters on 9/26 that Xi 'understands my position' on Taiwan, but made no public, formal decision on the $14 billion arms package; the White House likewise issued no written statement. A senior Taiwanese diplomat told CNBC the same day that the US arming Taiwan to protect its freedom and provide the world with semiconductors serves America's own national interest — Taipei's second instance of proactively speaking up publicly rather than waiting passively, following the Ministry of National Defense's 9/19 'we expect the US to proceed as planned' statement logged in 9/20報告."
+          },
+          "implication": {
+            "zh": "這是9/22報告與9/24報告設下的30天檢驗窗口（約至10/24）第一個可查核的時間點，答案是：仍無正式動作。這與9/22報告當時引述Noah Intelligence的判斷一致——華府更可能把這筆軍售案無限期留在籌碼位置，而不是正式送交國會——目前為止沒有被推翻，也還沒有被證實，只是延續。值得記錄的是台灣這次公開喊話的用詞：直接訴諸『符合美國國家利益』，而非單純表達期待，這是9/20報告記錄的『公開喊話拉高對方片面改變立場的政治成本』同一套策略的延伸使用，但這次選在峰會後、而非峰會前使用，時機本身也是一種訊號——代表台北判斷峰會沒有談出對自己不利的結果，才敢在事後公開加碼喊話。",
+            "en": "This is the first checkable point on the 30-day window (running to roughly 10/24) 9/22報告 and 9/24報告 set, and the answer is: still no formal action. This is consistent with, though not yet proof of, Noah Intelligence's assessment logged in 9/22報告 that Washington is more likely to hold the package indefinitely as leverage than to formally notify Congress — neither confirmed nor refuted yet, simply continuing. Worth logging is the specific framing of Taiwan's public statement this time: appealing directly to 'US national interest' rather than merely expressing hope, an extension of the same tactic 9/20報告 logged — speaking up publicly to raise the political cost of a quiet reversal — but this time used after the summit rather than before, and the timing itself is a signal: Taipei judged the summit didn't produce an outcome unfavorable to it, or it wouldn't have doubled down publicly afterward."
+          },
+          "counterpoint": {
+            "zh": "『習近平理解我的立場』本身是一句刻意保留模糊空間的話，既可能代表習近平已默許軍售案遲早會推進，也可能代表習近平換取了川普私下放緩推進速度的承諾——這句話本身不足以支持任一種解讀，過早根據這句話推論美方政策方向，風險在於賦予一句模糊表態超出其實際資訊含量的重量。",
+            "en": "'Xi understands my position' is itself a deliberately ambiguous line — it could mean Xi has tacitly accepted the sale will eventually proceed, or that Xi extracted an unstated private assurance to slow it down. The phrase alone doesn't support either reading, and drawing conclusions about US policy direction from it this early risks giving a vague statement more informational weight than it actually carries."
+          },
+          "source": "CNBC 9/26（台灣資深外交官發言、川普9/26記者發言）",
+          "url": "https://www.cnbc.com/2026/09/26/arming-taiwan-is-an-important-us-interest-taipei-official-says.html",
+          "terms": ["PAC-3", "NASAMS"]
+        }
+      ]
+    },
+    {
+      "id": "cyber",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "系列首見『修補程式完全不存在』：Citrix NetScaler ADC／Gateway兩個CVSS 9.5未經驗證RCE零時差正遭在野利用，且揭露當下廠商連暫時修補都拿不出來",
+            "en": "First in the Series Where No Patch Exists at All: Two CVSS-9.5 Unauthenticated RCE Zero-Days in Citrix NetScaler ADC/Gateway Are Under Active Exploitation, With No Vendor Fix Available at Disclosure"
+          },
+          "summary": {
+            "zh": "資安廠商watchTowr 9/26揭露，Citrix NetScaler ADC與NetScaler Gateway設備存在兩個未經身分驗證、正遭在野利用的遠端程式碼執行零時差，揭露當下均無官方修補程式可用：CVE-2026-88771（CVSS v4評分9.5）是輸入驗證不當缺陷，可讓未經身分驗證的攻擊者在所有NetScaler ADC／Gateway部署上執行任意指令；CVE-2026-88772（CVSS v4評分9.5）則是記憶體溢位缺陷，可導致遠端程式碼執行或阻斷服務，影響已啟用DTLS的設備。",
+            "en": "Security firm watchTowr disclosed on 9/26 two unauthenticated remote-code-execution zero-days in Citrix NetScaler ADC and NetScaler Gateway appliances, both under active exploitation with no vendor patch available at the time of disclosure: CVE-2026-88771 (CVSS v4 score 9.5), an improper input-validation flaw letting an unauthenticated attacker execute arbitrary commands across all NetScaler ADC/Gateway deployments; and CVE-2026-88772 (CVSS v4 score 9.5), a memory-overflow flaw that can lead to remote code execution or denial-of-service on appliances with DTLS enabled."
+          },
+          "implication": {
+            "zh": "把這條放進本站自9/16報告以來持續追蹤的『邊界元件即Tier-0資產』系列裡看，NetScaler ADC／Gateway與F5 BIG-IP、Cisco ISE屬於同一功能類別——一個終止未經信任流量、把外部使用者導入內部網路的邊界元件，機制上沒有新意。但這次值得單獨記錄的是狀態本身：系列裡先前的案例，落點多半是『修補程式已存在但尚未廣泛部署』（Check Point Spark，9/24報告）或『廠商初次分類過輕、事後才升級』（SharePoint，9/26報告）；這次揭露當下連修補程式都不存在，是系列裡第一次出現『真正意義上的零時差、且無任何官方緩解措施可用』的狀態。對做威脅獵捕的人，這代表短期內防守重點必須從『修補節奏』整個轉移到『行為異常偵測』——因為在修補程式發布前，唯一能做的是監控NetScaler設備的非預期行為模式，而不是等待CVE編號進入KEV目錄再排修補優先序。",
+            "en": "Set against the 'perimeter component as Tier-0 asset' thread this outlet has tracked since 9/16報告, NetScaler ADC/Gateway belongs to the same functional category as F5 BIG-IP or Cisco ISE — a perimeter component terminating untrusted traffic and admitting external users into the internal network — mechanistically nothing new. What's worth logging separately is the status itself: earlier cases in the series mostly landed as 'a patch exists but isn't widely deployed yet' (Check Point Spark, 9/24報告) or 'the vendor's initial classification was too lenient and got upgraded later' (SharePoint, 9/26報告). This disclosure is the series' first case of a genuine zero-day with no official mitigation available at all at the time it became public. For threat hunting, this means the near-term defensive priority has to shift entirely from patch cadence to behavioral anomaly detection — before a patch ships, the only lever available is monitoring NetScaler appliances for unexpected behavior patterns, not waiting for a CVE to land in KEV before prioritizing remediation."
+          },
+          "counterpoint": {
+            "zh": "watchTowr是一家以揭露戲劇性漏洞為商業模式的攻擊性資安廠商，其『正遭在野利用』的說法目前仍是單一廠商的技術揭露，尚未見CISA或Citrix官方公告獨立證實在野利用的規模與範圍；在有第二方（如CISA KEV或Citrix自身資安公告）交叉確認之前，這則揭露的嚴重性描述應被視為廠商自身研判，而非已經過官方查證的事實。",
+            "en": "watchTowr is an offensive-security vendor whose business model rewards publicizing dramatic findings, and its 'actively exploited in the wild' claim currently rests on a single vendor's technical disclosure, with no independent corroboration yet from CISA or an official Citrix advisory on the scale and scope of real-world exploitation. Until a second party (CISA KEV listing, or Citrix's own security bulletin) cross-confirms it, the severity characterization here should be treated as the vendor's own assessment rather than officially verified fact."
+          },
+          "source": "watchTowr技術揭露，經The Hacker News轉述",
+          "url": "https://thehackernews.com/2026/09/warning-two-unpatched-citrix-netscaler.html",
+          "terms": ["CVE", "CVSS", "RCE", "NetScaler"]
+        },
+        {
+          "severity": "medium",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "打敗的不是修補程式，是WAF的解析邏輯：ShinyHunters關聯集群UNC6240用URL編碼繞過過濾規則，重新武器化一個早已修補的Oracle PeopleSoft漏洞",
+            "en": "What Got Defeated Wasn't the Patch, It Was the WAF's Parsing Logic: ShinyHunters-Linked Cluster UNC6240 Uses URL-Encoding to Bypass Filter Rules and Re-Weaponize an Already-Patched Oracle PeopleSoft Flaw"
+          },
+          "summary": {
+            "zh": "Google Mandiant與GTIG揭露，與ShinyHunters關聯的集群UNC6240近期重新發動針對Oracle PeopleSoft的大規模利用行動，武器化的是CVE-2026-35273（CVSS 9.8）——一個2026年稍早即已被當作零時差利用、且已修補的未經身分驗證遠端程式碼執行漏洞。這次的新手法是使用URL編碼過的酬載變體，專門用來繞過WAF的規則比對：許多WAF無法辨識經編碼處理的酬載屬於惡意請求，而PeopleSoft本身的請求解析器仍會正常解碼並處理該酬載，讓兩層防護之間出現落差。攻擊目標涵蓋高等教育、科技業、醫療與政府部門。",
+            "en": "Google's Mandiant and GTIG disclosed that ShinyHunters-linked cluster UNC6240 has resumed mass exploitation against Oracle PeopleSoft, weaponizing CVE-2026-35273 (CVSS 9.8) — an unauthenticated remote-code-execution flaw first exploited as a zero-day earlier in 2026 and since patched. The new technique uses a URL-encoded payload variant specifically to bypass WAF rule-matching: many WAFs fail to recognize the encoded payload as malicious, while PeopleSoft's own request parser still decodes and processes it normally, opening a gap between the two protective layers. Targets span higher education, technology, healthcare and government sectors."
+          },
+          "implication": {
+            "zh": "這是Tier-0系列裡一個機制上獨立的新類別，值得單獨記下：這起案例裡，底層漏洞早已修補，架在應用程式前面的WAF，本身正是為了防禦這一類已知漏洞而部署的補償性控制措施——但攻擊之所以成功，不是打敗了修補程式，也不是打敗了WAF的規則本身，而是利用WAF與後端應用程式，對『同一段位元組字串該如何解讀』這件事各自持有不同答案：WAF判斷酬載無害而放行，PeopleSoft判斷酬載有效而執行。對做provenance graph建模的人，這是一個值得獨立標記的失效類別，不同於『未修補』也不同於應用層本身的輸入驗證失效——是『兩層防護對同一輸入的解析邏輯不一致』本身構成攻擊面。可操作的教訓是：任何仰賴WAF作為某個已知CVE主要緩解手段的防護架構，都需要重新稽核WAF的請求解碼邏輯是否與後端應用程式一致——修補應用程式本身是必要條件，但這起案例證明它不是充分條件，只要前端WAF的解碼方式與後端不同步，攻擊者依然找得到落地的縫隙。",
+            "en": "This is a mechanistically distinct new category within the Tier-0 series, worth flagging on its own: here, the underlying vulnerability was already patched, and the WAF sitting in front of the application was itself deployed as a compensating control specifically for this class of known flaw — yet the attack succeeded not by defeating the patch, nor by defeating the WAF's rules outright, but by exploiting the fact that the WAF and the backend application hold different answers to the same question — how should this exact byte string be interpreted. The WAF reads the payload as benign and passes it through; PeopleSoft reads it as valid and executes it. For provenance-graph modeling, this is worth flagging as its own failure category, distinct from 'unpatched' and from an application-layer input-validation failure: the attack surface here is the disagreement itself between two protective layers over how to parse identical input. The actionable lesson: any defensive architecture relying on a WAF as the primary mitigation for a known CVE needs to re-audit whether the WAF's request-decoding logic matches the backend's — patching the application is necessary, but this case proves it isn't sufficient, since as long as the front-end WAF decodes differently from the backend, an attacker can still find the gap to land in."
+          },
+          "counterpoint": {
+            "zh": "用URL編碼繞過WAF規則比對，本身是一種存在數十年的老舊規避手法，並非新發現的攻擊類別，把它形容為Tier-0系列機制分類上的新增項目，可能高估了其技術新穎性；這起案例真正值得記錄的，或許只是這個特定WAF規則落差存在的時間夠久，讓一個財務動機明確的犯罪集團找到並規模化利用——本質上是防護部署與規則維護上的疏失，而非一種全新的攻擊手法。",
+            "en": "Using URL-encoding to bypass WAF pattern matching is itself a decades-old evasion technique, not a newly discovered attack class, and describing it as a novel mechanism addition to the Tier-0 series' taxonomy risks overstating its technical novelty. What may genuinely be worth logging here is simply that this specific WAF rule gap persisted long enough for a financially motivated crew to find and industrialize it at scale — fundamentally a deployment and rule-maintenance lapse rather than a genuinely new attack method."
+          },
+          "source": "Google Mandiant／GTIG官方研究報告",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit",
+          "terms": ["CVE", "CVSS", "WAF", "ShinyHunters", "UNC"]
+        }
+      ]
+    },
+    {
+      "id": "tech",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "Lockheed Martin啟用『量子創新中心』，主打導航與感測——正是9/7週報GNSS抗性模型與9/24報告太空控制武器承認之後，第一個具體浮現的硬體對策；同一週，五角大廈的後量子密碼過渡，是在對『先竊後解』定價",
+            "en": "Lockheed Martin Launches a 'Quantum Innovation Center' Focused on Navigation and Sensing — the First Concrete Hardware Response to Surface After 9/7週報's GNSS-Denial Model and the Space-Control-Weapons Admission in 9/24報告; the Same Week, the Pentagon's Post-Quantum Migration Is Pricing In 'Harvest Now, Decrypt Later'"
+          },
+          "summary": {
+            "zh": "Lockheed Martin 9/23啟用『量子創新中心』(QuIC)，整合公司內部量子研發、原型製作，聚焦導航、通訊與感測三個面向的國安應用，目標是縮短實驗室成果轉為可部署國防能力的時程；公司稱在量子導航與感測領域已累積十五年以上研發經驗。與此同時，美國國防部正推動一套過渡性的後量子密碼(PQC)方案，供既有服役系統在完整換裝前使用，同時規劃在2030年代初期前，將主要系統全面轉換為採用PQC的替代方案——驅動政策的核心考量是『先竊後解』：對手今日即可攔截並儲存以現行公開金鑰加密法保護的資料，待未來量子電腦運算能力成熟到足以破解該加密法時再行解密。",
+            "en": "Lockheed Martin launched its Quantum Innovation Center (QuIC) on 9/23, consolidating in-house quantum R&D and prototyping with a focus on navigation, communications and sensing applications for national security, aiming to shorten the path from lab results to deployable defense capability; the company says it has more than fifteen years of R&D experience in quantum navigation and sensing. Separately, the US Department of Defense is pushing an interim post-quantum cryptography (PQC) solution for existing fielded systems ahead of a full migration, planning to convert its major systems to PQC-based alternatives by the early 2030s — the policy driven chiefly by 'harvest now, decrypt later': an adversary can intercept and store data protected by today's public-key cryptography now, decrypting it later once quantum computing matures enough to break that encryption."
+          },
+          "implication": {
+            "zh": "把Lockheed這個中心放進本站自9/7週報就開始追蹤的GNSS抗性威脅模型、以及9/24報告記錄的美國太空軍首度公開承認部署『太空控制武器』這條線索裡看，量子導航與量子感測，正是那套威脅模型缺的那一塊具體技術對策：9/7週報談的是無人機在GNSS遭拒斷後必須倚賴視覺里程計等非GNSS導引手段，而量子慣性導航理論上能提供一種完全不依賴外部衛星訊號、因此原則上不受干擾或欺騙影響的替代定位手段——這次是本站第一次追蹤到具體對應這條威脅線的硬體研發動作，而不只是威脅本身的擴散。對做威脅獵捕與provenance graph建模的人，五角大廈的PQC過渡政策則指向另一個方向：任何今天被強加密保護、因此被歸類為『已控制、低衝擊』的外洩事件，其真正的機密性存續期間，需要以量子電腦成熟的時程來定價，而不是以今天的破解能力定價——對長效敏感資料（政府通訊、國防承包商智慧財產、加密金鑰本身），provenance graph應該額外標記一條『未來解密風險』的邊，與現有的即時衝擊評分分開處理，因為一起今天看似已被圍堵的外洩事件，可能在對手儲存的密文變得可讀的那一刻，回溯性地變成一次真正的洩密，而不需要任何新的入侵動作。",
+            "en": "Set against the GNSS-denial threat model this outlet has tracked since 9/7週報, and the US Space Force's first public admission of deploying 'space control weapons' logged in 9/24報告, quantum navigation and sensing are exactly the concrete technical countermeasure that threat model was missing: 9/7週報 discussed drones falling back on non-GNSS guidance like visual odometry after signal denial, and quantum inertial navigation in principle offers an alternative positioning method that depends on no external satellite signal at all, and so is in principle immune to jamming or spoofing — this is the first time this outlet has tracked a concrete hardware response mapped to that specific threat line, rather than just the threat's own diffusion. For threat hunting and provenance-graph modeling, the Pentagon's PQC migration policy points in a different direction: any exfiltration event protected today by strong encryption, and therefore classified as 'contained, low-impact,' has its real confidentiality lifespan priced against the timeline for quantum computing to mature, not against today's decryption capability. For long-lived sensitive data — government communications, defense-contractor IP, encryption keys themselves — a provenance graph should carry a separate 'future decryption risk' edge apart from its existing immediate-impact score, because an exfiltration event that looks contained today can become a genuine breach retroactively the moment an adversary's stored ciphertext becomes readable, with no new intrusion required."
+          },
+          "counterpoint": {
+            "zh": "Lockheed Martin QuIC本身是一次企業公關性質的中心啟用宣布，並未附帶任何具體、可查證的量子導航或感測產品交付時程，不宜將其解讀為量子抗性導航已經是一項近期可部署的成熟能力；同樣地，具備足以破解現行公開金鑰加密法運算能力的量子電腦，其實際問世時間仍高度不確定，多數可信的技術評估仍將其推遲到2030年代甚至更晚，把『先竊後解』當成當下急迫的營運風險，而非一項應提前佈局的長期避險，可能誤置了當下有限防禦資源的優先順序。",
+            "en": "Lockheed Martin's QuIC launch is itself a corporate-PR-style center announcement, with no concrete, verifiable delivery timeline attached for any quantum navigation or sensing product, and shouldn't be read as meaning quantum-resistant navigation is already a near-term deployable capability. Likewise, the actual arrival date for a quantum computer powerful enough to break current public-key cryptography remains genuinely uncertain, with most credible technical assessments still pushing it into the 2030s or later; treating 'harvest now, decrypt later' as an urgent present-day operational risk, rather than a long-horizon hedge to plan for in advance, risks misallocating today's limited defensive resources."
+          },
+          "source": "Lockheed Martin官方公告 9/23；經ExecutiveBiz／QuantumZeitgeist轉述；Defense One／Federal News Network（美國國防部後量子密碼過渡政策）",
+          "url": "https://www.lockheedmartin.com/en-us/news/features/2026/Quantum-Innovation-Center-Advances-Quantum-Capabilities-with-Speed-and-Scale.html",
+          "terms": ["GNSS", "PQC", "Harvest Now, Decrypt Later"]
+        }
+      ]
+    }
+  ]
+}

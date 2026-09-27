@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-26",
+  "updated": "2026-09-28",
   "reports": [
+    {
+      "file": "reports/2026-09-28-brief.json",
+      "kind": "brief",
+      "date": "2026-09-28",
+      "title": {
+        "zh": "川普親口駁回伊朗『七天路線圖』、WSJ稱他私下已在等期中選舉後恢復轟炸——9/22報告與9/26報告設下的伊斯蘭馬巴德二元指標這次給出乾淨答案；同一週，胡塞飛彈打進利雅德與吉贊、無人攻擊延燒進阿曼灣護航航道本身，法國宣布派兵防衛Yanbu、麥加防禦公約首度受測卻等不到巴基斯坦的直接軍援",
+        "en": "Trump Personally Rejects Iran's 'Seven-Day Roadmap,' With WSJ Reporting He Privately Expects to Resume Bombing After the Midterms — the Islamabad-MOU Binary Test 9/22報告 and 9/26報告 Set Gets a Clean Answer; the Same Week, Houthi Missiles Hit Riyadh and Jazan While Unclaimed Strikes Spread Into the Gulf of Oman Escort Corridor Itself, France Announces Troops to Defend Yanbu, and the Mecca Defense Pact's First Real Test Finds Pakistan Unwilling to Commit Direct Military Force"
+      }
+    },
     {
       "file": "reports/2026-09-26-brief.json",
       "kind": "brief",

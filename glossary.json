@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-26",
+  "updated": "2026-09-28",
   "terms": [
     {
       "term": "PSIRT",
@@ -2134,6 +2134,72 @@
       },
       "category": "geo",
       "first_seen": "2026-09-26"
+    },
+    {
+      "term": "Mecca Joint Defence Agreement",
+      "zh": "麥加聯合防禦協定",
+      "expansion": "Mecca Joint Defence Agreement (Saudi Arabia–Turkey–Pakistan)",
+      "def": {
+        "zh": "沙烏地阿拉伯、土耳其與巴基斯坦於2026/8/7在麥加簽署的三方安全協定，明文規定對任一締約國的武裝攻擊視同對三國全體的攻擊，被廣泛比擬為北約憲章第五條；2026年9月胡塞武裝升級對沙國本土的飛彈與無人機攻勢，是這份協定簽署以來首次面臨的實質壓力測試。",
+        "en": "A trilateral security pact signed by Saudi Arabia, Turkey and Pakistan in Mecca on 8/7/2026, declaring that an armed attack on any one signatory is to be treated as an attack on all three — widely compared to NATO's Article 5. The Houthi movement's escalating September 2026 missile and drone campaign against Saudi soil became the pact's first real-world stress test since signature."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-28"
+    },
+    {
+      "term": "NetScaler",
+      "zh": "Citrix NetScaler（應用程式交付控制器／遠端存取閘道）",
+      "expansion": "Citrix NetScaler ADC / Gateway",
+      "def": {
+        "zh": "Citrix旗下的應用程式交付控制器與遠端存取閘道產品線，常用於企業網路邊界終止VPN與應用程式流量；與F5 BIG-IP、Cisco ISE等同屬一旦在邊界遭突破、即等同直接跨過信任邊界的高權限元件。",
+        "en": "Citrix's application-delivery-controller and remote-access-gateway product line, commonly deployed at an enterprise's network edge to terminate VPN and application traffic; belongs to the same class as F5 BIG-IP or Cisco ISE — a privileged perimeter component whose compromise is a direct trust-boundary breach, not an ordinary application bug."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-28"
+    },
+    {
+      "term": "WAF",
+      "zh": "網頁應用防火牆",
+      "expansion": "Web Application Firewall",
+      "def": {
+        "zh": "部署在網頁應用程式前端、以規則或特徵比對過濾惡意請求的防護層；其判斷依據是自己對請求內容的解讀，一旦與後端應用程式實際解析請求的方式不一致，攻擊者就能構造出兩層各自合法解讀、卻整體構成攻擊的酬載，讓WAF形同虛設。",
+        "en": "A protective layer deployed in front of a web application that filters malicious requests by rule or pattern matching; its judgment rests on its own interpretation of a request's content, so whenever that interpretation diverges from how the backend application actually parses the same request, an attacker can craft a payload each layer reads as legitimate on its own terms — rendering the WAF's protection moot."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-28"
+    },
+    {
+      "term": "ShinyHunters",
+      "zh": "ShinyHunters（數據勒索駭客集團）",
+      "expansion": "ShinyHunters (data-extortion threat actor)",
+      "def": {
+        "zh": "一個財務動機導向的駭客集團，長期以大規模資料庫入侵、竊取後對外兜售或勒索受害組織聞名；2026年與Google Mandiant追蹤的UNC6240叢集活動相關聯，鎖定Oracle PeopleSoft等企業級系統重新武器化舊有漏洞。",
+        "en": "A financially motivated hacking group long known for large-scale database breaches, exfiltrating data to sell or extort victim organizations; in 2026 linked to activity Google Mandiant tracks as cluster UNC6240, targeting enterprise systems such as Oracle PeopleSoft by re-weaponizing previously patched vulnerabilities."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-28"
+    },
+    {
+      "term": "PQC",
+      "zh": "後量子密碼學",
+      "expansion": "Post-Quantum Cryptography",
+      "def": {
+        "zh": "設計用來抵禦具備充分運算能力之量子電腦破解的一類加密演算法；美國國防部目前規劃在2030年代初期前，將既有系統逐步轉換為採用PQC的替代方案，是應對「先竊後解」威脅的主要政策回應。",
+        "en": "A class of encryption algorithms designed to resist attack by a sufficiently powerful quantum computer; the US Department of Defense is currently planning to migrate existing systems to PQC-based alternatives by the early 2030s, its primary policy response to the harvest-now-decrypt-later threat."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-28"
+    },
+    {
+      "term": "Harvest Now, Decrypt Later",
+      "zh": "先竊後解",
+      "expansion": "Harvest Now, Decrypt Later",
+      "def": {
+        "zh": "指對手今日即攔截、儲存以現行加密演算法保護的資料，即使目前無法解密，也先行留存，待未來量子電腦運算能力成熟到足以破解現行公開金鑰加密法時再行解密的長期威脅模式；其含意是任何長效敏感資料的機密性，必須以量子電腦成熟時程定價，而非以目前的破解能力定價。",
+        "en": "A long-horizon threat pattern in which an adversary intercepts and stores data protected by today's encryption even without being able to decrypt it now, banking on a future quantum computer becoming powerful enough to break current public-key cryptography; its implication is that the confidentiality of any long-lived sensitive data must be priced against the timeline for quantum computing to mature, not against today's decryption capability."
+      },
+      "category": "tech",
+      "first_seen": "2026-09-28"
     }
   ]
 }
