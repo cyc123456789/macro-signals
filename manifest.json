@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-28",
+  "updated": "2026-09-30",
   "reports": [
+    {
+      "file": "reports/2026-09-30-brief.json",
+      "kind": "brief",
+      "date": "2026-09-30",
+      "title": {
+        "zh": "美俄在日內瓦密室聯手拔掉致命性自主武器的人類監督條款，9/8報告『三個否決票原地不動』的判斷要改判成『倒退式的真實推進』；川習會落幕96小時，川普用『你們要不要也買武器』回敬習近平對台軍售的抱怨——9/22報告『軍售是籌碼』再添一筆實例；伊朗外長9/29反過來說川普的『乾淨拒絕』其實仍留著後門，9/28報告的判斷要打上問號；資安端，Citrix『無修補程式』的紀錄一天內就被自家修補程式打臉，蘋果則悄悄修掉一個鎖定特定個人的CoreGraphics零時差",
+        "en": "US and Russia Jointly Gut Human-Oversight Clauses From the Draft UN Autonomous-Weapons Text in a Closed-Door Geneva Session, Forcing a Revision of 9/8報告's 'All Three Vetoes Frozen in Place' Into 'Real Movement, Just Backward'; 96 Hours After the Trump-Xi Summit, Trump Answers Xi's Complaint About Arming Taiwan With 'Want to Buy Some Weapons Too?' — Another Data Point for 9/22報告's 'It's Leverage, Not Policy' Read; Iran's FM Says on 9/29 That Trump's 'Clean Rejection' Logged in 9/28報告 Still Leaves a Back Door Open; on Cyber, Citrix's 'No Patch Exists' Record Gets Overtaken by Its Own Fix Within a Day, While Apple Quietly Patches a CoreGraphics Zero-Day Used Against Specific Individuals"
+      }
+    },
     {
       "file": "reports/2026-09-28-weekly.json",
       "kind": "weekly",

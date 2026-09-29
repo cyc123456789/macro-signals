@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-28",
+  "updated": "2026-09-30",
   "terms": [
     {
       "term": "PSIRT",
@@ -2365,6 +2365,50 @@
       },
       "category": "tech",
       "first_seen": "2026-09-28"
+    },
+    {
+      "term": "CISA",
+      "zh": "美國網路安全暨基礎設施安全局",
+      "expansion": "Cybersecurity and Infrastructure Security Agency",
+      "def": {
+        "zh": "美國國土安全部下轄機構，負責維護聯邦網路防禦、發布資安警示，並管理『已遭利用漏洞目錄』(KEV)；其警示措辭通常代表官方已掌握獨立於單一資安廠商之外的利用證據，因此比廠商自身的技術部落格更常被視為交叉驗證的官方指標。",
+        "en": "An agency within the US Department of Homeland Security responsible for federal network defense, issuing security advisories, and maintaining the Known Exploited Vulnerabilities (KEV) Catalog; its advisories typically reflect exploitation evidence gathered independently of any single vendor, making them a commonly used official cross-check beyond a vendor's own technical blog posts."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-30"
+    },
+    {
+      "term": "DTLS",
+      "zh": "資料包傳輸層安全協定",
+      "expansion": "Datagram Transport Layer Security",
+      "def": {
+        "zh": "一種為UDP等資料包(datagram)協定設計的加密與身分驗證協定，功能上等同於TLS在資料包環境下的版本，常見於VPN與即時通訊應用；許多VPN閘道器預設啟用DTLS以加速連線建立，但也因此讓其記憶體處理邏輯上的缺陷，成為攻擊面之一。",
+        "en": "An encryption and authentication protocol designed for datagram-based transports like UDP, functionally the datagram-world counterpart to TLS, commonly used in VPNs and real-time communications; many VPN gateways enable DTLS by default to speed up connection setup, which is also why flaws in its memory-handling logic can become part of the attack surface."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-30"
+    },
+    {
+      "term": "CoreGraphics",
+      "zh": "Core Graphics（蘋果核心圖形框架）",
+      "expansion": "Apple Core Graphics framework",
+      "def": {
+        "zh": "蘋果作業系統內建、負責處理二維圖形繪製與文件(如PDF、圖片)渲染的底層框架，幾乎所有需要顯示影像或解析檔案格式的App都會呼叫它；因為它處於解析外部輸入檔案的第一線，一旦其記憶體處理邏輯出現缺陷，往往只需讓裝置『開啟』一個惡意檔案即可觸發，不需使用者做出更多操作。",
+        "en": "The low-level framework built into Apple's operating systems for two-dimensional graphics rendering and document (PDF, image) parsing, called by nearly every app that displays images or parses a file format; because it sits on the front line of parsing untrusted external files, a flaw in its memory-handling logic often needs nothing more than a device 'opening' a malicious file to trigger, with no further user action required."
+      },
+      "category": "cyber",
+      "first_seen": "2026-09-30"
+    },
+    {
+      "term": "DSCA",
+      "zh": "美國國防安全合作局",
+      "expansion": "Defense Security Cooperation Agency",
+      "def": {
+        "zh": "美國國防部下轄、負責執行對外軍售(FMS)政策與作業的機構，任何達一定金額門檻的對外軍售案，均須由DSCA正式發函通知國會，國會在法定審查期內若未提出反對，軍售案才算完成程序意義上的正式啟動；DSCA是否已發出這份正式通知，是判斷一項軍售案究竟只是政治表態、還是已進入具拘束力行政程序的關鍵事實依據。",
+        "en": "The US Department of Defense agency that administers Foreign Military Sales (FMS) policy and operations; any arms sale above a set dollar threshold requires DSCA to formally notify Congress, and the sale only becomes procedurally live once that statutory review period passes without objection. Whether DSCA has issued that formal notification is the key factual test for whether a given arms package is still just political signaling or has actually entered a binding administrative process."
+      },
+      "category": "geo",
+      "first_seen": "2026-09-30"
     }
   ]
 }
