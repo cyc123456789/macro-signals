@@ -1,0 +1,305 @@
+{
+  "date": "2026-10-02",
+  "kind": "monthly",
+  "title": {
+    "zh": "九月全局：沒有一件事走到終點——全部被換成一個有日期的選擇權，而否決權這個月學會了當作者",
+    "en": "September in Full: Nothing Reached a Terminal State — Everything Became a Dated Option, and the Veto Learned to Author"
+  },
+  "focus": {
+    "zh": "九月三條主線是同一個動作的三種形式。第一，否決不再只是擋下來：美俄在 CCW 閉門會議裡聯手刪掉草案的「可預測性」與「人類須審查 AI 生成目標」條款，把 11/16-20 要被升格的那份文本預先改弱——擋下來還留著原稿，改寫則讓更弱的版本變成唯一的起點。第二，瓶頸從來不是被解決，只是搬家：霍爾木茲→Petroline→泵站→阿曼灣護航轉運→護航航道本身，HBM 從晶圓片數搬到 12 層堆疊良率，管制對象從晶片搬到人與名冊，入侵從外部入口搬到系統內既有元件。第三，期限變成貨幣：貿易休兵只延到 1/10、恢復轟炸綁在 11/3 期中選舉、140 億軍售永遠留在籌碼位置。9/2月報寫的是可歸責的那個人正在消失；九月要補的是，連「結案」這件事本身也消失了——而你讀到的每一則「已解決」，保存期限都比標題短。",
+    "en": "September's three threads are one move in three forms. First, the veto stopped merely blocking: at a closed CCW session Washington and Moscow jointly struck the draft's predictability requirement and the clause requiring a human to review AI-generated targets, pre-weakening the very text that 11/16-20 is asked to upgrade. Blocking leaves the original intact; authoring makes the weaker version the only starting point. Second, bottlenecks are never removed, only relocated: Hormuz to Petroline to the pump stations to escorted ship-to-ship transfer in the Gulf of Oman to the escort corridor itself; HBM from wafer counts to 12-high stacking yield; export control from chips to people and registries; intrusion from external entry points to components already installed. Third, deadlines became the currency: the trade truce extended only to 1/10, resumed bombing tied to the 11/3 midterms, the $14bn arms package parked permanently in bargaining-chip position. The 9/2 monthly argued the accountable actor was disappearing from every chain. September adds that closure itself has disappeared — every 'resolved' you read has a shelf life shorter than its headline."
+  },
+  "sections": [
+    {
+      "id": "nexus",
+      "items": [
+        {
+          "severity": "critical",
+          "confidence": "likely",
+          "title": {
+            "zh": "否決權這個月學會了當作者：美俄在閉門會議裡聯手改弱 LAWS 文本，而 9/8報告把它記成了僵局",
+            "en": "The Veto Learned to Author: Washington and Moscow Jointly Weakened the LAWS Text Behind Closed Doors — and We Logged It as Deadlock"
+          },
+          "summary": {
+            "zh": "《華盛頓郵報》9/26 的調查報導揭露，CCW 第二次 GGE 會議在 9/5 凌晨結束前的最後一場閉門會議裡，美國與俄羅斯代表聯手自致命性自主武器草案文本中刪去兩項條款——「可預測性」要求，以及「人類須先審查 AI 生成的打擊目標後才能攻擊」——並把適用範圍從一般國際法限縮為僅國際人道法（IHL）。本站 9/8報告當時依公開議程把這場會議記成「以色列、俄羅斯、美國三個否決票原地不動」的僵局，9/2月報也據此推斷 11/16-20 第七次審查會議「最可能再延一次討論性授權」。兩個判斷的事實基礎都錯了：僵局底下有兩個否決票在積極協作，方向是讓規範變弱，而不是不動。76 個已表態支持拘束性條約的國家在 11/16-20 要決定的，因此不是「要不要往前走」，而是「要不要把一份已經被改弱的文本升格成談判基礎」。",
+            "en": "A Washington Post investigation on 9/26 revealed that in the final closed session before the second CCW GGE meeting ended in the early hours of 9/5, US and Russian delegates jointly removed two clauses from the lethal-autonomous-weapons draft — the predictability requirement, and the requirement that a human review AI-generated strike targets before engagement — and narrowed applicability from international law generally to international humanitarian law alone. Working from the public agenda, our 9/8 brief logged that meeting as deadlock: Israel, Russia and the United States holding their three vetoes in place. The 9/2 monthly built on that, projecting that the Seventh Review Conference on 11/16-20 would most likely yield another discussion mandate. Both judgments rested on wrong facts. Beneath the deadlock, two of the vetoes were actively collaborating, and the direction was weaker rules, not no movement. What the 76 states already backing a binding instrument must decide on 11/16-20 is therefore not whether to advance, but whether to elevate an already-weakened text into the basis for negotiation."
+          },
+          "implication": {
+            "zh": "這替你對治理失靈的模型換掉了一個零件。常見模型是「少數國家擋住拘束性規則→什麼都沒發生→現狀延續」，風險是空白。九月顯示的是另一種：擋得住的人也可以改寫，而改寫出來的文本一旦成為談判基礎，它的正當性遠高於空白——一份寫著「符合 IHL 即可」的文件，會被拿去背書原本需要逐案辯護的行為。對你的 provenance 研究，這是同構而且更尖銳的問題：一套定義「什麼算證據」的標準，可能比沒有標準銷毀更多證據，因為沒有標準時你至少知道自己在猜。具體到 11/16-20，判別方法不是看有沒有拿到授權，是看授權綁在哪一版文本——帶著 9/5 刪改的版本拿到談判授權，對擁有自主武器的一方是淨利多，不是淨利空。這條在對談時最好用，因為幾乎所有人都還在用「大國擋住了規範」這句話描述 CCW，而那句話九月已經不準了。",
+            "en": "This swaps out a part in your model of governance failure. The common model runs: a few states block binding rules, nothing happens, the status quo persists — the risk being a vacuum. September shows a second mode. Those who can block can also author, and once an authored text becomes the basis for negotiation it carries far more legitimacy than a vacuum: a document saying 'IHL compliance suffices' will be cited to endorse conduct that previously had to be defended case by case. For provenance research this is the same problem, sharper: a standard defining what counts as evidence can destroy more evidence than no standard at all, because without one you at least know you are guessing. For 11/16-20 specifically, the test is not whether a mandate is obtained but which text it is bound to. A negotiating mandate carrying the 9/5 edits is net positive for states that already field autonomous weapons, not net negative. This is the most useful item for conversation, because nearly everyone still describes CCW with the sentence 'the great powers blocked the rules' — and as of September that sentence is wrong."
+          },
+          "source": "The Washington Post 9/26 調查報導（引述多名與會外交人員）；CCW 第七次審查會議議程見 UNODA 與 Reaching Critical Will",
+          "url": "https://www.washingtonpost.com/technology/2026/09/26/how-us-russia-weakened-global-effort-regulate-killer-ai/",
+          "terms": [
+            "LAWS",
+            "CCW",
+            "GGE",
+            "IHL",
+            "MHC",
+            "RevCon",
+            "DoDD 3000.09"
+          ]
+        },
+        {
+          "severity": "high",
+          "confidence": "likely",
+          "title": {
+            "zh": "瓶頸搬家，不會消失：同一個動作九月在五個互不相關的領域各演了一次",
+            "en": "Bottlenecks Relocate, They Do Not Disappear: The Same Move Played Out in Five Unrelated Domains"
+          },
+          "summary": {
+            "zh": "霍爾木茲是教科書級示範：海峽實質關閉→改走 Petroline 東西輸油管線→9/10-11 第 8 與第 9 號泵站遭無人機攻擊、Yanbu 關閉→改走美軍護航下的阿曼灣 Sohar 外海船對船轉運（沙國 9 月出口因此衝上約 600 萬桶/日、開戰七個月新高）→護航航道本身自 9/20 起連續遇襲（Al Maryah、LR Stephanie、Cape Dao，一名印度籍船員死亡），同時 VLCC 供給吃緊、單次作業拉長到近十天、日租金創 127 萬美元歷史新高。同一個動作另在四處重演：HBM4 的卡點被重新定義為 12 層堆疊良率與封裝資質而非晶圓片數（9/20報告修正 9/18報告）；出口管制的對象從晶片移到熟悉技術的人與申報名冊；微軟 9 月單月 974 個 CVE 的歷史紀錄裡，兩個已遭在野利用的零時差都是本已安裝在系統內的元件被當成提權跳板，入口根本不在邊界；而俄軍無人機這條線，9/2月報追的是繞過 EW 的終端自主模組，九月真正壓垮基輔防空的卻是渦輪噴射動力（約 1,500 架來襲中 800 架為 Geran-3/4/5），打的是攔截無人機的速度天花板——一條完全獨立的第二軸。",
+            "en": "Hormuz is the textbook case. The strait effectively closed, so flows moved to the Petroline east-west pipeline; pump stations 8 and 9 were hit by drones on 9/10-11 and Yanbu shut; flows moved again to escorted ship-to-ship transfer off Sohar in the Gulf of Oman, pushing Saudi September exports to roughly 6 mbd, a seven-month high; then the escort corridor itself came under sustained attack from 9/20 (Al Maryah, LR Stephanie, Cape Dao, with one Indian crew member killed), while VLCC supply tightened, single operations stretched toward ten days and day rates set a record $1.27m. The same move repeated in four other places. HBM4's constraint was redefined as 12-high stacking yield and packaging qualification rather than wafer count. Export control's object moved from chips to people and filings. In Microsoft's record 974-CVE September, both exploited zero-days were components already installed on the system used as privilege-escalation pivots — the entry point was not at the perimeter at all. And on Russian drones, where the 9/2 monthly tracked terminal-autonomy modules that bypass EW, what actually overwhelmed Kyiv's air defence in September was turbojet propulsion: roughly 800 of some 1,500 inbound were Geran-3/4/5, attacking the speed ceiling of interceptor drones — a wholly separate second axis."
+          },
+          "implication": {
+            "zh": "這條的價值在於它可以直接改寫你的獵捕指標。威脅獵捕的習慣做法是追「入口是否關閉」，九月的證據說關閉一個入口不會移除對手，只會把他搬到下一個你還沒佈遙測的位置——所以該追的量不是「已修補的 CVE 數」，而是「關閉之後對手出現在哪裡，以及我在那裡有沒有可觀測性」。把它變成一條可執行的規則：每關掉一條入口，同時回答三個問題——下一個最便宜的等價路徑是什麼、它的遙測落在哪個系統裡、保留多久。微軟那兩個零時差已經給了方向：既有元件的提權路徑，遙測不在邊界而在端點與目錄服務，而多數組織那兩處的保留期都比邊界短。投資面是同一個形狀：九月最賺的不是押「霍爾木茲會不會開」，是押瓶頸的下一站——VLCC 日租金創歷史新高，是在沙國出口創新高的同一週發生的，流量恢復與運力吃緊可以同時為真，而後者才是被定價的那一邊。把這條當成一個可重複使用的提問：這個「解決方案」把限制搬到哪裡去了，那裡有沒有人在守、有沒有人在報價。",
+            "en": "The value here is that it rewrites your hunting metrics directly. Threat hunting habitually tracks whether an entry point is closed. September's evidence says closing one does not remove the adversary, it relocates them to the next place you have not instrumented — so the quantity to track is not 'CVEs patched' but 'where did they go after it closed, and do I have observability there'. Make it an executable rule: for every entry point you close, answer three questions — what is the next cheapest equivalent path, which system holds its telemetry, and for how long. Microsoft's two zero-days already point the way: for privilege escalation through pre-installed components, the telemetry lives in endpoints and directory services, not at the perimeter, and in most organisations retention in those two places is shorter than at the perimeter. The investing shape is identical. September's trade was not betting on whether Hormuz reopens, it was betting on the bottleneck's next stop: VLCC day rates set an all-time record in the same week Saudi exports set a seven-month high. Volume recovery and capacity scarcity can both be true, and the second is the one being priced. Keep it as a reusable question: where did this 'solution' move the constraint to, and is anyone guarding or quoting that place?"
+          },
+          "source": "gCaptain／Bloomberg／Marine Link（阿曼灣 STS 產能與 VLCC 日租金）；CNBC 9/25（沙國 9 月出口）；Microsoft MSRC 9 月公告；Kyiv Independent（渦輪噴射無人機佔比）；9/18報告、9/20報告、9/21週報、9/26報告",
+          "url": "https://gcaptain.com/gulf-of-oman-ship-to-ship-oil-transfers-reach-limit-as-saudi-exports-surge/",
+          "terms": [
+            "Petroline",
+            "Yanbu",
+            "Sohar",
+            "STS",
+            "VLCC",
+            "HBM4",
+            "Geran",
+            "EW",
+            "CVE",
+            "LPE",
+            "Patch Tuesday"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geo",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "1/10 這個日期本身就是結論：川習會沒有解決任何事，只是把每一件爭議都重新標了價和到期日",
+            "en": "The Date 1/10 Is Itself the Conclusion: The Summit Settled Nothing, It Re-Priced Every Dispute and Gave It an Expiry"
+          },
+          "summary": {
+            "zh": "川習會 9/24 在白宮落幕，禮遇規格極高（川普 9/23 親自登機迎接 Xi），實質產出卻是一組更短的期限。財政部長 Bessent 宣布的貿易休兵延長只有兩個月、至 2027/1/10，比美方自己先前開出的「3 至 6 個月」下限還短，更遠離北京想要的一整年。9/22報告與 9/24報告當時正確指出「該盯的是後續那個具體日期而非峰會本身」，但把那個日期押在 11/10（去年 10/9 稀土管制的到期日），結果懸崖整個挪到 1/10——框架對、座標錯。台灣議題上，新華社官方通稿顯示 Xi 當面要求川普「堅持反對台獨的正確立場」，措辭強於拜登時期的「不支持台獨」，白宮未發布對等聲明；140 億美元對台軍售案在峰會後 30 天檢驗窗口（約至 10/24）的第一個查核點仍無任何正式動作。而 9/28週報指出的那一層完全沒變：被暫停的只有稀土 0.1% 域外延伸，2025/4/4 的 18 號公告與 2024/10/1 上線、每月 10 日前要上傳客戶名稱的追溯信息系統，一天都沒停過。",
+            "en": "The Trump-Xi summit closed at the White House on 9/24 with unusually high protocol — Trump boarded the aircraft personally to greet Xi on 9/23 — and produced, in substance, a set of shorter deadlines. The trade truce extension announced by Treasury Secretary Bessent runs only two months, to 2027/1/10: shorter than Washington's own stated floor of three to six months, and far from the full year Beijing wanted. Our 9/22 and 9/24 briefs were right that the date to watch was the one after the summit rather than the summit itself, but pinned it on 11/10, the expiry of last year's 10/9 rare-earth measures. The cliff moved wholesale to 1/10 — right frame, wrong coordinate. On Taiwan, the Xinhua communiqué shows Xi pressing Trump in person to 'hold to the correct position of opposing Taiwan independence', stronger wording than the Biden-era 'does not support', with no equivalent White House statement. The $14bn arms package passed the first checkpoint of the post-summit 30-day window (to roughly 10/24) with no formal action. And the layer identified in the 9/28 weekly did not move at all: only the 0.1% extraterritorial reach is suspended, while Notice 18 of 2025/4/4 and the traceability system live since 2024/10/1 — customer names uploaded by the 10th of each month — never paused for a day."
+          },
+          "implication": {
+            "zh": "三件事放在一起，九月給台灣讀者的結論不是「情勢惡化」，是資產性質變了：台灣在這組談判裡不是一項被決定的政策，而是一項每隔幾週要重新質押一次的資產，每一次重新質押都是一次可以被索價的機會。對投資決策有兩個直接推論。一，1/10 之前任何「貿易戰緩和」敘事的保存期限都只有兩個月，為它付估值溢價等於拿永續年金的價錢買一份兩個月期的選擇權；該做的是把倉位的事件曝險對齊到 1/10 這個日期，而不是對齊到峰會氣氛。二，稀土那一層根本沒有解除——被暫停的只是最上面、最吵的一層，名冊與許可制照常運轉，所以「稀土風險已解除」與「0.1% 規則暫停」是兩句不同的話；持股裡任何用到 NdPr 永磁的環節（馬達、音圈、硬碟、風電、機器人）該用後者而不是前者定價。對談時你有一個比「中美關係好轉或惡化」精準得多的句子：九月的產出既不是和解也不是破裂，是把爭議全部轉換成有到期日的選擇權，而選擇權的賣方是台灣。",
+            "en": "Put together, September's conclusion for a Taiwanese reader is not that things got worse but that the asset class changed: in this negotiation Taiwan is not a policy being decided, it is collateral that must be re-pledged every few weeks, and every re-pledge is an opportunity to charge for it. Two consequences for investment decisions. First, any 'trade war easing' narrative has a two-month shelf life until 1/10; paying a valuation premium for it means paying perpetuity prices for a two-month option. Align your positions' event exposure to the 1/10 date, not to summit atmospherics. Second, the rare-earth layer has not been lifted at all — only the loudest top layer is suspended, while the registry and licensing machinery runs as normal. 'Rare-earth risk has cleared' and 'the 0.1% rule is paused' are different sentences; anything in your holdings that touches NdPr permanent magnets (motors, voice coils, drives, wind, robotics) should be priced off the second, not the first. For conversation you now have a sentence far sharper than 'US-China relations improved or deteriorated': September produced neither reconciliation nor rupture, it converted every dispute into a dated option — and Taiwan is the party writing the option."
+          },
+          "source": "新華社官方通稿（習近平「反對台獨」措辭）；MOFCOM 公告 18/2025、70/2025 與《稀土管理條例》（2024/10/1 施行）；美國財政部長 Bessent 公開宣布貿易休兵延至 2027/1/10（經 CNBC 轉述）；峰會閉門對話另見 Fortune 9/28 報導（屬媒體轉述）",
+          "url": "https://www.cnbc.com/2026/09/24/us-china-trade-truce-bessent-trump-xi.html",
+          "terms": [
+            "MOFCOM",
+            "NdPr",
+            "REPM",
+            "REE",
+            "FDPR",
+            "De Minimis",
+            "DSCA",
+            "USTR"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "military",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "恢復轟炸的時間表綁在 11/3 期中選舉，不綁在伊朗做了什麼——這讓接下來六週所有的外交訊號都要重新加權",
+            "en": "The Bombing Timetable Is Tied to the 11/3 Midterms, Not to Anything Iran Does — Reweight Every Diplomatic Signal for the Next Six Weeks"
+          },
+          "summary": {
+            "zh": "伊朗外長 Araghchi 在 UNGA 場邊提出重開海峽的「七天路線圖」，條件與 9/22報告點名的伊斯蘭馬巴德備忘錄框架逐條吻合。《華爾街日報》引述美方官員報導，川普私下對德黑蘭是否履行抱持懷疑，且已告訴幕僚他預期期中選舉（11/3）後將恢復對伊朗轟炸；川普本人公開稱伊朗急著談是「因為他們輸得太慘」。但白宮官員同時對 CNN 表示正透過中間人進行「積極且具建設性的討論」，Araghchi 9/29 也公開表示儘管有川普那番言論，德黑蘭仍在等卡達斡旋管道傳達正式立場——9/28報告把這記成「乾淨的拒絕」，9/30報告自己補上了這道裂縫。可驗證的事實面：霍爾木茲 9/16-23 單週通過船次僅 55 艘，較戰前基準約 910 艘下滑 94%，9/22 單日一度只剩 2 艘（戰前約 125 艘）；而沙烏地 9 月出口卻回到約 600 萬桶/日的新高。Brent 全月在 90 至 108 美元間走完一整輪，聯準會 9/16 升息一碼至 3.75%-4.00%，是 2023 年以來首次。",
+            "en": "Iranian foreign minister Araghchi floated a 'seven-day roadmap' to reopen the strait on the margins of UNGA, its conditions matching the Islamabad MOU framework identified in our 9/22 brief clause by clause. The Wall Street Journal, citing US officials, reported that Trump privately doubts Tehran will deliver and has told aides he expects to resume bombing Iran after the 11/3 midterms; Trump himself said publicly that Iran is eager to talk 'because they are losing so badly'. Yet White House officials simultaneously told CNN that active and constructive discussions were running through intermediaries, and on 9/29 Araghchi said that despite Trump's remarks Tehran was still waiting for a formal position via Qatari mediation. Our 9/28 brief recorded this as a clean rejection; the 9/30 brief added the crack itself. The verifiable side: Hormuz saw just 55 transits in the week of 9/16-23, down 94% from a pre-war baseline near 910, and briefly only 2 in a single day on 9/22 against roughly 125 before the war — while Saudi September exports reached a new high near 6 mbd. Brent traced a full round trip between $90 and $108 over the month, and the Fed raised 25bp to 3.75%-4.00% on 9/16, its first hike since 2023."
+          },
+          "implication": {
+            "zh": "關鍵不是「川普會不會打」，是決策的自變數換了。如果恢復轟炸的時點取決於 11/3 而不取決於伊朗的履約行為，那麼接下來六週所有來自德黑蘭的讓步訊號，在預測美方行動上的資訊量趨近於零——這直接改變你該讀哪一組指標。對能源與航運曝險：停止把外交新聞當領先指標，改看三個與政治日曆無關的量——霍爾木茲週通過船次、戰爭險船殼費率（經海峽 7.5%-10%，彎靠沙烏地西岸 0.1%，9/21週報記錄）、以及阿曼灣 STS 作業的 VLCC 周轉天數。對台灣讀者還有一條不能漏掉的：全月最大的教訓是「出口量恢復」與「海峽重新開放」是兩件完全不同的事——沙國出口創新高的同一週，海峽通過量只有戰前的 6%。而原油可以靠船對船轉運繞過去，LNG 不行：Ras Laffan 出來的每一立方公尺都必須走霍爾木茲，台灣的 LNG 安全存量約 12 天（9/21週報）。這代表台灣在這場衝突裡真正無備援的曝險不在油價，在冬季尖峰的電力。",
+            "en": "The question is not whether Trump strikes, it is that the independent variable changed. If the timing of resumed bombing depends on 11/3 rather than on Iranian compliance, then every concession signal out of Tehran over the next six weeks carries close to zero information for predicting US action — which changes which indicators you should be reading. For energy and shipping exposure: stop treating diplomatic news as a leading indicator and watch three quantities untethered from the political calendar — weekly Hormuz transit counts, war-risk hull premiums (7.5%-10% through the strait against 0.1% for a Saudi west-coast call, per the 9/21 weekly), and VLCC turnaround days on Gulf of Oman STS operations. One more for Taiwanese readers: the month's biggest lesson is that 'exports recovered' and 'the strait reopened' are entirely different facts — in the same week Saudi exports hit a seven-month high, transits ran at 6% of pre-war. And while crude can route around via ship-to-ship transfer, LNG cannot: every cubic metre out of Ras Laffan must pass Hormuz, and Taiwan's LNG security stock is about 12 days. Taiwan's genuinely un-backstopped exposure in this conflict is therefore not the oil price, it is winter peak electricity."
+          },
+          "source": "The Wall Street Journal（引述匿名美方官員，經 Haaretz／The Hill 轉述）；川普白宮公開發言；Araghchi 9/27 與 9/29 聲明（經 The National／France24 轉述）；Windward 海峽通過船次資料；Federal Reserve 9/16 官方新聞稿",
+          "url": "https://www.aljazeera.com/news/2026/9/26/trump-rejects-irans-seven-day-roadmap-to-reopen-strait-of-hormuz",
+          "terms": [
+            "IRGC",
+            "Islamabad MOU",
+            "UNGA",
+            "VLCC",
+            "STS",
+            "WRP",
+            "FOMC",
+            "Brent",
+            "UKMTO",
+            "Ras Laffan"
+          ]
+        },
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "台灣走的是通道替代，不是對抗——9/2月報設的那道二元題，被一個不在選項裡的答案解掉了",
+            "en": "Taipei Chose Channel Substitution, Not Confrontation — the 9/2 Monthly's Binary Was Answered by an Option That Was Not On It"
+          },
+          "summary": {
+            "zh": "9/2月報把台灣這條線寫成一道二元題：2027 年度預算是 NT$400 億年度上限對上 MND 自稱 NT$421 億需求的第一次真章，「被砍到上限就證明年度化是北京不必出手就能重複使用的煞車」。九月的答案不在這兩個選項裡。行政院沒有硬碰：9/3 它改用追加預算而非修法對抗，核定 NT$1,457 億（其中 NT$559 億直接編給無人載具），把今年度國防支出首次推過 NT$1 兆；9/4 KMT 與 TPP 兩黨團隨即以「必須先公告施行在野版無人機條例」為條件卡住這筆錢；9/11，卡在憲法規定的 10 日期限最後一天，行政院長卓榮泰副署了那部自己反對的在野版條例，同時公開表示要「堅守行政院預算權」。槓桿確實有效，但被兌現的方式是：在野黨拿到了法案，行政院拿到了錢，而摩擦點整個移到追加預算的逐項審查上。",
+            "en": "The 9/2 monthly framed Taiwan as a binary: the 2027 budget would be the first real test of the NT$40bn annual ceiling against MND's stated NT$42.1bn requirement, and being cut to the ceiling would prove annualisation is a brake Beijing can reuse without lifting a finger. September's answer was on neither branch. The Executive Yuan did not fight. On 9/3 it switched to a supplementary budget rather than counter-legislation, approving NT$145.7bn with NT$55.9bn going directly to unmanned systems and pushing this year's defence spending past NT$1tn for the first time. On 9/4 the KMT and TPP caucuses immediately held that money hostage to a condition: promulgate the opposition's drone statute first. On 9/11, on the last day of the constitutional ten-day window, Premier Cho Jung-tai countersigned the very opposition bill he had opposed, while publicly insisting he would defend the Executive Yuan's budget authority. The leverage worked, but the way it cashed out was this: the opposition got its statute, the Executive got its money, and the friction point moved wholesale to line-by-line review of the supplementary budget."
+          },
+          "implication": {
+            "zh": "對你評估台灣國防產業鏈，這比「煞車成立／不成立」更有用，因為它說明錢的總量不是被管住的那個變數，通道才是。兩個可操作的推論。一，訂單能見度的決定點已經從「特別條例會不會過」移到「追加預算逐項審查會不會準時過」——後者沒有憲法期限、沒有單一表決日，可以無限期拖，所以供應商的現金流風險形狀從「斷崖」變成「慢性延遲」，這兩種風險在評價上該用不同的折現處理。二，NT$559 億直接編給無人載具這個數字是現在最硬的一塊，而 9/2月報記錄的審計部結論沒有被推翻：缺口在偵測端不在火力端，現行 C-UAS 高度依賴 EW 與訊號壓制，對光纖導引（FOG-D）與 AI 導航無人機沒有可行反制。所以判斷這筆錢有沒有花對，指標仍然是非 RF 偵測（聲學陣列、光學／紅外追蹤、被動雷達）在其中的佔比，而主管機關已從 MND 換成偏產業扶植的 MOEA，這個比例的先驗應該偏低。我自己要記下的方法論教訓：把政治鬥爭寫成二元題，會系統性地漏掉行政部門換通道這一類選項，而那在台灣的分立政府結構下是常態而非例外。",
+            "en": "For assessing Taiwan's defence supply chain this is more useful than 'the brake held or it didn't', because it shows the total amount of money was never the controlled variable — the channel was. Two actionable inferences. First, the determinant of order visibility has moved from 'will the special statute pass' to 'will line-by-line review of the supplementary budget clear on time'. The latter has no constitutional deadline and no single vote date, so it can be stretched indefinitely: supplier cash-flow risk changes shape from a cliff to chronic delay, and those two deserve different discount treatment in valuation. Second, the NT$55.9bn booked directly to unmanned systems is the hardest number currently available, and the audit office finding recorded in the 9/2 monthly has not been overturned: the gap is in detection, not in firepower, with current C-UAS leaning heavily on EW and signal suppression and offering no viable counter to fibre-guided (FOG-D) or AI-navigated drones. So the test of whether this money is well spent is still the share going to non-RF detection — acoustic arrays, electro-optical and infrared tracking, passive radar — and with the lead agency moved from MND to the industrially minded MOEA, the prior on that share should be low. The methodological lesson I owe myself: writing a political fight as a binary systematically omits the executive-branch option of switching channels, which under Taiwan's divided government is the norm rather than the exception."
+          },
+          "source": "行政院秘書長張惇涵 9/11 記者會（經聯合新聞網、自由時報、中時報導）；Taipei Times 9/3 與 9/4（追加預算與 KMT／TPP 條件）；中華民國審計部 2026 年度決算審核報告；9/2月報、9/4報告、9/12報告",
+          "url": "https://udn.com/news/story/6656/9748460",
+          "terms": [
+            "MND",
+            "MOEA",
+            "C-UAS",
+            "FOG-D",
+            "EW",
+            "NCSIST",
+            "UGV",
+            "RF"
+          ]
+        },
+        {
+          "severity": "info",
+          "confidence": "likely",
+          "title": {
+            "zh": "「首次承認」不是擴散日期：太空控制武器解密的那一週，RAF 承認同類中隊已經默默運作了一整年",
+            "en": "'First Admission' Is Not a Proliferation Date: In the Week Space Control Weapons Were Declassified, the RAF Admitted an Equivalent Squadron Had Been Running Quietly for a Year"
+          },
+          "summary": {
+            "zh": "美國太空軍 9/14 首度公開承認已部署「在軌太空控制武器」，英國國防部 9/23 隨即宣布成立新的太空中隊因應，中俄分別要求「停止太空軍備擴張」與「太空完全非軍事化」。9/24報告當時把這組事件讀成一條新線索的起點、並隱含一個「快速跟進」的擴散速度。48 小時後這個讀法就要修正：英國皇家空軍在 9/23 的 UK Space Power Conference 上承認，那支中隊其實已經默默干擾對手衛星整整一年——它不是對美方宣布的反應，而是同一批能力的另一次解密。這條本身的量級不大，但它示範的誤讀機制是整個九月重複最多次的一種：把官方第一次承認的日期，當成能力出現的日期。",
+            "en": "The US Space Force publicly acknowledged for the first time on 9/14 that it has deployed orbital space-control weapons; the UK Ministry of Defence announced a new space squadron on 9/23 in response; China and Russia called respectively for an end to space arms expansion and for complete demilitarisation of space. Our 9/24 brief read this as the opening of a new thread and implicitly as a fast-follower diffusion rate. Forty-eight hours later that reading needed correcting: at the UK Space Power Conference on 9/23 the RAF conceded the squadron had in fact been quietly jamming adversary satellites for a full year. It was not a response to the American announcement but a second declassification of the same cohort of capability. The item is small in magnitude, but the misreading it illustrates was September's most frequently repeated: treating the date of first official admission as the date a capability appeared."
+          },
+          "implication": {
+            "zh": "這條的用處是校準方法，不是情報本身。你每天讀的「首次證實」「首度承認」「首次部署」，絕大多數標示的是揭露決策的時點，而揭露決策受預算週期、盟邦協調與對手行為驅動，與能力成熟時點之間的落差可以是一年以上——RAF 這次剛好自己把落差說出來，所以它是一個難得的已標註樣本。對你的獵捕工作有直接對應：公開 APT 報告的發布日同樣是揭露決策，不是活動起點，而你用來建立基線的「首次觀測」若取自報告發布日，整條時間軸會系統性地往後偏。可以做的事很小但很具體：在你的時間軸資料結構裡，把「活動時點」與「揭露時點」拆成兩個欄位，別讓它們共用一個日期；對談時也可以用這個例子，把「中國在某項能力上落後幾年」這類說法，降級成「中國在某項能力的公開揭露上落後幾年」——後者才是公開資料真正支持的那句話。",
+            "en": "The value here is calibration of method rather than the intelligence itself. Nearly every 'first confirmed', 'first acknowledged' and 'first deployed' you read dates a disclosure decision, and disclosure decisions are driven by budget cycles, allied coordination and adversary behaviour, with gaps of more than a year against the date a capability matured. The RAF happened to state its own gap out loud, which makes this a rare labelled sample. There is a direct analogue in hunting work: the publication date of a public APT report is likewise a disclosure decision, not the start of activity, and if your 'first observed' baseline is taken from publication dates your whole timeline shifts systematically late. The fix is small but concrete: in your timeline data structure, split 'activity time' and 'disclosure time' into two fields rather than letting them share one date. The same example is useful in conversation, where it downgrades claims like 'China is some years behind on this capability' to 'China is some years behind on publicly disclosing this capability' — which is the only one public sources actually support."
+          },
+          "source": "美國太空軍高層聲明（經 CBS News 轉述）；英國國防部 9/23 官方公告；英國國防大臣 Wes Streeting 與空軍參謀長 Sir Harv Smyth 於 UK Space Power Conference 發言（經 BBC 9/23 報導）；中國外交部與克里姆林宮發言人聲明",
+          "url": "https://www.cbsnews.com/news/us-confirms-weapons-in-space-china-russia-respond/",
+          "terms": [
+            "USSF",
+            "ASAT",
+            "SPACECOM",
+            "EW",
+            "APT",
+            "IOC",
+            "pLEO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cyber",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "「邊界設備即 Tier-0」九月從個案升格成類別——而微軟 974 個 CVE 裡被利用的那兩個，入口根本不在邊界",
+            "en": "'Perimeter Appliance Equals Tier-0' Graduated From Case to Category in September — and the Two Exploited Bugs in Microsoft's 974 Were Not at the Perimeter At All"
+          },
+          "summary": {
+            "zh": "九月把這條線跑完了一輪完整的歸納。個案層：Cisco 十天內三個各自獨立成因的滿分或近滿分零時差（9/9 FMC 的 CVE-2026-20079，CVSS 10.0；約 9/14 Secure Email Gateway 的 CVE-2026-76461；9/16 ISE 的 CVE-2026-76460），其中 FMC 同一個漏洞上出現三個性質不同的入侵集群，包含被高信度歸因為 Sandworm 的 UAT-11823 與 Qilin 的 UAT-11988。類別層：F5 BIG-IP APM、Check Point 管理伺服器與 Spark 防火牆、Arista VeloCloud 四款來自不同廠商的邊界設備在 9/22 同一天被 CISA 列入 KEV，9/25 再添 SharePoint 與 Mikrotik RouterOS。極限層：Citrix NetScaler ADC／Gateway 兩個 CVSS 9.5、未經驗證 RCE 的零時差在 9/26 揭露時沒有修補程式，但 9/27 就釋出了——「無修補」是一個時間切片而不是一種狀態（9/30報告的自我更正）。但同月微軟創下單月 974 個 CVE 的歷史紀錄，其中兩個已遭在野利用的零時差都是本已安裝在系統內的元件被當成提權跳板，入口不在邊界。",
+            "en": "September completed a full induction on this thread. At the case level, Cisco shipped three independently caused maximum or near-maximum zero-days in ten days: CVE-2026-20079 in FMC on 9/9 at CVSS 10.0, CVE-2026-76461 in Secure Email Gateway around 9/14, and CVE-2026-76460 in ISE on 9/16 — with three distinct intrusion clusters appearing on the FMC flaw alone, including UAT-11823 attributed with high confidence to Sandworm and UAT-11988 to Qilin. At the category level, four perimeter products from four different vendors — F5 BIG-IP APM, Check Point management servers and Spark firewalls, and Arista VeloCloud — all entered the CISA KEV catalog on 9/22, with SharePoint and Mikrotik RouterOS added on 9/25. At the limit, two unauthenticated RCE zero-days in Citrix NetScaler ADC/Gateway at CVSS 9.5 were disclosed on 9/26 with no patch available, and patched on 9/27 — 'unpatched' is a time slice, not a state, as our 9/30 brief corrected itself. Yet in the same month Microsoft set an all-time monthly record of 974 CVEs, and both zero-days exploited in the wild were pre-installed components used as privilege-escalation pivots. The entry point was not at the perimeter."
+          },
+          "implication": {
+            "zh": "兩件事要分開做。第一，把邊界設備統一納入 Tier-0 處置：這一類設備幾乎都不在一般資產管理系統裡，而九月證明的不是「某家廠商有問題」，是整個品類被同時盯上——所以該做的是對 F5／Check Point／Arista／Citrix／Cisco 這類設備一次性施加 Tier-0 規格（獨立憑證、強制外送日誌、變更雙人覆核），而不是逐一等 KEV 公告再反應。這接到 9/2月報已經給過的 audisp 遠端轉發建議：同一個病因，不同的機器。第二，也是九月新增的：不要讓「邊界」這個詞吃掉你全部的注意力——微軟那兩個被利用的零時差說明對手同時在走一條完全不需要穿過邊界的路。對你的 provenance graph，這給出一條具體可做的建模要求：把「元件的安裝來源與安裝時間」當成節點屬性保存下來。當入口是一個早就合法存在於系統裡的元件時，唯一能把它和攻擊連起來的那條邊，就是它什麼時候、被誰、從哪裡放進來的——而這條邊幾乎所有 EDR 都不保存超過 90 天，遠短於 9/2月報記錄的 BRICKSTORM 393 天停留中位數。",
+            "en": "Two separate jobs. First, put perimeter appliances under Tier-0 handling as a class. These devices are almost never in the normal asset management system, and what September proved is not that one vendor has a problem but that the whole category is being worked simultaneously — so apply Tier-0 treatment to F5, Check Point, Arista, Citrix and Cisco gear in one pass (separate credentials, mandatory off-box logging, two-person review for changes) rather than reacting one KEV advisory at a time. This connects to the audisp remote-forwarding advice in the 9/2 monthly: same pathology, different machines. Second, and new in September: do not let the word 'perimeter' absorb all your attention. Microsoft's two exploited zero-days show the adversary simultaneously walking a path that never crosses the perimeter at all. For your provenance graph this yields a concrete modelling requirement: persist a component's installation source and installation time as node attributes. When the entry point is something that has legitimately lived on the system for a long time, the only edge connecting it to the attack is when, by whom and from where it was put there — and almost no EDR retains that edge beyond 90 days, far short of the 393-day BRICKSTORM dwell median recorded in the 9/2 monthly."
+          },
+          "source": "CISA KEV 目錄 9/22 與 9/25 公告；Cisco PSIRT、F5（K000162605）、Check Point、Arista、Citrix（CTX697096）官方安全公告；Cisco Talos 官方研究（UAT-11823／UAT-11988 歸因）；Microsoft MSRC 9 月官方公告",
+          "url": "https://www.helpnetsecurity.com/2026/09/23/check-point-f5-big-ip-apm-zero-days-targeted/",
+          "terms": [
+            "Tier-0",
+            "KEV",
+            "CISA",
+            "CVE",
+            "CVSS",
+            "RCE",
+            "NetScaler",
+            "FMC",
+            "ISE",
+            "Sandworm",
+            "Qilin",
+            "UAT",
+            "LPE",
+            "EDR",
+            "provenance graph",
+            "BIG-IP",
+            "VeloCloud",
+            "Patch Tuesday",
+            "BRICKSTORM"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "管制的對象九月從物件移到了人與名冊：9/2月報的「錯配」判斷成立，但軸向跟我寫的不一樣",
+            "en": "Control Moved From Objects to People and Registries: The 9/2 Monthly's Mismatch Call Holds, but on a Different Axis Than I Wrote"
+          },
+          "summary": {
+            "zh": "9/2月報判斷，管制邏輯是否實質轉向，要看 BIS 會不會把注意力延伸到 Jetson Orin 這類便宜的邊緣推論模組。九月的答案是沒有，而且方向相反：美國商務部與 Nvidia／AMD 的 15% 抽成協議讓 H200 重新賣往約 10 家中國企業（每家上限 7.5 萬片）。真正發生轉向的是另一邊。中國《出境入境管理條例》9/15 上路，首度把出口管制的對象從晶片本身延伸到熟悉受管制技術的人；9/28週報進一步指出，稀土那套 2024/10/1 上線、每月 10 日前要上傳客戶名稱的追溯信息系統，產出的不是斷供而是一張「誰的哪顆馬達裡有哪一批鏑鋱、賣給誰、做什麼用」的全球流向圖，而 2026/1/6 只針對日本軍事終端用戶的 1 號公告（觸發點是高市早苗涉台發言）正是這張名冊的第一次實戰。另一端，9/14週報記錄 HBM 管制的咬合力不由 BIS 決定、而由記憶體超級循環決定：九月 Samsung 與 SK Hynix 雙雙證實 2026 年 HBM 產能全數售罄、9/7 成品庫存跌破 10 天。",
+            "en": "The 9/2 monthly held that a real turn in control logic would show up as BIS extending attention to cheap edge inference modules like Jetson Orin. September's answer was no, and the movement ran the other way: Commerce's 15% revenue-share arrangement with Nvidia and AMD put H200s back into roughly ten Chinese firms, capped at 75,000 units each. The turn happened on the other side. China's revised Exit and Entry Administration Regulations took effect on 9/15, extending export control for the first time from the chip to people familiar with controlled technology. The 9/28 weekly went further: the rare-earth traceability system live since 2024/10/1, with customer names uploaded by the 10th of each month, produces not a cutoff but a global flow map of which batch of dysprosium and terbium sits in whose motor, sold to whom, for what end use — and Notice 1 of 2026/1/6, aimed only at Japanese military end users and triggered by Takaichi's remarks on Taiwan, was that registry's first live use. At the other end, the 9/14 weekly recorded that the bite of HBM control is set by the memory supercycle rather than by BIS: in September Samsung and SK Hynix both confirmed 2026 HBM capacity fully sold out, with finished inventory below ten days on 9/7."
+          },
+          "implication": {
+            "zh": "錯配的結論站得住，但我把軸向搞反了：我預期管制會往更下游的物件延伸，實際發生的是管制往更上游的「人、關係與申報資料」延伸——因為那一層同時更難繞過、更便宜，也更不像制裁。這對你的本業特別合用：名冊型管制的本質就是強制性的 provenance 上報，中國那套系統的資料結構，和你要在圖上建的供應／採購邊幾乎同構，差別只在它的欄位是被申報出來的、你的要靠推論。值得花一個下午把 18 號公告與追溯系統的欄位定義讀過一遍——它等於是一個國家級情報機構替你標註好的答案：供應鏈圖上哪些欄位值得強制蒐集。對投資：不要把「H200 放行」讀成中國算力立即提升（9/2月報那個 13% 的實測數字仍然成立，NDRC 的國內審批閥門沒有鬆），也不要把 HBM 缺貨當成純粹的景氣題材——它是管制稅率的分母，稅率由循環決定，而循環在 2026 下半到 2027 最緊。可直接追蹤的三件事：10/15 TSMC 法說與 11/25 Nvidia 財報對 CoWoS 與 HBM4 的口徑，以及 12/31 前 Samsung 與 SK hynix 中國廠年度許可是否續發。",
+            "en": "The mismatch conclusion holds, but I had the axis backwards. I expected control to extend downstream toward cheaper objects; what actually happened was control extending upstream into people, relationships and filings — a layer that is simultaneously harder to route around, cheaper to administer, and less like a sanction. This is unusually useful for your own field: registry-style control is compulsory provenance reporting, and the data structure of China's system is nearly isomorphic to the supply-and-procurement edges you want on your graph, differing only in that its fields are declared while yours must be inferred. Spend an afternoon reading the field definitions of Notice 18 and the traceability system — it amounts to a state intelligence apparatus having already marked up the answer for you on which supply-chain fields are worth collecting by force. For investing: do not read 'H200s released' as Chinese compute rising immediately (the measured 13% figure from the 9/2 monthly still stands, and the NDRC domestic approval valve has not loosened), and do not treat the HBM shortage as a pure cyclical story — it is the denominator of the control tax, the rate is set by the cycle, and the cycle is tightest from late 2026 through 2027. Three things to track directly: TSMC's earnings call on 10/15 and Nvidia's results on 11/25 for language on CoWoS and HBM4, and whether Samsung's and SK hynix's annual China-fab licences are renewed before 12/31."
+          },
+          "source": "中國國務院《出境入境管理條例》官方公告（經美國國會圖書館 Global Legal Monitor 與 DLA Piper、Fragomen 法律分析轉述）；MOFCOM 公告 18/2025 與 1/2026；Samsung 與 SK Hynix 官方說法；BIS 2026/1/15 最終規則；9/14週報、9/28週報",
+          "url": "https://www.loc.gov/item/global-legal-monitor/2026-09-14/china-state-council-regulation-tightens-exit-and-entry-control",
+          "terms": [
+            "BIS",
+            "Jetson Orin",
+            "Deemed Export",
+            "REE",
+            "REPM",
+            "Dy",
+            "Tb",
+            "HBM",
+            "HBM4",
+            "CoWoS",
+            "SHTC",
+            "end-use certificate",
+            "provenance graph",
+            "NDRC"
+          ]
+        }
+      ]
+    }
+  ],
+  "narrative": {
+    "zh": "**上月推演校準**\n\n最貴的一條錯在霍爾木茲。9/2月報寫：CENTCOM 的零容忍若玩真的，Iran 已失去佈雷籌碼，摩擦會從軍事對峙轉成逐船收費的個案糾紛。反證當天就在路上——8/30 美軍發現 IRGC 改用火箭彈從 Larak Island 投放新水雷。我把「存量被清除」讀成「能力被移除」，而九月成為開戰以來最暴力的一個月。\n\n第二條錯在 CCW。9/2月報預測 11/16-20「最可能再延一次討論性授權」，9/8報告也把 GGE 第二次會議記成「三個否決票原地不動」。但《華盛頓郵報》9/26 揭露，9/5 凌晨那場閉門會議裡美俄不是不動，是聯手改寫：結果也許還對，機制錯了。對的也記：BIS 果然沒延伸到 Jetson 這類邊緣模組。台灣那條方向對形狀錯——行政院沒硬碰、改走追加預算，我的二元題漏掉「換通道」；而壓垮基輔防空的是速度不是自主。\n\n**主線一：否決權學會了當作者**\n\n我原本的治理失靈模型是「擋下來→什麼都沒發生→現狀延續」，風險是空白。九月換掉這個零件：擋得住的人也可以改寫，而且更划算——一份寫著「符合 IHL 即可」的文本一旦成為談判基礎，就會替原本需要逐案辯護的行為背書。\n\n**主線二：瓶頸搬家，不會消失**\n\n霍爾木茲→Petroline→泵站→阿曼灣護航轉運→護航航道本身：四次解方每次只把咽喉點挪到下一個沒人防守的位置，而最後一站的定價訊號是 VLCC 日租金 127 萬美元的歷史新高。同一動作另在三處重演：HBM4 的卡點從晶圓片數搬到 12 層堆疊良率、管制對象從晶片搬到人與名冊、俄軍無人機從繞過 EW 搬到超越攔截速度。\n\n**主線三：期限變成貨幣**\n\n談判不再產出和解，產出的是有日期的選擇權：貿易休兵只延到 1/10，比美方自己開的下限還短；恢復轟炸綁 11/3 期中選舉，不綁伊朗做了什麼；140 億軍售留在籌碼位置；GGE 授權 11/16-20 到期。\n\n**它們如何咬合**\n\n規則層可以被捕獲、物理限制只會移動、時間本身成了工具，三者的淨效果是九月沒有一件事抵達終局，全被換成「稍後再決定一次」。9/2月報說可歸責的那個人正在消失，九月要補的是結案本身也消失了——把「已解決」當成有保存期限的狀態來存。\n\n**各方自己怎麼說，以及真正的重點**\n\n華府說韌性與適當的人類判斷，做的是閉門刪掉人類審查條款、把對伊決策綁選舉日曆、把對台軍售留在籌碼位置。北京說「管制不是禁止」，做的是讓每項工具保持可撤銷且不像制裁：名冊照跑、許可逐案、管制延伸到人——而它確實不在 CCW 那三張否決票裡。台北說國防支出首破兆元，審計部卻說缺口在偵測端。\n\n**未來 3–6 個月的分歧點與觀察指標**\n\n11/16-20 CCW 第七次審查會議：談判授權若綁 9/5 刪改後的文本，走「規範被降級合法化」路徑，對已擁有自主武器者是淨利多；76 國若要求先回復可預測性與人類審查條款，走「文本之爭浮上檯面」路徑；只拿到討論性授權，則 9/2月報原判斷成立。\n\n11/3 期中選舉是伊朗線唯一該盯的日期：之後兩週內恢復轟炸，證實決策綁政治日曆、德黑蘭的讓步訊號無預測力。10/22 是 9/21週報的 Petroline 否證測試，未回到 4 mbd 以上代表泵站是長前置期節點。11/30 前 Sohar 或 Fujairah 的 STS 作業區若再遇襲，瓶頸搬家論成立；攻擊全回到海峽內就是錯。卡達對亞洲 LNG 若 12 月仍未恢復，台灣約 12 天安全存量會在冬季尖峰暴露。\n\n1/10 貿易休兵到期：再延長且 0.1% 與 FDPR 維持暫停，代表第三層是籌碼、前兩層才是制度。10/24 是川習會後 30 天窗口終點，140 億軍售仍未送 DSCA 與國會就算坐實籌碼位置。3/31 前若出現第二份涉台觸發的 MOFCOM 國別公告，機制就從一次性報復升級成常規工具。\n\n12/7 BOD 26-04 屆滿 180 天：看三天級距裡「已緩解」對「已修補」的比例，大於一代表閉環是真的。10/15 TSMC 法說與 11/25 Nvidia 財報看 CoWoS 與 HBM4 口徑；12/31 前 Samsung 與 SK hynix 中國廠年度許可若不續發，代表管制從管產品升級到管產能。10/27-28 與 12/8-9 兩次 FOMC：Brent 站回 107 美元以上而聯準會仍續升，代表供給側衝擊已進政策反應函數。11/28 台灣選舉則是 AIT 已示警的 AI 認知戰目標。",
+    "en": "**Calibrating last month's projections**\n\nThe costliest error was Hormuz. The 9/2 monthly argued that if CENTCOM's zero-tolerance line was real, Iran had lost mine-laying as leverage and friction would shift from military standoff to per-ship billing disputes. The refutation was already in motion: on 30 August US forces caught the IRGC preparing to launch fresh mines by rocket from Larak Island. I read 'the stock was cleared' as 'the capability was removed', and September became the most violent month of the war.\n\nThe second error was CCW. The 9/2 monthly projected another discussion mandate on 16-20 November, and the 8 September brief logged the second GGE meeting as three vetoes holding still. The Washington Post's 26 September investigation shows that in the closed session ending in the early hours of 5 September, the two were jointly rewriting instead. The outcome may still prove right, but the mechanism was wrong. What held: BIS did not extend to edge modules like Jetson. On Taiwan the direction was right and the shape wrong — the Executive Yuan did not fight, it routed the money through a supplementary budget, and my binary omitted switching channels. And what overwhelmed Kyiv's air defence was speed, not autonomy: terminal autonomy was not the single axis of proliferation I made it.\n\n**Thread one: the veto learned to author**\n\nMy model of governance failure ran block, nothing happens, status quo persists — risk as vacuum. September swapped that part out. Those who can block can also author, and authoring pays better: once a text saying 'IHL compliance suffices' becomes the basis for negotiation, it endorses conduct that previously had to be defended case by case.\n\n**Thread two: bottlenecks relocate, they do not disappear**\n\nHormuz to Petroline to the pump stations to escorted transfer in the Gulf of Oman to the escort corridor itself — four solutions, each moving the chokepoint to the next undefended position, the final stop's price signal a record $1.27m VLCC day rate. The same move repeated three more times: HBM4's constraint shifting from wafer counts to 12-high stacking yield; control's object from chips to people and registries; Russian drones moving from evading EW to outrunning interceptors.\n\n**Thread three: deadlines became the currency**\n\nNegotiations stopped producing settlements and started producing dated options: a trade truce only to 10 January, shorter than Washington's own stated floor; resumed bombing tied to the 3 November midterms rather than to anything Iran does; the $14bn arms package parked as a chip; the GGE's mandate expiring on 16-20 November.\n\n**How they interlock**\n\nThe rule-writing layer can be captured, not merely stalled; physical constraints move rather than resolve; and time itself became the instrument. Nothing reached a terminal state — everything became 'decide again later'. The 9/2 monthly said the accountable actor is disappearing from every chain; September adds that closure has disappeared too. Store 'resolved' as a state with an expiry date.\n\n**What each actor says, and what actually matters**\n\nWashington talks resilience and appropriate human judgement; it deleted the human-review clause behind closed doors, tied Iran policy to an electoral calendar, and left the Taiwan package in chip position. Beijing says control is not prohibition; it keeps every tool revocable and unlike a sanction — registry running, licences case by case, control extended to people — and is genuinely not among CCW's three vetoes. Tehran says seven days would suffice while tying its conditions to a memorandum Washington has declared finished. Taipei says defence spending passed NT$1tn; its audit office says the gap is in detection.\n\n**Divergence points and indicators for the next three to six months**\n\nCCW's Seventh Review Conference, 16-20 November: a negotiating mandate bound to the 5 September text means the norm was laundered downward, net positive for states already fielding these weapons. The 76 states demanding predictability and human review be restored first means the fight over the text has surfaced. Another discussion mandate vindicates the 9/2 monthly.\n\nThe 3 November midterms are the only date worth watching on Iran: bombing resuming within two weeks after confirms the decision is bound to the political calendar. 22 October is the 9/21 weekly's Petroline test — no return above 4 mbd means the pump stations are a long-lead node. Attacks on the STS areas off Sohar or Fujairah before 30 November confirm the relocation thesis; attacks returning entirely to vessels inside the strait falsify it. If Qatari LNG to Asia has not recovered by December, Taiwan's twelve days of security stock is exposed at winter peak.\n\n10 January, truce expiry: a further extension with the 0.1% rule and FDPR still suspended means the third layer is the chip and the first two are the institution. 24 October closes the 30-day post-summit window — no DSCA and congressional notification confirms the chip position. A second country-specific MOFCOM notice before 31 March with a Taiwan trigger upgrades retaliation into a standing instrument.\n\n7 December is BOD 26-04's 180-day mark: the ratio of 'mitigated' to 'patched' in the three-day tier, above one meaning the loop is real. TSMC on 15 October and Nvidia on 25 November for CoWoS and HBM4 language; non-renewal of Samsung's and SK hynix's China-fab licences before 31 December would mean control upgrading from products to capacity. FOMC on 27-28 October and 8-9 December: Brent above $107 with the Fed still hiking puts the supply shock inside the policy reaction function. And 28 November, Taiwan's election, flagged by AIT as an AI influence-operations target."
+  },
+  "actions": [
+    {
+      "zh": "把「瓶頸搬家」做成一條固定的獵捕紀律，本週就跑一次。每關掉一條入口（修補、封鎖、下架），強制回答三個問題並寫進工單：下一個最便宜的等價路徑是什麼、它的遙測落在哪個系統、那裡保留幾天。九月已經替你標好第一個目標——微軟那兩個被在野利用的零時差都是系統內既有元件的提權跳板，所以該查的遙測在端點與目錄服務，而多數組織那兩處的保留期比邊界短。同時把 F5／Check Point／Arista／Citrix／Cisco 這類邊界設備一次性納入 Tier-0 處置（獨立憑證、強制外送日誌、變更雙人覆核），不要再逐一等 KEV 公告才反應：9/22 四家廠商同日入列證明被盯上的是整個品類，不是單一廠商。",
+      "en": "Turn 'bottlenecks relocate' into a standing hunting discipline and run it this week. For every entry point you close — patched, blocked, taken down — require three answers written into the ticket: what is the next cheapest equivalent path, which system holds its telemetry, and how many days that system retains. September has already marked your first target: both of Microsoft's in-the-wild zero-days were privilege-escalation pivots through components already installed, so the telemetry to check sits in endpoints and directory services, where most organisations retain less than they do at the perimeter. In the same pass, put F5, Check Point, Arista, Citrix and Cisco perimeter gear under Tier-0 handling as a class (separate credentials, mandatory off-box logging, two-person review for changes) instead of reacting one KEV advisory at a time: four vendors landing in KEV on the same day, 9/22, proves the category is being worked, not any single vendor."
+    },
+    {
+      "zh": "在 provenance graph 上做兩個具體修改，而且第二個是免費的研究素材。一，把「元件的安裝來源與安裝時間」升級成一級節點屬性並長期保存——當入口是一個早就合法存在於系統裡的元件時，唯一能把它連上攻擊的那條邊就是「誰、何時、從哪裡把它放進來」，而這條邊幾乎所有 EDR 都不留超過 90 天，遠短於 BRICKSTORM 393 天的停留中位數。二，把「活動時點」與「揭露時點」拆成兩個欄位，別讓公開報告的發布日當成首次觀測日（RAF 那支中隊已默默運作一年才宣布，是現成的標註樣本）。另外花一個下午讀中國 MOFCOM 18 號公告與稀土追溯信息系統的欄位定義：那等於一個國家級機構替你標好了「供應鏈圖上哪些欄位值得強制蒐集」，資料結構和你要建的供應／採購邊幾乎同構，差別只在它是申報的、你的要靠推論。",
+      "en": "Make two concrete changes to your provenance graph, the second of which is free research material. First, promote a component's installation source and installation time to first-class node attributes with long retention: when the entry point is something that has lived legitimately on the host for a long time, the only edge connecting it to the attack is who put it there, when, and from where — an edge almost no EDR keeps beyond 90 days, far short of BRICKSTORM's 393-day dwell median. Second, split 'activity time' and 'disclosure time' into separate fields so a public report's publication date never stands in as first observation (the RAF squadron that ran for a year before being announced is a ready-made labelled sample). Separately, spend an afternoon on the field definitions of China's MOFCOM Notice 18 and the rare-earth traceability system: that is a state apparatus having marked up, for free, which supply-chain fields are worth collecting by force, in a data structure nearly isomorphic to the supply-and-procurement edges you want — differing only in that its fields are declared while yours must be inferred."
+    },
+    {
+      "zh": "把持股的事件曝險對齊到日期，不要對齊到敘事。一，任何「中美貿易緩和」部位的保存期限只到 1/10（不是 11/10，懸崖已經挪位），為它付永續估值溢價等於拿年金價買兩個月期選擇權。二，稀土風險沒有解除——被暫停的只有 0.1% 域外那一層，18 號公告與追溯名冊一天都沒停，所以持股裡任何用到 NdPr 永磁的環節（馬達、音圈、硬碟、風電、機器人）要用後者定價，並盯 3/31 前是否出現第二份涉台觸發的 MOFCOM 國別公告。三，台灣國防供應鏈的風險形狀已經從「斷崖」變成「慢性延遲」：錢的總量創新高（NT$1,457 億追加預算、NT$559 億無人載具），但通道換成沒有憲法期限的逐項審查，評價上要改用不同的折現處理；配置上，審計部「缺口在偵測端不在火力端」的結論未被推翻，權重該偏向非 RF 偵測（聲學陣列、光學／紅外、被動雷達）而非機體與產線。四，台灣真正無備援的曝險是 LNG 不是油價——原油能靠阿曼灣船對船轉運繞過去，Ras Laffan 的每一立方公尺都必須走霍爾木茲，而安全存量只有約 12 天，所以真正的日期是卡達對亞洲供應是否在 12 月前恢復。",
+      "en": "Align your holdings' event exposure to dates, not narratives. First, any 'US-China easing' position has a shelf life only to 10 January — not 10 November, the cliff moved — so paying a perpetual valuation premium for it means paying annuity prices for a two-month option. Second, rare-earth risk has not cleared: only the 0.1% extraterritorial layer is suspended while Notice 18 and the traceability registry never paused, so anything touching NdPr permanent magnets (motors, voice coils, drives, wind, robotics) should be priced off the latter, and watch for a second country-specific MOFCOM notice before 31 March with a Taiwan-related trigger. Third, the risk shape in Taiwan's defence supply chain has changed from a cliff to chronic delay: the money is at a record (NT$145.7bn supplementary, NT$55.9bn for unmanned systems) but the channel is now line-by-line review with no constitutional deadline, which deserves different discount treatment; on allocation, the audit office's finding that the gap is in detection rather than firepower stands, so weight non-RF detection (acoustic arrays, electro-optical and infrared, passive radar) over airframes and production lines. Fourth, Taiwan's genuinely un-backstopped exposure is LNG, not the oil price: crude reroutes via ship-to-ship transfer in the Gulf of Oman, but every cubic metre out of Ras Laffan must pass Hormuz and the security stock is about twelve days — so the real date is whether Qatari supply to Asia recovers before December."
+    },
+    {
+      "zh": "下次對談時拋這個問題，它能一句話讓房間裡的人改變立場：「你說大國擋住了自主武器規範——那請問 11/16-20 要被升格成談判基礎的，是哪一版文本？」幾乎所有人會答不出來，因為所有人（包括 9/8報告的我）都還在用「僵局」描述 CCW，而 9/5 凌晨那場閉門會議裡美俄是在聯手改寫，不是在原地不動。接著補上那句真正有殺傷力的：擋下來至少還留著原稿，改寫則讓更弱的版本變成唯一的起點，所以一份帶著 9/5 刪改的談判授權，對已經擁有自主武器的一方是淨利多而不是淨利空。平行的第二問給能源與中東圈：「沙國 9 月出口創開戰以來新高的同一週，霍爾木茲通過船次只有戰前的 6%——你的風險模型用的是哪一個數字？」這一問把「衝突降溫」這種頭條敘事直接拆成兩個必須分開追蹤的量，而多數人只在看前一個。",
+      "en": "Open your next conversation with this question; it changes positions in the room in one line: 'You say the great powers blocked the autonomous-weapons norm — so which version of the text is being elevated into the basis for negotiation on 16-20 November?' Almost nobody will have an answer, because almost everybody — including me, in the 8 September brief — still describes CCW as deadlock, when in that closed session in the early hours of 5 September Washington and Moscow were jointly rewriting rather than holding still. Then land the part that bites: blocking at least leaves the original intact, while authoring makes the weaker version the only starting point, so a negotiating mandate carrying the 5 September edits is net positive for states already fielding autonomous weapons, not net negative. A parallel second question for energy and Middle East audiences: 'In the same week Saudi exports hit a seven-month high, Hormuz transits ran at 6% of pre-war — which number is in your risk model?' That splits the 'conflict is cooling' headline into two quantities that must be tracked separately, and most people are watching only the first."
+    }
+  ]
+}

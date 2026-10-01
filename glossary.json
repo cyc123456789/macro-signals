@@ -2431,6 +2431,72 @@
       },
       "category": "military",
       "first_seen": "2026-10-02"
+    },
+    {
+      "term": "MHC",
+      "zh": "有意義的人類控制",
+      "expansion": "Meaningful Human Control",
+      "def": {
+        "zh": "自主武器治理辯論的核心概念，指人類對武力使用必須保有實質而非形式上的控制。爭點在於錨點設在哪一層——是人類選定每一個個別目標，或只是選定一個瞄準區域後由機上電腦自行挑目標；兩種定義下，同一次攻擊可以同時合規與不合規。2026/9/5 CCW GGE 閉門會議刪去的「人類須先審查 AI 生成打擊目標」條款，正是把錨點往後者推。",
+        "en": "The core concept in autonomous-weapons governance: that humans must retain substantive rather than nominal control over the use of force. The dispute is where the anchor sits — whether a human selects each individual target, or merely designates an area after which the onboard computer picks targets itself. Under the two definitions the same strike can be both compliant and non-compliant. The clause requiring human review of AI-generated strike targets, removed at the CCW GGE closed session of 5 September 2026, moved the anchor toward the latter."
+      },
+      "category": "military",
+      "first_seen": "2026-10-02"
+    },
+    {
+      "term": "RevCon",
+      "zh": "審查會議",
+      "expansion": "Review Conference",
+      "def": {
+        "zh": "多邊軍控條約定期召開的締約國審查會議，用於檢討條約運作並決定後續工作授權。CCW 第七次審查會議訂於 2026/11/16-20 在日內瓦召開，GGE 的三年授權同時屆滿，因此該會議必須決定是給予談判授權（進入條約文本協商）或僅再給一次討論性授權（維持現狀）。關鍵在於授權所綁定的是哪一版草案文本。",
+        "en": "The periodic conference of states party to a multilateral arms-control treaty, convened to review its operation and decide the mandate for further work. The CCW's Seventh Review Conference is set for 16-20 November 2026 in Geneva, coinciding with the expiry of the GGE's three-year mandate, so it must choose between a negotiating mandate (opening treaty-text talks) and another discussion mandate (status quo). What matters is which version of the draft text any mandate is bound to."
+      },
+      "category": "geo",
+      "first_seen": "2026-10-02"
+    },
+    {
+      "term": "Deemed Export",
+      "zh": "視同出口",
+      "expansion": "Deemed Export (controls on technology release to persons)",
+      "def": {
+        "zh": "出口管制中的一種設計：把受管制技術揭露給特定人員，即視同把該技術出口到該人員所屬國，因此需要許可。管制對象從實體貨品轉為「人與其腦中的知識」。中國《出境入境管理條例》2026/9/15 上路，首度把管制延伸到熟悉受管制技術的工程師出境，是這套邏輯的一次主要擴張；美國 EAR 長期亦有對等條款。",
+        "en": "An export-control construct under which releasing controlled technology to a particular person counts as exporting it to that person's home country, and therefore requires a licence — shifting the object of control from physical goods to people and the knowledge they carry. China's revised Exit and Entry Administration Regulations, effective 15 September 2026, extended control for the first time to the departure of engineers familiar with controlled technology, a major expansion of this logic; the US EAR has long had an equivalent provision."
+      },
+      "category": "tech",
+      "first_seen": "2026-10-02"
+    },
+    {
+      "term": "Patch Tuesday",
+      "zh": "修補星期二",
+      "expansion": "Patch Tuesday (Microsoft monthly security release)",
+      "def": {
+        "zh": "微軟每月第二個星期二集中發布安全更新的慣例，是全球企業修補節奏的事實基準。單月漏洞數與其中「已遭在野利用」的零時差數量，是觀察攻擊面變化的粗略指標：2026 年 9 月單月 974 個 CVE 創下歷史紀錄，而其中兩個被利用的零時差都屬於已安裝元件的本機提權，而非新的外部入口。",
+        "en": "Microsoft's convention of releasing security updates on the second Tuesday of each month, the de facto cadence for enterprise patching worldwide. The monthly CVE count, and how many of them are zero-days already exploited in the wild, serve as a coarse indicator of how the attack surface is shifting: September 2026 set a record at 974 CVEs in one month, and both exploited zero-days were local privilege escalation through already-installed components rather than new external entry points."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-02"
+    },
+    {
+      "term": "Yanbu",
+      "zh": "延布港",
+      "expansion": "Yanbu (Saudi Red Sea oil export terminal)",
+      "def": {
+        "zh": "沙烏地阿拉伯紅海岸的原油出口港，是東西輸油管線（Petroline）繞開霍爾木茲海峽的唯一出海口。管線名目可日輸 500 萬桶，但 Yanbu 終端實測裝載能力約 400 萬桶、戰時估約 300 萬桶，因此真正的閘門在港埠而非管線。2026/9/10-11 管線第 8 與第 9 號泵站遇襲後關閉，9/22 恢復輸送，而 Yanbu 自 9/17 起另遭胡塞飛彈與無人機攻擊，法國於 9/24 宣布派兵協防。",
+        "en": "Saudi Arabia's Red Sea crude export port and the sole outlet of the Petroline east-west pipeline that bypasses the Strait of Hormuz. The pipeline's nominal capacity is 5 mbd, but Yanbu's measured loading capacity is around 4 mbd and an estimated 3 mbd in wartime, so the real gate is the terminal rather than the line. The pipeline shut after pump stations 8 and 9 were struck on 10-11 September 2026 and resumed on 22 September, while Yanbu itself came under Houthi missile and drone attack from 17 September, prompting France to announce a protective deployment on 24 September."
+      },
+      "category": "geo",
+      "first_seen": "2026-10-02"
+    },
+    {
+      "term": "Brent",
+      "zh": "布蘭特原油",
+      "expansion": "Brent Crude (ICE Brent benchmark)",
+      "def": {
+        "zh": "北海輕質低硫原油的國際定價基準，全球約三分之二實體原油貿易以其計價，因此是把地緣風險換算成總體經濟衝擊的標準轉接頭。2026 年 9 月於每桶 90 至 108 美元間走完一整輪，而聯準會於 9/16 升息一碼至 3.75%-4.00%，為 2023 年以來首次——油價重回 107 美元以上而央行仍續升息，代表供給側衝擊已進入政策反應函數。",
+        "en": "The international pricing benchmark for North Sea light sweet crude, against which roughly two-thirds of physical crude trade is priced, making it the standard adapter converting geopolitical risk into macroeconomic shock. It traced a full round trip between $90 and $108 a barrel in September 2026, while the Fed raised 25bp to 3.75%-4.00% on 16 September, its first hike since 2023. Oil back above $107 with the central bank still hiking would mean the supply shock has entered the policy reaction function."
+      },
+      "category": "geo",
+      "first_seen": "2026-10-02"
     }
   ]
 }
