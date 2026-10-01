@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30",
+  "updated": "2026-10-02",
   "terms": [
     {
       "term": "PSIRT",
@@ -2409,6 +2409,28 @@
       },
       "category": "geo",
       "first_seen": "2026-09-30"
+    },
+    {
+      "term": "AutoWarCom",
+      "zh": "自主戰爭司令部",
+      "expansion": "Autonomous Warfare Command",
+      "def": {
+        "zh": "美國國防部長Hegseth於2026/9/30宣布成立的新設四星聯合作戰司令部，專責整合並擴大美軍跨軍種的自主與機器人作戰能力，是繼2019年美國太空軍司令部後美軍首次新設戰鬥指揮層級司令部；成立前由過渡方案『阿金科特計畫』鋪路，須經國會立法授權，目標於2027/10/1前正式運作。",
+        "en": "A new four-star joint combatant command announced by US Defense Secretary Hegseth on 9/30/2026, tasked with consolidating and scaling cross-service autonomous and robotic warfare capability — the first new combatant-command echelon the US military has created since US Space Command in 2019; preceded by the interim Project Agincourt effort, it requires congressional legislation and targets full operational status by 10/1/2027."
+      },
+      "category": "military",
+      "first_seen": "2026-10-02"
+    },
+    {
+      "term": "Loitering Munition",
+      "zh": "遊蕩彈藥",
+      "expansion": "Loitering Munition",
+      "def": {
+        "zh": "一種可在目標區域上空盤旋滯空一段時間、再自行俯衝攻擊的武器，常搭載紅外線／熱追蹤等感測器自行選定熱源目標，模糊了偵察無人機與精確導引飛彈之間的界線；若感測邏輯本身無法區分軍事與民用熱源，即構成違反國際人道法(IHL)區分原則的無差別打擊風險，且此風險不需要任何AI決策層即可成立。",
+        "en": "A weapon that loiters over a target area for a period before diving to strike, often using onboard sensors such as infrared/thermal tracking to select a heat-source target on its own, blurring the line between a reconnaissance drone and a precision-guided missile; when its sensing logic itself cannot distinguish military from civilian heat sources, it poses an indiscriminate-strike risk that violates international humanitarian law's (IHL) discrimination principle — a risk that requires no AI decision layer to exist."
+      },
+      "category": "military",
+      "first_seen": "2026-10-02"
     }
   ]
 }

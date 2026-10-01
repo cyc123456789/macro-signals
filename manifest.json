@@ -1,6 +1,15 @@
 {
-  "updated": "2026-09-30",
+  "updated": "2026-10-02",
   "reports": [
+    {
+      "file": "reports/2026-10-02-brief.json",
+      "kind": "brief",
+      "date": "2026-10-02",
+      "title": {
+        "zh": "五角大廈9/30宣布成立四星『自主戰爭司令部』、FY2027求編546億美元——正是9/30報告記錄的美俄聯手拔掉LAWS人類監督條款落幕96小時後；台灣防長顧立雄9/30首度證實140億軍售案『自5月川習北京峰會後即遭凍結』、另有10億美元安全合作基金同遭扣留，同一週台灣自編8.5億美元把彈藥存量從30天衝到120天；伊朗9/30證實已透過卡達收到美方對七天路線圖的正式回覆、但內容未公開，9/30報告的『正式文件』檢驗這次只答對了程序；葉門政府同時指控胡塞在IRGC協助下把防空系統改裝成『見熱源就打、無法分辨軍民』的遊蕩飛彈；資安端，Cisco Catalyst SD-WAN Manager的CVSS 9.8漏洞延續Tier-0系列，這次的解析落差換成同一套系統自己對自己說不一樣的話",
+        "en": "The Pentagon Announces a Four-Star 'Autonomous Warfare Command' on 9/30, Seeking $54.6B for FY2027 — 96 Hours After 9/30報告 Logged the US and Russia Jointly Gutting LAWS's Human-Oversight Clauses; Taiwan's Defense Minister Confirms the Same Day That the $14B Arms Package Has Been Frozen Since May's Trump-Xi Beijing Summit, With $1B in Security-Cooperation Funds Also Held, as Taipei Separately Commits $850M to Quadruple Its Own Ammunition Stocks; Iran Confirms It Received Washington's Formal Reply to the Seven-Day Roadmap via Qatar, Content Undisclosed — 9/30報告's 'Formal Document' Test Answers the Procedure but Not the Substance; Yemen's Government Alleges the Houthis, With IRGC Help, Converted an Air-Defense System Into a Loitering Missile That 'Can't Tell Military From Civilian'; on Cyber, a CVSS-9.8 Flaw in Cisco Catalyst SD-WAN Manager Extends the Tier-0 Series — This Time the Parsing Mismatch Is a Single System Disagreeing With Itself"
+      }
+    },
     {
       "file": "reports/2026-09-30-brief.json",
       "kind": "brief",
