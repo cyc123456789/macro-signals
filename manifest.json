@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-02",
+  "updated": "2026-10-04",
   "reports": [
+    {
+      "file": "reports/2026-10-04-brief.json",
+      "kind": "brief",
+      "date": "2026-10-04",
+      "title": {
+        "zh": "國防自主戰爭集團求編546億美元，三個已表態的國會委員會不約而同只寫下10億美元、其餘536億全押在一個尚無期限的調解法案上——10/2報告記錄的『兩百倍預算』這次要打對折再打對折；五角大廈同時派出航艦打擊群與一萬名官兵在期中選舉前集結波灣、川普親口證實『期中選舉後恢復轟炸』確有此事，9/28報告的私下消息這次換成公開戰力部署；台灣首批F-16V Block 70戰機10/2抵台，但在夏威夷『無解釋』滯留六週，卡住的正是整場川習峰會期間；資安端，荷蘭漏洞揭露機構DIVD證實自家系統9月遭一個自主AI代理程式鏈接兩個零時差、數秒內拿下root並外洩志工資料，同一週FortiMail一個CVSS 9.8漏洞的『無修補程式』窗口已經撐得比9/30報告記錄的Citrix案例久上好幾天",
+        "en": "The Pentagon's Defense Autonomous Warfare Group Asked for $54.6B — the Three Congressional Committees That Have Acted So Far Each Independently Wrote Down Exactly $1B, Leaving $53.6B Resting Entirely on a Reconciliation Bill With No Deadline; 10/2報告's '200-Fold Budget' Needs Halving, Then Halving Again; the Pentagon Simultaneously Sails a Carrier Strike Group and 10,000 Troops Toward the Gulf Ahead of the Midterms, as Trump Confirms On the Record What 9/28報告 Logged Only as a Private Leak — That Bombing Resumes After the Election; Taiwan's First F-16V Block 70s Land on 10/2 After an 'Unexplained' Six-Week Hold in Hawaii That Happened to Span the Entire Trump-Xi Summit; on Cyber, the Dutch Vulnerability-Disclosure Nonprofit DIVD Confirms an Autonomous AI Agent Chained Two Zero-Days to Root Its Own Systems in Seconds and Exfiltrate Volunteer Data, While a CVSS-9.8 FortiMail Flaw's 'No Patch Yet' Window Has Already Outlasted 9/30報告's Citrix Case by Several Days"
+      }
+    },
     {
       "file": "reports/2026-10-02-monthly.json",
       "date": "2026-10-02",

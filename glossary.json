@@ -1,6 +1,28 @@
 {
-  "updated": "2026-10-02",
+  "updated": "2026-10-04",
   "terms": [
+    {
+      "term": "DAWG",
+      "zh": "國防自主戰爭集團",
+      "expansion": "Defense Autonomous Warfare Group",
+      "def": {
+        "zh": "美國國防部用來整合無人系統與自主作戰計畫的組織，2025年秋承接拜登政府未達成目標的『複製者』(Replicator)計畫，是『自主戰爭司令部』(AutoWarCom)背後的預算與計畫母體。2027財年求編546億美元，但絕大部分屬於須另案通過國防協調法案的強制性支出，目前已完成審查的國會委員會僅核定其中10億美元的法定預算部分。",
+        "en": "A Pentagon organization consolidating drone and autonomous-warfare programs, which in autumn 2025 inherited the Biden-era Replicator initiative after it missed its own goals. DAWG is the budgetary and programmatic parent behind the Autonomous Warfare Command (AutoWarCom). Its FY2027 request of $54.6 billion is mostly mandatory spending requiring a separate reconciliation bill; the congressional committees that have acted so far have approved only the $1 billion discretionary slice."
+      },
+      "category": "military",
+      "first_seen": "2026-10-04"
+    },
+    {
+      "term": "DIVD",
+      "zh": "荷蘭漏洞揭露研究院",
+      "expansion": "Dutch Institute for Vulnerability Disclosure",
+      "def": {
+        "zh": "荷蘭一個以志工為主的非營利組織，專職掃描網路上暴露的系統並向其所有者發出協調揭露警示。2026年9月自家Zammad客服系統遭一個自主AI代理程式鏈接兩個零時差漏洞入侵並外洩資料，是目前已知首批被認定由自主AI代理程式執行的真實入侵案例之一。",
+        "en": "A largely volunteer-run Dutch nonprofit dedicated to scanning for internet-exposed systems and issuing coordinated-disclosure warnings to their owners. In September 2026 its own Zammad helpdesk system was breached and had data exfiltrated by an intrusion chaining two zero-days, assessed as one of the first known real-world breaches executed by an autonomous AI agent."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-04"
+    },
     {
       "term": "PSIRT",
       "zh": "產品資安事件應變小組",
