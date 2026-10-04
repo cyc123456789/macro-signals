@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-04",
+  "updated": "2026-10-05",
   "terms": [
     {
       "term": "DAWG",
@@ -2519,6 +2519,160 @@
       },
       "category": "geo",
       "first_seen": "2026-10-02"
+    },
+    {
+      "term": "EPSS",
+      "zh": "漏洞利用預測評分系統",
+      "expansion": "Exploit Prediction Scoring System",
+      "def": {
+        "zh": "FIRST維護的開源模型，依公開訊號估算某個CVE在未來30天內出現野外利用活動的機率。它是預測工具，與記錄已確認利用事實的CISA KEV性質不同；其訓練資料來自人力主導、攻擊者稀缺時代的歷史行為，因此在武器化成本大幅下降的環境下預測力會系統性退化。",
+        "en": "An open model maintained by FIRST that estimates, from public signals, the probability that a given CVE will see exploitation activity in the wild within 30 days. It is a predictor, unlike CISA KEV which records confirmed exploitation; because it is trained on historical behaviour from an era of human-driven, scarce attackers, its predictive power degrades systematically as weaponisation costs collapse."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-05"
+    },
+    {
+      "term": "PoC",
+      "zh": "概念驗證程式",
+      "expansion": "Proof of Concept",
+      "def": {
+        "zh": "為證明某個弱點確實可被利用而寫出的最小可行攻擊程式碼，通常不含投遞、持久化或規避機制。可用PoC與可作戰的攻擊工具之間仍隔著投遞、規避與變現三道工序，這個落差是判讀「AI已能自動武器化」一類宣稱時的關鍵檢驗點。",
+        "en": "Minimal working exploit code written to demonstrate that a vulnerability is genuinely exploitable, normally without delivery, persistence or evasion. The gap between a working PoC and an operational attack tool — delivery, evasion, monetisation — is the key test when assessing claims that AI can now weaponise vulnerabilities automatically."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-05"
+    },
+    {
+      "term": "AIM3",
+      "zh": "AI惡意程式成熟度模型",
+      "expansion": "AI Malware Maturity Model",
+      "def": {
+        "zh": "Recorded Future Insikt Group提出的五級分類，用於評估惡意程式運用AI的成熟度：第1級為實驗，第5級為完全自主的AI攻擊。該機構評估2026上半年觀測到的活動集中在第1至3級，即以AI增強既有工作流而非自主執行攻擊。",
+        "en": "A five-level taxonomy from Recorded Future's Insikt Group for grading how maturely malware uses AI, from level 1 (experimentation) to level 5 (fully autonomous AI-driven attack). The group assessed observed H1 2026 activity as concentrated in levels 1–3 — AI augmenting existing workflows rather than executing attacks autonomously."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-05"
+    },
+    {
+      "term": "Exploit Foundry",
+      "zh": "自主漏洞工廠",
+      "expansion": "Autonomous Exploit Foundry",
+      "def": {
+        "zh": "以自動化迴圈持續產出弱點與攻擊程式的作業模式：韌體反編譯、弱點假說、攻擊測試、迭代修正由平行代理連續執行，並跨工作階段保留行動記憶，操作者離線時仍持續運轉。與一次性的弱點研究專案不同之處在於產出速率與人力無關。",
+        "en": "An operating pattern in which vulnerabilities and exploits are produced by a continuous automated loop — firmware decompilation, vulnerability hypothesis, exploit testing, iterative refinement — run by parallel agents holding persistent campaign memory across sessions, and continuing while operators are offline. What distinguishes it from a one-off research project is that output rate is decoupled from headcount."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-05"
+    },
+    {
+      "term": "Logic Flaw",
+      "zh": "語意邏輯缺陷",
+      "expansion": "Semantic Logic Flaw",
+      "def": {
+        "zh": "程式在邏輯層面的錯誤假設所造成的弱點，典型如把信任關係硬寫進程式、認證流程可被繞過、授權檢查位置錯誤。與記憶體破壞類弱點相對：傳統fuzzer與靜態分析難以偵測，但利用時不需繞過ASLR、CFI等緩解機制，因此「找到」到「可用」之間沒有能力斷層。",
+        "en": "A vulnerability arising from mistaken assumptions at the logic level — hardcoded trust relationships, bypassable authentication flows, authorisation checks in the wrong place. The counterpart to memory-corruption bugs: conventional fuzzers and static analysis struggle to detect them, but exploiting them requires no ASLR or CFI bypass, so there is no capability cliff between finding one and using one."
+      },
+      "category": "tech",
+      "first_seen": "2026-10-05"
+    },
+    {
+      "term": "Memory Corruption",
+      "zh": "記憶體破壞",
+      "expansion": "Memory Corruption",
+      "def": {
+        "zh": "因緩衝區溢位、釋放後使用等記憶體管理錯誤造成的弱點類別。過去二十年主流緩解機制（ASLR、DEP、CFI、CET）主要針對這一類，使得從發現到可靠利用之間存在顯著的技術門檻；此門檻在語意邏輯缺陷上並不存在。",
+        "en": "The vulnerability class arising from memory-management errors such as buffer overflows and use-after-free. Two decades of mainstream mitigations (ASLR, DEP, CFI, CET) target this class specifically, creating a substantial technical barrier between discovery and reliable exploitation — a barrier that does not exist for semantic logic flaws."
+      },
+      "category": "tech",
+      "first_seen": "2026-10-05"
+    },
+    {
+      "term": "CERT-In",
+      "zh": "印度電腦緊急應變小組",
+      "expansion": "Indian Computer Emergency Response Team",
+      "def": {
+        "zh": "印度電子資訊科技部轄下的國家級資安應變機構，具發布強制性指令之權。其2026年修補令要求網際網路可達系統上的已知被利用弱點在可行範圍內12小時內完成修補，是目前主要經濟體中最短的法定修補期限。",
+        "en": "India's national cyber incident response agency under MeitY, empowered to issue binding directions. Its 2026 patch mandate requires known exploited vulnerabilities on internet-reachable systems to be remediated within 12 hours where feasible — currently the shortest statutory patching deadline among major economies."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-05"
+    },
+    {
+      "term": "Account Pooling",
+      "zh": "帳號池化",
+      "expansion": "Account Pooling",
+      "def": {
+        "zh": "威脅行為者規避AI服務供應商用量限制與帳號封鎖的中介手法：以自動化註冊大量帳號，再透過API閘道（如CLIProxyAPI、Claude Relay Service）集中成單一相容端點供作業使用。其效果是切斷「作業」與「可究責身分」之間的連結，使存取層這個最後的歸因錨點失效。",
+        "en": "Middleware technique by which threat actors evade AI providers' usage limits and account bans: mass automated account registration, consolidated through API gateways such as CLIProxyAPI or Claude Relay Service into a single compatible endpoint for operational use. The effect is to sever the link between an operation and an accountable identity, defeating the access layer as a last attribution anchor."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-05"
+    },
+    {
+      "term": "BYOAI",
+      "zh": "自帶AI惡意程式",
+      "expansion": "Bring Your Own AI",
+      "def": {
+        "zh": "指惡意程式在受害主機上執行自有權重的本機模型，而非呼叫外部商用API。其意義在於管制槓桿：只要作業仰賴商用API，供應商的偵測與封鎖仍是有效的攔截點；一旦出現經確認的BYOAI案例，這條槓桿即失效。截至2026上半年公開報導中尚無已證實案例。",
+        "en": "Malware that runs its own local weights on the victim host rather than calling an external commercial API. Its significance is about leverage: as long as operations depend on commercial APIs, provider detection and banning remain a real interception point; a confirmed BYOAI case would retire that lever. As of H1 2026 no confirmed case appears in public reporting."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-05"
+    },
+    {
+      "term": "CVE-Genie",
+      "zh": "CVE重現框架",
+      "expansion": "CVE-Genie",
+      "def": {
+        "zh": "一套多代理框架，用於自動重現已公告CVE的可驗證攻擊程式。公開評估顯示其對2024至2025年公告的CVE中的51%成功重現，平均成本每顆約2.77美元——此數字常被引用為弱點武器化邊際成本崩塌的指標，但其性質是重現率而非野外作戰能力。",
+        "en": "A multi-agent framework for automatically reproducing verifiable exploits for published CVEs. Published evaluation reports success on 51% of CVEs published in 2024–2025 at an average cost of about $2.77 each — a figure widely cited as the marker of collapsing marginal cost in weaponisation, though what it measures is reproduction rate, not field-operational capability."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-05"
+    },
+    {
+      "term": "FIRST",
+      "zh": "事件應變與安全團隊論壇",
+      "expansion": "Forum of Incident Response and Security Teams",
+      "def": {
+        "zh": "全球性的資安事件應變團隊組織，維護CVSS與EPSS兩套評分標準，並發布年度CVE數量預測。其對2026年的預測為全年CVE逼近66,000件。",
+        "en": "The global organisation of incident response and security teams, custodian of both the CVSS and EPSS scoring standards and publisher of annual CVE volume forecasts. Its 2026 forecast puts the year near 66,000 CVEs."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-05"
+    },
+    {
+      "term": "Big Sleep",
+      "zh": "Big Sleep 弱點探索代理",
+      "expansion": "Big Sleep",
+      "def": {
+        "zh": "Google DeepMind與Project Zero合作開發的AI弱點探索代理，為首個在真實世界軟體中找出未知弱點的同類系統，公開紀錄包括在廣泛使用的開源軟體中找出20個先前未知的弱點，並曾搶在威脅行為者利用前發現特定弱點。",
+        "en": "An AI vulnerability-discovery agent built by Google DeepMind with Project Zero, the first of its kind to find an unknown vulnerability in real-world software. Published results include 20 previously unknown vulnerabilities in widely used open-source software, and at least one found ahead of imminent threat-actor exploitation."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-05"
+    },
+    {
+      "term": "CodeMender",
+      "zh": "CodeMender 自動修補代理",
+      "expansion": "CodeMender",
+      "def": {
+        "zh": "Google DeepMind的實驗性AI代理，以深度推理模型自動識別並修復程式弱點，公開紀錄為已向開源專案貢獻72個安全修補。與探索型代理搭配，構成「防守方也能用同一套能力」此一論點的主要實證基礎。",
+        "en": "An experimental Google DeepMind AI agent that uses deep-reasoning models to identify and automatically fix code vulnerabilities, with a published record of 72 security fixes contributed to open-source projects. Paired with discovery agents, it is the main empirical basis for the claim that defenders can draw on the same capability."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-05"
+    },
+    {
+      "term": "GBD",
+      "zh": "晶界擴散",
+      "expansion": "Grain Boundary Diffusion",
+      "def": {
+        "zh": "釹鐵硼永磁的製程技術，將重稀土（鏑、鋱）僅擴散至晶粒邊界而非均勻分布於整塊磁體，可在維持高溫矯頑力的同時大幅降低重稀土用量。其戰略意義在於：若配方端能減少或免除重稀土，中國對鏑鋱的管制槓桿將被削弱，削弱來源是配方而非產能。",
+        "en": "A process technology for NdFeB permanent magnets in which heavy rare earths (dysprosium, terbium) are diffused only into grain boundaries rather than distributed through the bulk magnet, preserving high-temperature coercivity while sharply cutting heavy rare earth content. Its strategic significance: if formulation can reduce or eliminate heavy rare earths, China's dysprosium-terbium leverage is eroded by chemistry rather than by capacity."
+      },
+      "category": "tech",
+      "first_seen": "2026-10-05"
     }
   ]
 }

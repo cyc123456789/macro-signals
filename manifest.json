@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-04",
+  "updated": "2026-10-05",
   "reports": [
+    {
+      "file": "reports/2026-10-05-weekly.json",
+      "date": "2026-10-05",
+      "kind": "weekly",
+      "title": {
+        "zh": "真正被刪掉的是「挑重點」：弱點武器化每顆掉到2.77美元之後，KEV與EPSS失去的是預測力，不是速度",
+        "en": "What got deleted is triage, not time: at $2.77 per weaponised CVE, KEV and EPSS lose their predictive basis — not their speed"
+      }
+    },
     {
       "file": "reports/2026-10-04-brief.json",
       "kind": "brief",

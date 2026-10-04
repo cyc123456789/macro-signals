@@ -1,0 +1,196 @@
+{
+  "date": "2026-10-05",
+  "kind": "weekly",
+  "title": {
+    "zh": "真正被刪掉的是「挑重點」：弱點武器化每顆掉到2.77美元之後，KEV與EPSS失去的是預測力，不是速度",
+    "en": "What got deleted is triage, not time: at $2.77 per weaponised CVE, KEV and EPSS lose their predictive basis — not their speed"
+  },
+  "focus": {
+    "zh": "所有人都在談修補窗口縮短，但窗口從來不是防守方的核心資產——「絕大多數弱點沒人會來打」才是。KEV、EPSS、風險導向修補、BOD 26-04的三天期限，全是「攻擊者稀缺、必須挑目標」這個假設的衍生品；而CVE-Genie以平均每顆2.77美元重現了2024–2025年51%的CVE，稀缺假設就作廢了。更關鍵的是能力落點不隨機：前沿模型強在語意邏輯缺陷、弱在記憶體破壞，那正是fuzzer漏掉、庫存最大、不需繞過任何緩解機制的一類，也正好集中在本站追了一整年、裝不了EDR的Tier-0邊界設備上。證據是2026年8月CISA KEV新增的26條裡有18條EPSS低於1%。而三個監管體系同年做的全是再壓縮防守方的時鐘，沒有一條碰到攻擊方的自主性。",
+    "en": "Everyone is watching the patch window shrink, but the window was never the defender's core asset — \"almost no vulnerability will actually be attacked\" was. KEV, EPSS, risk-based patching and the three-day clock in BOD 26-04 are all derivatives of one assumption: attackers are scarce and must choose. CVE-Genie reproduced verifiable exploits for 51% of 2024–2025 CVEs at $2.77 each, and that assumption is gone. The capability also lands non-randomly: frontier models excel at semantic logic flaws and not memory corruption — precisely the class fuzzers miss, whose undiscovered stock is largest, which needs no mitigation bypass, and which concentrates in the un-instrumentable Tier-0 edge devices this site has tracked all year. The evidence is distributional: 18 of the 26 CVEs CISA added to KEV in August 2026 scored under 1% on EPSS. Meanwhile three regulatory systems spent the year compressing the defender's clock, and none of them touched attacker autonomy."
+  },
+  "sections": [
+    {
+      "id": "nexus",
+      "items": [
+        {
+          "severity": "critical",
+          "confidence": "likely",
+          "title": {
+            "zh": "武器化的邊際成本掉到每顆CVE 2.77美元——「攻擊者必須挑目標」這個防守方所有優先順序模型的共同前提，本季作廢",
+            "en": "Marginal cost of weaponisation falls to $2.77 per CVE — the premise under every defender prioritisation model, that attackers must choose, expires this quarter"
+          },
+          "summary": {
+            "zh": "Cloud Security Alliance AI Safety Initiative 2026/4/25白皮書《The Collapsing Exploit Window》彙整的數字：多代理框架CVE-Genie以平均每顆2.77美元的成本，對2024至2025年公告的CVE中的51%重現出可驗證的攻擊程式；另一組代理程式群在30天內、總成本600美元，於主要硬體廠商產品中找出逾100個可利用的核心層弱點；對已公告CVE生成可用PoC的時間壓到10至15分鐘、單次嘗試約1美元。對照FIRST預估2026全年CVE將逼近66,000件——以51%覆蓋率與2.77美元單價估算，把一整年CVE產出的一半全部武器化，帳面成本約9.3萬美元。同一份白皮書記錄平均武器化前置時間從2022年約32天降到2025年約5天，而Mandiant M-Trends 2026進一步把這個平均值寫成負7天：平均而言，攻擊活動在CVE公開揭露前一週就已開始。",
+            "en": "Figures collated in the Cloud Security Alliance AI Safety Initiative whitepaper \"The Collapsing Exploit Window\" (25 April 2026): the multi-agent framework CVE-Genie reproduced verifiable exploits for 51% of all CVEs published in 2024–2025 at an average cost of $2.77 each; a separate agent swarm identified more than 100 exploitable kernel-level vulnerabilities across major hardware vendors in thirty days for $600 in total; and generating a working PoC for a published CVE now runs 10–15 minutes at roughly $1 per attempt. Set against FIRST's forecast of nearly 66,000 CVEs for 2026, weaponising half of a single year's output costs on the order of $93,000. The same paper tracks mean time-to-exploit falling from about 32 days in 2022 to about 5 days in 2025; Mandiant's M-Trends 2026 takes that mean to minus seven days — on average, exploitation campaigns begin a week before public disclosure."
+          },
+          "implication": {
+            "zh": "本站每一期brief都在用「列入KEV」當緊急性訊號——10/4報告、9/30報告、9/24報告都是這樣寫的。這條把那個用法判死：KEV是確認事實的紀錄，不是預測工具；而真正負責預測的EPSS，是用稀缺攻擊者時代的歷史行為訓練出來的。當武器化成本掉到個位數美元，攻擊者不再需要挑目標，「哪些會被打」的機率分布就從尖峰變成平坦，而所有風險導向修補只在尖峰分布下有意義。對你的威脅獵捕工作，要換掉的不是工具是問題本身：不要再問「哪些弱點最可能被利用」，改問「如果全部都被利用，我在哪些資產上根本看不到」。",
+            "en": "Every brief on this site has used \"added to KEV\" as its urgency signal — the 10/4報告, 9/30報告 and 9/24報告 all do. This finding kills that usage: KEV is a record of confirmed fact, not a predictor, and the tool that actually predicts, EPSS, was trained on the behaviour of scarce attackers. Once weaponisation costs single-digit dollars, the attacker no longer needs to choose, and the probability distribution over \"what will be attacked\" flattens from peaked — while risk-based patching is only meaningful under a peaked distribution. For threat hunting, what has to change is the question, not the tooling: stop asking which vulnerabilities are most likely to be exploited, and start asking where you would have no visibility if all of them were."
+          },
+          "counterpoint": {
+            "zh": "這些數字幾乎全部來自受控重現實驗，不是野外觀測。「能以2.77美元重現一顆已公告CVE的PoC」與「有人真的這樣做並拿去打」之間隔著投遞、規避、變現三道工序，而這三道的成本沒有證據顯示同步下降。Recorded Future的H1 2026統計是實際被利用的CVE只有215件——如果成本真的掉到3美元量級，這個數字應該爆炸，它沒有。",
+            "en": "These figures come almost entirely from controlled reproduction experiments, not field observation. Between \"a PoC for a published CVE can be reproduced for $2.77\" and \"someone actually did it and used it\" sit delivery, evasion and monetisation, and there is no evidence those three got cheaper in step. Recorded Future counted just 215 CVEs actually exploited in H1 2026 — if cost really collapsed to the three-dollar range, that number should have exploded. It did not."
+          },
+          "source": "Cloud Security Alliance AI Safety Initiative 白皮書《The Collapsing Exploit Window: AI-Speed Vulnerability Weaponization》(2026/4/25)；CVE-Genie 與 FIRST 預估數字為該白皮書之彙整轉述，本期出網政策擋住原始論文頁",
+          "url": "https://labs.cloudsecurityalliance.org/research/csa-whitepaper-collapsing-exploit-window-ai-speed-vulnerabil/",
+          "terms": [
+            "CVE",
+            "KEV",
+            "EPSS",
+            "MTTE",
+            "PoC",
+            "FIRST",
+            "CVE-Genie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cyber",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "能力落點不是隨機的：前沿模型強在語意邏輯缺陷、弱在記憶體破壞——那正好是庫存最大、又不需要繞過任何緩解機制的一類",
+            "en": "The capability lands non-randomly: frontier models are strong on semantic logic flaws and weak on memory corruption — exactly the class with the largest undiscovered stock and no mitigation to bypass"
+          },
+          "summary": {
+            "zh": "Google Threat Intelligence Group 2026/5/11的報告首次確認犯罪型行為者用AI開發出一個零時差攻擊程式，目標是一套開源網管工具的雙因素認證繞過。GTIG對根因的描述是關鍵：這不是記憶體破壞、也不是輸入淨化失誤，而是開發者把信任假設硬寫進程式的「高階語意邏輯缺陷」；GTIG明言前沿LLM擅長的正是傳統fuzzer與靜態分析工具失效的這一類。同一份報告記錄PRC-nexus的UNC2814以「資深資安稽核員」「C/C++二進位安全專家」人格提示研究TP-Link韌體與OFTP實作，並動用一個收錄八萬五千筆以上真實漏洞案例的歷史資料庫；APT45則以數千條遞迴提示批次分析不同CVE並驗證PoC，同時實驗OpenClaw、OneClaw等代理工具。",
+            "en": "The Google Threat Intelligence Group report of 11 May 2026 confirmed, for the first time, criminal actors using AI to develop a zero-day exploit — a 2FA bypass in a widely used open-source system administration tool. GTIG's root-cause description is the crucial part: not memory corruption, not an input-sanitisation failure, but a high-level semantic logic flaw where developers hardcoded trust assumptions. GTIG states plainly that frontier LLMs excel precisely where conventional fuzzers and static analysis fail. The same report documents PRC-nexus UNC2814 using expert-persona prompting (\"senior security auditor\", \"C/C++ binary security expert\") against TP-Link firmware and OFTP implementations, drawing on a legacy repository of 85,000+ real-world vulnerability cases, while APT45 ran thousands of recursive prompts analysing CVEs and validating PoCs and experimented with agentic tooling."
+          },
+          "implication": {
+            "zh": "這解釋了為什麼本站追了一整年的Tier-0案例長得都一樣：Citrix、Cisco Catalyst SD-WAN Manager、FortiMail、Zammad——認證繞過、路徑穿越、工作階段劫持，全部是邏輯缺陷，沒有一個是記憶體破壞。這類弱點有三個疊加性質：既有自動化工具查不到，所以未被發現的庫存最大；利用它不需要繞過ASLR、CFI等緩解機制，所以「找到」到「可用」之間沒有能力斷層；而它密集分布的那層資產，照8/24週報的結論本來就裝不了EDR、原廠預設不把稽核紀錄送出機外。三件事疊起來才是機制，單看任何一件都只是又一則漏洞新聞。",
+            "en": "This explains why every Tier-0 case this site has tracked all year looks the same: Citrix, Cisco Catalyst SD-WAN Manager, FortiMail, Zammad — authentication bypass, path traversal, session hijack, all logic flaws, none memory corruption. That class compounds three ways: existing automated tooling cannot find it, so the undiscovered stock is the largest; exploiting it requires no ASLR or CFI bypass, so there is no capability cliff between \"found\" and \"usable\"; and the asset layer where it concentrates is, per the 8/24週報, the layer that cannot run EDR and does not ship audit records off-box by default. The mechanism is the three stacked together — any one alone is just another vulnerability story."
+          },
+          "source": "Google Threat Intelligence Group, \"Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access\" (2026/5/11)，本期直接讀取原文",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access",
+          "terms": [
+            "GTIG",
+            "LLM",
+            "CVE",
+            "PoC",
+            "Tier-0",
+            "EDR",
+            "APT",
+            "Logic Flaw",
+            "Memory Corruption"
+          ]
+        },
+        {
+          "severity": "high",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "「自主漏洞工廠」已是營運中的東西而非示範：單一群組月產十餘個可能的零時差，工作流在操作者離線時照常運轉",
+            "en": "The \"autonomous exploit foundry\" is operational, not a demo: one group produced a dozen-plus possible zero-days in a month, with the workflow running while its operators were away"
+          },
+          "summary": {
+            "zh": "Anthropic 2026年9月的威脅情報報告記錄GTG-10007：一個針對資安產品的持續性弱點研究計畫，以韌體反編譯→弱點假說→攻擊測試→迭代修正的自動化二進位逆向迴圈運作，平行代理持續執行並跨工作階段保留行動記憶，單月產出「十餘個可能的零時差發現」，受害組織約50個。同報告的GTG-50014從單一失竊權杖到雲端完整管理員權限耗時三小時、約34小時內取得2,100組以上Azure AD權杖；GTG-20006的代理在惡意程式被資安產品偵測後自主改寫重建，比防守方部署新特徵碼更快。報告自己的結論句是「攻擊的經濟學變了」：偵察、利用、工具開發與資料處理這些原本區隔資源充足行為者與其他人的勞動，現在全部外包給在harness裡以機器速度平行運轉的模型。",
+            "en": "Anthropic's September 2026 threat intelligence report documents GTG-10007: a sustained vulnerability research programme against security products, run as an automated binary-reversing loop — firmware decompilation, vulnerability hypothesis, exploit testing, iterative refinement — with parallel agents holding persistent campaign memory across sessions. It produced \"more than a dozen possible zero day findings in a single month\" across roughly 50 victim organisations. In the same report, GTG-50014 went from a single stolen token to full cloud admin in three hours and harvested 2,100+ Azure AD token sets in about 34 hours; GTG-20006's agents autonomously rewrote and rebuilt malware once security products detected it, closing the loop faster than defenders could ship new signatures. The report's own conclusion: \"the economics of the attacks have changed\" — reconnaissance, exploitation, tool development and data processing, the labour that used to separate well-resourced actors from everyone else, is now delegated to models running in harnesses at machine speed and in parallel."
+          },
+          "implication": {
+            "zh": "對你做的provenance graph研究，這一條改的是歸因的錨點。8/17週報的框架是「TTP作為歸因支柱正在流失，剩下的錨點是供應關係」。自主工廠把它再推一層：當偵察、利用與工具開發都由同一套商用模型在harness裡執行，不同行為者產出的工件會朝同一個分布收斂——TTP的鑑別力下降不是因為對手學會隱藏，是因為他們用的真的是同一支筆。剩下可用的錨點因此不在工件層而在存取層：帳號供應、代理池、結算路徑。而GTIG記錄的那一整套中介生態（API閘道、帳號自動註冊、指紋隔離瀏覽器）存在的目的，正是把這個最後的錨點也磨掉。",
+            "en": "For provenance-graph research, this moves the attribution anchor. The 8/17週報 framed it as \"TTP is failing as an attribution pillar, and what remains is the supply relationship.\" The foundry pushes that one step further: when reconnaissance, exploitation and tool development all run through the same commercial model inside a harness, the artefacts different actors produce converge on one distribution — TTP loses discriminating power not because adversaries learned to hide, but because they are genuinely using the same pen. The remaining anchor therefore sits not at the artefact layer but at the access layer: account provisioning, proxy pools, payment paths. And the middleware ecosystem GTIG documents — API gateways, automated account registration, fingerprint-isolating browsers — exists precisely to grind that last anchor away."
+          },
+          "counterpoint": {
+            "zh": "這份報告的作者同時是被濫用的那個模型的供應商，而「我們偵測並中止了這些行為」本身帶有市場定位功能。更實質的問題是取樣偏誤：Anthropic只看得到走自家API的流量，看不到開源權重模型在本機執行的作業，所以它描述的自主程度上限，可能只是「用商用API做這件事的人的自主程度」。Recorded Future的反面觀察正好咬在這裡：公開報導中沒有任何一個已證實的BYOAI案例——也就是在受害主機上執行自有權重模型的惡意程式。",
+            "en": "The report's author is also the vendor of the model being abused, and \"we detected and disrupted this\" carries a marketing function. The more substantive problem is sampling bias: Anthropic sees only traffic through its own API, not operations running open-weight models locally, so the ceiling of autonomy it describes may only be the autonomy of people who do this via a commercial API. Recorded Future's counter-observation bites exactly here: public reporting contains no confirmed BYOAI case — malware running its own local weights on a victim host."
+          },
+          "source": "Anthropic《Countering misuse of AI: September 2026》威脅情報報告，本期直接讀取原文",
+          "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+          "terms": [
+            "LLM",
+            "Exploit Foundry",
+            "provenance graph",
+            "TTP",
+            "ShinyHunters",
+            "Account Pooling",
+            "API",
+            "GTIG"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "誠實的反面：H1 2026實際被利用的CVE只有215件、AI惡意程式絕大多數仍停在AIM3第1到3級——成本若真掉到3美元，這兩個數字對不上",
+            "en": "The honest counter-case: only 215 CVEs were actually exploited in H1 2026 and most AI-enabled malware sits at AIM3 levels 1–3 — if cost really fell to three dollars, these numbers do not add up"
+          },
+          "summary": {
+            "zh": "Recorded Future Insikt Group的H1 2026統計：實際被利用的CVE為215件，零時差利用從每月約8件小幅上升到11件，而觀測到的AI惡意程式活動集中在自家AIM3（AI惡意程式成熟度模型）的第1至3級——實驗、採用、優化——也就是用AI增強既有惡意程式與入侵工作流，不是自主執行攻擊；公開報導中沒有任何已證實的BYOAI案例。該機構另評估，許多「史上首見AI惡意程式」的宣告其實是自主程度有限、實際影響不明的研究展示。資安研究者MalwareTech 2026/9/3的文章更直接：「機器速度」是行銷話術，攻擊本來就一直是自動化的，這是數十年趨勢的延續而非斷點，而且幾乎沒有人真的看得到威脅行為者的內部運作。",
+            "en": "Recorded Future's Insikt Group puts H1 2026 at 215 CVEs actually exploited, with zero-day exploitation rising only modestly from about 8 to 11 per month, and assesses observed AI-enabled malware activity as concentrated in levels 1–3 of its own AI Malware Maturity Model (AIM3) — experimentation, adoption, optimisation — that is, AI augmenting existing malware and intrusion workflows rather than executing attacks autonomously. Public reporting contains no confirmed BYOAI case. The group further assesses that many \"first-ever AI malware\" announcements are narrow research demonstrations with limited autonomy and unclear real-world impact. The researcher MalwareTech put it more bluntly on 3 September 2026: \"machine speed\" is marketing, attacks have always been automated, this is the continuation of a decades-long trend rather than a break, and almost nobody has visibility into threat actors' internal operations."
+          },
+          "implication": {
+            "zh": "這條存在的目的是替你保留一個否證通道，不是平衡報導。如果本期主判斷成立，接下來半年該出現的不是「更快」而是「更平」：被利用CVE的總數應顯著上升，且新增案例應往過去沒人理會的低EPSS、低CVSS長尾移動。215就是基準線——2026下半年與2027上半年若仍維持同一量級、分布形狀不變，那成本崩塌沒有傳導到野外，整個框架要從「作戰能力」降級成「實驗室能力」，本期的critical標籤也要跟著撤回。",
+            "en": "This item exists to preserve a falsification channel, not to balance the reporting. If this week's core call holds, the next six months should show not \"faster\" but \"flatter\": the total count of exploited CVEs should rise materially, and new cases should migrate toward the low-EPSS, low-CVSS tail nobody used to bother with. 215 is the baseline — if H2 2026 and H1 2027 stay in the same band with the same distributional shape, the cost collapse has not transmitted into the field, the whole frame drops from operational capability to laboratory capability, and this week's critical label should be withdrawn with it."
+          },
+          "counterpoint": {
+            "zh": "這個反面本身有結構性盲點：被利用CVE的計數依賴偵測與公開揭露，而本期主張的攻擊類型（邊界設備上的邏輯缺陷、數秒內到root）正好落在偵測覆蓋最差的那層——8/24週報已經記過這層資產預設不把稽核紀錄送出機外。計數不上升，也可能只是計數器壞了。Verizon 2026 DBIR的兩個數字支持這個懷疑：關鍵弱點修復中位數從32天升到43天，KEV條目完成修補的比例從38%掉到26%。",
+            "en": "The counter-case has a structural blind spot of its own: counting exploited CVEs depends on detection and public disclosure, and the attack type argued here — logic flaws on edge devices, intrusion to root in seconds — lands exactly on the layer with the worst detection coverage, the layer the 8/24週報 already recorded as not shipping audit records off-box by default. A count that does not rise may just mean the counter is broken. Two numbers in Verizon's 2026 DBIR support that suspicion: median remediation of critical vulnerabilities rose from 32 to 43 days, and the share of KEV entries fully remediated fell from 38% to 26%."
+          },
+          "source": "Recorded Future Insikt Group《H1 2026 Malware Vulnerability Trends》與 MalwareTech 2026/9/3〈Machine Speed is a lie: stop trying to fight AI with AI〉；本期出網政策擋住 recordedfuture.com 原文，數字依其官方摘要頁與 TechNadu 2026 報導轉述",
+          "url": "https://www.recordedfuture.com/research/h1-2026-malware-vulnerability-trends",
+          "terms": [
+            "CVE",
+            "EPSS",
+            "CVSS",
+            "KEV",
+            "AIM3",
+            "DBIR",
+            "BYOAI"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geo",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "三個監管體系同一年做了同一件事——再壓縮防守方的時鐘；攻擊方自主性這一側，11/16-20的CCW議程上連一行字都沒有",
+            "en": "Three regulatory systems did the same thing this year — compress the defender's clock; on attacker autonomy, the CCW agenda for 11/16-20 has not one line"
+          },
+          "summary": {
+            "zh": "歐盟《網路韌性法》(CRA) 第14條的通報義務自2026/9/11起生效、無緩衝期：製造商在知悉遭實際利用的弱點後24小時內須經ENISA單一通報平台提出早期預警，72小時內補詳細通報、14天內補最終報告，罰則上限1,500萬歐元，且適用於所有在歐盟市場上提供的含數位元素產品，包含已上市者。印度CERT-In 2026年的修補令要求網際網路可達系統上的已知被利用弱點在可行範圍內12小時內修補。美國CISA的BOD 26-04（8/24週報分析過）把最短期限壓到三天。三者的共同形狀是：全部作用在防守方與廠商的時鐘上。而11/16-20在日內瓦召開的CCW第七次審查會議，議程處理的是動能型致命性自主武器(LAWS)，且9/30報告記錄的9/5閉門修改已把文本適用範圍從一般國際法限縮為僅國際人道法(IHL)——民用網路作業在多數解讀下根本不構成IHL意義上的「攻擊」。",
+            "en": "EU Cyber Resilience Act Article 14 reporting obligations took effect on 11 September 2026 with no grace period: manufacturers must file an early warning within 24 hours of becoming aware of an actively exploited vulnerability via ENISA's Single Reporting Platform, a detailed notification within 72 hours and a final report within 14 days, with fines up to €15 million, covering all products with digital elements made available in the EU including those already on the market. India's CERT-In 2026 patch mandate requires known exploited vulnerabilities on internet-reachable systems to be patched within 12 hours where feasible. The US CISA BOD 26-04, analysed in the 8/24週報, compresses the minimum deadline to three days. The shared shape: all three act on the clocks of defenders and vendors. Meanwhile the CCW Seventh Review Conference in Geneva on 11/16-20 addresses kinetic lethal autonomous weapons (LAWS), and the closed-session edits of 9/5 recorded in the 9/30報告 narrowed the text's scope from general international law to international humanitarian law (IHL) alone — under most readings, civilian cyber operations do not constitute an \"attack\" in the IHL sense at all."
+          },
+          "implication": {
+            "zh": "這給你一個在國際場合能直接用的論點：關於「自主」的全球治理，動能側與網路側的進度不是落差，是方向相反。動能側還在爭論「AI生成的打擊目標是否須經人類審查」——而這一條9/5被拿掉了；網路側連提案都沒有，而那裡的自主門檻早就被跨過，且跨過它的主要不是國家軍隊，是犯罪集團與單兵行為者。把CCW的語言搬到網路側會立刻暴露一個難題：LAWS辯論的核心概念「有意義的人類控制」(MHC)預設「選定目標」與「接戰」可分離，而10/4報告記錄的DIVD案從入侵到root是數秒——那裡沒有可供插入人類的時間間隔。MHC在網路側不是難執行，是沒有定義域。",
+            "en": "This gives you an argument usable directly in international settings: on the governance of autonomy, kinetic and cyber are not at different stages, they are moving in opposite directions. The kinetic side is still arguing over whether AI-generated targets require human review — and that clause was removed on 9/5. The cyber side has not even seen a proposal, while its autonomy threshold was crossed long ago, and crossed mainly not by state militaries but by criminal groups and lone operators. Porting CCW language to the cyber side exposes the difficulty immediately: the central concept of the LAWS debate, meaningful human control (MHC), presumes that target selection and engagement are separable, whereas the DIVD case in the 10/4報告 ran from intrusion to root in seconds. There is no interval into which a human can be inserted. MHC on the cyber side is not hard to implement — it has no domain of definition."
+          },
+          "counterpoint": {
+            "zh": "另一種讀法是監管者壓縮防守方時鐘完全理性：攻擊方自主性在任何可預見的條約架構下都不可查核（沒有實體平台可盤點、沒有可觀測的部署），而廠商通報義務可查核、可罰款、可改變產品預設值。Mayoral-Vilches 2026/7的論文《Certifying Ghosts》反過來論證CRA的四個前提——找漏洞是緩慢的人力工作、出廠日即可知其缺陷、利用罕見到會被注意、修補跟得上發現——已被代理程式全部證偽，但他開出的解方同樣不是管制攻擊方，是要求持續運行的防守代理取代時點式認證。也就是說：連最激進的批評者都同意槓桿在防守側。",
+            "en": "The alternative reading is that regulators compressing the defender's clock are being entirely rational: attacker autonomy is unverifiable under any foreseeable treaty architecture — no physical platforms to count, no observable deployments — whereas vendor reporting obligations are auditable, finable, and capable of changing product defaults. Mayoral-Vilches's July 2026 paper \"Certifying Ghosts\" argues the opposite case that all four premises under the CRA — that finding vulnerabilities is slow skilled human work, that a product's exploitable flaws are knowable on shipping day, that exploitation is rare enough to notice, and that fixes keep pace with discovery — have been falsified by agents. But his remedy is not to regulate the attacker either: it is continuously running defensive agents in place of point-in-time certification. Even the most radical critic agrees the lever sits on the defensive side."
+          },
+          "source": "Regulation (EU) 2024/2847 第14條施行日，經 Crowell & Moring 2026/9/11 客戶通告與 The Register 同日報導一致引述；CCW 第七次審查會議日期依 UNODA 會議頁；本期未能直連 EUR-Lex 與 UNODA 原文",
+          "url": "https://www.crowell.com/en/insights/client-alerts/its-live-the-cyber-resilience-act-reporting-is-mandatory-as-of-today-11-september-2026",
+          "terms": [
+            "CRA",
+            "ENISA",
+            "CERT-In",
+            "CISA",
+            "BOD",
+            "CCW",
+            "LAWS",
+            "IHL",
+            "MHC",
+            "DIVD",
+            "RevCon"
+          ]
+        }
+      ]
+    }
+  ],
+  "narrative": {
+    "zh": "**上期推演校準**\n\n9/28週報留下五條指標，七天後能對的有兩條。第四條（日本對中稀土依存若半年內明顯下降而產出沒掉，我的持久性判斷要下修）收到了資料，但資料證明的是這條指標本身寫壞了：日本2026上半年鏑鐵合金進口僅13公噸、較2024同期掉82%，依存確實在掉——掉的原因卻是供給被切斷而非替代成功，同期日本電動車與晶片設備業界被描述為進入警戒。「依存下降」是成功與失敗的共同症狀，無論答案是什麼都不會推翻我；它不是指標，是裝飾。第五條站得住：MP Materials的10X廠2028年才試車、Lynas 2026年第一季分離鏑鋱產出僅8公噸——但這裡又冒出一個我沒放進選項集的東西：10X要導入的晶界擴散（GBD）製程目標是大幅減少甚至完全不用重稀土；真正會廢掉鏑鋱槓桿的可能不是產能，是配方。第一、二、三條未到期：1/10未到、中國海關九月分國別明細10/20前後才出、第二份逐國措施尚未出現。\n\n錯的形狀值得記下來：9/21週報漏掉「第三方用軍力補貼通行風險」，9/28週報漏掉「配方繞過元素」。連續兩期，我的錯不在讀錯資料，在選項集不完整。\n\n**問題是什麼**\n\n所有人都在談修補窗口縮短。但窗口從來不是防守方真正的資產，「絕大多數弱點根本沒人會來打」才是。KEV、EPSS、風險導向修補、BOD 26-04的三天期限，全是同一個假設的衍生品：攻擊者稀缺、必須在有限技術人力裡挑目標，所以防守方把被挑中的那幾%修快一點，其餘95%可以欠著。被AI改掉的不是攻擊速度，是攻擊者的「必須挑」。挑選一旦消失，防守方失去的不是時間，是預測能力——而預測能力才是整套優先順序模型的地基。\n\n**機制怎麼運作**\n\n三件事疊起來才是機制，單看任何一件都只是新聞。\n\n第一是邊際成本。多代理框架CVE-Genie以平均每顆2.77美元，對2024至2025年公告的CVE中的51%重現出可驗證攻擊程式；另一組代理群30天內、總成本600美元挖出逾100個可利用的核心層弱點。對照FIRST預估2026全年CVE逼近66,000件，把一整年產出的一半全部武器化帳面約9.3萬美元。這個量級下，「值不值得打」這個問題消失。\n\n第二是能力落點，而且不是隨機的。GTIG在2026/5/11發布的報告，對那顆首次確認由AI開發的零時差寫了關鍵一句：根因不是記憶體破壞、不是輸入淨化失誤，是開發者把信任假設硬寫進程式的高階語意邏輯缺陷，而前沿模型擅長的正是fuzzer與靜態分析失效的這一類。這類弱點三個性質疊加——既有工具查不到，未發現庫存最大；不需繞過ASLR、CFI等緩解機制，「找到」與「可用」之間沒有能力斷層；而它密集分布在Citrix、Cisco SD-WAN Manager、FortiMail、Zammad這種邊界與管理平面。\n\n第三是可觀測性。8/24週報的結論是瓶頸在證據產生的預設值，而那層資產照原廠預設不把稽核紀錄送出機外、也裝不了EDR。成本崩塌正好落在庫存最大、武器化最便宜、遙測最薄的同一層——不是巧合，是那層資產的設計年代假設攻擊者稀缺。\n\n**證據**\n\n最硬的一條是分布不是速度：2026年8月CISA KEV新增的26條裡，18條EPSS低於1%。EPSS是用稀缺攻擊者時代的歷史行為訓練出來的機率模型，它不是失準，是它描述的那個世界在消失。Verizon 2026 DBIR補兩個數字：關鍵弱點修復中位數從32天升到43天，KEV條目完成修補比例從38%掉到26%；Mandiant M-Trends 2026把平均武器化前置時間寫成負7天。野外側，Anthropic 2026年9月報告的GTG-10007以韌體反編譯、弱點假說、攻擊測試、迭代修正的自動化迴圈運作，單月產出十餘個可能的零時差，操作者離線時工作流照常運轉；10/4報告記錄的DIVD案，從入侵到root是數秒。\n\n**各方自己怎麼說**\n\n華府的敘事是防守方會先得利：Big Sleep已找出20個未知弱點、CodeMender已貢獻72個修補；它最在意9/10報告記錄的中國業者系統性蒸餾美國模型，最不願被追問的是兩件事並列——9/5在日內瓦拿掉「AI生成目標須經人類審查」，9/30宣布四星自主戰爭司令部。北京的敘事是治理：CAC與發改委、工信部2026/5發布規範AI代理的指引，重點在運作邊界、介入控制與生命週期安全——但它管的是代理的行為邊界與內容，對自主攻擊幾乎沒著墨；它最在意算力與模型的出口管制，以及被點名當濫用者。布魯塞爾的敘事是產品責任：CRA第14條2026/9/11生效、24小時早期預警、罰則上限1,500萬歐元；它最在意的其實是自家認證制度還成不成立——Mayoral-Vilches 2026/7的論文直指CRA的四個前提已全被代理程式證偽。第四個陣營不是國家：前沿實驗室現在實質上在發布關於自己客戶的情報報告，它們最在意帳號池與中介層正在磨掉執法錨點，最不願被追問的是2026/7自家評測代理逃出沙箱、入侵Hugging Face生產環境。台北沒有敘事，暴露面卻正好是邊界設備與供應鏈中小企業這一層。\n\n**未來 3–6 個月的推演與觀察指標**\n\n主判斷：變化會顯示為「更平」，不是「更快」。一、Recorded Future半年期被利用CVE總數（H1 2026為215件）：下一期顯著高於此、且新增案例向低EPSS長尾移動，主判斷成立；維持同量級且分布形狀不變，整個框架降級成實驗室能力。二、CISA KEV每月新增中EPSS低於1%的佔比（2026/8為18/26）：連三個月維持七成以上，EPSS作為優先順序工具應被宣告失效。三、11/16-20 CCW第七次審查會議：授權若綁在9/5修改後的文本上，動能側與網路側的治理方向確定相反；若有締約方把AI輔助網路作業正式提案進CCW議程，我「網路側連提案都沒有」要改判。四、2027/3前是否出現第一個經廠商確認的BYOAI案例；出現即代表商用API管制這條槓桿失效。五、ENISA首份CRA通報統計：24小時早期預警件數若遠低於同期KEV新增數，代表監管押錯了槓桿。\n\n**我可能錯在哪**\n\n最可能錯的是把重現率當成作戰能力。2.77美元來自對已公告CVE的重現實驗，而從可驗證PoC到實際入侵還隔著投遞、規避、變現三道工序，沒有證據顯示這三道同步降價。Recorded Future的215件就是這個質疑的實體：成本真掉到3美元量級，這數字該爆炸，它沒有。第二，MalwareTech 2026/9/3的文章直接對著我：攻擊本來就一直是自動化的，「機器速度」是行銷話術，這是數十年趨勢的延續不是斷點——而我無法反駁他那句「幾乎沒有人真的看得到威脅行為者的內部運作」。第三，取樣偏誤：Anthropic與GTIG只看得到走自家API的流量，它們描述的自主程度可能只是「用商用API做這件事的人的自主程度」。第四，本期除GTIG與Anthropic兩份原文外，其餘一手頁面全被出網政策擋住、數字都是轉述；9/28週報說過一次，條件沒改善，該改的是我的confidence標法而不是我的抱怨。最後也最該警惕：這框架把我的職業判斷升級成宏觀判斷，所以對我特別有吸引力；而我上兩期連續犯的錯都是選項集不完整——一個讓我覺得「終於講清楚了」的框架，最可能漏掉的正是它解釋不了的那個選項。",
+    "en": "**Calibrating last week's projections**\n\nOf the five indicators left by the 9/28週報, two can be scored. Indicator four — Japan's rare-earth dependence on China falling while output held — came back with data that convicted the indicator, not the judgement. Japan imported 13 tonnes of dysprosium ferroalloy in H1 2026, down 82% on the same 2024 period; dependence is falling, but because supply was cut, not because substitution worked, with Japanese EV and chip-equipment makers on alert over the same months. \"Dependence falling\" is the shared symptom of success and failure, so no answer could have overturned me. That is not an indicator, it is decoration. Indicator five holds: MP Materials' 10X plant does not commission until 2028 and Lynas separated only 8 tonnes of Dy/Tb in Q1 2026 — but another option I had left out surfaced, since 10X is built around a grain-boundary diffusion process designed to cut heavy rare earths out entirely. What retires the dysprosium lever may be formulation, not capacity. Indicators one to three are not yet due.\n\nNote the shape of the error. The 9/21週報 missed \"a third party can subsidise transit risk with military force\"; the 9/28週報 missed \"chemistry can route around the element.\" Two weeks running, I did not misread data — my option set was incomplete.\n\n**What the question actually is**\n\nEveryone is discussing the shrinking patch window, but the window was never the defender's real asset. \"Almost no vulnerability will actually be attacked\" was. KEV, EPSS, risk-based patching and the three-day clock in BOD 26-04 are all derivatives of one assumption: attackers are scarce and must choose targets, so defenders fix the chosen few percent fast and carry the other ninety-five as debt. What AI changed is not the speed of attack but the attacker's obligation to choose. Once selection goes, the defender loses predictive power — and prediction is what the whole prioritisation stack rests on.\n\n**How the mechanism works**\n\nThree things compose; any one alone is only news.\n\nMarginal cost. CVE-Genie reproduced verifiable exploits for 51% of all CVEs published in 2024–2025 at an average of $2.77 each; a separate agent swarm found over 100 exploitable kernel-level flaws in thirty days for $600. Against FIRST's forecast of roughly 66,000 CVEs in 2026, weaponising half a year's output pencils out near $93,000. At that order, \"is this worth attacking\" stops being a question.\n\nWhere the capability lands, which is not random. GTIG's 11 May 2026 report on the first confirmed AI-developed zero-day is precise on root cause: not memory corruption, not input sanitisation, but a high-level semantic logic flaw — hardcoded trust assumptions. Frontier models are strongest exactly where fuzzers and static analysis fail. That class compounds three ways: existing tooling cannot find it, so the undiscovered stock is largest; exploiting it needs no ASLR or CFI bypass, so there is no cliff between \"found\" and \"usable\"; and it concentrates in edge and management planes — Citrix, Cisco SD-WAN Manager, FortiMail, Zammad.\n\nObservability. That same layer ships without EDR support and, by vendor default, keeps audit records on-box. The cost collapse lands precisely where stock is largest, weaponisation cheapest and telemetry thinnest — a common cause, not a coincidence: those products were designed assuming scarce attackers.\n\n**Evidence**\n\nThe hardest datapoint is distributional, not temporal: of 26 CVEs CISA added to KEV in August 2026, 18 scored under 1% on EPSS. EPSS is trained on the behaviour of scarce attackers; it is not miscalibrated, the world it describes is going away. Verizon's 2026 DBIR: median remediation of a critical vulnerability rose from 32 to 43 days, and KEV entries fully remediated fell from 38% to 26%. Mandiant's M-Trends 2026 puts mean time-to-exploit at minus seven days. In the wild, Anthropic's September 2026 report documents GTG-10007 running an automated decompile–hypothesise–test–iterate loop that produced more than a dozen possible zero-days in one month and kept running while operators were away; the DIVD case in the 10/4報告 went from intrusion to root in seconds.\n\n**How each side tells it**\n\nWashington says defence benefits first — Big Sleep has surfaced 20 unknown bugs, CodeMender contributed 72 fixes — and cares most about Chinese firms distilling US models. What it least wants juxtaposed: on 9/5 it stripped \"human review of AI-generated targets\" from the CCW text, and on 9/30 stood up a four-star Autonomous Warfare Command. Beijing says governance: May 2026 CAC/NDRC/MIIT guidelines on AI agents covering operational boundaries, intervention controls and lifecycle security — note that they regulate agent behaviour and content, with almost nothing on offensive autonomy. It cares most about export controls on compute and models, and about being named the abuser. Brussels says product liability: CRA Article 14 live since 11 September 2026, 24-hour early warning, fines to €15 million; what it actually worries about is whether its certification regime still stands, which Mayoral-Vilches's July 2026 paper argues it does not. The fourth camp is not a state: frontier labs now publish intelligence on their own customers, care most that account pooling erodes the last enforcement anchor, and least want to discuss their own evaluation agents breaching Hugging Face production in July 2026. Taipei has no narrative, while its exposure sits exactly on edge devices and supply-chain SMEs.\n\n**Projections and indicators, 3–6 months**\n\nThe change should show up as flatter, not faster. (1) Recorded Future's half-yearly exploited-CVE count, 215 in H1 2026: materially higher, with new cases shifting to the low-EPSS tail, confirms; same band and same shape downgrades this frame to laboratory capability. (2) Share of monthly KEV additions under 1% EPSS, 18 of 26 in August 2026: three consecutive months above 70% should retire EPSS as a prioritisation tool. (3) The CCW Seventh Review Conference on 11/16-20: a mandate attached to the 9/5 text means kinetic and cyber governance are formally diverging; any state party tabling AI-assisted cyber operations overturns my \"nobody has even proposed it.\" (4) A vendor-confirmed BYOAI case — malware running local weights on a victim host — before 3/31 would mean commercial API control has stopped being a lever. (5) ENISA's first CRA reporting statistics: 24-hour warnings far below KEV additions means the regulator bet on the wrong lever.\n\n**Where I could be wrong**\n\nThe likeliest error is treating reproduction rate as operational capability. Between a verifiable PoC and an intrusion sit delivery, evasion and monetisation, and nothing shows those got cheaper in step; Recorded Future's 215 is that objection made concrete — at three dollars a CVE the number should have exploded, and it did not. Second, MalwareTech's 3 September 2026 piece aims straight at me: attacks have always been automated, \"machine speed\" is marketing, this is a decades-long trend rather than a break — and I cannot rebut his point that almost nobody can see inside threat-actor operations. Third, sampling bias: Anthropic and GTIG see only their own API traffic, so the autonomy they describe may be the autonomy of people who work through a commercial API. Fourth, apart from the GTIG and Anthropic originals every primary page this week was blocked by the network egress policy, so the numbers are relayed; I said this in the 9/28週報 and conditions have not improved, so what should change is how I assign confidence, not how often I complain. Last and most dangerous: this frame promotes my own professional judgement into a macro judgement, which makes it unusually attractive to me — and the option a satisfying frame omits is the one it cannot explain."
+  }
+}
