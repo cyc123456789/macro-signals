@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "reports": [
+    {
+      "file": "reports/2026-10-06-brief.json",
+      "date": "2026-10-06",
+      "kind": "brief",
+      "title": {
+        "zh": "葉門政府軍越過『繞道』直接開戰奪回曼德海峽；同一週，DAWG被自己的過渡撥款法案卡住的不是錢，是啟動資格",
+        "en": "Yemen's Government Skips Rerouting and Fights to Retake Bab al-Mandeb Outright; the Same Week, DAWG's Own Stopgap Law Blocks Not the Money but the Right to Even Start"
+      }
+    },
     {
       "file": "reports/2026-10-05-weekly.json",
       "date": "2026-10-05",

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "terms": [
     {
       "term": "DAWG",
@@ -2673,6 +2673,39 @@
       },
       "category": "tech",
       "first_seen": "2026-10-05"
+    },
+    {
+      "term": "CR",
+      "zh": "過渡撥款法案",
+      "expansion": "Continuing Resolution",
+      "def": {
+        "zh": "美國國會在正式撥款法案未能及時通過時，用來暫時維持聯邦機構運作的立法工具，通常把經費凍結在前一財年水準，並明文禁止啟動任何『新計畫』。2027財年的過渡撥款法案（P.L. 119-103）於2026/9/2簽署生效，效期至2026/12/11，是DAWG等新設計畫目前無法動用經費的直接法律原因。",
+        "en": "A legislative tool Congress uses to temporarily keep federal agencies funded when regular appropriations bills aren't passed in time, typically freezing spending at the prior fiscal year's level and explicitly barring any 'new program start.' The FY2027 continuing resolution (P.L. 119-103) was signed on 2026/9/2 and runs through 2026/12/11, and is the direct legal reason new programs like DAWG cannot yet draw funds."
+      },
+      "category": "geo",
+      "first_seen": "2026-10-06"
+    },
+    {
+      "term": "SAML",
+      "zh": "安全聲明標記語言",
+      "expansion": "Security Assertion Markup Language",
+      "def": {
+        "zh": "一種以XML為基礎的開放標準，用於在身分提供者與服務提供者之間交換身分驗證與授權資料，常見於企業單一登入（SSO）架構。Citrix NetScaler的CVE-2026-88779即是在啟用SAML驗證功能時觸發的記憶體溢位阻斷服務缺陷。",
+        "en": "An XML-based open standard for exchanging authentication and authorization data between identity providers and service providers, commonly used in enterprise single sign-on (SSO) architectures. Citrix NetScaler's CVE-2026-88779 is a memory-overflow denial-of-service flaw triggered specifically when SAML authentication is enabled."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-06"
+    },
+    {
+      "term": "ECDIS",
+      "zh": "電子海圖顯示與資訊系統",
+      "expansion": "Electronic Chart Display and Information System",
+      "def": {
+        "zh": "船舶上用來取代紙本海圖、整合GNSS定位資料以顯示即時船位與航行資訊的導航系統，國際海事組織規定特定噸位以上船舶強制配備。英國MCA 2026/10/1發布的GNSS拒斷指引，明列ECDIS為可能受GNSS干擾影響而需要備援程序的關鍵系統之一。",
+        "en": "A shipboard navigation system that replaces paper charts and integrates GNSS positioning data to display real-time vessel position and navigational information, mandated by the IMO for vessels above certain tonnage. The UK MCA's GNSS-denial guidance issued on 2026/10/1 lists ECDIS as one of the key systems that may be affected by GNSS jamming and requires fallback procedures."
+      },
+      "category": "tech",
+      "first_seen": "2026-10-06"
     }
   ]
 }
