@@ -1,6 +1,28 @@
 {
-  "updated": "2026-10-06",
+  "updated": "2026-10-08",
   "terms": [
+    {
+      "term": "G20",
+      "zh": "二十國集團",
+      "expansion": "Group of Twenty",
+      "def": {
+        "zh": "由19個主要經濟體與歐盟、非洲聯盟組成的國際經濟合作論壇，每年由輪值主席國主辦領袖峰會；2026年由美國主辦，峰會訂於12/14-15在佛州Doral舉行。",
+        "en": "An international economic forum of 19 major economies plus the EU and African Union; the rotating host chairs an annual leaders' summit. The US holds the 2026 presidency, with the summit set for 12/14-15 in Doral, Florida."
+      },
+      "category": "geo",
+      "first_seen": "2026-10-08"
+    },
+    {
+      "term": "Affiliates Rule",
+      "zh": "關係企業50%規則",
+      "expansion": "BIS 50% Affiliates (Ownership) Rule",
+      "def": {
+        "zh": "美國商務部工業與安全局(BIS)的出口管制規則，將實體清單的管制自動延伸到被列管實體持股逾50%的境外關係企業；2025年11/10起暫停一年，作為與中國稀土出口管制暫停的對等交換。",
+        "en": "A BIS export-control rule that automatically extends Entity List restrictions to any foreign affiliate more than 50%-owned by a listed entity; suspended for one year starting 11/10/2025 as the US side of a stated swap with China's rare earth export-control suspension."
+      },
+      "category": "geo",
+      "first_seen": "2026-10-08"
+    },
     {
       "term": "DAWG",
       "zh": "國防自主戰爭集團",

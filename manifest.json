@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-06",
+  "updated": "2026-10-08",
   "reports": [
+    {
+      "file": "reports/2026-10-08-brief.json",
+      "date": "2026-10-08",
+      "kind": "brief",
+      "title": {
+        "zh": "瓶頸搬家邏輯換個戰場驗證、台灣軍售撞上澤倫斯基—普丁會面邀約、美中互換式暫停倒數11/10",
+        "en": "The relocation logic gets tested on a new battlefield, Taiwan's arms sale collides with a Zelensky-Putin meeting offer, and the US-China swap suspension counts down to 11/10"
+      }
+    },
     {
       "file": "reports/2026-10-06-brief.json",
       "date": "2026-10-06",
