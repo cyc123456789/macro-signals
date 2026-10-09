@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-10-10",
   "terms": [
     {
       "term": "G20",
@@ -2728,6 +2728,39 @@
       },
       "category": "tech",
       "first_seen": "2026-10-06"
+    },
+    {
+      "term": "ARTEX",
+      "zh": "ARTEX（中國開發的開源自主滲透測試工具）",
+      "expansion": "ARTEX (China-developed open-source agentic pentesting tool)",
+      "def": {
+        "zh": "一款近期發布、由中國開發者公開於GitHub的開源自主滲透測試工具，設計上接上大型語言模型即可自動執行偵察、漏洞利用與橫向移動等滲透測試任務。2026年10月CrowdStrike證實，一名財務動機駭客將其與Anthropic Claude Code串接，用於入侵南韓多家金融機構；事件曝光後，開發者已將工具改為閉源並加註禁止惡意使用警告。",
+        "en": "A recently released, open-source agentic penetration-testing tool published on GitHub by a China-based developer, designed to chain to a large language model and autonomously carry out reconnaissance, exploitation, and lateral-movement tasks. In October 2026, CrowdStrike confirmed a financially motivated actor chained it to Anthropic's Claude Code to breach multiple South Korean financial institutions; after the campaign came to light, the developer took the tool closed-source and added warnings against malicious use."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-10"
+    },
+    {
+      "term": "DICT",
+      "zh": "菲律賓資訊通信科技部",
+      "expansion": "Department of Information and Communications Technology (Philippines)",
+      "def": {
+        "zh": "菲律賓負責資通訊基礎設施政策與事故協調的內閣級部會，涵蓋海纜等跨境通訊基礎設施的監理與事故通報角色。",
+        "en": "The Philippines' cabinet-level department responsible for information and communications technology policy and incident coordination, including regulatory oversight and incident reporting for cross-border infrastructure such as submarine cables."
+      },
+      "category": "tech",
+      "first_seen": "2026-10-10"
+    },
+    {
+      "term": "ECRA",
+      "zh": "出口管制改革法",
+      "expansion": "Export Control Reform Act",
+      "def": {
+        "zh": "美國2018年通過的出口管制立法，授權商務部工業與安全局（BIS）訂定與執行出口管理條例（EAR），是美方對中國等對象實施晶片、技術出口管制的主要法源之一；違反ECRA的刑事追訴，是本站持續追蹤的美中科技管制執法案件中常見的起訴依據。",
+        "en": "US legislation enacted in 2018 that authorizes the Bureau of Industry and Security (BIS) to issue and enforce the Export Administration Regulations (EAR); it is one of the primary legal bases for US chip and technology export controls aimed at China and other destinations, and criminal prosecution under ECRA recurs as a charging basis in the US-China tech-control enforcement cases this outlet tracks."
+      },
+      "category": "geo",
+      "first_seen": "2026-10-10"
     }
   ]
 }

@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-10-10",
   "reports": [
+    {
+      "file": "reports/2026-10-10-brief.json",
+      "date": "2026-10-10",
+      "kind": "brief",
+      "title": {
+        "zh": "CrowdStrike證實開源AI滲透工具ARTEX接上Claude Code入侵南韓七家銀行——自主能力『跑在民間』的第三個實例；葉門Mokha查核點初步作答：只到郊區、不是全城；南海船艦數9月翻倍逼近百艘",
+        "en": "CrowdStrike Confirms the Open-Source Pentesting Tool ARTEX Chained to Claude Code Breached Seven South Korean Banks — a Third Case for 'Autonomy Runs Fastest Outside Government'; Yemen's Mokha Checkpoint Gets a Partial Answer: Outskirts Only, Not the Whole City; Chinese Vessels in the South China Sea Nearly Double in a Month"
+      }
+    },
     {
       "file": "reports/2026-10-08-brief.json",
       "date": "2026-10-08",
