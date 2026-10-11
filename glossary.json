@@ -2772,6 +2772,83 @@
       },
       "category": "geo",
       "first_seen": "2026-10-10"
+    },
+    {
+      "term": "UNCLOS",
+      "zh": "聯合國海洋法公約",
+      "expansion": "United Nations Convention on the Law of the Sea",
+      "def": {
+        "zh": "1982年通過、1994年生效的海洋法基本公約，界定領海、專屬經濟區、公海等海域制度與各國權利義務。第113條要求締約國將領海外破壞海底電纜的行為入罪，但管轄權僅及於該國國民與懸掛該國船旗的船舶，執行完全取決於船旗國意願，是本站追蹤海纜事件歸因困難的法律根源。",
+        "en": "The 1982 framework convention on the law of the sea, in force since 1994, defining the territorial sea, exclusive economic zone and high seas and the rights and duties attaching to each. Article 113 requires parties to criminalise damage to submarine cables beyond the territorial sea, but reaches only their own nationals and their own flagged vessels, so enforcement rests entirely on flag-state willingness — the legal root of the attribution difficulty this outlet tracks in cable incidents."
+      },
+      "category": "geo",
+      "first_seen": "2026-10-12"
+    },
+    {
+      "term": "ICPC",
+      "zh": "國際海纜保護委員會",
+      "expansion": "International Cable Protection Committee",
+      "def": {
+        "zh": "1958年成立的海底電纜業界組織，成員涵蓋電纜業者、政府與相關機構，發布海纜保護最佳實務與故障統計，是全球海纜故障率與成因數據的主要公開來源；其估計為全球每年150至200起故障、七至八成來自漁具與拋錨、蓄意破壞不到1%。2024年起與ITU共同主持海底電纜韌性國際諮詢委員會。",
+        "en": "The industry body for submarine cables, founded in 1958, whose members include cable operators, governments and related institutions; it publishes protection best practice and fault statistics and is the main public source for global cable fault rates and causes, estimating 150–200 faults a year worldwide, 70–80% from fishing gear and anchors and under 1% deliberate. Since 2024 it has co-chaired the International Advisory Body on Submarine Cable Resilience with the ITU."
+      },
+      "category": "tech",
+      "first_seen": "2026-10-12"
+    },
+    {
+      "term": "ITU",
+      "zh": "國際電信聯盟",
+      "expansion": "International Telecommunication Union",
+      "def": {
+        "zh": "聯合國轄下負責資通訊技術的專門機構，制定無線電頻譜分配、電信標準與發展政策。2024年與ICPC共同設立海底電纜韌性國際諮詢委員會，並於2026年7月10日核可其最終報告，內容為自願性實務建議而非拘束性規則。",
+        "en": "The United Nations specialised agency for information and communication technologies, responsible for radio spectrum allocation, telecommunication standards and development policy. In 2024 it established the International Advisory Body on Submarine Cable Resilience jointly with the ICPC, approving its final report on 10 July 2026 — voluntary practical guidance rather than binding rules."
+      },
+      "category": "tech",
+      "first_seen": "2026-10-12"
+    },
+    {
+      "term": "FOC",
+      "zh": "權宜船籍",
+      "expansion": "Flag of Convenience",
+      "def": {
+        "zh": "船東將船舶登記於與自身國籍無實質關聯的第三國，以取得較低稅負、較寬鬆的勞動與安全規範。由於UNCLOS把海纜破壞的管轄權綁在船旗國身上，而船籍可以低成本取得與變更，權宜船籍實際上成為海纜事件、制裁規避與影子船隊的共同結構性漏洞——歸因鏈上最關鍵的那個識別符是可購買的。",
+        "en": "Registering a vessel in a state with no genuine link to its owner, in order to obtain lower taxes and looser labour and safety regimes. Because UNCLOS ties jurisdiction over cable damage to the flag state, and a flag can be acquired or changed cheaply, flags of convenience are the shared structural gap behind cable incidents, sanctions evasion and shadow fleets alike: the decisive identifier in the attribution chain is one that can simply be bought."
+      },
+      "category": "geo",
+      "first_seen": "2026-10-12"
+    },
+    {
+      "term": "MTTR",
+      "zh": "平均修復時間",
+      "expansion": "Mean Time To Repair",
+      "def": {
+        "zh": "系統從故障發生到恢復服務所需時間的平均值，是可用性工程的核心指標之一。用於海纜時，它不只是工程參數：修復船的全球容量、排隊順序與沿岸國許可窗口共同決定這個數字，因此可被行政手段單方面拉長——多數海域約一週，南海可達40天以上，亞太區域均值約30天。",
+        "en": "The average time from failure to restoration of service, a core availability-engineering metric. Applied to subsea cables it is not purely an engineering parameter: global repair-vessel capacity, queue position and the coastal state's permit window jointly determine it, so it can be lengthened unilaterally by administrative means — roughly a week in most waters, 40 days or more in the South China Sea, with an Asia-Pacific regional average near 30 days."
+      },
+      "category": "tech",
+      "first_seen": "2026-10-12"
+    },
+    {
+      "term": "LEO",
+      "zh": "低地球軌道",
+      "expansion": "Low Earth Orbit",
+      "def": {
+        "zh": "高度約2,000公里以下的地球軌道，衛星通訊延遲低但單顆覆蓋範圍小，需以大型星系提供連續服務（如Starlink、Eutelsat OneWeb）。在海纜韌性脈絡下是第三層備援：台灣馬祖建有9座衛星站、其中8座使用Eutelsat OneWeb，但LEO可提供的容量與海纜的Tbps量級相差數個數量級，只能支撐離島與緊急用量。",
+        "en": "Earth orbits below roughly 2,000 km, where satellites offer low latency but small individual footprints, requiring large constellations for continuous service (Starlink, Eutelsat OneWeb). In the cable-resilience context it is the third redundancy layer: Matsu has nine satellite stations, eight of them on Eutelsat OneWeb, but LEO capacity sits orders of magnitude below the terabit scale of submarine cable and can only carry outlying-island and emergency load."
+      },
+      "category": "tech",
+      "first_seen": "2026-10-12"
+    },
+    {
+      "term": "Baltic Sentry",
+      "zh": "波羅的海哨兵行動",
+      "expansion": "NATO Baltic Sentry",
+      "def": {
+        "zh": "NATO於2025年1月針對波羅的海海底基礎設施破壞事件啟動的強化監控行動，投入巡防艦、海上巡邏機與無人水面載具。是目前全球對海纜威脅投入軍事資源規模最大的案例，但公開紀錄顯示影子船隊通行量未見下降，被扣船舶多因拘留成本與法律框架不明而獲釋，顯示瓶頸在執法與司法端而非偵測端。",
+        "en": "NATO's enhanced surveillance activity for Baltic seabed infrastructure, launched in January 2025 after a run of damage incidents, deploying frigates, maritime patrol aircraft and uncrewed surface vessels. It is the largest military commitment anywhere to the cable threat, yet the public record shows shadow-fleet transits undiminished and detained vessels largely released over detention costs and unclear legal frameworks — indicating the bottleneck lies in enforcement and adjudication rather than detection."
+      },
+      "category": "military",
+      "first_seen": "2026-10-12"
     }
   ]
 }

@@ -2,6 +2,15 @@
   "updated": "2026-10-12",
   "reports": [
     {
+      "file": "reports/2026-10-12-weekly.json",
+      "date": "2026-10-12",
+      "kind": "weekly",
+      "title": {
+        "zh": "被攻擊的不是纜線，是修復排程：全球不到20艘專職修復船、南海許可從10天拖到4個月——海纜戰場在行政窗口上，不在海底",
+        "en": "The target is the repair schedule, not the cable: fewer than 20 repair-dedicated ships worldwide and South China Sea permits stretched from ten days to four months — the subsea battlefield is an administrative window, not the seabed"
+      }
+    },
+    {
       "file": "reports/2026-10-12-brief.json",
       "date": "2026-10-12",
       "kind": "brief",

@@ -1,0 +1,189 @@
+{
+  "date": "2026-10-12",
+  "kind": "weekly",
+  "title": {
+    "zh": "被攻擊的不是纜線，是修復排程：全球不到20艘專職修復船、南海許可從10天拖到4個月——海纜戰場在行政窗口上，不在海底",
+    "en": "The target is the repair schedule, not the cable: fewer than 20 repair-dedicated ships worldwide and South China Sea permits stretched from ten days to four months — the subsea battlefield is an administrative window, not the seabed"
+  },
+  "focus": {
+    "zh": "所有人都在問10/2菲律賓—新加坡海纜中斷是不是故意的，這是問錯層次。剪斷從來不稀有——ICPC的數字是全球每年150到200起故障、七到八成來自漁具與拋錨、蓄意不到1%。稀有而且正在被操作的是「修復要多久」：全球能作業海纜的船約60艘、專職修復不到20艘、約三分之二2040年前退役，補齊要20艘／30億美元而在建只有六艘；這條隊伍是序列化的，所以「同時」本身就是攻擊參數；而啟動鍵在沿岸國的許可窗口上，南海從10天內可以拖到四個月。UNCLOS第113條把管轄權綁在可以用錢買的船旗上，所以全球唯一一起定罪（Hong Tai 58，台南地院2025年6月判三年）靠的是地理不是證據。7/10的ITU與ICPC最終報告、ASEAN指引、美國S.3249全都打在許可這個正確槓桿上，沒有一條有強制力。做對的是台北，而且是用工程做的：台馬四號9月啟用，微波12.6 Gbps高於尖峰9 Gbps——它沒有去保護纜線，它讓修復排程不重要。",
+    "en": "Everyone is asking whether the 10/2 Philippines–Singapore cable outage was deliberate. Wrong altitude. Cuts are not scarce: the ICPC counts 150–200 faults a year globally, 70–80% from fishing gear and anchors, under 1% deliberate. The scarce variable, and the one being worked, is how long repair takes. About 60 vessels worldwide can work subsea cable, fewer than 20 of them repair-dedicated, around two-thirds reaching end of life by 2040 — closing that needs 20 ships and some $3bn against six under construction. The queue is serialised, which makes simultaneity itself a weapon parameter. And the start button sits in the coastal state's permit window: South China Sea approvals once inside ten days can take four months. UNCLOS Article 113 ties jurisdiction to a flag that money can buy, which is why the world's only conviction — Hong Tai 58, three years in a Tainan court in June 2025 — rested on geography rather than evidence. The ITU/ICPC final report of 7/10, the ASEAN guidelines and the US S.3249 all aim at permitting, the right lever, and not one of them binds. The actor that solved it is Taipei, and it solved it as engineering: Taiwan–Matsu No.4 entered service in September, microwave at 12.6 Gbps against a 9 Gbps peak. It did not protect the cable. It made the repair schedule irrelevant."
+  },
+  "sections": [
+    {
+      "id": "nexus",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "likely",
+          "title": {
+            "zh": "真正的武器是許可窗口：南海修復許可可從10天內拖到四個月、修復時間從一週拉到40天以上——完全合法、完全可否認、不需要任何一艘船出海",
+            "en": "The weapon is the permit window: South China Sea repair approvals stretch from under ten days to four months and repair times from one week to 40-plus days — fully legal, fully deniable, and no ship has to sail"
+          },
+          "summary": {
+            "zh": "海纜修復船進入他國主張的水域需要沿岸國許可，而這個窗口可以被政治調節。《華盛頓郵報》報導、VOA轉述指出，中國在九段線主張水域內對海纜專案與修復持續扣住許可，原本10天內能下來的核准可以被拖到最長四個月，並曾要求業者在申請提出前就先改航路。業界統計顯示多數海域修復約一週，南海則需40天以上；IISS的區域均值是亞太最長約30天、北美約15天；Recorded Future以約40天為當前全球中位修復基準，並警告修復船容量不足會把這個數字再往上推。ASEAN在2026年1月的數位部長會議（ADGMIN）指引中把目標訂在「盡可能於7至10個工作天內核發必要許可」——這是目標值，不是量測值，本身就說明現況離它多遠。",
+            "en": "A cable repair ship entering claimed waters needs the coastal state's permit, and that window is politically adjustable. Washington Post reporting relayed by VOA describes China withholding permits for cable projects and repairs inside its nine-dash-line claims, with approvals that once came within ten days taking up to four months, and operators asked to reroute before applications were even filed. Industry figures put repair at roughly a week in most waters against 40 days or more in the South China Sea; IISS regional averages run up to 30 days in Asia-Pacific versus 15 in North America; Recorded Future uses about 40 days as the current global median restoration benchmark and warns vessel scarcity will push it higher. ASEAN's January 2026 ADGMIN guidelines set a target of issuing necessary permits within seven to ten working days where possible — a target, not a measurement, and the gap it implies is the point."
+          },
+          "implication": {
+            "zh": "把海纜風險建模成「會不會被剪」是錯的參數化。對你而言正確的變數是「修復時間的期望值」，而它是一個行政參數、不是工程參數——它可以在沒有任何實體行動的情況下被單方面拉長。這同時是可定價的：戰爭險、SLA、雲端區域選址、資料中心選點都吃這個數字，所以阻斷不必成功就已經產生成本。這與9/21週報「打的是備援不是閘門」、9/28週報「名冊可以95%照准、5%慢審」是同一族機制——用核准速度當武器，對外說詞永遠成立。",
+            "en": "Modelling subsea risk as \"will it be cut\" is the wrong parameterisation. The variable that matters is expected time to repair, and that is an administrative parameter rather than an engineering one: it can be lengthened unilaterally with no physical act at all. It is also priceable — war-risk cover, SLAs, cloud region selection and data-centre siting all consume that number — so disruption imposes cost without ever having to succeed. This is the same family as the 9/21週報 (hit the bypass, not the gate) and the 9/28週報 (approve 95%, slow-walk 5%, and the public line always holds): approval speed as a weapon, with deniability built in."
+          },
+          "counterpoint": {
+            "zh": "ICPC的公開立場直接反對把這件事當成作戰：全球每年150到200起故障、七到八成來自漁具與拋錨，蓄意破壞照它估計不到1%；而纜線總長從2014年約100萬公里成長到2025年約170萬公里，年故障數卻沒有跟著成長。也就是說單位里程的故障率其實在下降。許可拖延也有完全無關安全的解釋：沿岸國的海洋主張、環評、漁權協調本來就慢，南海的四個月可能只是「主權爭議水域的行政成本」而非針對性操作。",
+            "en": "The ICPC's own position cuts against treating this as warfare: 150–200 faults a year worldwide, 70–80% from fishing gear and anchors, deliberate damage under 1% on its estimate — and while cable length grew from about 1m km in 2014 to some 1.7m km in 2025, annual faults did not grow with it, so faults per kilometre are actually falling. Permit delay also has readings with nothing to do with security: maritime claims, environmental review and fisheries coordination are slow everywhere, and four months in the South China Sea may simply be the administrative cost of disputed water rather than targeted obstruction."
+          },
+          "source": "Washington Post（VOA轉述）；Recorded Future《Submarine Cable Security at Risk Amid Geopolitical Tensions & Limited Repair Capabilities》；ASEAN ADGMIN 2026/1 指引；ICPC媒體問答",
+          "url": "https://www.recordedfuture.com/research/submarine-cables-face-increasing-threats",
+          "terms": [
+            "EEZ",
+            "ICPC",
+            "MTTR",
+            "DICT"
+          ]
+        },
+        {
+          "severity": "medium",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "今年三份治理文件全部打對槓桿、全部沒有強制力：ITU與ICPC 7/10最終報告建議「修復船預先通關」，而兩年任期到此結束",
+            "en": "Three governance documents this year all aim at the right lever and none of them binds: the ITU/ICPC final report of 7/10 recommends pre-clearance for repair vessels — and with it the body's two-year mandate ends"
+          },
+          "summary": {
+            "zh": "ITU與ICPC共同主持的「海底電纜韌性國際諮詢委員會」於2026年7月10日在日內瓦核可最終報告，彙整約175名專家與41名委員的意見，內容先於2026年2月2日的波爾圖峰會獲背書。第一工作組（佈建與修復）的建議直指本期主題：設置政府單一許可聯絡窗口、增加修復船數量與地理分布及備品庫存、並對修復船與船員實施預先通關。第二工作組建議各國以風險資料為基礎訂定國家級策略，並把損害海纜列為可罰之罪——但措辭是提供各國的法律選項，不是拘束性規則。報告本身定位為自願性實務建議，發布後委員會兩年任期結束，重心轉為各國自行實施。同一方向的另外兩份文件同樣不具強制力：ASEAN 2026年1月指引訂出7至10個工作天的許可目標；美國參議院S.3249要求總統制裁蓄意破壞海纜的外國人、一年內設立跨部會委員會簡化許可、國務院至少10個全職員額，但保留國家安全豁免，CBO預估委員會FY2027才開始運作。",
+            "en": "The ITU/ICPC International Advisory Body on Submarine Cable Resilience approved its final report in Geneva on 10 July 2026, drawing on some 175 experts and 41 members, with the recommendations first endorsed at the Porto Summit on 2 February 2026. Working Group 1, on deployment and repair, lands squarely on this week's subject: designated government permitting contacts, more repair vessels with better geographic distribution and spares, and pre-clearance for repair vessels and crews. Working Group 2 asks states to build national strategies on risk evidence and to make damaging a cable a punishable offence — framed as a legal option for countries, not a binding rule. The report is explicitly voluntary practical guidance, and with its publication the body's two-year mandate closed, shifting the work to national implementation. The two other documents pointing the same way bind no more tightly: the ASEAN guidelines of January 2026 set a seven-to-ten working day permitting target, and US Senate bill S.3249 would mandate sanctions on foreign persons who intentionally damage cables, an interagency permitting committee within a year, and at least ten State Department FTEs — while retaining a national-security waiver, with CBO expecting the committee to begin only in FY2027."
+          },
+          "implication": {
+            "zh": "值得注意的不是「又一份自願性報告」，而是全世界的專業共識自己把槓桿指到了許可與修復容量上——也就是本報告的主判斷不是我的推論，是業界共識，只是沒人把它說成作戰問題。治理落差的形狀因此很清楚：被指認的槓桿（許可速度）剛好是主權國家最不願交出的那一項，所以能做出來的只有自願建議。你評估任何一國的海纜韌性時，看的不該是它簽了什麼聲明，而是它有沒有把「預先通關」寫成一份可執行的行政程序。",
+            "en": "The thing to notice is not that another voluntary report exists, but that the world's own expert consensus points the lever at permitting and repair capacity — meaning this report's core judgement is not my inference, it is the industry's, merely never stated as an operational problem. The shape of the governance gap follows: the lever everyone identified is precisely the one sovereign states will not hand over, so voluntary guidance is all that could be produced. When you assess any country's cable resilience, the test is not which declaration it signed but whether pre-clearance exists as an executable administrative procedure."
+          },
+          "source": "ITU／ICPC 海底電纜韌性國際諮詢委員會2026最終報告（2026/7/10核可）；ASEAN ADGMIN指引（2026/1）；US S.3249條文（congress.gov）",
+          "url": "https://www.itu.int/digital-resilience/submarine-cables/wp-content/uploads/sites/2/2026/07/IAB-Publication-2026.pdf",
+          "terms": [
+            "ICPC",
+            "ITU",
+            "MTTR"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "likely",
+          "title": {
+            "zh": "修復容量是固定且在萎縮的：全球約60艘可作業船、專職修復不到20艘、約三分之二2040年前退役——補齊缺口要20艘新船與約30億美元，在建只有六艘",
+            "en": "Repair capacity is fixed and shrinking: around 60 capable vessels worldwide, fewer than 20 repair-dedicated, roughly two-thirds retiring by 2040 — closing the gap needs 20 new ships and about $3bn, against six under construction"
+          },
+          "summary": {
+            "zh": "據TeleGeography與Infra-Analytics 2025年的分析（經美中經濟與安全檢討委員會2026年4月書面答覆引述），全球約有60艘船可佈設與維護海纜，其中專職修復者不到20艘；約三分之二的維護船將在2040年前達到服役年限，同期纜線總里程預估成長約48%，估計需新造20艘、總成本約30億美元，而目前全球在建新船僅六艘，其中Global Marine向可倫坡船廠訂造者交期落在2029年第四季。區域分布更不平均：一份業界分析指出東協十國沒有任何主權（海軍或政府）修復能力，整個區域仰賴九家公司共16艘專業船組成的共用商業生態系；CSIS的日本個案研究則指出日本因佈纜與修復船短缺而依賴中國建造與營運的船舶，並警告中國船東可能在需要時拒絕承接日方修復合約。",
+            "en": "Per a 2025 TeleGeography and Infra-Analytics analysis, cited in an April 2026 written response to the US-China Economic and Security Review Commission, roughly 60 vessels worldwide can lay and maintain subsea cable, fewer than 20 of them repair-dedicated. About two-thirds of the maintenance fleet reaches end of service life by 2040 while cable kilometres grow an estimated 48%, implying 20 newbuilds at around $3bn total — against six currently on order worldwide, including a Global Marine ship from Colombo Dockyard not due until Q4 2029. Regional distribution is worse than the global figure suggests: one industry analysis finds zero sovereign (naval or governmental) repair capability across the ten ASEAN states, the region depending on a shared commercial pool of 16 specialist ships across nine companies, while a CSIS Japan case study notes Japanese reliance on Chinese-built and Chinese-operated vessels and warns Chinese owners could decline to contract for Japanese repair work."
+          },
+          "implication": {
+            "zh": "這條把海纜風險從「概率問題」改寫成「排隊問題」。排隊系統的性質是：平均到達率逼近服務率時，等待時間不是線性上升而是爆炸。所以真正要盯的不是任何單一事件，而是同時在修的故障數——同時出事的N條纜線得到的是超線性延遲，因為它們排同一批船。對投資面：具備專業修復船隊與長約維護協議的業者（以及船廠訂單）是這個瓶頸唯一能被定價的部分；對風險面：任何把「海纜斷了會很快修好」寫進假設的持續營運計畫，在亞太都該把基準改成30到40天。",
+            "en": "This rewrites subsea risk from a probability problem into a queueing problem, and queues have a specific property: as arrival rate approaches service rate, waiting time does not rise linearly, it explodes. So the quantity to watch is not any single incident but the number of faults under repair concurrently — N simultaneous cuts yield super-linear delay because they compete for the same hulls. On the investment side, operators with dedicated repair fleets and long-term maintenance agreements, plus the shipyard order book, are the only part of this bottleneck that can be priced. On the risk side, any continuity plan assuming a cut is repaired quickly should reset its Asia-Pacific baseline to 30–40 days."
+          },
+          "counterpoint": {
+            "zh": "有一派業界觀點認為主權修復能力是錯的投資：與其讓每個國家養船，不如改造商業許可流程，因為船是流動資產、許可才是綁死的那一項——按這個讀法，船隊數字再難看也不是瓶頸，是許可。這個反方說法強在它與本報告的主判斷其實同向（槓桿在行政層），但弱在它由商業業者提出、利益不中立，而且在衝突情境下商業船隊未必願意進入戰區，這正是主權能力存在的理由。",
+            "en": "One industry school argues sovereign repair capability is the wrong investment: rather than every state keeping hulls, re-engineer commercial permitting, since ships are mobile assets and permits are the immobile constraint — on that reading the fleet numbers, however bad, are not the bottleneck, permitting is. The argument is strong because it in fact agrees with this report's core judgement that the lever sits in the administrative layer, and weak because it comes from a commercial vendor with a stake, and because in a conflict scenario commercial crews may decline to enter the area at all, which is exactly the case for sovereign capability."
+          },
+          "source": "TeleGeography／Infra-Analytics 2025研究（經USCC 2026/4書面答覆引述）；CSIS《The Strategic Future of Subsea Cables: Japan Case Study》；Submarine Networks產業分析",
+          "url": "https://www.csis.org/analysis/strategic-future-subsea-cables-japan-case-study",
+          "terms": [
+            "MTTR",
+            "ICPC"
+          ]
+        },
+        {
+          "severity": "medium",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "台北給出了唯一有效的答案，而且是工程答案：台馬四號9月啟用、微波12.6 Gbps高於尖峰9 Gbps、馬祖9座衛星站——不是保護纜線，是讓修復排程不重要",
+            "en": "Taipei produced the only answer that worked, and it is an engineering answer: Taiwan–Matsu No.4 in service in September, microwave at 12.6 Gbps against a 9 Gbps peak, nine satellite stations in Matsu — not protecting the cable, but making the repair schedule irrelevant"
+          },
+          "summary": {
+            "zh": "台馬四號海纜於2026年9月啟用、由行政院長卓榮泰主持，三條海纜總傳輸容量提升至約1.9 Tbps，並以智慧調度系統統一配置，兩套微波系統可即時切換。依數位發展部與2025年初的公開資料，馬祖地區建有9座衛星站（其中8座使用Eutelsat OneWeb），升級後的微波系統容量約12.6 Gbps，高於當地典型尖峰需求約9 Gbps。對照必須被解決的問題規模：美中經濟與安全檢討委員會2026年3月的證詞記錄馬祖海纜累計被切斷12次、修復費用新台幣9,640萬元（約290萬美元）。數位發展部2026年4月另表示將推動業者佈設埋深更深、加裝鋼鎧的強化型海纜，並補助備援系統、預警系統與加速修復能力。",
+            "en": "Taiwan–Matsu Cable No.4 entered service in September 2026 at a ceremony led by Premier Cho Jung-tai, lifting total capacity across three cables to roughly 1.9 Tbps under a unified intelligent allocation system, with two microwave systems switchable on demand. Per MODA and early-2025 public reporting, Matsu has nine satellite stations built under a communications resilience programme, eight of them on Eutelsat OneWeb, and the upgraded microwave system runs about 12.6 Gbps against typical local peak demand of around 9 Gbps. Set that against the problem it had to solve: March 2026 testimony to the US-China Economic and Security Review Commission records the Matsu cables severed twelve times at NT$96.4m (about US$2.9m) in repair costs. In April 2026 MODA said it would push operators toward cables buried deeper and armoured with steel jacketing, alongside subsidies for backup systems, early warning and faster repair."
+          },
+          "implication": {
+            "zh": "這條告訴你正確的防守方向：不要在「保護一條線」上花錢，要在「讓那條線的修復時間不重要」上花錢。馬祖已經證明離島尺度可行——微波容量高於尖峰需求，等於把海纜從單點故障降級成成本問題。真正未解的是能否上行：馬祖尖峰是9 Gbps，台灣本島國際出口是Tbps量級，微波與LEO在物理上補不起來。所以你該追蹤的不是又有幾條纜線被切，而是本島出口的備援容量有沒有編列預算。",
+            "en": "This points at the correct defensive direction: do not spend on protecting a line, spend on making that line's repair time irrelevant. Matsu proves it works at island scale — microwave capacity above peak demand downgrades the cable from a single point of failure to a cost item. What remains unsolved is whether it scales: Matsu peaks at 9 Gbps while Taiwan's main-island international egress is terabit-scale, and neither microwave nor LEO closes that physically. So the thing to track is not how many more cables get cut, but whether redundancy capacity for main-island egress ever gets a budget line."
+          },
+          "source": "數位發展部（MODA）新聞稿；台北時報2026/9/18〈Taiwan-Matsu No. 4 undersea cable enters service〉；USCC 2026/3證詞",
+          "url": "https://moda.gov.tw/en/press/press-releases/19582",
+          "terms": [
+            "LEO",
+            "MTTR"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geo",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "UNCLOS第113條把管轄權綁在可以用錢買的船旗上——全球唯一一起定罪（Hong Tai 58，台南地院判三年）靠的是地理，不是證據鏈",
+            "en": "UNCLOS Article 113 anchors jurisdiction to a flag that money can buy — the world's only conviction (Hong Tai 58, three years in a Tainan court) rested on geography, not on the evidence chain"
+          },
+          "summary": {
+            "zh": "UNCLOS第113條要求各國將領海外故意或可歸責過失破壞海纜的行為入罪，但管轄對象限於該國國民或懸掛該國船旗的船舶——執行因此完全繫於船旗國是否願意追究，而極少國家制定了落實第113條的國內法。波羅的海案例是現成註腳：涉及香港註冊船舶的案件中，愛沙尼亞與芬蘭的外交請求未獲中方確認調查或承擔責任。對照之下，懸掛多哥船旗、中資背景的Hong Tai 58在2025年2月切斷台澎三號海纜後，台南地方法院於2025年6月12日依電信管理法判處船長三年有期徒刑，為全球首例成功定罪；法院認定船長指示船員在禁拋錨區域下錨，被告承認過失但否認故意。關鍵在於這起案件落在台灣主張的內水範圍內，管轄權因此成立。中方的回應則是方向相反的歸因：2025年12月宣布調查結論為意外，並懸賞最高25萬人民幣緝拿兩名被指「實際控制該船」的台灣人；陸委會回應中共對台灣無管轄權。",
+            "en": "UNCLOS Article 113 obliges states to criminalise wilful or culpably negligent damage to cables beyond the territorial sea, but reaches only their own nationals and their own flagged ships — enforcement therefore depends entirely on whether the flag state chooses to act, and very few states have passed implementing legislation at all. The Baltic supplies the footnote: in a case involving a Hong Kong-registered vessel, Estonian and Finnish diplomatic requests produced neither confirmation of an investigation nor acceptance of responsibility from China. By contrast, after the Togo-flagged, China-linked Hong Tai 58 cut the Taiwan–Penghu No.3 cable in February 2025, the Tainan District Court on 12 June 2025 sentenced its master to three years under the Telecommunications Management Act — the world's first successful conviction — finding he had ordered the anchor dropped in a prohibited area, with the defendant admitting negligence but denying intent. The decisive fact is that the incident fell within waters Taiwan claims as internal, which is where the jurisdiction came from. Beijing's answer ran attribution the other way: in December 2025 it concluded the damage was accidental and offered up to 250,000 yuan for two Taiwanese men it alleged actually controlled the vessel, with Taiwan's Mainland Affairs Council replying that the CCP has no jurisdiction over Taiwan."
+          },
+          "implication": {
+            "zh": "對做歸因與provenance研究的人，這是最該內化的一條：當圖上的節點屬性（船旗、AIS身分、船東）本身可購買、可關閉、可層層代持時，整張圖的強度就不由邊的品質決定，而由你剛好站在哪個管轄區決定。Hong Tai 58不是證據學的勝利，是地理的勝利。推論到你本行：任何建立在「可購買識別符」上的歸因鏈，法庭價值都會在跨境那一刻歸零——這與8/17週報「供應層才是新的歸因層」是同一個結構，只是這次錨點是船籍登記處。",
+            "en": "For anyone working on attribution and provenance, this is the line to internalise: when node attributes on your graph — flag, AIS identity, registered owner — are themselves purchasable, switchable and held through layers of shells, the graph's strength stops being a function of edge quality and becomes a function of which jurisdiction you happen to be standing in. Hong Tai 58 was not a win for forensics, it was a win for geography. Carry that into your own field: any attribution chain built on purchasable identifiers drops to zero courtroom value the moment it crosses a border — the same structure as the 8/17週報 on the provisioning layer as the new attribution layer, with the anchor here being a ship registry."
+          },
+          "counterpoint": {
+            "zh": "反過來讀同樣成立：這起定罪之所以可能，正是因為台灣對相關水域的內水主張——而那個主張本身是有爭議的。所以「地理給了管轄權」這件事對台灣是雙面刃：同一套邏輯讓北京可以主張南海水域的管轄與許可權，去決定誰能修、什麼時候修。更實際的限制是，定罪的嚇阻效果目前沒有資料支撐：2026年3月又發生疑似中國工作駁船海虹工66在東引海域損壞台馬三號的案件，定罪未必改變行為。",
+            "en": "The reverse reading holds just as well: the conviction was possible precisely because of Taiwan's claim that those are internal waters — and that claim is itself contested. “Geography grants jurisdiction” is therefore double-edged for Taipei, since the same logic lets Beijing assert jurisdiction and permitting authority over South China Sea waters and decide who repairs what, and when. The more practical limit is that there is no data showing the conviction deterred anything: in March 2026 the Chinese work barge Hai Hong Gong 66 was suspected of damaging the Taiwan–Matsu No.3 cable off Dongyin, so a conviction has not visibly changed behaviour."
+          },
+          "source": "國家政策研究基金會〈The 'Hong Tai 58' Case and Criminal Jurisdiction Over Submarine Cable Sabotage in 'New' Internal Waters〉；判決經Lloyd's List、ABC News、DCD獨立報導；UNCLOS第113條學術評析",
+          "url": "https://www.pf.org.tw/en/pfen/13-11656.html",
+          "terms": [
+            "UNCLOS",
+            "FOC",
+            "AIS",
+            "EEZ"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "military",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "波羅的海證明軍艦補不上執法鏈：扣船因「拘留成本與法律框架不明」而放人，愛沙尼亞2026年4月起停止在自家EEZ登船，影子船隊週均約45艘沒有下降",
+            "en": "The Baltic shows warships cannot repair the enforcement chain: detained vessels released over detention costs and unclear legal frameworks, Estonia halting boardings in its own EEZ from April 2026, shadow-fleet traffic flat at about 45 ships a week"
+          },
+          "summary": {
+            "zh": "NATO在2025年1月啟動Baltic Sentry，以巡防艦、軍機與無人水面載具加強海底基礎設施監控，是目前全球對海纜威脅投入軍事資源最多的案例。但執法鏈的下游紀錄並不支持嚇阻已經建立：Center for Maritime Strategy的分析指出，包括Grinch在內的多艘被扣船舶在繳納數百萬歐元罰款後獲釋，主因是拘留成本高昂與法律框架不明確；該文並記錄2026年4月俄羅斯巡防艦Admiral Grigorovich護送受制裁船舶通過英吉利海峽。一份第三方追蹤（2026年9月更新）指愛沙尼亞自2026年4月起停止在自身專屬經濟區登檢影子船隊油輪，理由是俄軍在芬蘭灣的常態巡邏，攔檢行動西移至法國等地而非停止。芬蘭官員2026年1月表示，航經波羅的海的影子船隊數量並未下降，約為每週45艘。",
+            "en": "NATO launched Baltic Sentry in January 2025, adding frigates, maritime patrol aircraft and uncrewed surface vessels to seabed infrastructure surveillance — the largest military commitment anywhere to the cable threat. The downstream record does not show deterrence established. Center for Maritime Strategy analysis notes that detained vessels including Grinch were released after multi-million-euro fines, driven mainly by the cost of detention and unclear legal frameworks, and records the Russian frigate Admiral Grigorovich escorting sanctioned shadow vessels through the English Channel in April 2026. A third-party tracker updated in September 2026 states Estonia stopped boarding shadow-fleet tankers in its own exclusive economic zone from April 2026, citing permanent Russian naval patrols in the Gulf of Finland, with interdiction moving west to France rather than ceasing. A Finnish official said in January 2026 that shadow-fleet transits through the Baltic had not declined, running at roughly 45 ships a week."
+          },
+          "implication": {
+            "zh": "這條把「增加軍事存在」這個最直覺的對策先行證偽了一半：偵測與攔檢不是瓶頸，持有與起訴才是。拘留一艘船要付泊位、船員、保險、法律程序的連續成本，而收益只有象徵性——這與9/21週報「備援硬化成本是連續支出、價值只在危機那一刻兌現，於是沒人守」是同一條經濟學。所以你評估任何國家的海纜防護時，該問的不是它派了幾艘船，而是它的法律體系能不能承擔扣住一艘船六個月的成本。台灣的優勢恰好在這裡：內水主張讓它可以用刑事程序，而不是用海上攔檢。",
+            "en": "This half-falsifies the most intuitive countermeasure, more military presence: detection and boarding are not the bottleneck, holding and prosecuting are. Detaining a ship means paying berth, crew, insurance and legal process continuously while the return is largely symbolic — the same economics as the 9/21週報 finding that hardening a bypass is a continuous expense redeemed only in the crisis moment, so nobody does it. When you assess a country's cable protection, the question is not how many hulls it deployed but whether its legal system can absorb the cost of holding one ship for six months. Taiwan's advantage sits exactly there: the internal-waters claim lets it use criminal procedure instead of maritime interdiction."
+          },
+          "source": "Center for Maritime Strategy〈NATO Collective Legal Interpretations〉；Grosswald波羅的海安全追蹤（2026/9/23更新）；Euronews 2026/1芬蘭官員談話",
+          "url": "https://centerformaritimestrategy.org/publications/nato-collective-legal-interpretations-strengthening-alliance-deterrence-and-protecting-baltic-undersea-assets-against-grey-zone-threats/",
+          "terms": [
+            "Baltic Sentry",
+            "EEZ",
+            "FOC",
+            "UNCLOS"
+          ]
+        }
+      ]
+    }
+  ],
+  "narrative": {
+    "zh": "**上期推演校準**\n\n10/5週報五條指標，七天能結案的只有一條，給的是壞消息。第四條（2027年3月前是否出現廠商確認的BYOAI案例）被10/10報告的南韓七家金融機構案逼出一個我沒分清的區別：攻擊者是用開源滲透工具ARTEX接上商用模型，不是自帶本地模型。那不是BYOAI，它證明的是反面——商用API這條槓桿還連得上，只是沒被拉動。第二條更難堪：我要追蹤「KEV每月新增中EPSS低於1%的佔比」，九月新增約28條（第三方彙整、各家對不攏），而權威的月度EPSS分布根本不在我取得得到的來源裡。那是一條我自己量不到的指標，與9/28週報那條「依存下降」同病不同向：那條怎麼答都不會錯，這條根本答不了。一、三、五條未到期。連續第三期，錯的不是我讀資料，是指標本身。從本期起每條指標先過一關：我拿得到這個數字嗎。\n\n**問題是什麼**\n\n10/10報告記了菲律賓—新加坡海纜10/2中斷、約300 Gbps，DICT部長說不排除蓄意但言之過早。幾乎所有討論都停在這句——是不是故意的。問錯層次了。剪斷從來不稀有：ICPC估全球每年150到200起故障、七到八成來自漁具與拋錨、蓄意不到1%。稀有而且正在被操作的是另一個變數：修復要多久。攻擊端的成本是一次拋錨，防守端的成本是一條序列化、容量固定、啟動鍵不在自己手上的修復隊伍。被攻擊的不是纜線，是修復排程。\n\n**機制怎麼運作**\n\n三件事疊起來。一、容量固定且萎縮：全球可作業海纜的船約60艘、專職修復不到20艘，約三分之二2040年前退役，補齊要20艘與約30億美元，在建僅六艘——危機當下加錢也買不到。二、隊伍序列化：同時出事的N條纜線得到的是超線性延遲，因為排同一批船；於是「同時」本身就是攻擊參數，不必剪得更深，只要剪得更同時。三、最關鍵：啟動鍵在沿岸國手上。修復船進他國主張水域要許可，而許可窗口可被政治調節——據《華盛頓郵報》報導、VOA轉述，南海原本10天內能下來的核准可拖到四個月；多數海域修復約一週，南海40天以上。這一步才是武器：完全合法、完全可否認、不需要任何一艘船出海。\n\n**證據**\n\n波羅的海已經把下游試過，先斷的是執法端。Center for Maritime Strategy記錄多艘被扣船（含Grinch）在繳數百萬歐元罰款後獲釋，敗在拘留成本與法律框架不明；愛沙尼亞2026年4月起停止在自家EEZ登船，理由是俄軍常態巡邏；芬蘭官員2026年1月說影子船隊週均約45艘、沒有下降。法律根在UNCLOS第113條：要求各國把領海外破壞海纜入罪，但管轄綁在船旗與國籍，而船旗可以買。所以全球第一起定罪的Hong Tai 58（台南地院2025年6月12日依電信管理法判三年）靠的不是證據鏈更強，是事發位置落在台灣主張的內水裡。管轄權是地理給的，不是證據給的。\n\n**各方自己怎麼說**\n\n北京的叙事是「海上常見事故」：國台辦對路透的書面回覆稱全球每年逾百起海纜事故，指台灣捏造威脅、炒作「所謂灰色地帶」。它最在意的是不讓任何單一事件固定成先例，所以反制不是否認而是反訴——2025年12月懸賞25萬人民幣緝拿兩名「控制該船」的台灣人，把歸因箭頭整個掉頭。華府的叙事是基礎設施與盟友協調：S.3249要制裁蓄意破壞者、設跨部會委員會簡化許可、國務院增至少10個員額，卻留了國家安全豁免，委員會FY2027才運作；它最在意中國修復船接觸纜線，最不願被追問的是自家修復船隊同樣老化。NATO的叙事是威懾與法律解釋，但Baltic Sentry真正卡住的是「拘留成本」這張沒人想付的帳單。台北沒有叙事，卻做了唯一有效的那件事，而且是工程答案：台馬四號9月啟用、三纜總容量約1.9 Tbps、兩套微波可即時切換、馬祖9座衛星站（8座為Eutelsat OneWeb），微波12.6 Gbps高於尖峰9 Gbps。它沒有保護纜線，它讓修復排程不重要。\n\n**未來 3–6 個月的推演與觀察指標**\n\n主判斷：下一階段的競爭在許可窗口與備援容量這兩個參數上，不在海底。每條我先確認自己拿得到數字。一、ITU與ICPC 7/10最終報告建議的「修復船預先通關」是否被任一國寫成正式行政程序而非聲明：半年內零採納，自願治理這條路可判死。二、S.3249是否在1/3前完成立法：未過，「美方有法可制裁」明年整年都是空話。三、菲律賓DICT是否公布10/2中斷的故障定位：逾90天無結論，代表連「斷在哪裡」都已是取得問題而非能力問題。四、台灣本島國際出口（非馬祖）是否出現新的備援預算或LEO採購：馬祖模式能否上行到Tbps量級，是這套判斷能不能推廣的分水嶺。五、亞太是否新增任一艘專職修復船下水或下訂：半年內為零，容量萎縮就確定無法在這個十年反轉。\n\n**我可能錯在哪**\n\n最可能錯的是把注意力當成了基線變化。ICPC同時給了兩個數字：纜線總長從2014年約100萬公里長到2025年約170萬公里，年故障數卻穩定在150到200起——密度在降、絕對數沒變。這是我整套框架最硬的反證，我無法用資料反駁，只能承認變的可能是報導密度與歸因意願，不是海底。第二，台馬四號同時是我的證據與反證：備援若這麼做得出來，修復排程就不算什麼槓桿；我的辯護是馬祖約1.3萬人、尖峰9 Gbps微波打得住，本島出口是Tbps量級補不起來——那是推論，不是我量過的數字。第三，中國「深海電纜切割器」的報導出自出版品質受質疑的期刊，我刻意沒把它寫進任何一條item；但刻意不用一則對我有利的材料，不等於我沒被它影響。第四，本期沒打開任何一個一手頁面，uscc.gov、itu.int、ejiltalk.org、thediplomat.com全被出網政策擋在DNS層，數字都來自搜尋摘要；9/28週報與10/5週報連說兩次，這期我改寫進標法，全報只給兩條confirmed。最後最該警惕：這題目讓「可歸責的那個人正在消失」又多一個領域，而本站已連兩個月在講同一句話——越用越順手的框架，最該懷疑的正是它還解不解釋得了反例。",
+    "en": "**Calibrating last week's projections**\n\nOf the five indicators in the 10/5週報, one closes, and badly. Indicator four asked for a vendor-confirmed BYOAI case before March 2027. The South Korean banking intrusion in the 10/10報告 forces a distinction I had collapsed: the attackers chained the open-source pentest tool ARTEX to a commercial model, not a local one. That is not BYOAI — it shows the commercial-API lever is still attached and simply was not pulled. Indicator two is worse: I asked for the share of monthly CISA KEV additions scoring EPSS under 1%, and no authoritative monthly EPSS distribution is reachable from this environment at all. I wrote an indicator I cannot measure — the mirror image of the 9/28週報 indicator that no answer could have falsified. Three weeks running, the fault is in the indicators, not in the reading. Each one now clears a prior question: can I obtain this number?\n\n**What the question is**\n\nThe 10/10報告 logged the Philippines–Singapore outage of 10/2, about 300 Gbps, with the DICT secretary saying sabotage cannot be ruled out but it is far too early to say. Every cable conversation stops at that sentence — was it deliberate? Wrong altitude. Cuts are not scarce: the ICPC counts 150–200 faults a year, 70–80% from fishing gear and anchors, under 1% deliberate. The scarce variable is how long repair takes. The attacker spends one anchor drop; the defender spends a repair queue that is serialised, fixed in capacity, and started by somebody else. What is under attack is not the cable. It is the repair schedule.\n\n**How the mechanism works**\n\nThree things stacked. Capacity is fixed and shrinking: some 60 vessels worldwide can work subsea cable, fewer than 20 repair-dedicated, two-thirds at end of life by 2040, with 20 newbuilds and about $3bn needed against six on order — you cannot buy this during the crisis that needs it. The queue is serialised: N simultaneous faults produce super-linear delay because they compete for the same hulls, which makes simultaneity itself a weapon parameter — cut closer together, not deeper. And the start button belongs to the coastal state. Per Washington Post reporting relayed by VOA, South China Sea repair approvals once granted inside ten days can take four months, against roughly a week elsewhere and 40-plus days there. That step is the weapon: fully legal, fully deniable, and no ship has to sail.\n\n**Evidence**\n\nThe Baltic already ran the downstream end, and enforcement broke first. The Center for Maritime Strategy records detained vessels including Grinch released after multi-million-euro fines, defeated by detention costs and unclear legal frameworks; Estonia stopped boarding in its own EEZ from April 2026, citing permanent Russian naval patrols; a Finnish official put shadow-fleet traffic at about 45 ships a week in January 2026, undiminished. The legal root is UNCLOS Article 113, which obliges states to criminalise cable damage beyond the territorial sea but ties jurisdiction to flag and nationality — and a flag can be bought. The world's first conviction, Hong Tai 58 (Tainan District Court, 12 June 2025, three years), did not turn on a stronger evidence chain. It turned on the cut falling inside waters Taiwan claims as internal. Jurisdiction came from geography, not from evidence.\n\n**What each side says in its own words**\n\nBeijing's line is ordinary maritime accident: the Taiwan Affairs Office told Reuters that over a hundred cable incidents occur worldwide each year and accused Taipei of manufacturing a threat and hyping a \"so-called grey zone\". It cares most that no single case hardens into precedent, so its counter is not denial but counter-accusation — in December 2025 it offered up to 250,000 yuan for two Taiwanese men it said controlled the ship, reversing attribution entirely. Washington's line is infrastructure and allied coordination: S.3249 would mandate sanctions and an interagency permitting committee, while keeping a national-security waiver and a committee that starts only in FY2027. It cares most about Chinese repair ships touching cable, and least wants to be asked about the age of its own fleet. NATO frames this as deterrence and legal interpretation, but what stalls Baltic Sentry is the detention bill nobody wants to pay. Taipei has no narrative and did the only thing that worked, as engineering: Taiwan–Matsu No.4 entered service in September, about 1.9 Tbps across three cables, two switchable microwave systems, nine satellite stations in Matsu, microwave at 12.6 Gbps against a 9 Gbps peak. It did not protect the cable. It made the repair schedule irrelevant.\n\n**Projections and indicators, next three to six months**\n\nThe next round is fought over the permit window and backup capacity, not the seabed. Each indicator is one I can source. First, whether the pre-clearance for repair vessels recommended in the ITU/ICPC final report of 7/10 becomes any state's formal procedure rather than a statement; zero adopters in six months retires voluntary governance here. Second, whether S.3249 is enacted by 1/3; if not, \"the US can sanction deliberate cable damage\" is rhetoric for all of next year. Third, whether the Philippines' DICT publishes a fault location for the 10/2 outage; past ninety days without one, even knowing where a cable broke is an access problem rather than a capability problem. Fourth, whether Taiwan's main-island egress — not Matsu — gets redundancy funding or LEO capacity; whether the Matsu model scales to terabits decides whether any of this generalises. Fifth, whether one repair-dedicated vessel is ordered or launched in Asia-Pacific; zero in six months fixes the shrinkage timetable beyond reversal this decade.\n\n**Where I am most likely wrong**\n\nMost likely I am mistaking attention for a change in baseline. The ICPC gives two numbers at once: cable length grew from about 1m km in 2014 to 1.7m km in 2025 while annual faults held at 150–200, so faults per kilometre are falling. That is the hardest evidence against my frame and I cannot argue it away — what changed may be reporting density and willingness to attribute, not the seabed. Second, Taiwan–Matsu No.4 is both my evidence and my refutation: if redundancy is this buildable, the repair schedule is not much of a lever, and my defence — Matsu is 13,000 people at a 9 Gbps peak, main-island egress is terabit-scale — is inference, not a number I measured. Third, I opened no primary page this week: uscc.gov, itu.int, ejiltalk.org and thediplomat.com were blocked at DNS, so every figure here is relayed, and the Chinese deep-sea cable cutter reporting traces to a journal of questioned standards, which is why no item cites it. The 9/28週報 and 10/5週報 both complained about the access; this week it goes into the labelling instead, and only two items are marked confirmed. Last and most dangerous: this topic extends \"the accountable party is disappearing\" into one more domain, and this site has said that sentence for two months. The frame that gets easier to use is the one to suspect of no longer explaining its counter-examples."
+  }
+}
