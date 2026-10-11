@@ -1,6 +1,17 @@
 {
-  "updated": "2026-10-10",
+  "updated": "2026-10-12",
   "terms": [
+    {
+      "term": "TAO",
+      "zh": "國台辦（國務院台灣事務辦公室）",
+      "expansion": "Taiwan Affairs Office of the State Council",
+      "def": {
+        "zh": "中國國務院下轄、專責對台政策與涉台事務的機構，其發言人聲明是北京對台相關事件做出官方表態的主要管道，聲明用詞的強硬或溫和程度常被解讀為政策風向的訊號。",
+        "en": "An office under China's State Council responsible for Taiwan-related policy and affairs; statements from its spokesperson are Beijing's primary channel for official reactions to Taiwan-related developments, and the harshness or mildness of the wording is commonly read as a signal of policy direction."
+      },
+      "category": "geo",
+      "first_seen": "2026-10-12"
+    },
     {
       "term": "G20",
       "zh": "二十國集團",

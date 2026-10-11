@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-10",
+  "updated": "2026-10-12",
   "reports": [
+    {
+      "file": "reports/2026-10-12-brief.json",
+      "date": "2026-10-12",
+      "kind": "brief",
+      "title": {
+        "zh": "賴清德10/10國慶演說，北京只回了一句聲明、沒有比照2024年軍演——兩個預先設下的觀察樣本同時給出答案：台海是『2025溫和模式再進化』，德黑蘭是『選舉前釘死、選舉後不鬆口』；俄烏能源戰入冬前跳了十倍量級，NetScaler同一套SAML子系統五天內第二次爆雷",
+        "en": "Lai's 10/10 Speech Gets Only a Statement From Beijing, No Repeat of 2024's Drills — Two Standing Observation Samples Both Answer: the Strait Is '2025's Mild Pattern, Evolved,' Tehran Is 'Locked Before the Vote, Unmoved After'; Russia's Energy War on Ukraine Jumps Tenfold Before Winter, and NetScaler's Same SAML Subsystem Fails Twice in Five Days"
+      }
+    },
     {
       "file": "reports/2026-10-10-brief.json",
       "date": "2026-10-10",
