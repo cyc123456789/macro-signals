@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-12",
+  "updated": "2026-10-14",
   "reports": [
+    {
+      "file": "reports/2026-10-14-brief.json",
+      "date": "2026-10-14",
+      "kind": "brief",
+      "title": {
+        "zh": "承諾劃在伊朗本土：胡塞打進利雅德國際機場、川普臨門收手；同一週，一組預設密碼打穿法國近200家超市的冷鏈",
+        "en": "The line is drawn at Iran proper: Houthis strike into Riyadh's own airport, Trump pulls back at the last moment — the same week, a default password breaches the cold chain at nearly 200 French supermarkets"
+      }
+    },
     {
       "file": "reports/2026-10-12-weekly.json",
       "date": "2026-10-12",

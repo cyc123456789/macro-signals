@@ -1,0 +1,161 @@
+{
+  "date": "2026-10-14",
+  "kind": "brief",
+  "title": {
+    "zh": "承諾劃在伊朗本土：胡塞打進利雅德國際機場、川普臨門收手；同一週，一組預設密碼打穿法國近200家超市的冷鏈",
+    "en": "The line is drawn at Iran proper: Houthis strike into Riyadh's own airport, Trump pulls back at the last moment — the same week, a default password breaches the cold chain at nearly 200 French supermarkets"
+  },
+  "focus": {
+    "zh": "本期涵蓋10/9-10/13。胡塞武裝10/10、10/11連兩波飛彈打進利雅德King Khalid國際機場，造成沙國十年來最致命攻擊(至少20死、數百傷)，機場關閉至10/17——10/8報告的判斷『失去Bab el-Mandeb周邊城鎮沒讓沙國境內目標變得更安全』，這次被坐實到首都機場的規模。同一事件鏈裡，川普一度下令CENTCOM備戰對胡塞的直接空襲、週日中午臨門喊停，Brent油價衝上105美元；10/12報告記錄的『期中選舉前絕不攻打伊朗』承諾沒有被推翻，但這次測出它只保護伊朗本土，不保護伊朗在葉門的代理人。另一條線，法國近200家超市的Danfoss冷凍控制器10/12-10/13遭入侵、冰箱燒到50度，根源不是零時差，是預設密碼加上對外曝露的舊型IoT設備，CERT-FR已發布警報。晶片規避案這次有了第一個認罪——Supermicro承包商Sun 10/9正式認罪；台灣F-16V卡在夏威夷六週的謎團，國防部長顧立雄給出官方技術解釋；賴清德國慶演說後北京只用21架次、7艘艦的正常規模回應，10/12報告的判斷站得住，但10/14是『聯合利劍-2024B』兩週年，才是真正的查核點。",
+    "en": "This brief covers 10/9-10/13. Houthi forces struck Riyadh's King Khalid International Airport with missiles on two consecutive days, 10/10 and 10/11, in Saudi Arabia's deadliest attack in a decade (20-plus dead, hundreds wounded), closing the airport until 10/17 — the 10/8 report's judgment that losing towns around Bab el-Mandeb didn't make targets inside Saudi Arabia any safer has now been borne out at the scale of the capital's own airport. In the same chain of events, Trump at one point ordered CENTCOM to prepare direct strikes on the Houthis, then halted at the last moment on Sunday, as Brent crude crossed $105; the 10/12 report's \"no strike on Iran before the midterms\" pledge hasn't been overturned, but this episode shows it protects Iranian territory, not Iran's Yemeni proxy. Separately, refrigeration controllers at nearly 200 French supermarkets were compromised on 10/12-10/13, with fridges driven to 50°C — the root cause isn't a zero-day, it's a default password on internet-exposed legacy IoT gear, and CERT-FR has issued an alert. The Nvidia chip-evasion thread got its first guilty plea, from Super Micro contractor Sun on 10/9; Taiwan's defense minister gave an official account of the six-week F-16V holdup in Hawaii; and Beijing's muted 21-sortie, 7-vessel response to Lai's National Day speech bears out the 10/12 report's call — though 10/14, the two-year anniversary of \"Joint Sword-2024B,\" is the real checkpoint still to come."
+  },
+  "sections": [
+    {
+      "id": "military",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "胡塞飛彈兩波打進利雅德國際機場：沙國十年來最致命攻擊，機場關到10/17",
+            "en": "Houthi missiles hit Riyadh's international airport twice: Saudi Arabia's deadliest attack in a decade, airport shut until 10/17"
+          },
+          "summary": {
+            "zh": "胡塞武裝10/10、10/11連兩天以飛彈打擊沙烏地首都利雅德的King Khalid國際機場。第一波造成至少13死(事後一名印度籍傷者不治，數字從12上修)、逾300傷，死者橫跨美、沙、孟加拉、埃及、約旦、巴勒斯坦、敘利亞、蘇丹八國籍；第二波造成1死11傷。沙國民航總局證實機場將關閉至少到10/17，CNN統計過去一週死亡人數已累計至少20人、數百人受傷，是沙烏地阿拉伯十年來最致命的一次攻擊。胡塞聲稱這是回應沙國近期對葉門境內目標加大空襲力度。",
+            "en": "Houthi forces struck Riyadh's King Khalid International Airport with missiles on two consecutive days, 10/10 and 10/11. The first strike killed at least 13 people (revised up from an initial 12 after an Indian national died of injuries) and wounded more than 300, with victims from eight nationalities including American, Saudi, Bangladeshi, Egyptian, Jordanian, Palestinian, Syrian and Sudanese; the second strike killed 1 and wounded 11. Saudi civil aviation authorities confirmed the airport would stay closed until at least 10/17. CNN's tally put the week's death toll at 20-plus with hundreds wounded — Saudi Arabia's deadliest attack in over a decade. The Houthis say the strikes are retaliation for intensified Saudi airstrikes inside Yemen."
+          },
+          "implication": {
+            "zh": "這驗證了10/8報告的nexus判斷——『失去Bab el-Mandeb周邊城鎮，沒讓沙國境內目標變得更安全』——而且驗證的規模遠超原本框架：原判斷談的是Aramco煉油設施，這次直接打進首都的國際機場，還拉出十年最致命攻擊的量級。對你而言，這表示葉門戰場的『前線後退、縱深打擊不退』模式不是過渡現象，而是胡塞已經把它當成常態戰術；評估沙國/海灣風險時，該看的指標不是地面戰線誰進誰退，而是胡塞的飛彈/無人機庫存與補給鏈有沒有被消耗。",
+            "en": "This validates the 10/8 report's nexus judgment — that losing towns around Bab el-Mandeb didn't make targets inside Saudi Arabia any safer — and validates it at a scale well beyond the original frame: that judgment was about Aramco refineries, and this time the strike reached the capital's own international airport, in Saudi Arabia's deadliest attack in a decade. For you, this means the \"front line retreats, deep-strike capability doesn't\" pattern in Yemen isn't a transitional artifact — the Houthis have made it standing doctrine. When gauging Gulf risk, the indicator to watch isn't who's winning on the ground, it's whether the Houthi missile/drone stockpile and resupply chain are actually being depleted."
+          },
+          "counterpoint": {
+            "zh": "死亡人數在72小時內從12上修到13、再到CNN週一的『至少20』，反映的是戰時統計的滾動修正，不是攻擊規模突然擴大；另外，沙國自己的空防(愛國者/薩德系統)這次攔截成功率公開資訊不足，無法排除是防空部署被刻意調整(例如優先護衛王室設施而非機場)而非單純攔截失敗。",
+            "en": "The death toll rising from 12 to 13 to CNN's \"at least 20\" over 72 hours reflects rolling wartime revision, not a sudden jump in attack scale. Also, public information on Saudi air-defense (Patriot/THAAD) interception rates this round is too thin to rule out that the gap reflects a deliberate air-defense reprioritization — e.g., shielding royal facilities over the airport — rather than simple interception failure."
+          },
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/11/yemen-fighting-expands-as-houthis-attack-saudi-airport-what-to-know",
+          "terms": ["Houthi", "Bab el-Mandeb", "NOTAM"]
+        },
+        {
+          "severity": "medium",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "卡在夏威夷六週的謎團有了官方答案：不是政治卡關，是產線搬遷與供應鏈",
+            "en": "The six-week Hawaii mystery gets an official answer: not political leverage, a production-line move and supply chain"
+          },
+          "summary": {
+            "zh": "台灣首批兩架F-16V Block 70戰機(編號6727、6728)10/2抵達志航基地，較原訂時程晚了約一個月。這兩架機在8/21就已飛抵夏威夷Hickam基地，卻在沒有官方解釋的情況下滯留近六週，外界一度揣測與政治因素有關。國防部長顧立雄這次正式說明：延遲源於生產線搬遷與供應鏈中斷，合約本身沒有延遲罰則條款，美方將以加強技術支援、備用零件與延長保固取代金錢賠償。剩餘64架的交機時程，不同消息來源版本不一——一說會延續到2027年、2028年完成，另一說(看起來已過時)稱2026年底前完成。",
+            "en": "Taiwan's first two F-16V Block 70 jets (tail numbers 6727 and 6728) arrived at Chihhang Air Base on 10/2, about a month behind the original schedule. The pair had already reached Hickam Air Force Base in Hawaii on 8/21 but then sat there for nearly six weeks without official explanation, fueling speculation about political factors. Defense Minister Wellington Koo has now given the formal account: the delay stems from a production-line relocation and supply-chain disruption, the contract itself carries no late-delivery penalty clause, and the US side will offer enhanced technical support, spare parts and an extended warranty instead of financial compensation. Accounts of the delivery schedule for the remaining 64 jets diverge — one version has deliveries running through 2027 with completion in 2028, another (which looks outdated) says completion by the end of 2026."
+          },
+          "implication": {
+            "zh": "10/4報告記錄的揣測是『卡住的六週恰好完整覆蓋整場川習峰會』，暗示政治槓桿；這次官方給出的技術解釋，並不等於推翻那個揣測——兩種機制(政治卡關/技術延遲)彼此不互斥，軍購進度本來就可能同時受兩種力量拖累。但多了一個可信的技術版本，代表你在跟決策者對話時，不該把『交機延遲』直接等同於『政治訊號』，而要先問清楚是哪一段(生產/物流/政治審查)卡住，再判斷訊號強度。顧立雄親口證實『合約無罰則』這點也值得記住——這代表台灣在這張採購合約上的議價位置本來就偏弱，延遲的財務代價完全由台灣承擔。",
+            "en": "The 10/4 report flagged the coincidence that \"the six-week hold exactly spanned the entire Trump-Xi summit,\" implying political leverage. This round's official technical explanation doesn't overturn that reading — the two mechanisms (political holdback vs. technical delay) aren't mutually exclusive, and an arms program can be dragged down by both at once. But having a credible technical account on record means that in a conversation with decision-makers, you shouldn't equate \"delivery delay\" with \"political signal\" by default — ask which stage (production, logistics, political vetting) actually stalled before you weight the signal. It's also worth remembering that Koo personally confirmed the contract carries no penalty clause — meaning Taiwan's bargaining position on this procurement contract was already weak, and the entire financial cost of the delay falls on Taiwan."
+          },
+          "source": "Defense News",
+          "url": "https://www.defensenews.com/global/asia-pacific/2026/10/02/taiwans-first-two-f-16v-fighter-jets-arrive-to-bolster-defenses-against-china/",
+          "terms": []
+        }
+      ]
+    },
+    {
+      "id": "nexus",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "likely",
+          "title": {
+            "zh": "川普下令CENTCOM備戰空襲胡塞、週日中午臨門喊停——10/12報告的『選舉前不打伊朗』承諾，這次測出邊界在哪",
+            "en": "Trump ordered CENTCOM to prep strikes on the Houthis, then halted at the last minute Sunday — this is where the 10/12 report's \"no Iran strike before the midterms\" promise turns out to end"
+          },
+          "summary": {
+            "zh": "多家NBC地方台轉引報導指出，沙國多次向川普政府要求美軍直接介入打擊胡塞；CENTCOM司令Cooper將軍擬定了打擊方案、簡報給國防部長Hegseth，川普一度下令空襲準備就緒——但就在週日(10/11)中午、行動即將展開前，川普臨時喊停。同一事件窗口，Brent原油價格衝上每桶105美元以上，多家航空公司暫停沙國航線。白宮的兩難很直白：出手等於把戰線從伊朗拉到葉門；不出手等於讓沙國獨自面對胡塞的飛彈消耗戰。",
+            "en": "Multiple NBC affiliate reports say Saudi Arabia repeatedly asked the Trump administration for direct US military action against the Houthis. CENTCOM commander Gen. Brad Cooper drew up strike options and briefed Defense Secretary Hegseth, and Trump at one point ordered the strikes to proceed — only to reverse course around noon on Sunday (10/11), just as the operation was about to begin. In the same window, Brent crude rose above $105/barrel and several airlines suspended service to Saudi Arabia. The dilemma facing the White House is blunt: acting extends the front from Iran to Yemen; not acting leaves Saudi Arabia to absorb the Houthi missile war alone."
+          },
+          "implication": {
+            "zh": "10/12報告記錄的『川普10/8公開承諾期中選舉前絕不攻打伊朗』沒有被推翻——伊朗本土這次完全沒被列入選項，被列入選項、而且一度下令執行的是胡塞，伊朗在葉門的代理人。這次事件幫你把那條承諾的邊界畫清楚：它保護的是『伊朗領土』，不是『伊朗的勢力範圍』；川普對代理人戰場的出手門檻，比對伊朗本土低得多，而且這次只差『臨門一腳』。對量化操作的意義更直接：Brent單週站上105美元，拉抬的是整個東亞進口能源成本與海運保險費率曲線，台灣作為能源淨進口與航運密集經濟體，這條線比地緣頭條更早反映到通膨與企業毛利率上。",
+            "en": "The 10/12 report's \"Trump publicly pledged no strike on Iran before the midterms\" judgment hasn't been overturned — Iran proper was never on the table this time. What was on the table, and briefly ordered into motion, was the Houthis, Iran's proxy in Yemen. This episode draws a cleaner line around that pledge: it shields Iranian territory, not Iran's sphere of influence — and Trump's threshold for acting against the proxy battlefield is visibly lower, this time stopping only at the last step. The more direct relevance for your quant work: Brent crossing $105 in a single week lifts the whole East Asian energy-import-cost and shipping-insurance curve — and for an energy-import-dependent, shipping-intensive economy like Taiwan, that line shows up in inflation and corporate margins well before the geopolitical headline does."
+          },
+          "counterpoint": {
+            "zh": "『下令後喊停』這個細節目前只來自同一條新聞鏈的多台轉載(NBC地方附屬台為主)，沒有看到路透或美聯社獨立版本交叉確認決策過程的具體時間點，內部決策的確切因果(是沙國降溫、還是白宮內部評估風險過高)仍不明朗。",
+            "en": "The \"ordered, then halted\" detail currently traces to one reporting chain republished across several NBC affiliate stations, without an independent Reuters or AP account cross-confirming the exact timeline of the decision. The actual internal cause — a Saudi de-escalation request, or an internal risk assessment inside the White House — remains unclear."
+          },
+          "source": "NBC News",
+          "url": "https://www.nbcnews.com/world/middle-east/saudi-airport-attack-trump-us-join-fight-houthis-rcna602744",
+          "terms": ["CENTCOM", "Brent", "Houthi"]
+        }
+      ]
+    },
+    {
+      "id": "cyber",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "不是零時差，是預設密碼：法國近200家超市冷凍系統被打進、冰箱燒到50度",
+            "en": "Not a zero-day, a default password: ~200 French supermarkets' refrigeration systems breached, fridges cooked to 50°C"
+          },
+          "summary": {
+            "zh": "10/12-10/13，法國多家連鎖超市(Carrefour、Monoprix、Intermarché、Coopérative U/Les Mousquetaires旗下門市)的商用冷凍系統遭入侵，冰箱溫度被改到約攝氏50度，部分門市因此起火、存貨報廢。Les Mousquetaires估計受影響約180家門市、損失達數百萬歐元，其他統計估計範圍從80家到350家不等。根源是Danfoss的AK-SM、AK-SC系列製冷控制器——多為廠商已停止支援的舊型號、直接對外暴露在網路上，且研究者Kevin Beaumont指出帳號是admin、密碼會自動變成當天日期這種可預測的預設值。法國CERT-FR 10/12發布警報，要求營運方斷網或限制存取，目前無駭客組織或勒索軟體集團出面承認犯案。",
+            "en": "On 10/12-10/13, commercial refrigeration systems at multiple French supermarket chains (stores under Carrefour, Monoprix, Intermarché and the Coopérative U/Les Mousquetaires banners) were compromised, with fridge temperatures driven up to roughly 50°C, causing fires and spoiled stock at some locations. Les Mousquetaires estimates around 180 affected stores and losses in the millions of euros; other estimates range from 80 to 350 stores. The root cause is Danfoss's AK-SM and AK-SC refrigeration controller lines — mostly older models the vendor no longer supports, exposed directly to the internet, with researcher Kevin Beaumont noting the login was \"admin\" with a predictable default password that auto-rotates to the current date. France's CERT-FR issued an advisory on 10/12 telling operators to disconnect or restrict access to the controllers. No hacktivist group or ransomware crew has claimed responsibility."
+          },
+          "implication": {
+            "zh": "本站過去數月追蹤的Tier-0失效模式(NetScaler、Citrix、FortiMail、Cisco)清一色是邊界設備裡的客製化零時差漏洞鏈，攻擊門檻是研究資源；這次完全相反——是最原始的『對外曝露+出廠預設密碼』，攻擊門檻幾乎是零。對你判斷關鍵基礎設施/供應鏈韌性時這點很重要：真正的瓶頸從來不是攻擊者會不會寫exploit，是資產盤點與基本資安衛生有沒有做；食品冷鏈是目前邊緣運算/OT資安討論裡最被忽略的一塊，而它直接牽動的是民生與通膨，不是抽象的『國安』。",
+            "en": "The Tier-0 failure pattern this site has tracked for months — NetScaler, Citrix, FortiMail, Cisco — has uniformly been bespoke zero-day exploit chains in edge devices, where the barrier to attack is research capability. This is the opposite: the rawest possible combination of internet exposure plus a factory default password, with a barrier to attack near zero. That matters for how you assess critical-infrastructure and supply-chain resilience: the real bottleneck was never whether an attacker can write an exploit, it's whether basic asset inventory and cyber hygiene get done at all. The food cold chain is currently the most overlooked corner of edge/OT security discourse, and it hits daily life and inflation directly — not an abstract \"national security\" category."
+          },
+          "source": "The Hacker News（CERT-FR警報轉述）",
+          "url": "https://thehackernews.com/2026/10/attackers-heat-french-supermarket.html",
+          "terms": ["OT", "ICS", "CERT-FR"]
+        }
+      ]
+    },
+    {
+      "id": "tech",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "Supermicro案「抓蟲人」10/9正式認罪：三個被追蹤的晶片規避樣本裡，第一個從起訴走到定罪",
+            "en": "Super Micro's \"fixer\" pleads guilty on 10/9 — the first of three tracked chip-evasion cases to go from indictment to conviction"
+          },
+          "summary": {
+            "zh": "Super Micro Computer承包商Ting-Wei『Willy』Sun 10/9在曼哈頓聯邦法院就四項罪名認罪，包括共謀違反美國出口管制、走私、詐欺美國政府及妨礙司法。檢方指控Sun等人將約25億美元、搭載Nvidia H100/H200/B200晶片的AI伺服器經一家東南亞公司轉運、再分流到中國客戶，並偽造紀錄、用吹風機拆換伺服器序號標籤製造『影子機』掩護審計。共同被告包括Super Micro共同創辦人廖耀祥(Wally Liaw，今年3月被起訴，目前不認罪)與台灣業務經理張瑞倉(尚未到案)。Super Micro本身未被起訴，公司聲稱現任高層不知情。Sun預定2027年9月量刑。",
+            "en": "Super Micro contractor Ting-Wei \"Willy\" Sun pleaded guilty on 10/9 in Manhattan federal court to four counts, including conspiracy to violate US export controls, smuggling, defrauding the US government, and obstruction of justice. Prosecutors say Sun and others routed roughly $2.5 billion in Nvidia H100/H200/B200-powered AI servers through a Southeast Asian company before diverting them to Chinese customers, falsifying records and using a hair dryer to swap serial-number labels to create \"dummy\" servers to fool auditors. Co-defendants include Super Micro co-founder Yih-Shyan \"Wally\" Liaw (indicted in March, currently pleading not guilty) and Taiwan sales manager Ruei-Tsang \"Steven\" Chang (who has not appeared in court). Super Micro itself was not indicted; the company says current leadership was unaware. Sun is scheduled for sentencing in September 2027."
+          },
+          "implication": {
+            "zh": "10/10報告把『加州商人經馬來西亞/新加坡轉運』與『台灣Nvidia分公司經理起訴案』並列為同一種規避手法的兩個獨立樣本；這次是第三個樣本，而且是三者之中第一個從起訴走到正式認罪的——代表執法鏈條已經從『抓人』進展到『定罪』階段，對產業的嚇阻效果會比單純起訴更實質。對你判斷AI晶片灰色供應鏈風險時，重點不是案件數量增加(這早有預期)，而是認罪協商的存在本身——Sun換取認罪協商，通常意味著檢方手上握有對其他共同被告(尤其是尚未出庭的Chang)不利的直接證據，後續案情很可能會進一步往上游(台灣業務線)延伸。",
+            "en": "The 10/10 report placed \"a California businessman routing through Malaysia/Singapore\" and \"the indictment of an Nvidia Taiwan branch manager\" side by side as two independent samples of the same evasion pattern. This is the third sample, and the first of the three to move from indictment to a formal guilty plea — meaning the enforcement pipeline has advanced from arrests to convictions, which carries more real deterrent weight than indictments alone. What matters for assessing the AI-chip gray-market supply chain isn't that case counts are rising (expected) — it's the existence of the plea deal itself: Sun trading a guilty plea for a deal usually means prosecutors are holding direct evidence against the other co-defendants, especially the still-absent Chang, and the case is likely to extend further up the Taiwan sales chain."
+          },
+          "source": "Reuters（經GV Wire轉述）",
+          "url": "https://gvwire.com/2026/10/10/super-micro-contractor-pleads-guilty-in-scheme-to-divert-ai-servers-with-nvidia-chips-to-china/",
+          "terms": ["EAR"]
+        }
+      ]
+    },
+    {
+      "id": "geo",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "國慶後北京只派21架次、7艘艦——數字出爐，10/12報告的判斷站得住，但真正的查核點是明天",
+            "en": "Beijing's response was 21 sorties, 7 ships — the numbers are in, the 10/12 report's call holds, but the real checkpoint is tomorrow"
+          },
+          "summary": {
+            "zh": "賴清德總統10/10國慶演說強調『台灣珍惜和平、但不會放棄自由』。北京國台辦發言人張晗(依新華社)措辭強硬，指控賴清德『頑固堅持台獨立場』、『渲染大陸威脅』、『鼓吹民主對抗威權』，企圖『以武謀獨、挾洋自重』——但沒有宣布比照往例的大型聯合軍演。台灣國防部證實，截至週六(10/10)上午6時的24小時內，偵獲解放軍機21架次、艦艇7艘，屬於近期正常區間，不是突增。對照之下，2024年賴清德國慶演說後4天(10/14)北京啟動『聯合利劍-2024B』大型演習——而2026年的10/14正是這個先例的兩週年。",
+            "en": "President Lai Ching-te's 10/10 National Day speech stressed that \"Taiwan values peace but will not give up its freedom.\" Beijing's Taiwan Affairs Office spokesperson Zhang Han, per Xinhua, responded harshly, accusing Lai of \"stubbornly clinging to a Taiwan independence position,\" \"hyping up the mainland threat,\" \"promoting a democracy-versus-authoritarianism narrative,\" and seeking \"independence through military means and reliance on foreign backing\" — but announced no large-scale joint exercise of the kind seen in past years. Taiwan's Ministry of National Defense confirmed 21 PLA aircraft sorties and 7 PLAN vessels detected in the 24 hours ending 6am Saturday (10/10), within the normal recent range rather than a spike. By contrast, in 2024 Beijing launched the large-scale \"Joint Sword-2024B\" exercise four days after that year's National Day speech, on 10/14 — and 10/14 this year marks exactly two years since that precedent."
+          },
+          "implication": {
+            "zh": "10/12報告判斷『是2025年的溫和模式，而且比2025年更進一步』，這次有了官方數字支撐——21架次、7艘艦完全落在近月正常巡弋區間，判斷站得住。但這不是查核點的終點：10/14是『聯合利劍-2024B』兩週年，如果北京打算選一個有象徵意義的日子延遲發動大型演習，明天就是最可能的時間窗。對你來說，這條線真正的價值不是『這次沒有演習』這個結論，而是『測量基準』本身——21架次/7艘艦這組數字，從現在起可以當成辨識『正常巡弋』與『升級』的門檻值，之後任何一天的數字明顯超過這個基準，才是真正該警覺的訊號。",
+            "en": "The 10/12 report's judgment — \"this is the 2025 pattern, and it's gone further than 2025 did\" — now has official numbers behind it: 21 sorties and 7 vessels sit squarely within the normal recent patrol range, so the call holds. But this isn't the end of the checkpoint: 10/14 marks the two-year anniversary of \"Joint Sword-2024B,\" and if Beijing intends to pick a symbolically loaded date for a delayed large-scale exercise, tomorrow is the most likely window. The real value here isn't the conclusion that \"no exercise happened this time\" — it's the baseline itself: 21 sorties/7 vessels can now serve as your threshold for distinguishing \"normal patrol\" from \"escalation,\" so any day's numbers that clearly exceed this baseline going forward is the actual signal worth your attention."
+          },
+          "source": "美聯社 AP（經1News轉述）",
+          "url": "https://www.1news.co.nz/2026/10/11/taiwan-says-it-will-not-give-up-its-freedom-in-national-day-speech/",
+          "terms": ["TAO", "ADIZ", "Joint Sword"]
+        }
+      ]
+    }
+  ]
+}

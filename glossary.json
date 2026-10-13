@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12",
+  "updated": "2026-10-14",
   "terms": [
     {
       "term": "TAO",
@@ -2849,6 +2849,39 @@
       },
       "category": "military",
       "first_seen": "2026-10-12"
+    },
+    {
+      "term": "NOTAM",
+      "zh": "飛航公告",
+      "expansion": "Notice to Airmen / Notice to Air Missions",
+      "def": {
+        "zh": "由航空主管機關發布、告知飛航組員機場或空域出現影響安全的臨時狀況(如關閉、障礙物、軍演)的正式通知。",
+        "en": "An official notice issued by aviation authorities alerting flight crews to time-critical conditions affecting safety at an airport or in airspace, such as closures, hazards, or military activity."
+      },
+      "category": "military",
+      "first_seen": "2026-10-14"
+    },
+    {
+      "term": "CERT-FR",
+      "zh": "法國政府資安應變團隊",
+      "expansion": "Centre Gouvernemental de Veille, d'Alerte et de Réponse aux Attaques Informatiques",
+      "def": {
+        "zh": "法國國家資訊系統安全局(ANSSI)轄下的官方資安事件應變與預警機構，負責發布漏洞與攻擊警報、協調跨機構應變。",
+        "en": "The French government's official computer emergency response team, operating under ANSSI, responsible for issuing vulnerability and incident alerts and coordinating cross-agency response."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-14"
+    },
+    {
+      "term": "Joint Sword",
+      "zh": "聯合利劍",
+      "expansion": "Joint Sword (PLA Taiwan Strait exercise series, e.g. Joint Sword-2024A/2024B)",
+      "def": {
+        "zh": "中國人民解放軍自2024年起以『聯合利劍』為代號、針對台灣周邊發動的大規模聯合軍演系列，通常選在台灣總統重大談話或美台互動後數日內啟動，兼具軍事演訓與政治施壓意圖。",
+        "en": "A series of large-scale PLA joint military exercises around Taiwan, code-named \"Joint Sword\" since 2024, typically launched within days of major speeches by Taiwan's president or notable US-Taiwan interactions, combining military drilling with political signaling."
+      },
+      "category": "military",
+      "first_seen": "2026-10-14"
     }
   ]
 }
