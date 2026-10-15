@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-16",
+  "kind": "brief",
+  "title": {
+    "zh": "Ivanti VPN被連環三個零時差打穿、攻擊者連日誌都竄改不留惡意程式樣本；川普第二次「能源停火」24小時內就被自己人拆穿——9/20報告記錄的失效模式這次連細節都重演；10/14『聯合利劍』兩週年，北京既未沉默也未環台演習，改在五海域辦六天不具名演習",
+    "en": "Ivanti's VPN Gateway Falls to a Chained Three-Zero-Day Exploit With Tampered Logs and No Malware Sample Left Behind; Trump's Second Unilaterally Announced 'Energy Ceasefire' Is Disproven Within 24 Hours by His Own Ally — the Failure Mode 9/20報告 Logged Repeats Down to the Details; on the Two-Year Mark of Joint Sword-2024B, Beijing Answers With Neither Silence Nor a Siege Drill, but Six Days of Unnamed Exercises Across Five Seas Away From Taiwan"
+  },
+  "focus": {
+    "zh": "資安端：Ivanti VPN閘道器被串連三個零時差攻破，攻擊者連日誌都竄改、不留惡意程式樣本；地緣端：川普第二次單方宣布的『能源停火』24小時內被澤倫斯基本人拆穿，模式與9/20報告記錄的失效如出一轍；台海端：10/14是『聯合利劍-2024B』兩週年，北京既未沉默也未環台演習，改在五個遠離台灣的海域辦六天演習。",
+    "en": "On cyber: Ivanti's VPN gateway falls to a chained three-zero-day exploit, with the attacker tampering with logs and leaving no malware sample behind. On geopolitics: Trump's second unilaterally announced 'energy ceasefire' is disproven within 24 hours by Zelensky himself, repeating the exact failure mode 9/20報告 logged. On the Strait: on the two-year mark of Joint Sword-2024B, Beijing answers with neither silence nor a siege drill, but six days of exercises across five seas, all away from Taiwan."
+  },
+  "sections": [
+    {
+      "id": "cyber",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "不留惡意程式、連日誌都竄改：Ivanti Connect Secure被串連三個零時差打穿，最後一棒的提權漏洞至今沒有修補",
+            "en": "No Malware, Tampered Logs: Ivanti Connect Secure Falls to a Chain of Three Zero-Days, and the Final Privilege-Escalation Flaw Is Still Unpatched"
+          },
+          "summary": {
+            "zh": "資安研究機構Volexity 10/13揭露，一個被歸類為『未歸類威脅行為者』的UTA0576，至少自10/3起便開始攻擊企業VPN閘道器Ivanti Connect Secure，串連三個零時差漏洞取得完全未經身分驗證的root層級程式碼執行——而且是在已完整套用現有修補程式的設備上。其中一個漏洞（CVE-2026-104935，身分驗證繞過，CVSS 8.6）由Ivanti當日發布修補並經CISA同日列入KEV；另一個可取得程式執行權的漏洞也已修補；但鏈上第三個、負責把執行權限從低權限帳號提升到root的漏洞，截至本報告截稿Ivanti尚未釋出修補程式。Volexity觀察到的入侵手法極度乾淨：攻擊者不部署任何惡意程式或web shell，而是對每一道指令都重新觸發一次漏洞利用，並主動竄改設備日誌，以低信心度評估其動機為財務型犯罪而非國家級間諜活動。",
+            "en": "Security firm Volexity disclosed on 10/13 that an actor it designates UTA0576 — an 'unattributed threat actor' — has been attacking the enterprise VPN gateway Ivanti Connect Secure since at least 10/3, chaining three zero-days to achieve fully unauthenticated, root-level code execution on devices that were already fully patched. One flaw in the chain, CVE-2026-104935 (an authentication bypass, CVSS 8.6), was patched by Ivanti the same day and added to CISA's KEV catalog that day too; a second flaw that grants code execution has also been patched; but the third flaw in the chain — the privilege escalation that turns low-privilege execution into root — remains unpatched as of this report. Volexity's observed tradecraft is unusually clean: the attacker deploys no malware or web shell at all, instead re-triggering the exploit chain for every single command, and actively tampers with device logs. Volexity assesses with low confidence that the motive is financially driven crime rather than state-sponsored espionage."
+          },
+          "implication": {
+            "zh": "這起案例把本站自9/16報告起追蹤的『Tier-0邊界設備』系列又往前推了一步，而且推的是一個新的維度：先前的NetScaler（9月起連環爆）、Cisco FMC（9月）、本週的AhsayCBS備份主控台，拚的都是『有沒有留下可分析的入侵痕跡』——這次Ivanti案例裡，攻擊者直接把『留下痕跡』這件事本身拿掉：沒有惡意程式樣本可以逆向、沒有web shell可以當IOC比對，連裝置自己的日誌都不可信。對你做威脅獵捕與provenance graph研究的實務意義是：當攻擊者選擇『每次都重新利用漏洞、不留持久化後門』的手法時，傳統以惡意程式特徵碼與日誌時間軸為核心的鑑識方法論會直接失效，你能倚賴的證據只剩網路層的流量模式（如異常的管理介面存取頻率）與其他獨立於受害設備之外的遙測來源；這也呼應8/24週報『資產出廠就不把證據送出機外』的結論——Ivanti這次的教訓更尖銳：就算把證據送出機外的日誌機制存在，攻擊者也能把它寫壞。",
+            "en": "This case pushes the Tier-0 perimeter-device series this outlet has tracked since 9/16報告 into a new dimension. Earlier cases — NetScaler's repeated disclosures since September, Cisco FMC in September, and this week's AhsayCBS backup console — all turned on whether an analyzable trace of intrusion was left behind. In the Ivanti case, the attacker removes that question entirely: no malware sample to reverse-engineer, no web shell to match as an IOC, and even the device's own logs cannot be trusted. For your threat-hunting and provenance-graph work, the practical takeaway is that when an attacker chooses to re-exploit the chain for every command rather than plant a persistent backdoor, forensic methodology built around malware signatures and log timelines simply stops working — what's left to rely on is network-layer traffic patterns (such as anomalous management-interface access frequency) and telemetry sourced independently of the compromised device itself. This also extends 8/24週報's conclusion that this class of asset ships without forwarding evidence off the device — Ivanti's case makes the lesson sharper still: even where a log-forwarding mechanism exists, the attacker can simply corrupt it before it's read."
+          },
+          "counterpoint": {
+            "zh": "Volexity對UTA0576動機的評估信心等級是『低』，而且明確傾向犯罪而非間諜——這與本站近期追蹤的多數Tier-0案例（Sandworm、Qilin等）都已有明確組織歸因不同。在更多證據出現前，不該假設這是某個國家級行為者的新戰術；完全可能是單一熟練個人或小型犯罪團伙，純粹為了轉售存取權或部署後續勒索軟體而採取這套高度謹慎的操作手法。",
+            "en": "Volexity's confidence in attributing UTA0576's motive is explicitly low, and leans toward crime rather than espionage — unlike most Tier-0 cases this outlet has tracked recently (Sandworm, Qilin), which already carry firmer organizational attribution. Until more evidence emerges, this should not be assumed to be a new nation-state tactic; it could just as plausibly be a single skilled individual or small criminal crew using this unusually careful tradecraft purely to resell access or stage a later ransomware deployment."
+          },
+          "source": "Volexity；Ivanti官方資安公告（經The Hacker News、BleepingComputer、Rapid7轉述）",
+          "url": "https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html",
+          "terms": ["RCE", "CVE", "KEV", "CISA", "Tier-0", "UTA"]
+        },
+        {
+          "severity": "medium",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "廠商自己的修補程式也擋不住：AhsayCBS備份主控台兩個漏洞補了還是能被鏈接攻破，被用來架web shell與挖礦",
+            "en": "Even the Vendor's Own Patch Didn't Hold: AhsayCBS Backup Console's Two Flaws Stay Chainable After a Fix, Used to Plant Web Shells and Mine Crypto"
+          },
+          "summary": {
+            "zh": "資安公司Huntress 10/7起觀測到針對備份軟體AhsayCBS主控台的在野攻擊，截至10/8已有至少五個組織受害。攻擊鏈由兩個漏洞組成：CVE-2026-105133為身分驗證繞過，CVE-2026-105134則是其Replication Receiver元件的作業系統指令注入，兩者串連後可讓攻擊者取得完全未經授權的程式碼執行權。值得注意的是，Ahsay先前釋出的10.3.4.0版修補程式並未完整解決問題，業者後續再補發10.3.4.45版熱修復，才真正堵上漏洞。觀測到的攻擊行為包含部署web shell與加密貨幣挖礦程式，手法偏向機會型的商業利用，而非針對性的國家級行動。",
+            "en": "Security firm Huntress began observing in-the-wild attacks against the AhsayCBS backup software console on 10/7, with at least five organizations compromised by 10/8. The attack chain combines two flaws: CVE-2026-105133, an authentication bypass, and CVE-2026-105134, an OS command injection in its Replication Receiver component; chained together they give an attacker fully unauthorized code execution. Notably, Ahsay's initial 10.3.4.0 patch did not fully close the hole — the vendor had to ship a further 10.3.4.45 hotfix to actually fix it. Observed post-exploitation activity included deploying web shells and cryptocurrency miners, tradecraft consistent with opportunistic commercial exploitation rather than targeted state-sponsored operations."
+          },
+          "implication": {
+            "zh": "備份主控台這類資產，性質上與本站追蹤過的RMM平台同構：為了完成跨組織的備份排程與還原作業，它天生就需要對所轄每一個客戶環境握有高權限存取；一旦主控台本身遭入侵，等同一次拿到所有下游客戶環境的存取權——這正是為什麼這類軟體持續是供應鏈攻擊者的高報酬目標，即使攻擊者這次的實際用途只是機會型的挖礦與web shell，而非精心策劃的供應鏈滲透。對你評估任何企業的第三方軟體曝險時，這提供一個具體的檢查項目：廠商第一次釋出的修補程式，不該被當成風險已解除的訊號——Ahsay這次10.3.4.0到10.3.4.45之間的落差證明，『已修補』與『真正堵住攻擊鏈』之間可能存在實質的時間差與技術落差，期間系統仍完全暴露。",
+            "en": "A backup management console is structurally the same kind of asset as the RMM platforms this outlet has tracked before: to perform cross-organization backup scheduling and restoration, it inherently needs high-privilege access to every client environment it manages — so compromising the console itself hands an attacker access to every downstream client environment at once. That's exactly why this class of software remains a high-payoff target for supply-chain attackers, even when, as here, the attacker's actual use was just opportunistic cryptomining and web shells rather than a deliberately planned supply-chain intrusion. For evaluating any enterprise's third-party software exposure, this gives a concrete checkpoint: a vendor's first patch release should not be read as a signal that the risk is resolved — the gap between Ahsay's 10.3.4.0 and 10.3.4.45 shows that 'patched' and 'the attack chain is actually closed' can differ by real time and real technical gaps, during which the system stays fully exposed."
+          },
+          "source": "Huntress（經BleepingComputer、SecurityWeek轉述）",
+          "url": "https://www.bleepingcomputer.com/news/security/unpatched-ahsaycbs-flaws-exploited-to-deploy-webshells-mine-crypto/",
+          "terms": ["RCE", "CVE", "KEV"]
+        }
+      ]
+    },
+    {
+      "id": "nexus",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "川普第二次單方宣布「能源停火」，24小時內被澤倫斯基自己拆穿——9/20報告記錄的失效模式，這次連細節都重演",
+            "en": "Trump's Second Unilaterally Announced 'Energy Ceasefire' Is Disproven Within 24 Hours by Zelensky Himself — the Failure Mode 9/20報告 Logged Repeats Down to the Details"
+          },
+          "summary": {
+            "zh": "川普10/11在Truth Social發文宣布俄烏已就『能源停火』達成協議、即刻生效，但貼文本身未附任何細節，距離他10/9公布讓俄國柴油重返國際市場的協議案僅隔兩天。澤倫斯基表示這項宣布是『第一次聽說』，稱烏克蘭願意在俄方同步不打烏克蘭能源設施的前提下克制不打擊俄國煉油設施——但同時指控俄軍光是10/12當天就攻擊了包括哈爾科夫CHP-5電廠在內的六處能源設施。克里姆林宮未對是否接受停火表態。川普10/12被問及俄方是否違反停火時，改口暗示雙方事前都未必真的同意，並稱『烏克蘭前一天也打了很多目標』。七名跨黨派美國參議員同期要求川普撤回柴油協議。",
+            "en": "Trump announced on Truth Social on 10/11 that Russia and Ukraine had agreed to an 'energy ceasefire,' effective immediately — the post itself gave no details, and came just two days after he unveiled a deal on 10/9 to bring Russian diesel back to global markets. Zelensky said the announcement was 'news to me,' saying Ukraine would hold off striking Russian oil refineries only if Russia reciprocated by not hitting Ukrainian energy facilities — while simultaneously accusing Russian forces of hitting six energy facilities on 10/12 alone, including Kharkiv's CHP-5 power plant. The Kremlin made no public statement on whether it accepted the truce. Asked on 10/12 whether Russia had violated the ceasefire, Trump instead suggested neither side had necessarily agreed to it beforehand, saying 'Ukraine hit many sites the day before.' Seven bipartisan US senators simultaneously demanded Trump reverse course on the diesel deal."
+          },
+          "implication": {
+            "zh": "9/20報告記錄的失效模式是『川普單方宣布的能源設施停火，被兩軍當週的實彈行動同步拆穿』；這次不只是重演，連機制細節都幾乎一致——宣布本身先於協議存在、受影響一方（這次是澤倫斯基本人）是事後才知情、對方沒有正式承諾、攻擊在宣布後持續發生。差別在於這次多了一條可追查的具體動機：10/9才公布的俄國柴油重返國際市場協議，是這次倉促宣布停火最直接的前因——七名跨黨派參議員要求撤回柴油協議這個事實本身，說明這不是單一事件的巧合，是一套『先談成一筆商業利益、再把它包裝成外交停火宣告』的操作模式，而且已經引起國會兩黨的警覺。對你評估這類宣告的方法論意義：下次再看到『川普宣布XX停火』的新聞標題時，不該被當成外交進展的訊號，查核點永遠是『受影響一方是否事前被告知、對方是否發布對等的正式聲明』；而這次新增的『商業利益先行』線索，代表這類宣告背後可能存在具體可追蹤的大宗商品貿易利益，而不只是單純的政治姿態管理——這對你用量化方法評估地緣新聞對能源與航運市場的實際影響時，是一個該納入折價的雜訊來源。",
+            "en": "9/20報告 logged this failure mode as Trump's unilaterally announced energy-infrastructure truce being disproven by both armies' live fire within the same week. This isn't just a repeat — the mechanics line up almost exactly: the announcement preceded any actual agreement, the affected party (this time Zelensky himself) learned of it only after the fact, the other side made no formal commitment, and strikes continued after the announcement. What's new this time is a traceable concrete motive: the Russian-diesel-back-to-global-markets deal unveiled just two days earlier on 10/9 is the most direct antecedent to this hastily announced ceasefire — the fact that seven bipartisan senators demanded the diesel deal be reversed is itself evidence this isn't a one-off coincidence, but a repeatable pattern of striking a commercial deal first and then dressing it up as a diplomatic ceasefire announcement, one that has already drawn bipartisan congressional alarm. For your methodology in evaluating these announcements: the next time a 'Trump announces X ceasefire' headline appears, it shouldn't be read as a sign of diplomatic progress — the checkpoint is always whether the affected party was informed beforehand and whether the other side issued a matching formal statement. The new 'commercial interest first' clue here means these announcements may carry a traceable commodity-trade motive behind them rather than being pure political stagecraft — a noise source worth discounting when you quantitatively assess how geopolitical headlines actually move energy and shipping markets."
+          },
+          "source": "CNN、Al Jazeera、Euronews、CNBC（綜合川普Truth Social原文與澤倫斯基公開發言）",
+          "url": "https://www.cnn.com/2026/10/11/politics/trump-ukraine-russia-energy-ceasefire",
+          "terms": ["Brent"]
+        }
+      ]
+    },
+    {
+      "id": "military",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "澤倫斯基10/13主動求見Witkoff與Kushner——柴油協議的爭議，成了9月莫斯科—基輔談判僵局後的新槓桿",
+            "en": "Zelensky Actively Seeks a New Meeting With Witkoff and Kushner on 10/13 — the Diesel Deal Dispute Becomes the New Leverage Point After September's Moscow-Kyiv Talks Stalled"
+          },
+          "summary": {
+            "zh": "澤倫斯基10/13表示已提議近日內與美方特使Witkoff、Kushner再度會談，正值華府加大力度推動基輔與莫斯科重回談判桌之際。他同時在受訪時重申，烏克蘭希望和平，但在俄方真正遵守停火之前，烏方會持續打擊俄國目標。俄方外長拉夫羅夫則駁回了澤倫斯基稍早提出、以60天停火換取舉行選舉的提案。這輪互動發生在9/5-9/6 Witkoff與Kushner先後走訪莫斯科與基輔、雙方均稱『具建設性』但未有具體突破之後；同一時間，澤倫斯基已表態若普丁本人出席12/14-15在佛州多拉舉行的G20峰會，他願意在會上與普丁當面會談，克里姆林宮則尚未決定普丁是否赴會。",
+            "en": "Zelensky said on 10/13 he had proposed a fresh round of talks with US envoys Witkoff and Kushner in the coming days, as Washington ramps up efforts to bring Kyiv and Moscow back to the table. In the same interview, he reiterated that Ukraine wants peace but will keep striking Russian targets until Russia genuinely observes a ceasefire. Russia's foreign minister Lavrov rejected Zelensky's earlier proposal to trade a 60-day ceasefire for holding elections. This exchange follows the 9/5-9/6 round in which Witkoff and Kushner visited Moscow then Kyiv, with both sides calling the talks 'constructive' but producing no concrete breakthrough; at the same time, Zelensky has said he is willing to meet Putin face to face at the 12/14-15 G20 summit at Doral, Florida, if Putin attends — a decision the Kremlin has not yet made."
+          },
+          "implication": {
+            "zh": "把這條線和10/8報告記錄的台灣140億軍售查核點被重新定錨到同一場12/14-15 G20峰會並列讀，會得到一個值得你持續追蹤的結構：這場由川普自家度假村主辦的峰會，現在同時是兩條完全不相干議題——俄烏停火談判與台灣軍售——的槓桿支點。差別在於，俄烏這條線目前又多了柴油協議這個新的摩擦來源：Witkoff與Kushner把它當成拉攏莫斯科回到談判桌的誘因，澤倫斯基則公開批評這步棋會拖長戰爭，顯示美方談判代表團與烏克蘭之間，對『用什麼籌碼換取俄方讓步』這件事本身的判斷已經出現公開分歧。對你的操作意義：接下來兩個月，應同時觀察俄烏談判與台灣軍售這兩條線是否在12/14-15前出現『同步鬆動』或『同步卡住』的訊號——如果兩條完全不相干的議題在同一個時間窗口內出現同向移動，代表動力可能不是來自議題本身的進展，而是來自峰會主辦方本身的議程操作。",
+            "en": "Reading this alongside 10/8報告's record of the Taiwan $14 billion arms sale checkpoint being re-anchored to the same 12/14-15 G20 summit gives a structure worth tracking: this summit, hosted at Trump's own resort, is now the leverage point for two entirely unrelated issues — the Russia-Ukraine ceasefire track and Taiwan's arms sale. What's new on the Ukraine side is a fresh friction source in the diesel deal: Witkoff and Kushner are treating it as an inducement to draw Moscow back to the table, while Zelensky has publicly criticized the move as likely to prolong the war — a visible split between the US negotiating team and Ukraine over what leverage should even be used to extract Russian concessions. Operationally, over the next two months you should watch whether the Ukraine talks and the Taiwan arms sale show 'synchronized loosening' or 'synchronized sticking' signals before 12/14-15 — if two entirely unrelated issues move in the same direction within the same window, the driver is more likely the summit host's own agenda management than progress on either issue itself."
+          },
+          "source": "Pravda Ukraine、Axios（澤倫斯基10/13公開發言）",
+          "url": "https://www.pravda.com.ua/eng/news/2026/10/13/8057863/",
+          "terms": ["G20"]
+        },
+        {
+          "severity": "medium",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "10/14『聯合利劍』兩週年沒有軍演，北京改在五個離台灣更遠的海域辦了場沒有命名的六天演習",
+            "en": "No Drill on Joint Sword's Two-Year Anniversary — Beijing Instead Runs Six Days of Unnamed Exercises Across Five Seas, All Farther From Taiwan"
+          },
+          "summary": {
+            "zh": "台灣國防部證實，將密切監控中國自10/12起於渤海、黃海、東海（浙江溫州外海一帶）與南海等多個海域展開、時程橫跨至10/20的一系列軍事演習；多家外媒報導指這批演習並未命名，中國國防部僅稱其為例行性演訓，目的是『震懾台獨與外部勢力介入』。台灣官方評估，所有劃設的演習區域均不在台灣本島周邊，距台灣最近者位於中國東部浙江外海。國防部同時另行表示，正密切監控台海周邊是否出現大規模解放軍演習的可能性，稱接下來進入『演習高峰期』。10/14當天為北京2024年賴清德國慶演說後發動『聯合利劍-2024B』環台演習兩週年，但未見任何比照規模或名稱的專案演習宣布。",
+            "en": "Taiwan's Ministry of National Defense confirmed it will closely monitor a series of Chinese military exercises running from 10/12 through 10/20 across the Bohai Sea, Yellow Sea, East China Sea (off China's Zhejiang/Wenzhou coast) and South China Sea. Multiple foreign outlets report the drills are unnamed, with China's defense ministry describing them only as routine training meant to 'deter Taiwan independence and foreign interference.' Taiwan's own assessment is that none of the designated exercise zones lie around Taiwan proper, with the closest located off China's eastern Zhejiang province. Separately, the MND said it is closely watching for the possibility of a large-scale PLA exercise near Taiwan as the island enters what it called 'peak drill season.' 10/14 marked the two-year anniversary of Beijing's 'Joint Sword-2024B' encirclement exercise, launched after President Lai's 2024 National Day speech — but no exercise of comparable scale or name was announced around this year's anniversary."
+          },
+          "implication": {
+            "zh": "10/14報告把10/14本身設成一個預先登記的查核點——『聯合利劍-2024B兩週年』；這次的結果既不是完全沉默，也不是比照環台專案演習，而是第三種答案：北京選擇在同一週辦一場規模不小、但地理座標刻意避開台灣本島的多海域演習。這給你一個比『有沒有環台演習』這個二元指標更精確的解讀框架：北京目前選擇的訊號強度，落在『完全不演習』與『圍台專案演習』這兩個極端之間，用『同等兵力規模、不同地理座標』同時達成兩個目的——對內維持軍事存在感的常態化敘事，對外避免把10/10國慶演說直接兌現成針對台灣本島的具體升級動作，這呼應10/12報告『北京眼下評估台灣議題上值得升高成本的槓桿點都還沒到』的判斷。對你的操作意義：往後評估北京動作時，光看『是否環台演習』這個指標已經不夠精確，該同時記錄演習的地理座標選擇本身是否刻意避開台灣——這次『規模不小但不在台灣』就是一個值得保存的中間態樣本，供日後比對北京訊號升級或降級時的基準。",
+            "en": "10/14報告 set 10/14 itself up as a pre-registered checkpoint — the two-year mark of Joint Sword-2024B. The result here is neither total silence nor a repeat of a Taiwan-encirclement exercise, but a third answer: Beijing chose to run a sizeable multi-sea exercise the same week, with its geography deliberately kept away from Taiwan proper. That gives you a sharper reading frame than the binary 'was there an encirclement drill' question — Beijing's current signal strength sits somewhere between 'no exercise at all' and 'a dedicated siege drill,' using comparable force scale but different coordinates to serve two goals at once: sustaining a domestic narrative of normalized military presence, while avoiding turning the 10/10 National Day speech into a concrete escalation specifically against Taiwan proper — consistent with 10/12報告's judgment that neither of the two levers Beijing would need to see clear before raising the cost on Taiwan has yet arrived. Operationally, evaluating Beijing's moves going forward needs more than the binary 'was it an encirclement drill' indicator — you should also record whether an exercise's chosen geography deliberately avoids Taiwan. This 'sizeable but not around Taiwan' case is worth keeping as a baseline for judging whether Beijing's signaling escalates or de-escalates later."
+          },
+          "source": "AFP（經Hong Kong Free Press、The Epoch Times轉述）；台灣國防部",
+          "url": "https://hongkongfp.com/2026/10/12/taiwan-preparing-for-the-worst-as-china-begins-live-fire-drills/",
+          "terms": ["PLA", "MND"]
+        }
+      ]
+    },
+    {
+      "id": "geo",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "政治承諾已經『延到1/10』，法律文件還停在11/10：Affiliates Rule距離自動恢復剩不到一個月，BIS聯邦公報至今沒發",
+            "en": "The Political Promise Already Says '1/10,' but the Legal Text Still Says 11/10: With Less Than a Month Until the Affiliates Rule Auto-Reverts, BIS Still Hasn't Published the Federal Register Notice"
+          },
+          "summary": {
+            "zh": "美國財長Bessent 9月已公開宣布，美中貿易休兵（包含BIS『關係企業50%規則』的暫停令）已延長至2027/1/10；但截至10/13，法律事務所的綜合分析指出，BIS尚未就這項延長正式發布聯邦公報通知——在該通知正式刊登前，暫停令的法定文字仍寫著11/10自動恢復。換言之，目前『延長至1/10』僅是行政部門的政治宣示，尚未具備法律效力；分析並指出，由於暫停而非廢止該規則，BIS理論上仍可用一份簡短公報隨時重新啟動它，這項法律彈性本身也沒有因為9月的政治宣示而改變。",
+            "en": "US Treasury Secretary Bessent publicly announced in September that the US-China trade truce — including BIS's suspension of the 'Affiliates Rule' — had been extended to 1/10/2027; but as of 10/13, law-firm analyses report that BIS has not yet formally published the Federal Register notice making that extension official. Until that notice is published, the rule's legal text still says it automatically reverts on 11/10. In other words, the 'extended to 1/10' claim is currently only an administration-level political statement, not yet a legal fact; the analyses also note that because the rule was suspended rather than rescinded, BIS retains the ability to reactivate it at any time via a short notice — a legal flexibility that the September political announcement did nothing to change."
+          },
+          "implication": {
+            "zh": "這再次驗證9/26報告與10/2月報反覆記錄的同一個機制：『期限變成貨幣』——休兵從來不是解決爭端，是把爭端的到期日往後推、並讓到期日本身變成可以重新議價的籌碼。這次的新細節是，連『已經宣布延長』這件事本身，都還沒兌現成具有法律效力的文件——10/8報告記錄的『11/10自動恢復』這個法定查核點，到今天為止依然是現行有效的法律文字，Bessent的9月宣示目前只是一個尚待兌現的政治承諾。對你評估供應鏈曝險的操作意義：不要把政治宣示當成風險已解除的訊號，真正該追蹤的查核點是聯邦公報本身是否在11/10前正式刊登；中國MOFCOM對等暫停的稀土管制公告，條文上同樣寫著11/10到期，這代表雙方目前都還沒有把各自手上的那半張牌換成具法律拘束力的文件——這個『雙方都還握著否決權』的狀態，比起任何一方單方面宣示的『延長』更接近真實的槓桿分佈。",
+            "en": "This re-confirms the same mechanism 9/26報告 and the 10/2月報 have repeatedly logged: a 'deadline becomes currency' — a truce was never about resolving the dispute, only about pushing its expiry date back and turning that date itself into a re-tradeable chip. What's new here is that even 'the extension has been announced' has not yet converted into a legally effective document — the 11/10 auto-revert checkpoint 10/8報告 logged remains, as of today, the operative legal text, and Bessent's September announcement is currently just an unfulfilled political promise. For assessing supply-chain exposure, don't treat a political announcement as a signal that risk has lifted — the real checkpoint to track is whether the Federal Register notice itself is formally published before 11/10. China's MOFCOM suspension of its own rare-earth controls is, on paper, set to expire the same 11/10, which means neither side has yet converted its half of the bargain into a legally binding document — this state of 'both sides still holding a veto' is a more accurate picture of the actual leverage distribution than either side's unilateral claim of an 'extension.'"
+          },
+          "source": "Miller Canfield／National Law Review（綜合BIS暫停令條文與Bessent 9月公開聲明分析）",
+          "url": "https://natlawreview.com/article/bis-affiliates-rule-suspension-extended-uncertainty-remains",
+          "terms": ["Affiliates Rule", "BIS", "MOFCOM", "CR"]
+        }
+      ]
+    }
+  ]
+}

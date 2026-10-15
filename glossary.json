@@ -1,6 +1,17 @@
 {
-  "updated": "2026-10-14",
+  "updated": "2026-10-16",
   "terms": [
+    {
+      "term": "UTA",
+      "zh": "未歸類威脅行為者（Volexity命名編號）",
+      "expansion": "Unattributed Threat Actor (Volexity designation)",
+      "def": {
+        "zh": "Volexity用來標示『觀察到一組有內部一致性的入侵活動，但尚未能歸因到特定已知駭客組織或政府』的暫時性編號，命名邏輯與Cisco Talos的UAT、Mandiant的UNC相同，只是由不同廠商各自維護、編號互不相通；UTA0576即為2026年10月Ivanti Connect Secure零時差利用鏈的編號案例，Volexity僅以低信心度評估其動機為犯罪而非間諜活動。",
+        "en": "A provisional designation Volexity assigns to a cluster of intrusion activity that is internally consistent but not yet attributable to a known group or government — functionally identical to Cisco Talos's UAT or Mandiant's UNC designations, except each vendor maintains its own numbering with no cross-walk between them. UTA0576, the actor behind the October 2026 Ivanti Connect Secure zero-day exploitation chain, is one such case; Volexity assessed its motive as criminal rather than espionage, with low confidence."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-16"
+    },
     {
       "term": "TAO",
       "zh": "國台辦（國務院台灣事務辦公室）",

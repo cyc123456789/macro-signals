@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-14",
+  "updated": "2026-10-16",
   "reports": [
+    {
+      "file": "reports/2026-10-16-brief.json",
+      "date": "2026-10-16",
+      "kind": "brief",
+      "title": {
+        "zh": "Ivanti VPN被連環三個零時差打穿、攻擊者連日誌都竄改不留惡意程式樣本；川普第二次「能源停火」24小時內就被自己人拆穿——9/20報告記錄的失效模式這次連細節都重演；10/14『聯合利劍』兩週年，北京既未沉默也未環台演習，改在五海域辦六天不具名演習",
+        "en": "Ivanti's VPN Gateway Falls to a Chained Three-Zero-Day Exploit With Tampered Logs and No Malware Sample Left Behind; Trump's Second Unilaterally Announced 'Energy Ceasefire' Is Disproven Within 24 Hours by His Own Ally — the Failure Mode 9/20報告 Logged Repeats Down to the Details; on the Two-Year Mark of Joint Sword-2024B, Beijing Answers With Neither Silence Nor a Siege Drill, but Six Days of Unnamed Exercises Across Five Seas Away From Taiwan"
+      }
+    },
     {
       "file": "reports/2026-10-14-brief.json",
       "date": "2026-10-14",
