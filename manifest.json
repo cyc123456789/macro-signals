@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-16",
+  "updated": "2026-10-18",
   "reports": [
+    {
+      "file": "reports/2026-10-18-brief.json",
+      "date": "2026-10-18",
+      "kind": "brief",
+      "title": {
+        "zh": "Cisco Secure Email Gateway兩個月內第二個在野零時差，一封夾帶附件的郵件就能拿到root；沙烏地聯軍首次正式彙總胡塞空襲戰果——19死364傷，目標已擴大到三座機場；11/3期中選舉、11/10 BIS暫停令到期、12/14-15 G20三個日期疊進同一個六週窗口，川普同時握著的三張牌全都快到期",
+        "en": "Cisco Secure Email Gateway's Second In-the-Wild Zero-Day in Two Months Lets One Email Attachment Grant Root; Saudi-Led Coalition Gives Its First Official Tally of Houthi Airport Strikes — 19 Dead, 364 Wounded, Now Spanning Three Airports; With the 11/3 Midterms, the 11/10 BIS Deadline and the 12/14-15 G20 All Landing in the Same Six-Week Window, Every Card Trump Is Holding Is Running Out at Once"
+      }
+    },
     {
       "file": "reports/2026-10-16-brief.json",
       "date": "2026-10-16",

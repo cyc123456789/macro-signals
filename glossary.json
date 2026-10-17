@@ -1,6 +1,17 @@
 {
-  "updated": "2026-10-16",
+  "updated": "2026-10-18",
   "terms": [
+    {
+      "term": "AsyncOS",
+      "zh": "Cisco資安設備專用作業系統",
+      "expansion": "Cisco AsyncOS",
+      "def": {
+        "zh": "Cisco用於其資安硬體設備（如Secure Email Gateway、Secure Web Appliance）的專用作業系統，以FreeBSD為基礎客製化而成；設備修補更新即是透過升級AsyncOS版本號完成，若設備停留在已不再提供修補的版本線（如16.0），廠商會建議直接遷移至仍在維護的版本線，而非等待原版本線補丁。",
+        "en": "Cisco's proprietary operating system for its security appliances (Secure Email Gateway, Secure Web Appliance), built on a customized FreeBSD base; patching these devices means upgrading the AsyncOS version itself, and when a device sits on a version line no longer receiving fixes (such as 16.0), the vendor's guidance is to migrate to a still-maintained line rather than wait for a patch on the old one."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-18"
+    },
     {
       "term": "UTA",
       "zh": "未歸類威脅行為者（Volexity命名編號）",
