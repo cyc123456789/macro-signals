@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "reports": [
+    {
+      "date": "2026-10-19",
+      "kind": "weekly",
+      "file": "reports/2026-10-19-weekly.json",
+      "title": {
+        "zh": "葉門的兩萬美元正在決定台灣的交付日期：攔截彈的配給順序已經被官方講出口——先補美軍、再補海灣、台灣第三",
+        "en": "A $20,000 drone in Yemen now sets Taiwan's delivery date: the interceptor allocation queue has been said out loud — US stocks first, Gulf allies second, Taiwan third"
+      }
+    },
     {
       "file": "reports/2026-10-18-brief.json",
       "date": "2026-10-18",

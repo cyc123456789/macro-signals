@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "terms": [
     {
       "term": "AsyncOS",
@@ -2904,6 +2904,94 @@
       },
       "category": "military",
       "first_seen": "2026-10-14"
+    },
+    {
+      "term": "SRM",
+      "zh": "固體火箭發動機",
+      "expansion": "Solid Rocket Motor",
+      "def": {
+        "zh": "以固態推進劑驅動的火箭發動機，幾乎所有戰術飛彈與攔截彈都採用。相較液態發動機結構簡單、可長期儲存、發射前無需加注，但推力曲線在澆鑄完成後即固定，無法節流或重啟。其產能受限於推進劑澆鑄廠與含能材料的資格認證流程，是飛彈量產最常見的實體瓶頸。",
+        "en": "A rocket engine driven by solid propellant, used in nearly every tactical missile and interceptor. Simpler than liquid engines, storable for years and requiring no pre-launch fuelling, but its thrust curve is fixed once the grain is cast and cannot be throttled or restarted. Output is constrained by propellant casting facilities and energetics qualification, making it the most common physical bottleneck in missile mass production."
+      },
+      "category": "military",
+      "first_seen": "2026-10-19"
+    },
+    {
+      "term": "AP",
+      "zh": "過氯酸銨",
+      "expansion": "Ammonium Perchlorate",
+      "def": {
+        "zh": "固體火箭推進劑中的主要氧化劑，通常占推進劑配方重量的六至七成。生產涉及高耗能的電解製程與嚴格的環境與安全許可，新建產能需通過冗長的批次資格認證才能供應軍用飛彈，因此全球具備軍規供應資格的廠商極少，在美國長期被指為單一來源的供應鏈單點故障。",
+        "en": "The principal oxidiser in solid rocket propellant, typically 60-70% of the formulation by weight. Production involves energy-intensive electrolysis and stringent environmental and safety permitting, and new capacity must clear lengthy lot-qualification before it can feed military missiles — so very few qualified military-grade producers exist worldwide, and in the US it has long been identified as a single-source supply-chain point of failure."
+      },
+      "category": "military",
+      "first_seen": "2026-10-19"
+    },
+    {
+      "term": "HTPB",
+      "zh": "端羥基聚丁二烯",
+      "expansion": "Hydroxyl-Terminated Polybutadiene",
+      "def": {
+        "zh": "固體火箭推進劑中最常用的黏合劑基材，負責把氧化劑與金屬燃料黏結成具結構強度的推進劑藥柱，同時決定其機械性能與儲存壽命。與過氯酸銨同屬次層含能材料，供應商數量少、替代料需重新通過資格認證，是推進劑產能擴張時的次要瓶頸。",
+        "en": "The most widely used binder matrix in solid rocket propellant, holding oxidiser and metal fuel together in a structurally sound grain while setting its mechanical properties and shelf life. Like ammonium perchlorate it sits in the energetics sub-tier: few suppliers exist and any substitute must be re-qualified, making it a secondary bottleneck whenever propellant capacity is expanded."
+      },
+      "category": "military",
+      "first_seen": "2026-10-19"
+    },
+    {
+      "term": "DIB",
+      "zh": "國防工業基礎",
+      "expansion": "Defense Industrial Base",
+      "def": {
+        "zh": "為軍方提供武器、零組件、原料與服務的企業總體，含主合約商與層層分包的次層供應商。美國國防工業基礎約有數十萬家廠商，其中絕大多數是中小企業，且關鍵次層環節往往只剩單一合格供應商——這使整體產能的上限經常不取決於預算，而取決於最薄的那一層。",
+        "en": "The whole population of firms supplying weapons, components, materials and services to the military, from primes down through layered sub-tier subcontractors. The US defence industrial base numbers in the hundreds of thousands of firms, overwhelmingly small businesses, and critical sub-tier nodes are frequently down to a single qualified supplier — so overall capacity is often set not by budget but by the thinnest layer."
+      },
+      "category": "military",
+      "first_seen": "2026-10-19"
+    },
+    {
+      "term": "APKWS",
+      "zh": "先進精準殺傷武器系統",
+      "expansion": "Advanced Precision Kill Weapon System",
+      "def": {
+        "zh": "把既有的70公釐無導引火箭加裝雷射導引組件而成的低成本精準武器，單發價格約在一至三萬美元之間，遠低於專用防空飛彈。近年被改用於反無人機任務，被視為改善防守方成本交換比的主要手段之一，但在多發齊射才能確保命中的情況下，其成本優勢會迅速被稀釋。",
+        "en": "A low-cost precision weapon created by fitting laser guidance kits to existing 70mm unguided rockets, priced in the $15,000-$35,000 range — far below dedicated air-defence missiles. Recently repurposed for counter-drone work and seen as a main route to improving the defender's cost-exchange ratio, though its advantage erodes quickly when several rounds are needed per kill."
+      },
+      "category": "military",
+      "first_seen": "2026-10-19"
+    },
+    {
+      "term": "Magazine Depth",
+      "zh": "彈艙深度",
+      "expansion": "Magazine Depth",
+      "def": {
+        "zh": "防守方在補給到達前可持續發射的彈藥總量，由庫存量、發射架數量與補充速率共同決定，而非由單一系統的性能決定。當攻擊方的彈藥單價遠低於攔截彈、且產量高於防守方補充速率時，交戰結果會由彈艙深度而非攔截成功率決定。",
+        "en": "The total volume of munitions a defender can keep firing before resupply arrives — set jointly by inventory, launcher count and replacement rate rather than by any single system's performance. When the attacker's munitions cost far less than the interceptors and are produced faster than the defender can replace them, the engagement is decided by magazine depth rather than by intercept success rate."
+      },
+      "category": "military",
+      "first_seen": "2026-10-19"
+    },
+    {
+      "term": "CMMC",
+      "zh": "網路安全成熟度模型認證",
+      "expansion": "Cybersecurity Maturity Model Certification",
+      "def": {
+        "zh": "美國國防部要求其承包商與分包商達成的資安合規制度，以NIST SP 800-171的控制項為基礎，依處理資訊的敏感度分級，並以自評或第三方評鑑驗證。其爭議在於合規成本對中小型次層供應商構成實質進入障礙，可能在提高資安水準的同時縮小合格供應商池。",
+        "en": "The US Department of Defense's cybersecurity compliance regime for contractors and subcontractors, built on NIST SP 800-171 controls, tiered by the sensitivity of information handled and verified through self-assessment or third-party audit. Its central controversy is that compliance costs act as a real barrier to entry for small sub-tier suppliers, potentially shrinking the qualified supplier pool even as it raises the security floor."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-19"
+    },
+    {
+      "term": "Sky Bow III",
+      "zh": "天弓三型",
+      "expansion": "Tien Kung III (Sky Bow III)",
+      "def": {
+        "zh": "台灣中山科學研究院自行研製的中高空區域防空飛彈，具備一定的反戰術彈道飛彈能力，是台灣本土防空體系的主力攔截彈，另有增程型「強弓」。其量產受年度與特別預算編列方式影響，產線能否維持連續生產是台灣自主防空產能的關鍵變數。",
+        "en": "Taiwan's indigenous medium-to-high altitude area air-defence missile, developed by NCSIST with some anti-tactical-ballistic-missile capability. It is the mainstay interceptor of Taiwan's domestic air-defence network, with an extended-range Qiang Gong variant. Its production volume depends on how annual and special budgets are appropriated, and whether the line can be kept running continuously is the key variable in Taiwan's indigenous air-defence capacity."
+      },
+      "category": "military",
+      "first_seen": "2026-10-19"
     }
   ]
 }
