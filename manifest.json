@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "reports": [
+    {
+      "date": "2026-10-20",
+      "kind": "brief",
+      "file": "reports/2026-10-20-brief.json",
+      "title": {
+        "zh": "Palo Alto PAN-OS管理介面漏洞已遭在野利用，CISA四天內第二次對邊界設備下通牒；俄羅斯對烏克蘭電網發動入冬最大規模攻勢——28座設施同時斷電、55萬戶無電；沙烏地把攔截彈求助對象從波灣盟友擴大到法英巴基斯坦埃及，10/19報告的消耗戰機制這次連非波灣國家都被拉進來",
+        "en": "Palo Alto's PAN-OS Management-Interface Flaw Is Already Exploited, CISA's Second Edge-Device Deadline in Four Days; Russia Launches Its Largest Pre-Winter Grid Strike Yet on Ukraine — 28 Facilities Down at Once, 550,000 Households Without Power; Saudi Arabia Widens Its Interceptor Ask From Gulf Allies to France, Britain, Pakistan and Egypt, Pulling Non-Gulf States Into the Burn-Rate Mechanism 10/19報告 Mapped"
+      }
+    },
     {
       "date": "2026-10-19",
       "kind": "weekly",

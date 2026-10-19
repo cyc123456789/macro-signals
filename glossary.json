@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "terms": [
     {
       "term": "AsyncOS",
@@ -2992,6 +2992,28 @@
       },
       "category": "military",
       "first_seen": "2026-10-19"
+    },
+    {
+      "term": "PAN-OS",
+      "zh": "PAN作業系統（Palo Alto Networks防火牆作業系統）",
+      "expansion": "Palo Alto Networks Operating System",
+      "def": {
+        "zh": "Palo Alto Networks防火牆與Panorama管理平台所使用的專屬作業系統；其管理介面若存在程式碼執行漏洞，可讓具備有效帳密的攻擊者以root權限執行任意指令，是邊界資安設備常見的高價值攻擊面。",
+        "en": "The proprietary operating system running Palo Alto Networks firewalls and the Panorama management platform. Code-execution flaws in its management interface can let an attacker who already holds valid credentials run arbitrary commands as root, making it a recurring high-value attack surface among perimeter security appliances."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-20"
+    },
+    {
+      "term": "PDC",
+      "zh": "相量數據集中器",
+      "expansion": "Phasor Data Concentrator",
+      "def": {
+        "zh": "電力系統廣域量測架構中彙整多個PMU（相量測量單元）即時數據的核心軟體節點，常見於輸電業者的電網監控系統；此類彙聚節點一旦存在反序列化等遠端程式碼執行漏洞，等同把對應廣域量測範圍內所有端點的可觀測性暴露給攻擊者，曝險半徑遠大於單一端點。",
+        "en": "The core software node in a power grid's wide-area measurement system that aggregates real-time data from multiple PMUs (phasor measurement units), widely used in transmission operators' grid-monitoring systems. A remote-code-execution flaw such as deserialization in this aggregation node exposes observability across every endpoint in that wide-area measurement scope at once, giving it a far larger exposure radius than any single endpoint."
+      },
+      "category": "tech",
+      "first_seen": "2026-10-20"
     }
   ]
 }
