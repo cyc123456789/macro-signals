@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20",
+  "updated": "2026-10-22",
   "terms": [
     {
       "term": "AsyncOS",
@@ -3014,6 +3014,50 @@
       },
       "category": "tech",
       "first_seen": "2026-10-20"
+    },
+    {
+      "term": "SafePay",
+      "zh": "SafePay(勒索軟體集團)",
+      "expansion": "SafePay Ransomware Group",
+      "def": {
+        "zh": "一個自2024年8月起活躍的勒索軟體犯罪集團，以外露的VPN閘道與邊界設備弱點、加上竊取或猜中的帳密作為主要入侵管道；入侵後優先刪除或癱瘓備份系統再進行雙重勒索，目前已知受害組織超過600家，橫跨北美、南美、歐洲與澳洲。FBI與CISA等五國執法機關2026年10月20日發布聯合公告(AA26-293A)示警。",
+        "en": "A ransomware criminal group active since August 2024 that primarily gains access through exposed VPN gateways and border-device weaknesses combined with stolen or guessed credentials; after intrusion it prioritizes deleting or disabling backup systems before double extortion. It has compromised 600+ organizations across North America, South America, Europe, and Australia. The FBI, CISA, and law enforcement from four other countries issued a joint advisory (AA26-293A) on it on October 20, 2026."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-22"
+    },
+    {
+      "term": "VSS",
+      "zh": "磁碟區陰影複製服務",
+      "expansion": "Volume Shadow Copy Service",
+      "def": {
+        "zh": "Windows作業系統內建的磁碟快照服務，用於備份與還原；勒索軟體常見手法是先關閉或刪除VSS快照，讓受害者無法用系統內建機制還原檔案，藉此提高支付贖金的壓力。",
+        "en": "A built-in Windows service that creates point-in-time disk snapshots used for backup and restore. Ransomware operators commonly disable or delete VSS snapshots first so victims cannot use the OS's own restore mechanism, increasing pressure to pay."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-22"
+    },
+    {
+      "term": "DFARS",
+      "zh": "國防部聯邦採購規則增補",
+      "expansion": "Defense Federal Acquisition Regulation Supplement",
+      "def": {
+        "zh": "美國國防部在聯邦採購規則(FAR)之上疊加的採購規則增補條款，其252.204-7012條款要求國防承包商對受控非密資訊落實NIST SP 800-171資安控制措施，是CMMC認證制度的法規基礎。",
+        "en": "The U.S. Department of Defense's supplement to the Federal Acquisition Regulation (FAR). Its clause 252.204-7012 requires defense contractors to implement NIST SP 800-171 security controls for controlled unclassified information, and is the regulatory basis for the CMMC certification regime."
+      },
+      "category": "military",
+      "first_seen": "2026-10-22"
+    },
+    {
+      "term": "NIST",
+      "zh": "美國國家標準與技術研究院",
+      "expansion": "National Institute of Standards and Technology",
+      "def": {
+        "zh": "美國商務部轄下機構，制定資通安全與其他技術標準；其SP 800-171出版品訂出保護受控非密資訊應落實的資安控制措施，是美國國防採購資安合規(CMMC/DFARS)的技術基礎。",
+        "en": "A U.S. Department of Commerce agency that develops cybersecurity and other technical standards. Its SP 800-171 publication sets the security controls required to protect controlled unclassified information and underlies U.S. defense-procurement cyber compliance regimes (CMMC/DFARS)."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-22"
     }
   ]
 }

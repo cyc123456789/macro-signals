@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-20",
+  "updated": "2026-10-22",
   "reports": [
+    {
+      "date": "2026-10-22",
+      "kind": "brief",
+      "file": "reports/2026-10-22-brief.json",
+      "title": {
+        "zh": "洛馬揭露PAC-3七年期框架協議細節——年產能600衝2,000，Q2後再添536.86億美元新訂單，10/19週報的產能判斷這次有了廠商自己的數字；俄羅斯對烏克蘭電網的攻勢沒有降溫，10/20全國12州跳電、工業限電排程擴大到全境；FBI、CISA等五國執法機關10/20聯合示警SafePay勒索軟體兩年打穿600多家企業、專挑備份系統下手",
+        "en": "Lockheed discloses details of its 7-year PAC-3 framework agreement — annual capacity ramping from 600 to 2,000, plus a $53.86B order booked after Q2 — giving the 10/19 weekly's capacity judgment hard numbers; Russia's assault on Ukraine's grid shows no cooldown, with 12 regions losing power on 10/20 and nationwide industrial power-limiting following; FBI, CISA and four allied agencies jointly warn on 10/20 that SafePay ransomware has hit 600+ organizations in two years, deliberately targeting backups"
+      }
+    },
     {
       "date": "2026-10-20",
       "kind": "brief",
