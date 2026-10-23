@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22",
+  "updated": "2026-10-24",
   "terms": [
     {
       "term": "AsyncOS",
@@ -3058,6 +3058,105 @@
       },
       "category": "cyber",
       "first_seen": "2026-10-22"
+    },
+    {
+      "term": "Storm-0940",
+      "zh": "Storm-0940（微軟命名的中國國家背景駭客集團）",
+      "expansion": "Storm-0940 (Microsoft threat-actor designation)",
+      "def": {
+        "zh": "微軟命名、自2021年起活躍的中國國家背景駭客集團，以竊取資料為主要目的，過去慣用密碼噴灑與攻擊外露的應用程式漏洞取得初始存取，入侵後常透過在既有OAuth應用程式新增憑證來維持存續、再經Microsoft Graph存取郵件等資料。2026年10月，微軟證實該集團透過ConnectWise Cloud Backup的供應鏈入侵，對逾2,250個下游Microsoft 365租戶發動攻擊。",
+        "en": "A China-state-aligned threat actor tracked by Microsoft, active since 2021 and focused on data theft, historically gaining initial access via password spraying and exploitation of internet-facing applications, then maintaining persistence by adding credentials to existing OAuth applications to access email and other data through Microsoft Graph. In October 2026, Microsoft confirmed the group used a supply-chain compromise of ConnectWise Cloud Backup to attack more than 2,250 downstream Microsoft 365 tenants."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-24"
+    },
+    {
+      "term": "ConnectWise",
+      "zh": "ConnectWise（IT託管服務管理平台業者）",
+      "expansion": "ConnectWise (MSP management software vendor)",
+      "def": {
+        "zh": "一家為IT託管服務供應商(MSP)提供遠端監控、備份與管理軟體的廠商。2026年10月，其Cloud Backup多租戶應用程式的憑證遭中國國家背景駭客集團Storm-0940入侵，被用作跳板對逾2,250個下游Microsoft 365租戶發動供應鏈攻擊，公司隨後將Cloud Backup、SaaS Security與Cloud Management服務陸續下線。",
+        "en": "A vendor that provides remote-monitoring, backup, and management software for managed service providers (MSPs). In October 2026, credentials for its multi-tenant Cloud Backup application were compromised by the China-aligned threat actor Storm-0940 and used as a pivot to attack more than 2,250 downstream Microsoft 365 tenants in a supply-chain attack; the company subsequently took its Cloud Backup, SaaS Security, and Cloud Management services offline in stages."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-24"
+    },
+    {
+      "term": "MSP",
+      "zh": "託管服務供應商",
+      "expansion": "Managed Service Provider",
+      "def": {
+        "zh": "代企業客戶外包管理IT系統、網路或資安維運的服務供應商。MSP通常對大量下游客戶環境握有高權限遠端存取，一旦MSP自身或其管理平台遭入侵，等同一次拿到所有下游客戶環境的存取權，是近年供應鏈攻擊持續鎖定的高報酬目標類別。",
+        "en": "A service provider that manages IT systems, networks, or security operations on behalf of client organizations under contract. MSPs typically hold high-privilege remote access across a large number of downstream client environments, so compromising the MSP itself or its management platform grants access to every downstream client at once — making MSPs a persistently high-value target category for supply-chain attackers."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-24"
+    },
+    {
+      "term": "PHP2Shell",
+      "zh": "PHP2Shell（媒體對CVE-2026-109618／109619兩個PHP核心漏洞的俗稱）",
+      "expansion": "PHP2Shell (media name for CVE-2026-109618 / CVE-2026-109619)",
+      "def": {
+        "zh": "資安媒體對2026年10月PHP核心爆出的兩個CVSS 9.2未經驗證遠端程式碼執行漏洞的俗稱，分別源於記憶體不足時的狀態毀損(CVE-2026-109618)與請求異常結束後殘留的全域狀態(CVE-2026-109619)，影響幾乎所有歷史PHP版本與常見部署方式(PHP-FPM、mod_php、php-cgi等)。",
+        "en": "A media nickname for two CVSS-9.2 unauthenticated remote-code-execution flaws disclosed in PHP's core in October 2026 — CVE-2026-109618 (memory corruption under out-of-memory conditions) and CVE-2026-109619 (stale global state after abnormal request termination) — affecting nearly every historical PHP release and common deployment mode (PHP-FPM, mod_php, php-cgi, etc.)."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-24"
+    },
+    {
+      "term": "PAC-3 MSE",
+      "zh": "PAC-3飛彈分段增強型攔截彈",
+      "expansion": "PAC-3 Missile Segment Enhancement",
+      "def": {
+        "zh": "愛國者三型攔截彈(PAC-3)的增程型號，較基本型PAC-3具備更大射程與攔截高度，是洛克希德馬丁目前生產線上的主力型號，也是近年多筆巨額多年期採購合約的標的。",
+        "en": "An extended-range variant of the PAC-3 interceptor with greater range and intercept altitude than the baseline PAC-3, and the model currently dominating Lockheed Martin's production line — the subject of several large multi-year procurement awards in recent years."
+      },
+      "category": "military",
+      "first_seen": "2026-10-24"
+    },
+    {
+      "term": "Graham Act",
+      "zh": "格雷姆法案（制裁俄羅斯與伊朗法案正式簡稱）",
+      "expansion": "Lindsey O. Graham Sanctioning Russia and Iran Act",
+      "def": {
+        "zh": "美國國會於2026年9月18日通過立法，授權對俄羅斯加徵關稅與制裁、對協助俄羅斯規避制裁的國家課以懲罰性關稅，但同時在第115條賦予總統豁免權，可逕行暫停法案中的任何制裁或關稅條款。2026年10月16日，川普即援引這項豁免權，無限期暫停原訂10/18生效的加碼措施。",
+        "en": "A law enacted by the US Congress on 9/18/2026 authorizing additional tariffs and sanctions on Russia and penalty tariffs on countries that help Russia evade sanctions — but its Section 115 simultaneously grants the president waiver authority to suspend any of the Act's sanction or tariff provisions. On 10/16/2026, Trump invoked that waiver to indefinitely suspend escalation measures that were set to take effect 10/18."
+      },
+      "category": "geo",
+      "first_seen": "2026-10-24"
+    },
+    {
+      "term": "OFAC",
+      "zh": "美國外國資產管制辦公室",
+      "expansion": "Office of Foreign Assets Control",
+      "def": {
+        "zh": "美國財政部下轄、負責執行經濟與貿易制裁的機構，透過核發一般許可或特定許可，決定哪些與制裁對象相關的交易可被豁免執行。2026年10月9日核發的第135號一般許可，授權特定俄羅斯柴油進口交易至2027年4月7日，是川普政府對俄柴油供應協議的法律執行工具。",
+        "en": "The US Treasury Department office responsible for administering and enforcing economic and trade sanctions, which can exempt specified transactions involving sanctioned parties through general or specific licenses. General License 135, issued 10/9/2026, authorized specific Russian diesel import transactions through 4/7/2027 — the legal instrument implementing the Trump administration's diesel-supply arrangement with Russia."
+      },
+      "category": "geo",
+      "first_seen": "2026-10-24"
+    },
+    {
+      "term": "OMB",
+      "zh": "美國行政管理和預算局",
+      "expansion": "Office of Management and Budget",
+      "def": {
+        "zh": "白宮下轄、負責協調聯邦機關預算編列與政策執行的機構，也負責督導跨機關的技術與資安政策落實進度，例如後量子密碼遷移計畫的彙整與追蹤。",
+        "en": "A White House office responsible for coordinating federal agency budgeting and policy implementation, including overseeing cross-agency technology and cybersecurity policy execution — such as collecting and tracking agencies' post-quantum cryptography migration plans."
+      },
+      "category": "geo",
+      "first_seen": "2026-10-24"
+    },
+    {
+      "term": "CNSA 2.0",
+      "zh": "國家安全演算法套件2.0",
+      "expansion": "Commercial National Security Algorithm Suite 2.0",
+      "def": {
+        "zh": "美國國家安全局訂定、適用於國家安全系統的後量子加密演算法標準套件，與OMB備忘錄M-26-15規範的一般聯邦機關後量子遷移時程分屬不同權責體系，不受該備忘錄120天繳交期限約束。",
+        "en": "A suite of post-quantum cryptographic algorithm standards set by the US National Security Agency for use in National Security Systems — governed under a separate authority from the general-federal-agency PQC migration timeline set by OMB Memorandum M-26-15, and not subject to that memo's 120-day submission deadline."
+      },
+      "category": "tech",
+      "first_seen": "2026-10-24"
     }
   ]
 }

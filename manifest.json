@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-22",
+  "updated": "2026-10-24",
   "reports": [
+    {
+      "date": "2026-10-24",
+      "kind": "brief",
+      "file": "reports/2026-10-24-brief.json",
+      "title": {
+        "zh": "微軟揭露Storm-0940用ARTEX攻破ConnectWise供應鏈、鎖定逾2,250個M365租戶；洛馬Q3財報證實PAC-3產能仍照2030時間表走；川普10/16行政命令無限期豁免對俄《格雷姆法案》制裁，與BIS Affiliates Rule用的是同一套『暫停當籌碼』機制",
+        "en": "Microsoft exposes Storm-0940 using ARTEX to breach ConnectWise's supply chain and target 2,250+ M365 tenants; Lockheed's Q3 earnings confirm PAC-3 capacity still tracks the 2030 timeline; Trump's 10/16 executive order indefinitely waives Graham Act sanctions on Russia, using the same 'suspension-as-leverage' mechanism as the BIS Affiliates Rule"
+      }
+    },
     {
       "date": "2026-10-22",
       "kind": "brief",
