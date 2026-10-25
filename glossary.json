@@ -3190,6 +3190,83 @@
       },
       "category": "cyber",
       "first_seen": "2026-10-26"
+    },
+    {
+      "term": "War Risk Insurance",
+      "zh": "戰爭風險保險",
+      "expansion": "War Risk Insurance (Marine Hull / Cargo War Cover)",
+      "def": {
+        "zh": "把戰爭、敵對行動、恐怖主義、扣押與暴動等風險從一般海上保險中切出來、另外承保的一張保單或附加條款。通常以船體保險價值的百分比按航次或按期間計價，進入高風險海域前須事先通知承保人並另議保費；多數市場使用Institute War and Strikes Clauses等標準條款，內含取消權與自動終止條款。",
+        "en": "A separate policy or endorsement that carves war, hostilities, terrorism, seizure and riot out of ordinary marine cover and underwrites them apart. It is usually priced as a percentage of a vessel's insured hull value, per voyage or per period, and entering a high-risk sea area requires prior notice to underwriters and a separately negotiated premium. Most of the market runs on standard wordings such as the Institute War and Strikes Clauses, which carry both cancellation rights and automatic termination provisions."
+      },
+      "category": "geo",
+      "first_seen": "2026-10-26"
+    },
+    {
+      "term": "JWC",
+      "zh": "聯合戰爭委員會",
+      "expansion": "Joint War Committee",
+      "def": {
+        "zh": "由Lloyd's Market Association與International Underwriting Association的海上戰爭險承保人組成的倫敦私人委員會，定期以JWLA編號通告公布Listed Areas（高風險海域清單）。委員會本身不訂費率、不具公權力，但一旦某海域被列入或邊界被移動，船東須事先通知承保人並另議保費，市場通常在數日內重新報價。",
+        "en": "A private London committee of marine war-risk underwriters drawn from the Lloyd's Market Association and the International Underwriting Association, which periodically publishes its Listed Areas of elevated war risk in circulars numbered JWLA. The committee sets no rates and holds no public authority, but once an area is listed or a boundary moved, owners must notify underwriters in advance and negotiate additional cover, and the market typically reprices within days."
+      },
+      "category": "geo",
+      "first_seen": "2026-10-26"
+    },
+    {
+      "term": "AWRP",
+      "zh": "附加戰爭風險保費",
+      "expansion": "Additional War Risk Premium",
+      "def": {
+        "zh": "船舶進入被列為高風險的海域時，在既有保單之外另行加收的戰爭險保費，通常以船體保險價值的百分比表示，按單趟航次或七天期間計價。它是逐案議價的指示性報價而非公開指數，同一條航線不同船東、船齡與旗籍的報價可能差距數倍。",
+        "en": "The extra war-risk premium charged on top of an existing policy when a vessel enters an area designated as high risk, normally quoted as a percentage of insured hull value per transit or per seven-day period. It is an individually negotiated indication rather than a published index, so quotes for the same route can differ several-fold across owners, vessel ages and flags."
+      },
+      "category": "geo",
+      "first_seen": "2026-10-26"
+    },
+    {
+      "term": "P&I Club",
+      "zh": "船東互保協會",
+      "expansion": "Protection and Indemnity Club",
+      "def": {
+        "zh": "由船東互相出資組成的非營利互助保險組織，承保船體險之外的第三方責任（污染、人身傷亡、貨損、殘骸移除等）。International Group旗下各協會合計承保全球遠洋船舶約九成噸位，並透過共保池與再保安排分散巨災風險；其中屬於互助範圍的業務與另行購買的非互助延伸（如承租人責任、戰爭險延伸）適用不同的取消規則。",
+        "en": "A non-profit mutual insurance association funded by shipowners that covers third-party liabilities outside hull cover — pollution, personal injury, cargo damage, wreck removal. The clubs of the International Group together cover roughly 90% of world oceangoing tonnage and spread catastrophe exposure through a pooling and reinsurance structure. Mutual business and separately bought non-mutual extensions such as charterers' liability or war-risk extensions are governed by different cancellation rules."
+      },
+      "category": "geo",
+      "first_seen": "2026-10-26"
+    },
+    {
+      "term": "Five Powers Clause",
+      "zh": "五大國自動終止條款",
+      "expansion": "Five Powers Automatic Termination of Cover Clause",
+      "def": {
+        "zh": "Institute War and Strikes Clauses等標準戰爭險條款中的自動終止規定：一旦英國、美國、法國、俄羅斯聯邦、中華人民共和國之中任何兩國之間爆發戰爭（條文明訂不論是否宣戰），保單的戰爭險部分立即終止，且不論承保人是否已發出取消通知。與需要承保人主動行使的七天取消權不同，這條不需要任何人做決定。五國即聯合國安理會常任理事國，條款源自1950至60年代冷戰期間。",
+        "en": "The automatic termination provision in standard war-risk wordings such as the Institute War and Strikes Clauses: on the outbreak of war — declared or not — between any two of the United Kingdom, the United States, France, the Russian Federation and the People's Republic of China, the war cover terminates immediately, whether or not notice of cancellation has been given. Unlike the seven-day cancellation right, which an underwriter must choose to exercise, this one requires no decision by anybody. The five states are the UN Security Council permanent members, and the clause dates from the Cold War of the 1950s and 1960s."
+      },
+      "category": "geo",
+      "first_seen": "2026-10-26"
+    },
+    {
+      "term": "LMA5567A",
+      "zh": "國家支持網攻除外條款第四號A版",
+      "expansion": "LMA5567A War and Cyber Operation Exclusion No. 4 (A version)",
+      "def": {
+        "zh": "Lloyd's Market Association發布的網路保單戰爭與網路作戰除外條款之一，用以滿足Lloyd's市場公告Y5381自2023-03-31起對獨立網路保單的強制要求。A版把除外的適用繫於主管機關對國家歸因的認定，並設有影響門檻——該網路作戰須對一國的必要服務或安全能力造成或可合理預期造成重大不利影響；對應的B版不處理歸因，須由管理代理人另行向Lloyd's說明歸因的處理方式。",
+        "en": "One of the Lloyd's Market Association model war and cyber operation exclusions for cyber policies, written to satisfy Lloyd's Market Bulletin Y5381, which has required such an exclusion in standalone cyber policies since 31 March 2023. The A version ties the exclusion to a competent authority's attribution of the operation to a state and carries an impact threshold: the operation must cause, or be reasonably likely to cause, a major detrimental impact on a state's essential services or security capabilities. The matching B version does not address attribution, and managing agents must explain separately to Lloyd's how they expect attribution to be handled."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-26"
+    },
+    {
+      "term": "MARAD",
+      "zh": "美國海事署",
+      "expansion": "United States Maritime Administration",
+      "def": {
+        "zh": "美國運輸部轄下負責商船隊與海運基礎設施的機構，並依1936年商船法第十二章營運聯邦戰爭風險保險計畫——在商業戰爭險市場因軍事威脅退出時，由聯邦政府為美國籍或經核准船舶提供保險與再保險。此一授權是各國政府在戰時充當最後承保人的既有制度範本。",
+        "en": "The agency within the US Department of Transportation responsible for the merchant marine and maritime infrastructure, which also runs the federal war-risk insurance programme under Title XII of the Merchant Marine Act of 1936 — providing insurance and reinsurance for US-flag or approved vessels when the commercial war-risk market withdraws under military threat. That authority is the standing template for governments acting as underwriter of last resort in wartime."
+      },
+      "category": "geo",
+      "first_seen": "2026-10-26"
     }
   ]
 }

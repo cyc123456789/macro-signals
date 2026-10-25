@@ -2,6 +2,15 @@
   "updated": "2026-10-26",
   "reports": [
     {
+      "file": "reports/2026-10-26-weekly.json",
+      "date": "2026-10-26",
+      "kind": "weekly",
+      "title": {
+        "zh": "倫敦那張紙比海軍更早關掉海峽：戰爭險的五大國自動終止條款，讓台灣的LNG在第一槍之前就斷保——而北京已經在練習不用這張紙",
+        "en": "The London paper closes a strait before the navy does: the Five Powers auto-termination clause strips Taiwan's LNG of cover before the first shot — and Beijing is already rehearsing without that paper"
+      }
+    },
+    {
       "date": "2026-10-26",
       "kind": "brief",
       "file": "reports/2026-10-26-brief.json",

@@ -1,0 +1,180 @@
+{
+  "date": "2026-10-26",
+  "kind": "weekly",
+  "title": {
+    "zh": "倫敦那張紙比海軍更早關掉海峽：戰爭險的五大國自動終止條款，讓台灣的LNG在第一槍之前就斷保——而北京已經在練習不用這張紙",
+    "en": "The London paper closes a strait before the navy does: the Five Powers auto-termination clause strips Taiwan's LNG of cover before the first shot — and Beijing is already rehearsing without that paper"
+  },
+  "focus": {
+    "zh": "風險不是在政府宣布時解除的，是在承保人重新報價時解除的。標準戰爭險保單裡有一條五大國自動終止條款：美中一旦「爆發戰爭」，全球戰爭險當場失效、不必通知——台灣11天的天然氣安全存量要面對的第一個斷點不是封鎖線，是保單，而北京正用伊朗放行碼與胡塞逐船許可把自己搬出這套倫敦系統之外。",
+    "en": "Risk does not lift when a government says so; it lifts when an underwriter requotes. Standard war-risk wordings carry a Five Powers automatic termination clause: on an outbreak of war between the US and China, war cover ends instantly with no notice required. Taiwan's first break point behind an 11-day gas stock is not a blockade line but a policy document — and Beijing is already moving its shipping off that London paper onto Iranian clearance codes and Houthi ship-by-ship permissions."
+  },
+  "sections": [
+    {
+      "id": "nexus",
+      "items": [
+        {
+          "severity": "critical",
+          "confidence": "likely",
+          "title": {
+            "zh": "標準戰爭險保單裡有一個開關：美中一旦交戰，全球戰爭險當場自動失效，不必通知、不必有人決定",
+            "en": "There is a switch inside standard war-risk wordings: on US–China war, global war cover terminates instantly, with no notice and no human decision"
+          },
+          "summary": {
+            "zh": "Institute War and Strikes Clauses這一系列市場標準條款（船體時間險Cl.281第5條、貨物水上儲存CL.397第14.1.1.2條）含有一條「自動終止」：英國、美國、法國、俄羅斯聯邦、中華人民共和國之中任何兩國之間「爆發戰爭」（條文明寫「不論是否經宣戰」），保單的戰爭險部分立即終止，而且「不論是否已發出取消通知」。同一條第5.1項另給承保人七天取消權——那一項需要有人做決定；自動終止不需要。新加坡國大CML工作論文與《國際與比較法季刊》的〈Revisiting the Five-Powers War Risk Exclusion〉把這條追溯到1950至60年代冷戰，並指出這五國正是聯合國安理會常任理事國；較舊版本列的是蘇聯而非俄羅斯聯邦。",
+            "en": "The market-standard Institute War and Strikes Clauses (Hulls-Time Cl.281 clause 5; Cargo Stored Afloat CL.397 clause 14.1.1.2) contain an automatic termination provision: on the outbreak of war — the wording says 'whether there be a declaration of war or not' — between any two of the United Kingdom, the United States, France, the Russian Federation and the People's Republic of China, the war cover terminates immediately, and expressly 'whether or not such notice of cancellation has been given.' Clause 5.1 of the same wording separately gives underwriters a seven-day cancellation right, which requires somebody to decide; automatic termination requires nobody. An NUS CML working paper and the ICLQ article 'Revisiting the Five-Powers War Risk Exclusion' trace the clause to the 1950s–60s Cold War and note the five states are the UN Security Council permanent members; older editions name the USSR rather than the Russian Federation."
+          },
+          "implication": {
+            "zh": "對你最直接的一點：台灣的海運封鎖情境長期被當成一條可以被保費逐級定價的連續曲線——胡塞打沙國把吉達從0.25%推到1%、荷姆茲從0.15-0.25%推到6-10%，看起來正是這種曲線。但這條條款在曲線頂端挖了一個洞：美中一旦被認定「爆發戰爭」，保費不是變貴，是保單不存在。所以在台海推演裡，「戰爭險保費」只能當中段預警指標、不能當全程指標——它在你最需要它的那一刻會歸零而不是爆表。跟決策者對談時這是你能帶進去的一條硬資訊：他們的兵推幾乎都假設商船在高保費下繼續跑。",
+            "en": "The operational point: Taiwan blockade scenarios are habitually modelled as a continuous curve that premiums price step by step — Jeddah 0.25% to 1%, Hormuz 0.15–0.25% to 6–10% look exactly like such a curve. This clause punches a hole at the top of it. Once a US–China 'outbreak of war' is established, cover does not get expensive; it ceases to exist. So in a Taiwan contingency the war-risk premium is a mid-ladder warning indicator only, never an end-to-end one: it goes to zero, not to the moon, at the moment you need it most. This is a hard fact worth carrying into any conversation with planners, because most war games quietly assume merchant traffic continues at a high premium."
+          },
+          "counterpoint": {
+            "zh": "這條條款不是物理定律，三點可以鬆動它。一、「爆發戰爭」在條文裡沒有定義，一場沒有宣戰、雙方都稱之為執法行動或演習的台海事件是否構成outbreak of war，會先變成一場法律戰而不是一個即時開關；ICLQ那篇論文存在的理由正是這個模糊。二、條款可以被刪除或以特約改寫，大型LNG長約的承租人有議價空間去談。三、政府接手有先例也有進行式：美國MARAD在1936年商船法Title XII下本來就有戰爭險計畫，印度10/15推出15億美元海事保險池並附14億美元主權擔保。所以真正該賭的不是「保單會不會斷」，是「斷了之後多久有人接手、接手的條件是什麼」。",
+            "en": "The clause is not a law of physics, and three things loosen it. First, 'outbreak of war' is undefined in the wording; whether an undeclared Taiwan Strait incident that both sides call law enforcement or an exercise qualifies would become litigation before it became a switch — the ICLQ paper exists precisely because of that ambiguity. Second, the clause can be deleted or rewritten by special agreement, and long-term LNG charterers have the leverage to negotiate it. Third, state backstops are both precedented and live: MARAD has run a war-risk programme under Title XII of the Merchant Marine Act 1936 for decades, and India launched a $1.5bn maritime insurance pool with a $1.4bn sovereign guarantee on 10/15. So the bet worth making is not whether cover lapses, but how fast someone replaces it and on what terms."
+          },
+          "source": "NUS Centre for Maritime Law Working Paper 24/01 / ICLQ, Revisiting the Five-Powers War Risk Exclusion（轉述 Institute War and Strikes Clauses Cl.281、CL.397 條文）",
+          "url": "https://law.nus.edu.sg/wp-content/uploads/2024/01/CML-WPS-2401.pdf",
+          "terms": [
+            "Five Powers Clause",
+            "War Risk Insurance"
+          ]
+        },
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "北京已經在練習不用倫敦那張紙：放行碼、伊朗護航、胡塞逐船許可，一套由德黑蘭與沙那發證的平行通行系統",
+            "en": "Beijing is already rehearsing without the London paper: clearance codes, Iranian escorts and Houthi ship-by-ship permissions form a parallel transit system licensed from Tehran and Sana'a"
+          },
+          "summary": {
+            "zh": "中國國有油輪在3月整批退出荷姆茲，Lloyd's List記錄的理由是安全、保險與政治風險三項並列；COSCO 3月初要求波灣目的地船舶前往「安全水域」漂航或錨泊，3/25才恢復接單。後續的通行不是靠保單恢復，是靠特定放行碼與伊朗提供的護航服務；4月中國外交部確認三艘中國船在「與有關方面協調後」通過荷姆茲。紅海方向，COSCO拿到的是胡塞逐船核發的通行許可而非整批豁免，至少17艘COSCO與招商局的VLCC已把航線轉向紅海。官方叙事另走一條線：郭嘉昆7月要求「安全與暢通無阻」，毛寧說中國將「採取必要措施維護能源安全」，10/23中國與吉布地聯合公報對紅海航運威脅表示「嚴重關切」但未提出任何方案。",
+            "en": "Chinese state-owned tanker fleets pulled out of Hormuz in March; Lloyd's List recorded the stated reasons as safety, insurance and political risk, listed together. COSCO ordered Gulf-bound ships to hover or anchor in 'safe waters' in early March and only resumed bookings on 3/25. The transits that followed were not restored by restored cover but by specific clearance codes and an Iranian escort service; in April China's foreign ministry confirmed three Chinese vessels had passed Hormuz 'after coordination with relevant parties.' In the Red Sea, COSCO holds Houthi permissions issued ship by ship rather than a blanket exemption, and at least 17 COSCO and China Merchants VLCCs have pivoted onto that route. The official line runs separately: Guo Jiakun called in July for 'safe and unimpeded' passage, Mao Ning said China would 'take the necessary measures to safeguard its energy security,' and the 10/23 China–Djibouti communiqué voiced 'serious concern' over Red Sea threats while proposing nothing."
+          },
+          "implication": {
+            "zh": "把這條跟本期第一條並讀，台海的不對稱就出來了：五大國自動終止條款打掉的是「用倫敦標準條款承保」的那些船——台灣的LNG船隊、長約承租人、以及所有想靠商業保險維持能源進口的一方。北京如果在開戰前就已經把關鍵航線搬到一套不依賴倫敦的許可制度上，同一條條款對它的邊際傷害小得多。這不是說中國免疫，是說這條條款的痛感在兩邊不對稱，而台灣目前的制度設計（三階段調貨方案）完全建立在「市場上還有人肯承保」這個前提上。對你跟決策者對談，這是一個可以直接丟出去的問題：我們的能源韌性計畫裡，保單那一格由誰負責？",
+            "en": "Read alongside the first item, this is where the Taiwan asymmetry appears. The Five Powers clause strips cover from ships insured on London standard wordings — Taiwan's LNG carriers, its long-term charterers, and anyone trying to sustain energy imports on commercial insurance. If Beijing has already migrated its critical routes onto a permission regime that does not run through London, the same clause costs it far less at the margin. That is not immunity; it is asymmetry of pain. Meanwhile Taiwan's actual contingency design — CPC's three-stage early-lifting, Asian-reallocation and spot-purchase plan — rests entirely on the premise that somebody will still underwrite the ship. The question to put to a decision-maker is blunt: in our energy resilience plan, who owns the insurance line?"
+          },
+          "counterpoint": {
+            "zh": "這套平行系統的成本被我講得太輕。一、它很脆：Lloyd's List記錄10月有兩艘COSCO貨櫃輪在最後一刻放棄離開波灣的嘗試。二、放行碼與逐船許可是別人給的許可，不是中國自己的制度，伊朗或胡塞隨時可以收回，而且一旦收回沒有申訴管道——商業保單至少還有合約與法院。三、中國國有油輪3月自己退出荷姆茲時把「保險」明列為理由之一，代表它並沒有真的脫離這套系統、只是暫時繞開。所以「中國不怕保險斷」是一個跳得比證據遠的推論；比較站得住的說法是：中國比台灣多一個選項，而不是中國有一個完整的替代方案。",
+            "en": "I have made this parallel system sound cheaper than it is. First, it is brittle: Lloyd's List recorded two COSCO boxships abandoning an attempt to exit the Gulf at the last minute in October. Second, clearance codes and ship-by-ship permissions are somebody else's licence, not China's own institution — Tehran or Sana'a can revoke them at will, with no appeal, whereas a commercial policy at least comes with a contract and a court. Third, when Chinese state tankers withdrew from Hormuz in March they listed insurance among their own reasons, which means they have not exited the system so much as temporarily routed around it. So 'China is insulated from an insurance cut-off' outruns the evidence. The defensible claim is narrower: China has one more option than Taiwan does, not a complete alternative."
+          },
+          "source": "Lloyd's List / Bloomberg / The Diplomat（2026-10-23 中國—吉布地聯合公報報導）、中國外交部例行記者會轉述",
+          "url": "https://thediplomat.com/2026/10/china-djibouti-express-serious-concern-over-threats-to-red-sea-shipping/",
+          "terms": [
+            "P&I Club",
+            "War Risk Insurance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geo",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "likely",
+          "title": {
+            "zh": "荷姆茲單趟戰爭險從0.15%漲到6-10%船體值、約四十倍，CENTCOM說海峽「開放營業」、Kpler數到航次腰斬——兩套事實同時成立",
+            "en": "A single Hormuz transit went from 0.15% to 6–10% of hull value, about fortyfold; CENTCOM says the strait is 'open for business' while Kpler counts transits halved — both facts hold at once"
+          },
+          "summary": {
+            "zh": "據經紀商向FT表示，目前投保一艘油輪單趟通過荷姆茲約為船體值的6%至10%，而2/28開戰前是0.15%至0.25%；Marsh的Marcus Baker給出的區間是3%至10%。流量端，Kpler數到10/14當週荷姆茲131航次、前一週176航次，10/13原油流量降至每日1,260萬桶，9月底還有1,500萬桶；路透引IMO資料指開戰以來逾三十艘超大型油輪受損、其中十一艘發生在10月。但CENTCOM司令Cooper上將10/16公開表示荷姆茲「由美國與區域夥伴控制，不是伊朗」、「仍然開放營業」，並舉前七天約400艘商船通過為證。兩組數字的統計口徑不同（全部商船 vs 油輪航次），無法直接相減。",
+            "en": "Brokers told the Financial Times that insuring a tanker for a single Hormuz transit now costs roughly 6–10% of hull value, against 0.15–0.25% before the war began on 2/28; Marsh's Marcus Baker quotes 3–10%. On volumes, Kpler counted 131 Hormuz transits in the week to 10/14 against 176 the week before, with crude flow down to 12.6m b/d on 10/13 from 15m at end-September; Reuters, citing IMO data, reports more than thirty VLCCs damaged since the war began, eleven of them in October. Yet on 10/16 CENTCOM commander Admiral Cooper said publicly that Hormuz is 'controlled by the United States and our regional partners, not Iran' and 'remains open for business,' citing roughly 400 merchant transits in the prior seven days. The two counts use different bases — all merchant vessels versus tanker transits — and cannot simply be netted."
+          },
+          "implication": {
+            "zh": "這組對照給你一個可以直接搬進決策者對談的框架：軍方能證明的是「水道可通行」，承保人能證明的是「水道可負擔」，而決定貨到不到的是後者。一個被美軍宣布開放、保費卻停在六到十個百分點的海峽，在經濟意義上是半關的。對你的量化操作，這條的具體用法是：追蹤制海權宣示沒有用，追蹤保費與實際航次的背離才有用——背離愈大，代表軍事控制與商業可用性之間的裂縫愈寬，而這個裂縫正是運價、油價與東亞進口成本的真正驅動變數。",
+            "en": "This pairing gives you a frame you can take straight into a conversation with policymakers: the military can prove a waterway is passable; underwriters prove it is affordable; and cargo follows the second. A strait declared open by the US Navy while premiums sit at six to ten points is, economically, half closed. For your quantitative work the usable rule is this: tracking sea-control declarations is worthless, tracking the divergence between premiums and actual transit counts is not. The wider that gap, the wider the crack between military control and commercial usability — and that crack, not the naval posture, is what actually drives freight rates, crude and East Asian import costs."
+          },
+          "counterpoint": {
+            "zh": "Cooper的說法不該被當成純宣傳而丟掉。一、如果前七天真有約400艘商船通過，那麼「荷姆茲已實質關閉」這個常見描述是錯的，正確的描述是「結構改變」——走的船換了一批（受國家擔保、或接受伊朗收費與護航安排的船），而不是沒有船走。二、保費是個別議價的指示價、不是指數，FT那組6-10%來自經紀商口頭，不同船東、不同船齡、不同旗籍差異極大。三、流量下滑有一個不需要保險就能解釋的原因：真的有三十多艘VLCC被打中。把流量下滑全算到承保人頭上，是本期最容易犯的過度歸因。",
+            "en": "Cooper's statement should not be discarded as spin. First, if roughly 400 merchant vessels really did transit in that week, then the common description 'Hormuz is effectively closed' is wrong, and the accurate description is 'structurally changed' — a different set of ships is sailing (state-backed hulls, or ships accepting Iranian fee-and-escort arrangements), not no ships. Second, premiums are individually negotiated indications, not an index: the FT's 6–10% came from brokers verbally, and the spread across owners, vessel age and flag is enormous. Third, there is an explanation for falling traffic that needs no insurance at all — more than thirty VLCCs have actually been hit. Attributing the volume collapse entirely to underwriters is the easiest over-attribution available in this report."
+          },
+          "source": "Marsh（Marcus Baker，經 S&P Global Commodity Insights 轉述）、FT 與 Kpler 數據（經二手彙整）、CENTCOM 司令公開談話",
+          "url": "https://www.spglobal.com/energy/en/news-research/latest-news/shipping/072226-middle-east-shipping-insurance-costs-rise-on-hormuz-risks-marsh",
+          "terms": [
+            "AWRP",
+            "War Risk Insurance"
+          ]
+        },
+        {
+          "severity": "high",
+          "confidence": "likely",
+          "title": {
+            "zh": "倫敦一個私人委員會7/29把紅海的線往北推了7.5個緯度，吉達與延布的指示保費一天內從0.25%跳到1%——沒有任何政府做過這個決定",
+            "en": "On 7/29 a private London committee moved the Red Sea line 7.5 degrees of latitude north and indicative premiums for Jeddah and Yanbu went from 0.25% to 1% in a day — no government made that decision"
+          },
+          "summary": {
+            "zh": "Joint War Committee於7/29發布通告JWLA-034，取消沙烏地阿拉伯原本「波灣岸」與「紅海岸（排除過境）」的區分，把Listed Area西北邊界從北緯18度以南上移到北緯25.5度以南，等於把沙國紅海岸線絕大部分納入；同一份通告加列厄利垂亞、移除巴基斯坦。觸發事件是胡塞7/20宣布對沙烏地的海上封鎖。隨後路透系報導指出，吉贊以北（含吉達、延布）沙國港口的指示戰爭險保費一天內從0.25%升到1%——那是市場報價，不是JWC訂的費率，因為JWC從不訂費率、只公布區域。經紀商指出，通過沙國紅海水域現在即構成「通過Listed Area」，觸發事前通知與額外承保要求。IUA列表顯示其後另有JWLA-035（9月，處理黑海）。",
+            "en": "The Joint War Committee issued circular JWLA-034 on 7/29, removing Saudi Arabia's former split between a Gulf-coast area and a Red Sea coast area excluding transits, and moving the Listed Area's northwestern boundary from south of 18°N to south of 25.5°N — which folds most of the Saudi Red Sea coastline in. The same circular added Eritrea and removed Pakistan. The trigger was the Houthi maritime embargo on Saudi Arabia declared on 7/20. Reuters-sourced coverage then reported indicative war-risk premiums for Saudi ports north of Jizan, including Jeddah and Yanbu, rising from 0.25% to 1% within a day — market indications, not JWC rates, since the committee never sets rates and only publishes areas. Brokers note that a Saudi Red Sea passage now counts as a Listed Area transit, triggering prior notification and additional cover requirements. The IUA list shows a subsequent JWLA-035 in September, dealing with the Black Sea."
+          },
+          "implication": {
+            "zh": "這是本期機制最乾淨的一個觀測樣本，因為它把「誰有權改變一個國家的對外貿易成本」這個問題的答案講得很赤裸：不是安理會、不是OFAC、不是哪個國防部，是一個私人委員會的一張通告，生效時間以天計、審議過程不公開、也不需要任何政府同意。對你評估制裁與管制的二階效應，這提供一個常被漏掉的對照組——本站在9/28週報談稀土名冊、在10/5週報談弱點定價，講的都是「清單化」如何取代禁令；JWC是這個形狀存在最久、也最少被安全圈討論的版本。對台灣的意義直接得多：如果台灣周邊水域哪天出現在同一種通告上，那不是一個預警訊號，那本身就是事件。",
+            "en": "This is the cleanest observable sample of the whole mechanism, because it states nakedly who holds the power to change a country's cost of trade: not the Security Council, not OFAC, not any defence ministry, but one circular from a private committee — effective in days, deliberated in private, requiring no government's consent. For assessing the second-order effects of sanctions and controls this is a control group that usually gets missed: the 9/28週報 on the rare-earth registry and the 10/5週報 on vulnerability pricing both described how listing replaces prohibition, and the JWC is the oldest and least-discussed instance of that same shape. For Taiwan the implication is more direct. If waters near Taiwan ever appear on a circular of this kind, that is not an early warning. That is the event."
+          },
+          "source": "Joint War Committee circular JWLA-034（2026-07-29），經 Insurance Journal 與 IUA Listed Areas 列表轉述",
+          "url": "https://www.insurancejournal.com/news/international/2026/07/30/879653.htm",
+          "terms": [
+            "JWC",
+            "AWRP"
+          ]
+        },
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "政府正在變成最後再保人：印度10/15推15億美元保險池附14億主權擔保，美國眾院H.R.7873要讓MARAD替運往台灣的能源船承保",
+            "en": "Governments are becoming the reinsurer of last resort: India launched a $1.5bn insurance pool with a $1.4bn sovereign guarantee on 10/15, and H.R.7873 would have MARAD underwrite energy vessels bound for Taiwan"
+          },
+          "summary": {
+            "zh": "當商業承保退場，接手的是國庫。印度10/15推出15億美元的海事保險池，背後是14億美元主權擔保，用意是讓本國油輪在波灣仍能取得戰爭險。美國方向，眾議員Pat Harrigan提出的《Taiwan Energy Security and Anti-Embargo Act》（H.R.7873）授權運輸部——實務上走海事署MARAD——在商業保險市場因軍事威脅退出時，為運送關鍵能源、人道或其他物資前往台灣或其他面臨海上脅迫的美國戰略夥伴的船舶提供保險與再保險；法案同時優先推動對台LNG出口與含小型模組化反應爐的核能合作。該案已分送眾院外交委員會與運輸暨基礎建設委員會，參議院版本由Ricketts與Coons提出並已通過外交委員會；GovTrack對其通過機率給出6%。",
+            "en": "When commercial cover withdraws, the treasury takes over. India launched a $1.5bn maritime insurance pool on 10/15, backed by a $1.4bn sovereign guarantee, so its tankers can still obtain war cover in the Gulf. On the US side, Representative Pat Harrigan's Taiwan Energy Security and Anti-Embargo Act (H.R.7873) would authorise the Department of Transportation — in practice the Maritime Administration — to provide insurance and reinsurance for vessels carrying critical energy, humanitarian or other goods to Taiwan or another US strategic partner facing coercive maritime threats, when the commercial market withdraws because of military threat. The bill also prioritises US LNG exports to Taiwan and nuclear cooperation including small modular reactors. It has been referred to House Foreign Affairs and to Transportation & Infrastructure; the Senate companion from Ricketts and Coons has cleared the Foreign Relations Committee. GovTrack puts its chance of enactment at 6%."
+          },
+          "implication": {
+            "zh": "這條告訴你本期機制的下半場長什麼樣：保單斷掉不等於貨不走，等於成本從民間轉到國庫、而決定權從倫敦轉到首都。對台灣的操作意義有兩層。第一，台灣目前在這張表上是被動方——H.R.7873是美國國會替台灣設計的承保安排，不是台灣自己建的；6%的通過機率意味著不該把它當成計畫。第二，真正值得追的不是法案本身，是MARAD戰爭險那一段有沒有被單獨抽出來塞進國防授權案，因為那是美國國會把小條款變成法律的標準路徑，而且不需要整部法案過關。印度那個池子則給了一個可抄的最小可行版本：15億美元的池子配14億主權擔保，規模不大，但它解決的是「有沒有人肯簽字」而不是「保費多少錢」。",
+            "en": "This shows what the second half of the mechanism looks like: cover lapsing does not mean cargo stops, it means the cost shifts from private balance sheets to the treasury and the decision shifts from London to a capital. Two operational points for Taiwan. First, Taiwan is currently the passive party on this page — H.R.7873 is an underwriting arrangement designed for Taiwan by the US Congress, not built by Taiwan; a 6% enactment probability means it should not be treated as a plan. Second, the thing worth tracking is not the bill but whether the MARAD war-risk provision gets lifted out and attached to the NDAA, which is the standard route by which small provisions become US law without the parent bill ever passing. India's pool offers a copyable minimum viable version: $1.5bn backed by a $1.4bn sovereign guarantee is not large, but it solves 'will anyone sign' rather than 'what does it cost.'"
+          },
+          "source": "The National（2026-10-15，印度保險池）／美國眾議員 Pat Harrigan 辦公室新聞稿（H.R.7873）",
+          "url": "https://harrigan.house.gov/media/press-releases/congressman-pat-harrigan-introduces-taiwan-energy-security-and-anti-embargo",
+          "terms": [
+            "MARAD",
+            "War Risk Insurance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cyber",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "同一套承保邏輯已經接管了網攻歸因：Lloyd's國家級網攻除外條款的A版把判定權外包給「主管機關」，B版留給承保人自己——歸因正在變成理賠問題",
+            "en": "The same underwriting logic has taken over cyber attribution: the A variant of Lloyd's state-backed cyber exclusion outsources the call to a 'competent authority', the B variant keeps it in-house — attribution is becoming a claims question"
+          },
+          "summary": {
+            "zh": "Lloyd's市場公告Y5381（2022-08-16）要求自2023-03-31起，所有在Lloyd's承保的獨立網路保單必須載有國家支持網攻除外條款，理由寫明是網路損失具系統性外溢、聯合體難以管理。對應的LMA5564至5567系列條款現已分出A、B兩版：A版把除外與「主管機關的認定」綁在一起、符合Y5381；B版不處理歸因，LMA條款註記要求管理代理人另行向Lloyd's說明打算如何處理歸因。LMA5567A同時設有影響門檻——須對一國的必要服務或安全能力造成或可合理預期造成「重大不利影響」——並把cyber operation定義為由國家、受國家指示或控制之電腦系統使用行為。市場評論一致指出，在沒有政府歸因的情況下，舉證責任落在保險人身上。",
+            "en": "Lloyd's Market Bulletin Y5381 (16 August 2022) required every standalone cyber policy written at Lloyd's to carry a state-backed cyber attack exclusion from 31 March 2023, on the stated grounds that cyber losses create systemic exposures syndicates may struggle to manage. The corresponding LMA5564–5567 series now splits into A and B variants: the A versions tie the exclusion to a competent authority's determination and satisfy Y5381; the B versions do not address attribution to a state, and LMA clause notes require managing agents to explain separately to Lloyd's how they expect attribution to be handled. LMA5567A also carries an impact threshold — the operation must cause, or be reasonably likely to cause, a 'major detrimental impact' on a state's essential services or security capabilities — and defines a cyber operation as use of a computer system by, at the direction of, or under the control of a state. Market commentary agrees that absent a government attribution, the burden of proof sits with the insurer."
+          },
+          "implication": {
+            "zh": "對你的威脅獵捕與provenance graph研究，這是一個該放進模型的使用者：歸因的下游消費者從來不只有政策與情報，還有理賠。A版與B版的差別把這件事講得很清楚——A版等於承認保險市場沒有能力自己做歸因、把判定外包給政府；B版等於承保人保留自己判定的權力，而這意味著在某些保單下，一份由承保人委託的鑑識報告會具有事實上的歸因效力，而且它的證據門檻與公開程度，跟政府歸因完全不是同一套。本站在8/17週報講過「供應層才是新的歸因層」；本期要補的是，歸因還有一個更終局的層，叫賠不賠。你做的溯源圖如果有一天要被拿去打理賠官司，它需要的是可被對造檢驗的證據鏈，不是可被分析師說服的敘事。",
+            "en": "For your threat-hunting and provenance-graph work, this is a consumer of attribution you should model explicitly: the downstream users of attribution are not only policy and intelligence, but claims. The A/B split makes this plain. The A version concedes that the insurance market cannot perform attribution itself and outsources the determination to governments. The B version keeps the call with the underwriter — which means that under some policies a forensic report commissioned by an insurer carries de facto attributive force, on an evidentiary standard and with a degree of publicity entirely unlike a government attribution. The 8/17週報 argued that the supply layer is the new attribution layer; the addition here is that attribution has a more final layer still, called whether it pays. If the provenance graphs you build will one day be litigated in a coverage dispute, what they need is an evidence chain an opposing party can test, not a narrative an analyst can be persuaded by."
+          },
+          "counterpoint": {
+            "zh": "三點該壓住這條的音量。一、這個條款的射程比聳動標題小得多：LMA5567A的門檻是對一國必要服務或安全能力的「重大不利影響」，一般勒索軟體事件根本構不到，市場評論明說該條不是設計來抓這個。二、我查不到任何一起2026年因此條款實際拒賠的具體案例——這是一個結構風險，不是一個已發生的理賠潮，本條的severity不該再往上。三、唯二打到法院的歷史樣本Merck與Mondelez最後都是和解收場，法院從未把「國家級網攻等於戰爭」寫進判決，所以這套條款在訴訟上的實際強度至今沒有被測過。另外Lloyd's的要求只約束Lloyd's聯合體，不是全球通則，各家保險公司的措辭差異很大。",
+            "en": "Three things should hold this item's volume down. First, the clause's reach is far narrower than the headlines: LMA5567A's threshold is a 'major detrimental impact' on a state's essential services or security capabilities, which ordinary ransomware does not come close to, and market commentary says explicitly it was not designed to catch that. Second, I could not find a single documented 2026 claim actually denied under it — this is a structural exposure, not a wave of denials, and the severity should not go higher. Third, the only two historical samples to reach court, Merck and Mondelez, both settled; no court has ever written 'state-backed cyber attack equals war' into a judgment, so the litigated strength of these wordings remains untested. And the Lloyd's requirement binds Lloyd's syndicates, not the world; wording varies widely across carriers."
+          },
+          "source": "Lloyd's Market Bulletin Y5381（2022-08-16）與 LMA5567A 條文，經 Simmons & Simmons、King & Wood Mallesons 等法律事務所評論轉述",
+          "url": "https://www.simmons-simmons.com/en/publications/cmn7of7sq001iuktod4a23xv8/state-sponsored-cyber-attacks-and-insurance",
+          "terms": [
+            "LMA5567A"
+          ]
+        }
+      ]
+    }
+  ],
+  "narrative": {
+    "zh": "**上期推演校準**\n\n10/19週報五條指標，兩條動了，沒有一條被乾淨推翻，但框架少算一層。一（140億軍售是否12/14-15前知會國會）未到期，且案子卡在白宮不在國會：國會已通過、川普未簽，台灣國防部說沒收到延遲通知。二（天弓三型小批量枚數）仍查不到。三（洛馬PAC-3 MSE交付數）由10/24報告的Q3財報給出中間答案：積壓2,920億美元、525億掛在多年期合約下，沒有交付數字，而「多年期」本身與加速反向——站得住、無新證據。四（AMPAC第二條產線認證）未到期。五（沙國本土反無人機彈體）方向被加強：10/20報告記錄沙國反而把求助名單擴到法國、英國、巴基斯坦、埃及。要認的是框架缺口：上期把葉門對沙國的傷害全算成攔截彈消耗，但沙國這個秋天最大一筆帳不是彈藥，是承保人——7/29倫敦把紅海的線北推7.5個緯度，吉達與延布指示保費一天內從0.25%跳到1%；利雅德機場10/18法律上重開後，法航、漢莎、荷航、英航都還沒回來。上期判斷對，漏掉的那層就是本期主題。\n\n**問題是什麼**\n\n封鎖推演幾乎都預設封鎖是軍事事件：有人下令、有艦艇、有一條線。但2026年的荷姆茲、紅海與利雅德三個樣本顯示，商船與客機停止通行的那一刻比任何軍事命令都早到，而下決定的人不在華府、德黑蘭或沙那，在倫敦的一間會議室與一疊沒人讀的標準條款裡。\n\n**機制怎麼運作**\n\n三層，每層比上一層更不可逆。一是劃線：Joint War Committee是Lloyd's Market Association與International Underwriting Association的海上戰爭險承保人組成的私人委員會，公布Listed Areas，船要進去就得事先通知、另外議價。它從不訂費率，只劃線，但線一畫市場立刻重新報價。二是價格：荷姆茲單趟戰爭險從2/28開戰前的0.15%–0.25%船體值漲到6%–10%；當單趟保費從幾十萬美元變成上千萬，沒有人需要宣布封鎖，航商自己就不走了。三才是斷點：七天取消權需要有人決定，五大國自動終止條款不需要——英、美、法、俄、中任兩國「爆發戰爭」，戰爭險當場失效，條文明寫「不論是否已發出取消通知」。所以這條鏈不是一條往上的曲線，是一條往上的曲線、末端加一個洞。\n\n**證據**\n\n流量：Kpler數到10/14當週荷姆茲131航次、前一週176，10/13原油流量降到每日1,260萬桶，9月底是1,500萬桶。保單行為：3/1 Gard、Skuld、NorthStandard、London P&I與American Club同步發出3/5生效的取消通知，UK P&I在8月又對紅海發一輪，Skuld把原因講得很白：再保人胃納在收緊。台灣的曝險也全是數字：96%能源靠進口，超過三分之一的天然氣走荷姆茲，法定天然氣安全存量現行11天、2027年起14天。11天不是給封鎖用的數字，是給調度用的數字。\n\n**各方自己怎麼說**\n\n華府的叙事是制海權：CENTCOM司令Cooper上將10/16說荷姆茲「由美國與區域夥伴控制，不是伊朗」、「仍然開放營業」，舉前七天約400艘商船為證——同一週Kpler數到131。口徑不同、未必互相打架，但服務兩套事實：軍方證明水道可通行，承保人證明水道不可負擔，決定貨走不走的是後者。華府最不願被追問的是：既然開放，為什麼保費還停在六到十個百分點。北京的叙事是暢通：郭嘉昆7月要求荷姆茲「安全與暢通無阻」，10/23中國與吉布地聯合公報對紅海威脅「嚴重關切」卻沒提方案。它最在意不被寫成封鎖的受益者，但實際做法比叙事誠實：中國國有油輪3月整批退出荷姆茲，理由明列安全、保險與政治風險；之後通行靠特定放行碼與伊朗護航服務，COSCO在紅海拿的是胡塞逐船核發的許可——北京正在把航運從倫敦那張紙上搬下來，接到一套由德黑蘭與沙那發證的平行系統。台北的叙事是調度得宜：經濟部4月駁斥CNN「11天」報導為不實，強調中油已啟動提前調貨、亞洲調貨與現貨採購三階段方案。這在價格層面成立，在保單層面沒有答案——三階段全部預設市場上還有人肯承保那艘船。三方最在意對方的點一致：華府要北京承認通行是美軍給的，北京要證明通行可以不靠美軍，台北兩邊都不想選——但保單不提供中立選項。\n\n**未來 3–6 個月的推演與觀察指標**\n\n主判斷：台灣海運風險的第一個斷點在承保端而非軍事端，且會以「報價消失」而非「保費上漲」的形式出現。一、1/1再保換約季：2027年度戰爭險的再保量能是整條鏈的上游，Skuld已把3月那批取消歸因於再保人胃納收緊；若換約後各家把戰爭險再往共保池外推一層，本期判斷升級。二、JWC下一份JWLA通告是否把台灣海峽或周邊水域列入（最新一份是9月的JWLA-035，處理黑海）：一旦發生，灰色地帶的定價期就結束。三、英航11/3是否真的恢復利雅德班次：10/22報告的方法論是追實際排班而非官方宣布，這是第一個可交割的驗證點。四、H.R.7873是否走出眾院兩個委員會：GovTrack給6%，所以真訊號不是它通過，是有沒有人把MARAD戰爭險那段抽出來塞進國防授權案。五、台灣2027年14天存量的儲槽工程是否仍落後：存量天數不是韌性，儲槽才是。\n\n**我可能錯在哪**\n\n第一也最重：我把一份標準條款講成一個開關，但「outbreak of war」在條文裡沒有定義。一場沒有宣戰、雙方都稱之為執法行動或演習的台海事件，很可能讓這條款先打一場法律戰才知道有沒有觸發，到那時市場早用別的方式反應完了。第二，有一條反方證據我沒壓過去：Lloyd's List在3/4發過一篇標題就叫〈No, P&I clubs have not 'cancelled war risk cover'〉，指出3月那批通知只涵蓋非互助業務，把荷姆茲八成流量下滑歸因於保險是過度歸因——流量下滑也可以單純因為真有三十多艘VLCC被打中。若這條成立，本期因果方向整個反過來：保險是跟著風險跑，不是帶頭。第三，我對北京的推論跳得比證據遠：COSCO 10月有兩艘貨櫃輪最後一刻放棄離開波灣，放行碼是別人給的許可、隨時可收回。第四是程序上的老問題，連續第四期：lmalloyds.com、iua.co.uk、insurancejournal.com、globaltaiwan.org全被出網代理以403擋回，本期數字都來自搜尋層彙整，所以零confirmed、全部likely；保費尤其要打折，流通的「指示價」不是指數。",
+    "en": "**Calibrating the last forecast**\n\nOf the five indicators in the 10/19週報, none was cleanly refuted and two moved. The $14bn Taiwan package is not yet due for notification and sits at the White House, not on the Hill. Lockheed's Q3, checked in the 10/24報告, landed mid-range: $292bn backlog, $52.5bn under a PAC-3 MSE multi-year contract, no delivery count, and \"multi-year\" points away from acceleration. The Saudi counter-drone indicator strengthened: the 10/20報告 recorded Riyadh appealing to France, the UK, Pakistan and Egypt instead of buying at home. What I concede is the frame. I counted Yemen's damage to Saudi Arabia entirely in interceptors; the largest bill Riyadh paid this autumn was written by underwriters. On 7/29 London moved the Red Sea line 7.5 degrees of latitude north, Jeddah and Yanbu indications went 0.25% to 1% in a day, and after King Khalid airport legally reopened on 10/18 Air France, Lufthansa, KLM and BA still have not returned.\n\n**The problem**\n\nBlockade scenarios assume a blockade is a military event: an order, ships, a line. Hormuz, the Red Sea and Riyadh say otherwise. Shipping and airlines stop before any military order, and the people deciding sit not in Washington, Tehran or Sana'a but in a London committee room and a stack of standard clauses nobody reads.\n\n**How the mechanism works**\n\nThree layers, each less reversible. The line: the Joint War Committee, a private body of marine war underwriters from the Lloyd's Market Association and the International Underwriting Association, publishes Listed Areas; entering one obliges an owner to notify underwriters and buy extra cover. It never sets rates, only draws lines — but the market reprices the moment a line moves. The price: a Hormuz transit cost 0.15–0.25% of hull value before the war began on 2/28 and now costs 6–10%. When one voyage's premium goes from a few hundred thousand dollars to tens of millions, nobody needs to declare a blockade; owners stop sailing. The discontinuity: a seven-day cancellation right needs a decision, the Five Powers clause needs none — on outbreak of war between any two of the UK, US, France, Russia and the PRC, war cover terminates instantly, expressly \"whether or not such notice of cancellation has been given.\" The shape is not a rising curve. It is a rising curve with a hole at the top.\n\n**Evidence**\n\nKpler counted 131 Hormuz transits in the week to 10/14 against 176 the week before. On 3/1 Gard, Skuld, NorthStandard, the London P&I Club and the American Club issued cancellation notices effective 3/5, UK P&I issued another Red Sea round in August, and Skuld named the driver: tightening reinsurer appetite. Taiwan's exposure is equally numeric — 96% of energy imported, over a third of its gas through Hormuz, a statutory gas security stock of 11 days rising to 14 from 2027. Eleven days is a dispatching number, not a blockade number.\n\n**What each side says in its own words**\n\nWashington's story is sea control: on 10/16 CENTCOM's Admiral Cooper said Hormuz is \"controlled by the United States and our regional partners, not Iran\" and \"remains open for business,\" citing some 400 merchant transits in the week Kpler counted 131. Two different facts — the military proves the waterway passable, underwriters prove it unaffordable, and cargo follows the second. The question Washington least wants: if it is open, why is the premium still six to ten points. Beijing's story is unimpeded passage — Guo Jiakun called in July for \"safe and unimpeded\" transit, and the 10/23 China–Djibouti communiqué voiced \"serious concern\" while proposing nothing. Its priority is not to be recorded as the blockade's beneficiary, but its conduct is more candid: state tankers left Hormuz in March citing safety, insurance and political risk, later transits needed clearance codes and an Iranian escort, and COSCO sails the Red Sea on Houthi permissions granted ship by ship. Beijing is moving its shipping off the London paper onto a parallel permission system licensed from Tehran and Sana'a. Taipei's story is good dispatching: MOEA rejected CNN's \"11 days\" report as inaccurate in April, citing CPC's three-stage plan of early lifting, Asian reallocation and spot purchase. That answers price, not cover — all three stages assume somebody still underwrites the ship. Each side's sorest point mirrors the others': Washington wants Beijing to concede passage is American-granted, Beijing wants to prove passage without Americans, Taipei wants to choose neither, and the wording offers no neutral option.\n\n**Three-to-six-month forecast and indicators**\n\nTaiwan's first maritime break point appears on the underwriting side, not the military side, and arrives as quotes disappearing rather than premiums rising. (1) The 1/1 reinsurance renewal: 2027 war-risk capacity is upstream of everything, and Skuld already blamed the March cancellations on reinsurer appetite. (2) Whether the next JWC circular lists the Taiwan Strait or adjacent waters — the latest is September's JWLA-035 on the Black Sea; the day it happens, the grey-zone pricing period ends. (3) Whether BA actually restores Riyadh service on 11/3, the first deliverable test of the 10/22報告 rule that you track airline schedules, not official reopenings. (4) Whether H.R.7873 clears its two House committees: GovTrack gives 6%, so the real signal is whether anyone attaches its MARAD war-risk provision to the NDAA. (5) Whether tank construction behind Taiwan's 14-day 2027 target is still slipping. Days of stock are not resilience; tanks are.\n\n**Where I am most likely wrong**\n\n\"Outbreak of war\" is undefined in the clause I have described as a switch. An undeclared Strait incident both sides call law enforcement or an exercise could leave the Five Powers clause in litigation long after the market has reacted another way. Second, evidence I did not defeat: on 3/4 Lloyd's List ran \"No, P&I clubs have not 'cancelled war risk cover',\" noting the March notices covered only non-mutual business, and that blaming the 80% Hormuz collapse on insurance is over-attribution when more than thirty VLCCs have actually been hit. If that holds, the arrow reverses and insurance follows risk rather than leading it. Third, my read of Beijing outruns the evidence: two COSCO boxships abandoned an attempt to exit the Gulf at the last minute in October, and a clearance code is someone else's revocable permission. Fourth, procedural, now in its fourth consecutive issue: lmalloyds.com, iua.co.uk, insurancejournal.com and globaltaiwan.org were all returned 403 by the egress proxy, so every figure comes from the search layer. Hence zero confirmed, everything at likely, and discount the premiums hardest — circulating \"indicative rates\" are not an index."
+  }
+}
