@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24",
+  "updated": "2026-10-26",
   "terms": [
     {
       "term": "AsyncOS",
@@ -3157,6 +3157,39 @@
       },
       "category": "tech",
       "first_seen": "2026-10-24"
+    },
+    {
+      "term": "ARMORY CASTLE",
+      "zh": "軍械堡（Google威脅情報小組命名，原UNC5221）",
+      "expansion": "ARMORY CASTLE (Google Threat Intelligence Group designation, formerly tracked as UNC5221)",
+      "def": {
+        "zh": "Google威脅情報小組(GTIG)與Mandiant對一個中國關聯間諜活動集群的正式命名，原先以未歸類編號UNC5221追蹤；CrowdStrike則將同一群集標示為WARP PANDA。該集群長期鎖定邊界設備與遠端存取應用程式(如BeyondTrust Remote Support)進行國家級情報蒐集，命名升級(從UNC編號改為正式代號)通常代表廠商對其行為模式與工具鏈已累積足夠信心做出穩定歸因。",
+        "en": "Google Threat Intelligence Group (GTIG) and Mandiant's formal designation for a China-nexus espionage cluster previously tracked under the unattributed designation UNC5221; CrowdStrike tracks the same cluster as WARP PANDA. The group has a history of targeting edge devices and remote-access applications (such as BeyondTrust Remote Support) for state-sponsored intelligence collection; a vendor's move from a provisional UNC number to a named designation typically signals it has accumulated enough confidence in the cluster's behavior and toolchain to attribute it more firmly."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-26"
+    },
+    {
+      "term": "SAWFLY",
+      "zh": "SAWFLY網頁後門程式",
+      "expansion": "SAWFLY webshell",
+      "def": {
+        "zh": "ARMORY CASTLE(原UNC5221)在2026年BeyondTrust Remote Support零時差入侵鏈中部署的網頁後門程式，用於在取得主機層級存取後維持持續性操控能力。",
+        "en": "A webshell deployed by ARMORY CASTLE (formerly UNC5221) during its 2026 exploitation chain against the BeyondTrust Remote Support zero-day, used to maintain persistent control after achieving host-level access."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-26"
+    },
+    {
+      "term": "BARECLAW",
+      "zh": "BARECLAW通道工具",
+      "expansion": "BARECLAW SOCKS5 tunneling tool",
+      "def": {
+        "zh": "ARMORY CASTLE(原UNC5221)在BeyondTrust Remote Support零時差入侵案中使用的SOCKS5通道工具，用於在取得受駭設備存取權後，將後續流量包裝成一般網路流量以規避偵測並維持對內部網路的存取。",
+        "en": "A SOCKS5 tunneling tool used by ARMORY CASTLE (formerly UNC5221) in its exploitation of the BeyondTrust Remote Support zero-day, used to wrap follow-on traffic as ordinary network traffic to evade detection and maintain access to the internal network after compromising a device."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-26"
     }
   ]
 }

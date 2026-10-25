@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-24",
+  "updated": "2026-10-26",
   "reports": [
+    {
+      "date": "2026-10-26",
+      "kind": "brief",
+      "file": "reports/2026-10-26-brief.json",
+      "title": {
+        "zh": "胡塞10/24-25對沙烏地發動本輪衝突最大規模多點攻勢——利雅德、達曼、納季蘭三座機場加一座空軍基地、延布與拉比格油源同時被點名，10/22報告的『機場重開只是時間差』判斷這次要改判成『重開本身的前提就不成立』；Mandiant/GTIG與BeyondTrust揭露中國關聯ARMORY CASTLE(原UNC5221)用零時差打穿BeyondTrust Remote Support、潛伏近七週；PHP2Shell曝險站台估計達224萬台，CrowdStrike執行長公開示警入侵潮將至",
+        "en": "Houthis launch this conflict's largest multi-site wave yet against Saudi Arabia on 10/24-25 — three airports (Riyadh, Dammam, Najran), an air base, and the Yanbu and Rabigh oil sites all named at once, forcing a revision of the 10/22 report's 'reopening is just a timing lag' call into 'the reopening's underlying premise never held'; Mandiant/GTIG and BeyondTrust disclose China-nexus ARMORY CASTLE (formerly UNC5221) breaching BeyondTrust Remote Support via a zero-day and dwelling nearly seven weeks; PHP2Shell's exposed-host estimate reaches 2.24 million as CrowdStrike's CEO publicly warns of a coming breach wave"
+      }
+    },
     {
       "date": "2026-10-24",
       "kind": "brief",
