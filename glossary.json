@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-28",
   "terms": [
     {
       "term": "AsyncOS",
@@ -3267,6 +3267,28 @@
       },
       "category": "geo",
       "first_seen": "2026-10-26"
+    },
+    {
+      "term": "ACSC",
+      "zh": "澳洲網路安全中心",
+      "expansion": "Australian Cyber Security Centre",
+      "def": {
+        "zh": "澳洲政府負責國家級網路安全事務的主責機構，隸屬澳洲訊號局(ASD)，負責發布威脅警示、協調事件應變並向關鍵基礎設施與政府機關提供防護指引。",
+        "en": "Australia's national cybersecurity authority, housed within the Australian Signals Directorate (ASD), responsible for issuing threat alerts, coordinating incident response, and providing protective guidance to critical infrastructure and government bodies."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-28"
+    },
+    {
+      "term": "EBS",
+      "zh": "甲骨文電子商務套件",
+      "expansion": "Oracle E-Business Suite",
+      "def": {
+        "zh": "Oracle旗下整合財務、採購、供應鏈與人力資源流程的企業資源規劃(ERP)應用套件，廣泛用於大型企業與政府機構的核心財務與營運系統。",
+        "en": "Oracle's enterprise resource planning (ERP) application suite integrating finance, procurement, supply chain, and human-resources processes, widely deployed as the core financial and operational system at large enterprises and government bodies."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-28"
     }
   ]
 }

@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-28",
   "reports": [
+    {
+      "file": "reports/2026-10-28-brief.json",
+      "date": "2026-10-28",
+      "kind": "brief",
+      "title": {
+        "zh": "利雅德機場10/25二度重開、不到24小時內再遭飛彈瞄準——19家航空公司的停飛賭注再次贏了，布蘭特衝上113.17美元五個月新高，10/28 FOMC要在這個訊號前做決定；烏克蘭電網10/26單日6州輪流限電，10/18報告『與期中選舉脫鉤』的判斷持續成立；Oracle十月季更一口氣修1,295個漏洞、6個滿分弱點；PHP2Shell新增兩筆實證——蜜罐證實攻擊早於揭露4天發動，五國政府網站已搶先下線",
+        "en": "Riyadh's Airport Reopens a Second Time on 10/25, Then Takes a Missile Within 24 Hours — the 19 Airlines That Refused to Fly Back Are Vindicated Again as Brent Hits $113.17, a Five-Month High, Right Before the Fed's 10/28 Rate Call; Ukraine's Grid Rotates Outages Across Six Regions on 10/26, Keeping 10/18's 'Decoupled From the Midterms' Call Intact; Oracle's October Update Fixes 1,295 Flaws Including Six Perfect Scores; PHP2Shell Gets Two New Data Points — Honeypots Confirm Exploitation Began Four Days Before Disclosure, and Five Governments Already Pulled Sites Offline"
+      }
+    },
     {
       "file": "reports/2026-10-26-weekly.json",
       "date": "2026-10-26",
