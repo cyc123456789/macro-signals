@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-10-30",
   "reports": [
+    {
+      "file": "reports/2026-10-30-brief.json",
+      "date": "2026-10-30",
+      "kind": "brief",
+      "title": {
+        "zh": "新主席Kevin Warsh首次主持的FOMC 10/28以10比2維持利率不變、兩位理事主張升息；川普的俄羅斯柴油協議與10/24報告的格雷姆法案豁免是同一套機制，俄軍同時把攻勢擴大到西烏克蘭此前未被打過的地區；埃及國會10/26閉門授權軍事協防沙烏地，10/19週報的攔截彈分配隊伍第一次走到國會這一步；PHP2Shell出現首個可重現的真實漏洞利用，曝險估計卻在224萬與3,670萬之間相差15倍；CCW自主武器審查大會訂11/16-20，剛好卡在GGE授權到期的同一年年底",
+        "en": "Kevin Warsh's First FOMC Holds Rates 10-2 on 10/28 With Two Governors Dissenting for a Hike; Trump's Russian Diesel Deal Runs the Same Sanctions-Suspension Mechanism the 10/24 Report Logged in the Graham Act Waiver, While Russia Expands Strikes Into Previously Untouched Western Ukraine; Egypt's Parliament Authorizes Military Defense of Saudi Arabia on 10/26, the First Time the 10/19 Weekly's Interceptor Queue Reaches a Legislature; PHP2Shell Gets Its First Reproducible Working Exploit as Exposure Estimates Diverge 15-Fold Between 2.24 Million and 36.7 Million; the CCW's Autonomous-Weapons Review Conference Is Set for 11/16-20, the Same Year the GGE's Own Mandate Expires"
+      }
+    },
     {
       "file": "reports/2026-10-28-brief.json",
       "date": "2026-10-28",

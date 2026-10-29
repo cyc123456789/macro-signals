@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-10-30",
   "terms": [
     {
       "term": "AsyncOS",
@@ -3289,6 +3289,17 @@
       },
       "category": "cyber",
       "first_seen": "2026-10-28"
+    },
+    {
+      "term": "NCSC",
+      "zh": "國家網路安全中心",
+      "expansion": "National Cyber Security Centre",
+      "def": {
+        "zh": "英國政府通訊總部(GCHQ)轄下負責網路安全防護與公眾指引的機構，主要發布漏洞預警與緩解建議。",
+        "en": "The UK's national technical authority for cyber security, operating under GCHQ; it issues vulnerability advisories and mitigation guidance to public and private sector organizations."
+      },
+      "category": "cyber",
+      "first_seen": "2026-10-30"
     }
   ]
 }
