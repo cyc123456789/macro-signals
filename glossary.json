@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-11-01",
   "terms": [
     {
       "term": "AsyncOS",
@@ -3300,6 +3300,61 @@
       },
       "category": "cyber",
       "first_seen": "2026-10-30"
+    },
+    {
+      "term": "TSS",
+      "zh": "建議分道通航制",
+      "expansion": "Traffic Separation Scheme",
+      "def": {
+        "zh": "國際航運界為降低碰撞風險，在繁忙或狹窄水道（如荷姆茲海峽）劃設的單向建議航道系統，船舶依規定方向分道航行。",
+        "en": "An internationally recommended one-way lane system for vessel traffic in busy or constricted waterways (such as the Strait of Hormuz), designed to reduce collision risk by separating inbound and outbound shipping."
+      },
+      "category": "tech",
+      "first_seen": "2026-11-01"
+    },
+    {
+      "term": "Ras Tanura",
+      "zh": "拉斯坦努拉",
+      "expansion": "Ras Tanura",
+      "def": {
+        "zh": "沙烏地阿拉伯東部省的港口城市，是沙烏地阿美最大的原油出口與煉油複合設施所在地，產能遠大於延布、拉比格等本站先前記錄的沿海設施。",
+        "en": "A port city in Saudi Arabia's Eastern Province, home to Saudi Aramco's largest crude-export and refining complex — far larger in capacity than the Yanbu and Rabigh coastal facilities previously logged on this site."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-01"
+    },
+    {
+      "term": "Federal Register",
+      "zh": "聯邦公報",
+      "expansion": "Federal Register",
+      "def": {
+        "zh": "美國聯邦政府每個工作日發布的官方公報，刊登行政命令、擬議與最終規則、公告等具法律效力的文件；一項規則或豁免是否正式生效，以是否刊登於此為準。",
+        "en": "The U.S. federal government's official daily publication for executive orders, proposed and final rules, and notices; whether a rule or waiver is legally in effect turns on whether it has been published here."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-01"
+    },
+    {
+      "term": "GAO",
+      "zh": "美國政府究責署",
+      "expansion": "Government Accountability Office",
+      "def": {
+        "zh": "美國國會所屬的獨立、無黨派稽核機關，負責審計聯邦機關的計畫執行、財務與法規遵循情形，並向國會提出建議。",
+        "en": "An independent, nonpartisan audit agency of the U.S. Congress that evaluates federal agencies' program execution, finances, and regulatory compliance, and issues recommendations to Congress."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-01"
+    },
+    {
+      "term": "Nine-in-One Elections",
+      "zh": "九合一選舉",
+      "expansion": "Nine-in-One Local Elections (Taiwan)",
+      "def": {
+        "zh": "台灣將多項地方公職人員選舉(直轄市長、縣市長、議員、里長等)合併於同一天舉行的制度性安排，2026年投票日訂為11/28。",
+        "en": "Taiwan's practice of holding multiple local-office elections (mayors, county magistrates, councilors, village chiefs, etc.) on a single day; the 2026 cycle is set for 11/28."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-01"
     }
   ]
 }

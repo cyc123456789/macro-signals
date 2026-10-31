@@ -1,6 +1,15 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-11-01",
   "reports": [
+    {
+      "file": "reports/2026-11-01-brief.json",
+      "date": "2026-11-01",
+      "kind": "brief",
+      "title": {
+        "zh": "伊朗革命衛隊連四週認領荷姆茲水雷攻擊、川普反控德黑蘭捏造戰損衝油價，雙方各說各話卡在10/8『選前不開戰』承諾到期前72小時；胡塞10/27首度把目標指向沙國最大煉油廠Ras Tanura；BIS關係企業規則距11/10到期僅剩9天、財長9/23承諾的展延至今沒有一紙聯邦公報；台灣九合一選舉與核電公投同訂11/28；GAO報告顯示24個聯邦機關無一完成後量子密碼遷移三項基本功課",
+        "en": "Iran's IRGC Claims a Fourth Straight Week of Hormuz Mine Strikes as Trump Accuses Tehran of Fabricating Them to Spike Oil Prices — the Dueling Claims Land 72 Hours Before the 10/8 'No War Before the Election' Pledge Expires; Houthis Name Saudi Arabia's Largest Refinery, Ras Tanura, as a Target for the First Time on 10/27; BIS's Affiliates Rule Is 9 Days From Its 11/10 Expiry With the Treasury Secretary's Promised Extension Still Unpublished; Taiwan Sets Its Nine-in-One Elections and a Nuclear Restart Referendum for the Same Day, 11/28; a GAO Audit Finds None of 24 Federal Agencies Has Finished the Basics of Post-Quantum Migration"
+      }
+    },
     {
       "file": "reports/2026-10-30-brief.json",
       "date": "2026-10-30",
