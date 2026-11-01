@@ -2,6 +2,15 @@
   "updated": "2026-11-02",
   "reports": [
     {
+      "file": "reports/2026-11-02-weekly.json",
+      "date": "2026-11-02",
+      "kind": "weekly",
+      "title": {
+        "zh": "保密走掉一半，驗章還是零：後量子遷移真正在分的不是演算法陣營，是信任根的兩個時鐘——而中國想自己發一套的那條路，在公開評估的第三天就被打穿了五個",
+        "en": "Confidentiality migrated halfway, authentication is still at zero: the post-quantum transition is splitting the root of trust into two clocks — and the sovereign path China opened was breaking in public within three days"
+      }
+    },
+    {
       "file": "reports/2026-11-02-monthly.json",
       "date": "2026-11-02",
       "kind": "monthly",

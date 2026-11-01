@@ -3476,6 +3476,226 @@
       },
       "category": "geo",
       "first_seen": "2026-11-02"
+    },
+    {
+      "term": "ML-KEM",
+      "zh": "模組格基金鑰封裝機制",
+      "expansion": "Module-Lattice-Based Key-Encapsulation Mechanism",
+      "def": {
+        "zh": "NIST於FIPS 203標準化的後量子金鑰封裝機制，源自CRYSTALS-Kyber。因輸出尺寸小，可直接併入既有TLS握手（常見組合X25519MLKEM768），是目前唯一大規模實際部署的後量子原語。",
+        "en": "The post-quantum key-encapsulation mechanism standardised by NIST in FIPS 203, derived from CRYSTALS-Kyber. Its small output lets it drop into existing TLS handshakes (commonly as X25519MLKEM768), making it the only post-quantum primitive deployed at scale today."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "ML-DSA",
+      "zh": "模組格基數位簽章演算法",
+      "expansion": "Module-Lattice-Based Digital Signature Algorithm",
+      "def": {
+        "zh": "NIST於FIPS 204標準化的後量子數位簽章，源自CRYSTALS-Dilithium。ML-DSA-44簽章約2,420位元組，約為ECDSA P-256的38倍，憑證鏈膨脹是公開網路驗章遲遲未遷移的主因。",
+        "en": "The post-quantum digital signature standardised by NIST in FIPS 204, derived from CRYSTALS-Dilithium. An ML-DSA-44 signature runs about 2,420 bytes, roughly 38x ECDSA P-256; the resulting certificate-chain bloat is the main reason public-web authentication has not migrated."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "SLH-DSA",
+      "zh": "無狀態雜湊式數位簽章演算法",
+      "expansion": "Stateless Hash-Based Digital Signature Algorithm",
+      "def": {
+        "zh": "NIST於FIPS 205標準化的後量子簽章，源自SPHINCS+。安全性只依賴雜湊函數，因此被視為最保守的選擇，代價是簽章尺寸遠大於格基方案，在受限微控制器上難以採用。",
+        "en": "The post-quantum signature standardised by NIST in FIPS 205, derived from SPHINCS+. Its security rests only on hash functions, making it the most conservative choice, at the cost of signatures far larger than lattice schemes and hard to adopt on constrained microcontrollers."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "KEM",
+      "zh": "金鑰封裝機制",
+      "expansion": "Key-Encapsulation Mechanism",
+      "def": {
+        "zh": "一種讓雙方協商共享祕密的公鑰原語：發送方用對方公鑰產生密文與共享金鑰，接收方用私鑰解封裝取回同一把金鑰。後量子遷移中負責「保密」的那一半。",
+        "en": "A public-key primitive for agreeing a shared secret: the sender uses the peer's public key to produce a ciphertext and a shared key, and the receiver decapsulates with its private key to recover the same key. The half of the post-quantum migration that handles confidentiality."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "NGCC",
+      "zh": "新一代商用密碼演算法徵集",
+      "expansion": "Next-generation Commercial Cryptographic Algorithms Program",
+      "def": {
+        "zh": "中國商用密碼標準研究院主辦的公開密碼演算法徵集，2025年2月啟動，對標NIST的後量子標準化流程。2026/6/30截止、9/20公布119個第一輪候選，第一輪原訂2027年中結束。",
+        "en": "China's public cryptographic algorithm competition run by the Institute of Commercial Cryptography Standards, launched February 2025 as a counterpart to NIST's post-quantum standardisation. Submissions closed 6/30/2026; 119 round-1 candidates were announced on 9/20, with round one originally due to close around mid-2027."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "ICCS",
+      "zh": "商用密碼標準研究院",
+      "expansion": "Institute of Commercial Cryptography Standards",
+      "def": {
+        "zh": "中國負責商用密碼標準研究與制定的機構，主辦NGCC徵集，並曾在IETF 125的SAAG議程上對國際社群介紹該計畫。",
+        "en": "The Chinese body responsible for researching and drafting commercial cryptography standards. It runs the NGCC competition and presented the programme to the international community on the IETF 125 SAAG agenda."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "CBOM",
+      "zh": "密碼物料清單",
+      "expansion": "Cryptographic Bill of Materials",
+      "def": {
+        "zh": "系統中所有密碼演算法、金鑰、憑證與其所在位置的清單，概念借自SBOM。後量子遷移的實際瓶頸：沒有CBOM就無法知道要換什麼，而它是發現問題不是採購問題。",
+        "en": "An inventory of every cryptographic algorithm, key and certificate in a system and where it lives, borrowed conceptually from the SBOM. The real bottleneck in post-quantum migration: without one you cannot know what to replace, and building it is a discovery problem rather than a procurement problem."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "MTC",
+      "zh": "梅克爾樹憑證",
+      "expansion": "Merkle Tree Certificates",
+      "def": {
+        "zh": "IETF draft-ietf-plants-merkle-tree-certs提出的WebPKI改造：CA對一棵涵蓋大量憑證的樹簽一次樹根，握手只送約736位元組的包含證明，藉此避開後量子簽章的尺寸問題，代價是驗證方必須持有夠新的樹根資料。",
+        "en": "A WebPKI redesign proposed in IETF draft-ietf-plants-merkle-tree-certs: the CA signs one tree head covering many certificates and the handshake carries only a roughly 736-byte inclusion proof, sidestepping post-quantum signature bloat at the cost of requiring relying parties to hold a reasonably fresh tree head."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "CRQC",
+      "zh": "具密碼破解能力的量子電腦",
+      "expansion": "Cryptographically Relevant Quantum Computer",
+      "def": {
+        "zh": "規模足以用Shor演算法實際破解RSA與橢圓曲線密碼的量子電腦。破解RSA-2048所需物理量子位元的估計近年快速下修，從數百萬降到十萬量級，但這些都是架構分析而非實機。",
+        "en": "A quantum computer large enough to actually break RSA and elliptic-curve cryptography with Shor's algorithm. Physical-qubit estimates for RSA-2048 have fallen sharply in recent years, from millions toward the hundred-thousand range, though these are architectural analyses rather than built machines."
+      },
+      "category": "tech",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "Crypto-Agility",
+      "zh": "密碼敏捷性",
+      "expansion": "Cryptographic Agility",
+      "def": {
+        "zh": "系統在不重寫應用邏輯的前提下更換密碼演算法的能力。後量子遷移被視為它的第一場實測，而多數既有系統把演算法寫死在協定、韌體或矽片裡，正是遷移成本的來源。",
+        "en": "A system's ability to swap cryptographic algorithms without rewriting application logic. The post-quantum migration is treated as its first real test, and the reason it is expensive is that most existing systems hard-code algorithms into protocols, firmware or silicon."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "LMS",
+      "zh": "萊頓—米卡利簽章",
+      "expansion": "Leighton-Micali Signature",
+      "def": {
+        "zh": "NIST SP 800-208核可的有狀態雜湊式簽章，與XMSS並列用於軟韌體簽章。安全性只依賴雜湊函數，但簽署方必須正確管理狀態，重複使用一次性金鑰會直接破壞安全性。CNSA 2.0只核可單樹版本。",
+        "en": "A stateful hash-based signature approved in NIST SP 800-208, used alongside XMSS for software and firmware signing. Its security rests only on hash functions, but the signer must manage state correctly — reusing a one-time key breaks it outright. CNSA 2.0 approves only the single-tree variant."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "WebPKI",
+      "zh": "公開網路公鑰基礎設施",
+      "expansion": "Web Public Key Infrastructure",
+      "def": {
+        "zh": "瀏覽器信任庫、公開根CA與X.509憑證構成的全球信任體系，是HTTPS驗章的基礎。後量子簽章的尺寸問題正迫使它改變結構，而不只是換演算法。",
+        "en": "The global trust system of browser trust stores, public root CAs and X.509 certificates that underpins HTTPS authentication. Post-quantum signature sizes are forcing it to change structure, not merely swap algorithms."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "Root of Trust",
+      "zh": "信任根",
+      "expansion": "Root of Trust",
+      "def": {
+        "zh": "一條信任鏈最終所依賴、無法再往上追溯的錨點，例如燒進矽片的UEFI平台金鑰或瀏覽器信任庫中的根憑證。問題在於它通常無法在現場更換，而壽命往往長於它所使用的演算法。",
+        "en": "The non-derivable anchor a trust chain ultimately rests on, such as a UEFI platform key fused into silicon or a root certificate in a browser trust store. The difficulty is that it usually cannot be replaced in the field, and tends to outlive the algorithm it uses."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "NIST IR 8547",
+      "zh": "NIST內部報告8547",
+      "expansion": "NIST Internal Report 8547: Transition to Post-Quantum Cryptography Standards",
+      "def": {
+        "zh": "NIST訂定古典公鑰演算法退場時程的文件：RSA與橢圓曲線等演算法在2030年後棄用、2035年後禁用。據報於2026/10/27定稿，並把P-256等128位元以上參數一併拉進2030年那一格。",
+        "en": "The NIST document setting the retirement schedule for classical public-key algorithms: RSA and elliptic-curve schemes deprecated after 2030 and disallowed after 2035. Reportedly finalised on 10/27/2026, pulling P-256 and other parameters at 128-bit strength and above into the 2030 step."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "EO 14412",
+      "zh": "第14412號行政命令",
+      "expansion": "Executive Order 14412, Securing the Nation Against Advanced Cryptographic Attacks",
+      "def": {
+        "zh": "2026/6/22簽署、6/25刊於聯邦公報的美國行政命令，據報要求聯邦最敏感系統在2030年底前完成後量子加密、2031年底前完成後量子驗章，並將同一時間表適用於承包商。",
+        "en": "A US executive order signed 6/22/2026 and published in the Federal Register on 6/25, reportedly requiring the most sensitive federal systems to complete post-quantum encryption by end-2030 and post-quantum authentication by end-2031, with the same timetable applied to contractors."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "NSS",
+      "zh": "國家安全系統",
+      "expansion": "National Security Systems",
+      "def": {
+        "zh": "美國法規定義的一類政府系統，涉及情報活動、軍事指揮管制或機密資訊處理，適用比一般聯邦系統更嚴格的密碼要求，CNSA 2.0即以此為適用範圍。",
+        "en": "A statutory category of US government systems involving intelligence activities, military command and control, or classified information, subject to stricter cryptographic requirements than ordinary federal systems. CNSA 2.0 applies to this category."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "IND-CPA",
+      "zh": "選擇明文攻擊下的不可區分性",
+      "expansion": "Indistinguishability under Chosen-Plaintext Attack",
+      "def": {
+        "zh": "公鑰加密的基本安全定義：攻擊者即使能自行加密任意明文，也無法分辨一段密文對應哪一則訊息。一個加密方案若連IND-CPA都不成立，等於在最寬鬆的門檻上就已失守。",
+        "en": "The baseline security definition for public-key encryption: an adversary who can encrypt arbitrary plaintexts still cannot tell which message a ciphertext corresponds to. A scheme that fails IND-CPA has lost at the most permissive threshold there is."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "Universal Forgery",
+      "zh": "通用偽造",
+      "expansion": "Universal Forgery",
+      "def": {
+        "zh": "對數位簽章最嚴重的一類攻擊：攻擊者能對任意選定的訊息產生有效簽章。若只憑公鑰即可達成，該簽章方案在設計層級已完全失效，無法用修補實作來挽救。",
+        "en": "The most severe class of attack on a digital signature: the adversary can produce a valid signature on any message of their choosing. If it works from the public key alone, the scheme has failed at the design level and no implementation fix can rescue it."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "PQC-CIA",
+      "zh": "後量子資安產業聯盟",
+      "expansion": "Post-Quantum Cryptography Cybersecurity Industry Alliance",
+      "def": {
+        "zh": "台灣的產業聯盟，與數位發展部數位產業署合作推動後量子密碼遷移，2025年發布由資策會制定的台灣首版《後量子密碼遷移指引》。",
+        "en": "A Taiwanese industry alliance working with the Administration for Digital Industries under the Ministry of Digital Affairs on post-quantum migration. It published Taiwan's first PQC migration guideline, written by III, in 2025."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "Mosca's Inequality",
+      "zh": "莫斯卡不等式",
+      "expansion": "Mosca's Inequality",
+      "def": {
+        "zh": "判斷後量子遷移是否已經遲到的判準：若資料需保密的年數加上完成遷移所需年數，大於CRQC問世所需年數，風險窗口就已經打開。它把期限從量子硬體的日期挪到資料保存期與組織速度上。",
+        "en": "The test for whether a post-quantum migration is already late: if the years data must stay secret plus the years needed to migrate exceed the years until a CRQC exists, the exposure window is already open. It moves the deadline off the hardware date and onto data retention and organisational speed."
+      },
+      "category": "tech",
+      "first_seen": "2026-11-02"
     }
   ]
 }

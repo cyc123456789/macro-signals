@@ -1,0 +1,184 @@
+{
+  "date": "2026-11-02",
+  "kind": "weekly",
+  "title": {
+    "zh": "保密走掉一半，驗章還是零：後量子遷移真正在分的不是演算法陣營，是信任根的兩個時鐘——而中國想自己發一套的那條路，在公開評估的第三天就被打穿了五個",
+    "en": "Confidentiality migrated halfway, authentication is still at zero: the post-quantum transition is splitting the root of trust into two clocks — and the sovereign path China opened was breaking in public within three days"
+  },
+  "focus": {
+    "zh": "後量子遷移被說成一場追趕量子電腦的賽跑，但真正運作的機制是四十年一次的信任根重發：篩選它的是公開密碼分析與採購期限，不是量子硬體；而遷移本身把保密與驗章拆成兩個速度差極大的時鐘——前者過半、後者在公開網路上實質是零，被留在後面的那一半，正好是韌體信任鏈與provenance靠的那一半。",
+    "en": "Post-quantum migration is sold as a race against a quantum computer. The real mechanism is a once-in-forty-years re-issuance of the root of trust, sorted by public cryptanalysis and procurement deadlines rather than by hardware — and it is splitting confidentiality from authenticity into two clocks running at very different speeds. The first is past halfway; the second is effectively at zero on the public web. The half left behind is the half that firmware trust chains and provenance depend on."
+  },
+  "sections": [
+    {
+      "id": "nexus",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "likely",
+          "title": {
+            "zh": "後量子遷移正在把保密與驗章拆成兩個時鐘：ML-KEM金鑰交換已佔Cloudflare逾半流量，公開網路上的憑證驗章實質仍是零——落後的那一半正好是provenance靠的那一半",
+            "en": "The migration is splitting into two clocks: ML-KEM key exchange now carries over half of Cloudflare's traffic while certificate authentication on the public web is effectively at zero — and the lagging half is the half provenance rests on"
+          },
+          "summary": {
+            "zh": "Cloudflare Radar在2026/2量到ML-KEM金鑰交換佔全球HTTP請求51.04%，一年前是24.55%；4月的彙整聲稱人類流量已超過65%，口徑不同不可直接相加。同期一份涵蓋32,011個網域的量測研究則說，憑證驗章「仍然完全是古典的」，而且沒有任何公開根CA簽發過能接進主要信任庫的ML-DSA根憑證。原因是尺寸：ML-DSA-44簽章約2,420位元組，ECDSA P-256約64位元組，差約38倍；一條完整的ML-DSA-44憑證鏈約14,724位元組，而今日一次握手的驗證資料約1,248位元組，推估全後量子握手會落在15至30KB。draft-ietf-tls-mldsa到2026/5仍在工作組最後徵求階段。微軟倒是在2026/5讓Windows Server 2025的AD CS正式支援ML-DSA——那是私有PKI，不是公開網路。",
+            "en": "Cloudflare Radar measured ML-KEM key exchange at 51.04% of global HTTP requests in 2026/2, up from 24.55% a year earlier; April summaries claim over 65% of human traffic, on a different basis that cannot simply be added. A measurement study covering 32,011 domains over the same period found certificate-based authentication 'remains entirely classical', and no public root CA has issued an ML-DSA root that chains into a major trust store. The cause is size: an ML-DSA-44 signature runs about 2,420 bytes against roughly 64 for ECDSA P-256, about 38x; a full ML-DSA-44 chain reaches about 14,724 bytes against roughly 1,248 bytes of authentication data in a handshake today, with fully post-quantum handshakes estimated at 15-30KB. draft-ietf-tls-mldsa was still in working group last call as of 2026/5. Microsoft did ship ML-DSA support in AD CS on Windows Server 2025 in 2026/5 — private PKI, not the public web."
+          },
+          "implication": {
+            "zh": "對你做威脅獵捕與provenance graph研究，這個順序剛好是最壞的一種。已經遷移的是連線保密，它的失效方向是向前——對手解開的是舊流量，傷害一次結清；沒有遷移的是驗章，它的失效方向是向後——一枚偽造的簽章在事後與真品無法區分，而被簽的那個物件會繼續存在於供應鏈裡。provenance graph的每一條邊最終都掛在某一條簽章鏈上，所以「保密先走、驗章後走」等於先修好你不靠的那一半。帶進決策者對話的一句話：當有人用『我們的PQC遷移進度已達X%』來證明準備度，先問那個百分比量的是KEM還是簽章——11/1報告記錄的GAO三項功課（盤點、經費、實測）全部沒有把兩者分開計算。",
+            "en": "For threat hunting and provenance research this is the worst possible order. What migrated is session confidentiality, which fails forward: an adversary decrypts old traffic and the damage settles once. What did not migrate is authenticity, which fails backward: a forged signature is retroactively indistinguishable from a real one, and the signed artifact stays in the supply chain. Every edge in a provenance graph ultimately hangs off a signature chain, so migrating confidentiality first means fixing the half you do not depend on. The line to carry into a conversation with a decision-maker: when someone cites 'our PQC migration is X% complete', ask whether that percentage counts KEMs or signatures — the three GAO practices logged in the 11/1 report (inventory, funding, testing) do not separate them."
+          },
+          "counterpoint": {
+            "zh": "反方很強：CNSA 2.0偏偏把軟體與韌體簽章排在所有類別的最前面——2025年起支援與優先、2030年起排他，用的是SP 800-208的LMS與XMSS（且只核可單樹版本）。也就是說，美國國安體系早就判斷簽章比保密更急，並據此排序。如果這條軌道如期鋪完，「驗章沒在遷移」就只對商用公開網路成立，不是結構性現象，本條的推論強度要大幅下修。",
+            "en": "The counter-case is strong: CNSA 2.0 puts software and firmware signing ahead of every other category — support and prefer from 2025, exclusive from 2030, using LMS and XMSS under SP 800-208 (single-tree variants only). US national-security planners already concluded signatures are the more urgent half and sequenced accordingly. If that track delivers on time, 'authentication is not migrating' is true only of the commercial public web, not structurally, and this item's inference weakens sharply."
+          },
+          "source": "Cloudflare Radar、arXiv 2606.16473 網際網路後量子準備度量測研究、IETF draft-ietf-tls-mldsa（搜尋層彙整）",
+          "url": "https://radar.cloudflare.com/post-quantum",
+          "terms": [
+            "PQC",
+            "ML-KEM",
+            "ML-DSA",
+            "KEM",
+            "CNSA 2.0",
+            "LMS",
+            "WebPKI",
+            "provenance graph"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cyber",
+      "items": [
+        {
+          "severity": "critical",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "中國自主後量子演算法第一輪在公開評估裡被拆開：20份可重現的驗證包、14項設計層級缺陷、Shuttle與BiT-768遭完整金鑰還原、Origami只憑公鑰就能通用偽造",
+            "en": "China's sovereign post-quantum round one came apart in public review: 20 reproducible verification packages, 14 design-level findings, full key recovery on Shuttle and BiT-768, and a public-key-only universal forgery on Origami"
+          },
+          "summary": {
+            "zh": "商用密碼標準研究院（ICCS）於9/20公布新一代商用密碼演算法徵集（NGCC）第一輪119個候選：34個數位簽章、41個KEM、9個金鑰交換、35個雜湊；公鑰類提案6/30截止。公開評估開始後數日內湧出逾百筆發現。本站直接讀取的驗證倉庫acprk/ngcc-round1-cryptanalysis收錄20份獨立可重建的攻擊包，多數對應ePrint 2026/2232（中國科學院Xiong與Wang，9/28），攻擊只讀公開輸入、不轉散提案方程式碼、在104核心251GB機器上計時。其中14份屬設計層級：Shuttle（768/1536/3072）與BiT-768完整金鑰還原並附可接受的偽造；Origami被指出只憑公鑰的通用偽造；LoongKEM與CheetahKEM的IND-CPA破解（約2^77至2^208與約2^53.4）；Polar-KEM無金鑰解封裝；Facto-DSA、Chinith、FlexTree、OPS-SIG各有偽造或挑戰空間遠低於宣稱值的問題；Weaver的W-1024實際失敗率約2^-45.5至2^-47.5，提案宣稱2^-231.7。所有候選都尚未標準化、尚未部署，沒有任何生產系統受影響。本站未查到ICCS對此的官方回應。",
+            "en": "The Institute of Commercial Cryptography Standards (ICCS) published 119 round-1 candidates for its Next-generation Commercial Cryptographic Algorithms programme on 9/20: 34 signatures, 41 KEMs, 9 key exchanges, 35 hashes, with public-key submissions closing 6/30. Public review produced over a hundred findings within days. A verification repository this site fetched and read directly, acprk/ngcc-round1-cryptanalysis, carries 20 independently buildable attack packages, most accompanying ePrint 2026/2232 (Xiong and Wang, Chinese Academy of Sciences, 9/28); attacks read only public inputs, redistribute no submitter code, and were timed on a 104-core, 251GB machine. Fourteen are design-level: full key recovery with accepted forgery on Shuttle (768/1536/3072) and BiT-768; a public-key-only universal forgery on Origami; IND-CPA breaks on LoongKEM (about 2^77 to 2^208) and CheetahKEM (about 2^53.4); keyless decapsulation on Polar-KEM; forgeries or badly undersized challenge spaces on Facto-DSA, Chinith, FlexTree and OPS-SIG; and a real failure rate on Weaver's W-1024 of about 2^-45.5 to 2^-47.5 against a claimed 2^-231.7. None of the candidates is standardised or deployed, so no production system is affected. This site found no official ICCS response."
+          },
+          "implication": {
+            "zh": "這條讓一項既有判斷直接失效。9/28週報與10/2月報把技術主權當成政治意志加產業能量的函數——稀土名冊那個案子確實是這樣。NGCC是反例：一次主權動作，而它的約束條件是主辦國無法安排、無法喊停的公開對抗性審查。具體被作廢的是「中國會在西方期限咬下來之前先有一套平行的後量子標準」這個工作假設：第一輪原訂2027年中結束、標準約在2029年，這種程度的第一輪傷亡只會把時間往後推。推論是：請把「2030年前出現密碼雙陣營」從你的情境集裡刪掉。在EO 14412的2030／2031與NIST的2035這整個窗口裡，中國可外銷的產品絕大多數仍會跑NIST演算法，而真正的分叉若發生，只會發生在2030年之後、而且只在中國境內那一層。這也是你跟外國決策者談「標準脫鉤」時最該先校正的一個時間感。",
+            "en": "This invalidates a standing judgement. The 9/28 weekly and 10/2 monthly treated technological sovereignty as a function of political will plus industrial capacity — true of the rare-earth registry case. NGCC is the counterexample: a sovereignty move whose binding constraint is adversarial public review the sponsoring state can neither stage-manage nor stop. What specifically dies is the working assumption that a parallel Chinese post-quantum standard will exist before the Western deadline stack bites. Round 1 was targeted to close around mid-2027 with standards near 2029; this much round-1 attrition pushes that later, not earlier. So delete 'two cryptographic blocs before 2030' from your scenario set. Across the whole EO 14412 window of 2030/2031 and NIST's 2035, most exportable Chinese product will still run NIST algorithms, and any real fork happens after 2030 and only in the domestic stack. This is the first thing to correct when you discuss standards decoupling with a foreign official."
+          },
+          "source": "GitHub acprk/ngcc-round1-cryptanalysis README（本站直接讀取）、ePrint 2026/2232（Xiong & Wang, 中國科學院）",
+          "url": "https://github.com/acprk/ngcc-round1-cryptanalysis",
+          "terms": [
+            "NGCC",
+            "ICCS",
+            "PQC",
+            "KEM",
+            "IND-CPA",
+            "Universal Forgery"
+          ]
+        },
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "真正卡住遷移的不是選哪個演算法，是沒人知道自己有哪些密碼：GAO查24個聯邦機關，完成加密盤點的只有1個、在自家環境實測過PQC的是0個",
+            "en": "The bottleneck is not algorithm choice but not knowing what cryptography you have: of 24 federal agencies GAO reviewed, one had completed a cryptographic inventory and none had tested PQC in its own environment"
+          },
+          "summary": {
+            "zh": "GAO-27-108740於10/6公開（敏感版完成於2025年9月，部分內容仍被機關認定敏感而保留）。24個CFO Act聯邦機關沒有一個完整達成三項前置功課：盤點易受量子威脅的密碼、估算轉換經費、在自身環境測試後量子演算法。對照OMB M-23-02的要求，24份盤點中完整的只有1份；抽查的6個機關沒有一個完全通過準確性檢驗；沒有一個完整評估過優先系統的轉換經費；沒有一個在自家環境實測過PQC。敏感版對23個機關提出89項建議，12個機關同意、2個部分同意。GAO把成因歸到密碼學專業人力不足，以及缺乏建立盤點與推估經費的制度流程。11/1報告已把這份報告登錄為OMB M-26-15在10/22繳交期限前的悲觀基準線。",
+            "en": "GAO-27-108740 was publicly released on 10/6; the sensitive version dates to September 2025 and parts remain withheld at agency request. None of the 24 CFO Act agencies fully addressed the three preparatory practices: inventorying quantum-vulnerable cryptography, estimating transition funding, and testing post-quantum algorithms in their own environments. Measured against OMB M-23-02, one of 24 inventories was complete; of six sampled agencies none fully met the accuracy test; none fully assessed funding for priority systems; none had tested PQC in its own environment. The sensitive version made 89 recommendations to 23 agencies, with 12 agreeing and 2 partially agreeing. GAO attributed the gaps to insufficient cryptographic expertise and to missing processes for building inventories and estimating funding. The 11/1 report already logged this as the pessimistic baseline going into the OMB M-26-15 plan deadline of 10/22."
+          },
+          "implication": {
+            "zh": "可以直接帶走的機制句：後量子遷移的約束條件是密碼物料清單，而CBOM是一個發現問題，不是一個採購問題——你買不到它，而GAO點名的那項稀缺投入（密碼學專業人力）的生產週期以年計。這解釋了為什麼錢到位、期限照樣跳票。對你自己的獵捕實務，可轉用的檢定就是11/1報告畫出來的那條：「有沒有交計畫」和「有沒有完成盤點」是兩個獨立變數，只有後者對2030或2031能不能達標有預測力。順帶一提，這條檢定在你評估任何一家台廠的PQC準備度時完全通用——問對方要CBOM，不要路徑圖簡報。",
+            "en": "The mechanism sentence worth taking away: the binding constraint on post-quantum migration is the cryptographic bill of materials, and a CBOM is a discovery problem, not a procurement problem. You cannot buy one, and the scarce input GAO names — cryptographic expertise — has a multi-year production time. That is why deadlines slip even after money arrives. For your own hunting practice the transferable test is the one drawn in the 11/1 report: 'submitted a plan' and 'completed an inventory' are independent variables, and only the second predicts whether a 2030 or 2031 date will be met. The same test works on any Taiwanese vendor's claimed PQC readiness: ask for the CBOM, not the roadmap deck."
+          },
+          "counterpoint": {
+            "zh": "整套急迫性建立在「先竊後解」上，而這個前提比政策文字暗示的弱。Peter Gutmann等人指出，至今沒有公開證據顯示有人正在為了未來的量子解密而儲存特定密文，而有案可查的大規模攔截行動主要是靠憑證竊取資料，不是囤積密文；顧問業的版本則說風險真正成立之處在長壽機密與金鑰、信任或復原路徑的交集，不是單純的密文被錄。若先竊後解是一個有根據的推論而非已觀察的事實，那麼10/5週報關於KEV與EPSS失去預測力的論點在這裡同樣適用：一個排擠已知在野漏洞修補資源的盤點計畫，本身就是錯置，而GAO這張成績單衡量的是一條前提尚未證實的期限的達成率。",
+            "en": "The whole urgency rests on harvest-now-decrypt-later, and that premise is weaker than policy language implies. Peter Gutmann and others note there is no public evidence that specific ciphertext is being stored today for future quantum decryption, and that the large bulk-interception campaigns on record were credential-enabled data theft rather than ciphertext hoarding; the consultancy version is that the risk bites where long-lived secrets intersect a key, trust or recovery path, not merely where ciphertext was captured. If HNDL is a well-founded inference rather than an observed fact, the 10/5 weekly's argument about KEV and EPSS losing predictive power applies here too: an inventory programme that crowds out known-exploited-vulnerability remediation is a misallocation, and the GAO scorecard is grading compliance with a deadline whose basis is itself an assumption."
+          },
+          "source": "GAO-27-108740、The Quantum Insider、eWeek（搜尋層彙整；gao.gov本期無法連線）",
+          "url": "https://thequantuminsider.com/2026/10/07/federal-quantum-readiness-falls-short-as-agencies-face-cryptography-skills-gaps/",
+          "terms": [
+            "GAO",
+            "PQC",
+            "CBOM",
+            "Harvest Now, Decrypt Later",
+            "OMB",
+            "KEV",
+            "Crypto-Agility"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "WebPKI為了塞不下的簽章正在改掉信任模型：Let's Encrypt與Chrome選了Merkle Tree Certificates，736位元組的包含證明取代14.7KB的憑證鏈——代價是驗證方從此要「夠新」才驗得動",
+            "en": "The WebPKI is changing its trust model because the signatures do not fit: Let's Encrypt and Chrome chose Merkle Tree Certificates, swapping a 14.7KB chain for a 736-byte inclusion proof — at the price of verifiers needing to be fresh"
+          },
+          "summary": {
+            "zh": "draft-ietf-plants-merkle-tree-certs的做法是讓CA不再逐張簽憑證，而是對一棵代表數百萬張憑證的樹簽一次樹根，握手時送出的是包含證明；草案估包含證明約736位元組（以每小時一個landmark計），並描述一種完全不用簽章的選用模式，代價是只對資料夠新的依賴方成立。Let's Encrypt於6/3公布後量子路線圖並選定MTC，staging環境原訂2026年底、production在2027。Google明確表示不會把後量子簽章塞進傳統X.509公開憑證，Chrome偏好MTC。較成熟的替代方案是把古典與後量子簽章綁在一起的composite憑證，已接近在IETF LAMPS成為RFC。尺寸估計各家不一：有來源把MTC憑證算成4.5KB對比ECDSA的544位元組，因為它把公鑰也算進去，與草案只算證明的736位元組不可直接比較。",
+            "en": "draft-ietf-plants-merkle-tree-certs has the CA stop signing certificates one by one and instead sign a single tree head representing potentially millions of them, shipping an inclusion proof in the handshake. The draft estimates roughly 736 bytes for the proof on hourly landmarks, and describes an optional mode with no signatures at all, which only works for up-to-date relying parties. Let's Encrypt published its post-quantum roadmap on 6/3 and named MTC as its path, with a staging environment targeted for late 2026 and production in 2027. Google has said it will not put post-quantum signatures into traditional X.509 public certificates and Chrome prefers MTC. The more mature alternative is composite certificates bundling classical and post-quantum signatures, nearing RFC status in IETF LAMPS. Size estimates differ: one source puts MTC certificates at 4.5KB against 544 bytes for ECDSA because it counts the public key, which is not comparable to the draft's proof-only 736 bytes."
+          },
+          "implication": {
+            "zh": "兩個二階效應值得你記下來。一，新鮮度變成信任的一部分：MTC的驗證方需要夠新的樹根資料，所以離線、氣隙、長期休眠的驗證方會掉到備援路徑——而那正好是鑑識分析與OT環境的常態。對威脅獵捕來說這是一種新的失效模式：「因為驗證方離線所以驗不了」從此是一件會發生的事，而且它在日誌裡乍看與「驗證失敗」難以區分，你的偵測規則要能分開這兩者。二，把數百萬張憑證收攏到一次CA簽名之下，等於在重發信任根的同時把它重新集中——誰營運那些樹、哪些瀏覽器要求它，權力就落在誰身上。這是8/24週報關於Tier-0資產不把證據送出機外那條線的延伸：信任鏈正在往更少、更不透明的節點收斂。",
+            "en": "Two second-order effects worth recording. First, freshness becomes part of trust: an MTC verifier needs a reasonably current tree head, so offline, air-gapped and long-dormant verifiers fall back — which is the normal condition for forensic analysis and OT. For threat hunting that is a new failure mode: 'could not verify because the verifier was offline' is now a thing, and in logs it looks much like 'verification failed', so detection rules have to separate them. Second, collapsing millions of certificates under one CA signature re-centralises the root of trust at the same moment it is being re-issued — power lands with whoever operates the trees and whichever browsers require them. This extends the 8/24 weekly's line about Tier-0 assets that never send evidence off-box: trust chains are converging on fewer and less transparent nodes."
+          },
+          "counterpoint": {
+            "zh": "composite／hybrid憑證可能就這樣把負載吸收掉，讓MTC停在小眾；MTC本身也設計了回落到傳統憑證的路徑，所以那個新鮮度依賴有可能永遠不會變成承重結構。再者握手尺寸有一部分是QUIC放大限制與初始擁塞視窗的問題，加大初始視窗與憑證快取類擴充就能緩解，不必動到信任模型。若這條成立，本條描述的「信任多一個時間維度」會是一個被繞過的假設性風險，而不是即將到來的現實。",
+            "en": "Composite and hybrid certificates may simply absorb the load and leave MTC niche; MTC is itself designed with a fallback to traditional certificates, so the freshness dependency may never become load-bearing. And handshake size is partly a QUIC amplification and initial-congestion-window problem that larger initial windows and cached-certificate extensions can blunt without touching the trust model. If that holds, the 'trust gains a time dimension' claim here is a hypothetical risk that gets engineered around rather than an approaching reality."
+          },
+          "source": "IETF draft-ietf-plants-merkle-tree-certs、Let's Encrypt後量子路線圖（搜尋層彙整；ietf.org本期無法連線）",
+          "url": "https://letsencrypt.org/2026/06/03/pq-certs",
+          "terms": [
+            "MTC",
+            "WebPKI",
+            "ML-DSA",
+            "PQC",
+            "Root of Trust",
+            "Tier-0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geo",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "這一組期限不是資安日程，是採購日程：EO 14412把2030保密／2031驗章綁上聯邦合約，CNSA 2.0讓1/1起的國安系統新採購預設須合規——資策會點名台灣網通設備是第一個撞線的",
+            "en": "This stack of deadlines is a procurement calendar, not a security one: EO 14412 binds federal contracts to 2030 for encryption and 2031 for authentication, CNSA 2.0 makes compliance the default for national-security acquisitions from 1/1 — and III names Taiwan's networking gear as first to hit the line"
+          },
+          "summary": {
+            "zh": "EO 14412〈Securing the Nation Against Advanced Cryptographic Attacks〉6/22簽署、6/25刊於聯邦公報；據報設定聯邦機關最敏感系統的後量子加密期限在2030年底、後量子驗章在2031年底，且承包商適用同一時間表。NSA的CNSA 2.0讓國安系統新採購自1/1起預設須符合，網通設備2030年起排他、作業系統2033年；軟韌體簽章則是最早的一格，2025年支援、2030年排他。NIST IR 8547據報於10/27定稿，把P-256等128位元強度以上參數一併拉進2030年後棄用、2035年後禁用（草案版原本只棄用112位元參數）——但另有來源稱它仍是草案，本站無法查核原文。歐盟方面，NIS合作組2025/6/23的協調路徑圖要求成員國在12/31前備妥國家路徑圖並啟動高中風險試點，高風險系統2030年底、其餘2035年。台灣方面，數發部數位產業署2025年偕後量子資安產業聯盟發布首版遷移指引（資策會制定），資策會資安所同時示警2027年起資通訊產品外銷可能受限，網通設備因涉及資料交換傳輸最先受衝擊，其次是晶片與憑證簽章方案。",
+            "en": "EO 14412, 'Securing the Nation Against Advanced Cryptographic Attacks', was signed 6/22 and published in the Federal Register on 6/25; it reportedly sets end-2030 for post-quantum encryption of the most sensitive federal systems and end-2031 for post-quantum authentication, with contractors held to the same timetable. NSA's CNSA 2.0 makes compliance the default for new national-security-system acquisitions from 1/1, with networking equipment exclusive from 2030 and operating systems from 2033; software and firmware signing sits in the earliest slot, support from 2025 and exclusive from 2030. NIST IR 8547 reportedly went final on 10/27, pulling P-256 and other parameters at 128-bit strength and above into post-2030 deprecation and post-2035 disallowance, where the draft had deprecated only 112-bit parameters — though another source still calls it a draft and this site could not reach the original. In the EU, the NIS Cooperation Group's coordinated roadmap of 2025/6/23 requires member states to have national roadmaps and high- and medium-risk pilots under way by 12/31, high-risk systems by end-2030 and the rest by 2035. In Taiwan, the Administration for Digital Industries and the PQC Cybersecurity Industry Alliance published the first migration guideline in 2025, written by III, whose cybersecurity institute warned that ICT exports could face restrictions from 2027 — networking equipment first because it handles data exchange and transport, then chips and certificate and signature products."
+          },
+          "implication": {
+            "zh": "帶進高階對談的機制是這一句：密碼學已經被改造成一種市場准入工具，形狀跟出口管制一模一樣——一個日期、一張合規清單、一個採購預設值。9/28週報說稀土許可制真正的產物是一張名冊而不是一道禁運；這是帳本另一側的鏡像，美國產出的是一張合規清單，而強制力來自採購單不是制裁令。對你做台股量化的操作意義：這是一個有明確起跑日（1/1）、橫跨十年的硬體汰換驅動因子，收貨端是網通設備、安全元件、MCU與HSM、憑證簽章方案；輸家是把密碼固化在無法重燒的矽裡的供應商，因為他們面對的不是升級成本，是整批產品失去可售市場。要留意的風險是：本條的所有日期都來自轉述，EO 14412與IR 8547的原文本站都讀不到。",
+            "en": "The mechanism to carry into a senior-level conversation: cryptography has been converted into a market-access instrument with exactly the shape of export control — a date, a conformance list, and a procurement default. The 9/28 weekly argued that what rare-earth licensing really produces is a registry rather than an embargo; this is the mirror image on the other side of the ledger, where the US produces a conformance list and the binding force is a purchase order rather than a sanction. For Taiwan equity work: this is a dated, decade-long hardware refresh driver starting 1/1, with networking gear, secure elements, MCUs and HSMs, and certificate and signature products on the receiving end. The losers are vendors whose cryptography is fused into silicon that cannot be re-flashed, because what they face is not an upgrade cost but the loss of a sellable market. The caveat: every date here is second-hand, and this site could reach neither the EO 14412 text nor IR 8547."
+          },
+          "source": "EO 14412（白宮PDF）、NSA CNSA 2.0、NIST IR 8547、EU NIS合作組路徑圖、資策會／數位產業署（搜尋層彙整）",
+          "url": "https://www.whitehouse.gov/wp-content/uploads/2026/06/eo-14412.pdf",
+          "terms": [
+            "EO 14412",
+            "CNSA 2.0",
+            "NIST IR 8547",
+            "NSS",
+            "PQC",
+            "PQC-CIA",
+            "CRQC"
+          ]
+        }
+      ]
+    }
+  ],
+  "narrative": {
+    "zh": "**上期推演校準**\n\n10/26週報五條指標，無一被乾淨推翻。1/1再保換約季未到期。JWC未把台灣周邊列入新的JWLA，灰色地帶的定價期尚未結束。英航11/3單日一班復飛的安排到10/25仍維持，漢莎已延到11/18——方法論不變，追排班不追宣布。H.R.7873查無委員會動作。台灣14天存量這條被加強並第一次有了數字：審計部估2025至2027年為10.6、9.8、11.4天，法定值11、11、14，第三年差距最大；中油稱2027必達標，經濟部則承認三接等執照、四接土汙、五接延誤。要認的是上期框架太窄：我把「紙比實體更早關門」寫成保險業特有現象，它其實是通用機制，本期就是它的密碼學版本——而那張紙叫採購期限。\n\n**問題是什麼**\n\n後量子遷移被講成一場追趕量子電腦的倒數，於是所有人去爭一個沒人能回答的日期，卻遮住真正在發生的事：四十年來第一次，全世界要把信任根整組重新發一次，而順序、誰發、誰能擠進來全部可爭奪。這個秋天的事實顯示，篩選機制不是量子硬體，是公開密碼分析與採購日期。\n\n**機制怎麼運作**\n\n第一層，遷移是兩個速度差極大的時鐘。保密靠KEM、驗章靠簽章。ML-KEM輸出小，直接塞進既有TLS握手就走掉了一半以上；ML-DSA-44簽章約2,420位元組是ECDSA P-256的38倍，完整憑證鏈從約1,248位元組膨脹到約14,724，撞上握手放大限制，一步都沒走。兩個時鐘的差距不是政策，是封包大小。真正的期限由莫斯卡不等式給出：保密年限加遷移年限若大於CRQC還有幾年，你已經遲到；對二十五年期的機密，窗口早在任何Q-Day估計之前就關了。\n\n第二層，因為簽章塞不下，解法是換信任模型而非換演算法。MTC讓CA只簽一棵樹的樹根，握手送約736位元組的包含證明；驗章從自足的密碼運算變成需要新鮮度的查詢，信任多了一個時間維度——而離線、氣隙、長期休眠的驗證方，正是鑑識與OT的常態。\n\n第三層，誰能把演算法送進這次重發，由公開對抗性評估決定，不由主權意志決定。這是本期最硬的證據，也是中國這個秋天撞上的牆。\n\n**證據**\n\nICCS於9/20公布NGCC第一輪119個候選，公開評估數日內湧出逾百筆發現。本站直接讀取的驗證倉庫acprk/ngcc-round1-cryptanalysis收了20份可獨立重建的攻擊包，多數對應ePrint 2026/2232（中科院Xiong與Wang，9/28），14份屬設計層級：Shuttle與BiT-768完整金鑰還原、Origami只憑公鑰的通用偽造、LoongKEM與CheetahKEM的IND-CPA破解、Weaver的W-1024實際失敗率約2^-45.5對比宣稱的2^-231.7。誠實標註：候選尚未標準化部署，無生產系統受影響；而「104筆／3天」與「191筆／89候選／7天」兩組轉述數字互不一致。另一側，Cloudflare在2026/2量到ML-KEM佔全球HTTP請求51.04%（一年前24.55%），同期一份涵蓋32,011網域的研究說憑證驗章「仍然完全是古典的」。採購側：EO 14412綁定2030年底保密與2031年底驗章，CNSA 2.0讓國安系統新採購自1/1起預設須合規，NIST IR 8547據報10/27定稿，歐盟要求成員國12/31前備妥國家路徑圖。GAO-27-108740（10/6公開）給了執行面的底：24個機關三項功課無一全做到，完成盤點的1個、自家實測PQC的0個。\n\n**各方自己怎麼說**\n\n華府：標準是我們定的、我們按表走。值得注意的是CNSA 2.0把軟韌體簽章排在所有類別最前面，用SP 800-208的LMS與XMSS——這個排序本身就是一句話：國安體系判斷會被偽造比會被解密更要命。它最不願被追問的是GAO那張表。北京：密碼主權，而且是公開的。ICCS不只辦NGCC，還把計畫帶上IETF 125的SAAG議程，那是求正當性不是閉門造車；它的具體怨言是NIST流程由美國政府主導，Dual_EC_DRBG的前例讓「用別人的演算法」在中國是主權問題而非技術問題。但第一輪也誠實回答了另一件事：公開徵求意味著公開挨打，而它選了公開。布魯塞爾：協調一致、而且要能自己實作；它基本接受NIST那套演算法，焦慮在實作與供應鏈都握在美國廠商手上。台北：跟上，而且這是產業機會。台灣沒有自己的演算法標準也不打算有，代價是時間表由華府訂，紅利是供應鏈站在汰換潮的收貨端。三方最在意對方的點：華府要北京承認NIST就是事實標準；北京要證明不用NIST也走得通，而第一輪讓這個證明變貴；布魯塞爾兩邊都接受、兩邊都不想依賴，所以賭實作層。台北唯一能講的是供應鏈，而那恰好是三方都需要的。\n\n**未來 3–6 個月的推演與觀察指標**\n\n主判斷：真實進度不會出現在演算法新聞裡，會出現在簽發行為、名單長度與標案文字。一、ICCS是否公開回應第一輪破解，以及第二輪公鑰候選從84個剩幾個——掉到個位數，中國國家標準落在2029年之後幾乎確定。二、是否有公開根CA在2027年第一季前簽出能接進主要信任庫的PQ根；Let's Encrypt的MTC staging原訂今年底，若如期出現，本期「驗章仍是零」半年內就過期。三、歐盟成員國12/31的交件率，本期唯一有明確到期日又會被公開統計的指標。四、CNSA 2.0的1/1採購預設上路後第一批被擋下的產品類別——資策會押網通設備，可用台廠法說會與美方標案文字交叉驗證。五、第一起公開歸因的簽章鏈偽造：不是量子攻擊，是趁遷移期憑證治理混亂（雙簽、過渡根、臨時例外）而成功的傳統偽造。\n\n**我可能錯在哪**\n\n第一也最重：我把「驗章沒遷移」當成結構性落後，但CNSA 2.0偏偏把軟韌體簽章排在最前面。若國安那條軌道真在2030年前把LMS／XMSS鋪完，今天的不對稱就只是商用網際網路的暫時現象，我據此推出的「provenance靠的那一半被留在後面」會降級成市場觀察。這條我沒有材料壓過去。第二，NGCC那節引用的全是攻擊方材料，ICCS尚未回應；對照組是NIST自己——2017年第一輪69個候選最後剩4個，SIKE與Rainbow都是被公開打掉的。候選被打掉是公開評估正常運作的樣子，不是失敗的樣子；拿傷亡率當中國密碼能力的指標是過度解讀，站得住的只有時間表那一句。第三，急迫性建立在先竊後解上，而這個前提比政策文字弱：Gutmann等人指出至今沒有公開證據顯示有人正為未來的量子解密儲存特定密文。若成立，本期「遷移順序錯了」要改寫成「整個遷移的優先級都該往後排」，而10/5週報關於KEV失去預測力的論點會反過來打我。第四，量子硬體那組數字引用得太輕：72,000物理量子位元／3.7天來自單一廠商的架構分析而非實機。第五是老問題，連續第五期：出網代理本期只放行github.com，gao.gov、whitehouse.gov、ietf.org、arxiv.org與eprint.iacr.org全部無法解析，所以唯一confirmed的是我直接讀到的那個倉庫，其餘全為likely，包括EO 14412的日期與IR 8547的定稿日——後者甚至有來源說它仍是草案。本期的具體日期請當成待查核。",
+    "en": "**Calibrating last week's forecasts**\n\nNone of the 10/26 weekly's five indicators was cleanly overturned. The 1/1 reinsurance renewal has not arrived. No new JWC circular lists waters near Taiwan, so the grey-zone pricing window stays open. British Airways was still scheduled on 10/25 to resume Riyadh on 11/3 at one reduced daily flight, while Lufthansa pushed its suspension to 11/18 — track schedules, not announcements. H.R.7873 has moved in no committee. On Taiwan's gas reserve the Audit Office now estimates 10.6, 9.8 and 11.4 days for 2025-2027 against a statutory 11, 11 and 14, the gap widest in the final year. What I got too narrow was the frame: I wrote \"the paper closes the door before the physical thing does\" as an insurance peculiarity. It is a general mechanism, and this week it appears in cryptography, where the paper is a procurement deadline.\n\n**The question**\n\nPost-quantum migration is sold as a countdown against a machine nobody can date, which sends everyone arguing about an unanswerable year. It hides what is happening: for the first time in forty years the world is re-issuing its entire root of trust, and the order, the issuer and who gets in are all contestable. This autumn's facts show the sorting mechanism is not quantum hardware. It is public cryptanalysis and purchase orders.\n\n**The mechanism**\n\nFirst, migration is two clocks running at very different speeds. Confidentiality rides on KEMs, authenticity on signatures. ML-KEM outputs drop into an existing TLS handshake, so more than half the web went quietly. An ML-DSA-44 signature is about 2,420 bytes against 64 for ECDSA P-256, and a full chain inflates from roughly 1,248 to roughly 14,724 bytes, colliding with handshake amplification limits — so it has not moved at all. The gap is not policy, it is packet size. The real deadline comes from Mosca's inequality: secrecy lifetime plus migration time against time-to-CRQC. For a 25-year secret that window shut before any Q-Day estimate.\n\nSecond, because the signatures do not fit, the fix is a new trust model rather than a new algorithm. Merkle Tree Certificates have the CA sign one tree head and ship a roughly 736-byte inclusion proof, turning verification from a self-contained operation into a query that needs freshness. Trust gains a time dimension — and offline, air-gapped and dormant verifiers are precisely the forensic and OT cases.\n\nThird, who gets into this re-issuance is decided by public adversarial review, not sovereign intent. That is the wall China hit this autumn.\n\n**The evidence**\n\nICCS published 119 NGCC round-1 candidates on 9/20, and public review produced over a hundred findings within days. A verification repository this site read directly, acprk/ngcc-round1-cryptanalysis, carries 20 independently buildable attack packages, most accompanying ePrint 2026/2232 (Xiong and Wang, Chinese Academy of Sciences, 9/28). Fourteen are design-level: full key recovery on Shuttle and BiT-768, a public-key-only universal forgery on Origami, IND-CPA breaks on LoongKEM and CheetahKEM, and a real failure rate on Weaver's W-1024 of about 2^-45.5 against a claimed 2^-231.7. Caveats: none is standardised or deployed, and the circulating totals of \"104 findings in three days\" and \"191 across 89 candidates in seven days\" do not reconcile. On the other side, Cloudflare measured ML-KEM at 51.04% of global HTTP requests in 2026/2 against 24.55% a year earlier, while a study of 32,011 domains found certificate authentication \"entirely classical\". On procurement: EO 14412 binds federal systems and contractors to end-2030 for encryption and end-2031 for authentication; CNSA 2.0 makes compliance the default for new national-security acquisitions from 1/1; NIST IR 8547 reportedly went final on 10/27; the EU wants national roadmaps by 12/31. GAO-27-108740 supplies the floor: of 24 agencies, one had completed a cryptographic inventory and none had tested PQC in its own environment.\n\n**How each side tells it**\n\nWashington says it writes the standard and is on schedule. Note that CNSA 2.0 puts software and firmware signing ahead of everything else, using LMS and XMSS under SP 800-208 — that ordering is an argument in itself: national-security planners judge forgery worse than decryption. The question Washington dislikes is the GAO scorecard. Beijing says cryptographic sovereignty, and says it in the open: ICCS took NGCC to the IETF 125 SAAG agenda, a bid for legitimacy rather than isolation. Its grievance is concrete — the NIST process is US-run, and Dual_EC_DRBG made using someone else's algorithms a sovereignty question rather than a technical one. Round one answered something else honestly: open submission means getting hit in the open, and Beijing chose open. Brussels says coordination plus implementation sovereignty; it broadly accepts the NIST algorithms and fears that implementation and supply chain sit with American vendors. Taipei says keep up and treat it as an industrial opening. Taiwan has no sovereign algorithm and wants none — the cost is that Washington sets its timetable, the benefit is that its supply chain sits on the receiving end of the refresh. What each wants from the other: Washington wants Beijing to concede NIST is the de facto standard; Beijing wants to prove it can do without, and round one made that proof expensive; Brussels accepts both and wants to depend on neither, so it bets on the implementation layer. Taipei's only card is the supply chain, which all three need.\n\n**What to watch, 3-6 months**\n\nReal progress will appear in issuance behaviour, list lengths and tender language. One: whether ICCS responds publicly, and how many of the 84 public-key candidates survive into round two — single digits puts Chinese national standards firmly past 2029. Two: whether any public root CA issues a post-quantum root into a major trust store before Q1 2027; Let's Encrypt's MTC staging was due this year, and if it lands, \"authentication is still at zero\" expires within six months. Three: the EU member-state filing rate on 12/31, the only dated and publicly counted indicator here. Four: which product category is blocked first once the CNSA 2.0 procurement default starts on 1/1 — III bets on networking gear, checkable against Taiwanese earnings calls and US tender language. Five: the first publicly attributed signature-chain forgery exploiting transition-era certificate governance (dual signing, interim roots, temporary exceptions) rather than a quantum computer.\n\n**Where I am most likely wrong**\n\nFirst and heaviest: I treat the authentication lag as structural, yet CNSA 2.0 deliberately puts firmware signing first. If that track delivers by 2030, today's asymmetry is a commercial-internet artifact and my claim that the provenance half was left behind drops to a market observation. I have no material to push back with. Second, the NGCC section cites only the attackers and ICCS has not responded; the control case is NIST's own first round, 69 candidates down to 4, with SIKE and Rainbow broken in public. Candidates breaking is what a working public process looks like, so reading attrition as a measure of Chinese capability is over-reading — the defensible claim is the schedule one. Third, the urgency rests on harvest-now-decrypt-later, and that premise is weaker than policy language implies: Gutmann and others note no public evidence that specific ciphertext is being stored today for future decryption. If so, my complaint that the order is wrong becomes a complaint that the whole programme is over-prioritised, and the 10/5 weekly's argument about KEV turns against me. Fourth, I cite the hardware numbers too lightly: 72,000 physical qubits in 3.7 days is one vendor's architectural analysis, not a machine. Fifth, the recurring procedural problem, fifth week running — the egress proxy allowed only github.com; gao.gov, whitehouse.gov, ietf.org, arxiv.org and eprint.iacr.org would not resolve. The one confirmed item is the repository I read directly; everything else is search-layer aggregation, including the EO 14412 dates and the IR 8547 finalisation, where sources disagree on whether it is final at all. Treat every date here as pending verification."
+  }
+}
