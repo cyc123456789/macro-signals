@@ -3377,6 +3377,105 @@
       },
       "category": "cyber",
       "first_seen": "2026-11-02"
+    },
+    {
+      "term": "AMPAC",
+      "zh": "美國太平洋公司（過氯酸銨供應商）",
+      "expansion": "American Pacific Corporation",
+      "def": {
+        "zh": "美國境內唯一的過氯酸銨(AP)生產商，固態火箭發動機推進劑的關鍵氧化劑來源，被視為美國飛彈產能整條供應鏈的單點故障；其第二條產線受限於認證程序而非資金，無法快速擴產。",
+        "en": "The sole U.S. producer of ammonium perchlorate, the key oxidizer for solid rocket motor propellant, widely treated as a single point of failure for the entire U.S. missile production chain; its second line is constrained by qualification procedures rather than funding."
+      },
+      "category": "military",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "Shahed",
+      "zh": "見證者系列無人機",
+      "expansion": "Shahed-series one-way attack drone",
+      "def": {
+        "zh": "伊朗設計的低成本單程攻擊無人機系列，單價估計約2萬至5萬美元，被胡塞武裝與俄軍大量使用；其成本與攔截它所需的防空飛彈（如一發約400萬美元的PAC-3）之間的巨大差距，是當前消耗戰的核心經濟機制。",
+        "en": "A family of Iranian-designed low-cost one-way attack drones estimated at $20,000-$50,000 each, used extensively by the Houthis and Russian forces; the gap between their cost and that of the interceptors needed to stop them (a PAC-3 at roughly $4m per round) is the core economic mechanism of the current attrition war."
+      },
+      "category": "military",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "CSIS",
+      "zh": "戰略暨國際研究中心",
+      "expansion": "Center for Strategic and International Studies",
+      "def": {
+        "zh": "美國華府的跨黨派國際政策智庫，其國防工業基礎與飛彈產能的估算（如PAC-3新約平均3.5年、THAAD逾4年）常被用作公開可查的產能前置期基準。",
+        "en": "A bipartisan Washington think tank on international policy whose estimates of the defense industrial base and missile production lead times (such as an average 3.5 years for new PAC-3 contracts and over four for THAAD) serve as publicly checkable benchmarks."
+      },
+      "category": "military",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "M365",
+      "zh": "微軟365",
+      "expansion": "Microsoft 365",
+      "def": {
+        "zh": "微軟的雲端辦公與身分服務套件；在多租戶供應鏈攻擊中，上游管理應用的憑證一旦外洩，可同時對大量下游M365租戶發起登入嘗試，是供應鏈橫向移動的主要落點。",
+        "en": "Microsoft's cloud productivity and identity suite; in multi-tenant supply-chain attacks, compromised credentials in an upstream management application allow simultaneous login attempts against large numbers of downstream M365 tenants, making it a principal landing point for supply-chain lateral movement."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "Entra",
+      "zh": "微軟Entra ID（原Azure AD）",
+      "expansion": "Microsoft Entra ID",
+      "def": {
+        "zh": "微軟的雲端身分與存取管理服務，前身為Azure Active Directory；租戶層級的鎖定、特權提升與應用程式憑證濫用，多在此留下可觀測的認證遙測。",
+        "en": "Microsoft's cloud identity and access management service, formerly Azure Active Directory; tenant-level lockouts, privilege escalation and application credential abuse leave their observable authentication telemetry here."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "Ivanti Connect Secure",
+      "zh": "Ivanti Connect Secure（SSL VPN閘道器）",
+      "expansion": "Ivanti Connect Secure SSL VPN Gateway",
+      "def": {
+        "zh": "企業常用的SSL VPN遠端存取閘道器，屬本站追蹤的Tier-0邊界設備類別；2026年10月被串連三個零時差打穿，攻擊者不留惡意程式樣本並竄改日誌，廠商自家完整性檢查工具無法偵測該攻擊鏈。",
+        "en": "A widely deployed enterprise SSL VPN remote-access gateway in the Tier-0 edge-device category this site tracks; in October 2026 it was breached through three chained zero-days, with the attacker leaving no malware samples, tampering with logs, and evading the vendor's own integrity checking tool."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "JWLA",
+      "zh": "聯合戰爭委員會列名區域通告",
+      "expansion": "Joint War Committee Listed Areas",
+      "def": {
+        "zh": "Joint War Committee定期發布的海域清單通告，列出被視為高戰爭風險的水域；船舶進入列名區域須事先通知承保人並另行議價。委員會本身不訂費率，但一經列名，市場立即重新報價，因此是航運風險定價的領先指標。",
+        "en": "The periodic circular issued by the Joint War Committee listing waters deemed high war risk; vessels entering a listed area must notify underwriters in advance and negotiate terms separately. The committee sets no rates itself, but a listing triggers immediate market repricing, making it a leading indicator of shipping risk pricing."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "LNG",
+      "zh": "液化天然氣",
+      "expansion": "Liquefied Natural Gas",
+      "def": {
+        "zh": "經冷卻液化以便海運的天然氣。對台灣而言是無陸上備援的能源項目——原油可經船對船轉運繞道，但來自卡達Ras Laffan的供應必須通過霍爾木茲海峽；台灣法定天然氣安全存量現行11天，2027年起才提高到14天。",
+        "en": "Natural gas cooled to liquid form for maritime transport. For Taiwan it is the energy exposure with no overland fallback: crude can be rerouted via ship-to-ship transfer, but supply from Qatar's Ras Laffan must pass through the Strait of Hormuz. Taiwan's statutory gas safety stock is currently 11 days, rising to 14 only from 2027."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "Kpler",
+      "zh": "Kpler（大宗商品與航運流量數據商）",
+      "expansion": "Kpler",
+      "def": {
+        "zh": "追蹤船舶動態與大宗商品貿易流量的商業數據供應商，其海峽通過航次與原油流量統計常被用來與官方「航道暢通」的說法交叉比對——兩者口徑不同，是判斷海運風險的重要對照組。",
+        "en": "A commercial data provider tracking vessel movements and commodity trade flows, whose strait transit counts and crude flow statistics are routinely used to cross-check official claims that a waterway remains open; the two measure different things, making the comparison essential to assessing maritime risk."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-02"
     }
   ]
 }

@@ -2,6 +2,15 @@
   "updated": "2026-11-02",
   "reports": [
     {
+      "file": "reports/2026-11-02-monthly.json",
+      "date": "2026-11-02",
+      "kind": "monthly",
+      "title": {
+        "zh": "十月全局：繞道失效的那個月——對手不再需要挑目標，而你手上每一件排序工具，都是「他必須挑」的衍生品",
+        "en": "October in One Frame: The Month Rerouting Stopped Working — the Adversary No Longer Has to Choose Targets, and Every Prioritization Tool You Own Is a Derivative of the Assumption That He Does"
+      }
+    },
+    {
       "file": "reports/2026-11-02-brief.json",
       "date": "2026-11-02",
       "kind": "brief",
