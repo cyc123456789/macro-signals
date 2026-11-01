@@ -1,6 +1,15 @@
 {
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "reports": [
+    {
+      "file": "reports/2026-11-02-brief.json",
+      "date": "2026-11-02",
+      "kind": "brief",
+      "title": {
+        "zh": "伊朗安全高層Mohsen Rezaei 10/31首度公開列出多項條件、稱荷姆茲將持續封閉且核談判無進展，卡在川普『選前不開戰』承諾11/3到期前最後48小時，同日Rubio證實川普『尚未決定』是否恢復轟炸；BIS關係企業規則與中國稀土出口管制暫停令同於11/10到期、川普對伊朗承諾11/3到期，三條『到期日即籌碼』倒數線9天內疊加；資安機構Dream揭露中國關聯駭客將PHP2Shell與Linux核心漏洞Fragnesia串鏈，藉中國測繪引擎FOFA批量定位，首次把攻破美國政府關聯環境列入戰果；CCW致命自主武器審查大會11/16-20登場前，歐盟首度正式呼籲授予『具雄心的談判授權』，方向上逆著9月GGE遭稀釋共識文件的慣性；中國另有一條獨立的鎵鍺銻出口禁令暫停令則延至11/27才到期，與11/10的主暫停令是兩條不同的線",
+        "en": "Iran's Mohsen Rezaei Publicly Lays Out Conditions for the First Time on 10/31, Saying Hormuz Stays Closed and Nuclear Talks Show No Progress — 48 Hours Before Trump's 'No War Before the Midterms' Pledge Expires on 11/3, the Same Day Rubio Confirms Trump 'Hasn't Made a Decision' on Resuming Strikes; BIS's Affiliates Rule and China's Rare-Earth Export-Control Suspension Both Expire 11/10, Stacking a Third 'Deadline-as-Leverage' Countdown Onto the Same Nine-Day Window as Trump's 11/3 Pledge; Security Firm Dream Discloses China-Linked Actors Chaining PHP2Shell With the Linux Kernel Flaw 'Fragnesia' via the Chinese Mapping Engine FOFA, Claiming a US Government-Affiliated Breach for the First Time; Ahead of the CCW's 11/16-20 Autonomous-Weapons Review Conference, the EU Formally Calls for an 'Ambitious Negotiating Mandate' — Running Against the Grain of September's Diluted GGE Consensus Document; China Separately Runs a Second, Unrelated Suspension on Its Gallium/Germanium/Antimony Export Ban That Doesn't Expire Until 11/27"
+      }
+    },
     {
       "file": "reports/2026-11-01-brief.json",
       "date": "2026-11-01",

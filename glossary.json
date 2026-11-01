@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "terms": [
     {
       "term": "AsyncOS",
@@ -3355,6 +3355,28 @@
       },
       "category": "geo",
       "first_seen": "2026-11-01"
+    },
+    {
+      "term": "Fragnesia",
+      "zh": "Fragnesia（Linux核心漏洞代號）",
+      "expansion": "Linux Kernel Privilege-Escalation Vulnerability (codename)",
+      "def": {
+        "zh": "資安研究機構Dream命名的一個Linux核心漏洞代號，在PHP2Shell攻擊鏈中被用來從web shell權限提升至root，使攻擊者取得防火牆裝置的完整控制權。",
+        "en": "A codename given by security research firm Dream to a Linux kernel vulnerability used to escalate from web-shell access to root in the PHP2Shell attack chain, giving attackers full control of affected firewall appliances."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
+    },
+    {
+      "term": "FOFA",
+      "zh": "FOFA（中國網路空間資產搜尋引擎）",
+      "expansion": "Focus On Future Applications (Chinese internet-asset search engine)",
+      "def": {
+        "zh": "中國的網路空間資產搜尋引擎，功能類似Shodan，可用IP位址、服務指紋等條件搜尋全球連網設備；在PHP2Shell攻擊鏈調查中被用來批量定位特定廠牌的曝險防火牆。",
+        "en": "A Chinese internet-asset search engine functionally similar to Shodan, used to query internet-facing devices by IP address, service fingerprint, and other criteria; in the PHP2Shell attack-chain investigation it was used to mass-identify exposed firewalls from a specific vendor."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-02"
     }
   ]
 }
