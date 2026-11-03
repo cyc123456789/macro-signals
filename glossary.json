@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-04",
   "terms": [
     {
       "term": "AsyncOS",
@@ -3696,6 +3696,50 @@
       },
       "category": "tech",
       "first_seen": "2026-11-02"
+    },
+    {
+      "term": "RQ-170",
+      "zh": "RQ-170哨兵式偵察機",
+      "expansion": "RQ-170 Sentinel",
+      "def": {
+        "zh": "美國空軍操作的匿蹤無人偵察機，主要用於高價值目標的情報蒐集與監視，曾在伊朗問題上多次成為雙方各說各話的焦點——伊朗屢次宣稱擊落或擄獲，美方多半否認或不予證實。",
+        "en": "A stealth unmanned reconnaissance aircraft operated by the US Air Force for high-value intelligence, surveillance and reconnaissance missions. It has repeatedly become a flashpoint of competing claims over Iran, with Tehran asserting shootdowns or captures that Washington usually denies or declines to confirm."
+      },
+      "category": "military",
+      "first_seen": "2026-11-04"
+    },
+    {
+      "term": "PortWatch",
+      "zh": "IMF港口監測系統",
+      "expansion": "IMF PortWatch",
+      "def": {
+        "zh": "國際貨幣基金組織維運的近即時港口與海上航運監測平台，透過AIS船舶自動識別系統數據追蹤全球港口與海峽的商船通行量，近期成為評估荷姆茲海峽航運是否實質癱瘓的參考資料之一。",
+        "en": "A near-real-time port and maritime-traffic monitoring platform run by the International Monetary Fund, using AIS vessel-tracking data to measure commercial transit volumes through global ports and chokepoints. It has become one of the reference datasets for assessing whether shipping through the Strait of Hormuz has effectively collapsed."
+      },
+      "category": "tech",
+      "first_seen": "2026-11-04"
+    },
+    {
+      "term": "CNI",
+      "zh": "關鍵國家基礎設施",
+      "expansion": "Critical National Infrastructure",
+      "def": {
+        "zh": "英國官方用語(對應美國的「關鍵基礎設施」)，指能源、水、金融、醫療等一旦遭破壞將嚴重衝擊國家運作的系統，是NCSC年度威脅評估的核心分類基礎。",
+        "en": "The UK's official term (paralleling the US's \"critical infrastructure\") for systems—energy, water, finance, healthcare—whose disruption would severely affect national life. It is the core classification NCSC's annual threat assessments are built around."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-04"
+    },
+    {
+      "term": "CEC",
+      "zh": "中央選舉委員會",
+      "expansion": "Central Election Commission",
+      "def": {
+        "zh": "台灣負責選舉與公民投票事務的獨立機關，掌管公投提案審查、辯論會安排與全國投票行政，是本站追蹤台灣選舉時程的主要官方資料來源。",
+        "en": "Taiwan's independent body overseeing elections and referendums, including reviewing referendum proposals, scheduling debates, and administering nationwide voting. It is this site's primary official source for tracking Taiwan's election calendar."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-04"
     }
   ]
 }

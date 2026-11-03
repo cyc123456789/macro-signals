@@ -1,6 +1,15 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-04",
   "reports": [
+    {
+      "file": "reports/2026-11-04-brief.json",
+      "date": "2026-11-04",
+      "kind": "brief",
+      "title": {
+        "zh": "美軍11/2對伊朗Qeshm島發動經官員定調為『防禦性』的空襲，同日副總統Vance稱對『談判解決方案』感到樂觀——卡在川普10/8報告記錄的『選前不開戰』承諾與11/3期中選舉同一天，伊朗安全高層Rezaei 11/3重申條件、媒體對條件數目仍各說各話；IMF PortWatch數據顯示荷姆茲海峽10/25商船通行量僅剩平常基準的2%，實質已形同關閉；英國NCSC年度報告11/3示警AI強化型勒索軟體『很可能』在2028年前打擊英國關鍵國家基礎設施、點名中國『意圖與能力兼具』；台灣中選會確認核能公投11/12-11/20五場電視辯論，與11/28九合一選舉同日登場；BIS關係企業規則11/10到期僅剩6天，Dechert法律簡報將基準情境從『預期展延』改判為『若無公報、依法彈回原狀』",
+        "en": "US Conducts 'Defensive' Strikes on Iran's Qeshm Island on 11/2, the Same Day VP Vance Says He's Optimistic About a 'Negotiated Settlement' — Landing on the Same Date as Both Trump's 10/8 'No War Before the Midterms' Pledge and Election Day Itself, as Iran's Rezaei Restates Conditions on 11/3 With Outlets Still Disagreeing on the Count; IMF PortWatch Data Shows Hormuz Commercial Transits Fell to Just 2% of Baseline on 10/25, a De Facto Closure; UK NCSC's Annual Report Warns on 11/3 That AI-Enabled Ransomware Is 'Highly Likely' to Hit UK Critical National Infrastructure by 2028, Naming China as Having Both Intent and Capability; Taiwan's CEC Confirms Five Televised Debates (11/12-11/20) on the Nuclear Referendum Set for the Same Day as the 11/28 Nine-in-One Elections; With Six Days Left Before the BIS Affiliates Rule's 11/10 Expiry, a Dechert Client Alert Shifts Its Base Case From 'Extension Expected' to 'Reimposition Remains the Default Absent a Federal Register Notice'"
+      }
+    },
     {
       "file": "reports/2026-11-02-weekly.json",
       "date": "2026-11-02",
