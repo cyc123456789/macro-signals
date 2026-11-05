@@ -1,6 +1,15 @@
 {
-  "updated": "2026-11-04",
+  "updated": "2026-11-06",
   "reports": [
+    {
+      "file": "reports/2026-11-06-brief.json",
+      "date": "2026-11-06",
+      "kind": "brief",
+      "title": {
+        "zh": "距11/10法定到期僅剩4天，BIS關係企業規則與中國稀土出口管制暫停令仍雙雙查無正式展延文件——查核範圍內最新一份法律提醒仍停在10/28；伊朗代表團11/1結束杜哈與卡達斡旋的會談、聚焦伊朗9月提出的『七步驟方案』，川普11/2仍公開稱海軍封鎖『完全有效』；NCC Group：第三季勒索軟體受害宣告季增23%、工業部門佔比最高；俄軍11/1一夜間癱瘓烏克蘭四州電網，距川普『能源停火』宣布僅三週，這是本站第三次記錄同一套停火完全沒有被遵守；GlobalFoundries與台積電10/8簽署20億美元五年期協議，首次把矽中介層產能實質搬進美國本土、卻要到2028上半年才能量產",
+        "en": "With Only 4 Days Left Before the 11/10 Statutory Deadline, Neither BIS's Affiliates Rule Nor China's Rare-Earth Export-Control Suspension Has a Formal Extension on Paper — the Newest Legal Alert Found Still Dates to 10/28; Iran's Delegation Wraps Up Qatar-Mediated Doha Talks on 11/1 Centered on Its September 'Seven-Step Proposal,' as Trump Says Publicly on 11/2 the Naval Blockade 'Remains in Full Force'; NCC Group Finds Q3 Ransomware Victim Claims Up 23% QoQ, With Industrial Firms the Largest Share; Russia Knocks Out Power Across Four Ukrainian Regions Overnight on 11/1, Just Three Weeks After Trump's 'Energy Ceasefire' — the Third Time This Site Has Logged That Same Truce Going Completely Unobserved; GlobalFoundries and TSMC's 10/8 Five-Year, $2 Billion Deal Brings Silicon-Interposer Capacity Onshore to the US for the First Time, Though Volume Production Won't Start Until H1 2028"
+      }
+    },
     {
       "file": "reports/2026-11-04-brief.json",
       "date": "2026-11-04",

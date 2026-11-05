@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04",
+  "updated": "2026-11-06",
   "terms": [
     {
       "term": "AsyncOS",
@@ -3740,6 +3740,17 @@
       },
       "category": "geo",
       "first_seen": "2026-11-04"
+    },
+    {
+      "term": "Interposer",
+      "zh": "矽中介層",
+      "expansion": "Silicon Interposer",
+      "def": {
+        "zh": "先進封裝中用來連接邏輯晶片（如GPU）與HBM記憶體堆疊的中介基板，透過其上密集的矽穿孔（TSV）與重佈線層讓兩種晶粒在同一封裝內高速互連；台積電CoWoS等2.5D封裝製程皆仰賴矽中介層，其產能長期集中於台灣，是AI伺服器供應鏈中除晶圓代工與記憶體本身之外的第三個關鍵瓶頸環節。",
+        "en": "An intermediate substrate in advanced packaging that links a logic die (such as a GPU) with stacked HBM memory, using dense through-silicon vias (TSV) and redistribution layers to connect the two dies at high speed within a single package. 2.5D packaging processes such as TSMC's CoWoS depend on silicon interposers, whose production capacity has long been concentrated in Taiwan, making it a third critical bottleneck in the AI-server supply chain alongside foundry capacity and memory itself."
+      },
+      "category": "tech",
+      "first_seen": "2026-11-06"
     }
   ]
 }
