@@ -1,0 +1,172 @@
+{
+  "date": "2026-11-08",
+  "kind": "brief",
+  "title": {
+    "zh": "美國商務部11/5提交最終規則，將BIS關係企業規則暫停令正式展延至1/10（11/9刊登聯邦公報，文號FR Doc. 2026-22793）——但中國對口的稀土出口管制暫停令，距同一個11/10到期日僅剩3天，查無MOFCOM對應公告；11/3期中選舉確定民主黨同時拿下參眾兩院，2027年1/3就職第120屆國會，重設本站追蹤的伊朗、俄羅斯制裁、台灣軍售三條『堆疊到期日』敘事背後的國會監督分母；ARTEX AI滲透工具攻擊面從金融業與MSP供應鏈，擴散到開發者平台WorkOS與Web3基礎設施商Chainstack；台灣海巡署10/31-11/1通報東部外海新型態騷擾巡邏與本年度第13次東沙驅離，距11/12-11/20公投辯論僅剩一到兩週；CCW《特定常規武器公約》11/16-20日內瓦大會登場之際，NSPM-11要求五角大廈90天內鬆綁自身自主武器政策的時間軸，讓『9月共識文件遭稀釋全因俄中阻撓』的單一歸因出現缺口",
+    "en": "US Commerce Files a Final Rule on 11/5 Formally Extending the BIS Affiliates Rule Suspension to 1/10 (Publishing in the Federal Register 11/9, FR Doc. 2026-22793) — But China's Parallel Rare-Earth Suspension Has No Matching MOFCOM Notice With Only 3 Days Left Before the Shared 11/10 Expiry; the 11/3 Midterms Confirm Democrats Win Both House and Senate, Seating the 120th Congress 1/3/2027 and Resetting the Oversight Denominator Behind This Site's Iran, Russia-Sanctions, and Taiwan-Arms Threads; ARTEX's AI-Pentesting Attack Surface Widens From Banks and MSPs to Developer Platform WorkOS and Web3 Infrastructure Provider Chainstack; Taiwan's Coast Guard Flags a New East-Coast Harassment Pattern and Its 13th Pratas Expulsion of the Year Just Before the 11/12-11/20 Referendum Debates; the CCW's 11/16-20 Geneva Conference on Lethal Autonomous Weapons Arrives as NSPM-11's Directive to Loosen the Pentagon's Own Autonomy Policy Complicates a Russia/China-Only Account of September's Diluted Text"
+  },
+  "focus": {
+    "zh": "本期涵蓋11/6-11/8。這個雲端環境的出網白名單這次又擋下了多個一手來源（聯邦公報官網、白宮NSPM-11原文、多家法律事務所官網），查核只能透過WebSearch摘要與多方獨立二手轉述交叉比對，已在各條的confidence與counterpoint中如實標註限制。本期最重要的發展，是11/6報告結尾懸而未決的『BIS關係企業規則vs中國稀土暫停令』雙重倒數，第一次出現真正的分岔：美方已於11/5正式提交展延文件，中方截至查核時點（11/7）仍查無對應公告，兩個原本被本站視為綁在一起的倒數，可能並不同步解開。與此同時，11/3期中選舉的確定結果（民主黨同時拿下參眾兩院）替本站所有『deadline-as-leverage』敘事換了一個新的分母——國會監督力道——儘管要到2027年1/3新國會就職才會實際生效。",
+    "en": "This brief covers 11/6-11/8. This cloud environment's network allowlist again blocked several primary sources (the Federal Register's own site, the White House's NSPM-11 text, multiple law-firm sites), so verification relied on WebSearch summaries cross-checked across independent secondary trackers — these limits are flagged honestly in each item's confidence and counterpoint. This cycle's most consequential development is that the twin countdown left unresolved at the end of the 11/6 report — BIS's Affiliates Rule vs. China's rare-earth suspension, both nominally expiring 11/10 — has split for the first time: the US side formally filed its extension on 11/5, while China's side has no matching notice as of this check (11/7). Separately, the confirmed 11/3 midterm result (Democrats winning both chambers) resets the denominator behind every 'deadline-as-leverage' narrative this site tracks, though it won't take legal effect until the new Congress is seated 1/3/2027."
+  },
+  "sections": [
+    {
+      "id": "nexus",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "likely",
+          "title": {
+            "zh": "美國商務部11/5提交最終規則，將BIS關係企業規則暫停令正式展延至1/10（11/9刊登聯邦公報，文號FR Doc. 2026-22793）——但中國對口的稀土出口管制暫停令，距同一個11/10到期日僅剩3天，查無MOFCOM對應公告，『雙倒數』出現分岔",
+            "en": "US Commerce Files a Final Rule on 11/5 Formally Extending the BIS Affiliates Rule Suspension to 1/10 (Publishing in the Federal Register 11/9, FR Doc. 2026-22793) — But China's Parallel Rare-Earth Suspension Has No Matching MOFCOM Notice With Only 3 Days Left Before the Shared 11/10 Expiry, Splitting the 'Twin Countdown'"
+          },
+          "summary": {
+            "zh": "11/6報告記錄的狀態是：距11/10到期僅剩4天，BIS關係企業規則與中國稀土出口管制暫停令雙雙查無正式展延文件，查核範圍內最新一份法律提醒仍停在10/28的Dechert簡報。這次查核填上了美方那一半的答案：根據AAEI、Baker McKenzie、Kelley Drye、Thompson Hine等多家獨立法律追蹤機構11/6-11/7的簡報，美國商務部工業與安全局（BIS）已於11/5提交最終規則，將暫停令展延至2027年1/10，文件編號FR Doc. 2026-22793，已進入公開查閱、預定11/9正式刊登聯邦公報；Baker McKenzie指出該最終規則涵蓋EAR五個部分（15 CFR Parts 732, 734, 736, 744, 748）的暫停條文，不涉及關係企業規則本身的其他修改。但中方對口的稀土出口管制暫停——2025年11/7發布的商務部公告第70號，暫停第55-58號、61-62號公告至2026年11/10——截至查核時點（11/7）仍查無任何展延或替代的MOFCOM編號公告；9/28中美雙方宣布的『貿易休兵展延至2027年1/10』聲明，並未點名稀土條款，也未以正式公告形式落地。",
+            "en": "The 11/6 report logged the state of play as: 4 days from the 11/10 expiry, neither BIS's Affiliates Rule nor China's rare-earth export-control suspension had a formal extension on paper, with the newest legal alert found still dating to 10/28 (Dechert). This check fills in the US half of the answer: per 11/6-11/7 briefings from multiple independent legal trackers (AAEI, Baker McKenzie, Kelley Drye, Thompson Hine), BIS filed a final rule on 11/5 extending the suspension to 1/10/2027, docketed as FR Doc. 2026-22793, now on public inspection and set to publish in the Federal Register on 11/9; Baker McKenzie notes the rule covers suspended provisions across five parts of the EAR (15 CFR Parts 732, 734, 736, 744, 748) without otherwise amending the Affiliates Rule itself. China's parallel rare-earth suspension — MOFCOM Announcement 70 of 11/7/2025, which suspended Announcements 55-58 and 61-62 through 11/10/2026 — has no extension or replacement notice found as of this check (11/7); the 9/28 US-China statement extending the broader trade truce to 1/10/2027 never named the rare-earth provisions or took the form of a numbered MOFCOM announcement."
+          },
+          "implication": {
+            "zh": "這條更新同時做了兩件事：一是確認，一是重新打開缺口。確認的部分，是9/23 Bessent口頭承諾的『展延兩個月』這次沒有跳票——10/28 Dechert法律簡報當時把基準情境改判為『若無公報、依法彈回原狀』，這次查核顯示Dechert的保守讀法這次被證明過度悲觀，Bessent的原始承諾反而站得住；這對你評估『美國行政部門的口頭承諾有多少兌現率』是一個有用的校準點——這次確實說到做到，只是晚了近六週才落地成文件。重新打開缺口的部分，是中國那一半：10/2月報建立的框架——休兵把爭議的到期日變成一個可重新議價的籌碼——原本預設兩個倒數是綁在一起的『一個套案』，但這次查核顯示兩者其實可以分開、不同步解開。對你的量化投資模型來說，這代表稀土、鎵鍺銻、磁鐵相關個股的曝險，不能再用『BIS那條線解決了、中國這條線應該也沒事』來做連動假設——11/10之後如果MOFCOM真的放任原措施技術性恢復哪怕只是等待後續公告的幾天空窗期，對依賴中國稀土加工的供應鏈個股仍會是一次實質的波動來源，而且美方已經先把自己的籌碼打出去了，這個不對稱的談判時序值得留意。",
+            "en": "This update does two things at once: confirms one judgment and reopens another. On the confirmation side, Bessent's 9/23 verbal promise of a 'two-month extension' did not fall through this time — the 10/28 Dechert alert had shifted its base case to 'reimposition remains the default absent a Federal Register notice,' and this check shows Dechert's caution proved too pessimistic while Bessent's original promise held up; that's a useful calibration point on how often the US executive branch's verbal commitments actually land, which this one did, just nearly six weeks later than promised. On the reopened side: the 10/2 monthly's framework — a truce turns a disputed deadline into a renegotiable chip — had implicitly treated the two countdowns as one bundled package, but this check shows they can come apart and unwind on different schedules. For your quant models, this means you can no longer assume rare-earth, gallium/germanium/antimony, and magnet-exposed names are de-risked just because the BIS line resolved — if MOFCOM genuinely lets the original measures technically lapse for even a few days while a follow-up notice is drafted, that is still a real volatility source for supply chains dependent on Chinese rare-earth processing, and the US side has now already played its card first, leaving an asymmetric negotiating sequence worth watching."
+          },
+          "counterpoint": {
+            "zh": "需要誠實標注兩個限制。第一，本次環境的出網白名單擋下了對聯邦公報官網與多家法律事務所官網的直接查核（millercanfield.com、kharon.com、exportcompliancedaily.com皆無法連線），美方展延的結論建立在多家獨立法律追蹤機構交叉確認同一個文件編號（FR Doc. 2026-22793）之上，而非直接讀到聯邦公報原文——雖然多方獨立來源指向同一文號已構成相當強的交叉驗證，但嚴格來說仍是二手轉述。第二，『中方查無公告』是基於搜尋結果缺口的推論，不是對MOFCOM官方立場的直接確認——中國也可能選擇不透過對稱的公告形式展延，而是透過其他外交管道默許現狀、或在11/10前最後一刻才發布，這在中國的政策溝通習慣中並非沒有先例。",
+            "en": "Two limits deserve honest flagging. First, this environment's network allowlist blocked direct checks of the Federal Register's own site and multiple law-firm sites (millercanfield.com, kharon.com, exportcompliancedaily.com all failed to resolve); the US-extension conclusion rests on multiple independent legal trackers converging on the same document number (FR Doc. 2026-22793) rather than a direct read of the Federal Register text itself — strong cross-verification, but still secondary-source relay in the strict sense. Second, 'no notice found on China's side' is an inference from a search-result gap, not direct confirmation of MOFCOM's official position — Beijing could still extend the suspension through an asymmetric channel rather than a matching numbered announcement, or publish at the last moment before 11/10, both of which have precedent in Chinese policy-communication habits."
+          },
+          "source": "Baker McKenzie（經AAEI與Trade Compliance Resource Hub轉述彙整）",
+          "url": "https://aaei.org/bis-extends-suspension-of-the-affiliates-rule/",
+          "terms": [
+            "BIS",
+            "Affiliates Rule",
+            "MOFCOM",
+            "Federal Register",
+            "EAR"
+          ]
+        },
+        {
+          "severity": "high",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "11/3期中選舉塵埃落定：民主黨確定同時拿下參眾兩院、2027年1/3就職第120屆國會，川普自稱『有點意外』——本站追蹤的伊朗、俄羅斯制裁、台灣軍售三條『堆疊到期日』敘事，國會監督的分母同時換了",
+            "en": "11/3 Midterms Settle: Democrats Confirmed to Win Both House and Senate, Seating the 120th Congress 1/3/2027, as Trump Says He's 'A Little Bit Surprised' — Resetting the Congressional-Oversight Denominator Behind This Site's Iran, Russia-Sanctions, and Taiwan-Arms 'Stacked Deadline' Threads"
+          },
+          "summary": {
+            "zh": "11/3美國期中選舉結果至查核時點已大致確定：多家主要媒體（ABC News、NBC、Fox 2 Detroit／AP電訊、Euronews）projected民主黨同時拿下眾議院與參議院控制權，個別議席計票仍在部分選區持續進行中，確切席次數字各方報導略有出入（NBC早期統計約226席眾議員，另有報導為225席；參議院多家估計約54席）；新一屆第120屆國會訂於2027年1/3就職。川普公開表示對結果『有點意外』(a little bit surprised)。這是本站系列報告首次明確記錄這場選舉的結果本身——此前11/2、11/4報告只把11/3當作『川普不開戰承諾』的到期日座標，尚未觸及選舉結果對國會權力結構的影響。",
+            "en": "As of this check, the 11/3 US midterm results are largely settled: multiple major outlets (ABC News, NBC, Fox 2 Detroit relaying AP, Euronews) have projected Democrats winning control of both the House and Senate, with individual-race counting still ongoing in some districts and exact seat totals varying slightly by source (NBC's early tally put House Democrats around 226, another report 225; Senate estimates cluster around 54). The 120th Congress is set to be seated 1/3/2027. Trump publicly said he was 'a little bit surprised' by the results. This is the first time this site's reports have logged the election outcome itself — the 11/2 and 11/4 reports treated 11/3 only as the expiry coordinate for Trump's 'no war before the election' pledge, not yet touching what the result does to the balance of congressional power."
+          },
+          "implication": {
+            "zh": "這條更新的價值不在『誰贏了』，而在於它同時改變本站三條敘事線背後的隱藏變數——國會監督力道。第一，伊朗：Al-Monitor引述伊朗官員說法，德黑蘭過去數週刻意拖延談判以觀望期中選舉結果（10/20報導），如今選舉結果出爐，但行政部門在制裁豁免與軍事行動上的裁量權本身並未立即改變——這重設的是『未來』的監督密度，而非『當下』的決策權，11/10前的BIS/稀土雙倒數、以及任何對伊朗的軍事決策，仍然是行政部門說了算。第二，俄羅斯：10/30報告記錄的川普『俄羅斯柴油交易』暫停制裁機制（與Graham Act豁免同一套手法），未來若民主黨主導的國會試圖動用監督或預算工具介入對俄制裁豁免，這會是全新的變數，但推翻總統否決需要三分之二多數，短期內不構成實質制衡。第三，台灣軍售：11/2月報的nexus條目記錄140億美元台灣軍售包被凍結、配給順序排在美軍與波灣夥伴之後，交付時程繫於葉門胡塞叛軍的消耗節奏而非12/14-15 G20——國會控制權變化不會改變這個配給邏輯本身，但新國會上任後兩黨對台軍售的審議與撥款態度，是明年這整條敘事能否鬆動的新增關鍵變數，值得從現在開始追蹤新科國會外交與軍事委員會的人事佈局。",
+            "en": "This update's value isn't who won, but that it simultaneously changes the hidden variable behind three of this site's narrative threads: the intensity of congressional oversight. First, Iran: Al-Monitor cited Iranian officials saying Tehran deliberately prolonged talks over recent weeks to watch the midterm outcome (10/20 report); now that the outcome is in, the executive branch's own discretion over sanctions waivers and military action hasn't immediately changed — this resets future oversight density, not present-day decision authority, so the BIS/rare-earth countdown before 11/10 and any Iran military decisions remain entirely the executive's call. Second, Russia: the 10/30 report's Trump 'Russian diesel deal' sanctions-suspension mechanism (the same playbook as the Graham Act waiver) could face new scrutiny if the Democratic-controlled Congress uses oversight or appropriations tools, but overriding a presidential veto needs a two-thirds majority, so this is not a near-term constraint. Third, Taiwan arms: the 11/2 monthly's nexus item logged the frozen $14bn Taiwan arms package, rationed behind US forces and Gulf partners, with delivery timing tied to Houthi firing rates rather than the 12/14-15 G20 — a change in congressional control doesn't alter that rationing logic itself, but how the new Congress's foreign-affairs and armed-services committees handle authorization and appropriations next year is a newly added variable worth tracking from the committee-assignment stage onward."
+          },
+          "counterpoint": {
+            "zh": "必須老實說明這條的局限。第一，多家媒體的席次統計數字彼此不一致（225 vs 226席眾議員、約54席參議員等），且K&L Gates的選舉指南明確指出仍有數十個選區的計票尚未完成，最終席次分佈要等正式認證才會確定，眼下只能確認『控制權翻轉』這個較粗的事實，不宜在席次細節上做過度精確的引用。第二，『國會控制權改變』到『政策實際轉向』之間存在至少兩個月的時間落差（新國會1/3才就職），在這段期間行政部門仍握有完整的既有裁量權，把這條新聞直接當成『伊朗政策／對俄制裁／台灣軍售即將轉向』的訊號是過早的推論，比較精確的講法是『監督背景改變了，但尚未改變任何一條既有決策的法律效力』。",
+            "en": "Two honest limits here. First, outlets disagree on exact seat counts (225 vs. 226 House seats, roughly 54 Senate seats), and K&L Gates's election guide explicitly notes dozens of races still being counted, so only the coarser fact of 'control flipped' can be confirmed now, not precise final seat distributions. Second, there's at least a two-month gap between 'congressional control changing' and 'policy actually shifting' (the new Congress isn't seated until 1/3), during which the executive branch retains its full existing discretion — treating this as a signal that Iran policy, Russia-sanctions policy, or Taiwan arms sales are about to shift is premature; the more precise statement is that the oversight backdrop has changed, but no existing decision's legal force has changed yet."
+          },
+          "source": "AP（經Fox 2 Detroit轉述）",
+          "url": "https://www.fox2detroit.com/news/democrats-win-control-congress-2026-midterm-elections",
+          "terms": [
+            "Graham Act",
+            "G20"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cyber",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "ARTEX AI滲透工具攻擊面擴散：WorkOS（10/30發現、11/2揭露）與Web3基礎設施商Chainstack（10/26-31入侵、11/3公告）相繼受害，目標從金融業與MSP供應鏈，延伸到開發者與加密基礎設施平台",
+            "en": "ARTEX's AI-Pentesting Attack Surface Widens: WorkOS (Detected 10/30, Disclosed 11/2) and Web3 Infrastructure Provider Chainstack (Intruded 10/26-31, Disclosed 11/3) Become the Latest Victims, Extending the Target List From Banks and MSPs to Developer and Crypto-Infrastructure Platforms"
+          },
+          "summary": {
+            "zh": "10/10報告記錄CrowdStrike揭露的ARTEX——一套接上商用前沿模型的開源代理式滲透測試工具，先前被用於入侵南韓多家銀行；10/24報告與11/2月報進一步記錄它『國家化』為供應鏈規模武器的過程（Storm-0940透過ConnectWise入侵、鎖定2,250個下游M365租戶）。這次查核發現兩起新受害個案，落在同一條脈絡但目標類型更新：身分管理服務商WorkOS於10/30偵測到異常、11/2正式揭露，創辦人Michael Grinich公開證實攻擊者使用的工具正是ARTEX，入侵範圍限於內部業務用銷售/CRM系統，取得商業聯絡人紀錄與客戶溝通摘要，WorkOS表示沒有證據顯示正式營運應用程式資料遭存取。Web3基礎設施商Chainstack則於10/26-31之間遭入侵（各方報導對確切起迄日期略有出入），11/3對外公告，攻擊者取得一個含組織名稱、帳戶持有人姓名、會員Email與密碼雜湊的客戶資料庫，並一度觸及節點憑證所在系統（Chainstack表示未發現憑證被讀取的證據，但仍要求用戶全面輪替）；媒體報導將此事件與ARTEX攻勢並列報導，但Chainstack官方尚未提供技術證據證實攻擊工具確為ARTEX。",
+            "en": "The 10/10 report logged CrowdStrike's disclosure of ARTEX — an open-source agentic pentesting tool wired to commercial frontier models, previously used to breach multiple South Korean banks; the 10/24 report and the 11/2 monthly further tracked its 'nationalization' into a supply-chain-scale weapon (Storm-0940 breaching ConnectWise to target 2,250 downstream M365 tenants). This check finds two new victims on the same thread but with a newer target profile: identity-management vendor WorkOS detected anomalous activity on 10/30 and disclosed it on 11/2, with founder Michael Grinich publicly confirming the attacker's tool was ARTEX; the intrusion was confined to an internal sales/CRM system, exposing business contact records and customer-communication summaries, and WorkOS says there's no evidence production application data was accessed. Web3 infrastructure provider Chainstack was intruded sometime between 10/26-31 (accounts of exact dates vary by outlet) and disclosed it 11/3; the attacker reached a customer database holding organization names, account-holder names, member emails, and password hashes, and briefly touched systems holding node credentials (Chainstack says it found no evidence credentials were read but is still asking customers to rotate them). Coverage ran the Chainstack incident alongside the ARTEX campaign, but Chainstack itself has not provided technical evidence confirming the attack tool was in fact ARTEX."
+          },
+          "implication": {
+            "zh": "10/24報告把ARTEX事件的重點放在『扇出形狀』的改變——傳統MSP供應鏈入侵的瓶頸是人力，而代理式AI把『拿到上游憑證』到『鎖定下游2,250個租戶』之間原本需要人工逐一操作的步驟自動化了。這次兩起新案例印證了同一個機制往另一個方向延伸：受害者類型從『金融機構＋MSP』擴大到『開發者身分平台＋加密貨幣基礎設施』，這正是你的威脅獵捕與provenance graph研究最該留意的擴散模式——攻擊者並非針對特定產業，而是針對特定的『上游信任位置』（CRM系統掌握客戶關係網絡、Web3節點服務商掌握私鑰相關的憑證鏈），只要代理式工具能自動化偵察與橫向移動，任何握有這類信任位置的服務商都可能是下一個目標。對你個人的防禦姿態而言，如果你的研究環境或量化交易基礎設施使用任何第三方節點服務或身分管理SaaS，這個案例提示的優先查核項目是：該服務商是否已針對ARTEX類代理式攻擊模式更新其異常偵測基準，而不只是傳統的簽章式規則。",
+            "en": "The 10/24 report's core point about ARTEX was the change in fan-out shape — the bottleneck in a classic MSP supply-chain intrusion is human, and agentic AI automated the steps between 'holding upstream credentials' and 'targeting 2,250 downstream tenants' that previously required manual, one-by-one work. These two new cases confirm the same mechanism extending in a different direction: the victim profile widened from 'financial institutions plus MSPs' to 'developer identity platforms plus crypto infrastructure' — exactly the diffusion pattern your threat-hunting and provenance-graph research should flag, since the attacker isn't targeting an industry but a type of upstream trust position (a CRM holds the customer-relationship graph; a Web3 node provider holds the credential chain tied to private keys). Any provider sitting on this kind of trust position is a plausible next target once agentic tooling automates reconnaissance and lateral movement. For your own defensive posture, if your research environment or quant-trading infrastructure uses any third-party node service or identity-management SaaS, the priority check this case suggests is whether that provider has updated its anomaly baseline for agentic-attack patterns specifically, rather than relying on signature-based rules alone."
+          },
+          "counterpoint": {
+            "zh": "兩點誠實保留。第一，Chainstack事件與ARTEX的關聯目前停留在媒體報導層級的並列敘述，官方公告並未提供技術指標（如C2特徵、工具鏈遺留痕跡）證實攻擊者確實使用ARTEX框架，這與WorkOS案（創辦人公開具名證實）的確定程度不同，不應把兩起事件等量齊觀地歸因。第二，兩起事件各方對入侵起迄日期的描述互有出入（Chainstack一說10/30被發現、一說10/26-31入侵視窗、俄語媒體則稱10/31發現、11/3公告），這反映的可能是『偵測時間』與『入侵時間』本來就是兩回事，加上多語言媒體轉述本身容易失真，實際技術時間軸仍待各公司後續的完整事故報告確認。",
+            "en": "Two honest limits. First, the Chainstack-ARTEX link currently exists only at the level of media coverage running the stories side by side; the official disclosure provides no technical indicators (C2 signatures, tooling artifacts) confirming the attacker actually used the ARTEX framework, which is a different confidence level than the WorkOS case (publicly confirmed by name by the founder) — the two incidents shouldn't be attributed with equal weight. Second, accounts of the intrusion timeline diverge across outlets (Chainstack variously described as discovered 10/30, or with an intrusion window of 10/26-31, while Russian-language coverage says discovered 10/31 and disclosed 11/3) — this likely reflects that 'detection time' and 'intrusion time' are genuinely different things, compounded by distortion from multilingual relay, so the actual technical timeline awaits each company's full incident report."
+          },
+          "source": "BleepingComputer（WorkOS與Chainstack官方揭露轉述）",
+          "url": "https://bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app",
+          "terms": [
+            "ARTEX",
+            "Storm-0940",
+            "ConnectWise",
+            "MSP",
+            "M365"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "military",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "confirmed",
+          "title": {
+            "zh": "台灣海巡署10/31-11/1同時通報兩起對中事件：東部外海首見新型態騷擾巡邏模式，另東沙海域完成本年度第13次驅離——距11/12-11/20公投辯論與11/28九合一選舉僅剩一到兩週",
+            "en": "Taiwan's Coast Guard Flags Two China Incidents on 10/31-11/1: A New Harassment-Patrol Pattern Off the East Coast for the First Time, Plus the Year's 13th Expulsion Near the Pratas Islands — One to Two Weeks Before the 11/12-11/20 Referendum Debates and 11/28 Elections"
+          },
+          "summary": {
+            "zh": "11/4報告記錄台灣中選會確認11/12-11/20五場核能公投電視辯論、與11/28九合一選舉同日登場，但當時未觸及同期海上動態。這次查核發現，台灣海巡署（CGA）10/31發布聲明，指控中國海警船隻在台灣東部外海以廣播主張其並不具備的管轄權、進行騷擾式巡邏，CGA表示已派艦艇戒備因應；同一時段（部分報導歸為11/1），另一艘中國海警船進入台灣實際管轄的東沙群島限制水域，CGA計入為今年度第13次從東沙驅離中國海警船。中國海警對東部外海巡邏的說法是『例行執法巡查』。台灣官員的脈絡判讀是：中國海警自6月起已逐步加強東部外海的常態化存在，部份官員將這次事件解讀為對海上封鎖情境的演練。",
+            "en": "The 11/4 report logged Taiwan's CEC confirming five televised nuclear-referendum debates on 11/12-11/20, voting the same day as the 11/28 nine-in-one elections, but didn't touch concurrent maritime activity. This check finds Taiwan's Coast Guard Administration (CGA) issued a statement on 10/31 accusing Chinese coast guard vessels of harassing patrols off Taiwan's east coast, broadcasting a jurisdictional claim it says China does not hold, and said it had dispatched vessels in response; around the same time (some reports date it 11/1), a separate Chinese coast guard vessel entered restricted waters near the Taiwan-administered Pratas Islands, which the CGA counted as the year's 13th expulsion of a Chinese coast guard vessel from Pratas waters. China's coast guard describes its east-coast patrol as 'routine law enforcement.' Taiwanese officials' contextual read is that China's coast guard has steadily built up a normalized presence off the east coast since June, with some officials reading this incident as rehearsal for a maritime blockade scenario."
+          },
+          "implication": {
+            "zh": "這條訊號的價值在於時間點，而非單一事件本身的新穎性——東沙驅離（第13次）是既有灰色地帶壓力模式的延續，但『東部外海』這個新戰線值得特別標注：台灣過去的海警對峙熱點集中在南海（東沙）與台海中線附近，東部外海（面向太平洋、而非面向中國大陸）是相對新的施壓方向，如果解讀為封鎖演練的前置偵察，代表中國海警正在測試台灣東側——也就是美軍馳援與台灣對外海運補給最關鍵的方向——的反應模式與查覺時間。對你的台股量化模型而言，這類灰色地帶壓力事件本身很少直接觸發市場反應，但它與11/12-11/20公投辯論期、11/28選舉當日重疊，疊加的訊號效果（認知作戰＋海上施壓＋選舉週期）比單一事件更值得放進你既有的『選舉週期風險因子』模型中，作為觀察中國是否配合選舉時程升高施壓強度的領先指標，而不只是等開票後才檢視。",
+            "en": "This signal's value is in its timing, not the novelty of either single event — the 13th Pratas expulsion is a continuation of an established gray-zone pattern, but the 'east coast' front deserves separate flagging: Taiwan's coast guard flashpoints have historically concentrated in the South China Sea (Pratas) and near the Taiwan Strait median line, while the east coast (facing the Pacific, not mainland China) is a comparatively new pressure axis — if read as pre-positioning reconnaissance for a blockade scenario, it suggests China's coast guard is testing response patterns and detection times on Taiwan's eastern side, the direction most critical to US reinforcement and Taiwan's own maritime resupply. For your Taiwan-equities quant model, gray-zone pressure events like this rarely trigger a direct market reaction on their own, but its overlap with the 11/12-11/20 debate window and the 11/28 election date makes the compounded signal (cognitive warfare plus maritime pressure plus the election cycle) worth folding into your existing election-cycle risk factor as a leading indicator of whether China is timing pressure increases to the election calendar, rather than something to check only after the votes are counted."
+          },
+          "counterpoint": {
+            "zh": "需要誠實的限定：第一，把東部外海巡邏直接定性為『封鎖演練』是台灣官員與部分評論者的解讀，中國官方的對外說法是『例行執法巡查』，雙方敘事存在根本分歧，目前沒有可供第三方驗證的客觀證據能確定何者更接近實情，本站傾向把這類判讀標記為情報圈的一種假說而非定論。第二，東沙『第13次驅離』這個數字本身的意義需要脈絡化——這個頻率是否構成『升級』取決於與去年同期的比較基準，而本次查核未能取得去年同期的對應數字，所以無法判斷這是持續既有節奏、還是實質加速。",
+            "en": "Two honest limits. First, characterizing the east-coast patrol as 'blockade rehearsal' is the read of Taiwanese officials and some commentators; China's own stated framing is 'routine law enforcement,' and the two narratives are fundamentally at odds with no third-party-verifiable evidence to settle which is closer to reality — this site treats that read as an intelligence-community hypothesis, not a settled conclusion. Second, the significance of the '13th Pratas expulsion' figure itself needs context — whether this frequency constitutes an escalation depends on a year-over-year comparison baseline that this check could not obtain, so it's not possible to tell whether this is a continuing established cadence or a genuine acceleration."
+          },
+          "source": "Reuters（經gCaptain轉述）",
+          "url": "https://gcaptain.com/taiwan-says-china-harassing-shipping-with-east-coast-patrol/",
+          "terms": [
+            "CGA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "CCW《特定常規武器公約》第七次審查大會11/16-20日內瓦登場，將決定是否啟動具拘束力的殺傷性自主武器系統（LAWS）談判——NSPM-11要求五角大廈90天內鬆綁自身自主武器政策的時間軸，讓『9月共識文件遭稀釋全因俄中阻撓』的單一歸因出現缺口",
+            "en": "CCW's Seventh Review Conference Opens 11/16-20 in Geneva to Decide on Launching Binding LAWS Treaty Negotiations — NSPM-11's 90-Day Clock to Loosen the Pentagon's Own Autonomy Policy Complicates a Russia/China-Only Account of September's Diluted Consensus Text"
+          },
+          "summary": {
+            "zh": "10/30報告記錄，殺傷性自主武器系統（LAWS）政府專家組（GGE）9月在128個締約國間達成一份不具拘束力的共識文件，10/30報告當時的判讀是：俄羅斯慣用CCW共識規則行使否決、加上中國反覆以『條件尚不成熟』為由拖延，足以把結果壓在『延長討論』而非實質推進。這次查核補上了一個此前未被整合進本站敘事的平行時間軸：川普於6/5簽署NSPM-11（國家安全總統備忘錄第11號），指示國防部在90天內（約至9/3）修訂其自主武器政策《國防部指令3000.09》，並禁止AI供應商片面停用已交付軍方的模型；參議員Gallego於6/12公開去函國防部質疑此次修訂可能壓縮測試與人為審查流程、要求說明相關防範措施，國防部對外界問詢大致保持低調。CCW第七次審查大會訂於11/16-20在日內瓦萬國宮登場，將決定是否授權啟動具拘束力文書的正式談判；人權觀察（HRW）統計已有76個國家（佔CCW締約國多數）公開表態支持轉入談判，反殺手機器人運動（Stop Killer Robots）則引用130國支持某種具拘束力國際文書的更廣泛統計。聯合國秘書長古特瑞斯原先設定的『2026年內完成具拘束力條約』目標，實質上已在沒有條約的情況下過期。",
+            "en": "The 10/30 report logged the Group of Governmental Experts (GGE) on lethal autonomous weapons systems (LAWS) reaching a non-binding consensus document among 128 states in September, with that report's judgment being that Russia's habitual use of CCW's consensus rule as a veto, combined with China's recurring 'conditions aren't ripe' stalling, was enough to hold the outcome at extended discussion rather than real progress. This check adds a parallel timeline not yet integrated into this site's narrative: Trump signed NSPM-11 (National Security Presidential Memorandum 11) on 6/5, directing the Pentagon to revise its autonomy-in-weapons policy (DoDD 3000.09) within 90 days (roughly by 9/3) and barring AI vendors from unilaterally disabling models already fielded to the military; Senator Gallego publicly wrote to the Defense Department on 6/12 questioning whether the revision would compress testing and human-review safeguards, and the Pentagon has stayed largely quiet in response to outside inquiries. The CCW's Seventh Review Conference is set for 11/16-20 at the Palais des Nations in Geneva, where states will decide whether to authorize formal negotiations on a binding instrument; Human Rights Watch counts 76 states (a majority of CCW parties) now publicly backing a move to negotiations, while Stop Killer Robots cites a broader figure of 130 states supporting some form of binding international instrument. UN Secretary-General Guterres's own goal of completing a binding treaty within 2026 has effectively passed unmet."
+          },
+          "implication": {
+            "zh": "10/30報告把9月文件遭稀釋的原因，完全歸給俄羅斯與中國在CCW共識機制下的阻撓行為；這次查核不是要推翻那個判斷——俄中的阻撓行為有獨立且充分的記錄——而是要指出它可能不是唯一的解釋變數。NSPM-11把『鬆綁五角大廈自身的自主武器審查流程』這件事，放進了與GGE文件定稿幾乎同一段時間軸（6/5簽署、90天期限落在9/3前後，GGE在9月定案），這代表美國自己內部也同步在往『放寬人為審查』的方向調整政策，而不是單純站在『嚴格派』對抗俄中的『阻撓派』。對你在高層對話中複述這個論點時的精確說法應該是：9月文件之所以談不攏，除了俄中的程序性阻撓之外，CCW幾個核武常任理事國事實上沒有一個在同一時間點真正朝『更嚴格的拘束性義務』方向移動自身政策，美國的NSPM-11是這個更大圖像裡最新被記錄下來的一塊拼圖。11/16-20大會能否真正授權啟動談判，值得你放進日曆追蹤——這是檢驗『76國多數支持』能否轉化為CCW共識規則下實際突破的下一個具體檢查點。",
+            "en": "The 10/30 report attributed September's diluted text entirely to Russian and Chinese obstruction under CCW's consensus mechanism; this check isn't meant to overturn that judgment — the Russia/China obstruction is independently and well documented — but to point out it may not be the only explanatory variable. NSPM-11's push to loosen the Pentagon's own autonomy-in-weapons review process sits on almost the same timeline as the GGE text's finalization (signed 6/5, 90-day deadline landing around 9/3, GGE finalized in September), meaning the US was simultaneously adjusting its own policy toward looser human review rather than standing purely on the 'strict' side against a Russia/China 'obstruction' side. The precise version of this argument to carry into a senior-level conversation: beyond Russia and China's procedural stalling, none of CCW's nuclear-armed permanent members was actually moving its own policy toward stricter binding obligations at the same moment — NSPM-11 is simply the latest documented piece of that larger picture. Whether the 11/16-20 conference actually authorizes negotiations is worth putting on your calendar — it's the next concrete checkpoint for whether '76-state majority support' can convert into an actual breakthrough under CCW's consensus rule."
+          },
+          "counterpoint": {
+            "zh": "兩點必須誠實保留。第一，NSPM-11『促成』9月文件遭稀釋，是本站基於時間軸重疊做出的推論性連結，不是任何一份報導明確主張的因果關係——DefenseScoop與其他報導只確認NSPM-11本身的存在與內容，並未將其與GGE談判結果做直接連結，這個因果推論的強度應該被清楚標示為本站自己的分析，而非轉述自原始報導。第二，『76國』、『70國』、『130國』三個數字分別來自HRW、Future of Life Institute與Stop Killer Robots三個立場相近但統計口徑不同的倡議組織，彼此衡量的是不同層次的支持（移入談判 vs. 聯合聲明連署 vs. 支持某種具拘束力文書的泛稱），不宜把三者當成同一件事的重複驗證，也不宜簡單加總或等量引用。",
+            "en": "Two honest limits. First, the claim that NSPM-11 'contributed to' diluting the September text is this site's own inferential link based on timeline overlap, not a causal claim any report explicitly makes — DefenseScoop and other coverage confirm only NSPM-11's existence and content without directly connecting it to the GGE outcome, and the strength of this inference should be clearly labeled as this site's own analysis rather than relayed reporting. Second, the figures '76 states,' '70 states,' and '130 states' come from three like-minded but differently-scoped advocacy organizations (HRW, Future of Life Institute, Stop Killer Robots) measuring different things (backing a move to negotiations vs. signing joint statements vs. supporting some binding instrument in general) — they shouldn't be treated as repeated confirmation of the same fact, nor simply summed or cited interchangeably."
+          },
+          "source": "DefenseScoop（經Human Rights Watch交叉確認LAWS大會時程）",
+          "url": "https://defensescoop.com/2026/06/15/lawmaker-questions-pentagons-plan-to-revise-autonomous-weapons-policy/",
+          "terms": [
+            "CCW",
+            "LAWS",
+            "GGE",
+            "DoDD 3000.09",
+            "NSPM-11"
+          ]
+        }
+      ]
+    }
+  ]
+}

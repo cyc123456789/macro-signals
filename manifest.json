@@ -1,6 +1,15 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-08",
   "reports": [
+    {
+      "file": "reports/2026-11-08-brief.json",
+      "date": "2026-11-08",
+      "kind": "brief",
+      "title": {
+        "zh": "美國商務部11/5提交最終規則，將BIS關係企業規則暫停令正式展延至1/10（11/9刊登聯邦公報，文號FR Doc. 2026-22793）——但中國對口的稀土出口管制暫停令，距同一個11/10到期日僅剩3天，查無MOFCOM對應公告；11/3期中選舉確定民主黨同時拿下參眾兩院，2027年1/3就職第120屆國會，重設本站追蹤的伊朗、俄羅斯制裁、台灣軍售三條『堆疊到期日』敘事背後的國會監督分母；ARTEX AI滲透工具攻擊面從金融業與MSP供應鏈，擴散到開發者平台WorkOS與Web3基礎設施商Chainstack；台灣海巡署10/31-11/1通報東部外海新型態騷擾巡邏與本年度第13次東沙驅離，距11/12-11/20公投辯論僅剩一到兩週；CCW《特定常規武器公約》11/16-20日內瓦大會登場之際，NSPM-11要求五角大廈90天內鬆綁自身自主武器政策的時間軸，讓『9月共識文件遭稀釋全因俄中阻撓』的單一歸因出現缺口",
+        "en": "US Commerce Files a Final Rule on 11/5 Formally Extending the BIS Affiliates Rule Suspension to 1/10 (Publishing in the Federal Register 11/9, FR Doc. 2026-22793) — But China's Parallel Rare-Earth Suspension Has No Matching MOFCOM Notice With Only 3 Days Left Before the Shared 11/10 Expiry; the 11/3 Midterms Confirm Democrats Win Both House and Senate, Seating the 120th Congress 1/3/2027 and Resetting the Oversight Denominator Behind This Site's Iran, Russia-Sanctions, and Taiwan-Arms Threads; ARTEX's AI-Pentesting Attack Surface Widens From Banks and MSPs to Developer Platform WorkOS and Web3 Infrastructure Provider Chainstack; Taiwan's Coast Guard Flags a New East-Coast Harassment Pattern and Its 13th Pratas Expulsion of the Year Just Before the 11/12-11/20 Referendum Debates; the CCW's 11/16-20 Geneva Conference on Lethal Autonomous Weapons Arrives as NSPM-11's Directive to Loosen the Pentagon's Own Autonomy Policy Complicates a Russia/China-Only Account of September's Diluted Text"
+      }
+    },
     {
       "file": "reports/2026-11-06-brief.json",
       "date": "2026-11-06",

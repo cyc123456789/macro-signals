@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-08",
   "terms": [
     {
       "term": "AsyncOS",
@@ -3751,6 +3751,28 @@
       },
       "category": "tech",
       "first_seen": "2026-11-06"
+    },
+    {
+      "term": "NSPM-11",
+      "zh": "國家安全總統備忘錄第11號",
+      "expansion": "National Security Presidential Memorandum 11",
+      "def": {
+        "zh": "2026年6月5日川普簽署的總統備忘錄，指示國防部在90天內修訂其武器自主性政策（即《國防部指令3000.09》），並要求AI系統供應商不得片面停用已交付軍方的模型；外界解讀為加速軍用AI自主化部署、壓縮人工審查流程的訊號。",
+        "en": "A presidential memorandum Trump signed on 6/5/2026 directing the Pentagon to revise its weapons-autonomy policy (DoDD 3000.09) within 90 days and barring AI vendors from unilaterally disabling models already fielded to the military; widely read as a signal to accelerate autonomous military AI deployment and compress human-review requirements."
+      },
+      "category": "military",
+      "first_seen": "2026-11-08"
+    },
+    {
+      "term": "CGA",
+      "zh": "海巡署",
+      "expansion": "Coast Guard Administration (Taiwan)",
+      "def": {
+        "zh": "台灣行政院所屬、負責海域執法、海上安全與漁權維護的機關，近年成為中國海警灰色地帶壓力的第一線應對單位。",
+        "en": "Taiwan's Executive Yuan-affiliated agency responsible for maritime law enforcement, sea-lane security, and fishing-rights protection — now the frontline responder to Chinese coast guard gray-zone pressure."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-08"
     }
   ]
 }
