@@ -1,6 +1,15 @@
 {
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "reports": [
+    {
+      "file": "reports/2026-11-09-weekly.json",
+      "kind": "weekly",
+      "date": "2026-11-09",
+      "title": {
+        "zh": "規範寫在平台上，自主性卻是一次軟體更新：LAWS 軍控真正的死因是不可查證——11/16-20 日內瓦出什麼結果，規則都會由採購規格與軟體授權寫成",
+        "en": "The rules are written on platforms; autonomy ships as a software update — LAWS arms control dies of unverifiability, and whatever Geneva decides on 11/16-20, the real rule gets written in procurement specs and software licences"
+      }
+    },
     {
       "file": "reports/2026-11-08-brief.json",
       "date": "2026-11-08",

@@ -1,0 +1,216 @@
+{
+  "date": "2026-11-09",
+  "kind": "weekly",
+  "title": {
+    "zh": "規範寫在平台上，自主性卻是一次軟體更新：LAWS 軍控真正的死因是不可查證——11/16-20 日內瓦出什麼結果，規則都會由採購規格與軟體授權寫成",
+    "en": "The rules are written on platforms; autonomy ships as a software update — LAWS arms control dies of unverifiability, and whatever Geneva decides on 11/16-20, the real rule gets written in procurement specs and software licences"
+  },
+  "focus": {
+    "zh": "11/16-20 的 CCW 審查大會被當成『禁與不禁』的表決，但致命性自主武器真正擋在門口的不是俄美否決權，是查證：自主性是只在執行期存在的軟體狀態，而七十年來成功的軍控驗的全是硬體、設施與活動——唯一可行的技術路線（機載決策稽核紀錄加零知識證明）整個 2026 年沒有任何國家提案，於是規範會改由美國國內法、採購合約的自主性條款與出口管制清單來寫，而台灣在這三處都只是收貨端。",
+    "en": "The 11/16-20 CCW Review Conference is being read as a ban-or-no-ban vote, but what actually blocks regulation of lethal autonomous weapons is not the US-Russia veto — it is verification. Autonomy is a software state that exists only at runtime, while every successful arms control regime verified hardware, facilities and activities. The one workable technical path, tamper-evident onboard decision logs plus zero-knowledge proofs, drew no state proposal in all of 2026. So the norm gets written instead in US domestic law, in the autonomy clauses of procurement contracts, and in export control lists — and in all three Taiwan is only on the receiving end."
+  },
+  "sections": [
+    {
+      "id": "nexus",
+      "items": [
+        {
+          "severity": "critical",
+          "confidence": "likely",
+          "title": {
+            "zh": "整個 2026 年沒有任何國家提出自主武器的查證機制——唯一的技術路線停在單一作者工作論文，這使本站 10/30報告『三選項中討論性授權延長最可能』那套以授權形式為焦點的框架失效",
+            "en": "Not one state proposed a verification mechanism for autonomous weapons in all of 2026 — the only technical path sits in single-author working papers, which invalidates this site's 10/30 framing that treated the mandate's form as the decisive variable"
+          },
+          "summary": {
+            "zh": "本站 10/30報告把 11/16-20 的結果拆成三個選項（具拘束力談判授權／討論性授權延長／進程失效），並判斷第二項最可能。本期查核發現這個框架問錯了問題：即使拿到談判授權，條約在簽署當天也不可執行，因為沒有人提出查證方法。查核範圍內能找到的查證提案只有三份，全部不是國家文件——Oktenli 的 7/11 工作論文主張以 HMAA 架構下的安全稽核紀錄模組（SALM）為基礎、仿 IAEA 保障監督建立國際自主系統治理組織；Westmoreland 的 2026 年全球治理藍圖主張在每次 AI 推論時留下紀錄，外層以零知識證明公布合規性而不洩漏機密內容；Lieber Institute 的分析則只建議『要求黑箱演算法具備記錄能力』。三者皆為單一作者或民間機構產出，沒有任何締約國把它們寫成工作文件。對照組是成功的軍控：New START、CWC、INF 驗的都是彈頭、設施與活動——可清點、可現場查核的實體。",
+            "en": "This site's 10/30 brief split the 11/16-20 outcome into three options (binding negotiating mandate / extension of a discussion mandate / process failure) and judged the second most likely. That framing asks the wrong question. Even with a mandate, a treaty would be unenforceable on the day it was signed, because nobody has proposed how to verify it. Within reach this week there are exactly three verification proposals, none of them state documents: Oktenli's 7/11 working paper, which builds on the Secure Audit Log Module (SALM) of the HMAA framework and proposes an IAEA-style safeguards body; Westmoreland's 2026 global governance blueprint, which logs each AI inference and publishes zero-knowledge proofs of compliance without revealing classified content; and a Lieber Institute piece that goes no further than recommending logging capability in black-box algorithms. All are single-author or civil-society products, and no state party has turned them into a working paper. The contrast is with arms control that worked: New START, the CWC and the INF Treaty verified warheads, facilities and activities — countable things an inspector can stand next to."
+          },
+          "implication": {
+            "zh": "對威脅獵捕與 provenance 研究者而言，這是你的問題被搬到軍控桌上的第一個實例：要證明的不是模型行為好壞，而是那條授權鏈在執行當下真的存在過、且事後不可竄改。這意味著未來任何有效的 LAWS 條約都必然需要一套機載的、可對外證明而不洩密的決策溯源格式——而這個標準目前無主。追這條線比追日內瓦的表決結果更有價值，因為表決會過期，格式不會。",
+            "en": "For a threat-hunting and provenance researcher this is the first time your problem lands on an arms control table: what must be proven is not that the model behaved well, but that an authority chain existed at the moment of engagement and cannot be rewritten afterwards. Any LAWS treaty that ever bites will therefore need an onboard, externally provable, non-disclosing decision-provenance format — and that standard currently has no owner. Tracking who writes it is worth more than tracking the Geneva vote, because votes expire and formats do not."
+          },
+          "counterpoint": {
+            "zh": "反面意見站得住：禁雷公約與化武公約初期也沒有完整查證體系，規範先行本身就改變了廠商與出口行為，查證是後補的。若這個歷史類比成立，本條的『不可查證等於無效』就是過度工程化的技術主義，而規範的真正作用是改變採購門檻而非抓到違規者。",
+            "en": "The opposing case holds up: the Mine Ban Convention and the CWC both began without a full verification regime, and the norm itself changed vendor and export behaviour before verification was bolted on. If that analogy holds, the claim that unverifiable equals ineffective is over-engineered technicism, and the norm's real function is to move procurement thresholds rather than to catch violators."
+          },
+          "source": "Zenodo 工作論文（Oktenli, 2026/7/11）；Global Governance Institute（Westmoreland 2026 藍圖）；Lieber Institute West Point",
+          "url": "https://zenodo.org/records/21307785",
+          "terms": [
+            "LAWS",
+            "ZKP",
+            "CCW",
+            "IHL",
+            "MHC"
+          ]
+        },
+        {
+          "severity": "high",
+          "confidence": "likely",
+          "title": {
+            "zh": "同一批國家在兩個議場給出相反答案：UNGA 第一委員會 10/29 以 163 比 5 要求推進談判，CCW 卻是共識決——差別不在立場，在表決規則",
+            "en": "The same states answer in opposite ways in two rooms: the UNGA First Committee voted 163 to 5 on 10/29 to push toward negotiations, while the CCW runs on consensus — the difference is not position but decision rule"
+          },
+          "summary": {
+            "zh": "據聯合國新聞稿（press.un.org，本站僅取得搜尋引擎轉述），聯合國大會第一委員會 10/29 以 163 票贊成、5 票反對、9 票棄權通過 A/C.1/81/L.37，要求推進致命性自主武器國際文書的談判；投反對票的是白俄羅斯、北韓、以色列、俄羅斯、美國。10/22 另有 50 國聯合聲明，要求啟動一個在 2027 年內完成的限時談判程序。全會正式表決預定 12 月。同一議題在 CCW 架構下卻適用共識決：9 月 GGE 的最終產出只能是一份不具拘束力的『要素』清單，採兩層式途徑（部分系統禁止、其餘規範），核心門檻為『效果無法被預期與控制者禁止使用』，並邀請第七次審查大會以共識背書。多數決場域給出壓倒性支持，共識決場域給出不具拘束力文字——這不是國家立場改變，是規則不同。",
+            "en": "Per a UN press release (press.un.org; this site saw only a search-engine summary), the UNGA First Committee approved A/C.1/81/L.37 on 10/29 by 163 in favour to 5 against with 9 abstentions, calling for progress toward negotiating an international instrument on lethal autonomous weapons. The five against were Belarus, North Korea, Israel, Russia and the United States. On 10/22 a joint statement by fifty states called for a time-limited process concluding in 2027. The plenary vote is expected in December. The same question under the CCW is governed by consensus: the GGE's September output could only be a non-binding set of elements on a two-tier approach (some systems prohibited, the rest regulated), with the core threshold prohibiting use where effects cannot be anticipated and controlled, and an invitation to the Seventh Review Conference to endorse by consensus. Overwhelming support in the majority-vote room, non-binding language in the consensus room — states did not change position; the rule changed."
+          },
+          "implication": {
+            "zh": "與各國官員對談時，把問題從『你支不支持管制』改成『你支持在哪個議場管制』，答案的資訊量會高一個數量級：留在 CCW 等於保留否決權，搬去 UNGA 等於接受多數決。俄羅斯堅持議題不得離開 CCW 的理由，用這個框架一句話就解釋完。",
+            "en": "In conversation with officials, replace \"do you support regulation\" with \"in which forum do you support regulating\" and the answer carries an order of magnitude more information: staying in the CCW means keeping a veto, moving to the UNGA means accepting majority rule. Russia's insistence that the issue must not leave the CCW is fully explained by that one substitution."
+          },
+          "counterpoint": {
+            "zh": "163 比 5 看起來壓倒性，但 UNGA 決議不具拘束力，而過去三年同類決議的票數（2023、2024、2025 分別為 156、161、164 票）幾乎沒有變化——高票數可能只是低成本表態的均衡，並不代表這 163 國願意承擔查證義務或限制自己的採購。真正該看的是 50 國聯合聲明那個較小的數字。",
+            "en": "163 to 5 looks overwhelming, but UNGA resolutions do not bind, and the comparable votes of the past three years (156, 161 and 164) have barely moved — a high count may simply be the equilibrium of cheap signalling, and says nothing about whether those 163 states would accept verification obligations or constrain their own procurement. The smaller number — the fifty states on the joint statement — is the one to watch."
+          },
+          "source": "UN Press Release GA/DIS/3781（press.un.org，經搜尋引擎轉述）；Stop Killer Robots；dig.watch",
+          "url": "https://press.un.org/en/2026/gadis3781.doc.htm",
+          "terms": [
+            "UNGA",
+            "LAWS",
+            "CCW",
+            "GGE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "likely",
+          "title": {
+            "zh": "自主性以軟體授權形式出貨：烏克蘭 TFL-1 終端導引模組已量產並同時販售硬體模組與軟體授權，廠商稱 6-9 個月內多數前線無人機將裝上類似系統——管制清單盯的卻是航程與耐受度",
+            "en": "Autonomy ships as a software licence: Ukraine's TFL-1 terminal-guidance module is in serial production and sold as both hardware modules and software licences, with the vendor expecting most frontline drones to carry comparable autonomy within 6-9 months — while control lists still read endurance and gust tolerance"
+          },
+          "summary": {
+            "zh": "NPR 10/29 報導（引述廠商 The Fourth Law）指出，其 Lupynis TFL-1 模組在飛行最後約 500 公尺接管控制，廠商強調『目標由人類選定』；烏克蘭軍備觀察媒體另引述該公司說法，第一級自主已進入量產，且同時提供硬體模組與軟體授權給政府客戶與無人機製造商，並預期 6-9 個月內多數前線無人機都會配備類似自主系統。本站 8/31週報已算過這一層的交換比成本，當時的切入點是單機成本只貴約一成；本期的新事實不是性能，是交付形式——自主性被拆成可單獨授權的軟體件。對照出口管制側：BIS 於 1/21 的臨時最終規則對耐空時間一小時以下的商用無人機取消對多數瓦聖納參與國的許可要求，8/14 最終規則進一步放寬無人機及其零組件、技術與軟體管制，並刪除陣風耐受度這項判定參數。瓦聖納協定本身只管物項移轉，不管開發、生產、持有與使用。",
+            "en": "NPR reported on 10/29, citing the vendor The Fourth Law, that its Lupynis TFL-1 module takes control over roughly the final 500 metres of flight, with the company stressing that humans select the target. A Ukrainian arms-monitoring outlet quotes the same company saying its first autonomy tier is already in serial production, sold to government customers and drone makers as both hardware modules and software licences, with most frontline drones expected to carry comparable autonomy within 6-9 months. This site's 8/31週報 already costed this layer, where the entry point was that autonomy adds roughly ten percent to unit cost. The new fact here is not performance but delivery form: autonomy has been unbundled into a separately licensable software item. Against that, on the control side: the BIS interim final rule of 1/21 removed licence requirements for commercial drones with under one hour endurance going to most Wassenaar participating states, and the 8/14 final rule further eased controls on UAVs and their parts, technology and software while deleting gust tolerance as a determining parameter. The Wassenaar Arrangement itself governs only transfers of items, not development, production, possession or use."
+          },
+          "implication": {
+            "zh": "這是整個議題的技術地基：只要自主性可以單獨授權，管制平台就等於沒管制，而『這架機體是不是自主武器』在交付時沒有答案，要到任務執行當下才有。對供應鏈風險分析而言，該追的欄位從機型規格換成軟體物料清單與授權條款——這恰好是 provenance 圖譜能處理、而出口管制表格處理不了的資料形態。",
+            "en": "This is the technical floor of the whole issue. Once autonomy can be licensed separately, controlling platforms is not controlling anything, and the question \"is this airframe an autonomous weapon\" has no answer at delivery — only at mission runtime. For supply-chain risk work the field to track shifts from airframe specification to software bill of materials and licence terms, which is precisely the data shape a provenance graph handles and an export control schedule does not."
+          },
+          "counterpoint": {
+            "zh": "BIS 兩次鬆綁的對象是短航時商用無人機與相關零組件，並非武裝或軍用自主系統，把它當成『管制放棄軟體層』的證據有拉伸之嫌；美國對軍用自主系統仍走 ITAR 與個案審查。另一個反證是：終端導引屬低階自主，把它當成高階目標選擇與接戰授權的代表，可能高估了軟體授權這條路徑的管制意義。",
+            "en": "Both BIS relaxations target short-endurance commercial drones and their components, not armed or military autonomous systems, so reading them as evidence that controls have abandoned the software layer stretches the point; US military autonomous systems still run through ITAR and case-by-case review. A second counter: terminal guidance is low-end autonomy, and treating it as representative of target selection and engagement authority probably overstates how much the software-licence path matters for control."
+          },
+          "source": "NPR 2026/10/29（引述 The Fourth Law）；Ukraine's Arms Monitor；Federal Register 2026-01059（1/21）與 FR-2026-08-14 / 2026-16628（8/14）",
+          "url": "https://www.npr.org/2026/10/29/g-s1-147496/ukraine-ai-drones-war-russia",
+          "terms": [
+            "TFL-1",
+            "Terminal Guidance",
+            "LAWS",
+            "Wassenaar Arrangement",
+            "EAR",
+            "BIS",
+            "ITAR"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cyber",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "同一個『自主性』問題在網路域連議場都沒有：Carnegie 7 月指出歐美治理落差，而 NIST AI RMF、ISO/IEC 42001 與歐盟 AI 法案的文本裡查無 agentic 或自主系統的字樣",
+            "en": "The same autonomy question has no forum at all in the cyber domain: Carnegie flagged the transatlantic governance gap in July, while NIST's AI RMF, ISO/IEC 42001 and the EU AI Act contain no references to agentic or autonomous systems"
+          },
+          "summary": {
+            "zh": "Carnegie Endowment 7 月的分析指出，美國 3 月公布的網路戰略走向更積極使用 AI 強化的攻擊性網路工具，歐洲則仍偏向克制，並警告網路衝突的作戰層可能日益交由行動更快、監督更少的自主軟體執行，同時帶出私部門承包商涉入與歸因爭議下的升級風險。一份 2026 年的 arXiv 論文則指出，現行前沿安全政策、NIST AI 風險管理框架、ISO/IEC 42001 與歐盟 AI 法案均未提及 agentic 或自主系統，既有回應多屬早期且不具拘束力；該文並引述 Anthropic 揭露的一起 AI 主導間諜行動，稱其中 80-90% 的行動由 AI 自主執行。本站 10/10報告與10/24報告與 11/2月報已記錄 ARTEX 從開源代理式滲透工具變成國家級供應鏈武器的過程，11/8報告再添 WorkOS 與 Chainstack 兩起個案。動能武器的自主性至少還有 CCW 這個吵了十年的議場，網路域的自主性連定義的場子都沒有。",
+            "en": "A July analysis from the Carnegie Endowment argues that the US cyber strategy published in March moves toward more aggressive use of AI-enabled offensive tools while Europe stays closer to restraint, and warns that the operational layer of cyber conflict may increasingly be delegated to autonomous software acting faster with less supervision, alongside escalation risk from contractor involvement and contested attribution. A 2026 arXiv paper reports that frontier safety policies, the NIST AI Risk Management Framework, ISO/IEC 42001 and the EU AI Act contain no references to agentic or autonomous systems, and that responses so far are early and largely non-binding; it cites an Anthropic disclosure of an AI-orchestrated espionage campaign in which AI executed 80-90% of operations autonomously. This site has tracked ARTEX from open-source agentic pentest tool to state-scale supply-chain weapon in the 10/10 and 10/24 reports and the 11/2月報, with WorkOS and Chainstack added in the 11/8報告. Kinetic autonomy at least has the CCW, a forum that has argued for a decade. Cyber autonomy has no forum in which to even define the term."
+          },
+          "implication": {
+            "zh": "這解釋了一件實務上的事：你在 SOC 看到的自主程度，領先任何監理文字好幾年，而且不會有國際文書來替你定義『什麼叫人類仍在迴圈內』。防守方只能自己建立判準，而唯一可操作的判準仍是紀錄——哪一步由人核可、哪一步由代理自行決定，必須能在事後重建。動能域與網路域在這一點上要的是同一件東西。",
+            "en": "This explains something operational: the degree of autonomy you see in a SOC runs years ahead of any regulatory text, and no international instrument is coming to define what counts as a human remaining in the loop. Defenders have to build the criterion themselves, and the only workable criterion is still the record — which step a human approved, which step the agent decided alone, reconstructable after the fact. The kinetic and cyber domains want the same artefact here."
+          },
+          "source": "Carnegie Endowment（2026/7）；arXiv 2606.11533 / 2605.16471；Cloud Security Alliance Labs",
+          "url": "https://carnegieendowment.org/research/2026/07/when-ai-agents-attack-autonomous-cyber-operations-and-europes-governance-gap",
+          "terms": [
+            "LLM",
+            "ARTEX",
+            "MHC",
+            "LAWS"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geo",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "unverified",
+          "title": {
+            "zh": "有二手研究紀錄稱 8/31-9/4 最後一週美俄把『人類覆核 AI 選定目標』的文字從草案中拿掉——本站無法核到 CCW 官方文件，但它與兩國在 UNGA 投反對票的行為一致",
+            "en": "A secondary research note claims the US and Russia removed language requiring human review of AI-selected targets during the final week of 8/31-9/4 — this site could not check it against official CCW records, but it is consistent with both states voting against the UNGA text"
+          },
+          "summary": {
+            "zh": "Cloud Security Alliance Labs 的一份研究紀錄指出，在 2026 年 8/31-9/4 日內瓦最後一週談判中，美國與俄羅斯代表團把要求人類覆核 AI 選定軍事目標的文字自草案移除；同一份紀錄稱已有 76 國（其中 70 國為 CCW 締約國）支持啟動具拘束力文書的正式談判。另有報導稱 128 個締約國最終就不具拘束力框架達成共識，但文本在美俄壓力下被大幅稀釋。本站必須誠實標註：這些都是二手且立場偏向倡議方的敘述，查核範圍內無法取得 CCW 官方逐條紀錄或任何一方的正式聲明；數字彼此也不一致（76 國對 130 國對 163 票，各自計算的是不同的東西）。可交叉確認的只有行為面：美國與俄羅斯確實在 10/29 的 UNGA 第一委員會表決中投下反對票。",
+            "en": "A Cloud Security Alliance Labs research note states that during the final Geneva week of 8/31-9/4 2026, the US and Russian delegations removed language requiring human review of AI-selected military targets, and that 76 states — 70 of them CCW parties — now back opening formal negotiations on a binding instrument. Other reporting says 128 parties agreed a non-binding framework whose text was heavily diluted under US and Russian pressure. This site must flag the limits honestly: these are secondary, advocacy-leaning accounts, and neither the CCW's own records nor any delegation's formal statement was reachable this week. The figures also disagree with each other (76 versus 130 versus 163 are counting different things). What can be cross-checked is behaviour: the US and Russia did vote against the First Committee text on 10/29."
+          },
+          "implication": {
+            "zh": "對談時不要拿『美俄刪字』這個說法當事實使用——它目前只有倡議方來源。可以安全使用的是結構性版本：在共識決議場裡，一國只要不同意就能讓一句話消失，而這一點不需要任何證據就成立。把論點建在規則上而不是建在單一爆料上，才站得住。",
+            "en": "Do not use \"the US and Russia struck the language\" as a fact in conversation — it currently rests on advocacy sources. What is safe is the structural version: in a consensus forum one state's objection is enough to make a sentence disappear, and that needs no evidence at all. An argument built on the decision rule rather than on a single leak survives contact."
+          },
+          "counterpoint": {
+            "zh": "反向解讀同樣合理：9 月確實產出了十年來第一份跨 128 國的共識文字，而兩層式途徑（禁止＋規範）本身是實質進展，不是失敗。把『文字被稀釋』當作主軸，可能低估了一件事——在俄美都在場的情況下還能寫出『效果無法被預期與控制者禁止使用』，門檻並不空洞。",
+            "en": "The opposite reading is equally defensible: September did produce the first common text across 128 states in a decade, and the two-tier approach of prohibitions plus regulations is substantive progress rather than failure. Leading with \"the text was diluted\" may understate that a threshold prohibiting use where effects cannot be anticipated and controlled was agreed with both Russia and the US in the room, which is not an empty bar."
+          },
+          "source": "Cloud Security Alliance Labs 研究紀錄；dig.watch；Human Rights Watch 2026/9/7",
+          "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-un-autonomous-weapons-treaty-oversight-202/",
+          "terms": [
+            "CCW",
+            "GGE",
+            "LAWS",
+            "MHC",
+            "IHL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "military",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "台灣正在大量買進自主性卻不在任何議場：Shield AI V-BAT 的 GPS 拒止自主、Anduril Altius-700M 遊蕩彈藥、劍鋒三型測試 Shield AI 自主導引——台灣不是 CCW 締約國，在 UNGA 也沒有票",
+            "en": "Taiwan is buying autonomy at scale while sitting in no forum: Shield AI's V-BAT with GPS-denied autonomy, Anduril's Altius-700M loitering munitions, and the Ching Feng III tested with Shield AI autonomous guidance — Taiwan is not a CCW party and has no UNGA vote"
+          },
+          "summary": {
+            "zh": "據英文軍事媒體 2026 年 8-11 月的報導：台灣與 Anduril 簽署約新台幣 269 億元（約 8.47 億美元）合約，採購 1,554 枚 Altius-700M 遊蕩彈藥與 478 架 Altius-600ISR，首批交付排在今年底，Anduril 另已於 2025 年 8 月至 2026 年 3 月間交付 291 枚 Altius-600M；海軍方面規劃 2026-2029 年採購 280 架 Shield AI V-BAT 垂直起降無人機，報導強調其賣點是不依賴跑道的目標獲取與 GPS 拒止環境下的自主飛行，另有新台幣 167.8 億元用於 32 架中科院銳鳶二型。國造端，劍鋒三型自殺無人機近期以 Shield AI 自主導引系統完成測試，劍鋒四型 2 月通過測試但尚未獲國防部採購。立法院則把國造無人機採購排除在特別預算之外、只保留對美軍購（FMS）項目，立法院稱屬預算程序調整而非取消。這些報導的採購數字彼此不一致，本站本期無法取得國防部與立法院原始文件。",
+            "en": "Per English-language defence reporting from August to November 2026: Taiwan signed a roughly NT$26.9 billion (about US$847 million) contract with Anduril for 1,554 Altius-700M loitering munitions and 478 Altius-600ISR aircraft, with first deliveries due late this year, after Anduril delivered 291 Altius-600M units between August 2025 and March 2026. The Navy plans 280 Shield AI V-BAT vertical-takeoff drones across 2026-2029, with reporting stressing runway-independent targeting and autonomy in GPS-denied conditions, plus NT$16.78 billion for 32 NCSIST Albatross II aircraft. Domestically, the Ching Feng III kamikaze drone was recently tested with Shield AI's autonomous guidance system, while the Ching Feng IV passed tests in February 2026 but has not been procured by the MND. The Legislative Yuan excluded domestic drone procurement from the special budget and kept only Foreign Military Sales items, calling it a budget-process adjustment rather than a cancellation. The procurement figures disagree across outlets, and MND and Legislative Yuan primary documents were unreachable this week."
+          },
+          "implication": {
+            "zh": "台灣的自主性規格與使用限制，實際上由賣方的國內標準決定——也就是改版中的 DoDD 3000.09 與 FY2027 NDAA 的人類判斷條款。因此對台灣而言，11/16-20 的日內瓦表決幾乎沒有直接影響，真正該盯的是美國國內那兩份文本，以及未來軍售合約裡有沒有關於自主性變更與軟體更新的條款。這也是台灣在這個議題上唯一能主動出手的位置：在採購合約而非外交場合。",
+            "en": "Taiwan's autonomy specifications and use limits are in practice set by the seller's domestic standards — the DoDD 3000.09 rewrite and the FY2027 NDAA human-judgment provisions. The Geneva vote on 11/16-20 therefore has almost no direct effect on Taiwan, while those two American texts have a great deal, as do any future FMS contract clauses governing autonomy changes and software updates. That contract layer is also the only place Taiwan can act on this issue at all, since the diplomatic layer is closed to it."
+          },
+          "counterpoint": {
+            "zh": "把台灣寫成純粹的『收貨端』可能低估了它的槓桿：報導指出美國防務廠商正在增加對台採購自主系統零組件，台灣同時是買方也是供應端，這在合約條款上是可用的籌碼。另外，採購 GPS 拒止自主導航與採購『自主目標選擇』是兩回事，本條引用的報導多半描述的是導航與導引自主，沒有任何一則證實台灣採購的系統具備自主目標選擇能力。",
+            "en": "Calling Taiwan purely a recipient may understate its leverage: reporting indicates US defence firms are increasing Taiwanese sourcing for autonomous systems, making Taiwan both buyer and supplier, which is usable in contract terms. Separately, buying GPS-denied autonomous navigation and buying autonomous target selection are different things — the reporting cited here describes navigation and guidance autonomy, and none of it confirms that any system Taiwan has bought selects targets on its own."
+          },
+          "source": "Army Recognition（2026）；The Defense Post 2026/8/28；Asian Military Review 2026/11；Focus Taiwan 2026/9/3",
+          "url": "https://www.armyrecognition.com/news/army-news/2026/taiwan-v-bat-drone-deal-shield-ai-navy-1bn-procurement",
+          "terms": [
+            "V-BAT",
+            "Altius-700M",
+            "MND",
+            "GNSS",
+            "LAWS",
+            "ISR",
+            "DoDD 3000.09",
+            "NDAA"
+          ]
+        }
+      ]
+    }
+  ],
+  "narrative": {
+    "zh": "**上期推演校準**\n\n11/2週報的五條指標，六週後是零條站得住、零條被推翻、五條全部仍未定——這本身就是要認的毛病。ICCS 未公開回應 NGCC 第一輪破解，第二輪名單查無；Let's Encrypt 的 MTC staging 查無上線跡象；歐盟的 12/31 與 CNSA 2.0 的 1/1 都還沒到；簽章鏈偽造查無首例。五條裡有四條的到期日被我設在本期之後，等於給自己開了六週不必對帳的空白支票：指標若不會在下一個校準點前產生可觀察的值，它就不是指標，是延後。唯一新材料是有二手來源稱 Chrome 根憑證庫政策草案只收 MTC、不收含 PQC 的傳統 X.509；方向對我有利，但來源是個人部落格，不足以結案。本期的指標設計直接套用這個教訓。\n\n**問題是什麼**\n\n11/16-20，CCW 第七次審查大會在日內瓦決定要不要為致命性自主武器開啟談判。報導把它寫成「禁與不禁」的表決，爭論於是集中在俄美會不會否決。這個框架假設只要拿到談判授權，規範就會落到武器上。真正的問題在下一層：自主性不是可清點的物件，而是只在執行期存在的軟體狀態；而七十年來成功的軍控，驗的全是硬體、設施與活動。\n\n**機制怎麼運作**\n\n第一層，規範的客體找不到。DoDD 3000.09 以「能否在不經操作員進一步介入下選擇並接戰目標」界定自主武器，中國 2022 年工作文件採五項累積要件；兩個定義講的都是系統在某次任務裡怎麼跑，不是它是什麼。同一架機體，裝上終端導引模組是一回事，拆掉是另一回事——而模組是一次軟體授權。\n\n第二層，出口管制清單因此抓不到它。瓦聖納協定只管物項移轉，不管開發、生產、持有與使用，清單寫的是航程、酬載、耐受度這類平台參數。BIS 今年 1/21 與 8/14 兩度鬆綁無人機出口管制，8/14 最終規則甚至刪掉陣風耐受度這個參數。賣方不需要繞過任何東西：賣的是機體，自主性之後推送。\n\n第三層，查證於是成為條約能否生效的唯一環節，而它恰好最沒人做。技術路線只有一條：機載決策在執行期留下不可竄改的稽核紀錄，再以零知識證明對外證明這次接戰通過了授權閘門，而不洩漏參數。這是 provenance 問題的軍控版本——要證的不是模型多聰明，是那條授權鏈真的存在過。整個 2026 年，這條路線只停在單一作者工作論文與民間藍圖，沒有任何國家提案。\n\n**證據**\n\n最硬的分岔在 10/29：UNGA 第一委員會以 163 比 5 通過 A/C.1/81/L.37，反對的是白俄羅斯、北韓、以色列、俄羅斯、美國，9 國棄權；10/22 另有 50 國聯合聲明要求 2027 年內完成限時談判。同一批國家在 CCW 面對的是共識決，任一國可否決，所以 9 月 GGE 只能產出不具拘束力的「要素」，採兩層式途徑，核心門檻是「效果無法被預期與控制者禁止使用」——誰查、用什麼查，文件沒有答案。擴散側，烏克蘭 The Fourth Law 的 TFL-1 模組接管最後 500 公尺，已量產，同時販售硬體模組與軟體授權，廠商稱 6-9 個月內多數前線無人機都會裝上。這是 8/31週報算過成本的那一層，現在它有了授權形式。美國國內軌道比國際快：FY2027 NDAA 參院版把 3000.09 的「適當程度人類判斷」寫進法律並要求建立事故通報庫，但 NDAA 未過，押在跛鴨會期。\n\n**各方自己怎麼說**\n\n華府：現行國際人道法夠用，該做的是國家層級審查與測試；它實際在做的，是用採購與國內法把標準寫成自己的——NSPM-11 要求 90 天內改寫 3000.09，約 9/3 的期限已過而查無公布版本，同時在 UNGA 投下反對票。它最不願被追問的是：既然 3000.09 管得住，為什麼改版不公開。莫斯科：不需要新規則，而且議題只能留在 CCW、不准搬去聯合國其他平台——因為 CCW 是共識決，留在這裡等於留著否決權。北京：反對缺乏人類控制的致命智能武器，支持「條件成熟時」達成有拘束力文件，去年 12 月決議棄權；五要件定義把門檻抬到幾乎沒有系統會落入，批評者稱之為隱性允許，但它要的東西很具體——把規範留在一個自己有否決權、且不會回頭查證解放軍無人系統的議場。歐盟與巴西領銜的多數方要 2027 年限時授權，賭的是把議題推進多數決場域。四方最在意對方哪一點：華府要別人別用條約綁住採購速度，莫斯科要議場不搬家，北京要定義不要寬到涵蓋自己，多數方要把表決規則從共識換成多數。台北不在任何一張名單上——不是締約國、沒有票，卻正在買進自主性：V-BAT 的 GPS 拒止自主、Altius-700M 遊蕩彈藥、劍鋒三型測試 Shield AI 自主導引。規格與使用限制，由賣方的國內標準決定。\n\n**未來 3–6 個月的推演與觀察指標**\n\n主判斷：11/16-20 出什麼結果都不改變擴散速度，真正的規範寫在三處——美國國內法、採購合約的自主性條款、出口管制清單是否首次納入軟體層。本期刻意只挑 2-3 個月內會產生可觀察值的指標。一、11/20 閉幕文件裡有沒有「negotiate」這個動詞，有沒有任何查證條款；沒有查證條款就是本期判斷成立。二、12 月 UNGA 全會表決，美國是否維持反對、棄權國是否增加。三、FY2027 NDAA 是否在跛鴨會期通過，Section 1647／1653 的人類判斷條款是否在兩院協商中保留。四、改版 DoDD 3000.09 是否公布，新定義有沒有把「軟體更新導致的自主性變更」列為審查觸發條件。五、BIS 或瓦聖納清單更新是否首次出現自主性或目標選擇軟體的管制項；這條最容易推翻我。\n\n**我可能錯在哪**\n\n第一也最重：我把「沒有查證就沒有效力」當鐵律，但禁雷與禁化武初期也是先有規範、後補查證，規範本身就先改變了採購與出口行為；若 11/20 真出現談判授權、廠商兩年內開始自我設限，本期核心判斷會降級成過度工程化的技術主義。第二，我用烏克蘭的低階終端導引推論高階目標選擇與接戰授權是跳躍，軍規自主接戰要感測、識別、交戰規則三層，不是推一個模組就有。第三，「美俄刪掉人類覆核文字」只有單一倡議方二手紀錄，已標 unverified。第四，台灣那段用的是英文軍事媒體轉述，採購數字各家不一致，國防部與立法院原始文件本期無法取得。第五是老問題、連續第六期：出網代理只放行 github.com，unoda.org、csis.org、congress.gov、whitehouse.gov 全部無法解析，所以本期沒有一條能給 confirmed——包括 163 比 5，它出自 press.un.org 新聞稿，而我讀到的是搜尋引擎轉述。所有日期與票數請當作待查核。",
+    "en": "**Calibrating last issue's forecasts**\n\nThe 11/2週報 left five indicators. Six weeks on: none confirmed, none overturned, all five still open — and that is the failure worth owning. ICCS has neither answered the NGCC round-one breaks nor published a round-two list; Let's Encrypt's MTC staging shows no sign of being live; the EU's 12/31 and CNSA 2.0's 1/1 have not arrived; no signature-chain forgery has surfaced. Four of the five had expiry dates set after this issue — a six-week blank cheque. An indicator that produces no observable value before the next calibration point is not an indicator, it is a postponement. That lesson is applied to this issue's indicators below.\n\n**The problem**\n\nOn 11/16-20 the CCW's Seventh Review Conference decides whether to open negotiations on lethal autonomous weapons. Coverage frames it as a ban-or-no-ban vote, so the argument is about whether Russia and the US will block. That frame assumes a mandate would land on the weapons. The real problem is one layer down: autonomy is not a countable object but a software state that exists only at runtime — and every arms control regime that ever worked verified hardware, facilities and activities.\n\n**How the mechanism works**\n\nFirst, the object of regulation cannot be located. DoDD 3000.09 defines an autonomous weapon by whether it selects and engages targets without further operator intervention; China's 2022 working paper uses five cumulative criteria. Both describe how a system behaves on a mission, not what it is. The same airframe with a terminal-guidance module is one thing, without it another — and the module is a software licence.\n\nSecond, export control lists therefore cannot catch it. Wassenaar governs transfers of items, not development, production, possession or use, and its lists are written in platform parameters. BIS eased drone export controls twice this year, on 1/21 and 8/14; the August rule deleted gust tolerance as a control parameter outright. Nobody needs to evade anything: what ships is the airframe, and the autonomy is pushed afterwards.\n\nThird, verification is therefore the only thing that could make a treaty bite, and it is the part nobody works on. One technical path exists: a tamper-evident onboard record of the decision at runtime, plus a zero-knowledge proof that the engagement passed an authorisation gate without disclosing parameters. This is the arms-control form of a provenance problem — what must be proven is not that the model was clever but that the authority chain existed. Through all of 2026 that path has lived only in single-author working papers and civil-society blueprints. No state proposal.\n\n**Evidence**\n\nThe sharpest divergence came on 10/29: the UNGA First Committee approved A/C.1/81/L.37 by 163 to 5 with 9 abstentions, the five against being Belarus, North Korea, Israel, Russia and the United States; on 10/22 fifty states jointly demanded a time-limited negotiation concluding in 2027. The same states face consensus rules at the CCW, where one objection suffices — which is why September's GGE produced only non-binding \"elements\" on a two-tier approach whose core threshold prohibits use where effects cannot be anticipated and controlled. Who checks that, with what instrument, the text does not say. On the diffusion side, Ukraine's TFL-1 module takes the final 500 metres, is in serial production, and sells as both hardware modules and software licences, with the vendor expecting most frontline drones to carry equivalents within 6-9 months. The 8/31週報 costed that layer; it now has a licensing form. The American domestic track moves faster than the international one: the Senate's FY2027 NDAA writes 3000.09's \"appropriate levels of human judgment\" into statute and mandates an incident-reporting repository — but it has not passed, and sits in the lame-duck session.\n\n**What each side says in its own words**\n\nWashington: existing IHL suffices, what is needed is national review and testing. What it actually does is write the standard through procurement and domestic law — NSPM-11 ordered a 3000.09 rewrite within 90 days, the roughly 9/3 deadline passed with nothing published, and it voted against the UNGA text. The question it least wants: if 3000.09 is adequate, why is the revision secret? Moscow: no new rules, and the issue must stay in the CCW rather than move to other UN platforms — because the CCW runs on consensus, and staying means keeping the veto. Beijing: opposes lethal intelligent weapons lacking human control, supports a binding instrument \"when conditions are mature\", abstained last December; its five-criteria definition sets a bar almost nothing meets, which critics call implicitly permissive, but what it wants is concrete — keep the norm where it holds a veto and where nobody will come back to inspect PLA unmanned systems. The EU and the Brazil-led majority want a time-limited 2027 mandate, betting on moving the issue into a majority-vote arena. What each most wants from the others: Washington, that no treaty bind its procurement tempo; Moscow, that the venue not move; Beijing, that the definition not widen onto its own systems; the majority, that the decision rule change from consensus to majority. Taipei is on none of those lists — not a party, no vote — yet it is buying autonomy: V-BAT's GPS-denied autonomy, Altius-700M loitering munitions, the Ching Feng III tested with Shield AI guidance. The specifications are set by the seller's domestic standards.\n\n**Forecasts and indicators for the next 3-6 months**\n\nCore judgement: whatever 11/16-20 produces, the rate of diffusion does not change. The real norm gets written in three places — US domestic law, the autonomy clauses of procurement contracts, and whether an export control list reaches the software layer. One: whether the 11/20 closing document contains the verb \"negotiate\", and whether it contains any verification clause; no verification clause confirms this thesis. Two: the December UNGA plenary vote — does the US hold its \"no\", do abstentions grow? Three: whether the FY2027 NDAA passes in the lame duck and whether Sections 1647/1653 survive conference. Four: whether the revised DoDD 3000.09 appears, and whether it treats a software-update-induced change in autonomy as a review trigger. Five: whether a BIS or Wassenaar list update controls autonomy or target-selection software for the first time — the item most likely to break this argument.\n\n**Where I could be wrong**\n\nFirst and heaviest: I treat \"unverifiable means ineffective\" as a law, but landmines and chemical weapons both began with norms and added verification later, and the norm moved procurement and export behaviour first; if 11/20 yields a mandate and vendors self-limit within two years, this thesis downgrades to over-engineered technicism. Second, extrapolating from Ukraine's low-end terminal guidance to target selection and engagement authority is a leap — military-grade autonomous engagement needs sensing, identification and rules of engagement, not one module push. Third, \"the US and Russia struck the human-review language\" rests on a single advocacy-side secondary note and is marked unverified. Fourth, the Taiwan passage relies on English defence media whose procurement figures disagree, with MND and Legislative Yuan documents unreachable. Fifth, the recurring problem, now a sixth consecutive issue: the outbound proxy allowed only github.com, with unoda.org, csis.org, congress.gov and whitehouse.gov all failing to resolve — so nothing here is marked confirmed, including the 163-to-5 count, which comes from a press.un.org release I read only as a search summary. Treat every date and vote count as pending verification."
+  }
+}

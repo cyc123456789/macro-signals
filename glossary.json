@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "terms": [
     {
       "term": "AsyncOS",
@@ -3773,6 +3773,61 @@
       },
       "category": "geo",
       "first_seen": "2026-11-08"
+    },
+    {
+      "term": "ZKP",
+      "zh": "零知識證明",
+      "expansion": "Zero-Knowledge Proof",
+      "def": {
+        "zh": "一種密碼學方法，讓證明方能向驗證方證明某個陳述為真，而不洩漏該陳述之外的任何資訊。在自主武器查證的提案中被用來證明「某次接戰通過了授權閘門」，同時不公開演算法參數或任務機密。",
+        "en": "A cryptographic method letting a prover convince a verifier that a statement is true while revealing nothing beyond the statement itself. In autonomous-weapons verification proposals it is used to prove that an engagement passed an authorisation gate without disclosing algorithm parameters or mission secrets."
+      },
+      "category": "tech",
+      "first_seen": "2026-11-09"
+    },
+    {
+      "term": "Wassenaar Arrangement",
+      "zh": "瓦聖納協定",
+      "expansion": "The Wassenaar Arrangement on Export Controls for Conventional Arms and Dual-Use Goods and Technologies",
+      "def": {
+        "zh": "42個參與國組成的自願性、共識決多邊出口管制機制，就常規武器與軍民兩用物項維護管制清單。其管制對象限於物項移轉，不涵蓋開發、生產、持有與使用，清單參數多以平台性能撰寫。",
+        "en": "A voluntary, consensus-based multilateral export control regime of 42 participating states maintaining control lists for conventional arms and dual-use goods. Its scope covers transfers of items only, not development, production, possession or use, and its list parameters are largely written in platform performance terms."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-09"
+    },
+    {
+      "term": "ITAR",
+      "zh": "國際武器貿易條例",
+      "expansion": "International Traffic in Arms Regulations",
+      "def": {
+        "zh": "美國國務院主管的軍品出口管制法規，管轄美國軍品清單（USML）上的國防物品、服務與技術資料，採個案許可制，與商務部主管的EAR分工。",
+        "en": "The US State Department export control regime covering defence articles, services and technical data on the US Munitions List, operating on case-by-case licensing and sitting alongside the Commerce Department's EAR."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-09"
+    },
+    {
+      "term": "V-BAT",
+      "zh": "V-BAT 垂直起降無人機",
+      "expansion": "Shield AI V-BAT vertical take-off and landing UAS",
+      "def": {
+        "zh": "美國Shield AI研製的垂直起降固定翼無人機，不需跑道即可起降，主打在GPS與通訊拒止環境下以機載自主軟體持續執行偵察與目標獲取。台灣海軍規劃2026-2029年採購280架。",
+        "en": "A vertical take-off and landing fixed-wing UAS built by Shield AI that needs no runway and is marketed for persistent reconnaissance and targeting in GPS- and communications-denied environments using onboard autonomy software. Taiwan's Navy plans to acquire 280 across 2026-2029."
+      },
+      "category": "military",
+      "first_seen": "2026-11-09"
+    },
+    {
+      "term": "Altius-700M",
+      "zh": "Altius-700M 遊蕩彈藥",
+      "expansion": "Anduril Altius-700M loitering munition",
+      "def": {
+        "zh": "美國Anduril Industries生產的管射式遊蕩彈藥，可由地面、車載或空中載台發射，具滯空搜索與打擊能力。台灣2026年8月簽約採購1,554枚，與478架Altius-600ISR同批。",
+        "en": "A tube-launched loitering munition produced by Anduril Industries, launchable from ground, vehicle or air platforms, able to loiter, search and strike. Taiwan contracted for 1,554 units in August 2026 alongside 478 Altius-600ISR aircraft."
+      },
+      "category": "military",
+      "first_seen": "2026-11-09"
     }
   ]
 }
