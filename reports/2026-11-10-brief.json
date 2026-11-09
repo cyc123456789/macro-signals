@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-10",
+  "kind": "brief",
+  "title": {
+    "zh": "美中兩條11/10到期的出口管制休兵線疑似同步解到1/10/2027，推翻11/8報告標記的「脫鉤風險」——但中方公告原文查核範圍內仍無法核實；CCW政府專家小組報告段落25首度公布自主武器定義文字，用來檢驗台灣與烏克蘭正在採購的系統是否落入管制範圍；Check Point證實ARTEX已擴散到2,557台暴露主控台並自動化竊取簽章憑證；荷姆茲海峽通行量十一週未見起色；台灣核能公投題目文字與五場電視辯論期程確認，11/12首場登場",
+    "en": "US and China's Parallel 11/10 Export-Control Truce Deadlines Appear to Sync to a Shared 1/10/2027 Extension, Undercutting the \"Decoupling Risk\" the 11/8 Report Flagged — Though Beijing's Own Notice Text Remains Unverified; Paragraph 25 of the CCW GGE's Report Gives the First Concrete Text Defining Autonomous Weapons, Tested Against Systems Taiwan and Ukraine Are Actually Buying; Check Point Confirms ARTEX Has Spread to 2,557 Exposed Control Panels and Is Now Automating Signing-Certificate Theft; Hormuz Strait Traffic Shows No Recovery After Eleven Weeks; Taiwan's Nuclear-Referendum Wording and Five-Session TV Debate Schedule Are Confirmed, First Session 11/12"
+  },
+  "focus": {
+    "zh": "本期5條。美中11/10貿易休兵線疑似同步解到1/10/2027，推翻11/8報告標記的脫鉤風險，但待MOFCOM原文核實；CCW政府專家小組報告首度公布LAWS定義文字，拿來逐一檢驗台灣與烏克蘭的自主武器採購案；ARTEX經Check Point證實已擴散至2,557台主控台並自動化竊取簽章憑證；荷姆茲海峽通行量十一週未見起色；台灣核能公投題目文字與時程確認，11/12首場電視辯論登場。本期多個一手來源（MOFCOM、GACC、UNODA官方PDF、UKMTO）均被雲端環境出網白名單擋下，只能依賴多方二手轉述交叉比對，已逐條標註限制與衝突說法。",
+    "en": "Five items this period. The US-China 11/10 trade-truce deadlines appear to have synced to a shared 1/10/2027 extension, undercutting the decoupling risk flagged in the 11/8 report, pending verification of MOFCOM's own text; the CCW GGE report's first concrete LAWS definition text is tested against Taiwan's and Ukraine's own autonomous-weapons purchases; Check Point confirms ARTEX has spread to 2,557 control panels and is now automating signing-certificate theft; Hormuz Strait traffic shows no recovery after eleven weeks; and Taiwan's nuclear-referendum wording and schedule are confirmed ahead of the first televised debate on 11/12. Several primary sources (MOFCOM, GACC, UNODA's official PDF, UKMTO) were blocked by this cloud environment's outbound allowlist this cycle, so findings rely on cross-checked secondary reporting, with limits and conflicting accounts flagged item by item."
+  },
+  "sections": [
+    {
+      "id": "nexus",
+      "items": [
+        {
+          "severity": "critical",
+          "confidence": "likely",
+          "title": {
+            "zh": "美中兩條11/10到期的貿易休兵線疑似同步解開：BIS關係企業規則與中國稀土出口管制暫停令均見報導指向延至1/10/2027，推翻11/8報告標記的「脫鉤風險」——但中方查核範圍內仍無法核到MOFCOM原文",
+            "en": "US and China's parallel 11/10 trade-truce deadlines appear to resolve in sync: both the BIS Affiliates Rule and China's rare-earth suspension are now reported extended to 1/10/2027, undercutting the \"decoupling risk\" flagged in the 11/8 report — though Beijing's own text remains unverified in this check"
+          },
+          "summary": {
+            "zh": "11/8報告記錄美方已於11/5正式提交BIS關係企業規則暫停令展延至1/10/2027的聯邦公報文件（FR Doc. 2026-22793），但查無中國稀土出口管制暫停令（MOFCOM第70號公告，原訂11/10到期）的對應展延文件，因此標記「兩條原本綁在一起的倒數，可能並不同步解開」的風險。本期查核發現：上海有色網（SMM）與MLQ兩份獨立報導均指稱商務部與海關總署已發布「2026年第58號公告」，將2025年第55-58、61、62號公告（涵蓋稀土出口管制主線）的暫停期限延長至2026年11月11日至2027年1月10日——與BIS那條線完全同一個到期日。但同一時間，另一份報導（查核時間同樣是11/9）稱「北京尚未發布任何展延文件、暫停令將依法到期」，與SMM/MLQ的說法直接衝突。兩種說法均來自二手轉述，查核範圍內無法直接存取MOFCOM或海關總署官網核實公告原文（雲端環境白名單擋下news.metal.com、mlq.ai、carraglobe.com、globaltimes.cn等網域）。",
+            "en": "The 11/8 report recorded that the US had formally filed, on 11/5, the Federal Register document (FR Doc. 2026-22793) extending the BIS Affiliates Rule suspension to 1/10/2027, but found no matching extension notice for China's rare-earth export-control suspension (MOFCOM Announcement No. 70, originally due to lapse 11/10) — and flagged a risk that \"two deadlines previously tied together might not resolve in sync.\" This cycle's check finds that two independent reports (Shanghai Metals Market and MLQ) both describe MOFCOM and China's customs authority (GACC) issuing \"Announcement No. 58 of 2026,\" extending the suspension of the 2025 Announcements Nos. 55-58, 61 and 62 (the core rare-earth controls) from 11/11/2026 to 1/10/2027 — the exact same deadline as the BIS track. At the same time, another report (checked the same day, 11/9) states that \"Beijing has published no extension\" and the suspension would lapse on schedule, directly contradicting the SMM/MLQ account. Both versions are secondhand; this check could not reach MOFCOM's or GACC's own site to verify the primary notice text (this cloud environment's outbound allowlist blocked news.metal.com, mlq.ai, carraglobe.com and globaltimes.cn)."
+          },
+          "implication": {
+            "zh": "11/8報告的判斷是「合規社群的信心正在下降、業界也還在等」，並把這視為一個需要持續觀察的風險點；如果SMM/MLQ的版本屬實，這個風險在過去48小時內已經被排除——美中兩條線不是分岔，而是用同一個新到期日（1/10/2027）重新綁定在一起，這對你評估兩國出口管制的「議價籌碼對稱性」是直接相關的校準：中國選擇把稀土暫停令的新到期日精確對齊BIS關係企業規則，暗示雙方很可能是在9/23 Bessent口頭承諾的那輪雙邊磋商裡，把兩條線一次性談定，而不是各自獨立決策。但誠實地說，這個判斷目前只能停在「likely」：另一份報導在同一天提出相反說法，而雙方都是二手轉述，查核範圍內查無任何一方的官方公告編號原文。對你的操作意義是，把「1/10/2027」當成兩國出口管制曝險的新基準日來用，但在MOFCOM或GACC官網出現對應公告編號之前，不要把「兩線同步」當成已核實的事實向決策者複述——精確的說法應該是「兩份獨立二手來源指向同步，但尚缺一手文件」。",
+            "en": "The 11/8 report's judgment was that compliance-community confidence was eroding and that industry itself was still waiting — treating this as an open risk to keep watching. If the SMM/MLQ account is accurate, that specific risk has been resolved in the last 48 hours: the two tracks are not diverging but have been re-bound to the same new deadline (1/10/2027), which is a direct calibration point for how symmetric the two countries' export-control bargaining chips actually are — China choosing to align its rare-earth deadline precisely with the BIS Affiliates Rule suggests both lines were likely settled in a single pass during the same round of bilateral talks that produced Bessent's 9/23 verbal commitment, rather than decided independently. But honestly, this can only sit at \"likely\": another report from the same day states the opposite, both accounts are secondhand, and this check found no primary notice number from either government. The operational takeaway is to use 1/10/2027 as the new baseline date for both countries' export-control exposure, but not to repeat \"the two tracks are synced\" to decision-makers as settled fact until a matching notice number appears on MOFCOM's or GACC's own site — the precise framing is \"two independent secondary sources point to sync, but a primary document is still missing.\""
+          },
+          "counterpoint": {
+            "zh": "另一份報導於查核時間點（11/9）明確表示「北京尚未發布任何展延文件」，與SMM/MLQ引用的「公告第58號」說法直接矛盾；兩者都無法核實到官方原文，不排除其中一方的資訊時間點早於另一方（例如公告可能在查核後才正式發布）。",
+            "en": "Another report, checked the same day (11/9), explicitly states \"Beijing has published no extension,\" directly contradicting the \"Announcement No. 58\" account cited by SMM and MLQ. Neither account could be verified against an official primary text, and it is possible the two reports simply caught different points in time (for instance, if the notice was published only after one check was made)."
+          },
+          "source": "Shanghai Metals Market、MLQ（均二手轉述MOFCOM/GACC 2026年第58號公告，與另一方「尚無展延」的報導相互矛盾）",
+          "url": "https://news.metal.com/newscontent/CNTOCBN4QTSC2L3BEOVBYILPAZVOOIHVV6INVPY-china-extends-suspension-of-rare-earth-export-controls-until-january-2027",
+          "terms": ["MOFCOM", "GACC", "BIS", "Federal Register"]
+        },
+        {
+          "severity": "high",
+          "confidence": "likely",
+          "title": {
+            "zh": "CCW政府專家小組報告段落25首度公布自主武器系統的具體定義文字——用來檢驗烏克蘭TFL-1與台灣採購的V-BAT、Altius-700M，多數會落在「人類預先框定目標集合」這個但書的保護傘下",
+            "en": "Paragraph 25 of the CCW GGE's report gives the first concrete text defining a lethal autonomous weapon system — tested against Ukraine's TFL-1 and Taiwan's V-BAT and Altius-700M, most would likely shelter under the carve-out for human-preset target sets"
+          },
+          "summary": {
+            "zh": "11/9週報指出，CCW GGE的9月共識文件（CCW/GGE.1/2026/3，於9/4或9/5凌晨定案）「遭稀釋」，但查無具體文字可供分析，只能停在結構性判斷。本期查核找到該文件第25段的具體定義文本（經EJIL Talk、Opinio Juris等學術評論轉述並引用，查核範圍內無法直接存取docs-library.unoda.org的官方PDF）：將LAWS定義為「一組武器與技術元件的組合，能在沒有操作該系統之人類介入的情況下，辨識、選定並接戰一個會導致人員死亡的目標」；關鍵的第(a)款但書明確寫道，「人類預先設定或框定一組潛在目標及其特徵」不會使系統脫離此定義——只有當執行任務的人員親自決定「具體目標與時機」時，系統才被排除在外。ICRC的評論稱這個定義「可行且有原則性」，但學界（Opinio Juris）也指出，用狹義讀法，這個定義實際上只涵蓋「人類操作者事先完全沒有鎖定過的目標」這一類系統。",
+            "en": "The 11/9 weekly report noted that the CCW GGE's September consensus document (CCW/GGE.1/2026/3, finalized in the early hours of 9/4 or 9/5) had been \"diluted,\" but could find no specific text to analyze and stayed at a structural-level judgment. This cycle's check found the actual definitional text of paragraph 25 (relayed and quoted by academic commentary at EJIL Talk and Opinio Juris; this check could not reach the official PDF at docs-library.unoda.org directly): it defines a LAWS as \"a combination of weapons and technological components that can identify, select and engage a target in a way that results in loss of life, without intervention by a human being operating the system\"; critically, subparagraph (a) states that a human \"programming or otherwise determining a set of potential targets or characteristics thereof\" does not take a system out of this characterization — a system is excluded only where personnel planning or carrying out the attack determine the specific target and timing. The ICRC's commentary calls the characterization \"workable and principled,\" but Opinio Juris notes that, on a narrow reading, it actually reaches only systems that engage targets no human operator singled out in advance."
+          },
+          "implication": {
+            "zh": "這份文字讓你能把11/9週報列出的三項台灣與烏克蘭採購案，逐一套進定義檢驗，而不只是停在「這是自主武器」的直覺判斷。烏克蘭TFL-1終端導引模組，若操作方式是「發射前已鎖定特定目標、模組只負責終端修正命中精度」，屬於人員已決定「具體目標」，很可能落在第(a)款但書之外、不算LAWS；但若其6-9個月後的升級版本允許「發射後由系統自行在一組候選目標中選定」，就會直接落入定義核心。台灣的Shield AI V-BAT與Anduril Altius-700M遊蕩彈藥同理：決定性的不是機體本身有沒有自主導引能力，而是任務規劃階段是否已經「鎖定具體目標與時機」——這正好是你在供應鏈與武器系統評估時該追的欄位，而不是規格表上的「自主等級」字樣。對你在高層對話中複述這個論點時的精確說法：這次CCW談成的不是「禁止自主武器」，而是「畫出一條以任務規劃階段的人類決定內容為準的線」，而這條線要求的正是你的本業——對決策鏈與時間戳的可追溯紀錄，不是對武器外觀的分類。",
+            "en": "This text lets you run the three Taiwan/Ukraine procurement cases the 11/9 weekly report listed through the actual definition, rather than stopping at an intuitive \"this is autonomous\" call. Ukraine's TFL-1 terminal-guidance module, if operated such that \"a specific target is locked before launch and the module only corrects terminal accuracy,\" has a human determining the specific target and likely falls outside the definition under subparagraph (a); but if the version expected within 6-9 months lets \"the system pick from a set of candidate targets after launch,\" it falls squarely inside the core definition. The same logic applies to Taiwan's Shield AI V-BAT and Anduril Altius-700M loitering munitions: what matters is not whether the airframe has autonomous guidance capability, but whether the mission-planning stage already locked a specific target and timing — that is exactly the field you should be tracking in supply-chain and weapons-system assessment, not the \"autonomy level\" line on a spec sheet. The precise way to state this in a senior conversation: what the CCW actually agreed on is not \"banning autonomous weapons\" but \"drawing a line defined by what humans decided at the mission-planning stage\" — and that line demands exactly what your own field does: traceable, timestamped records of the decision chain, not a taxonomy of weapon appearance."
+          },
+          "counterpoint": {
+            "zh": "本條的定義文字來自EJIL Talk、Opinio Juris等學術評論的轉述與引用，查核範圍內的出網白名單擋下了docs-library.unoda.org官方PDF，無法逐字核對CCW/GGE.1/2026/3原文；評論間對草案早期版本的用詞（如「with force」與最終版的差異）記載也有出入，顯示定案過程中文字本身仍有變動，11/16-20審查大會是否會進一步修改這段文字目前也未知。",
+            "en": "The definitional text here comes from academic commentary (EJIL Talk, Opinio Juris) relaying and quoting the document; this cloud environment's outbound allowlist blocked direct access to the official PDF at docs-library.unoda.org, so the exact wording of CCW/GGE.1/2026/3 could not be verified word-for-word. Commentaries also disagree on earlier draft wording (for example, \"with force\" versus the final text), showing the language itself kept shifting during finalization, and whether the 11/16-20 Review Conference will further amend this paragraph is unknown."
+          },
+          "source": "EJIL Talk、Opinio Juris（轉引CCW/GGE.1/2026/3段落25官方文本）",
+          "url": "https://www.ejiltalk.org/characterizing-lethal-autonomous-weapon-systems-consensus-without-agreement/",
+          "terms": ["CCW", "GGE", "LAWS", "ICRC", "TFL-1", "V-BAT", "Altius-700M"]
+        }
+      ]
+    },
+    {
+      "id": "cyber",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "likely",
+          "title": {
+            "zh": "Check Point 11/5報告：ARTEX已擴散到2,557台暴露主控台，攻擊者用它全自動竊取簽章憑證——300多張到手、僅3張通過自身可用性檢測",
+            "en": "Check Point's 11/5 report finds ARTEX has spread to 2,557 exposed control panels, with attackers using it to fully automate signing-certificate theft — over 300 stolen, only 3 passing their own usability checks"
+          },
+          "summary": {
+            "zh": "11/2月報將ARTEX定性為「自主滲透工具國家化」的扇出武器，11/8報告記錄其受害範圍從南韓銀行、MSP供應鏈擴散到開發者平台WorkOS與Web3基礎設施商Chainstack。Check Point Research於11/5發布的分析（經letsdatascience等轉述，Check Point官方部落格原文查核範圍內未能直接存取）提供了第一組規模化數字：掃描到2,557台曾經或正在運作ARTEX操作主控台的系統，其中1,608台在查核時仍即時可公開存取；多數攻擊一旦操作者設定初始目標後即「全自動運行」，操作者只負責確認進度。其中一條攻擊鏈專門鎖定灰色市場簽章業者，自動化竊取逾300張程式碼簽章憑證與對應密碼，但其中只有3張通過攻擊者自己建立的可用性檢測。同一份報告也指出至少三套性質類似的競爭框架已經出現：CyberStrike、Cairn、PentAGI，以及攻擊者自製的PZZ。",
+            "en": "The 11/2 monthly report characterized ARTEX as a \"nationalized autonomous-pentesting\" fan-out weapon, and the 11/8 report recorded its victim set spreading from South Korean banks and MSP supply chains to developer platform WorkOS and Web3 infrastructure provider Chainstack. Check Point Research's analysis published 11/5 (relayed by letsdatascience and others; this check could not reach Check Point's own blog post directly) supplies the first scaled numbers: 2,557 systems were found to be running or to have run ARTEX operator consoles, with 1,608 still live and publicly accessible at check time. Most attacks ran fully autonomously once an operator set an initial goal, with the operator mainly just checking progress. One attack chain specifically targeted gray-market certificate-signing shops, automating the theft of more than 300 code-signing certificates and their passwords — though only 3 passed the attackers' own usability checks. The same report identifies at least three similar competing frameworks already in the wild: CyberStrike, Cairn, PentAGI, plus a custom attacker-built tool called PZZ."
+          },
+          "implication": {
+            "zh": "11/2月報的判斷核心是「傳統MSP供應鏈入侵的瓶頸是人力，自主代理把這段變成可平行化」；這次的數字把這個判斷量化到了可以直接拿來做威脅獵捕優先序排序的程度——2,557這個分母本身就是你的攻擊面基準線，而「300張偷到、3張能用」這個轉換率，說明自動化竊取的下一個瓶頸不在取得憑證的速度，是在憑證本身的品質驗證，這對provenance graph研究是一個具體可操作的切入點：如果你在追蹤一條簽章鏈，「這張憑證是否通過了攻擊者自己的可用性測試」本身就是一個可以回推的特徵，因為能通過測試、被實際拿去用的憑證，大概率會在下游留下與正常簽署流程不同的使用模式（例如簽署頻率、簽署物件類型的異常集中）。另外，開源工具關閉原始碼並未讓威脅消失——CyberStrike、Cairn、PentAGI三套替代框架的出現，代表「自主滲透工具」已經是一個產品類別而非單一工具事件，你的偵測規則與威脅模型應該從「認得ARTEX的特徵碼」，改成「認得這整個類別的操作模式」。",
+            "en": "The 11/2 monthly report's core judgment was that the bottleneck in traditional MSP supply-chain intrusions is human labor, and that autonomous agents parallelize that step. This cycle's numbers quantify that judgment to a point usable directly for threat-hunting prioritization: 2,557 is a usable attack-surface denominator, and the \"300 stolen, 3 usable\" conversion rate shows the next bottleneck in automated theft is not the speed of acquiring certificates but verifying their quality — a concrete, actionable angle for provenance-graph research: if you're tracing a signing chain, \"did this certificate pass the attacker's own usability test\" is itself a feature you can work backward from, since a certificate that passed testing and was actually used will likely leave a downstream usage pattern distinct from normal signing flows (e.g., abnormal concentration in signing frequency or signed-object type). Separately, closing the source code did not make the threat disappear — the emergence of three alternative frameworks (CyberStrike, Cairn, PentAGI) shows \"autonomous pentesting tools\" is now a product category rather than a single-tool event, so detection rules and threat models should shift from \"recognize ARTEX's signature\" to \"recognize this entire category's operating pattern.\""
+          },
+          "source": "Check Point Research（經letsdatascience轉述）",
+          "url": "https://letsdatascience.com/news/check-point-details-autonomous-artex-attacks-by-cybercrimina-9d8b6097",
+          "terms": ["ARTEX"]
+        }
+      ]
+    },
+    {
+      "id": "military",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "荷姆茲海峽通行量十一週未見起色：週報稱10/30當週較衝突前低約七成、威脅等級仍列「嚴重」——驗證11/4報告「繞道失效」的判斷至今成立",
+            "en": "Hormuz Strait traffic shows no recovery after eleven weeks: a weekly brief puts the week of 10/30 around 70% below pre-conflict levels with the threat level still \"severe\" — the 11/4 report's \"detour failure\" judgment still holds"
+          },
+          "summary": {
+            "zh": "11/4報告記錄IMF PortWatch數據顯示10/25荷姆茲海峽單日商船通行量僅2艘、不到平常基準2%，並將11/2月報「繞道失效」的判斷升級為「航運在實際流量意義上已經停擺」。本期查核的最新資料點（一份追蹤荷姆茲情勢的彙整頁面引用英國海事貿易行動處UKMTO週報，查核範圍內未能直接存取UKMTO或路透社原文）顯示：截至10/30當週，商船通行量仍較衝突前水準低約七成，UKMTO對該海域的威脅等級評估維持「嚴重（severe）」不變。查核範圍內找不到11月第一週（11/3-11/9）的新更新資料，顯示這不是一次性的數據點，而是一個已經持續超過兩個月、沒有改善跡象的穩定狀態。",
+            "en": "The 11/4 report recorded IMF PortWatch data showing Hormuz Strait commercial traffic at just 2 vessels on 10/25, under 2% of the normal baseline, and upgraded the 11/2 monthly report's \"detour failure\" judgment to \"shipping has effectively collapsed in actual traffic terms.\" This cycle's latest data point (an aggregator page tracking the Hormuz situation, citing UKMTO's weekly brief; this check could not reach UKMTO or wire-service originals directly) shows commercial traffic for the week of 10/30 still roughly 70% below pre-conflict levels, with UKMTO's threat-level assessment for the strait unchanged at \"severe.\" This check found no new update for the first week of November (11/3-11/9), suggesting this is not a one-off data point but a stable state that has persisted over two months with no sign of improvement."
+          },
+          "implication": {
+            "zh": "11/4報告當時的操作建議，是把「荷姆茲是否暢通」這個變數從機率分布改記為接近停擺的既定狀態；本期查無新資料本身就是一種確認——如果情勢真的出現顯著變化（無論是進一步惡化或開始恢復），以本站查核範圍內的搜尋廣度，應該會找到對應報導，而兩個月持續同一個「七成」、「嚴重」數字沒有變動，代表這已經從「危機事件」降級為「新常態」。這對油價與LNG保單模型的意義是：不要再用「荷姆茲會不會重新開放」這個問題去定價，應該假設它在可預見的未來維持現狀，把注意力轉向11/2月報記錄的「第一個斷點在承保端」那條線——也就是JWC的JWLA通告是否擴大範圍，因為那才是會改變這個穩定狀態的真正觸發點，而不是海峽本身的軍事或外交事件。",
+            "en": "The 11/4 report's operational advice was to re-record \"whether Hormuz is open\" from a probability distribution to a near-collapsed fixed state; this cycle finding no new data is itself a form of confirmation — if conditions had materially changed, for better or worse, the search breadth available in this check would likely have surfaced coverage of it, and two months of the same \"70%\" and \"severe\" figures holding steady means this has downgraded from a \"crisis event\" to a \"new normal.\" For oil-price and LNG-insurance models, the implication is: stop pricing the question \"will Hormuz reopen,\" assume the current state holds for the foreseeable future, and redirect attention to the thread the 11/2 monthly report flagged — \"the first breakpoint is on the underwriting side\" — specifically whether the JWC's JWLA notice expands its scope, since that is the actual trigger that would change this stable state, not a military or diplomatic event in the strait itself."
+          },
+          "counterpoint": {
+            "zh": "查核範圍內無法直接存取UKMTO或路透社等一手來源，「七成」與「嚴重」這兩個數字均來自彙整頁面的二手引用，且該頁面本身是10/30當週的存檔快照，無法排除11月第一週已有未被本站搜尋範圍涵蓋的更新。",
+            "en": "This check could not reach UKMTO or wire-service primary sources directly; the \"70%\" and \"severe\" figures both come from a secondhand citation on an aggregator page, which is itself an archived snapshot for the week of 10/30, so an update for the first week of November that fell outside this check's search coverage cannot be ruled out."
+          },
+          "source": "UKMTO（經情勢彙整頁面轉述）",
+          "url": "https://political.org/strait-of-hormuz-archive/iran-briefing-2026-11-02/",
+          "terms": ["UKMTO", "PortWatch"]
+        }
+      ]
+    },
+    {
+      "id": "geo",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "台灣核能公投首場電視意見發表會11/12登場——中選會確認題目文字與五場辯論期程，距11/28九合一選舉同日計票僅差16天",
+            "en": "Taiwan's first televised nuclear-referendum forum lands 11/12 — the CEC has confirmed the exact ballot wording and five-session debate schedule, 16 days before the 11/28 vote count alongside local elections"
+          },
+          "summary": {
+            "zh": "11/4報告已記錄核能公投五場電視辯論訂於11/12-11/20、與11/28九合一選舉同日計票；本期查核補上兩項先前未確認的細節：中選會公布的公投題目文字為「你是否同意政府以核能發電，作為促進經濟發展的方式之一，進而廢除『非核家園』政策？」，以及這次提案從8/28公告到11/28投票僅橫跨三個月，與2025年那次失敗的獨立公投案在制度設計上明顯不同（本站10/26週報記錄的門檻計算差異）。批評者指出提案由在野的國民黨主導推動，時機與方式帶有選舉動員性質；倡議廢核的團體則主張，去年5月最後一座核電廠除役後至今電力供應穩定、空氣品質改善，但此說法來自倡議團體本身，非獨立數據。",
+            "en": "The 11/4 report already recorded that the nuclear referendum's five televised debates were scheduled for 11/12-11/20, counted alongside the 11/28 local elections. This cycle's check adds two previously unconfirmed details: the CEC's published ballot wording reads \"Do you agree that the government should use nuclear power generation as one way to promote economic development, thereby abolishing the 'nuclear-free homeland' policy?\"; and this proposal spans just three months from its 8/28 announcement to the 11/28 vote, a markedly different institutional design from the failed standalone referendum of 2025 (the threshold-calculation difference the 10/26 weekly report recorded). Critics note the proposal was driven by the opposition KMT, with its timing and framing carrying electoral-mobilization overtones; anti-nuclear advocacy groups counter that power supply has stayed stable and air quality has improved since the last nuclear plant was decommissioned last May — though that claim comes from the advocacy groups themselves, not independent data."
+          },
+          "implication": {
+            "zh": "對你的台股量化模型，題目文字本身就是一個可以現在就寫進模型的變數——「以核能發電作為促進經濟發展的方式之一」這個措辭，把核能議題直接與產業用電（尤其是台積電等高耗電半導體供應鏈）的敘事綁定，比單純問「是否支持核能」更容易在11/12-20辯論期間催化與半導體供應鏈相關類股的輿論風險定價；而提案「三個月內從公告到投票」的壓縮時程，代表電力、公用事業類股的輿論風險視窗本身就很短、波動可能更集中而非分散。對你在高層對話中複述這個論點時，精確的說法應該是：這次公投測試的不是台灣社會對核能技術本身的接受度，是在能源政策已經與半導體供應鏈安全敘事掛鉤之後，選民願不願意用修改既有政策的方式去處理一個已經被重新定義為「產業競爭力」而非單純「能源」的問題。",
+            "en": "For your Taiwan-equities quant model, the ballot wording itself is a variable worth coding in now: phrasing nuclear power as \"one way to promote economic development\" ties the issue directly to industrial electricity demand — especially the power-hungry semiconductor supply chain anchored by TSMC — which is more likely to catalyze sentiment-risk pricing in semiconductor-adjacent names during the 11/12-20 debate window than a plain \"do you support nuclear power\" question would. The proposal's compressed three-month timeline from announcement to vote also means the sentiment-risk window for power and utility names is itself short, so volatility may cluster rather than spread out. The precise way to frame this in a senior conversation: this referendum is not testing Taiwanese society's acceptance of nuclear technology itself — it is testing whether voters, now that energy policy has been tied to the semiconductor supply-chain security narrative, are willing to amend existing policy to address what has been reframed as an \"industrial competitiveness\" question rather than a purely \"energy\" one."
+          },
+          "source": "Focus Taiwan、The Star（轉述中選會公告）",
+          "url": "https://focustaiwan.tw/politics/202609180020",
+          "terms": []
+        }
+      ]
+    }
+  ]
+}

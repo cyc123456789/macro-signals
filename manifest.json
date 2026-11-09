@@ -1,6 +1,15 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "reports": [
+    {
+      "file": "reports/2026-11-10-brief.json",
+      "date": "2026-11-10",
+      "kind": "brief",
+      "title": {
+        "zh": "美中兩條11/10到期的出口管制休兵線疑似同步解到1/10/2027，推翻11/8報告標記的「脫鉤風險」——但中方公告原文查核範圍內仍無法核實；CCW政府專家小組報告段落25首度公布自主武器定義文字，用來檢驗台灣與烏克蘭正在採購的系統是否落入管制範圍；Check Point證實ARTEX已擴散到2,557台暴露主控台並自動化竊取簽章憑證；荷姆茲海峽通行量十一週未見起色；台灣核能公投題目文字與五場電視辯論期程確認，11/12首場登場",
+        "en": "US and China's Parallel 11/10 Export-Control Truce Deadlines Appear to Sync to a Shared 1/10/2027 Extension, Undercutting the \"Decoupling Risk\" the 11/8 Report Flagged — Though Beijing's Own Notice Text Remains Unverified; Paragraph 25 of the CCW GGE's Report Gives the First Concrete Text Defining Autonomous Weapons, Tested Against Systems Taiwan and Ukraine Are Actually Buying; Check Point Confirms ARTEX Has Spread to 2,557 Exposed Control Panels and Is Now Automating Signing-Certificate Theft; Hormuz Strait Traffic Shows No Recovery After Eleven Weeks; Taiwan's Nuclear-Referendum Wording and Five-Session TV Debate Schedule Are Confirmed, First Session 11/12"
+      }
+    },
     {
       "file": "reports/2026-11-09-weekly.json",
       "kind": "weekly",

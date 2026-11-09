@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "terms": [
     {
       "term": "AsyncOS",
@@ -3828,6 +3828,28 @@
       },
       "category": "military",
       "first_seen": "2026-11-09"
+    },
+    {
+      "term": "GACC",
+      "zh": "中國海關總署",
+      "expansion": "General Administration of Customs of the People's Republic of China",
+      "def": {
+        "zh": "中國主管進出口貨物通關、檢驗檢疫與海關監管的中央部門，常與商務部聯合發布稀土等戰略物資的出口管制公告與暫停令，兩部門公告經常共同編號、同步生效。",
+        "en": "China's central agency for customs clearance, inspection and import/export supervision. It frequently co-issues export-control announcements and suspension notices for strategic materials such as rare earths together with the Ministry of Commerce, often under jointly numbered, simultaneously effective notices."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-10"
+    },
+    {
+      "term": "ICRC",
+      "zh": "紅十字國際委員會",
+      "expansion": "International Committee of the Red Cross",
+      "def": {
+        "zh": "促進國際人道法遵循與武裝衝突保護措施的中立人道組織，長期在CCW自主武器系統談判中提交技術性工作文件，其對「致命性自主武器系統」定義文字是否足夠嚴謹的評估，是各國在審議大會上引用的主要民間參照標準之一。",
+        "en": "A neutral humanitarian organization promoting compliance with international humanitarian law and protection in armed conflict. It has long submitted technical working papers to the CCW's autonomous-weapons negotiations, and its assessment of whether a \"lethal autonomous weapon system\" definition is rigorous enough is one of the main non-state reference points states cite at review conferences."
+      },
+      "category": "military",
+      "first_seen": "2026-11-10"
     }
   ]
 }
