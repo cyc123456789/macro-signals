@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-12",
   "terms": [
     {
       "term": "AsyncOS",
@@ -3850,6 +3850,28 @@
       },
       "category": "military",
       "first_seen": "2026-11-10"
+    },
+    {
+      "term": "ISW",
+      "zh": "ISW",
+      "expansion": "Institute for the Study of War",
+      "def": {
+        "zh": "美國華府智庫，專注於戰爭與衝突的開源情報評估，定期發布烏克蘭、中東與台海等地區的每日／每週戰場控制地圖與態勢評估報告。",
+        "en": "A Washington-based think tank producing open-source daily/weekly assessments and control-of-terrain maps for conflicts including Ukraine, the Middle East, and the Taiwan Strait."
+      },
+      "category": "military",
+      "first_seen": "2026-11-12"
+    },
+    {
+      "term": "VAPOR PANDA",
+      "zh": "VAPOR PANDA",
+      "expansion": "CrowdStrike threat-actor designation for a China-linked group using agentic AI pentesting tools",
+      "def": {
+        "zh": "CrowdStrike對一個使用ARTEX等代理式AI滲透測試框架、鎖定全球200餘個組織的中國關聯駭客集團所賦予的追蹤代號。",
+        "en": "CrowdStrike's tracking designation for a China-linked threat group that used agentic AI pentesting frameworks such as ARTEX against 200+ organizations worldwide."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-12"
     }
   ]
 }

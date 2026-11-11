@@ -1,6 +1,15 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-12",
   "reports": [
+    {
+      "file": "reports/2026-11-12-brief.json",
+      "date": "2026-11-12",
+      "kind": "brief",
+      "title": {
+        "zh": "S&P Global十月數據顯示荷姆茲聚合運量創三個月新高，部分推翻11/10報告「十一週未見起色」的判斷，但原油運輸仍未解凍；ISW評估解放軍同週執行規模恐超越「聯合利劍」的對台孤立演習，與北京稀土暫停令傳延至1/10/2027同步呼應BIS關係企業規則——經濟休兵與軍事施壓正反向操作；CrowdStrike首度將ARTEX濫用正式歸因予中國關聯「VAPOR PANDA」，主控台同時出現針對同行攻擊者的反向木馬；CISA等五機關首度聯合示警工業冷鏈控制系統遭入侵；CCW日內瓦大會倒數，單一研究稱76國支持談判授權，查證缺口依舊無人提案；台灣核能公投11/12首場電視辯論登場，五場代表名單全數確認",
+        "en": "S&P Global's October Data Puts Aggregate Hormuz Traffic at a Three-Month High, Partly Overturning the 11/10 Report's 'No Improvement in Eleven Weeks' Call Though Crude Transport Stays Frozen; ISW Assesses the PLA Is Running a Taiwan-Isolation Exercise the Same Week That May Exceed 'Joint Sword,' Syncing With Beijing's Reported Rare-Earth Suspension Extension to 1/10/2027 in Step With the BIS Affiliates Rule — Economic De-Escalation and Military Pressure Moving in Opposite Directions; CrowdStrike Formally Attributes ARTEX Abuse to China-Linked 'VAPOR PANDA' for the First Time, as a Backdoored Build Targets Fellow Attackers' Consoles; CISA and Four Other Agencies Jointly Warn for the First Time That Industrial Cold-Chain Control Systems Are Under Attack; the CCW's Geneva Conference Nears With a Single Research Note Claiming 76 States Back a Negotiating Mandate While the Verification Gap Still Has No Proposal; Taiwan's Nuclear Referendum Holds Its First Televised Debate 11/12 With All Five Sessions' Lineups Confirmed"
+      }
+    },
     {
       "file": "reports/2026-11-10-brief.json",
       "date": "2026-11-10",
