@@ -1,6 +1,15 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-14",
   "reports": [
+    {
+      "file": "reports/2026-11-14-brief.json",
+      "date": "2026-11-14",
+      "kind": "brief",
+      "title": {
+        "zh": "MOFCOM正式公告稀土暫停令延至1/10/2027（確認11/10報告「likely」判斷）；國防部長顧立雄首度向立法院證實解放軍在西太平洋執行「區域拒止」演習，用官方措辭校正11/12報告ISW「恐超越聯合利劍」的框架；同週北京回絕日本安排的APEC峰會高市-習會，改提議與李強會面——華盛頓、台北、東京，同一週三種截然不同的姿態；核電公投第二場辯論曝經濟部次長親自站上反方，國民黨批「操作成國安危機」；CrowdStrike釐清ARTEX生態系內VAPOR PANDA與Storm-0940是兩個獨立集團、新增DLL側載後門BLOODALCHEMY；荷姆茲海峽數據恐受AIS關閉干擾，UANI另計入日均31.5艘次美方斡旋通行；基輔與首爾對北韓增兵俄羅斯規模各說各話",
+        "en": "MOFCOM Formally Publishes the Rare-Earth Suspension's Extension to 1/10/2027 (Confirming the 11/10 Report's \"Likely\" Call); Taiwan's Defense Minister Tells the Legislature for the First Time the PLA Is Running \"Area Denial\" Drills in the Western Pacific, an Official Term That Recalibrates the 11/12 Report's ISW-Sourced \"May Exceed Joint Sword\" Framing; the Same Week Beijing Rejects a Takaichi-Xi Meeting at the APEC Summit, Offering Premier Li Qiang Instead — Washington, Taipei and Tokyo Each Get a Different Posture; Nuclear-Referendum Debate #2 Puts a Sitting Deputy Minister on the \"Con\" Side, Which the KMT Calls Turning Energy Policy Into a National-Security Crisis; CrowdStrike Separates VAPOR PANDA From Storm-0940 Within the ARTEX Ecosystem and Flags a New DLL-Sideloading Backdoor, BLOODALCHEMY; Hormuz Data May Be Skewed by Vessels Going AIS-Dark, as UANI Separately Counts a 31.5-Vessel Daily Average Under US-Facilitated Transit; Kyiv and Seoul Give Conflicting Accounts of North Korea's Troop Buildup in Russia"
+      }
+    },
     {
       "file": "reports/2026-11-12-brief.json",
       "date": "2026-11-12",

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-14",
   "terms": [
     {
       "term": "AsyncOS",
@@ -3872,6 +3872,61 @@
       },
       "category": "cyber",
       "first_seen": "2026-11-12"
+    },
+    {
+      "term": "APEC",
+      "zh": "亞太經濟合作會議",
+      "expansion": "Asia-Pacific Economic Cooperation",
+      "def": {
+        "zh": "由太平洋沿岸21個經濟體組成的區域經濟論壇，2026年年度領袖峰會由中國主辦、於11/18-20在深圳舉行，是川普與習近平今年第三次面對面會晤的場合。",
+        "en": "A regional economic forum of 21 Pacific Rim economies. China hosts the 2026 leaders' summit on 11/18-20 in Shenzhen, the venue for Trump and Xi's third in-person meeting of the year."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-14"
+    },
+    {
+      "term": "Liaoning",
+      "zh": "遼寧艦",
+      "expansion": "Liaoning (Type 001 aircraft carrier)",
+      "def": {
+        "zh": "中國人民解放軍海軍第一艘航空母艦，由烏克蘭時期未完工的瓦良格號改造而成，經常率打擊群在西太平洋執行遠海演訓。",
+        "en": "The PLA Navy's first aircraft carrier, converted from the unfinished Soviet-era Varyag, whose strike group regularly conducts far-seas exercises in the Western Pacific."
+      },
+      "category": "military",
+      "first_seen": "2026-11-14"
+    },
+    {
+      "term": "Area Denial",
+      "zh": "區域拒止",
+      "expansion": "Area Denial",
+      "def": {
+        "zh": "阻止對手兵力進入或在特定海空域有效行動的軍事手段，台灣國防部11月用此詞描述解放軍在西太平洋的演習，用詞較智庫評估的「孤立台灣」更節制。",
+        "en": "Military measures intended to prevent an adversary's forces from entering or operating effectively in a given sea or air zone. Taiwan's Ministry of National Defense used this term in November to describe PLA drills in the Western Pacific, a more measured characterization than think-tank assessments calling it an attempt to 'isolate Taiwan.'"
+      },
+      "category": "military",
+      "first_seen": "2026-11-14"
+    },
+    {
+      "term": "BLOODALCHEMY",
+      "zh": "BLOODALCHEMY（後門程式代號）",
+      "expansion": "BLOODALCHEMY (backdoor malware)",
+      "def": {
+        "zh": "VAPOR PANDA在ARTEX取得初始存取後部署的Windows後門程式，利用DLL側載手法在受害主機上建立持久化存取。",
+        "en": "A Windows backdoor VAPOR PANDA deploys after gaining initial access via ARTEX, using DLL side-loading to establish persistent access on compromised hosts."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-14"
+    },
+    {
+      "term": "DLL Side-Loading",
+      "zh": "DLL側載",
+      "expansion": "Dynamic-Link Library Side-Loading",
+      "def": {
+        "zh": "攻擊者將惡意DLL檔案放置於合法應用程式會優先載入的路徑，誘使該應用程式載入並執行惡意程式碼的持久化技術。",
+        "en": "A persistence technique where an attacker places a malicious DLL in a path a legitimate application will load first, tricking that application into loading and executing the malicious code."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-14"
     }
   ]
 }
