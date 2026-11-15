@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14",
+  "updated": "2026-11-16",
   "terms": [
     {
       "term": "AsyncOS",
@@ -3927,6 +3927,72 @@
       },
       "category": "cyber",
       "first_seen": "2026-11-14"
+    },
+    {
+      "term": "First Island Chain",
+      "zh": "第一島鏈",
+      "expansion": "First Island Chain",
+      "def": {
+        "zh": "美日戰略圈定的島鏈防線，北起日本群島、經琉球、台灣，南至菲律賓與婆羅洲，是美國及盟邦在西太平洋構想中圍堵中國海上兵力投射的第一線地理概念。",
+        "en": "A strategic line of islands running from the Japanese archipelago through the Ryukyus and Taiwan to the Philippines and Borneo, used by the US and its allies as the first geographic tier in constraining China's naval power projection into the Western Pacific."
+      },
+      "category": "military",
+      "first_seen": "2026-11-16"
+    },
+    {
+      "term": "Justice Mission 2025",
+      "zh": "「正義使命-2025」演習",
+      "expansion": "Justice Mission 2025",
+      "def": {
+        "zh": "解放軍2025年12月底在台灣周邊執行的大規模海空軍演，常被媒體與分析者用作衡量後續解放軍對台軍演規模大小的比較基準點。",
+        "en": "A large-scale PLA naval and air exercise conducted around Taiwan in late December 2025, frequently used by media and analysts as a benchmark for gauging the scale of subsequent PLA drills targeting Taiwan."
+      },
+      "category": "military",
+      "first_seen": "2026-11-16"
+    },
+    {
+      "term": "CopperDragon",
+      "zh": "CopperDragon（共用惡意軟體供應角色代號）",
+      "expansion": "CopperDragon",
+      "def": {
+        "zh": "Check Point研究人員賦予的追蹤代號，疑似在中國關聯駭客生態系中扮演共用惡意軟體與基礎設施供應者的角色，同時牽涉FamousSparrow、Earth Estries等至少三個不同作戰集群，研究人員坦言供應商與操作者之間的確切關係仍不清楚。",
+        "en": "A tracking designation given by Check Point researchers to an entity assessed to play a shared malware-and-infrastructure supplier role within a China-nexus hacking ecosystem, implicated in at least three distinct operational clusters including FamousSparrow and Earth Estries; researchers acknowledge the precise relationship between supplier and operators remains unclear."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-16"
+    },
+    {
+      "term": "FamousSparrow",
+      "zh": "FamousSparrow（中國關聯駭客集團）",
+      "expansion": "FamousSparrow",
+      "def": {
+        "zh": "ESET等廠商追蹤的中國關聯進階持續性威脅(APT)集團，以自製後門程式SparrowDoor聞名，近期將行動範圍從既有目標擴及拉丁美洲。",
+        "en": "A China-aligned advanced persistent threat (APT) group tracked by vendors including ESET, known for its custom SparrowDoor backdoor and for recently expanding operations into Latin America."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-16"
+    },
+    {
+      "term": "Earth Estries",
+      "zh": "Earth Estries（中國關聯駭客集團）",
+      "expansion": "Earth Estries",
+      "def": {
+        "zh": "Trend Micro等廠商追蹤的中國關聯進階持續性威脅集團，長年以鎖定電信業者與政府機構的長期間諜活動著稱。",
+        "en": "A China-linked advanced persistent threat group tracked by vendors including Trend Micro, historically known for long-dwell espionage campaigns against telecom operators and government targets."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-16"
+    },
+    {
+      "term": "SparrowDoor",
+      "zh": "SparrowDoor（後門程式）",
+      "expansion": "SparrowDoor",
+      "def": {
+        "zh": "FamousSparrow集團長期使用的客製化Windows後門程式，近期並衍生出新變種，用於該集團擴及拉丁美洲的行動。",
+        "en": "A custom Windows backdoor long used by the FamousSparrow group, with a recent variant developed for the group's operations expanding into Latin America."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-16"
     }
   ]
 }

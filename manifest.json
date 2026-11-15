@@ -1,6 +1,15 @@
 {
-  "updated": "2026-11-14",
+  "updated": "2026-11-16",
   "reports": [
+    {
+      "file": "reports/2026-11-16-brief.json",
+      "date": "2026-11-16",
+      "kind": "brief",
+      "title": {
+        "zh": "路透引台灣官員：解放軍「靜默演習」曾彩排攻擊城市、規模一度逾百艦，與11/14報告「只是區域拒止」的校正判斷正面衝突；CCW日內瓦大會11/16登場，兩份競爭中的談判授權草案都沒寫查證機制，11/9週報的核心判斷本期被正面驗證；Check Point揭露「CopperDragon」共用惡意軟體生態系餵養FamousSparrow、Earth Estries等至少三個中國關聯集群；NIST定案IR 8547後量子密碼淘汰時程，Thoughtworks技術雷達同步把PQC拉上「採用」級；APEC深圳峰會倒數，SCMP分析稱北京首次以地主身分掌握議程",
+        "en": "Reuters, Citing Taiwan Officials: PLA's 'Silent' Drills Once Rehearsed Strikes on Cities With 100+ Vessels, Directly Clashing With the 11/14 Report's 'Just Area Denial' Calibration; CCW's Geneva Conference Opens 11/16 With Two Competing Mandate Drafts, Neither Including a Verification Mechanism, Confirming the 11/9 Weekly's Core Judgment; Check Point Exposes the 'CopperDragon' Shared-Malware Ecosystem Feeding FamousSparrow, Earth Estries, and a Third China-Linked Cluster; NIST Finalizes IR 8547's Post-Quantum Retirement Timeline as Thoughtworks' Radar Moves PQC to 'Adopt'; APEC Shenzhen Summit Countdown, With SCMP Saying Beijing Holds Agenda Control as Host for the First Time"
+      }
+    },
     {
       "file": "reports/2026-11-14-brief.json",
       "date": "2026-11-14",
