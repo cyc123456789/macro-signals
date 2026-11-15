@@ -3993,6 +3993,94 @@
       },
       "category": "cyber",
       "first_seen": "2026-11-16"
+    },
+    {
+      "term": "Censys",
+      "zh": "Censys 網際網路測繪平台",
+      "expansion": "Censys Internet-Wide Scanning Platform",
+      "def": {
+        "zh": "持續掃描全網 IPv4/IPv6 與憑證空間的測繪服務，常被用來統計某種服務或惡意工具主控台的暴露數量。其計數需區分「主機數」與「去重後部署數」，兩者差距可達一倍以上，因此不同報告引用同一平台也可能給出不同數字。",
+        "en": "An internet-wide scanning service that continuously maps IPv4/IPv6 and certificate space, often used to count exposed instances of a service or of a malicious tool's controller. Its counts must distinguish hosts from deduplicated deployments — the gap can exceed 2x — so two reports citing the same platform can still disagree."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-16"
+    },
+    {
+      "term": "Velociraptor",
+      "zh": "Velociraptor 端點鑑識與監控平台",
+      "expansion": "Velociraptor Digital Forensics and Incident Response Platform",
+      "def": {
+        "zh": "開源的端點鑑識與事件回應平台，防守方用來大規模蒐證與獵捕。因其本身具備遠端執行與檔案傳輸能力，被攻擊者接管後可直接當作 C2 通道使用，屬於典型的「以守方工具為攻擊基礎設施」案例。",
+        "en": "An open-source endpoint forensics and incident-response platform defenders use for large-scale collection and hunting. Because it natively supports remote execution and file transfer, an attacker who takes it over can run it directly as a C2 channel — a textbook case of turning the defender's own tooling into attack infrastructure."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-16"
+    },
+    {
+      "term": "ATLAS",
+      "zh": "對抗式 AI 系統威脅全景",
+      "expansion": "Adversarial Threat Landscape for Artificial-Intelligence Systems",
+      "def": {
+        "zh": "MITRE 維護的 AI 系統攻擊知識庫，是 ATT&CK 的 AI 對應物，收錄針對模型、資料與代理人（agent）的戰術與技術，2026 年起大量新增 agentic 相關標記與條目。它描述的是「攻擊 AI 系統」的手法，與「由 AI 執行傳統攻擊時行為如何變形」是兩個不同問題。",
+        "en": "MITRE's knowledge base of attacks on AI systems — the AI counterpart to ATT&CK — cataloguing tactics and techniques against models, data and agents, with heavy agentic tagging added from 2026. It describes attacks on AI systems, which is a different question from how ordinary attack behaviour deforms when an AI does the executing."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-16"
+    },
+    {
+      "term": "Open-Weight Model",
+      "zh": "開源權重模型",
+      "expansion": "Open-Weight Model",
+      "def": {
+        "zh": "權重檔案可公開下載、使用者能在自有硬體上自行部署的大型語言模型。對攻擊者而言，自架開源權重模型等同關掉模型供應商側的帳號管制、API 日誌與速率監測，因此模型選擇本身就是一項作業安全決策，而非單純的成本或能力決策。",
+        "en": "A large language model whose weights can be downloaded and run on the user's own hardware. For an attacker, self-hosting open weights switches off the provider's account controls, API logs and rate monitoring — which makes model choice an operational-security decision, not merely a cost or capability one."
+      },
+      "category": "tech",
+      "first_seen": "2026-11-16"
+    },
+    {
+      "term": "Stylometry",
+      "zh": "風格計量學",
+      "expansion": "Stylometry",
+      "def": {
+        "zh": "以可量化的語言特徵（詞頻、句法、字元 n-gram 等）判定文本作者的方法。應用到生成式模型後成為「模型指紋」，可從輸出文字或程式碼反推產出它的模型家族；其準確率在同語域內可觀，但跨語域、經改寫或多跳翻譯後會大幅衰退。",
+        "en": "Determining authorship from quantifiable linguistic features — word frequencies, syntax, character n-grams. Applied to generative models it becomes model fingerprinting, inferring which model family produced a text or code sample. Accuracy is respectable within one register but degrades sharply across registers or after paraphrase and multi-hop translation."
+      },
+      "category": "tech",
+      "first_seen": "2026-11-16"
+    },
+    {
+      "term": "FLASH",
+      "zh": "FBI 聯絡警示通報",
+      "expansion": "FBI Liaison Alert System",
+      "def": {
+        "zh": "美國聯邦調查局對特定產業與合作夥伴發出的技術性威脅警示，通常附帶入侵指標與緩解建議，流通層級低於公開新聞稿但高於個案通知。它是觀察美方把某項威脅視為「已達需要產業層級動員」門檻的指標。",
+        "en": "A technical threat alert the FBI issues to specific sectors and partners, usually carrying indicators of compromise and mitigation guidance; it circulates below a public press release but above case-by-case notification. It is a useful marker of when Washington judges a threat to have crossed the sector-mobilisation threshold."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-16"
+    },
+    {
+      "term": "Cyber Diplomacy Toolbox",
+      "zh": "歐盟網路外交工具箱",
+      "expansion": "EU Cyber Diplomacy Toolbox",
+      "def": {
+        "zh": "歐盟 2017 年建立的框架，規定面對惡意網路活動可動用的共同外交與安全政策手段，包含公開歸因聲明與限制性措施（制裁）。其制裁指定須經共同外交與安全政策的一致決，任何一個成員國都能阻擋，因此歸因在歐盟是法律後果的前提，也是政治瓶頸。",
+        "en": "The EU's 2017 framework setting out the common foreign and security policy responses available against malicious cyber activity, including public attribution statements and restrictive measures. Designations require CFSP unanimity, so any single member state can block one — making attribution both the precondition for legal consequence in the EU and its political bottleneck."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-16"
+    },
+    {
+      "term": "LMA5564",
+      "zh": "LMA5564 戰爭與網路行動除外條款",
+      "expansion": "Lloyd's Market Association Clause LMA5564 — War, Cyber War and Cyber Operation Exclusion No. 1",
+      "def": {
+        "zh": "倫敦勞合社市場協會的標準除外條款，把網路保單對戰爭與國家支持網路行動的除外範圍寫成文字。其歸因條文以「受影響電腦系統所在國政府是否將該行動歸因於另一國」為主要但非唯一因素，政府未表態前允許承保人依客觀合理推論行事，並把舉證責任放在承保人身上。",
+        "en": "A Lloyd's Market Association standard clause that writes the war and state-backed cyber operation carve-out into cyber policies. Its attribution provision makes whether the government of the state where the affected system sits attributes the operation to another state the primary but not exclusive factor, lets the insurer act on an objectively reasonable inference pending that, and places the burden of proof on the insurer."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-16"
     }
   ]
 }

@@ -2,6 +2,15 @@
   "updated": "2026-11-16",
   "reports": [
     {
+      "file": "reports/2026-11-16-weekly.json",
+      "kind": "weekly",
+      "date": "2026-11-16",
+      "title": {
+        "zh": "歸因沒有死，它改由對手的失誤供應：ARTEX 把 TTP 叢集抹平之後，制裁、保單與起訴書全都接在「主控台有沒有開著」這根隨機變數上",
+        "en": "Attribution did not die — it is now supplied by the adversary's mistakes: once an agentic framework flattens TTP clustering, sanctions, insurance and indictments all hang on whether a console was left exposed"
+      }
+    },
+    {
       "file": "reports/2026-11-16-brief.json",
       "date": "2026-11-16",
       "kind": "brief",

@@ -1,0 +1,217 @@
+{
+  "date": "2026-11-16",
+  "kind": "weekly",
+  "title": {
+    "zh": "歸因沒有死，它改由對手的失誤供應：ARTEX 把 TTP 叢集抹平之後，制裁、保單與起訴書全都接在「主控台有沒有開著」這根隨機變數上",
+    "en": "Attribution did not die — it is now supplied by the adversary's mistakes: once an agentic framework flattens TTP clustering, sanctions, insurance and indictments all hang on whether a console was left exposed"
+  },
+  "focus": {
+    "zh": "大家都在問 AI 會不會讓攻擊變快，那是問錯層次。真正被改掉的是歸因的證據來源：行為層（TTP 叢集）正在被同一套 agentic 框架抹平——至少五個互不相關的行為者在跑 ARTEX，本站自己三週內就把同一套工具先後掛到 Storm-0940 與 VAPOR PANDA 身上。剩下三條線沒有一條是防守方靠努力能改善的：對手把主控台開著、模型供應商的 API 日誌、人類操作員在決策點留下的母語。CrowdStrike 能點名，是因為那台主控台間歇外洩了工具、目標檔與 agent 對話紀錄；而對手選用可自架的開源權重模型，正好把第二條線關掉。於是所有吃歸因的下游機器——OFAC 與歐盟指定、LMA5564 戰爭除外條款、起訴書——從分析產物改接到一個隨機變數上。",
+    "en": "Everyone is asking whether AI makes attacks faster. Wrong layer. What actually changed is where attribution gets its evidence. The behavioural layer — TTP clustering — is being flattened by a single shared agentic framework: at least five unrelated actors now run ARTEX, and this site itself hung the same tool on Storm-0940 and then on VAPOR PANDA within three weeks. Three channels remain, and a defender cannot improve any of them by trying harder: the adversary leaving a console exposed, the model provider's API logs, and the human operator's native language at decision points. CrowdStrike could name VAPOR PANDA because that controller intermittently leaked tooling, target files and agent transcripts — and the adversary's choice of a self-hostable open-weight model closes the second channel by construction. Every downstream machine that consumes attribution — OFAC and EU designations, the LMA5564 war exclusion, indictments — has quietly been re-plumbed from an analytical product onto a random variable."
+  },
+  "sections": [
+    {
+      "id": "nexus",
+      "items": [
+        {
+          "severity": "critical",
+          "confidence": "likely",
+          "title": {
+            "zh": "ARTEX 生態系內至少五個互不相關的行為者，使「工具即索引」的歸因在本站自己的報告裡已經失效一次——10/24報告、11/12報告、11/14報告是同一套工具的三次改口",
+            "en": "At least five unrelated actors inside the ARTEX ecosystem — which means tool-as-index attribution has already failed once inside this site's own reporting: the 10/24報告, 11/12報告 and 11/14報告 are three successive restatements about one framework"
+          },
+          "summary": {
+            "zh": "10/24報告記錄微軟把 ARTEX 濫用掛在 Storm-0940 的 ConnectWise 供應鏈攻擊上；11/12報告記錄 CrowdStrike「首度把 ARTEX 濫用正式歸因予中國關聯 VAPOR PANDA」；11/14報告則必須記錄 CrowdStrike 出面釐清兩者是生態系內兩個獨立集團。三週、三次改口，對象是同一套 2026 年 7 月才以帳號 Autumn-27 掛上 GitHub 的開源框架。查核範圍內，自 8 月下旬起與 ARTEX 相關的叢集至少五個，從中國關聯間諜集團一路到柬埔寨為基地的犯罪叢集；Check Point 分析的 10 個實例全部是機會主義式、財務動機的犯罪使用；印度 CERT-In 另有自己的掛鉤對象。連「裝機量」都沒有共識：Censys 報 1,465 台暴露主控台、去重後約 815 個部署，Check Point 報 1,608 個活躍實例，而本站 11/10報告當時引的是 2,557 台。四個數字並存，沒有一個能被交叉確認。",
+            "en": "The 10/24報告 recorded Microsoft tying ARTEX abuse to Storm-0940's ConnectWise supply-chain intrusion. The 11/12報告 recorded CrowdStrike formally attributing ARTEX abuse to China-nexus VAPOR PANDA for the first time. The 11/14報告 then had to record CrowdStrike clarifying that these are two independent groups inside one ecosystem. Three weeks, three restatements, one open-source framework that only went up on GitHub in July 2026 under the handle Autumn-27. Within reach, at least five clusters have been tied to ARTEX since late August, running from China-nexus espionage to a Cambodia-based criminal cluster; all ten instances Check Point analysed were opportunistic, financially motivated crime; India's CERT-In has its own separate linkage. Even the install base has no agreed number: Censys reports 1,465 exposed consoles and roughly 815 distinct deployments after dedup, Check Point reports 1,608 live instances, and this site's 11/10報告 carried 2,557. Four numbers coexist and none can be cross-confirmed."
+          },
+          "implication": {
+            "zh": "對威脅獵捕者，這一條廢掉的不是某個偵測規則，是你庫存裡所有以「工具族 → 行為者」為鍵的關聯。過去九期本站在引用廠商的命名歸因時，預設那是分析的產物；本條要改的就是這個預設。實務上請把工具層從歸因鍵降級為能力租期標記：同一個 ARTEX 版本出現在兩個案子裡，應該先讀成「兩個租戶」，而不是「同一個房客」。",
+            "en": "For a threat hunter, what this breaks is not one detection rule but every correlation in your stock that is keyed on tool-family-to-actor. For nine issues this site treated a vendor's named attribution of a tool as an analytical product; that default is what has to change. Operationally, demote the tool layer from an attribution key to a capability-tenancy marker: the same ARTEX build showing up in two cases should read as two tenants first, not one occupant."
+          },
+          "counterpoint": {
+            "zh": "反面意見有力：工具共用從來不新。Cobalt Strike 被國家級與犯罪集團共用十年，CTI 並未因此崩潰，因為叢集從來不是單靠工具，而是工具加基礎設施、受害者學、作業時區與語言殘留的聯合。而且 CrowdStrike 最後確實把兩個集團分開了——這證明紀律還在起作用，不是失效。若這個版本成立，本條的正確說法應該是「工具層的權重要調降」，而不是「索引失效」。",
+            "en": "The opposing case is strong: shared tooling is not new. Cobalt Strike was shared by state and criminal operators for a decade and CTI did not collapse, because clustering was never tool-only — it is tooling plus infrastructure, victimology, working hours and language residue. And CrowdStrike did in the end separate the two groups, which shows the discipline working rather than failing. If that reading holds, the honest claim here is that the tool layer's weight must be cut, not that the index is broken."
+          },
+          "source": "Dark Reading、Censys 與 Check Point Research 轉述；CrowdStrike 2026/10/29 部落格；本站 10/24報告、11/10報告、11/12報告、11/14報告",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon",
+          "terms": [
+            "ARTEX",
+            "VAPOR PANDA",
+            "Storm-0940",
+            "CTI",
+            "CERT-In",
+            "ConnectWise",
+            "Censys"
+          ]
+        },
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "選用可自架的開源權重模型是一項歸因否定決策，不只是成本決策——這把「開源權重該不該管」的公共政策之爭，變成一場歸因之爭",
+            "en": "Picking a self-hostable open-weight model is an attribution-denial decision, not just a cost decision — which turns the public policy fight over open weights into a fight about attribution"
+          },
+          "summary": {
+            "zh": "CrowdStrike 記錄 VAPOR PANDA 主要跑中國開發的 DeepSeek，另搭一個未能指名的商用模型。對照組是 2025 年 11 月 Anthropic 揭露的 GTG-1002：約 30 個目標、AI 承擔 80–90% 戰術工作、人類只在 4–6 個決策點介入——那一次歸因的來源是模型供應商自己的遙測，不是任何防守方的感測器。自架開源權重把這條線整個關掉：廠商側沒有帳號、沒有 API 足跡、沒有速率異常可看。英國 AISI 相關研究的結論是，應直接假設能自架大型開源權重模型的行為者都已具備該等能力；而公開文獻另指出 DeepSeek、Minimax 這類開源權重開發者基本上沒有參與公開的威脅行為者揭露實務。",
+            "en": "CrowdStrike records VAPOR PANDA running primarily on China-developed DeepSeek plus a second commercial model it could not identify. The control case is GTG-1002, disclosed by Anthropic in November 2025: roughly 30 targets, AI carrying 80–90% of the tactical work, humans intervening at only 4–6 decision points — and that attribution came from the model provider's own telemetry, not from any defender's sensor. Self-hosting open weights closes that channel entirely: no account on the vendor side, no API footprint, no rate anomaly to look at. UK AISI-derived work concludes defenders should simply assume this capability is available to any actor able to self-host a large open-weight model, and the public literature notes that open-weight developers such as DeepSeek and Minimax have largely stayed out of threat-actor disclosure practice."
+          },
+          "implication": {
+            "zh": "歸因權正在往少數看得到 API 日誌的模型供應商集中，而對手只要換成自架開源權重就能單方面退出這個觀測體系。對台灣與多數中型國家，這意味著一項關鍵的國家級歸因能力，實際上是外國私人公司選擇公布與否的副產品——而不是本國情報機關的產出。下一輪開源權重管制辯論該追的不是模型能力門檻，是「發布者有沒有義務做威脅揭露」。",
+            "en": "Attribution authority is concentrating in the handful of model providers who can see API logs, and an adversary can unilaterally exit that observation regime simply by self-hosting open weights. For Taiwan and most mid-sized states this means a critical national attribution capability is in practice a by-product of a foreign private company's decision to publish — not an output of one's own intelligence service. In the next round of the open-weights debate, the variable worth tracking is not a capability threshold but whether publishers carry any threat-disclosure duty."
+          },
+          "counterpoint": {
+            "zh": "反方向的新線索確實存在：模型指紋。公開研究對 LLM 生成的 C 程式碼做五模型多分類可達 95.40%，七個模型家族的字元 n-gram 分類達 87%。但這條線脆弱——跨語域轉移極差（以學術文本訓練的分類器用在對話文本上只剩 18.6%），多跳翻譯後最低掉到 66%，且對提示與解碼設定敏感。所以「AI 口音」是一條真的線，但不是一條能撐起制裁文書的線。",
+            "en": "A countervailing channel does exist: model fingerprinting. Published work reports 95.40% multi-class attribution across five LLMs for generated C code and 87% for a character n-gram classifier over seven model families. But it is brittle — cross-register transfer is poor (a classifier trained on academic text drops to 18.6% on chat text), multi-hop translation pushes accuracy as low as 66%, and results are sensitive to prompt and decoding settings. The AI accent is a real signal, just not one that can carry a sanctions file."
+          },
+          "source": "ExtraHop 開源權重威脅分析；Cloud Security Alliance 轉述英國 AISI 研究；Anthropic GTG-1002 揭露之二手整理；LLM 程式碼風格計量學文獻",
+          "url": "https://www.extrahop.com/blog/how-open-weight-models-are-reshaping-the-cyber-threat-landscape",
+          "terms": [
+            "LLM",
+            "Open-Weight Model",
+            "Stylometry",
+            "OPSEC",
+            "MCP",
+            "VAPOR PANDA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cyber",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "likely",
+          "title": {
+            "zh": "這場迄今最大規模的 agentic 作戰之所以被看見，是因為主控台間歇外洩工具、目標檔與 agent 對話紀錄——歸因的證據來源從分析產物換成對手的 OPSEC 事故",
+            "en": "The largest agentic operation so far was seen only because the controller intermittently leaked tooling, target files and agent transcripts — attribution's evidence base switched from analytical product to adversary OPSEC accident"
+          },
+          "summary": {
+            "zh": "CrowdStrike 10/29 報告：自 10/17 起的 11 天窗口內，單一台 ARTEX 主控台對至少 14 國逾 200 個組織發動攻擊，9 家確認有後滲透活動並部署 BLOODALCHEMY 後門，續以憑證噴灑、網段掃描與偵察。關鍵在偵獲路徑——OverWatch 之所以看得見，是因為那台主控台「間歇性地把對手工具、目標檔與 ARTEX agent 對話紀錄暴露在外」。作業本身的反偵測是做過的：agent 被明確指示去找沒有裝 Falcon 感測器的主機。人類操作員仍在，在決策點以中文下指令。另有二手來源稱 CrowdStrike 對 CyberScoop 表示約 70%（約 140 個）目標確認或中度信心遭入侵，與官方文字中的 9 家口徑不同。",
+            "en": "CrowdStrike's 10/29 report: over an 11-day window starting 10/17, a single ARTEX controller attacked more than 200 organisations in at least 14 countries, with post-exploitation confirmed at nine, where BLOODALCHEMY backdoors were deployed and followed by credential spraying, network scanning and reconnaissance. The detection path is the point — OverWatch could see this because the controller intermittently exposed adversary tooling, target files and ARTEX agent transcripts. Anti-detection was in fact built in: agents were explicitly instructed to find hosts without the Falcon sensor. The human operator remained, directing at decision points in Chinese. Secondary reporting says CrowdStrike told CyberScoop that around 70% (roughly 140) of targets were confirmed or moderate-confidence compromised, which does not reconcile with the nine in the published text."
+          },
+          "implication": {
+            "zh": "收集優先序要改：對手的主控台與 agent 對話紀錄，現在是比任何端點遙測更高階的情報目標。對做 provenance graph 的人，這裡有個更直接的點——ARTEX 的架構本身就是一張圖：主 agent 協調 planner 與 worker，三者共享一張事實、發現與目標的共同圖譜。那是對手自建的、品質遠高於任何殼層歷史的 provenance 結構，但它只在執行期存在，事後無跡。你的研究問題因此從「如何從宿主遺跡重建圖」變成「如何在執行期捕獲對手自己的圖」。",
+            "en": "Collection priorities have to move: the adversary's controller and agent transcripts are now a higher-order intelligence target than any endpoint telemetry. For provenance-graph researchers there is a sharper point. ARTEX's architecture is itself a graph — a main agent coordinating planner and worker agents, all sharing a common graph of facts, findings and goals. That is an adversary-built provenance structure of far higher quality than any shell history, and it exists only at runtime, leaving nothing behind. Your research question therefore shifts from reconstructing a graph from host artefacts to capturing the adversary's own graph while it runs."
+          },
+          "counterpoint": {
+            "zh": "可以合理主張結論應該相反：agentic 作戰外洩的資訊比人類作戰更多。一份 agent 對話紀錄記下的意圖、推理與失敗嘗試，遠超過任何操作員的 bash history。若防守方與供應商取得穩定的採集管道，歸因會變好而不是變差，而本期描述的只是過渡期的採集落差。FBI FLASH 稱部分案例在三小時內取得特權存取，Check Point 則指出這類框架會失敗、甚至會對自己幻覺出成功——噪音同樣是特徵。",
+            "en": "One can reasonably argue the opposite conclusion: agentic operations leak more than human ones. A single agent transcript records intent, reasoning and failed attempts far beyond any operator's bash history. If defenders and providers secure a stable collection path, attribution gets better rather than worse, and what this issue describes is a transitional collection gap. The FBI's FLASH alert reports privileged access inside three hours in some cases, while Check Point notes these frameworks fail and sometimes hallucinate their own success — the noise is a signature too."
+          },
+          "source": "CrowdStrike 2026/10/29「VAPOR PANDA Uses ARTEX to Scale Global Campaign」；CyberScoop、Industrial Cyber、SafeBreach 轉述",
+          "url": "https://www.crowdstrike.com/en-us/blog/vapor-panda-uses-artex-to-scale-global-campaign/",
+          "terms": [
+            "ARTEX",
+            "BLOODALCHEMY",
+            "OPSEC",
+            "provenance graph",
+            "EDR",
+            "VAPOR PANDA",
+            "FLASH"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "學術側已給出機制證據：被指派不同 APT 側寫的 agent，在初期階段收斂到同一組技術——而且會各自獨立地把防守方自己的工具改成 C2",
+            "en": "The mechanism now has academic evidence: agents assigned different APT profiles converge on identical early-phase techniques — and independently repurpose the defender's own tooling as C2"
+          },
+          "summary": {
+            "zh": "arXiv 2606.07158《Synthetic APTs: the Collapse of TTP-Based Attribution》（Balassone、Mayoral-Vilches 等，Alias Robotics）把 agent 配置成模仿 APT28、APT29、APT41、APT44 與 Lazarus 五個側寫，在兩座 cyber range、對上兩種防守方模型、共 20 組實驗。結論有二：不論被指派哪個側寫，所有 agent 在初期階段收斂到同一組技術；同時產生落在既有 TTP 目錄之外的新收斂行為。最具體的數字是 10 組企業情境中有 8 組，攻擊方各自獨立地把防守方自己的 Velociraptor 端點管理平台改造成 C2 通道。全部企業情境皆以淪陷告終，軍事情境則為防守成功或僵持。社群流傳的「55–80% 仿冒精度」不見於可取得的段落，不採用。",
+            "en": "arXiv 2606.07158, Synthetic APTs: the Collapse of TTP-Based Attribution (Balassone, Mayoral-Vilches et al., Alias Robotics), configured agents to emulate five profiles — APT28, APT29, APT41, APT44 and Lazarus — across two cyber ranges against two defender models, 20 experiments in total. Two findings: regardless of assigned profile, all agents converged on identical initial-phase techniques; and they generated novel convergent behaviours outside existing TTP catalogues. The hardest number is that in 8 of 10 enterprise runs, attackers independently weaponised the defender's own Velociraptor endpoint management platform as a C2 channel. All enterprise runs ended in compromise; military runs were defended or stalemated. A 55–80% spoofing-precision figure circulating on social media does not appear in the retrievable text and is not used here."
+          },
+          "implication": {
+            "zh": "對 provenance graph 研究，這是判別力問題而不是覆蓋率問題：圖上的早期節點將趨同，鑑別資訊往後段集中——人類決策點、C2 基礎設施選擇、受害者學。實務建議是把「誰在執行」這個維度顯式建模（人類／腳本／agentic），而不是繼續在技術序列上找差異；同時把「對手使用了我們自己的管理工具」當成一級偵測目標，因為收斂本身製造了新的、可偵測的共同特徵。",
+            "en": "For provenance-graph work this is a discriminative-power problem, not a coverage problem: early nodes converge, so discriminating information shifts later — to human decision points, C2 infrastructure choices and victimology. The practical move is to model the executor dimension explicitly (human / scripted / agentic) rather than keep hunting for differences in the technique sequence, and to promote adversary use of your own management tooling to a first-class detection target, because convergence itself manufactures a new, detectable common signature."
+          },
+          "counterpoint": {
+            "zh": "這是 cyber range 模擬，不是觀測到的入侵，而且 agent 是被完全放手跑的。真實作戰有預算、授權、既有存取與目標偏好，這些差異不會被模型抹平——CrowdStrike 記錄的那場作戰裡，人類仍在決策點用中文下指令。合理的讀法是：收斂發生在「若對手完全交給 agent」的極限情況，而現實停在中間，所以 TTP 叢集是被削弱，不是被取消。",
+            "en": "This is cyber-range emulation, not observed intrusions, and the agents were run fully unleashed. Real operations carry budgets, authorisations, pre-existing access and target preferences, and those differences are not flattened by a model — in the campaign CrowdStrike documented, a human was still directing in Chinese at decision points. The fair reading is that convergence appears in the limiting case where an adversary hands everything to agents, while reality sits in between, so TTP clustering is weakened rather than cancelled."
+          },
+          "source": "arXiv:2606.07158（Alias Robotics 團隊預印本），經搜尋引擎段落轉述",
+          "url": "https://arxiv.org/abs/2606.07158",
+          "terms": [
+            "APT",
+            "TTP",
+            "C2",
+            "Velociraptor",
+            "provenance graph",
+            "ATT&CK"
+          ]
+        },
+        {
+          "severity": "medium",
+          "confidence": "unverified",
+          "title": {
+            "zh": "目錄在追，但追錯層次：ATT&CK v20 與 ATLAS 2026 新增的是「針對 AI 的攻擊」，不是「由 AI 執行時行為如何變形」",
+            "en": "The catalogues are chasing the wrong layer: ATT&CK v20 and ATLAS 2026 added attacks against AI, not how behaviour deforms when AI does the executing"
+          },
+          "summary": {
+            "zh": "據多方轉述，2026 年 10 月的 ATT&CK v20 新增五項 AI 相關技術：直接提示注入（T1699）、間接提示注入（T1698）、AI 輔助外洩（T1700）、AI 結果投毒（T1608.007）與削弱自主防禦（T1685.007）；ATLAS 在 2026 年加入大量 agentic 標記，一說 208 條技術項目中有 139 條帶 Agentic AI 平台標籤，另一說 2026.10 版為 16 戰術／129 技術／92 子技術。來源全是廠商與社群部落格，技術編號在不同文章間互相矛盾（例如 AI Agent Tool Poisoning 同時被標為 AML.T0110 與 AML.T0061），因此本條標為 unverified。重點不在數字，在方向：新增條目描述的是攻擊 AI 系統的手法，而本期的問題是同一條既有技術由 agent 執行時失去鑑別力——這個維度兩套目錄都還沒有欄位。",
+            "en": "Per multiple secondary write-ups, ATT&CK v20 (October 2026) added five AI-related techniques: Direct Prompt Injection (T1699), Indirect Prompt Injection (T1698), AI-Enabled Exfiltration (T1700), AI Result Poisoning (T1608.007) and Impair Autonomous Defenses (T1685.007); ATLAS added heavy agentic tagging during 2026, with one source saying 139 of 208 technique entries carry an Agentic AI platform tag and another describing release 2026.10 as 16 tactics / 129 techniques / 92 sub-techniques. All sources are vendor or community blogs and the IDs contradict each other across write-ups (AI Agent Tool Poisoning appears as both AML.T0110 and AML.T0061), so this item is marked unverified. The numbers are not the point; the direction is. The new entries describe attacks on AI systems, whereas this week's problem is that an existing technique loses discriminative power when an agent executes it — and neither catalogue has a field for that dimension."
+          },
+          "implication": {
+            "zh": "若你的獵捕內容以 ATT&CK 技術 ID 為骨架，這批新增條目不會幫你分辨兩個都在跑 ARTEX 的對手。實務上要自己補一個欄位：每條偵測除了技術 ID，再記錄「執行代理人」推定值與其證據（節奏、錯誤恢復模式、工具選擇的均質程度）。這是現在就能做、不必等目錄更新的事，而且先做的人會在下一輪廠商報告出來前就有自己的分群。",
+            "en": "If your hunting content is skeletoned on ATT&CK technique IDs, these additions will not help you separate two adversaries both running ARTEX. The practical fix is to add a field yourself: alongside the technique ID, record an inferred executor value and its evidence — cadence, error-recovery pattern, and how homogeneous the tool selection is. This is doable now without waiting for a catalogue update, and whoever does it first will have their own clustering before the next vendor report lands."
+          },
+          "source": "Oleria 對 ATT&CK v20 的整理、Zenity 與多家對 MITRE ATLAS 2026 更新的轉述（編號互相矛盾，未經 MITRE 原始頁面核實）",
+          "url": "https://www.oleria.com/blog/mitre-attack-v20-ai-agents-detections",
+          "terms": [
+            "ATT&CK",
+            "ATLAS",
+            "TTP",
+            "LLM",
+            "ARTEX"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geo",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "likely",
+          "title": {
+            "zh": "吃歸因的下游機器正在滿速運轉——歐盟 7/13 點名 FSB 第 16 中心、3/16 列中國 Integrity Technology Group、美方 8/26 拆掉 QTFY——而 LMA5564 把觸發權交給受害國政府表態",
+            "en": "The downstream machinery that eats attribution is running at full speed — the EU naming FSB Centre 16 on 7/13, listing China's Integrity Technology Group on 3/16, the US dismantling QTFY on 8/26 — while LMA5564 hands the trigger to the victim state's government"
+          },
+          "summary": {
+            "zh": "歐盟 7/13 對九名個人與四個實體指定，並公開把一系列針對成員國與夥伴國的惡意網路行動歸因給俄羅斯聯邦安全局第 16 中心，是歐盟與英國首次在各自網路制裁機制下同步出手；3/16 另列三個實體與兩名個人，含中國的 Integrity Technology Group，制裁名單累計 19 人與 7 實體，機制已延長至 5/18/2027。美方 8/26 拆除中國國家關聯行動所用的 QScan 與 QTRouter 平台，稱其營運者 QTFY 的付費客戶包括國家安全部與解放軍。所有這些動作都必須點到人或法人。而倫敦那一端，LMA5564 戰爭與網路行動除外條款把「受影響電腦系統所在國政府是否歸因於另一國」定為主要但非唯一因素，在政府表態前允許承保人依「客觀合理的推論」行事，並把舉證責任放在承保人身上。",
+            "en": "On 7/13 the EU designated nine individuals and four entities and publicly attributed a wide range of malicious operations against member states and partners to Centre 16 of Russia's FSB — the first time the EU and UK acted simultaneously under their respective cyber sanctions regimes. On 3/16 it listed three entities and two individuals including China's Integrity Technology Group, bringing the regime to 19 individuals and 7 entities, extended to 5/18/2027. On 8/26 the US dismantled the QScan and QTRouter platforms used in China state-linked operations, saying operator QTFY's paying customers included the Ministry of State Security and the PLA. Every one of these actions requires naming a person or a legal entity. At the London end, the LMA5564 war and cyber operation exclusion makes whether the government of the state where the affected system sits attributes the operation to another state the primary but not exclusive factor, lets the insurer act on an objectively reasonable inference pending that attribution, and places the burden of proof on the insurer."
+          },
+          "implication": {
+            "zh": "這是 10/26週報那條保單線的續集，但斷點換了位置：當時的問題是五大國自動終止條款在戰爭爆發當下生效，現在的問題是連「是不是國家行為」都變成對手 opsec 的函數。對營運與投資判斷，這代表戰爭除外條款的觸發時點不可預測——承保人可能在政府表態前先用「客觀合理推論」拒賠，也可能因為政府永遠無法點名而付了不該付的。兩個方向都會先反映在續保報價，而不是在理賠判決。",
+            "en": "This is the sequel to the policy thread in the 10/26週報, but the break has moved: there the problem was the five-powers automatic termination clause biting the moment war breaks out; here the problem is that whether an act is even state action becomes a function of adversary OPSEC. For operational and investment judgement this makes the war exclusion's trigger timing unpredictable — an insurer may decline on an objectively reasonable inference before any government speaks, or may pay claims it should not because no government can ever name a culprit. Both directions show up first in renewal pricing, not in claims litigation."
+          },
+          "counterpoint": {
+            "zh": "制裁與起訴從來不是靠 TTP 叢集定案的。歐盟點名 FSB 第 16 中心、美方指出 QTFY 的客戶是國安部與解放軍，這類結論的底層是訊號情報、人員情報、金流與採購紀錄——這幾條都不受 agentic 執行影響，甚至因為對手要付錢租基礎設施而更清楚。若此說成立，本條的風險被我高估了：真正受損的是商業威脅情報的分群，不是國家級歸因。",
+            "en": "Sanctions and indictments were never settled by TTP clustering. The EU naming FSB Centre 16 and the US identifying QTFY's customers as the MSS and the PLA rest on signals intelligence, human sources, money flows and procurement records — none of which agentic execution touches, and some of which get clearer because adversaries must pay to rent infrastructure. If that holds, I am overstating the risk here: what degrades is commercial threat-intelligence clustering, not state-level attribution."
+          },
+          "source": "歐盟理事會 2026/7/13 與 2026/3/16 新聞稿；美國司法部 2026/8/26 行動之媒體轉述；LMA5564 條款文字",
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/07/13/russian-cyber-attacks-and-destabilising-activities-council-sanctions-nine-individuals-and-four-entities/",
+          "terms": [
+            "FSB",
+            "MSS",
+            "PLA",
+            "QTFY",
+            "Cyber Diplomacy Toolbox",
+            "LMA5564",
+            "War Risk Insurance",
+            "OFAC"
+          ]
+        }
+      ]
+    }
+  ],
+  "narrative": {
+    "zh": "**上期推演校準**\n\n11/9週報留下五條指標，一週後零條被推翻、一條趨向成立、四條仍未定。第四條（改版 DoDD 3000.09 是否公布）趨向成立：查核範圍內最新版本仍是 2023 年 1 月，NSPM-11 的九十天期限（約 9/3）已過十週而查無公布版本。第一條（11/20 閉幕文件有沒有 negotiate、有沒有查證條款）無法評分，因為大會 11/16 才開幕——這就是毛病：上期才剛檢討過「指標若不會在下一個校準點前產生可觀察的值就不是指標」，我卻把核心指標設在本期之後四天，等於把同一個錯誤縮小後再犯一次。會前態勢可記：主席為瑞士大使 Julien Thöni，倡議方稱 130 國支持具拘束力文書、逾 70 國支持以 GGE 文本為談判基礎，但沒有一份會前文件提到查證，上期核心判斷在開幕前仍站得住。另一個瑕疵要認：本期無法確認 FY2027 NDAA 的自主武器條款就是 Section 1647／1653，只能確認參院軍委會 6/10 版本含「適當程度人類判斷」字樣，那兩個條號應視為未經核實。\n\n**問題是什麼**\n\n所有人都在問 agentic AI 會不會讓攻擊更快。那是問錯層次——速度對防守方是排程問題，而排程可以用錢買。真正被改掉的是歸因的證據來源。過去三十年，把一組入侵掛到一個行為者身上靠的是操作員的個人癖性：工具偏好、作業時區、錯字、基礎設施重用。這些癖性沉澱成 TTP 叢集，成了 ATT&CK、UNC 編號與整個商業威脅情報業的地基。當執行者換成 agent，沉澱下來的不再是操作員的癖性，而是模型的策略。\n\n**機制怎麼運作**\n\n第一層，行為趨同：同一套開源框架加同一個模型，兩個互不相關的對手會跑出高度相似的早期軌跡，連「創新」都趨同。第二層，鑑別資訊往兩端擠——往前擠到基礎設施與資源取得，往後擠到人類決策點（誰在轉折處下了什麼指令、用什麼語言）。第三層最關鍵：這兩端都不是防守方靠努力能改善的。要讀到母語殘留，前提是你看得到 agent 對話紀錄；而對話紀錄只存在於對手的主控台裡，或模型供應商的日誌裡。於是歸因的供給從「分析的產物」變成「對手失誤的產物」加「第三方公司的揭露意願」。兩者都是隨機變數：對手可以把主控台關好，也可以改跑自架的開源權重模型。防守方做對任何事，都不會讓這兩個機率變高。\n\n**證據**\n\n最硬的一條是偵獲路徑本身：CrowdStrike 10/29 那場逾 200 個組織的作戰被看見，是因為那台 ARTEX 主控台間歇性地把工具、目標檔與 agent 對話紀錄暴露在外；而同一場作戰的反偵測是做過的——agent 被指示去找沒裝 Falcon 感測器的主機。這不是疏於防護的對手，是在別處很小心、卻在主控台上漏了的對手。第二，共用程度：ARTEX 今年 7 月才掛上 GitHub，8 月下旬起已有至少五個互不相關的叢集在用，而暴露主控台的計數在 815 到 2,557 之間四個數字並存——連裝機量都沒有共識。第三，機制證據：arXiv 2606.07158 把 agent 配成五個 APT 側寫對打，不論側寫為何初期技術完全收斂。第四，對照組：Anthropic 2025 年 11 月揭露的 GTG-1002，歸因來自模型供應商自己的遙測——這正好說明第二條線長什麼樣，以及改用自架 DeepSeek 會關掉什麼。\n\n**各方自己怎麼說**\n\n華府把公開歸因當嚇阻工具，也是唯一把它工業化的：8/26 拆掉 QScan 與 QTRouter，直言營運者 QTFY 的付費客戶包括國家安全部與解放軍。它最不願被追問的是：這套點名的證據，越來越多來自它不控制的私人廠商遙測與模型供應商日誌。北京的敘事是反向對稱的——國家計算機病毒應急處理中心今年 2 月與 360、安天合發「頭號玩家」報告指控美國收割全球虛擬貨幣資產，2025 年 6 月「蚍蜉撼樹」報告直接點名台灣資通電軍，今年 9 月態勢報告把本年度定性為由「高烈度對抗」轉向「智能化、體系化、供應鏈化對抗」。北京的框架很明確：歸因是政治行為，所以也可以反過來做；同一邏輯在聯合國更具體——第二屆 OEWG 最終共識報告原有「國家須對其境內代理人負責」一段，在中方反對下被刪掉。莫斯科要的是議場與決策規則：主推接替 OEWG 的全球機制與《河內公約》，堅持共識決——共識決等於否決權，與 11/9週報在 CCW 看到的是同一招。布魯塞爾是唯一把公開歸因制度化成法律後果的：7/13 點名 FSB 第 16 中心、3/16 列入中國 Integrity Technology Group，代價是 CFSP 一致決，任一成員國都能擋。台北最尷尬：國安局統計政府網路服務網日均遭侵擾約 258 萬次、7 月單月破億次且不排除與 11/28 選舉有關，而年度報告點名的 BlackTech、Flax Typhoon、Mustang Panda、APT41、UNC3886 全是別人的命名空間。四方最在意對方哪一點：華府要別人承認它的點名；北京要「歸因是政治」被接受、要國家代理人責任條款不要回來；莫斯科要議場不搬家、決策規則維持共識；布魯塞爾要一致決不被單一成員國癱瘓。台北要的是有一天能自己命名，而瓶頸不是分析能力，是採集管道。\n\n**未來 3–6 個月的推演與觀察指標**\n\n主判斷：agentic 框架不會讓歸因消失，它把歸因的供給從防守方的分析能力，轉移到三個防守方控制不了的來源——對手的 opsec 事故、模型供應商的揭露意願、人類操作員在決策點的語言殘留。一、11/20 CCW 閉幕文件（續上期，四天內結案）：有沒有 negotiate，有沒有任何查證條款。二、12/31 前，CrowdStrike、微軟或 Mandiant 任一家是否發布第二份 agentic 框架作戰報告，且歸因依據明確不是主控台外洩——若有，本期核心判斷被嚴重削弱，這條最容易推翻我。三、1/31 前，暴露主控台計數是否收斂到同一量級。四、2/28 前，是否出現第一起在 OFAC 或歐盟指定公告中點名 agentic 框架本身、而非只點個人與法人的文書——那等於官方承認工具即對象，是本期判斷的反面確認。五、1/10 前，DeepSeek 或其他開源權重發布者是否首次公布威脅行為者揭露報告；這條決定第二條證據線對自架模型是否重開。\n\n**我可能錯在哪**\n\n第一也最重：倖存者偏差。我用「CrowdStrike 靠主控台外洩才看見」推論歸因供給改變，但廠商只發布它破了的案子——核心論點建立在一個可見樣本上，而這個樣本之所以可見正是因為它特殊。第二，工具共用不新：Cobalt Strike 被共用十年而 CTI 沒崩潰，因為叢集從來是工具加基礎設施加受害者學加時區的聯合，agentic 只抹掉其中一層；正確說法可能是「工具層權重要調降」而非「索引失效」。第三，Synthetic APTs 是 cyber range 模擬且 agent 被完全放手跑，真實作戰的人類仍在決策點下指令，收斂是極限情況不是現況。第四，「歸因權往模型供應商集中」目前只有 Anthropic 一家公開做過，n 等於一。第五，數字全部互相矛盾，沒有一條能給 confirmed。第六是老問題、連續第七期：出網代理只放行 github.com，arxiv.org、crowdstrike.com、consilium.europa.eu、cverc.org.cn 全部無法解析，本期所有材料都經搜尋引擎段落轉述，沒有任何一手頁面被我親眼讀到。所有編號、票數與統計請當作待查核。",
+    "en": "**Calibrating last issue's forecasts**\n\nThe 11/9週報 left five indicators. One week on: none overturned, one trending toward confirmation, four open. Indicator four (a revised DoDD 3000.09) is trending my way — the latest version within reach is still January 2023, and NSPM-11's ninety-day deadline of roughly 9/3 is ten weeks past with nothing published. Indicator one (whether the 11/20 closing document contains \"negotiate\" and any verification clause) cannot be scored, because the conference only opens on 11/16. That is the flaw: last issue I had just concluded that an indicator producing no observable value before the next calibration point is not an indicator, then set my core indicator four days after this issue — the same mistake in miniature. The pre-conference posture is recordable: Switzerland's Ambassador Julien Thöni presides, advocates claim 130 states back a legally binding instrument and over 70 back the GGE text as a negotiating basis — but none of it mentions verification, so last issue's core judgement stands going in. One further defect to own: I could not confirm the FY2027 NDAA autonomy provisions are Sections 1647/1653, only that the Senate committee's 6/10 version carries \"appropriate levels of human judgment.\" Treat those numbers as unverified.\n\n**What the problem actually is**\n\nEveryone asks whether agentic AI makes attacks faster. Wrong layer — speed is a scheduling problem for defenders, and scheduling can be bought. What changed is where attribution gets its evidence. For thirty years, tying intrusions to an actor rested on operator idiosyncrasy: tool preferences, working hours, typos, infrastructure reuse. Those habits precipitated into TTP clusters, and those clusters are the bedrock of ATT&CK, of UNC numbering, and of the commercial threat-intelligence industry. When the executor becomes an agent, what precipitates is not the operator's habits but the model's policy.\n\n**How the mechanism works**\n\nLayer one, behavioural convergence: the same open framework on the same model gives two unrelated adversaries near-identical early trajectories, and even the innovations converge. Layer two, discriminative information is squeezed to both ends — forward into infrastructure and resource acquisition, backward into human decision points (who said what at the turn, in which language). Layer three is the one that matters: neither end improves with defender effort. Reading native-language residue presupposes seeing agent transcripts, and transcripts live either in the adversary's controller or in a model provider's logs. Attribution's supply therefore shifts from an analytical product to a product of adversary error plus a third party's willingness to disclose. Both are random variables: the adversary can lock the console down, and can switch to self-hosted open weights. Nothing a defender does well raises either probability.\n\n**The evidence**\n\nThe hardest datum is the detection path itself. CrowdStrike's 10/29 campaign against 200-plus organisations was seen because the ARTEX controller intermittently exposed tooling, target files and agent transcripts — while in that same campaign anti-detection was deliberate, with agents told to find hosts lacking the Falcon sensor. Not a careless adversary; a careful one that leaked at the console. Second, the degree of sharing: ARTEX went up on GitHub only in July 2026, and by late August at least five unrelated clusters were running it, while exposed-console counts sit at four coexisting numbers between 815 and 2,557 — no consensus even on the install base. Third, the mechanism evidence: arXiv 2606.07158 configured agents as five APT profiles and found complete convergence of initial-phase techniques regardless of profile. Fourth, the control case: Anthropic's November 2025 GTG-1002 disclosure was attributed from the provider's own telemetry, which shows exactly what the second channel looks like and what self-hosted DeepSeek shuts off.\n\n**What each side says for itself**\n\nWashington treats public attribution as deterrence and is the only actor to have industrialised it: on 8/26 it dismantled QScan and QTRouter and said outright that operator QTFY's paying customers included the Ministry of State Security and the PLA. What it least wants asked: that naming increasingly rests on private vendor telemetry and model-provider logs it does not control. Beijing's narrative is the mirror image. CVERC, with 360 and Antiy, published \"Player One\" in February 2026 accusing US technological hegemony of harvesting global crypto assets; its June 2025 report named Taiwan's ICEFCOM directly; its September 2026 posture report casts the year as a shift from \"high-intensity confrontation\" to \"intelligentised, systematised, supply-chain confrontation.\" The framing is explicit — attribution is a political act, therefore it can be run in reverse. The same logic is concrete at the UN: a paragraph making states responsible for proxies on their territory was struck from the second OEWG's final consensus report over Chinese objection. Moscow wants the venue and the decision rule: it backs the Global Mechanism succeeding the OEWG and the Hanoi Convention, and insists on consensus — consensus being a veto, the same move the 11/9週報 traced at the CCW. Brussels alone has institutionalised attribution into legal consequence: FSB Centre 16 named on 7/13, China's Integrity Technology Group listed on 3/16 — at the price of CFSP unanimity, which any capital can block. Taipei is the most awkward: the NSB reports the government service network taking about 2.58 million intrusion attempts daily, July alone above 100 million and not excluded as 11/28 election interference, while its annual report names BlackTech, Flax Typhoon, Mustang Panda, APT41 and UNC3886 — every one someone else's namespace. What each most wants from the others: Washington wants its naming accepted; Beijing wants \"attribution is political\" accepted and the proxy-responsibility clause kept out; Moscow wants the venue unmoved and consensus preserved; Brussels wants unanimity not held hostage by one capital. Taipei wants to name actors itself one day — and the bottleneck is collection access, not analytical skill.\n\n**Forecasts and indicators, 3–6 months**\n\nCore judgement: agentic frameworks will not abolish attribution; they move its supply from defender analysis to three sources defenders do not control — adversary OPSEC accidents, provider disclosure appetite, and operator language residue at decision points. One: the 11/20 CCW closing document (carried over, settles in four days) — does it contain \"negotiate,\" and any verification clause. Two: by 12/31, does CrowdStrike, Microsoft or Mandiant publish a second agentic-campaign report whose attribution demonstrably does not rest on a leaked console — if so this issue's core judgement is badly weakened, and this is the indicator most likely to overturn me. Three: by 1/31, do exposed-console counts converge to one order of magnitude. Four: by 2/28, does any OFAC or EU designation name an agentic framework itself rather than only persons and entities — officialdom conceding tool-as-object would be the inverse confirmation of this issue. Five: by 1/10, does DeepSeek or another open-weight publisher issue a first threat-actor disclosure, which decides whether the second evidence channel reopens for self-hosted models.\n\n**Where I am most likely wrong**\n\nFirst and heaviest: survivorship bias. I infer a change in attribution supply from \"CrowdStrike saw it only because the console leaked,\" but vendors publish the cases they solved. The core argument rests on one visible sample, visible precisely because it is unusual. Second, shared tooling is not new: Cobalt Strike was shared for a decade without CTI collapsing, because clustering was always tooling plus infrastructure plus victimology plus time zone, and agentic execution erases one layer — the honest claim may be \"cut the tool layer's weight,\" not \"the index is broken.\" Third, Synthetic APTs is cyber-range emulation with agents fully unleashed, while real operations still have a human at decision points, so convergence is a limiting case. Fourth, \"attribution authority concentrating in model providers\" rests on exactly one company having done it publicly; n equals one. Fifth, the numbers contradict each other and nothing here can be rated confirmed. Sixth, the standing problem, seventh issue running: the egress proxy permits only github.com, while arxiv.org, crowdstrike.com, consilium.europa.eu and cverc.org.cn do not resolve. Everything came through search-engine relays; I read no primary page with my own eyes. Treat every identifier, count and statistic as pending verification."
+  }
+}
