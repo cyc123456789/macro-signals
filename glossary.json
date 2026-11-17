@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-18",
   "terms": [
     {
       "term": "AsyncOS",
@@ -4081,6 +4081,17 @@
       },
       "category": "geo",
       "first_seen": "2026-11-16"
+    },
+    {
+      "term": "Storm-3358",
+      "zh": "Storm-3358（柬埔寨籍財務動機集群）",
+      "expansion": "Microsoft Threat Intelligence designation Storm-3358",
+      "def": {
+        "zh": "Microsoft威脅情報對一個以柬埔寨為基地、財務動機（而非國家支持）的入侵集群所用的追蹤代號。該集群2026年10月起使用開源代理式滲透測試框架ARTEX鎖定東南亞為主的金融機構，並混用WISP、vshell、AdaptixC2等遠端存取工具維持據點。它是首個被獨立點名、且不帶國家級動機標籤的ARTEX使用者，代表這套工具的使用者光譜已從單純的國家級間諜活動擴散到純犯罪變現。",
+        "en": "Microsoft Threat Intelligence's tracking designation for a Cambodia-based intrusion cluster assessed as financially motivated rather than state-sponsored. Active from October 2026, the cluster uses the open-source agentic penetration-testing framework ARTEX against mainly Southeast Asian financial organizations, pairing it with WISP, vshell and AdaptixC2 remote-access tools for persistence. It is the first independently named ARTEX user not carrying a state-sponsorship label, marking the tool's user base expanding from pure state espionage into plain criminal monetization."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-18"
     }
   ]
 }
