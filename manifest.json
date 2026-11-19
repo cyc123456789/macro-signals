@@ -1,6 +1,15 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-20",
   "reports": [
+    {
+      "file": "reports/2026-11-20-brief.json",
+      "kind": "brief",
+      "date": "2026-11-20",
+      "title": {
+        "zh": "川普、習近平、蒲亭11/19深圳APEC三方峰會登場，聯合聲明隻字未提烏克蘭與伊朗戰事，11/18報告假設的LMA5564觸發點條件未成立；美國商務部11/16發布「遠端存取」規則堵住AI晶片境外資料中心漏洞，中國商務部11/17揚言反制——與峰會握手形成72小時內的雙軌脫鉤；CISA 11/10將Cisco BroadWorks的XXE漏洞列入KEV，二手報導稱攻擊者用越獄版DeepSeek自主代理，但Cisco否認已遭利用；核電公投最終場11/20登場，反方代表名單延宕多日才補齊；蒲亭克宮公開感謝北韓軍事援助、宣布年底前庫斯克立碑，金與正否認增兵5萬人說法",
+        "en": "Trump, Xi and Putin Hold First-Ever Trilateral Summit 11/19 at APEC Shenzhen, With a Joint Declaration Omitting Both the Ukraine and Iran Wars, Leaving the 11/18 Report's Hypothetical LMA5564 Trigger Condition Unmet; US Commerce Issues a 'Remote Access' Rule 11/16 Closing the Overseas-Data-Center Loophole for AI Chips, as China's Commerce Ministry Threatens Countermeasures 11/17 — a Dual-Track Decoupling From the Summit Handshake Within 72 Hours; CISA Adds Cisco BroadWorks' XXE Flaw to KEV on 11/10 as Secondary Reports Claim a Jailbroken DeepSeek Agent Drove the Intrusion, Though Cisco Denies Known Exploitation; Taiwan's Nuclear Referendum Holds Its Final Debate 11/20 After the Anti-Nuclear Side's Lineup Was Filled Only After a Prolonged Delay; Putin Publicly Thanks North Korea for Military Aid at the Kremlin, Announcing a Kursk Monument by Year's End, as Kim Yo-jong Denies the 50,000-Troop Claim"
+      }
+    },
     {
       "file": "reports/2026-11-18-brief.json",
       "kind": "brief",

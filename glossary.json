@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-20",
   "terms": [
     {
       "term": "AsyncOS",
@@ -4092,6 +4092,50 @@
       },
       "category": "cyber",
       "first_seen": "2026-11-18"
+    },
+    {
+      "term": "XXE",
+      "zh": "XML外部實體注入",
+      "expansion": "XML External Entity",
+      "def": {
+        "zh": "一種針對XML解析器的漏洞類型。攻擊者在XML文件中嵌入外部實體參照，誘使解析器讀取伺服器本地檔案或發出未授權的網路請求，常見於未妥善停用外部實體解析功能的舊版XML處理元件。",
+        "en": "A vulnerability class affecting XML parsers in which an attacker embeds external entity references in XML input to trick the parser into reading local files on the server or issuing unauthorized network requests, commonly found in legacy XML-processing components that fail to disable external entity resolution."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-20"
+    },
+    {
+      "term": "DeepSeek",
+      "zh": "DeepSeek（中國開源權重模型）",
+      "expansion": "DeepSeek (Chinese open-weight large language model family)",
+      "def": {
+        "zh": "中國AI公司開發的開源權重大型語言模型系列。因可自行架設部署、不必經過原廠API，本站多期報告記錄其被攻擊者選作agentic入侵工具的底層模型，藉以規避依賴模型供應商API日誌的歸因管道。",
+        "en": "A family of open-weight large language models developed by a Chinese AI company. Because it can be self-hosted without going through the vendor's own API, this site's reporting has repeatedly flagged it as the underlying model attackers choose for agentic intrusion tooling, in order to evade attribution channels that depend on a model provider's own API logs."
+      },
+      "category": "tech",
+      "first_seen": "2026-11-20"
+    },
+    {
+      "term": "Remote Access Rule",
+      "zh": "遠端存取規則",
+      "expansion": "BIS interim final rule on remote access to advanced computing items",
+      "def": {
+        "zh": "美國商務部工業與安全局（BIS）2026/11/16發布的臨時最終規則，首度將「遠端存取」先進運算晶片本身納入出口管制範圍，要求企業將相關晶片運往特定國家的境外資料中心前須取得許可證，目的在堵住透過第三地雲端機房遠端租用運算力以規避出口管制的管道。",
+        "en": "An interim final rule issued by the US Commerce Department's Bureau of Industry and Security (BIS) on 11/16/2026 that, for the first time, brings remote access to advanced computing chips itself under export control, requiring a license before shipping such chips to data centers in specified third countries — aimed at closing the channel of remotely renting compute through offshore cloud facilities to evade export controls."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-20"
+    },
+    {
+      "term": "WPK",
+      "zh": "朝鮮勞動黨",
+      "expansion": "Workers' Party of Korea",
+      "def": {
+        "zh": "北韓的執政黨，是國家最高權力機構，金氏家族透過黨組織掌控軍隊、政府與對外軍事合作事務。",
+        "en": "North Korea's ruling party and the country's supreme organ of power, through which the Kim family controls the military, government, and external military-cooperation affairs."
+      },
+      "category": "military",
+      "first_seen": "2026-11-20"
     }
   ]
 }
