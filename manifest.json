@@ -1,6 +1,15 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-22",
   "reports": [
+    {
+      "file": "reports/2026-11-22-brief.json",
+      "kind": "brief",
+      "date": "2026-11-22",
+      "title": {
+        "zh": "CCW日內瓦大會11/20落幕：各國只同意「繼續討論」到2028、未啟動具法律約束力的自主武器談判，美俄以色列聯手擋下、正面驗證11/9週報「不可查證」的核心判斷；法國外長11/9在G7部長會議正式將10月逾700處商用冷凍系統破壞性入侵歸咎伊斯蘭革命衛隊「Shahid Kaveh」單位、開啟司法調查並揚言EU制裁，但11/2另一波波及9國逾百家商店的攻擊至今仍未破案；Huntress揭露蠕蟲式SCKit工具組90分鐘內攻陷288台ScreenConnect端點、橫跨48家企業；BIS遠端存取規則細節補完——正式廢止拜登時代AI Diffusion Rule，中國截至查核時點仍無具體反制行動；Counterpoint Research：Q3記憶體產業營收年增近5倍，三星SK海力士2026年產能近乎售罄",
+        "en": "CCW's Geneva Review Conference Closes 11/20 With States Agreeing Only to 'Keep Discussing' Autonomous Weapons Through 2028, No Legally Binding Negotiations Launched, as the US, Russia and Israel Block a Mandate — Directly Confirming the 11/9 Weekly's 'Dies of Unverifiability' Thesis; France's Foreign Minister Formally Attributes October's Destructive Intrusion Into 700+ Commercial Refrigeration Systems to IRGC's 'Shahid Kaveh' Unit at a 11/9 G7 Ministerial, Opening a Judicial Probe and Threatening EU Sanctions — Though a Separate 11/2 Wave Hitting 100+ Stores Across 9 Countries Remains Unattributed; Huntress Exposes the Worm-Like SCKit Toolkit Compromising 288 ScreenConnect Endpoints Across 48 Organizations Within 90 Minutes; BIS's Remote Access Rule Gets Fleshed Out — Formally Rescinding the Biden-Era AI Diffusion Rule, With China Still Taking No Concrete Retaliatory Action as of This Check; Counterpoint Research Puts Q3 Memory-Industry Revenue Up Nearly 5x YoY as Samsung and SK Hynix's 2026 Capacity Runs Nearly Sold Out"
+      }
+    },
     {
       "file": "reports/2026-11-20-brief.json",
       "kind": "brief",

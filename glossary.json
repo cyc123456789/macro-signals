@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-22",
   "terms": [
     {
       "term": "AsyncOS",
@@ -4136,6 +4136,50 @@
       },
       "category": "military",
       "first_seen": "2026-11-20"
+    },
+    {
+      "term": "Shahid Kaveh",
+      "zh": "沙希德·卡維（伊斯蘭革命衛隊網路部隊）",
+      "expansion": "IRGC-linked cyber unit named after a late Iranian commander",
+      "def": {
+        "zh": "伊朗伊斯蘭革命衛隊(IRGC)旗下一個網路作戰單位的代稱，2026年11月遭法國政府在G7部長會議正式指控涉入10月對法國逾700個商用冷凍控制系統的破壞性入侵。",
+        "en": "A cyber unit linked to Iran's Islamic Revolutionary Guard Corps (IRGC); publicly named by the French government at a G7 ministerial meeting in November 2026 as responsible for a destructive October intrusion into over 700 commercial refrigeration control systems in France."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-22"
+    },
+    {
+      "term": "SCKit",
+      "zh": "SCKit（蠕蟲式ScreenConnect攻擊工具組）",
+      "expansion": "ScreenConnect attack toolkit identified by Huntress",
+      "def": {
+        "zh": "資安廠商Huntress命名的一套工具組，2026年11月用於在受害端點植入未經授權的ScreenConnect遠端控制客戶端，呈現蠕蟲式快速擴散行為。",
+        "en": "A toolkit, named by security vendor Huntress, used in November 2026 to install unauthorized ScreenConnect remote-access clients on victim endpoints, spreading with worm-like speed."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-22"
+    },
+    {
+      "term": "RASA",
+      "zh": "遠端存取安全法案",
+      "expansion": "Remote Access Security Act",
+      "def": {
+        "zh": "美國國會跨黨派法案(H.R.2683/S.3519)，擬將出口管制範圍明文擴及雲端運算的「遠端存取」本身；2026年1月以369比22票經眾議院通過，截至本站查核時點仍待參議院表決。",
+        "en": "A bipartisan US bill (H.R.2683/S.3519) that would explicitly extend export controls to remote access to cloud computing itself; passed the House 369-22 in January 2026 and remained pending in the Senate as of this check."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-22"
+    },
+    {
+      "term": "AI Diffusion Rule",
+      "zh": "AI擴散規則",
+      "expansion": "AI Diffusion Rule",
+      "def": {
+        "zh": "拜登政府任內制定、將各國分為三級並據此限制AI晶片出口與資料中心授權的出口管制框架，2026年11月16日遭商務部BIS正式廢止，改以「遠端存取規則」取代。",
+        "en": "A Biden-era export-control framework sorting countries into three tiers to restrict AI-chip exports and data-center authorizations; formally rescinded by Commerce's BIS on 2026-11-16 and replaced by the Remote Access Rule."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-22"
     }
   ]
 }
