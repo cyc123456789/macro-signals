@@ -1,6 +1,15 @@
 {
-  "updated": "2026-11-22",
+  "updated": "2026-11-23",
   "reports": [
+    {
+      "file": "reports/2026-11-23-weekly.json",
+      "kind": "weekly",
+      "date": "2026-11-23",
+      "title": {
+        "zh": "公投投的是標籤，缺口寫在地圖上：北東電網缺470萬瓩、輸電上限只有420萬瓩——能補這個洞的核二是2029年以後的資產，程序最快的核三在島的另一端",
+        "en": "The ballot decides a label; the map already decided the answer — the North-East grid is 4.7 GW short against a 4.2 GW transfer ceiling, the plant that could fill it is a 2029-plus asset, and the one nearest approval sits at the other end of the island"
+      }
+    },
     {
       "file": "reports/2026-11-22-brief.json",
       "kind": "brief",

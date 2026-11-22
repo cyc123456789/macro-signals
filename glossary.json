@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22",
+  "updated": "2026-11-23",
   "terms": [
     {
       "term": "AsyncOS",
@@ -4180,6 +4180,105 @@
       },
       "category": "geo",
       "first_seen": "2026-11-22"
+    },
+    {
+      "term": "Taipower",
+      "zh": "台灣電力公司",
+      "expansion": "Taiwan Power Company",
+      "def": {
+        "zh": "台灣唯一的垂直整合電業，國營，同時負責發電、輸電、配電與售電。因售電價格由經濟部電價費率審議會核定而非反映成本，其累積虧損與政府撥補已成為電網投資進度的實質約束。",
+        "en": "Taiwan's sole vertically integrated utility, state-owned, responsible for generation, transmission, distribution and retail. Because retail prices are set by the Ministry of Economic Affairs tariff review committee rather than by cost, its accumulated losses and the state subsidies covering them have become the practical constraint on grid investment."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-23"
+    },
+    {
+      "term": "EHV",
+      "zh": "超高壓",
+      "expansion": "Extra-High Voltage",
+      "def": {
+        "zh": "一般指345kV以上的輸電電壓等級。台灣電網以三條345kV主幹線串聯南北，並由龍潭、中寮、龍崎三座超高壓變電所構成北中南三大樞紐，集中度高使其同時是效率來源與單點風險。",
+        "en": "Transmission voltage levels at or above 345kV. Taiwan's grid links north to south on three 345kV trunk lines through three EHV hubs at Longtan, Zhongliao and Longqi — a concentration that is simultaneously the source of its efficiency and its single-point risk."
+      },
+      "category": "tech",
+      "first_seen": "2026-11-23"
+    },
+    {
+      "term": "NSC",
+      "zh": "核能安全委員會",
+      "expansion": "Nuclear Safety Commission",
+      "def": {
+        "zh": "台灣的核能管制機關，2023年由行政院原子能委員會改制。核電廠再運轉計畫、乾式貯存設施試運轉與運轉執照均由其審查核定；公投無法取代其法定審查程序。注意與美國國家安全會議（National Security Council）同縮寫但無關。",
+        "en": "Taiwan's nuclear regulator, reorganised from the Atomic Energy Council in 2023. It reviews and approves reactor restart plans, dry-cask trial operation and operating licences; a referendum cannot substitute for its statutory review. Not to be confused with the identically abbreviated US National Security Council."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-23"
+    },
+    {
+      "term": "ISFSI",
+      "zh": "獨立用過核子燃料貯存設施（乾式貯存）",
+      "expansion": "Independent Spent Fuel Storage Installation",
+      "def": {
+        "zh": "用過核燃料離開反應器燃料池後的中期乾式貯存設施。在台灣，乾貯是重啟的前置條件而非後續問題：爐心燃料必須先移出才能進行機組安全檢查，而乾貯設施的許可權握在地方政府手上，使重啟時程成為中央與地方的政治議題。",
+        "en": "Intermediate dry storage for spent fuel after it leaves the reactor pool. In Taiwan dry storage is a precondition for restart rather than a downstream problem: core fuel must be offloaded before unit safety inspection can proceed, and permitting authority sits with local government, which turns restart schedules into central-local politics."
+      },
+      "category": "tech",
+      "first_seen": "2026-11-23"
+    },
+    {
+      "term": "AIDC",
+      "zh": "人工智慧資料中心",
+      "expansion": "AI Data Center",
+      "def": {
+        "zh": "以GPU叢集為主的高密度運算資料中心。其電力特性是負載集中而非總量巨大，因此對電網的壓力主要來自選址，台電據此對新竹以北的大型案件實施特別審查。",
+        "en": "High-density compute facilities built around GPU clusters. Their grid impact comes from load concentration rather than aggregate size, which is why Taipower applies special siting review to large applications north of Hsinchu."
+      },
+      "category": "tech",
+      "first_seen": "2026-11-23"
+    },
+    {
+      "term": "FSRU",
+      "zh": "浮式儲存再氣化裝置",
+      "expansion": "Floating Storage and Regasification Unit",
+      "def": {
+        "zh": "可停泊於外海或港內、兼具LNG儲存與再氣化功能的船舶，用以替代陸上接收站。因不需填海造地與長期環評，常被用來把燃氣機組的商轉時程提前數年——代價是供氣能力與耐候性低於陸上站，且取決於能否租到船。",
+        "en": "A vessel that stores LNG and regasifies it on board, moored offshore or in port as a substitute for an onshore import terminal. Because it needs neither land reclamation nor a long environmental review, it is used to pull gas-fired commissioning forward by years — at the cost of lower throughput and weather tolerance, and contingent on securing a charter."
+      },
+      "category": "tech",
+      "first_seen": "2026-11-23"
+    },
+    {
+      "term": "Mtpa",
+      "zh": "百萬公噸／年",
+      "expansion": "Million Tonnes Per Annum",
+      "def": {
+        "zh": "LNG產能、接收能力與長約購量的標準單位。判讀LNG協議時應同時看Mtpa與首批交付年份：年購量決定規模，交付年份決定它對哪一段風險窗口有用。",
+        "en": "The standard unit for LNG liquefaction capacity, import capacity and long-term offtake. When reading an LNG agreement, take the Mtpa figure together with the first-delivery year: the volume sets the scale, the year sets which risk window it actually covers."
+      },
+      "category": "tech",
+      "first_seen": "2026-11-23"
+    },
+    {
+      "term": "CPC",
+      "zh": "台灣中油股份有限公司",
+      "expansion": "CPC Corporation, Taiwan",
+      "def": {
+        "zh": "台灣國營石油與天然氣公司，負責原油與LNG進口、煉製與接收站興建營運。台灣的LNG接收能力、安全存量天數與海外長約（如阿拉斯加LNG、Cheniere）皆由其掌握，因此是能源韌性討論中與台電並列的另一個關鍵主體。",
+        "en": "Taiwan's state oil and gas company, responsible for crude and LNG imports, refining, and the construction and operation of import terminals. It controls Taiwan's LNG receiving capacity, days of onshore reserve and overseas long-term contracts such as Alaska LNG and Cheniere, making it the second key actor alongside Taipower in any energy-resilience discussion."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-23"
+    },
+    {
+      "term": "Energy Quarantine",
+      "zh": "能源準封鎖／能源檢疫",
+      "expansion": "Energy Quarantine",
+      "def": {
+        "zh": "低於戰爭門檻的能源斷供手段：不擊沉船舶，而以檢查、改道、保險與租家風險規避等方式讓能源運輸船不敢或不能靠港。相對於封鎖，其法律定性模糊，難以觸發盟邦的集體反應機制，對高度依賴進口燃料的島嶼經濟特別有效。",
+        "en": "Sub-threshold interdiction of energy supply: not sinking vessels but using inspection, rerouting, insurance and charterer risk-aversion to make energy carriers unwilling or unable to enter port. Its legal character is deliberately ambiguous compared with blockade, which makes allied collective-response mechanisms hard to trigger, and it is especially effective against import-dependent island economies."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-23"
     }
   ]
 }

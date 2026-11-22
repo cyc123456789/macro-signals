@@ -1,0 +1,211 @@
+{
+  "date": "2026-11-23",
+  "kind": "weekly",
+  "title": {
+    "zh": "公投投的是標籤，缺口寫在地圖上：北東電網缺470萬瓩、輸電上限只有420萬瓩——能補這個洞的核二是2029年以後的資產，程序最快的核三在島的另一端",
+    "en": "The ballot decides a label; the map already decided the answer — the North-East grid is 4.7 GW short against a 4.2 GW transfer ceiling, the plant that could fill it is a 2029-plus asset, and the one nearest approval sits at the other end of the island"
+  },
+  "focus": {
+    "zh": "所有人都在問 11/28 公投過不過、台灣有沒有電。那是問錯層次：真正的約束是地理。台電自己為協和案提出的數字——北東電網（基隆、台北、新北、宜蘭）缺口 470 萬瓩，而電網可靠送進這個口袋的上限只有 420 萬瓩——意味著北部不是「從別處多送一點」就能解決。兩座可重啟機組正好落在這條線的兩側：核三 190.2 萬瓩在恆春，再運轉計畫 9/24 已獲核安會核定、自主安檢預計 2028 年完成；核二 197 萬瓩在萬里、正好在缺口裡，卻卡在乾貯熱測試與 624 束爐心燃料，是 2029 年以後的資產。北部的正解更遠：協和新 1 號機要靠 FSRU 才可能 2031 年商轉、新 2 號機要等 2037 年四接完工。於是 2027–2031 這段窗口的北部供電，只由三條 345kV 主幹線與進得了港的 LNG 船決定——兩者都不在選票上，也正好是對手不必開火就能碰的兩件事。",
+    "en": "Everyone is asking whether the 11/28 referendum passes and whether Taiwan has enough power. Wrong layer: the binding constraint is geography. Taipower's own filing for the Hsieh-ho rebuild puts the North-East grid — Keelung, Taipei, New Taipei, Yilan — 4.7 GW short, against a reliable transfer ceiling into that pocket of 4.2 GW. The deficit exceeds the ceiling, so the north cannot be fixed by sending more from elsewhere. The two restartable plants sit on opposite sides of that line: Maanshan, 1,902 MW, is at Hengchun in the far south, its restart plan approved by the Nuclear Safety Commission on 9/24 with self-inspection due to finish in 2028; Kuosheng, 1,970 MW, is at Wanli inside the gap, but stuck behind dry-cask hot testing and the offload of 624 fuel bundles — a 2029-or-later asset. The north's real fix is further out still: Hsieh-ho's new Unit 1 needs an FSRU to reach commercial operation in 2031, and new Unit 2 waits for the fourth LNG terminal in 2037. So northern supply through 2027–2031 is decided by three 345kV trunk lines and by LNG carriers that can enter port — neither on the ballot, and precisely the two things an adversary can touch without firing a shot."
+  },
+  "sections": [
+    {
+      "id": "nexus",
+      "items": [
+        {
+          "severity": "critical",
+          "confidence": "likely",
+          "title": {
+            "zh": "北東電網的缺口比它的輸電上限還大：470萬瓩對420萬瓩——本站連續五期把11/28公投當成台灣能源安全的決定變數，這個框架因此失效",
+            "en": "The North-East grid's deficit exceeds its own transfer ceiling — 4.7 GW against 4.2 GW — which invalidates the frame this site ran for five consecutive issues: that the 11/28 referendum is the deciding variable in Taiwan's energy security"
+          },
+          "summary": {
+            "zh": "台電為協和電廠更新改建案提出的數字：北東電網（基隆、台北、新北、宜蘭）區內機組陸續除役後僅餘和平電廠約130萬瓩，需求推至約600萬瓩，缺口470萬瓩；而電網可靠輸送進這個口袋的上限是420萬瓩。台電在自家問答中明白反駁「470減420等於只缺50萬瓩」的算法，理由是其他區域餘裕有限、不一定能長時間大量北送。本站11/4報告、11/10報告、11/12報告、11/14報告、11/20報告連續五期追蹤這場公投，記錄了題目文字、五場辯論名單、門檻計算與政治動員，卻從未記錄這組數字。須註明：470萬瓩是台電2022–2023年提交環評、以2025年為基準的預測值，不是2026年實測。",
+            "en": "The numbers come from Taipower's own case for the Hsieh-ho rebuild. Once in-pocket units retire, the North-East grid — Keelung, Taipei, New Taipei, Yilan — retains only Ho-ping at roughly 1.3 GW against demand near 6.0 GW: a 4.7 GW gap, against a reliable transfer ceiling into that pocket of 4.2 GW. Taipower's own Q&A explicitly rejects the arithmetic that treats this as a 0.5 GW shortfall, on the grounds that surplus elsewhere is limited and cannot be pushed north in volume for sustained periods. This site tracked the referendum across five consecutive issues — 11/4報告, 11/10報告, 11/12報告, 11/14報告, 11/20報告 — recording the question's wording, all five debate line-ups, the threshold arithmetic and the mobilisation politics, and never once recorded this figure. Caveat: 4.7 GW is a Taipower projection filed for environmental review in 2022–2023 and baselined on 2025, not a 2026 measurement."
+          },
+          "implication": {
+            "zh": "失效的不是某一條事實，是框架：把公投當成「台灣2027–2031有沒有電」的決定變數。正確的提問要換成兩個——缺口落在哪個電網口袋、可重啟的機組在不在那個口袋裡。這一條在與各國決策者對談時可以直接用：對方問「台灣公投過了是不是就解決缺電」，你的回答是「要看哪一塊的電。台北那塊，到2031年之前不在選票上」。",
+            "en": "What breaks is not a fact but a frame: treating the referendum as the variable that decides whether Taiwan has power in 2027–2031. The question has to be replaced by two — which grid pocket holds the deficit, and whether the restartable units sit inside it. This is directly usable in conversation with foreign policymakers: when asked whether a 'yes' solves Taiwan's power problem, the answer is 'which power? Taipei's is not on the ballot before 2031.'"
+          },
+          "counterpoint": {
+            "zh": "台電提出470萬瓩時正在為協和案爭取環評通過，數字本身有制度性動機；環團與基隆地方反對者當時就質疑台電誇大區域缺口以正當化填海造地。若把這組數字視為談判立場而非工程事實，本條的critical評級就過重。",
+            "en": "Taipower produced the 4.7 GW figure while seeking environmental approval for Hsieh-ho, so the number carries an institutional motive; environmental groups and Keelung opponents argued at the time that Taipower was overstating the regional gap to justify land reclamation. If the figure is read as a negotiating position rather than an engineering fact, the critical rating here is too heavy."
+          },
+          "source": "台電《協和電廠 以氣換油》官方問答，中央社轉述",
+          "url": "https://www.taipower.com.tw/topic/2022_hhpp/qa.html",
+          "terms": [
+            "Taipower",
+            "EHV",
+            "Nine-in-One Elections",
+            "CEC"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geo",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "likely",
+          "title": {
+            "zh": "法定時程與地理完全相反：核三190.2萬瓩在恆春、再運轉計畫9/24已獲核安會核定；能補北部缺口的核二197萬瓩在萬里，卻卡在乾貯熱測試與624束爐心燃料",
+            "en": "The regulatory clock runs opposite to the geography: Maanshan's 1,902 MW sits at Hengchun in the far south with its restart plan approved on 9/24, while Kuosheng's 1,970 MW — the capacity that would actually fill the northern gap — is stuck behind dry-cask hot testing and 624 fuel bundles"
+          },
+          "summary": {
+            "zh": "核三：台電3/27提送再運轉計畫，核安會4/8啟動實質審查、5/26-27邀外部委員赴廠勘查用過燃料池與圍阻體，9/24完成審查並核定；台電仍須依計畫辦理並提交執行結果報告再送審。經濟部長龔明鑫11/3在立法院表示經濟部這端的自主安全檢查預計2028年完成，最終能否重啟取決於核安會。核二：室外乾式貯存設施2026年1月完工，核安會2月完成試運轉計畫審查，台電3月進行冷測試，熱測試約需四個月；取得運轉執照後才能移出爐心燃料。一則發布日期無法確定的報導稱移出排程為今年194束、明年上半年430束，合計624束，據此1號機爐心可望於明年中淨空後進入安全檢查——這組數字本站列為未經核實。",
+            "en": "Maanshan: Taipower filed its restart plan on 3/27; the Nuclear Safety Commission opened substantive review on 4/8, sent external reviewers to inspect the spent-fuel pool and containment on 5/26-27, and completed and approved the review on 9/24, with Taipower still required to execute the plan and file an implementation report for further review. Economic Affairs Minister Kung Ming-hsin told the Legislative Yuan on 11/3 that the ministry's share of self-inspection should finish in 2028 and that the commission decides the restart. Kuosheng: the outdoor dry-cask facility was completed in January 2026, the commission finished reviewing the trial-operation plan in February, Taipower ran a cold test in March, and hot testing takes roughly four months; core fuel can only be offloaded after an operating licence is issued. One report whose publication date could not be established gives the offload schedule as 194 bundles this year and 430 in the first half of next, 624 in total, clearing Unit 1's core by mid-year before safety inspection begins — this site marks those figures unverified."
+          },
+          "implication": {
+            "zh": "對政策與投資判讀，這條要立刻分開兩件事：核三重啟是南部電力事件，核二重啟才是北部電力事件，兩者在時間軸上至少差一到三年。任何把「重啟核電」當單一變數處理的推演——包括券商的核電概念股敘事與智庫的韌性評估——都應該先問是哪一座。",
+            "en": "For both policy and investment reading, two things must now be separated: a Maanshan restart is a southern power event, a Kuosheng restart is a northern one, and they are one to three years apart. Any analysis treating 'nuclear restart' as a single variable — brokerage nuclear-theme narratives and think-tank resilience assessments alike — should first ask which plant."
+          },
+          "counterpoint": {
+            "zh": "日本柏崎刈羽6號機2/9重啟，離線約14年，證明一旦地方同意，機組真的會回來；大西洋理事會也主張台灣應在政治與技術可行時盡快重啟退役機組。若核二的乾貯爭議被視為可用政治資本解決的許可問題而非物理排程問題——2024年6月台電與新北市完成行政調解後，進度確實比原估快——本條給的「2029年以後」就過於悲觀。",
+            "en": "Kashiwazaki-Kariwa Unit 6 restarted on 2/9 after about fourteen years offline, proving that once local consent arrives the units do come back; the Atlantic Council likewise argues Taiwan should restart retired capacity as soon as politically and technically feasible. If Kuosheng's dry-cask dispute is a permitting problem solvable with political capital rather than a physical schedule — and progress did run ahead of estimate after Taipower and New Taipei City settled their administrative mediation in June 2024 — then the '2029 or later' here is too pessimistic."
+          },
+          "source": "中央社（核安會9/24核定核三再運轉計畫）、中央社（核二乾貯水保計畫）",
+          "url": "https://www.cna.com.tw/news/afe/202609240313.aspx",
+          "terms": [
+            "NSC",
+            "ISFSI",
+            "Taipower",
+            "MOEA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "台電已經用一道選址審查替公投回答了「AI要不要核電」：新竹以北大型AIDC須特別審查、中南部為首選，並提「以光代電」",
+            "en": "Taipower has already answered the referendum's 'does AI need nuclear' question with a siting review: large AI data centres north of Hsinchu face special scrutiny, the centre-south is preferred, and the pitch is to move light rather than power"
+          },
+          "summary": {
+            "zh": "經濟部長龔明鑫8月表示，台電已指出新竹以北受電網瓶頸限制，大型AI資料中心設置須經特別審查，中南部較能支應大容量需求；台電並表示選址比總容量更重要，因為高度集中的用電容易讓局部電網超載。台電董事長曾文生10/14在智慧能源週報告「未來10年電力布局」，揭露今年AIDC核供電力新增750MW、累計1,441MW，2026年新增量占累計逾半；他另稱申請100MW的AIDC需準備1,500億元資金，擔心有人先圈地不投資。台電同場提出「以光代電」，主張資料中心靠近電源端設置、以長距離光纖傳輸資料取代長距離輸電。",
+            "en": "Economic Affairs Minister Kung Ming-hsin said in August that Taipower had identified a grid bottleneck north of Hsinchu, that large AI data centres there require special siting review, and that the centre-south can better support high-capacity demand; Taipower added that siting matters more than total capacity because concentrated load overloads local grid sections. Chairman Tseng Wen-sheng's 10/14 Smart Energy Week briefing on the coming decade disclosed 750 MW of new AIDC supply approved this year against 1,441 MW cumulative — this year alone more than half the total — and warned that a 100 MW AIDC application implies NT$150bn of capital, raising concern about applicants banking sites without building. Taipower's accompanying 'move light, not power' proposal argues data centres should sit near generation and ship data over long-haul fibre instead of shipping electricity over long-haul lines."
+          },
+          "implication": {
+            "zh": "這條把「核電概念」與「AI電力受益」兩個題材拆開。北部電網瓶頸已經是行政事實而非爭論，因此AIDC的用地、變電、直供與專線標的會持續往中南部移動；核三重啟正好與這個南移方向一致，核二則否。對做台股的人，可用的切分是：核三是南部負載的供給面事件，北部的投資標的仍然綁在輸配電與燃氣，而不是核能。",
+            "en": "This separates two investment narratives that are routinely merged: nuclear restart and AI power beneficiaries. The northern bottleneck is now an administrative fact rather than a debate, so AIDC land, substation, direct-supply and dedicated-line opportunities keep migrating toward the centre-south — a direction a Maanshan restart complements and a Kuosheng restart does not. For an equity investor the usable split is: Maanshan is a supply-side event for southern load, while northern exposure remains tied to transmission, distribution and gas rather than to nuclear."
+          },
+          "source": "iThome（台電智慧能源週「以光代電」）、uanalyze 引經濟部長龔明鑫",
+          "url": "https://www.ithome.com.tw/news/179721",
+          "terms": [
+            "AIDC",
+            "Taipower",
+            "EHV",
+            "MOEA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nexus",
+      "items": [
+        {
+          "severity": "high",
+          "confidence": "likely",
+          "title": {
+            "zh": "北部的正解全部落在2030年代：協和新1號機要靠FSRU才可能2031商轉、新2號機等2037年四接；CPC阿拉斯加LNG年購600萬噸，但台灣最快2032年才拿得到貨",
+            "en": "Every real fix for the north lands in the 2030s: Hsieh-ho's new Unit 1 needs an FSRU to reach 2031 commercial operation and new Unit 2 waits for the fourth terminal in 2037, while CPC's 6 Mtpa Alaska LNG offtake delivers no cargo to Taiwan before 2032"
+          },
+          "summary": {
+            "zh": "協和電廠更新改建案環評於2025年2月26日經環評大會以共識決通過，歷時近七年：拆除4部燃油機組、改建2部燃氣機組，並在外木山海岸填海約14.5公頃設LNG儲槽與卸收碼頭（四接）。台電規劃以FSRU臨時供氣使新1號機提前2031年商轉，新2號機須待2037年陸上四接完工。燃料側：CPC與阿拉斯加LNG案的年購量為600萬噸、投資上限44億美元，約為該案2,000萬噸年產能的三成，但開發商首批出口目標為2031年、台灣最快2032年到貨，且多家報導指該文件仍為2025年3月簽署的不具約束力意向書；另CPC與Cheniere於2026年2月簽訂長約，自2026年至2050年每年最多120萬噸。接收端：全台LNG年接收能力約2,300萬噸，目標2034年底提高至約3,700萬噸；安全存量目前約11天，法定14天目標訂在2027年。",
+            "en": "The Hsieh-ho rebuild cleared environmental review by consensus in February 2025 after nearly seven years: four oil-fired units demolished, two gas units built, and roughly 14.5 hectares reclaimed off the Waimushan coast for LNG tanks and an unloading berth — the fourth terminal. Taipower's plan uses an FSRU for interim supply so new Unit 1 can reach commercial operation in 2031, with new Unit 2 waiting for the onshore terminal in 2037. On fuel: CPC's Alaska LNG offtake is 6 Mtpa with up to US$4.4bn of investment, roughly 30% of the project's 20 Mtpa design, but the developer targets first exports in 2031 and Taiwan receives cargo in 2032 at the earliest, with several outlets describing the document as still the non-binding letter of intent signed in March 2025. Separately, CPC signed a long-term agreement with Cheniere in February 2026 for up to 1.2 Mtpa from 2026 through 2050. On the receiving end, national LNG import capacity is roughly 23 Mt a year, targeted to reach about 37 Mt by end-2034; onshore reserve stands at about 11 days against a statutory 14-day target set for 2027."
+          },
+          "implication": {
+            "zh": "這條決定了那個常被問起的問題該怎麼回答。「台灣能撐幾天」的正確答案不是一個天數，而是一組日期：2027（法定14天安全存量）、2031（協和新1號機＋阿拉斯加首批出口）、2034（接收能力3,700萬噸）、2037（陸上四接）。在2031年之前，北部的邊際供給完全依賴船進得了港，而不依賴島上裝了多少機組——這正是本站10/26週報那條戰爭險自動終止條款的攻擊面：不必擊沉任何一艘船，只要讓承保與租家不敢接近基隆與台中的進港航道。",
+            "en": "This reframes the question everyone asks. The right answer to 'how many days can Taiwan last' is not a day count but a set of dates: 2027 for the statutory 14-day reserve, 2031 for Hsieh-ho's new Unit 1 and Alaska's first exports, 2034 for 37 Mt of import capacity, 2037 for the onshore fourth terminal. Before 2031, northern marginal supply depends entirely on whether ships can enter port, not on how much plant stands on the island — which is exactly the attack surface of the automatic-termination war-risk clause from this site's 10/26週報: no vessel need be sunk, only underwriters and charterers made unwilling to approach the Keelung and Taichung approaches."
+          },
+          "counterpoint": {
+            "zh": "兵推數字分歧達一個數量級，而我挑了對自己有利的那一端：FDD的兵推給11天、CSIS《Lights Out》給「LNG不到兩週、煤七週」，但國內一場兵推的結論是限電七成時全台能源可撐約一年，大西洋理事會也認為北部柴油發電、南部煤氣核並用加上積極配給可以把數週拉長到數月。11天其實是「不限電、不換燃料、不動用煤」的上界，不是硬約束；把它當硬約束會高估開戰初期風險、低估2027–2031這段中期的結構風險。",
+            "en": "Wargame numbers differ by an order of magnitude and I picked the end that suits me. FDD's exercise gives eleven days and CSIS's Lights Out gives under two weeks of LNG against seven weeks of coal, but a domestic exercise concluded that 70% rationing stretches national energy supply to roughly a year, and the Atlantic Council holds that northern diesel generation, southern coal, gas and nuclear, distributed renewables and aggressive rationing together turn weeks into months. Eleven days is an upper bound assuming no rationing, no fuel switching and no coal draw — treating it as a hard constraint overstates opening-phase risk and understates the structural risk of 2027–2031."
+          },
+          "source": "中央社（四接環評通過）、Focus Taiwan（CPC阿拉斯加LNG）",
+          "url": "https://www.cna.com.tw/news/afe/202502260269.aspx",
+          "terms": [
+            "FSRU",
+            "LNG",
+            "Mtpa",
+            "CPC",
+            "Energy Quarantine",
+            "War Risk Insurance",
+            "LMA5564"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cyber",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "likely",
+          "title": {
+            "zh": "5,645億強韌電網計畫裡，系統防衛能力只有16.9億——而三條345kV主幹線與龍潭、中寮、龍崎三座超高壓變電所仍是同一組單點",
+            "en": "Inside a NT$564.5bn grid-resilience programme, system defence gets NT$1.69bn — while three 345kV trunk lines through the Longtan, Zhongliao and Longqi extra-high-voltage substations remain the same set of single points"
+          },
+          "summary": {
+            "zh": "台電2022/9/15公布十年5,645億元強化電網韌性建設計畫，三大主軸的預算分配為：分散電網工程4,379億元、強固電網工程1,250億元、系統防衛能力16.9億元——系統防衛約占總額0.3%。計畫分2年871億、5年1,700億、10年3,074億三階段推進。台電自述過去為追求效率而使電網集中化發展，三條345kV主幹線串起南北、並由龍潭、中寮、龍崎三座超高壓變電所形成北中南三大樞紐；這個集中架構被認定是2022年303大停電的主因之一，因此計畫改以分散供電提高韌性。計畫同時包含電廠直供園區方向（通霄電廠、離岸風電直供竹科、興達供應南科與橋科），目標是減少南電北送。",
+            "en": "Taipower's ten-year, NT$564.5bn grid-resilience programme, announced in September 2022, splits across three lines: NT$437.9bn for grid decentralisation works, NT$125bn for hardening, and NT$1.69bn for system defence capability — defence at roughly 0.3% of the total. Execution is phased at NT$87.1bn over two years, NT$170bn over five and NT$307.4bn over ten. Taipower's own account is that the grid was centralised in pursuit of efficiency, with three 345kV trunk lines linking north to south through three extra-high-voltage hubs at Longtan, Zhongliao and Longqi; that centralisation was identified as a principal cause of the March 2022 nationwide outage, hence the shift toward distributed supply. The programme also includes plant-to-park direct supply — Tunghsiao to its region, offshore wind direct to Hsinchu Science Park, Hsinta to the Southern and Chiaotou parks — explicitly to reduce northward power transfer."
+          },
+          "implication": {
+            "zh": "對威脅獵捕者，這組預算配置本身就是威脅模型的宣告：台電假設的對手是設備故障與自然災害，不是主動選擇節點的人。而對做provenance graph的人，這裡有一個具體的研究缺口——輸電層的事件紀錄多半停在SCADA與EMS的告警層，一旦事件橫跨電力域與資安域（例如變電所自動化系統的異常操作），現行紀錄無法把因果鏈接起來；這正是以電網為場域的provenance研究最值得切入的位置，而不是再做一次企業端點的資料集。",
+            "en": "For a threat hunter this budget split is itself a declaration of threat model: Taipower's assumed adversary is equipment failure and natural disaster, not someone choosing nodes. For provenance-graph research it marks a concrete gap — transmission-layer event records stop at SCADA and EMS alarm level, so once an incident crosses from the power domain into the security domain (anomalous operations in substation automation, for instance), the existing record cannot reconstruct the causal chain. That is the opening worth taking for grid-domain provenance work, rather than producing another enterprise-endpoint dataset."
+          },
+          "source": "台灣電力公司新聞稿「10年投5645億 台電公布強化電網韌性建設計畫」",
+          "url": "https://www.taipower.com.tw/2289/2323/2324/7932/",
+          "terms": [
+            "EHV",
+            "ICS",
+            "OT",
+            "provenance graph",
+            "Taipower"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geo",
+      "items": [
+        {
+          "severity": "medium",
+          "confidence": "unverified",
+          "title": {
+            "zh": "12月第3次電價費率審議會併審輸配電費率，可能比公投結果更能預測2027年的電網進度：台電累虧逾4,100億、提報應調幅度12.83%、711億撥補仍卡在立法院",
+            "en": "December's third tariff review, which also sets transmission and distribution rates, may predict 2027 grid progress better than the referendum result: Taipower's accumulated losses exceed NT$410bn, its filed requirement is a 12.83% increase, and the NT$71.1bn subsidy remains with the legislature"
+          },
+          "summary": {
+            "zh": "經濟部電價費率審議會9/18第2次會議決議暫不調整10月電價，留待12月第3次會議併同審議輸配電費率時再議；經濟部說明台電提報的電價檢討案應有調幅達12.83%，主因燃料價格上漲。台電累積虧損已逾4,100億元，今年天然氣燃料支出因國際價格上漲增加逾700億元，並預估今年民生用電須吸收約760億元。行政院拍板追加預算撥補711億元，立法院協商結論要求應於11/20前完成三讀，本期查核範圍內未能確認三讀結果。有報導指最快調漲時點將落在明年1月。本條標為未經核實：12月會議的確切日期與議程、711億撥補的最終表決結果，查核範圍內都沒有官方公告可對。",
+            "en": "The ministry's tariff review committee decided at its second session on 9/18 to leave October rates unchanged and defer the question to a third session in December that will also set transmission and distribution rates; the ministry stated Taipower's filed review implies a 12.83% increase, driven by fuel prices. Accumulated losses now exceed NT$410bn, gas fuel spending rose by over NT$70bn this year on international prices, and Taipower estimates it must absorb roughly NT$76bn on residential supply this year. The Executive Yuan approved a NT$71.1bn supplementary subsidy, and legislative negotiation set a third-reading deadline of 11/20, which this issue could not confirm was met. Some reporting puts the earliest tariff increase in January. Marked unverified: neither the December session's exact date and agenda nor the final vote on the NT$71.1bn could be matched against an official notice within reach."
+          },
+          "implication": {
+            "zh": "這條是本期唯一在六個月內會給出明確讀數的財務閘門。若12月只調零售電價而不動輸配電費率，代表5,645億電網投資仍然沒有獨立財源，必須繼續靠舉債與政府撥補支應——在北東缺口要靠電網與燃氣撐到2031年的前提下，這比公投結果更能說明2027年北部的實際韌性走向。對台股，可操作的分野是：電價調整利於台電損益與其發包節奏，輸配電費率的設立才是重電與電纜類標的中期能見度的來源。",
+            "en": "This is the one financial gate in this issue that produces a clear reading inside six months. If December moves only the retail tariff and leaves transmission and distribution rates alone, the NT$564.5bn grid programme still has no dedicated revenue line and continues on debt and state subsidy — and given that the North-East gap must be carried by grid and gas until 2031, that says more about northern resilience in 2027 than the referendum result does. For equities the usable split is that a retail tariff rise helps Taipower's P&L and its tendering cadence, while establishing a transmission and distribution rate is what gives heavy-electrical and cable names medium-term visibility."
+          },
+          "counterpoint": {
+            "zh": "把電價當電網進度的領先指標有一個明顯弱點：台電資本支出的來源不只售電收入，還有舉債與政府增資，而2022–2025年電價在多次凍漲下，電網韌性計畫仍持續執行並完成了前兩年871億元的階段。若12月只調電價不調輸配電而工程照常推進，本條指標就是錯的，而且錯在把會計科目當成工程約束。",
+            "en": "Using tariffs as a leading indicator of grid progress has an obvious weakness: Taipower's capital spending draws on debt and state equity injection as well as electricity revenue, and through repeated tariff freezes in 2022–2025 the resilience programme kept running and completed its first NT$87.1bn two-year phase. If December moves only the retail tariff and construction proceeds regardless, this indicator is simply wrong — wrong in the specific way of mistaking an accounting line for an engineering constraint."
+          },
+          "source": "uanalyze 引經濟部電價費率審議會9/18決議；自由財經引台電",
+          "url": "https://uanalyze.com.tw/articles/1551955619",
+          "terms": [
+            "Taipower",
+            "MOEA",
+            "CPC"
+          ]
+        }
+      ]
+    }
+  ],
+  "narrative": {
+    "zh": "**上期推演校準**\n\n11/16週報留下五條指標：一條成立、一條趨向成立、三條未定。第一條（11/20 CCW 閉幕文件有沒有 negotiate、有沒有查證條款）成立且方向完全一致——11/22報告記錄各國只同意「繼續討論」、以 2028 年為目標「精緻化」文件，七國的談判授權提案落空，查證條款從頭到尾沒進過文本。上期自承「把核心指標設在本期之後四天」是設計瑕疵，這次四天後確實結案，但那是運氣；大會若延會，這條又空轉一期，結果好不等於方法對。第三條（主控台計數收斂）趨向成立：11/18報告記錄 FBI 11/13 FLASH 給出「逾 1,600 台曝險」，是第一個官方單一數字，且落在先前 815–2,557 的區間內。第二條（12/31 前出現第二份 agentic 框架作戰報告、歸因依據明確不是主控台外洩）未定但偏向不利：11/18報告的微軟 Storm-3358 與 11/20報告那則「越獄版 DeepSeek 打歐洲電信商」都是候選反例，而本期無法判定微軟那份的歸因依據。第四、五條查無跡象。上期承認無法核實的 FY2027 NDAA 條號，本期仍未核實。\n\n**問題是什麼**\n\n11/28 的核電公投（全國性公民投票案第 22 案）被正反雙方講成同一件事：台灣 2027–2031 的電夠不夠、AI 與半導體負載撐不撐得住、被封鎖時能撐幾天。本站自己 11/4報告、11/10報告、11/12報告、11/14報告、11/20報告連續五期把它當成能源安全的檢查點，卻從來沒問過一件事：電在哪裡發、要送到哪裡去。公投決定的是一個政治標籤；台灣的電力系統在票投下去之前，已經用地理把答案寫好了。\n\n**機制怎麼運作**\n\n台電為協和更新案提出的數字是樞紐：北東電網（基隆、台北、新北、宜蘭）區內機組陸續除役後只剩和平電廠約 130 萬瓩，需求推到約 600 萬瓩，缺口 470 萬瓩——而電網可靠輸送進這個口袋的上限是 420 萬瓩。缺口比輸電上限還大，代表北東不是「從別處多送一點」就能解決，是結構上送不滿。兩座可重啟的電廠正好落在這條線的兩側：核三 190.2 萬瓩在恆春，南端；核二 197 萬瓩在萬里，正好在缺口裡面。法定時程卻與地理完全相反——核三再運轉計畫 9/24 已獲核安會核定，經濟部長龔明鑫 11/3 在立法院說自主安檢預計 2028 年完成；核二卡在乾貯熱測試與 624 束爐心燃料移出，是 2029 年以後的資產。於是公投過不過，2027–2031 這段窗口的北部供電都只靠兩件不在選票上的東西：穿過龍潭、中寮、龍崎三座超高壓變電所的三條 345kV 主幹線，以及進得了港的 LNG 船。這兩件正好是對手不必開火就能碰的——10/26週報講過的戰爭險自動終止條款先讓船不敢靠港，而輸電走廊只有三條線、三個節點。\n\n**證據**\n\n第一，行政系統已經自己承認了：龔明鑫 8 月說新竹以北受電網瓶頸限制、大型 AI 資料中心要經特別審查，中南部才是首選；台電提「以光代電」，直接講明用光纖搬資料、不要長距離搬電。「AI 需要核電」這個公投主打，實務上已經被一道選址審查處理掉，而且方向是把負載移出北部。第二，量級對不上：台電今年 AIDC 核供電力新增 750MW、累計 1,441MW，而未來十年規畫新增燃氣機組 26GW；經濟部估 2026–2035 用電年均成長 2.5%，半導體用電要從 2026 年約 520 億度增到 2035 年 1,100 億度。核二加核三全開 387.2 萬瓩，對 2026 年預估尖峰 4,294 萬瓩約一成。第三，北部的正解時程很長：協和新 1 號機要靠 FSRU 臨時供氣才可能 2031 年商轉，新 2 號機要等 2037 年陸上四接完工。第四，燃料側同樣落在 2030 年代：CPC 的阿拉斯加 LNG 年購 600 萬噸、投資上限 44 億美元，但該案首批出口目標 2031 年、台灣最快 2032 年拿到貨。第五，錢的約束已經在檯面上：台電累虧逾 4,100 億元，9/18 電價審議會暫不調整、留到 12 月第 3 次會議併審輸配電費率，台電提報應調幅度 12.83%——電網十年要花 5,645 億，怎麼回收那場會議才會講。\n\n**各方自己怎麼說**\n\n台北分兩套話術。執政方說程序不可被投票取代，經濟部次長賴建信的版本是公投不能替代法定嚴審、不能免除設備安全的科學驗證；在野的國民黨與民眾黨把題目直接寫成「用核電振興經濟」，綁在產業競爭力上。兩邊都不談北東那 470 萬瓩，因為這數字對雙方都不好用：它說明重啟核三幫不了台北，也說明非核家園留下的洞比反核方願意承認的大。北京的敘事最完整，而且早就瞄準這一層：國台辦 3/18 稱和平統一後兩岸「應通盡通」，足以彌補台灣電力、天然氣與原油的短缺，是去年 10 月「七個更好」裡「能源資源保障會更好」的延伸；配套是福建對金門通電通氣的前期技術準備「基本完成」，行政院長卓榮泰 4/28 回以現行法律不允許。北京最在意的是讓台灣社會自己得出「能源安全只能靠對岸」的結論——它要的不是斷電，是讓人相信會斷電。華盛頓把重啟當資產：大西洋理事會主張台灣維持既有核能、在政治與技術可行時盡快重啟退役機組，同一位研究者警告北京正為「能源檢疫」鋪路、北部電網最脆弱；川普則在造勢場合直接講台灣要買下阿拉斯加案三成產出。華盛頓最在意的是那份採購從意向書變成有約束力的合約。東京是最硬的對照組：柏崎刈羽 6 號機 2/9 重啟，離線約 14 年，7 號機再推到 2029–2030，EIA 估一部機一年可替掉約 130 萬噸 LNG。東京最在意台北低估「地方同意」——它自己花十五年證明，卡住重啟的從來不是監管機關，是縣知事與縣議會。四方彼此最在意對方哪一點：台北在意北京把能源講成統一的紅利；北京在意華盛頓把台灣綁進美製 LNG 長約；華盛頓在意台北的合約還停在不具約束力的階段；東京在意台北把乾貯爭議當技術問題而不是政治問題。\n\n**未來 3–6 個月的推演與觀察指標**\n\n主判斷：11/28 的結果會改變政治授權，不會改變 2027–2031 的物理約束；那段窗口的北部供電由乾貯熱測試排程、FSRU 租約與三條 345kV 主幹線決定，三者都不在選票上。一、11/28：同意票是否跨過 500 萬 523 票門檻（2025 年那次 434 萬 1,432 票、投票率 29.53% 未過），且同意票多於不同意票。二、12/31 前：12 月第 3 次電價費率審議會是否同時調整輸配電費率——若只調電價不調輸配電，代表 5,645 億電網投資仍無獨立財源，這條比公投結果更能預測 2027 年的電網進度。三、3/31 前：核二乾貯熱測試是否取得運轉執照、1 號機爐心燃料是否開始實際移出；這條沒動，任何「2028 重啟核二」的說法都該直接打折。四、3/31 前：經濟部或台電是否公布協和新 1 號機的 FSRU 租約或船期——沒有船，2031 就不是時程是願望。五、6/30 前：是否出現第一份把北東 470 萬瓩缺口寫進公開文件的政府或智庫報告。公投若過了而這個數字仍然沒人提，代表「地理比標籤重要」在政策市場上沒有買家，那本身就是結論。\n\n**我可能錯在哪**\n\n第一也最重：470 萬瓩是台電 2022–2023 年為協和環評提出、以 2025 年為基準的預測，不是 2026 年實況。這三年核二已除役、三接已供氣、大潭新機組陸續上線，實際缺口可能明顯小於 470 萬瓩，而我整篇骨架都架在這個數字上。第二，我把「北東電網」當「北部」講，兩者不同：大潭在桃園，屬北部但不在北東那個口袋；若實際瓶頸比我描述的鬆，核三南電北送的貢獻就比我給的大。第三，日本的對照可能反過來打我：柏崎刈羽證明重啟會拖十五年，但也證明地方一點頭機組真的會回來，而大西洋理事會主張盡速重啟退役機組，是比我更樂觀也更主流的判斷。第四，兵推數字我挑了對自己有利的那一端：FDD 的 11 天、CSIS 的「LNG 不到兩週、煤七週」，與國內兵推「限電七成可撐一年」差一個數量級，而 11 天其實是不限電、不換燃料、不動用煤的上界，不是硬約束。第五，核二 194 束／430 束的移出排程來自一則發布日期不明的報導，本期標為 unverified；若進度已超前，核二時間表會比我寫的樂觀。第六是老問題、連續第八期：出網代理只放行 github.com，csis.org、taipeitimes.com、world-nuclear.org、taipower.com.tw 全部無法解析，本期所有材料都經搜尋引擎段落轉述，沒有任何一手頁面被我親眼讀到，所有數字請當作待查核。",
+    "en": "**Calibrating last issue's forecasts**\n\nThe 11/16週報 left five indicators: one confirmed, one trending, three open. Indicator one — whether the 11/20 CCW closing document contained \"negotiate\" or any verification clause — resolved exactly as predicted: the 11/22報告 records states agreeing only to \"continue discussions\" and to \"refine\" a possible instrument by 2028, the seven-state negotiating mandate failing, and verification never entering the text. Last issue I admitted the design flaw of setting a core indicator four days past publication. It closed on time, but that is luck, not method: a postponed session would have idled it another cycle. Indicator three (console counts converging) is trending — the 11/18報告 records the FBI's 11/13 FLASH citing over 1,600 exposed consoles, the first single official figure, inside the earlier 815–2,557 spread. Indicator two (a second agentic-framework operation report by 12/31 whose attribution is demonstrably not console leakage) is open but leaning against me: Microsoft's Storm-3358 in the 11/18報告 and the second-hand \"jailbroken DeepSeek against European telecoms\" item in the 11/20報告 are both candidate counter-examples, and I could not establish Microsoft's attribution basis. Indicators four and five show nothing. The FY2027 NDAA section numbers remain unverified.\n\n**What the question actually is**\n\nBoth camps describe the 11/28 nuclear referendum (National Referendum No. 22) as settling the same thing: whether Taiwan has enough power for 2027–2031, whether AI and semiconductor load can be carried, how many days the island lasts under blockade. This site treated it as an energy-security checkpoint across five consecutive issues — 11/4報告, 11/10報告, 11/12報告, 11/14報告, 11/20報告 — and never asked the question that decides it: where the electricity is generated, and where it has to go. The referendum settles a political label. The grid settled the physical answer geographically, before any ballot was cast.\n\n**The mechanism**\n\nThe pivotal numbers come from Taipower's own case for the Hsieh-ho rebuild. Once in-pocket units retire, the North-East grid — Keelung, Taipei, New Taipei, Yilan — keeps only Ho-ping at roughly 1.3 GW against demand near 6.0 GW: a 4.7 GW gap, against a reliable transfer ceiling into that pocket of 4.2 GW. The deficit exceeds the ceiling, so the North-East cannot be fixed by sending more from elsewhere; it is structurally unfillable. The two restartable plants sit on opposite sides of that line. Maanshan, 1,902 MW, is at Hengchun in the far south. Kuosheng, 1,970 MW, is at Wanli — inside the gap. The regulatory clock runs exactly opposite to the geography: Maanshan's restart plan was approved by the Nuclear Safety Commission on 9/24, and Economic Affairs Minister Kung Ming-hsin told the Legislative Yuan on 11/3 that self-inspection should finish in 2028, while Kuosheng is stuck behind dry-cask hot testing and the offload of 624 fuel bundles — a 2029-or-later asset. So whichever way the vote goes, northern supply through 2027–2031 rests on two things not on the ballot: three 345kV trunk lines through the Longtan, Zhongliao and Longqi extra-high-voltage substations, and LNG carriers that can enter port. Those are exactly the two an adversary can touch without firing — the automatic-termination war-risk clause of the 10/26週報 keeps ships from approaching, and the corridor is three lines and three nodes.\n\n**Evidence**\n\nFirst, the administrative system has conceded the point. Kung said in August that the bottleneck north of Hsinchu means large AI data centres need special siting review and the centre-south is preferred; Taipower's \"move light, not power\" pitch says outright that fibre should carry the data so the grid need not carry the load. The referendum's headline argument — AI needs nuclear — is in practice being settled by a siting review that pushes load out of the north. Second, the magnitudes do not match: 750 MW of new AIDC supply approved this year, 1,441 MW cumulatively, against 26 GW of new gas planned over the decade, 2.5% annual demand growth projected for 2026–2035, and semiconductor consumption rising from roughly 52 TWh in 2026 to 110 TWh in 2035. Kuosheng plus Maanshan at full output is 3,872 MW — about a tenth of the 42.94 GW peak forecast for 2026. Third, the north's real fix is far out: Hsieh-ho's new Unit 1 needs an FSRU to reach commercial operation in 2031, and new Unit 2 waits for the onshore fourth terminal in 2037. Fourth, the fuel side lands in the 2030s too: CPC's Alaska LNG offtake is 6 Mtpa with up to US$4.4bn of investment, but first exports target 2031 and Taiwan receives cargoes in 2032 at the earliest. Fifth, the money constraint is visible: accumulated Taipower losses exceed NT$410bn, the 9/18 tariff review deferred any change to a December session that will set transmission and distribution rates alongside it, and Taipower's filed requirement is a 12.83% increase — against a NT$564.5bn ten-year grid programme whose funding source that meeting has yet to name.\n\n**What each side says in its own words**\n\nTaipei speaks in two registers. The government says process cannot be replaced by a vote — Vice Minister Lai Chien-hsin's formulation is that a referendum substitutes for neither statutory review nor scientific verification of structural safety. The opposition KMT and TPP wrote the question as using nuclear power to revive the economy. Neither mentions the North-East's 4.7 GW, because it suits neither: it shows a Maanshan restart does nothing for Taipei, and it shows the hole left by the nuclear-free policy is larger than the anti-nuclear camp concedes. Beijing's narrative is the most complete and has aimed at this layer for a year. The Taiwan Affairs Office said on 3/18 that after peaceful unification cross-strait interconnection would \"connect everything connectable\" and fully cover Taiwan's shortfalls in electricity, gas and crude — an extension of last October's \"seven betters.\" The operational companion is Fujian's claim that preparatory work for power and gas links to Kinmen is \"basically complete\"; Premier Cho Jung-tai answered on 4/28 that current law forbids it. What Beijing most wants is for Taiwanese society to conclude by itself that energy security can only come from the mainland — it does not need the lights off, only the belief that they will go off. Washington treats restart as an asset: the Atlantic Council argues Taiwan should keep existing nuclear capacity and restart retired units as soon as politically and technically feasible, while the same researcher warns Beijing is preparing an energy quarantine and that the northern grid is the weak point; Trump told a rally Taiwan would take 30% of the Alaska project's output. What Washington most wants is that offtake converted from a letter of intent into a binding contract. Tokyo is the hard control case: Kashiwazaki-Kariwa Unit 6 restarted on 2/9 after about fourteen years offline, Unit 7 has slipped to 2029–2030, and the EIA estimates one unit displaces roughly 1.3 Mt of LNG a year. What Tokyo wants Taipei to understand is local consent: fifteen years proved the binding gate is not the regulator but the governor and the prefectural assembly. What each holds against the others: Taipei resents Beijing selling energy as a unification dividend; Beijing resents Washington locking Taiwan into long-term US LNG; Washington resents that Taipei's contract is still non-binding; Tokyo resents Taipei treating its dry-cask dispute as technical rather than political.\n\n**Forecasts and indicators for the next three to six months**\n\nCore judgement: 11/28 changes the political mandate, not the physical constraint on 2027–2031, which is set by a dry-cask hot-test schedule, an FSRU charter and three 345kV trunk lines. One, 11/28: whether \"yes\" clears the 5,000,523-vote threshold (2025 managed 4,341,432 on 29.53% turnout and failed) and outnumbers \"no.\" Two, by 12/31: whether December's third tariff review adjusts transmission and distribution rates alongside the retail tariff — if only retail moves, the NT$564.5bn grid programme still has no dedicated funding, and that predicts 2027 grid progress better than the referendum result does. Three, by 3/31: whether Kuosheng's dry-cask facility obtains an operating licence and Unit 1 fuel offload physically begins; until it does, discount any claim of a 2028 Kuosheng restart. Four, by 3/31: whether an FSRU charter or delivery schedule is published for Hsieh-ho's new Unit 1 — without a vessel, 2031 is an aspiration. Five, by 6/30: whether any government or think-tank document puts the North-East's 4.7 GW gap in print. If the referendum passes and nobody cites the number, my core judgement has no buyers in the policy market, and that is itself a finding.\n\n**Where I am most likely wrong**\n\nFirst and heaviest: the 4.7 GW figure is a Taipower projection from 2022–2023, baselined on 2025, filed for an environmental review — not a 2026 observation. Kuosheng has since retired, the third LNG terminal has come online and new Datan units have entered service, so the real gap may be materially smaller, and my whole frame rests on it. Second, I use \"North-East grid\" and \"the north\" loosely; Datan is in Taoyuan, northern but outside that pocket, and if the true bottleneck is looser, Maanshan's northward contribution is larger than I allow. Third, the Japanese comparison can cut against me: Kashiwazaki-Kariwa shows restarts take fifteen years, but also that once local consent arrives the units do come back — and the Atlantic Council's call to restart retired capacity quickly is both more optimistic and more mainstream than my reading. Fourth, I picked the wargame number that suits me: FDD's eleven days and CSIS's \"under two weeks of LNG, seven weeks of coal\" differ by an order of magnitude from a domestic exercise finding that 70% rationing stretches supply to a year, and eleven days is an upper bound assuming no rationing, no fuel switching and no coal draw. Fifth, the 194/430-bundle offload schedule comes from a report with no determinable publication date and is marked unverified here. Sixth, the standing problem, now in its eighth consecutive issue: the egress proxy resolves only github.com — csis.org, taipeitimes.com, world-nuclear.org and taipower.com.tw all fail. Every figure here reached me through search-engine summaries. I read no primary page with my own eyes this week. Treat every number as pending verification."
+  }
+}
