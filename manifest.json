@@ -1,6 +1,15 @@
 {
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "reports": [
+    {
+      "file": "reports/2026-11-24-brief.json",
+      "kind": "brief",
+      "date": "2026-11-24",
+      "title": {
+        "zh": "本站補上此前未記錄的缺口：Nvidia執行長黃仁勳11/12因與Megaspeed前高層緋聞辭任，該公司晶片疑遭轉運中國一案11/16-17轉由司法部主導刑事偵辦——這正是11/20、11/22報告記錄的BIS「遠端存取規則」點名馬來西亞、新加坡等五國的真正起因；伊朗革命衛隊11/17-18三度攻擊巴林、科威特境內美軍相關設施，美軍反擊格什姆島飛彈陣地",
+        "en": "Filling a Gap This Site Had Missed: Jensen Huang's 11/12 Resignation and the Megaspeed Chip-Diversion Probe's Handoff to DOJ Are the Real Origin Story Behind the BIS Remote Access Rule; IRGC Strikes Bahrain and Kuwait Three Times 11/17-18, US Retaliates on Qeshm Island"
+      }
+    },
     {
       "file": "reports/2026-11-23-weekly.json",
       "kind": "weekly",

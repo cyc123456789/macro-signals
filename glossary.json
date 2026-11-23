@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "terms": [
     {
       "term": "AsyncOS",
@@ -4279,6 +4279,61 @@
       },
       "category": "geo",
       "first_seen": "2026-11-23"
+    },
+    {
+      "term": "Megaspeed",
+      "zh": "Megaspeed（新加坡雲端服務商）",
+      "expansion": "Megaspeed (Singapore-based cloud/data-center operator)",
+      "def": {
+        "zh": "一家總部位於新加坡的雲端運算與資料中心業者，旗下馬來西亞子公司Speedmatrix曾大量採購Nvidia先進AI晶片。2024年起遭美國商務部調查是否將晶片轉運至中國，2026年6月被Nvidia列入內部「禁售名單」，同年11月16-17日美國司法部接手主導刑事偵辦；其前高層與Nvidia執行長黃仁勳的緋聞成為黃辭任的直接導火線。",
+        "en": "A Singapore-based cloud-computing and data-center operator whose Malaysian subsidiary, Speedmatrix, purchased large volumes of Nvidia's most advanced AI chips. Under US Commerce Department investigation since 2024 over suspected diversion of those chips to China, it was placed on Nvidia's internal 'no-sell' list in June 2026, and the Justice Department took over the criminal probe from Commerce on 11/16-17, 2026. An affair between a former Megaspeed executive and Nvidia CEO Jensen Huang became the proximate trigger for his resignation."
+      },
+      "category": "tech",
+      "first_seen": "2026-11-24"
+    },
+    {
+      "term": "DOJ",
+      "zh": "美國司法部",
+      "expansion": "Department of Justice",
+      "def": {
+        "zh": "美國聯邦政府負責刑事執法與起訴的部會，在出口管制案件中通常接手商務部(BIS)的行政調查結果、將案件推進到刑事偵辦階段。",
+        "en": "The US federal department responsible for criminal law enforcement and prosecution; in export-control cases, it typically takes over from the Commerce Department's BIS once a case moves from administrative investigation into criminal prosecution."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-24"
+    },
+    {
+      "term": "Qeshm",
+      "zh": "格什姆島",
+      "expansion": "Qeshm Island, Iran",
+      "def": {
+        "zh": "位於荷姆茲海峽內、伊朗南部的最大島嶼，鄰近戰略水道，島上設有飛彈發射陣地等軍事設施，2026年11月成為美軍對伊朗報復性打擊的目標。",
+        "en": "Iran's largest island, located inside the Strait of Hormuz near the strategic waterway; hosts military installations including missile launch sites, and was the target of a US retaliatory strike in November 2026."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-24"
+    },
+    {
+      "term": "NSTM-6",
+      "zh": "核酸合成篩查國家政策第6號備忘錄",
+      "expansion": "National Science and Technology Memorandum 6 / 2026 National Policy for Nucleic Acid Synthesis Screening",
+      "def": {
+        "zh": "美國白宮2026年11月5日依據EO 14292發布的政策文件，要求接受聯邦生命科學經費的機構只能向採行「驗證式」篩查(核對訂購者身分與序列合法性)的合成DNA/RNA供應商採購，並指定NIST訂定技術標準、維護「關注序列」清單。",
+        "en": "A White House policy document issued 11/5/2026 under EO 14292, requiring recipients of federal life-sciences funding to purchase synthetic DNA/RNA and benchtop synthesis equipment only from suppliers that verify customer identity and sequence legitimacy, and tasking NIST with setting technical standards and maintaining a list of sequences of concern."
+      },
+      "category": "tech",
+      "first_seen": "2026-11-24"
+    },
+    {
+      "term": "EO 14292",
+      "zh": "第14292號行政命令",
+      "expansion": "Executive Order 14292",
+      "def": {
+        "zh": "美國總統行政命令，為NSTM-6核酸合成篩查政策提供法源依據，要求聯邦機構就AI可能加劇的生物安全風險訂定因應政策。",
+        "en": "A US presidential executive order providing the legal basis for the NSTM-6 nucleic-acid-synthesis-screening policy, directing federal agencies to develop responses to biosecurity risks that AI may exacerbate."
+      },
+      "category": "tech",
+      "first_seen": "2026-11-24"
     }
   ]
 }
