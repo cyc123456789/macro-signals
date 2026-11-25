@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24",
+  "updated": "2026-11-26",
   "terms": [
     {
       "term": "AsyncOS",
@@ -4334,6 +4334,61 @@
       },
       "category": "tech",
       "first_seen": "2026-11-24"
+    },
+    {
+      "term": "NAND",
+      "zh": "反及快閃記憶體",
+      "expansion": "NAND Flash Memory",
+      "def": {
+        "zh": "一種非揮發性快閃記憶體技術，用於SSD與隨身儲存裝置，與用於運算暫存的DRAM屬於不同的記憶體市場區段，供需週期各自獨立。",
+        "en": "A type of non-volatile flash memory used in SSDs and portable storage, a market segment distinct from DRAM (used for working memory); its supply-demand cycle moves independently of DRAM's."
+      },
+      "category": "tech",
+      "first_seen": "2026-11-26"
+    },
+    {
+      "term": "TrendForce",
+      "zh": "集邦科技",
+      "expansion": "TrendForce Corp.",
+      "def": {
+        "zh": "台灣市場研究機構，以記憶體、面板與半導體產業的季度價格預測聞名，是台股供應鏈分析師常用的一手資料來源。",
+        "en": "A Taiwan-based market research firm known for quarterly price forecasts on memory, display and semiconductor industries, a frequently cited primary data source for Taiwan supply-chain analysts."
+      },
+      "category": "tech",
+      "first_seen": "2026-11-26"
+    },
+    {
+      "term": "DHS",
+      "zh": "美國國土安全部",
+      "expansion": "Department of Homeland Security",
+      "def": {
+        "zh": "美國聯邦部會，負責國土安全、邊境管理與部分關鍵基礎設施防護政策協調。",
+        "en": "The US federal department responsible for homeland security, border management and coordinating parts of critical-infrastructure protection policy."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-26"
+    },
+    {
+      "term": "DNI",
+      "zh": "美國國家情報總監",
+      "expansion": "Director of National Intelligence",
+      "def": {
+        "zh": "統籌美國十八個情報機構、向總統彙整情報評估的最高情報官員職位。",
+        "en": "The senior US intelligence official who oversees the eighteen-agency intelligence community and compiles assessments for the president."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-26"
+    },
+    {
+      "term": "NSB",
+      "zh": "國家安全局",
+      "expansion": "National Security Bureau (Taiwan)",
+      "def": {
+        "zh": "台灣最高情報機關，負責國家安全情報蒐集與反情報、反滲透工作，隸屬國家安全會議體系。",
+        "en": "Taiwan's top intelligence agency, responsible for national-security intelligence collection and counter-infiltration work, under the National Security Council system."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-26"
     }
   ]
 }

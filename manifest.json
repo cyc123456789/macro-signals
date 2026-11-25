@@ -1,6 +1,15 @@
 {
-  "updated": "2026-11-24",
+  "updated": "2026-11-26",
   "reports": [
+    {
+      "file": "reports/2026-11-26-brief.json",
+      "kind": "brief",
+      "date": "2026-11-26",
+      "title": {
+        "zh": "Nvidia董事會11/17才宣布「不讓黃仁勳回任」，11/22卻一致票撤銷決定、23日正式回任總裁兼執行長，稱已獲美國政府高層保證無國安疑慮——11/24報告記錄的Megaspeed刑事偵辦案再添一次急轉彎；同一週，TrendForce 11/19把NAND合約價預測由Q4「漲8-13%」轉為Q1「跌0-5%」，摩根士丹利11/9至11/16兩度大砍南韓與台灣記憶體股目標價最深達59%，正面測試11/22報告「2027年記憶體價格看漲」的判斷；DHS部長Mullin 11/18向國會證實伊朗持續鎖定美國五大關鍵基礎設施部門，卻也在同一場聽證會明確排除近期多起「當機」事件與伊朗有關；台灣國安局公布11/28公投暨九合一選舉前中國網路操作數據：今年前九月逾250萬則內容、年增近五成",
+        "en": "Nvidia's Board Said 11/17 It Would Not Reinstate Jensen Huang, Then Reversed Unanimously to Bring Him Back as President and CEO on 11/23, Citing Senior US Government Assurance of No National-Security Risk — Another Turn in the Megaspeed Criminal-Probe Saga the 11/24 Report Logged; Same Week, TrendForce Flips Its NAND Forecast on 11/19 From Q4's \"+8-13%\" to Q1's \"-0 to -5%\" as Morgan Stanley Slashes Korean and Taiwanese Memory-Stock Targets by Up to 59% Across 11/9-11/16, Directly Testing the 11/22 Report's \"2027 Prices Keep Rising\" Call; DHS Secretary Mullin Tells Congress 11/18 Iran Keeps Targeting Five US Critical-Infrastructure Sectors, Yet the Same Hearing Explicitly Rules Out Iran in a Separate Wave of Recent Outages; Taiwan's National Security Bureau Publishes Pre-Vote Data Ahead of 11/28 Showing China Pushed Over 2.5 Million Pieces of Content Online Through September, Up Nearly 50% Year-on-Year"
+      }
+    },
     {
       "file": "reports/2026-11-24-brief.json",
       "kind": "brief",
