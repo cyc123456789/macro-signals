@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-28",
   "terms": [
     {
       "term": "AsyncOS",
@@ -4389,6 +4389,105 @@
       },
       "category": "geo",
       "first_seen": "2026-11-26"
+    },
+    {
+      "term": "exploit_agent",
+      "zh": "exploit_agent（自主補丁差異分析攻擊框架）",
+      "expansion": "exploit_agent (autonomous patch-diffing exploitation framework)",
+      "def": {
+        "zh": "Google GTIG在一台曝露的staging伺服器上發現的客製化多代理框架，能對網頁應用程式的修補更新進行連續差異分析、自動撰寫漏洞利用程式碼並執行，全程無需人類介入；操作者似鎖定法國媒體、娛樂與教育類網站。2026年11月是GTIG記錄到的首個端到端全自動漏洞利用鏈案例。",
+        "en": "A custom multi-agent framework Google GTIG found on an exposed staging server, capable of running continuous differential analysis of software patches, drafting exploit code and executing it entirely without human intervention; its operator appears to target French media, entertainment and education websites. November 2026 marks GTIG's first documented end-to-end, fully autonomous exploitation chain."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "term": "CAIRN",
+      "zh": "CAIRN（開源OODA迴圈多代理攻擊框架）",
+      "expansion": "CAIRN (open-source OODA-loop multi-agent offensive framework)",
+      "def": {
+        "zh": "一套開源多代理攻擊框架，以觀察-定向-決策-行動(OODA)迴圈運作，代理之間透過共用的「黑板」協調任務分工；Google GTIG觀察到其曾被用於鎖定包括美國航太業在內的目標。",
+        "en": "An open-source multi-agent offensive framework that operates on an Observe-Orient-Decide-Act (OODA) loop, with agents coordinating tasks via a shared 'blackboard.' Google GTIG observed it used against targets including the US aerospace sector."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "term": "PentAGI",
+      "zh": "PentAGI（開源自主滲透測試框架）",
+      "expansion": "PentAGI (open-source autonomous penetration-testing framework)",
+      "def": {
+        "zh": "一套開源自主滲透測試框架，2026年8月下旬至10月上旬曾被一名威脅行為者客製化後，用於對亞洲多個組織執行偵察與漏洞掃描。",
+        "en": "An open-source autonomous penetration-testing framework; from late August to early October 2026 a threat actor used a customized version to run reconnaissance and vulnerability scanning against organizations in Asia."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "term": "LLMJacking",
+      "zh": "LLMJacking（竊用大型語言模型憑證與雲端資源）",
+      "expansion": "LLMJacking",
+      "def": {
+        "zh": "竊取受害者的大型語言模型API憑證與雲端運算資源、供攻擊者免費使用或轉售牟利的行為；常見手法包括「燒毀即輪替」服務帳號以規避速率限制，部分案例單日詐欺性費用超過10萬美元、累計濫用金額達百萬美元等級。",
+        "en": "Stealing a victim's large-language-model API credentials and cloud compute resources for an attacker's free use or resale, often using 'burn and rotate' service accounts to evade rate limits; some cases have run up over $100,000 in fraudulent charges in a single day, with cumulative abuse reaching the million-dollar range."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "term": "PaperCut",
+      "zh": "PaperCut（印表機列印管理軟體，2026年8月遭鏈式漏洞自動化攻陷）",
+      "expansion": "PaperCut print management software",
+      "def": {
+        "zh": "廣泛部署於企業與機構的列印管理軟體。2026年8月，其身分驗證繞過漏洞(CVE-2026-81578)與不安全動態類別載入漏洞(CVE-2026-82078)遭串連，成為未經授權遠端程式碼執行(RCE)的攻擊鏈；漏洞揭露後一天內即有可用的漏洞利用程式碼問世，四天後一波攻擊已入侵數百個組織、數分鐘內取得網域管理權限。",
+        "en": "Print-management software widely deployed across enterprises and institutions. In August 2026, an authentication-bypass flaw (CVE-2026-81578) was chained with an unsafe dynamic-class-loading flaw (CVE-2026-82078) into an unauthenticated remote-code-execution path; working exploit code appeared within a day of disclosure, and a campaign four days later had reportedly compromised hundreds of organizations, reaching domain-admin access within minutes."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "term": "MIDNIGHT NEPTUNE",
+      "zh": "MIDNIGHT NEPTUNE（北韓關聯供應鏈入侵集群）",
+      "expansion": "Google GTIG designation for a DPRK-linked cluster",
+      "def": {
+        "zh": "Google GTIG對一個北韓關聯駭客集群所用的追蹤代號，該集群結合大型語言模型驅動的社交工程手法與對AI開發者工具的供應鏈濫用；觀察到的手法之一是竄改內部程式碼庫中的.claude/settings.json設定檔，使受害者一啟動Claude Code就會自動下載SOMBERMEME後門程式。",
+        "en": "Google GTIG's tracking designation for a DPRK-linked cluster that combines LLM-enabled social engineering with supply-chain abuse of AI developer tools; one observed technique modifies a .claude/settings.json configuration file in an internal code repository so that launching Claude Code automatically downloads the SOMBERMEME backdoor."
+      },
+      "category": "cyber",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "term": "European Council",
+      "zh": "歐洲理事會（歐盟成員國元首高峰會）",
+      "expansion": "European Council",
+      "def": {
+        "zh": "由歐盟各成員國國家元首或政府首腦組成的機構，負責制定歐盟整體政治方向與優先事項，與負責日常部長級決策的「歐盟理事會」及執委會性質不同；本站用以追蹤重大對俄、對烏政策決定的場域。",
+        "en": "The EU institution composed of member states' heads of state or government, which sets the Union's overall political direction and priorities — distinct from the ministerial-level Council of the EU or the European Commission. This site tracks it as the venue for major Russia- and Ukraine-related policy decisions."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "term": "Reparations Loan",
+      "zh": "賠款貸款（以俄羅斯凍結資產作抵押的對烏貸款方案）",
+      "expansion": "Reparations Loan",
+      "def": {
+        "zh": "歐盟研議中、以約1,850至2,100億歐元遭凍結的俄羅斯央行資產作為抵押或擔保、提供予烏克蘭的貸款方案；因持有多數相關資產的比利時擔心遭俄羅斯報復而要求擔保機制，此案自2025年10月起已在兩次歐洲理事會峰會上延宕未決。",
+        "en": "A proposed EU loan to Ukraine collateralized or guaranteed by roughly €185-210bn in frozen Russian central-bank assets; Belgium, which holds most of the relevant assets, has demanded retaliation-risk guarantees out of concern over Russian reprisal, stalling the plan across at least two European Council summits since October 2025."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-28"
+    },
+    {
+      "term": "Euroclear",
+      "zh": "歐洲清算銀行（持有多數遭凍結俄羅斯央行資產的比利時證券集中保管機構）",
+      "expansion": "Euroclear",
+      "def": {
+        "zh": "總部位於比利時的國際中央證券存管機構，是歐盟遭凍結的俄羅斯央行資產的主要持有處，也是「賠款貸款」方案爭議的核心節點——比利時政府因其國內法律曝險而對動用這筆資產持保留態度。",
+        "en": "A Belgium-headquartered international central securities depository that holds the bulk of the EU's frozen Russian central-bank assets, making it the central node in the 'reparations loan' dispute — the Belgian government's domestic legal exposure around it is the chief reason it has resisted tapping the funds."
+      },
+      "category": "geo",
+      "first_seen": "2026-11-28"
     }
   ]
 }

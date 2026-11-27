@@ -1,6 +1,15 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-28",
   "reports": [
+    {
+      "file": "reports/2026-11-28-brief.json",
+      "kind": "brief",
+      "date": "2026-11-28",
+      "title": {
+        "zh": "Google GTIG與Mandiant 11/16報告首度記錄『無人類介入』全自動漏洞利用鏈——exploit_agent鎖定法國媒體教育網站、PaperCut漏洞鏈一天內武器化、北韓MIDNIGHT NEPTUNE竄改.claude/settings.json植入後門，本站ARTEX系列追蹤新增至少三套框架；歐洲理事會11/26-27在布魯塞爾召開特別峰會談烏克蘭2027年後融資，比利時仍未點頭動用其持有的凍結俄國資產；台灣11/28投票公投暨九合一選舉，19,695名候選人角逐11,051席，11/23週報「公投改不了地圖」的判斷今天接受第一次檢驗；TrendForce 11/11最新預測顯示PC用DRAM第四季續漲但漲幅已放緩，11/26報告「NAND反轉、DRAM吃緊」的切分出現第一道裂縫",
+        "en": "Google GTIG and Mandiant's 11/16 Report Logs the First Fully Autonomous, No-Human-in-the-Loop Exploitation Chain — exploit_agent Hits French Media and Education Sites, a PaperCut Flaw Chain Is Weaponized Within a Day, and North Korea's MIDNIGHT NEPTUNE Backdoors .claude/settings.json, Adding at Least Three More Frameworks to This Site's ARTEX Thread; the European Council Convenes an Extraordinary Summit 11/26-27 in Brussels on Ukraine's Post-2027 Financing, With Belgium Still Not Signing Off on Tapping the Frozen Russian Assets It Holds; Taiwan Votes 11/28 in Its Nine-in-One Elections and Nuclear Referendum, 19,695 Candidates for 11,051 Seats, Putting the 11/23 Weekly's 'The Vote Can't Change the Map' Judgment to Its First Real Test Today; TrendForce's 11/11 Forecast Shows PC DRAM Still Rising in Q4 But at a Slower Pace, Cracking the 11/26 Report's Clean 'NAND Reverses, DRAM Stays Tight' Split"
+      }
+    },
     {
       "file": "reports/2026-11-26-brief.json",
       "kind": "brief",
